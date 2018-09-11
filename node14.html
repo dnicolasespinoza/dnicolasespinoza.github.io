@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>General total vertical stress calculation</TITLE>
+<META NAME="description" CONTENT="General total vertical stress calculation">
+<META NAME="keywords" CONTENT="IPG">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+
+<LINK REL="STYLESHEET" HREF="IPG.css">
+
+<LINK REL="previous" HREF="node13.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html154"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node15.html">Non-hydrostatic pore pressure</A>
+<B> Up:</B> <A
+ HREF="node11.html">Rock vertical stress gradient</A>
+<B> Previous:</B> <A
+ HREF="node13.html">Offshore total vertical stress</A>
+ &nbsp; <B>  <A ID="tex2html155"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00312300000000000000">
+General total vertical stress calculation</A>
+</H3>
+
+<P>
+In the general case <!-- MATH
+ $\rho_{bulk}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img38.svg"
+ ALT="$\rho_{bulk}$"></SPAN> varies with depth, for example rock lithology will vary with depth.
+Rocks usually have lower porosity as depth increases.
+Brine mass density also changes with depth.
+In general, vertical stress is calculated from integration of the equation 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:VertStressGral"></A><!-- MATH
+ \begin{equation}
+S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.52ex; vertical-align: -2.21ex; " SRC="img101.svg"
+ ALT="$\displaystyle S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+where <!-- MATH
+ $\rho_{bulk}(z)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img102.svg"
+ ALT="$\rho_{bulk}(z)$"></SPAN> is obtained from (gamma ray) density well logs and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img34.svg"
+ ALT="$z$"></SPAN> is obtained from the true vertical depth (TVD) calculated from the well measured depth (MD) and deviation survey (Figure <A HREF="#fig:ch2-Svgeneralcase">2.7</A>).
+Accurate calculations should account for the difference between the rotary table or kelly bushing (from where measured depth is often obtained) and the actual ground level. 
+This difference can be significant in offshore cases.
+In deviated wellbores, you should also take into account wellbore deviation and compute TVD from MD and well trajectory. 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:ch2-Svgeneralcase"></A><A ID="329"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 2.7:</STRONG>
+General case</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par2947" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./vertstress-devwellbore.png"
+ ALT="Image vertstress-devwellbore"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Well logs contain &ldquo;discrete&rdquo; data, hence you have to do numerical integration
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:VertStressDiscrete"></A><!-- MATH
+ \begin{equation}
+S_v(z_i) = \sum\limits_1^i \rho_{bulk}(z_i) g \Delta z_i
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 7.43ex; vertical-align: -3.10ex; " SRC="img103.svg"
+ ALT="$\displaystyle S_v(z_i) = \sum\limits_1^i \rho_{bulk}(z_i) g \Delta z_i$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+where <SPAN CLASS="MATH"><IMG STYLE="height: 1.74ex; vertical-align: -0.11ex; " SRC="img104.svg"
+ ALT="$i$"></SPAN> is the i-th interval at depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img105.svg"
+ ALT="$z_i$"></SPAN>. You just add up the weight of all layers above the point under consideration. 	
+
+<P>
+<SPAN  CLASS="textit">EXAMPLE 2.4</SPAN>: Go to <kbd><A ID="tex2html16"
+  HREF="https://github.com/dnicolasespinoza/GeomechanicsJupyter">https://github.com/dnicolasespinoza/GeomechanicsJupyter</A></kbd> and download the files <SPAN  CLASS="texttt">1_14-1_Composite.las</SPAN> and <SPAN  CLASS="texttt">1_14-1_deviation_mod.dev</SPAN>. 
+The first one is a well logging file (.LAS).
+You will find here measured depth (DEPTH - Track 1) and  bulk mass density (RHOB - Track 8).
+Track 3 also shows bulk density correction (DRHO).
+Add RHOB to DRHO to obtain the corrected bulk mass density.
+The second file has the deviation survey of the well. 
+Use this file to calculate true vertical depth subsea (TVDSS) as a function of measured depth (MD) in the well logging file.
+You may assume an average bulk mass density of 2 g/cc between the seafloor and the beginning of the density data.
+Apply Equation <A HREF="#eq:VertStressDiscrete">2.12</A>. 
+Summations with discrete data sets can be easily done through a <SPAN  CLASS="texttt">for</SPAN> loop.
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+See Figure <A HREF="#fig:ch2-SvNSexample">2.8</A>. <!-- MATH
+ $\: \: \blacksquare$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img100.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:ch2-SvNSexample"></A><A ID="346"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 2.8:</STRONG>
+Example of calculation of vertical stress for a general case. This is an offshore example in the North Sea with seafloor at 104 m. The calculation assumes an average bulk mass density of 2 g/cc between the seafloor and&nbsp;1000 m TVDSS (True Vertical Depth SubSea).</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par2959" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img106.svg"
+ ALT="\includegraphics[scale=0.85]{.././Figures/split/2-VertStress_TVDSS.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html154"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node15.html">Non-hydrostatic pore pressure</A>
+<B> Up:</B> <A
+ HREF="node11.html">Rock vertical stress gradient</A>
+<B> Previous:</B> <A
+ HREF="node13.html">Offshore total vertical stress</A>
+ &nbsp; <B>  <A ID="tex2html155"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

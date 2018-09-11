@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Offshore total vertical stress</TITLE>
+<META NAME="description" CONTENT="Offshore total vertical stress">
+<META NAME="keywords" CONTENT="IPG">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+
+<LINK REL="STYLESHEET" HREF="IPG.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html152"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node14.html">General total vertical stress</A>
+<B> Up:</B> <A
+ HREF="node11.html">Rock vertical stress gradient</A>
+<B> Previous:</B> <A
+ HREF="node12.html">Onshore total vertical stress</A>
+ &nbsp; <B>  <A ID="tex2html153"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00312200000000000000">
+Offshore total vertical stress</A>
+</H3>
+
+<P>
+In an offshore case you have to take into account the presence of overlying water thickness <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img77.svg"
+ ALT="$z_w$"></SPAN>. 
+Again, we assume constant mass densities for simplicity. 
+In the water, you cannot define a stress because there is no solid phase.
+Within the water zone, fluid pressure will increase according to Eq. <A HREF="node12.html#eq:hydrostporepress">2.7</A>. 
+This pore pressure will continue increasing in the seafloor sediments as long as there is a connected pore network from the seafloor to depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img34.svg"
+ ALT="$z$"></SPAN>.
+Stresses start to develop at the seafloor beyond depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.45ex; " SRC="img78.svg"
+ ALT="$z &gt; z_w$"></SPAN>, such that the total vertical stress will be 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+S_v = \rho_{w} g \, z_w + \rho_{bulk} g (z-z_w)
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img79.svg"
+ ALT="$\displaystyle S_v = \rho_{w} g \, z_w + \rho_{bulk} g (z-z_w)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Notice that the total stress does not start at 0 at the seafloor <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img80.svg"
+ ALT="$z=z_w$"></SPAN>.
+However, the important and &ldquo;physically meaningful&rdquo; quantity is effective stress and this one does start at zero at the seafloor.
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\sigma_v = S_v - P_p =  \rho_{bulk} g (z-z_w) \quad \text{for} \quad z \geq z_w
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img81.svg"
+ ALT="$\displaystyle \sigma_v = S_v - P_p = \rho_{bulk} g (z-z_w)$">&nbsp; &nbsp;for<IMG STYLE="height: 2.03ex; vertical-align: -0.45ex; " SRC="img82.svg"
+ ALT="$\displaystyle \quad z \geq z_w$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+This makes sense because otherwise an octopus would not be able to dig in sand at the seafloor (take a look at this video <kbd><A ID="tex2html12"
+  HREF="https://www.youtube.com/watch?v=LSeYVTo7DFs">https://www.youtube.com/watch?v=LSeYVTo7DFs</A></kbd>).
+We will see later that stress is a &ldquo;tensor&rdquo; (with numerical values that depend on the orientation of the coordinate system) and that pore pressure affects effective stresses in the normal directions. 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:OffshorePpSv"></A><A ID="287"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 2.6:</STRONG>
+Offshore pressure and total stress gradient.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par2903" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img83.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/2-OffshorePpSv.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+<SPAN  CLASS="textit">EXAMPLE 2.3</SPAN>: Compute the pore pressure and vertical stress at 9000 ft of depth (TVD) underneath an offshore drilling rig with water depth of 2000 ft. 
+The pore pressure gradient is 0.44 psi/ft and the lithostatic gradient is 1 psi/ft. 
+The hydrostatic pressure gradient above the seafloor is 0.44 psi/ft as well. 
+Make a plot of pressure and vertical stress versus depth. Calculate effective stress at 9000 ft of depth. 
+Show results in MPa and psi.
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+The pore pressure and hydrostatic gradient at <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img34.svg"
+ ALT="$z$"></SPAN> = 9000 ft of total depth with water depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img77.svg"
+ ALT="$z_w$"></SPAN> = 2000 ft are
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+P_p = \rho_w g z_w + \frac{dP_p}{dz} (z-z_w)  = 0.44 \text{psi/ft} 2000 \text{ ft} + 0.44 \text{ psi/ft} (9000-2000) \text{ ft} =   3960 \text{ psi}
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.98ex; vertical-align: -1.70ex; " SRC="img84.svg"
+ ALT="$\displaystyle P_p = \rho_w g z_w + \frac{dP_p}{dz} (z-z_w) = 0.44$">&nbsp; &nbsp;psi/ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img85.svg"
+ ALT="$\displaystyle 2000$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img86.svg"
+ ALT="$\displaystyle + 0.44$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img87.svg"
+ ALT="$\displaystyle (9000-2000)$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img88.svg"
+ ALT="$\displaystyle = 3960$">&nbsp; &nbsp; psi</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+and
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+S_v = \rho_w g z_w + \frac{dS_v}{dz} (z-z_w)  = 0.44 \text{ psi/ft} 2000 \text{ ft} + 1.00 \text{ psi/ft} (9000-2000) \text{ ft} = 7880 \text{ psi},
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.97ex; vertical-align: -1.70ex; " SRC="img89.svg"
+ ALT="$\displaystyle S_v = \rho_w g z_w + \frac{dS_v}{dz} (z-z_w) = 0.44$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img85.svg"
+ ALT="$\displaystyle 2000$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img90.svg"
+ ALT="$\displaystyle + 1.00$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img87.svg"
+ ALT="$\displaystyle (9000-2000)$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img91.svg"
+ ALT="$\displaystyle = 7880$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.91ex; vertical-align: -0.56ex; " SRC="img92.svg"
+ ALT="$\displaystyle ,$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+hence,
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\sigma_v = S_v - P_p = 7880 \text{ psi} - 3960 \text{ psi} = 3920 \text{ psi}.
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img93.svg"
+ ALT="$\displaystyle \sigma_v = S_v - P_p = 7880$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img94.svg"
+ ALT="$\displaystyle - 3960$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img95.svg"
+ ALT="$\displaystyle = 3920$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.46ex; vertical-align: -0.11ex; " SRC="img96.svg"
+ ALT="$\displaystyle .$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The values in SI units are <!-- MATH
+ $P_p = 27.31 \text{ MPa}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img97.svg"
+ ALT="$P_p = 27.31$">&nbsp; &nbsp; MPa</SPAN>, <!-- MATH
+ $S_v =  54.34 \text{ MPa}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img98.svg"
+ ALT="$S_v = 54.34$">&nbsp; &nbsp; MPa</SPAN>, and <!-- MATH
+ $\sigma_v = 27.03 \text{ MPa}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img99.svg"
+ ALT="$\sigma_v = 27.03$">&nbsp; &nbsp; MPa</SPAN>. 
+<!-- MATH
+ $\: \: \blacksquare$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img100.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+
+<P>
+For an interactive example, check my Jupyter notebook at  <kbd><A ID="tex2html14"
+  HREF="https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=PorePressureVerticalStress_Widget.ipynb">https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=PorePressureVerticalStress_Widget.ipynb</A></kbd>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html152"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node14.html">General total vertical stress</A>
+<B> Up:</B> <A
+ HREF="node11.html">Rock vertical stress gradient</A>
+<B> Previous:</B> <A
+ HREF="node12.html">Onshore total vertical stress</A>
+ &nbsp; <B>  <A ID="tex2html153"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
