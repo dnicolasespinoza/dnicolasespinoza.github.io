@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Effective stress and elasticity</TITLE>
+<META NAME="description" CONTENT="Effective stress and elasticity">
+<META NAME="keywords" CONTENT="IPG">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+
+<LINK REL="STYLESHEET" HREF="IPG.css">
+
+<LINK REL="next" HREF="node40.html">
+<LINK REL="previous" HREF="node38.html">
+<LINK REL="next" HREF="node40.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node40.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node38.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html316"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node40.html">Calculation of horizontal stress</A>
+<B> Up:</B> <A
+ HREF="node36.html">Constitutive equation: stress-strain relationships</A>
+<B> Previous:</B> <A
+ HREF="node38.html">The isotropic solid in</A>
+ &nbsp; <B>  <A ID="tex2html317"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00433000000000000000">
+Effective stress and elasticity</A>
+</H2>
+
+<P>
+Porous solids deform and fail due to the application of effective stresses rather than total stress. 
+Hence, Hooke's law requires to use the effective stress tensor rather than the total stress tensor: 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\uuline{\varepsilon} = \uuline{D} \: \uuline{S} \text{  (incorrect)}
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img288.svg"
+ ALT="$\displaystyle \uuline{\varepsilon} = \uuline{D} \: \uuline{S}$">&nbsp; &nbsp; (incorrect)</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - P_p \uuline{I})  = \uuline{D} \: \uuline{\sigma} \text{  (correct)}
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.57ex; vertical-align: -1.73ex; " SRC="img289.svg"
+ ALT="$\displaystyle \uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - P_p \uuline{I}) = \uuline{D} \: \uuline{\sigma}$">&nbsp; &nbsp; (correct)</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Pore pressure has an effect on normal stresses only (fluid pressure would not be able to cause solid shear strains). Hence, only pore pressure is subtracted from the diagonal terms of the total stress tensor. 
+The subtracted value is the same in all directions because pore pressure is the same in all directions at a given point location.	
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec4-X"></A><A ID="1934"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.12:</STRONG>
+The effective stress tensor</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par7056" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img290.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-26.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Rigorously, the effective stress tensor needs a correction of pore pressure by the Biot coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img291.svg"
+ ALT="$\alpha$"></SPAN> that accounts for solid grain deformation with changes in pore pressure. 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - \alpha P_p \uuline{I})
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.57ex; vertical-align: -1.73ex; " SRC="img292.svg"
+ ALT="$\displaystyle \uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - \alpha P_p \uuline{I})$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">21</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+For most problems, the assumption of <!-- MATH
+ $\alpha \sim 1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img293.svg"
+ ALT="$\alpha \sim 1$"></SPAN> is satisfactory. 
+The rock matrix of tight sandstones and shales may have a Biot coeffiecient as low as <!-- MATH
+ $\alpha \sim 0.5$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img294.svg"
+ ALT="$\alpha \sim 0.5$"></SPAN>. 
+The theory of poroelasticity is covered in the &ldquo;Advanced Geomechanics&rdquo; course with a brief introduction in Section <A HREF="node47.html#sec:poroelasticity">3.7.1</A>.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node40.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node36.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node38.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html316"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node40.html">Calculation of horizontal stress</A>
+<B> Up:</B> <A
+ HREF="node36.html">Constitutive equation: stress-strain relationships</A>
+<B> Previous:</B> <A
+ HREF="node38.html">The isotropic solid in</A>
+ &nbsp; <B>  <A ID="tex2html317"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

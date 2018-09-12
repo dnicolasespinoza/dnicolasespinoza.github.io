@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Constitutive equation: stress-strain relationships</TITLE>
+<META NAME="description" CONTENT="Constitutive equation: stress-strain relationships">
+<META NAME="keywords" CONTENT="IPG">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+
+<LINK REL="STYLESHEET" HREF="IPG.css">
+
+<LINK REL="next" HREF="node43.html">
+<LINK REL="previous" HREF="node35.html">
+<LINK REL="next" HREF="node37.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html304"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node37.html">Linear isotropic elasticity</A>
+<B> Up:</B> <A
+ HREF="node30.html">Fundamentals of linear elastic</A>
+<B> Previous:</B> <A
+ HREF="node35.html">Kinematic equations: displacements and</A>
+ &nbsp; <B>  <A ID="tex2html305"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00430000000000000000">
+Constitutive equation: stress-strain relationships</A>
+</H1>
+
+<P>
+Constitutive equations tell us how a solid deforms (in time) as a response to stresses, to changes of temperature and to changes of pore pressure among others.
+How to choose a constitutive equation depends on the material properties, the magnitude of strain changes, the magnitude of stresses, and the loading rate among other factors.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec4-12"></A><A ID="1561"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.8:</STRONG>
+Example of deformations imparted by an applied stress.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par6897" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img236.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-12.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The simplest constitutive relationship for solids is linear elasticity, in which stresses and strains are linearly related by constant coefficients.
+The examples in Figure <A HREF="#fig:elasticity1D2D3D">3.9</A> correspond to applications of linear elasticity in various dimensions:
+
+<UL>
+<LI>(TOP) Hooke's law: the force <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img237.svg"
+ ALT="$F$"></SPAN> [N] required to produce an elongation <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img238.svg"
+ ALT="$\Delta x$"></SPAN> [m] in a spring with mechanical constant <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img136.svg"
+ ALT="$k$"></SPAN> [N/m] is <!-- MATH
+ $F = k \Delta x$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img239.svg"
+ ALT="$F = k \Delta x$"></SPAN>
+</LI>
+<LI>(MIDDLE) Consider a prismatic solid bar with cross sectional area <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img22.svg"
+ ALT="$A$"></SPAN> and length <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img143.svg"
+ ALT="$L$"></SPAN>. The force required to produce an elongation <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img238.svg"
+ ALT="$\Delta x$"></SPAN> [m] is inversely proportional to <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img143.svg"
+ ALT="$L$"></SPAN>, and proportional to proportional to <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img22.svg"
+ ALT="$A$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img240.svg"
+ ALT="$E$"></SPAN> (the stiffness modulus of the solid), such that 
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\frac{F}{A} = E \frac{\Delta x}{L}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img241.svg"
+ ALT="$\displaystyle \frac{F}{A} = E \frac{\Delta x}{L}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>	
+</LI>
+<LI>(BOTTOM) In general the stress tensor <!-- MATH
+ $\uuline{\sigma}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img242.svg"
+ ALT="$\uuline{\sigma}$"></SPAN> is proportional to the strain tensor <!-- MATH
+ $\uuline{\varepsilon}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img243.svg"
+ ALT="$\uuline{\varepsilon}$"></SPAN> through the stiffness tensor <!-- MATH
+ $\uuline{C}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img244.svg"
+ ALT="$\uuline{C}$"></SPAN>
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img245.svg"
+ ALT="$\displaystyle \uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+</LI>
+</UL>	
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:elasticity1D2D3D"></A><A ID="1583"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.9:</STRONG>
+From Hooke's law to generalized 3D linear elasticity</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par6932" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img246.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-13.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html306"
+  HREF="node37.html">Linear isotropic elasticity</A>
+<LI><A ID="tex2html307"
+  HREF="node38.html">The isotropic solid in Voigt notation</A>
+<LI><A ID="tex2html308"
+  HREF="node39.html">Effective stress and elasticity</A>
+<LI><A ID="tex2html309"
+  HREF="node40.html">Calculation of horizontal stress according to linear elasticity</A>
+<LI><A ID="tex2html310"
+  HREF="node41.html">Calculation of reservoir compressibility with linear elasticity</A>
+<LI><A ID="tex2html311"
+  HREF="node42.html">Generalized linear elasticity problem</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node30.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html304"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node37.html">Linear isotropic elasticity</A>
+<B> Up:</B> <A
+ HREF="node30.html">Fundamentals of linear elastic</A>
+<B> Previous:</B> <A
+ HREF="node35.html">Kinematic equations: displacements and</A>
+ &nbsp; <B>  <A ID="tex2html305"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

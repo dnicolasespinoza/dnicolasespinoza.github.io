@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Cauchy's equations of stress equilibrium</TITLE>
+<META NAME="description" CONTENT="Cauchy's equations of stress equilibrium">
+<META NAME="keywords" CONTENT="IPG">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+
+<LINK REL="STYLESHEET" HREF="IPG.css">
+
+<LINK REL="next" HREF="node33.html">
+<LINK REL="previous" HREF="node31.html">
+<LINK REL="next" HREF="node33.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html296"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node33.html">Application of Cauchy's equations</A>
+<B> Up:</B> <A
+ HREF="node31.html">Stress tensor</A>
+<B> Previous:</B> <A
+ HREF="node31.html">Stress tensor</A>
+ &nbsp; <B>  <A ID="tex2html297"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00411000000000000000">
+Cauchy's equations of stress equilibrium</A>
+</H2>
+
+<P>
+Equilibrium of stresses requires summation of forces in all directions to be zero when the object is not moving (no acceleration <!-- MATH
+ $m \uline{a} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.57ex; " SRC="img196.svg"
+ ALT="$m \uline{a} = 0$"></SPAN>).
+Consider the schematic in Figure <A HREF="#fig:lec4-5">3.3</A>.
+Summation of forces in direction 1, where the term <!-- MATH
+ $\rho V b_1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img197.svg"
+ ALT="$\rho V b_1$"></SPAN> is the body force component, proportional to the solid mass density <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img198.svg"
+ ALT="$\rho$"></SPAN> and volume <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img199.svg"
+ ALT="$V$"></SPAN>, and the acceleration component <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img200.svg"
+ ALT="$b_1$"></SPAN>, requires
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\begin{array}{rcl}
+	\sum F_1 & = & 0 \\
+	\sum F_1 & =
+	& + S_{11} dx_2 dx_3 - \left[ S_{11} + (\frac{\partial S_{11}}{\partial x_1}) dx_1 \right] dx_2 dx_3 \\
+	& & + S_{21} dx_1 dx_3 - \left[ S_{21} + (\frac{\partial S_{21}}{\partial x_2}) dx_2 \right] dx_1 dx_3 \\
+	& & + S_{31} dx_1 dx_2 - \left[ S_{31} + (\frac{\partial S_{31}}{\partial x_3}) dx_3 \right] dx_1 dx_2 \\
+	& & - \rho (dx_1 dx_2 dx_3) b_1 = 0	
+\end{array}
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img201.svg"
+ ALT="\begin{displaymath}\begin{array}{rcl}
+\sum F_1 &amp; = &amp; 0 \\
+\sum F_1 &amp; =
+&amp; + S_{1...
+...] dx_1 dx_2 \\
+&amp; &amp; - \rho (dx_1 dx_2 dx_3) b_1 = 0
+\end{array}\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+which eventually reduces to the following equation when canceling terms and dividing by the element volume <!-- MATH
+ $(dx_1 dx_2 dx_3)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img202.svg"
+ ALT="$(dx_1 dx_2 dx_3)$"></SPAN>
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\frac{\partial S_{11}}{\partial x_1} +
+	\frac{\partial S_{21}}{\partial x_2} + 
+	\frac{\partial S_{31}}{\partial x_3} - 
+	\rho b_1 = 0	
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.32ex; vertical-align: -2.05ex; " SRC="img203.svg"
+ ALT="$\displaystyle \frac{\partial S_{11}}{\partial x_1} +
+\frac{\partial S_{21}}{\partial x_2} +
+\frac{\partial S_{31}}{\partial x_3} -
+\rho b_1 = 0$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec4-5"></A><A ID="1343"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.3:</STRONG>
+Equilibrium of forces in direction 1</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par6812" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img204.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-5.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+A generalization of equilibrium in all directions with all stresses (Figure <A HREF="node31.html#fig:lec4-3">3.1</A>) yields the Cauchy's equilibrium equations:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:Cauchy"></A><!-- MATH
+ \begin{equation}
+\displaystyle
+\left\lbrace
+\begin{array}{rcl}
+	\cfrac{\partial S_{11}}{\partial x_1} +
+	\cfrac{\partial S_{21}}{\partial x_2} + 
+	\cfrac{\partial S_{31}}{\partial x_3} - 
+	\rho b_1 & = & 0 \\
+	\cfrac{\partial S_{12}}{\partial x_1} + 	
+	\cfrac{\partial S_{22}}{\partial x_2} + 
+	\cfrac{\partial S_{33}}{\partial x_3} - 
+	\rho b_2 & = & 0 \\
+	\cfrac{\partial S_{13}}{\partial x_1} + 	
+	\cfrac{\partial S_{23}}{\partial x_2} + 
+	\cfrac{\partial S_{33}}{\partial x_3} - 
+	\rho b_3 & = & 0 \\
+\end{array}
+\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img205.svg"
+ ALT="\begin{displaymath}\displaystyle
+\left\lbrace
+\begin{array}{rcl}
+\cfrac{\partial...
+...S_{33}}{\partial x_3} -
+\rho b_3 &amp; = &amp; 0 \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
