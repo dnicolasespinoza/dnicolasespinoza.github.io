@@ -2,8 +2,16 @@
 # Associate internals original text with physical files.
 
 
+$key = q/Ch:Failure/;
+$ref_files{$key} = "$dir".q|node51.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:Cauchy/;
 $ref_files{$key} = "$dir".q|node32.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:CoulombTS/;
+$ref_files{$key} = "$dir".q|node62.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:LameFull/;
@@ -20,6 +28,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/eq:PoreCompwithEnu/;
 $ref_files{$key} = "$dir".q|node41.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:UCS-CohStrength-q/;
+$ref_files{$key} = "$dir".q|node62.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:VertStressDiscrete/;
@@ -58,32 +70,116 @@ $key = q/eq:volstrain/;
 $ref_files{$key} = "$dir".q|node35.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:BrazilianTest/;
+$ref_files{$key} = "$dir".q|node58.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:CoulombCriterionPS/;
+$ref_files{$key} = "$dir".q|node62.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:CoulombFailure/;
+$ref_files{$key} = "$dir".q|node62.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:Creep/;
 $ref_files{$key} = "$dir".q|node45.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:DirectTensionRock/;
+$ref_files{$key} = "$dir".q|node57.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ElastoPlastIntro/;
+$ref_files{$key} = "$dir".q|node67.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ElastoplasticityModes/;
+$ref_files{$key} = "$dir".q|node67.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Failure-LengthScales/;
+$ref_files{$key} = "$dir".q|node54.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracsTuffo/;
+$ref_files{$key} = "$dir".q|node68.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FreeFEMexample/;
 $ref_files{$key} = "$dir".q|node35.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FrictionBlock/;
+$ref_files{$key} = "$dir".q|node60.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:LoadingUnloading/;
 $ref_files{$key} = "$dir".q|node44.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:MicroFracCoalescence/;
+$ref_files{$key} = "$dir".q|node68.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:OffshorePpSv/;
 $ref_files{$key} = "$dir".q|node13.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:PoreCollapse/;
+$ref_files{$key} = "$dir".q|node64.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:RockMicrostructure/;
+$ref_files{$key} = "$dir".q|node53.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:SandFailureLenoir/;
+$ref_files{$key} = "$dir".q|node68.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:SandStrength/;
+$ref_files{$key} = "$dir".q|node60.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StrainHardSoft/;
+$ref_files{$key} = "$dir".q|node67.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:StrainrateStiffness/;
 $ref_files{$key} = "$dir".q|node45.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StrengthAnisotropy/;
+$ref_files{$key} = "$dir".q|node66.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressRelax/;
 $ref_files{$key} = "$dir".q|node45.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TensStrengthSummary/;
+$ref_files{$key} = "$dir".q|node58.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TensionSteel/;
+$ref_files{$key} = "$dir".q|node57.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:ThermalSwellStress/;
 $ref_files{$key} = "$dir".q|node48.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TriaxialCell/;
+$ref_files{$key} = "$dir".q|node63.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:UCS/;
+$ref_files{$key} = "$dir".q|node61.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:YieldLocus/;
+$ref_files{$key} = "$dir".q|node65.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:YoungLab/;
@@ -224,6 +320,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:lec4-X/;
 $ref_files{$key} = "$dir".q|node43.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:lec5A-X/;
+$ref_files{$key} = "$dir".q|node62.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:mudcake/;
