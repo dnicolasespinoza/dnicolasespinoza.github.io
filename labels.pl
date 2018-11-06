@@ -6,6 +6,10 @@ $key = q/Ch:Failure/;
 $external_labels{$key} = "$URL/" . q|node51.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:BreakoutAngle/;
+$external_labels{$key} = "$URL/" . q|node97.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:Cauchy/;
 $external_labels{$key} = "$URL/" . q|node32.html|; 
 $noresave{$key} = "$nosave";
@@ -20,6 +24,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/eq:LameThermoElasticity/;
 $external_labels{$key} = "$URL/" . q|node48.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:Pb/;
+$external_labels{$key} = "$URL/" . q|node100.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:PoissonDef/;
@@ -78,12 +86,40 @@ $key = q/fig:BakerHughesJS/;
 $external_labels{$key} = "$URL/" . q|node71.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:BoreholeImaging/;
+$external_labels{$key} = "$URL/" . q|node98.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BoreholeImagingTfracs/;
+$external_labels{$key} = "$URL/" . q|node101.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:BrazilianTest/;
 $external_labels{$key} = "$URL/" . q|node58.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:BreakoutAngle/;
+$external_labels{$key} = "$URL/" . q|node97.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BreakoutDevWellbore/;
+$external_labels{$key} = "$URL/" . q|node106.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BreakoutPhoto/;
+$external_labels{$key} = "$URL/" . q|node96.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:BrittleCrust/;
 $external_labels{$key} = "$URL/" . q|node87.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ClayPlatelet/;
+$external_labels{$key} = "$URL/" . q|node110.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ClaySwelling/;
+$external_labels{$key} = "$URL/" . q|node110.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:CoulombCriterionPS/;
@@ -100,6 +136,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:DirectTensionRock/;
 $external_labels{$key} = "$URL/" . q|node57.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ECD/;
+$external_labels{$key} = "$URL/" . q|node91.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ElastoPlastIntro/;
@@ -158,12 +198,40 @@ $key = q/fig:HydFracMicroseismicity/;
 $external_labels{$key} = "$URL/" . q|node86.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:KirschDev/;
+$external_labels{$key} = "$URL/" . q|node94.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschDevWell/;
+$external_labels{$key} = "$URL/" . q|node105.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschExample/;
+$external_labels{$key} = "$URL/" . q|node95.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschFarField/;
+$external_labels{$key} = "$URL/" . q|node94.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschPw/;
+$external_labels{$key} = "$URL/" . q|node94.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:LeakoffInstability/;
+$external_labels{$key} = "$URL/" . q|node111.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:LoadingUnloading/;
 $external_labels{$key} = "$URL/" . q|node44.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:MicroFracCoalescence/;
 $external_labels{$key} = "$URL/" . q|node68.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:MudWindow/;
+$external_labels{$key} = "$URL/" . q|node102.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NormalFault/;
@@ -180,6 +248,18 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:PoreCollapse/;
 $external_labels{$key} = "$URL/" . q|node64.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:PrincStressesDevWell/;
+$external_labels{$key} = "$URL/" . q|node105.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:REVCylCoord/;
+$external_labels{$key} = "$URL/" . q|node93.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:RequiredUCS/;
+$external_labels{$key} = "$URL/" . q|node97.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:RockMicrostructure/;
@@ -238,6 +318,14 @@ $key = q/fig:StrikeSlipSchematics/;
 $external_labels{$key} = "$URL/" . q|node79.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TensFracsSchematic/;
+$external_labels{$key} = "$URL/" . q|node100.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TensFracsSurface/;
+$external_labels{$key} = "$URL/" . q|node100.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:TensStrengthSummary/;
 $external_labels{$key} = "$URL/" . q|node58.html|; 
 $noresave{$key} = "$nosave";
@@ -246,8 +334,16 @@ $key = q/fig:TensionSteel/;
 $external_labels{$key} = "$URL/" . q|node57.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TfracsDevWellbore/;
+$external_labels{$key} = "$URL/" . q|node107.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:Thamama/;
 $external_labels{$key} = "$URL/" . q|node88.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ThermalEffectsWell/;
+$external_labels{$key} = "$URL/" . q|node109.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ThermalSwellStress/;
@@ -260,6 +356,26 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:UCS/;
 $external_labels{$key} = "$URL/" . q|node61.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellOrientation/;
+$external_labels{$key} = "$URL/" . q|node104.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellStrengthAnisotropy/;
+$external_labels{$key} = "$URL/" . q|node112.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellboreCaliper/;
+$external_labels{$key} = "$URL/" . q|node98.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellboreCasingDepths/;
+$external_labels{$key} = "$URL/" . q|node102.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellboreInstabilityShale/;
+$external_labels{$key} = "$URL/" . q|node110.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:WorldStressMap/;
@@ -418,8 +534,12 @@ $key = q/fig:lec6-X/;
 $external_labels{$key} = "$URL/" . q|node89.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:lect-X/;
+$external_labels{$key} = "$URL/" . q|node105.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:mudcake/;
-$external_labels{$key} = "$URL/" . q|node12.html|; 
+$external_labels{$key} = "$URL/" . q|node91.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:overpressure/;
@@ -440,6 +560,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:CalcHzStress/;
 $external_labels{$key} = "$URL/" . q|node40.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:TensileFracs/;
+$external_labels{$key} = "$URL/" . q|node100.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:poroelasticity/;
@@ -473,6 +597,10 @@ $key = q/_/;
 $external_latex_labels{$key} = q|<|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:BreakoutAngle/;
+$external_latex_labels{$key} = q|6.12|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:Cauchy/;
 $external_latex_labels{$key} = q|3.2|; 
 $noresave{$key} = "$nosave";
@@ -487,6 +615,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/eq:LameThermoElasticity/;
 $external_latex_labels{$key} = q|3.37|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:Pb/;
+$external_latex_labels{$key} = q|6.17|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:PoissonDef/;
@@ -545,12 +677,40 @@ $key = q/fig:BakerHughesJS/;
 $external_latex_labels{$key} = q|5.4|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:BoreholeImaging/;
+$external_latex_labels{$key} = q|6.12|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BoreholeImagingTfracs/;
+$external_latex_labels{$key} = q|6.16|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:BrazilianTest/;
 $external_latex_labels{$key} = q|4.6|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:BreakoutAngle/;
+$external_latex_labels{$key} = q|6.11|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BreakoutDevWellbore/;
+$external_latex_labels{$key} = q|6.23|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BreakoutPhoto/;
+$external_latex_labels{$key} = q|6.9|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:BrittleCrust/;
 $external_latex_labels{$key} = q|5.25|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ClayPlatelet/;
+$external_latex_labels{$key} = q|6.26|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ClaySwelling/;
+$external_latex_labels{$key} = q|6.27|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:CoulombCriterionPS/;
@@ -567,6 +727,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:DirectTensionRock/;
 $external_latex_labels{$key} = q|4.5|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ECD/;
+$external_latex_labels{$key} = q|6.1|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ElastoPlastIntro/;
@@ -625,12 +789,40 @@ $key = q/fig:HydFracMicroseismicity/;
 $external_latex_labels{$key} = q|5.24|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:KirschDev/;
+$external_latex_labels{$key} = q|6.6|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschDevWell/;
+$external_latex_labels{$key} = q|6.21|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschExample/;
+$external_latex_labels{$key} = q|6.7|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschFarField/;
+$external_latex_labels{$key} = q|6.4|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KirschPw/;
+$external_latex_labels{$key} = q|6.5|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:LeakoffInstability/;
+$external_latex_labels{$key} = q|6.29|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:LoadingUnloading/;
 $external_latex_labels{$key} = q|3.19|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:MicroFracCoalescence/;
 $external_latex_labels{$key} = q|4.23|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:MudWindow/;
+$external_latex_labels{$key} = q|6.17|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NormalFault/;
@@ -647,6 +839,18 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:PoreCollapse/;
 $external_latex_labels{$key} = q|4.15|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:PrincStressesDevWell/;
+$external_latex_labels{$key} = q|6.22|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:REVCylCoord/;
+$external_latex_labels{$key} = q|6.3|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:RequiredUCS/;
+$external_latex_labels{$key} = q|6.10|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:RockMicrostructure/;
@@ -705,6 +909,14 @@ $key = q/fig:StrikeSlipSchematics/;
 $external_latex_labels{$key} = q|5.15|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TensFracsSchematic/;
+$external_latex_labels{$key} = q|6.14|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TensFracsSurface/;
+$external_latex_labels{$key} = q|6.15|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:TensStrengthSummary/;
 $external_latex_labels{$key} = q|4.7|; 
 $noresave{$key} = "$nosave";
@@ -713,8 +925,16 @@ $key = q/fig:TensionSteel/;
 $external_latex_labels{$key} = q|4.4|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TfracsDevWellbore/;
+$external_latex_labels{$key} = q|6.24|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:Thamama/;
 $external_latex_labels{$key} = q|5.28|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ThermalEffectsWell/;
+$external_latex_labels{$key} = q|6.25|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ThermalSwellStress/;
@@ -727,6 +947,26 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:UCS/;
 $external_latex_labels{$key} = q|4.10|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellOrientation/;
+$external_latex_labels{$key} = q|6.19|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellStrengthAnisotropy/;
+$external_latex_labels{$key} = q|6.30|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellboreCaliper/;
+$external_latex_labels{$key} = q|6.13|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellboreCasingDepths/;
+$external_latex_labels{$key} = q|6.18|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:WellboreInstabilityShale/;
+$external_latex_labels{$key} = q|6.28|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:WorldStressMap/;
@@ -885,8 +1125,12 @@ $key = q/fig:lec6-X/;
 $external_latex_labels{$key} = q|5.29|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:lect-X/;
+$external_latex_labels{$key} = q|6.20|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:mudcake/;
-$external_latex_labels{$key} = q|2.5|; 
+$external_latex_labels{$key} = q|6.2|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:overpressure/;
@@ -907,6 +1151,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:CalcHzStress/;
 $external_latex_labels{$key} = q|3.3.4|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:TensileFracs/;
+$external_latex_labels{$key} = q|6.4|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:poroelasticity/;
