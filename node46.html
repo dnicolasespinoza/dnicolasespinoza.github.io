@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Multiphysics problems</TITLE>
-<META NAME="description" CONTENT="Multiphysics problems">
+<TITLE>3.6 Time-dependent deformation: Visco-elasticity</TITLE>
+<META NAME="description" CONTENT="3.6 Time-dependent deformation: Visco-elasticity">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,7 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
-<LINK REL="next" HREF="node49.html">
+<LINK REL="next" HREF="node47.html">
 <LINK REL="previous" HREF="node45.html">
 <LINK REL="next" HREF="node47.html">
 </HEAD>
@@ -27,44 +27,114 @@
  HREF="node47.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node30.html">
+ HREF="node31.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node45.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html549"
+<A ID="tex2html553"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node47.html">Poro-elasticity</A>
+ HREF="node47.html">3.7 Multiphysics problems</A>
 <B> Up:</B> <A
- HREF="node30.html">Fundamentals of linear elastic</A>
+ HREF="node31.html">3. Fundamentals of linear</A>
 <B> Previous:</B> <A
- HREF="node45.html">Time-dependent deformation: Visco-elasticity</A>
- &nbsp; <B>  <A ID="tex2html550"
+ HREF="node45.html">3.5 Permanent deformation: Elasto-plasticity</A>
+ &nbsp; <B>  <A ID="tex2html554"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00470000000000000000">
-Multiphysics problems</A>
+<H1><A ID="SECTION00460000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Time-dependent deformation: Visco-elasticity</A>
 </H1>
 
 <P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+So far, we have assumed that rock strain-stress response is independent of loading rate, however, this is not true.
+The stiffness of the rock will not be the same if loaded in a time frame of thousands of years (geological time), tens of years (reservoir production time), or during a few minutes (drilling and laboratory time).
+Rocks tend to be softer and more ductile as the loading time frame increases.
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html551"
-  HREF="node47.html">Poro-elasticity</A>
-<LI><A ID="tex2html552"
-  HREF="node48.html">Thermo-elasticity</A>
-</UL>
-<!--End of Table of Child-Links-->
-<BR><HR>
+<P>
+
+<DIV class="CENTER"><A ID="fig:StrainrateStiffness"></A><A ID="2475"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.20:</STRONG>
+Strain-rate dependent stiffness. [Put your own data] </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15199" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img386.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/5B-18.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Another expression of visco-elasticity is time-dependent deformation usually known as creep.
+Whenever a change of stress is applied and set constant, deformations may continue with time.
+An example of this type of response is when drilling through salt rocks. 
+Stresses intensify around the wellbore after the hole is bored. 
+The wellbore will deform if left uncased and stick to the drilling string.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:Creep"></A><A ID="2477"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.21:</STRONG>
+Time-dependent deformation: Creep [Put your own data]</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15204" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img387.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/5B-16.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+One other expression of visco-elasticity is time-dependent stress change or stress relaxation.
+Whenever a change of strain is applied and set constant, stresses may relax with time.
+Unconsolidated sands may relax horizontal stresses with time when a tectonic stress is applied. 
+Therefore, neglecting visco-elasticity may result in overestimations of horizontal stresses in unconsolidated sands with a purely elastic model.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:StressRelax"></A><A ID="2479"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.22:</STRONG>
+Time-dependent deformation: stress relaxation. [Add your own data]</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15209" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img388.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/5B-17.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html553"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node47.html">3.7 Multiphysics problems</A>
+<B> Up:</B> <A
+ HREF="node31.html">3. Fundamentals of linear</A>
+<B> Previous:</B> <A
+ HREF="node45.html">3.5 Permanent deformation: Elasto-plasticity</A>
+ &nbsp; <B>  <A ID="tex2html554"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
 
 </BODY>
 </HTML>

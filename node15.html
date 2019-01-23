@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Non-hydrostatic pore pressure</TITLE>
-<META NAME="description" CONTENT="Non-hydrostatic pore pressure">
+<TITLE>2.1.2.3 General total vertical stress calculation</TITLE>
+<META NAME="description" CONTENT="2.1.2.3 General total vertical stress calculation">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,8 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
-<LINK REL="next" HREF="node19.html">
-<LINK REL="previous" HREF="node9.html">
+<LINK REL="previous" HREF="node14.html">
 <LINK REL="next" HREF="node16.html">
 </HEAD>
 
@@ -27,128 +26,144 @@
  HREF="node16.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node8.html">
+ HREF="node12.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node14.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html444"
+<A ID="tex2html448"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node16.html">Mechanisms of overpressure</A>
+ HREF="node16.html">2.2 Non-hydrostatic pore pressure</A>
 <B> Up:</B> <A
- HREF="node8.html">Subsurface Stresses and Pore</A>
+ HREF="node12.html">2.1.2 Rock vertical stress</A>
 <B> Previous:</B> <A
- HREF="node14.html">General total vertical stress</A>
- &nbsp; <B>  <A ID="tex2html445"
+ HREF="node14.html">2.1.2.2 Offshore total vertical</A>
+ &nbsp; <B>  <A ID="tex2html449"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00320000000000000000">
-Non-hydrostatic pore pressure</A>
-</H1>
+<H3><A ID="SECTION00312300000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> General total vertical stress calculation</A>
+</H3>
 
 <P>
-Pore pressure is not hydrostatic everywhere.
-In fact, many times pore pressure is an unknown!
-In a system of &ldquo;connected pores&rdquo; under hydrostatic equilibrium (water does not move), pore pressure increases hydrostatically.
-Variations of pore pressure are usually located adjacent to low permeability barriers (e.g., shale formations) that do not allow pore pressure to achieve hydrostatic equilibrium fast enough compared to the rate of sedimentation.
-Hence, pore pressure gets locked-in.
-In the example in Figure <A HREF="#fig:lec2-9">2.9</A>, pore pressure is hydrostatic until <!-- MATH
- $z \sim 8,500$
+In the general case <!-- MATH
+ $\rho_{bulk}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img135.svg"
- ALT="$z \sim 8,500$"></SPAN> ft. 
-Overpressure develops from <!-- MATH
- $z \sim 8,500$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img135.svg"
- ALT="$z \sim 8,500$"></SPAN> ft to <!-- MATH
- $z \sim 11,000$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img136.svg"
- ALT="$z \sim 11,000$"></SPAN> ft (likely due to a low permeability mudrock). 
-Pore pressure below <!-- MATH
- $z \sim 11,000$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img136.svg"
- ALT="$z \sim 11,000$"></SPAN> ft is quite different from hydrostatic!
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img66.svg"
+ ALT="$\rho_{bulk}$"></SPAN> varies with depth, for example rock lithology will vary with depth.
+Rocks usually have lower porosity as depth increases.
+Brine mass density also changes with depth.
+In general, vertical stress is calculated from integration of the equation 
 
 <P>
-
-<DIV class="CENTER"><A ID="fig:lec2-9"></A><A ID="354"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 2.9:</STRONG>
-Overpressure example in the Monte Cristo field</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14224" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img137.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/2-9.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-A convenient parameter to relate pore pressure and vertical stress is the dimensionless overpressure parameter <SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img138.svg"
- ALT="$\lambda_p$"></SPAN>.
 <P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
+<DIV CLASS="mathdisplay"><A ID="eq:VertStressGral"></A><!-- MATH
  \begin{equation}
-\lambda_p(z) = \frac{P_p(z)}{S_V(z)}
+S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.69ex; vertical-align: -2.28ex; " SRC="img139.svg"
- ALT="$\displaystyle \lambda_p(z) = \frac{P_p(z)}{S_V(z)}$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.52ex; vertical-align: -2.21ex; " SRC="img129.svg"
+ ALT="$\displaystyle S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">13</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-In stationary conditions <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img89.svg"
- ALT="$P_p$"></SPAN> cannot be larger than <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img10.svg"
- ALT="$S_V$"></SPAN>, hence, <!-- MATH
- $\lambda_p \leq 1$
+where <!-- MATH
+ $\rho_{bulk}(z)$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img140.svg"
- ALT="$\lambda_p \leq 1$"></SPAN>.
-In onshore conditions <!-- MATH
- $\lambda_p \sim 0.44$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img141.svg"
- ALT="$\lambda_p \sim 0.44$"></SPAN> means hydrostatic pore pressure (<!-- MATH
- $\lambda_p \neq 0.44$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img142.svg"
- ALT="$\lambda_p \neq 0.44$"></SPAN> in hydrostatic conditions offshore, why??).
-Reservoir overpressure is good for hydrocarbon recovery (more energy to flow to the wellbore), however, it may cause geomechanical challenges for drilling (kicks). 
-Parameter <!-- MATH
- $\lambda_p \rightarrow 1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img143.svg"
- ALT="$\lambda_p \rightarrow 1$"></SPAN> means little effective stress. 
-We will see later that rocks have effective stress-dependent strength. 
-Hence, low effective stress leads to weak rocks, especially if they are not well cemented.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img130.svg"
+ ALT="$\rho_{bulk}(z)$"></SPAN> is obtained from (gamma ray) density well logs and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img62.svg"
+ ALT="$z$"></SPAN> is obtained from the true vertical depth (TVD) calculated from the well measured depth (MD) and deviation survey (Figure <A HREF="#fig:ch2-Svgeneralcase">2.7</A>).
+Accurate calculations should account for the difference between the rotary table or kelly bushing (from where measured depth is often obtained) and the actual ground level. 
+This difference can be significant in offshore cases.
+In deviated wellbores, you should also take into account wellbore deviation and compute TVD from MD and well trajectory. 
 
 <P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html446"
-  HREF="node16.html">Mechanisms of overpressure</A>
-<LI><A ID="tex2html447"
-  HREF="node17.html">Disequilibrium compaction and excess pore pressure</A>
-<LI><A ID="tex2html448"
-  HREF="node18.html">Reservoir depletion</A>
-</UL>
-<!--End of Table of Child-Links-->
+<DIV class="CENTER"><A ID="fig:ch2-Svgeneralcase"></A><A ID="342"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 2.7:</STRONG>
+General case</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14227" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./vertstress-devwellbore.png"
+ ALT="Image vertstress-devwellbore"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Well logs contain &ldquo;discrete&rdquo; data, hence you have to do numerical integration
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:VertStressDiscrete"></A><!-- MATH
+ \begin{equation}
+S_v(z_i) = \sum\limits_1^i \rho_{bulk}(z_i) g \Delta z_i
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 7.43ex; vertical-align: -3.10ex; " SRC="img131.svg"
+ ALT="$\displaystyle S_v(z_i) = \sum\limits_1^i \rho_{bulk}(z_i) g \Delta z_i$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+where <SPAN CLASS="MATH"><IMG STYLE="height: 1.74ex; vertical-align: -0.11ex; " SRC="img132.svg"
+ ALT="$i$"></SPAN> is the i-th interval at depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img133.svg"
+ ALT="$z_i$"></SPAN>. You just add up the weight of all layers above the point under consideration. 	
+
+<P>
+<SPAN  CLASS="textit">EXAMPLE 2.4</SPAN>: Go to <kbd><A ID="tex2html21"
+  HREF="https://github.com/dnicolasespinoza/GeomechanicsJupyter">https://github.com/dnicolasespinoza/GeomechanicsJupyter</A></kbd> and download the files <SPAN  CLASS="texttt">1_14-1_Composite.las</SPAN> and <SPAN  CLASS="texttt">1_14-1_deviation_mod.dev</SPAN>. 
+The first one is a well logging file (.LAS).
+You will find here measured depth (DEPTH - Track 1) and  bulk mass density (RHOB - Track 8).
+Track 3 also shows bulk density correction (DRHO).
+Add RHOB to DRHO to obtain the corrected bulk mass density.
+The second file has the deviation survey of the well. 
+Use this file to calculate true vertical depth subsea (TVDSS) as a function of measured depth (MD) in the well logging file.
+You may assume an average bulk mass density of 2 g/cc between the seafloor and the beginning of the density data.
+Apply Equation <A HREF="#eq:VertStressDiscrete">2.12</A>. 
+Summations with discrete data sets can be easily done through a <SPAN  CLASS="texttt">for</SPAN> loop.
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+See Figure <A HREF="#fig:ch2-SvNSexample">2.8</A>. 
+You may use the library <kbd><A ID="tex2html22"
+  HREF="https://pypi.org/project/lasio/">https://pypi.org/project/lasio/</A></kbd> to open LAS files with python or write your own code to read the text files .LAS and .DEV. <!-- MATH
+ $\: \: \blacksquare$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img128.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:ch2-SvNSexample"></A><A ID="360"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 2.8:</STRONG>
+Example of calculation of vertical stress for a general case. This is an offshore example in the North Sea with seafloor at 104 m. The calculation assumes an average bulk mass density of 2 g/cc between the seafloor and&nbsp;1000 m TVDSS (True Vertical Depth SubSea).</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14239" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img134.svg"
+ ALT="\includegraphics[scale=0.85]{.././Figures/split/2-VertStress_TVDSS.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
 
 <DIV CLASS="navigation"><HR>
 <!--Navigation Panel-->
@@ -156,22 +171,22 @@ Hence, low effective stress leads to weak rocks, especially if they are not well
  HREF="node16.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node8.html">
+ HREF="node12.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node14.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html444"
+<A ID="tex2html448"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node16.html">Mechanisms of overpressure</A>
+ HREF="node16.html">2.2 Non-hydrostatic pore pressure</A>
 <B> Up:</B> <A
- HREF="node8.html">Subsurface Stresses and Pore</A>
+ HREF="node12.html">2.1.2 Rock vertical stress</A>
 <B> Previous:</B> <A
- HREF="node14.html">General total vertical stress</A>
- &nbsp; <B>  <A ID="tex2html445"
+ HREF="node14.html">2.1.2.2 Offshore total vertical</A>
+ &nbsp; <B>  <A ID="tex2html449"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

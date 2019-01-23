@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Breakout measurement</TITLE>
-<META NAME="description" CONTENT="Breakout measurement">
+<TITLE>6.3.1 Breakout angle determination</TITLE>
+<META NAME="description" CONTENT="6.3.1 Breakout angle determination">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -27,71 +27,259 @@
  HREF="node99.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node96.html">
+ HREF="node97.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node97.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html744"
+<A ID="tex2html748"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node99.html">Maximum horizontal stress determination</A>
+ HREF="node99.html">6.3.2 Breakout measurement</A>
 <B> Up:</B> <A
- HREF="node96.html">Shear failure and wellbore</A>
+ HREF="node97.html">6.3 Shear failure and</A>
 <B> Previous:</B> <A
- HREF="node97.html">Breakout angle determination</A>
- &nbsp; <B>  <A ID="tex2html745"
+ HREF="node97.html">6.3 Shear failure and</A>
+ &nbsp; <B>  <A ID="tex2html749"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION00732000000000000000">
-Breakout measurement</A>
+<H2><A ID="SECTION00731000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Breakout angle determination</A>
 </H2>
 
 <P>
-Breakouts and tensile induced fractures (Section <A HREF="node100.html#sec:TensileFracs">6.4</A>) can be identified and measured with borehole imaging tools (Fig. <A HREF="#fig:BoreholeImaging">6.12</A>). 
-Breakouts appear as wide bands of longer travel time or higher electrical resistivity in borehole images. 
-Tensile fractures appear as narrow bands of longer travel time or higher electrical resistivity.
-Borehole images also permit identifying the direction of the stresses that caused such breakouts or tensile induced fractures. 
-For example, the azimuth of breakouts coincides with the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img183.svg"
- ALT="$S_{hmin}$"></SPAN> in vertical wells.
+For a given set of problem variables (far field stress, pore pressure, and mud pressure), we can calculate the required strength of the rock to have a stable wellbore.
+Let us consider the example of Fig. <A HREF="#fig:RequiredUCS">6.10</A> that shows the required <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img448.svg"
+ ALT="$UCS$"></SPAN> to resist shear failure assuming the friction angle is <!-- MATH
+ $\varphi = 30^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img547.svg"
+ ALT="$\varphi = 30^{\circ}$"></SPAN>.
+For example, if the rock had a <!-- MATH
+ $UCS \sim 25$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img710.svg"
+ ALT="$UCS \sim 25$"></SPAN> MPa, one may expect a <!-- MATH
+ $\sim 90^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img711.svg"
+ ALT="$\sim 90^{\circ}$"></SPAN> wide breakout.  
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:BoreholeImaging"></A><A ID="6746"></A>
+<DIV class="CENTER"><A ID="fig:RequiredUCS"></A><A ID="6343"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.12:</STRONG>
-Examples of wellbore breakouts and tensile fractures in borehole images. Learn more about wellbore imaging tools here: <kbd><A ID="tex2html139"
-  HREF="http://petrowiki.org/Borehole_imaging">http://petrowiki.org/Borehole_imaging</A></kbd>.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par17055" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.10:</STRONG>
+Example of required UCS with Mohr-Coulomb analysis to verify likelihood of wellbore breakouts.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17034" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img727.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/7-8.pdf}"></DIV></TD></TR>
+ SRC="img712.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-6.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-Breakouts can also be detected from caliper measurements.
-Caliper tools permit measuring directly the size and shape of the borehole (Fig. <A HREF="#fig:WellboreCaliper">6.13</A>). 
-Thus, the caliper log is extremely useful to measure breakouts and extended breakouts (washouts). For the same mud density, the caliper log reflects changes of rock properties along the well and correlate with other well logging measurements.
+Alternatively, you could solve the previous problem analytically.
+The procedure consists in setting shear failure at the point in the wellbore at an angle <!-- MATH
+ $(w_{BO}/2)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img713.svg"
+ ALT="$(w_{BO}/2)$"></SPAN> from <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img714.svg"
+ ALT="$\pi/2$"></SPAN> or <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img666.svg"
+ ALT="$3\pi/2$"></SPAN>. 
+Hence, at a point on the wellbore wall at <!-- MATH
+ $\theta_B = \pi/2 - w_{BO}/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img715.svg"
+ ALT="$\theta_B = \pi/2 - w_{BO}/2$"></SPAN>:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{rcl}
+		\sigma_{\theta \theta} & = &
+			-(P_W - P_p) + (\sigma_{Hmax} + \sigma_{hmin}) 
+			- 2(\sigma_{Hmax} - \sigma_{hmin}) 
+			                          \cos (2 \theta_B)  \\
+		\sigma_{rr} & = &  +(P_W - P_p)  
+	\end{array}
+\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img716.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{rcl}
+\sigma_{\theta \theta} &amp; = &amp;
+...
+...\theta_B) \\
+\sigma_{rr} &amp; = &amp; +(P_W - P_p)
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:WellboreCaliper"></A><A ID="6410"></A>
+<DIV class="CENTER"><A ID="fig:BreakoutAngle"></A><A ID="6361"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.13:</STRONG>
-Example of caliper measurements to identify wellbore breakouts.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par17060" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.11:</STRONG>
+Determination of breakout angle with Mohr-Coulomb failure criterion. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17049" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img728.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/7-9.pdf}"></DIV></TD></TR>
+ SRC="img717.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-10.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
+<P>
+Say hoop stress reaches the maximum principal stress anisotropy allowed by the Mohr-Coulomb shear failure criterion (<!-- MATH
+ $\sigma_1 = UCS + q \: \sigma_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img718.svg"
+ ALT="$\sigma_1 = UCS + q \: \sigma_3$"></SPAN>) where the breakout begins (rock about to fail - Fig. <A HREF="#fig:BreakoutAngle">6.11</A>), then
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left[ -(P_W - P_p) + (\sigma_{Hmax} + \sigma_{hmin})
+	- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (2 \theta_B) \right]
+	= UCS + q (P_W - P_p)  
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img719.svg"
+ ALT="$\displaystyle \left[ -(P_W - P_p) + (\sigma_{Hmax} + \sigma_{hmin})
+- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (2 \theta_B) \right]
+= UCS + q (P_W - P_p)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+which after some algebraic manipulations results in:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:BreakoutAngle"></A><!-- MATH
+ \begin{equation}
+2 \theta_B = \arccos \left[ \frac{ \sigma_{Hmax} + \sigma_{hmin} - UCS - (1+q)(P_W - P_p)}{2(\sigma_{Hmax} - \sigma_{hmin})} \right]
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img720.svg"
+ ALT="$\displaystyle 2 \theta_B = \arccos \left[ \frac{ \sigma_{Hmax} + \sigma_{hmin} - UCS - (1+q)(P_W - P_p)}{2(\sigma_{Hmax} - \sigma_{hmin})} \right]$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The breakout angle is 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+w_{BO} = \pi - 2 \theta_B
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img721.svg"
+ ALT="$\displaystyle w_{BO} = \pi - 2 \theta_B$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">13</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The procedure assumes the rock in the breakout (likely already gone) is still resisting hoop stresses and therefore it is not accurate for large breakouts (<!-- MATH
+ $\sim w_{BO} > 60^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img722.svg"
+ ALT="$\sim w_{BO} &gt; 60^{\circ}$"></SPAN>).
+
+<P>
+You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. <A HREF="#eq:BreakoutAngle">6.12</A>
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+P_{WBO} = P_p + \frac{ (\sigma_{Hmax} + \sigma_{hmin})
+	- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (\pi - w_{BO}) - UCS}{1+q} 
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.55ex; vertical-align: -2.15ex; " SRC="img723.svg"
+ ALT="$\displaystyle P_{WBO} = P_p + \frac{ (\sigma_{Hmax} + \sigma_{hmin})
+- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (\pi - w_{BO}) - UCS}{1+q}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">14</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">PROBLEM 6.2:</SPAN> Calculate the breakout angle in a vertical wellbore for a mud weight of 10 ppg in a site onshore at 7000 ft of depth where  <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img29.svg"
+ ALT="$S_{hmin} =$"></SPAN> 4300 psi and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img28.svg"
+ ALT="$S_{Hmax} =$"></SPAN> 6300 psi and with hydrostatic pore pressure. 
+The rock mechanical properties are <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img694.svg"
+ ALT="$UCS =$"></SPAN> 3500 psi, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img695.svg"
+ ALT="$\mu_i=$"></SPAN> 0.6, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img696.svg"
+ ALT="$T_s$"></SPAN> = 800 psi. 
+
+<P>
+SOLUTION <BR>
+The problem variables are the same of problem 6.1.
+For a 10 ppg mud, the resulting mud pressure is
+<P><!-- MATH
+ \begin{displaymath}
+10 \text{ ppg} \times
+\frac{0.44 \text{ psi/ft}} {8.3 \text{ ppg}} \times
+7000 \text{ psi} = 3710 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img724.svg"
+ ALT="$\displaystyle 10$">&nbsp; &nbsp; ppg<IMG STYLE="height: 5.55ex; vertical-align: -2.15ex; " SRC="img725.svg"
+ ALT="$\displaystyle \times
+\frac{0.44 \text{ psi/ft}} {8.3 \text{ ppg}} \times
+7000 \text{ psi} = 3710 \text{ psi}
+$">
+</DIV><P></P>  
+
+<P>
+Hence, the expected wellbore breakout angle is
+<P><!-- MATH
+ \begin{displaymath}
+w_{BO} = 180^{\circ} - \arccos \left[ \frac{ 3220 \text{ psi} + 1220 \text{ psi} - 3500 \text{ psi} - (1+3.12)(3710 \text{ psi} - 3080 \text{ psi})}{2(3220 \text{ psi} - 1220 \text{ psi})} \right] = 66 ^{\circ} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img726.svg"
+ ALT="$\displaystyle w_{BO} = 180^{\circ} - \arccos \left[ \frac{ 3220 \text{ psi} + 1...
+...3220 \text{ psi} - 1220 \text{ psi})} \right] = 66 ^{\circ} \: \: \blacksquare
+$">
+</DIV><P></P>
+
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -100,22 +288,22 @@ Example of caliper measurements to identify wellbore breakouts.</CAPTION>
  HREF="node99.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node96.html">
+ HREF="node97.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node97.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html744"
+<A ID="tex2html748"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node99.html">Maximum horizontal stress determination</A>
+ HREF="node99.html">6.3.2 Breakout measurement</A>
 <B> Up:</B> <A
- HREF="node96.html">Shear failure and wellbore</A>
+ HREF="node97.html">6.3 Shear failure and</A>
 <B> Previous:</B> <A
- HREF="node97.html">Breakout angle determination</A>
- &nbsp; <B>  <A ID="tex2html745"
+ HREF="node97.html">6.3 Shear failure and</A>
+ &nbsp; <B>  <A ID="tex2html749"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

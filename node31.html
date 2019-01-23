@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Stress tensor</TITLE>
-<META NAME="description" CONTENT="Stress tensor">
+<TITLE>3. Fundamentals of linear elastic continuum mechanics</TITLE>
+<META NAME="description" CONTENT="3. Fundamentals of linear elastic continuum mechanics">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,8 +15,8 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
-<LINK REL="next" HREF="node35.html">
-<LINK REL="previous" HREF="node30.html">
+<LINK REL="next" HREF="node52.html">
+<LINK REL="previous" HREF="node9.html">
 <LINK REL="next" HREF="node32.html">
 </HEAD>
 
@@ -27,186 +27,89 @@
  HREF="node32.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node30.html">
+ HREF="IPG.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node30.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html510"
+<A ID="tex2html494"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node32.html">Cauchy's equations of stress</A>
+ HREF="node32.html">3.1 Stress tensor</A>
 <B> Up:</B> <A
- HREF="node30.html">Fundamentals of linear elastic</A>
+ HREF="IPG.html">Introduction to Energy Geomechanics</A>
 <B> Previous:</B> <A
- HREF="node30.html">Fundamentals of linear elastic</A>
- &nbsp; <B>  <A ID="tex2html511"
+ HREF="node30.html">2.5 Further reading and</A>
+ &nbsp; <B>  <A ID="tex2html495"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00410000000000000000">
-Stress tensor</A>
+<H1><A ID="SECTION00400000000000000000">
+<SPAN CLASS="arabic">3</SPAN>. Fundamentals of linear elastic continuum mechanics</A>
 </H1>
 
-<P>
-Consider a 3D space with a given right-handed orthogonal coordinate system <!-- MATH
- $\uline{e}_1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img207.svg"
- ALT="$\uline{e}_1$"></SPAN>, <!-- MATH
- $\uline{e}_2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img208.svg"
- ALT="$\uline{e}_2$"></SPAN>, <!-- MATH
- $\uline{e}_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img209.svg"
- ALT="$\uline{e}_3$"></SPAN> in directions 1, 2 and 3 (Figure <A HREF="#fig:lec4-3">3.1</A>).
-In a right-handed coordinate system, the first element of the base <!-- MATH
- $\uline{e}_1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img207.svg"
- ALT="$\uline{e}_1$"></SPAN> is your index finger, the second element of the base <!-- MATH
- $\uline{e}_2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img208.svg"
- ALT="$\uline{e}_2$"></SPAN> is your middle finger, and the third element of the base <!-- MATH
- $\uline{e}_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img209.svg"
- ALT="$\uline{e}_3$"></SPAN> is your thumb (all in your right hand).   
-
-<P>
-The number that represents the value of a scalar (such as temperature <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img210.svg"
- ALT="$T$"></SPAN> or pore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img89.svg"
- ALT="$P_p$"></SPAN>) at a given point <!-- MATH
- $(x_1,x_2,x_3)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img211.svg"
- ALT="$(x_1,x_2,x_3)$"></SPAN> is independent of the coordinate system orientation and origin.
-However, the numbers that represent the value of a vector (such as velocity <SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.57ex; " SRC="img212.svg"
- ALT="$\uline{v}$"></SPAN> or force <SPAN CLASS="MATH"><IMG STYLE="height: 2.26ex; vertical-align: -0.57ex; " SRC="img46.svg"
- ALT="$\uline{F}$"></SPAN>) or a tensor depend on the coordinate system.
-Read the values <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img3.svg"
- ALT="$S_{ij}$"></SPAN> as the stress on face perpendicular to base vector <!-- MATH
- $\uline{e}_i$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img4.svg"
- ALT="$\uline {e}_i$"></SPAN> in the direction of base vector <!-- MATH
- $\uline{e}_j$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.11ex; vertical-align: -1.01ex; " SRC="img5.svg"
- ALT="$\uline {e}_j$"></SPAN>.
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img3.svg"
- ALT="$S_{ij}$"></SPAN> is positive if after a displacement <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img213.svg"
- ALT="$dx_i$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img3.svg"
- ALT="$S_{ij}$"></SPAN> points in opposite direction to <!-- MATH
- $\uline{e}_j$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.11ex; vertical-align: -1.01ex; " SRC="img5.svg"
- ALT="$\uline {e}_j$"></SPAN> (Figure <A HREF="#fig:lec4-3">3.1</A>).
-
-<P>
-Off-diagonal stresses <!-- MATH
- $S_{ij}=S_{ji}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img214.svg"
- ALT="$S_{ij}=S_{ji}$"></SPAN> (<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img215.svg"
- ALT="$i \neq j$"></SPAN>) because of angular momentum equilibrium (the element does not spin around any axis). 
-Hence, the stress tensor is symmetric with respect to the diagonal (top-left to bottom-right).	 
-The stress tensor is written as a matrix with normal stresses in the diagonal and shear stresses in the off-diagonal places.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:lec4-3"></A><A ID="2394"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.1:</STRONG>
-Graphical and mathematical representation of the  stress tensor. Read <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img3.svg"
- ALT="$S_{ij}$"></SPAN> as the stress on face perpendicular to <!-- MATH
- $\uline{e}_i$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img4.svg"
- ALT="$\uline {e}_i$"></SPAN> in the direction <!-- MATH
- $\uline{e}_j$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.11ex; vertical-align: -1.01ex; " SRC="img5.svg"
- ALT="$\uline {e}_j$"></SPAN>. <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img3.svg"
- ALT="$S_{ij}$"></SPAN> is positive if after a positive displacement <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img3.svg"
- ALT="$S_{ij}$"></SPAN> points in direction opposite to the directions of the base.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14662" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img216.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/4-3.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-Since the stress tensor is symmetric and is composed by all real numbers, there exist 3 real-valued eigenvalues that we  call principal stresses and denote <!-- MATH
- $S_1 \geq S_2 \geq S_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img217.svg"
- ALT="$S_1 \geq S_2 \geq S_3$"></SPAN>. 
-Each principal stress (eigenvalue) is associated with a principal direction (eigenvector).
-The stress tensor is written with principal stresses in the diagonal and zeros in the off-diagonal when we write the stress tensor in a coordinate system aligned with directions of the principal stresses.
-Usually, the principal stresses are ordered from top to bottom starting with <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img1.svg"
- ALT="$S_1$"></SPAN> at the top.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:lec4-4"></A><A ID="1313"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.2:</STRONG>
-Principal stresses and directions. Every tensor with non-zero off-diagonal terms can be simplified to a principal stress tensor with zero off-diagonal terms at the orientation that coincides with the principal stresses directions.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14691" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img218.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/4-4.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
 <P>
 <BR><HR>
 <!--Table of Child-Links-->
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
+<LI><A ID="tex2html496"
+  HREF="node32.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stress tensor</A>
+<UL>
+<LI><A ID="tex2html497"
+  HREF="node33.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Cauchy's equations of stress equilibrium</A>
+<LI><A ID="tex2html498"
+  HREF="node34.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Application of Cauchy's equations for total vertical stress calculation</A>
+<LI><A ID="tex2html499"
+  HREF="node35.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN> Continuum mechanics solution of an arbitrary problem</A>
+</UL>
+<BR>
+<LI><A ID="tex2html500"
+  HREF="node36.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kinematic equations: displacements and strains</A>
+<LI><A ID="tex2html501"
+  HREF="node37.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Constitutive equation: stress-strain relationships</A>
+<UL>
+<LI><A ID="tex2html502"
+  HREF="node38.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Linear isotropic elasticity</A>
+<LI><A ID="tex2html503"
+  HREF="node39.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> The isotropic solid in Voigt notation</A>
+<LI><A ID="tex2html504"
+  HREF="node40.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Effective stress and elasticity</A>
+<LI><A ID="tex2html505"
+  HREF="node41.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Calculation of horizontal stress according to linear elasticity</A>
+<LI><A ID="tex2html506"
+  HREF="node42.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Calculation of reservoir compressibility with linear elasticity</A>
+<LI><A ID="tex2html507"
+  HREF="node43.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Generalized linear elasticity problem</A>
+</UL>
+<BR>
+<LI><A ID="tex2html508"
+  HREF="node44.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Elastic anisotropy</A>
+<LI><A ID="tex2html509"
+  HREF="node45.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Permanent deformation: Elasto-plasticity</A>
+<LI><A ID="tex2html510"
+  HREF="node46.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Time-dependent deformation: Visco-elasticity</A>
+<LI><A ID="tex2html511"
+  HREF="node47.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN> Multiphysics problems</A>
+<UL>
 <LI><A ID="tex2html512"
-  HREF="node32.html">Cauchy's equations of stress equilibrium</A>
+  HREF="node48.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">1</SPAN> Poro-elasticity</A>
 <LI><A ID="tex2html513"
-  HREF="node33.html">Application of Cauchy's equations for total vertical stress calculation</A>
+  HREF="node49.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">2</SPAN> Thermo-elasticity</A>
+</UL>
+<BR>
 <LI><A ID="tex2html514"
-  HREF="node34.html">Continuum mechanics solution of an arbitrary problem</A>
+  HREF="node50.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">8</SPAN> Problems</A>
+<LI><A ID="tex2html515"
+  HREF="node51.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">9</SPAN> Further reading and references</A>
 </UL>
 <!--End of Table of Child-Links-->
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node32.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node30.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node30.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html510"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node32.html">Cauchy's equations of stress</A>
-<B> Up:</B> <A
- HREF="node30.html">Fundamentals of linear elastic</A>
-<B> Previous:</B> <A
- HREF="node30.html">Fundamentals of linear elastic</A>
- &nbsp; <B>  <A ID="tex2html511"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
+<BR><HR>
 
 </BODY>
 </HTML>

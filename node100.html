@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Tensile fractures and wellbore breakdown</TITLE>
-<META NAME="description" CONTENT="Tensile fractures and wellbore breakdown">
+<TITLE>6.3.3 Maximum horizontal stress determination from breakout angle</TITLE>
+<META NAME="description" CONTENT="6.3.3 Maximum horizontal stress determination from breakout angle">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,8 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
-<LINK REL="next" HREF="node102.html">
-<LINK REL="previous" HREF="node96.html">
+<LINK REL="previous" HREF="node99.html">
 <LINK REL="next" HREF="node101.html">
 </HEAD>
 
@@ -27,268 +26,61 @@
  HREF="node101.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node90.html">
+ HREF="node97.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node99.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html748"
+<A ID="tex2html752"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node101.html">Identification of tensile fractures</A>
+ HREF="node101.html">6.4 Tensile fractures and</A>
 <B> Up:</B> <A
- HREF="node90.html">Wellbore stability</A>
+ HREF="node97.html">6.3 Shear failure and</A>
 <B> Previous:</B> <A
- HREF="node99.html">Maximum horizontal stress determination</A>
- &nbsp; <B>  <A ID="tex2html749"
+ HREF="node99.html">6.3.2 Breakout measurement</A>
+ &nbsp; <B>  <A ID="tex2html753"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00740000000000000000"></A>
-<A ID="sec:TensileFracs"></A>
-<BR>
-Tensile fractures and wellbore breakdown
-</H1>
+<H2><A ID="SECTION00733000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Maximum horizontal stress determination from breakout angle</A>
+</H2>
 
 <P>
-Wellbore tensile (or open mode) fractures occur when the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img22.svg"
- ALT="$\sigma _3$"></SPAN> on the wellbore wall goes below the limit for tensile stress: the tensile strength. 
-Unconsolidated sands have no tensile strength. 
-Hence, an open-mode fracture occurs as soon as effective stress goes to zero.  
-The minimum hoop stress is located on the wall of the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img730.svg"
- ALT="$(r=a)$"></SPAN> and at <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img663.svg"
- ALT="$\theta = 0$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img668.svg"
- ALT="$\pi$"></SPAN> (Fig. <A HREF="#fig:TensFracsSchematic">6.14</A>):
+Breakouts are a consequence of stress anisotropy in the plane perpendicular to the wellbore. 
+Hence, knowing the size and orientation of breakouts permits measuring and calculating the direction and magnitudes of stresses that caused such breakouts. 
+This technique is very useful for measuring orientation of horizontal stresses.
+In addition, if we know the rock properties <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img448.svg"
+ ALT="$UCS$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img457.svg"
+ ALT="$q$"></SPAN>, then 
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-\sigma_{\theta \theta}  =
-			-(P_W - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin} 
-			+ \sigma^{\Delta T} 
+S_{Hmax} = P_p + \frac{UCS + (1+q)(P_W - P_p)
+		- \sigma_{hmin} \left[ 1 + 2 \cos (\pi - w_{BO}) \right]}
+		{1 - 2 \cos (\pi - w_{BO})}
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img731.svg"
- ALT="$\displaystyle \sigma_{\theta \theta} =
--(P_W - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin}
-+ \sigma^{\Delta T}$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.69ex; vertical-align: -2.28ex; " SRC="img729.svg"
+ ALT="$\displaystyle S_{Hmax} = P_p + \frac{UCS + (1+q)(P_W - P_p)
+- \sigma_{hmin} \left[ 1 + 2 \cos (\pi - w_{BO}) \right]}
+{1 - 2 \cos (\pi - w_{BO})}$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">16</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">15</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
-
-<P>
-Notice that we have added a temperature term <!-- MATH
- $\sigma^{\Delta T}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.21ex; vertical-align: -0.11ex; " SRC="img732.svg"
- ALT="$\sigma^{\Delta T}$"></SPAN> that takes into account wellbore cooling, an important phenomenon that contributes to tensile fractures in wellbores.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:TensFracsSchematic"></A><A ID="6432"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.14:</STRONG>
-Occurrence of tensile fractures around a vertical wellbore.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par17085" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img733.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/7-13.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-Matching the lowest value of hoop stress <!-- MATH
- $\sigma_{\theta \theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img19.svg"
- ALT="$\sigma _{\theta \theta }$"></SPAN> with tensile strength <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img696.svg"
- ALT="$T_s$"></SPAN> permits finding the mud pressure <!-- MATH
- $P_W = P_{b}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img734.svg"
- ALT="$P_W = P_{b}$"></SPAN> that would produce a tensile (or open mode) fracture:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:Pb"></A><!-- MATH
- \begin{equation}
--T_s  =
-			-(P_b - P_p)  -\sigma_{Hmax} + 3 \sigma_{hmin} 
-			+ \sigma^{\Delta T} 
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img735.svg"
- ALT="$\displaystyle -T_s =
--(P_b - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin}
-+ \sigma^{\Delta T}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">17</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and therefore
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-P_b = P_p - \sigma_{Hmax} + 3 \sigma_{hmin} +  T_s
-			+ \sigma^{\Delta T} 
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img736.svg"
- ALT="$\displaystyle P_b = P_p - \sigma_{Hmax} + 3 \sigma_{hmin} + T_s
-+ \sigma^{\Delta T}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">18</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-The subscript <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img737.svg"
- ALT="$b$"></SPAN> of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img738.svg"
- ALT="$P_b$"></SPAN> corresponds to &ldquo;breakdown&rdquo; pressure because in some cases when <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img739.svg"
- ALT="$P_b &gt; S_3$"></SPAN>, a mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img740.svg"
- ALT="$P_W&gt;P_b$"></SPAN> can create a hydraulic fracture that propagates far from the wellbore and causes lost circulation.
-When <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img741.svg"
- ALT="$P_b &lt; S_3$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img740.svg"
- ALT="$P_W&gt;P_b$"></SPAN>, the mud pressure will produce short tensile fractures around the wellbore that do not propagate far from the wellbore.
-
-<P>
-In the equations above we have added the contribution of thermal stresses <!-- MATH
- $\sigma^{\Delta T} = [\alpha_T E/(1-\nu)] \Delta T$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.79ex; vertical-align: -0.69ex; " SRC="img742.svg"
- ALT="$\sigma^{\Delta T} = [\alpha_T E/(1-\nu)] \Delta T$"></SPAN> where <SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img743.svg"
- ALT="$\alpha_T$"></SPAN> is the linear thermal expansion coefficient and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img401.svg"
- ALT="$\Delta T$"></SPAN> is the change in temperature (<!-- MATH
- $\sigma^{\Delta T}<0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.30ex; vertical-align: -0.20ex; " SRC="img744.svg"
- ALT="$\sigma^{\Delta T}&lt;0$"></SPAN> for <!-- MATH
- $\Delta T < 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.20ex; " SRC="img745.svg"
- ALT="$\Delta T &lt; 0$"></SPAN>).
-Wellbores are usually drilled and logged with drilling mud cooler than the formation <!-- MATH
- $T_{mud} < T_{rock}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img746.svg"
- ALT="$T_{mud} &lt; T_{rock}$"></SPAN>. 
-Hence, ignoring thermal stresses is conservative for preventing breakouts but it is not for tensile fractures.
-
-<P>
-Fig. <A HREF="#fig:TensFracsSurface">6.15</A> shows an example of calculation of the local minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_3$"></SPAN> around a wellbore. 
-The locations with the lowest stress align with the direction of the far-field maximum horizontal stress in the plane perpendicular to wellbore axis.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:TensFracsSurface"></A><A ID="6455"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.15:</STRONG>
-Example of calculation of tensile strength required for wellbore stability. The figure shows that a tensile strength of <SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img23.svg"
- ALT="$\sim 3$"></SPAN> MPa is required to avert tensile fractures in this example.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par17126" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img747.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/7-14.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-<SPAN  CLASS="textit">PROBLEM 6.3:</SPAN> Calculate the maximum mud weight (ppg) in a vertical wellbore for avoiding drilling-induced tensile fractures in a site onshore at 7000 ft of depth where  <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img29.svg"
- ALT="$S_{hmin} =$"></SPAN> 4300 psi and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img28.svg"
- ALT="$S_{Hmax} =$"></SPAN> 6300 psi and with hydrostatic pore pressure. 
-The rock mechanical properties are <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img694.svg"
- ALT="$UCS =$"></SPAN> 3500 psi, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img695.svg"
- ALT="$\mu_i=$"></SPAN> 0.6, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img696.svg"
- ALT="$T_s$"></SPAN> = 800 psi. 
-
-<P>
-SOLUTION <BR>
-The problem variables are the same of problem 6.1.
-The breakdown pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img738.svg"
- ALT="$P_b$"></SPAN> in the absence of thermal effects is
-<P><!-- MATH
- \begin{displaymath}
-P_b = 3080 \text{ psi} - 3220 \text{ psi} + 3 \times 1220 \text{ psi} +  800 \text{ psi} = 4320 \text{ psi}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img748.svg"
- ALT="$\displaystyle P_b = 3080$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img749.svg"
- ALT="$\displaystyle - 3220$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img750.svg"
- ALT="$\displaystyle + 3 \times 1220$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img751.svg"
- ALT="$\displaystyle + 800$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img752.svg"
- ALT="$\displaystyle = 4320$">&nbsp; &nbsp; psi
-</DIV><P></P>
-This pressure can be achieved with an equivalent circulation density of 
-<P><!-- MATH
- \begin{displaymath}
-\frac{4320 \text{ psi}} {7000 \text{ ft}} \times
-\frac{8.33 \text{ ppg}} {0.44 \text{ psi/ft}} =
-11.68 \text{ ppg} \: \: \blacksquare
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.49ex; vertical-align: -2.28ex; " SRC="img753.svg"
- ALT="$\displaystyle \frac{4320 \text{ psi}} {7000 \text{ ft}} \times
-\frac{8.33 \text{ ppg}} {0.44 \text{ psi/ft}} =
-11.68 \text{ ppg} \: \: \blacksquare
-$">
-</DIV><P></P>
 
 <P>
 <BR><HR>
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html750"
-  HREF="node101.html">Identification of tensile fractures in wellbores</A>
-</UL>
-<!--End of Table of Child-Links-->
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node101.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node90.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node99.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html748"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node101.html">Identification of tensile fractures</A>
-<B> Up:</B> <A
- HREF="node90.html">Wellbore stability</A>
-<B> Previous:</B> <A
- HREF="node99.html">Maximum horizontal stress determination</A>
- &nbsp; <B>  <A ID="tex2html749"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
 
 </BODY>
 </HTML>

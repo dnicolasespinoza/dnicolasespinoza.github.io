@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Generalized linear elasticity problem</TITLE>
-<META NAME="description" CONTENT="Generalized linear elasticity problem">
+<TITLE>3.3.5 Calculation of reservoir compressibility with linear elasticity</TITLE>
+<META NAME="description" CONTENT="3.3.5 Calculation of reservoir compressibility with linear elasticity">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,6 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
+<LINK REL="next" HREF="node43.html">
 <LINK REL="previous" HREF="node41.html">
 <LINK REL="next" HREF="node43.html">
 </HEAD>
@@ -26,66 +27,203 @@
  HREF="node43.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node36.html">
+ HREF="node37.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node41.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html541"
+<A ID="tex2html545"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node43.html">Elastic anisotropy</A>
+ HREF="node43.html">3.3.6 Generalized linear elasticity</A>
 <B> Up:</B> <A
- HREF="node36.html">Constitutive equation: stress-strain relationships</A>
+ HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
 <B> Previous:</B> <A
- HREF="node41.html">Calculation of reservoir compressibility</A>
- &nbsp; <B>  <A ID="tex2html542"
+ HREF="node41.html">3.3.4 Calculation of horizontal</A>
+ &nbsp; <B>  <A ID="tex2html546"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION00436000000000000000">
-Generalized linear elasticity problem</A>
+<H2><A ID="SECTION00435000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Calculation of reservoir compressibility with linear elasticity</A>
 </H2>
 
 <P>
-The general solution of a linear elasticity problem requires combining the equilibrium, kinematic, and constitutive equations.
-The result is a differential equation with displacements <SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.57ex; " SRC="img375.svg"
- ALT="$\uline{u}$"></SPAN> as the unknown:
+The pore compressibility of the rock <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img360.svg"
+ ALT="$C_{pp}$"></SPAN> is a critical parameter in the fluid flow mass conservation equation.
+It tell us what is the change of pore space volume <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img361.svg"
+ ALT="$V_p$"></SPAN> due to a change in pore pressure:
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-(\lambda + G) \nabla (\nabla \cdot \uline{u}) +
-		G \nabla^2 \uline{u} + \rho \uline{b} = 0
+C_{pp} = \left. \frac{1}{V_p} \frac{\mathrm{d}V_p}{\mathrm{d}P_p} \right|_{S_v,\varepsilon_h}
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.84ex; vertical-align: -0.69ex; " SRC="img376.svg"
- ALT="$\displaystyle (\lambda + G) \nabla (\nabla \cdot \uline{u}) +
-G \nabla^2 \uline{u} + \rho \uline{b} = 0$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 6.26ex; vertical-align: -2.81ex; " SRC="img362.svg"
+ ALT="$\displaystyle C_{pp} = \left. \frac{1}{V_p} \frac{\mathrm{d}V_p}{\mathrm{d}P_p} \right\vert _{S_v,\varepsilon_h}$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">33</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">30</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P> 
+<P></P>
 
 <P>
-where <!-- MATH
- $\lambda = (\nu E)/[(1+\nu)(1-2\nu)]$
+The equation above captures reservoir boundary conditions in which the total vertical stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img39.svg"
+ ALT="$S_v$"></SPAN> remains constant (overburden above the reservoir does not change) and there is no change of lateral strain <!-- MATH
+ $\varepsilon_h$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img377.svg"
- ALT="$\lambda = (\nu E)/[(1+\nu)(1-2\nu)]$"></SPAN> the first Lam&#233; parameter, <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img378.svg"
- ALT="$G$"></SPAN> is the shear modulus, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img221.svg"
- ALT="$\rho$"></SPAN> is the mass density, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.28ex; vertical-align: -0.57ex; " SRC="img379.svg"
- ALT="$\uline{b}$"></SPAN> is the body forces acceleration vector (usually gravity). The solution requires knowledge of the domain geometry, boundary conditions and initial conditions. We will see analytical solutions of this equation for 1) displacements and stresses around wellbores, and 2) displacements and stresses around planar fractures.
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img363.svg"
+ ALT="$\varepsilon_h$"></SPAN>, a condition also termed as &ldquo;uniaxial strain&rdquo; deformation. 
+Such condition is appropriate in long and thin reservoirs with a compliant caprock.
 
 <P>
-<BR><HR>
+The parameter <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img360.svg"
+ ALT="$C_{pp}$"></SPAN> is linked to the bulk rock compressibility <SPAN CLASS="MATH"><IMG STYLE="height: 2.50ex; vertical-align: -0.81ex; " SRC="img159.svg"
+ ALT="$C_{bp}$"></SPAN> through porosity:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+C_{pp} = \frac{C_{bp}}{\phi}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.44ex; vertical-align: -2.15ex; " SRC="img364.svg"
+ ALT="$\displaystyle C_{pp} = \frac{C_{bp}}{\phi}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">31</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+where the bulk compressibility with no lateral strain is approximately equal to the inverse of the bulk constrained modulus <!-- MATH
+ $C_{bp} \sim 1/M$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.65ex; vertical-align: -0.81ex; " SRC="img365.svg"
+ ALT="$C_{bp} \sim 1/M$"></SPAN>, where <!-- MATH
+ $M = (1-\nu) E / [(1+\nu)(1-2\nu)]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img366.svg"
+ ALT="$M = (1-\nu) E / [(1+\nu)(1-2\nu)]$"></SPAN> (Figure <A HREF="node41.html#fig:elastic-summary">3.15</A>). 
+The approximation is due to a correction needed to account for grain compressibility.
+Finally, we can calculate the uniaxial strain pore compressibility using the typical mechanical parameters <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img263.svg"
+ ALT="$E$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img300.svg"
+ ALT="$\nu$"></SPAN> as,
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:PoreCompwithEnu"></A><!-- MATH
+ \begin{equation}
+C_{pp} = \frac{(1+\nu)(1-2\nu)}{(1-\nu) E \phi} \text{.}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img367.svg"
+ ALT="$\displaystyle C_{pp} = \frac{(1+\nu)(1-2\nu)}{(1-\nu) E \phi}$">&nbsp; &nbsp;.</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">32</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec4-X"></A><A ID="2223"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.16:</STRONG>
+The reservoir compressibility is inversely proportional to the constrained modulus.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15136" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./reservoir-compressibility.png"
+ ALT="Image reservoir-compressibility"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Unfortunately, the theory if linear elasticity is quite limited  to capture the visco-elasto-plastic behavior of rocks upon depletion during long times and with large strains.
+Hence, Eq. <A HREF="#eq:PoreCompwithEnu">3.32</A> is just a first order approximation.
+
+<P>
+<SPAN  CLASS="textit">EXAMPLE 3.5</SPAN>: Calculate the pore compressibility of a rock tested in the laboratory with porosity <!-- MATH
+ $\phi = 0.20$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img84.svg"
+ ALT="$\phi = 0.20$"></SPAN>, Young's modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img368.svg"
+ ALT="$E = 10$"></SPAN> GPa, and <!-- MATH
+ $\nu = 0.20$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img369.svg"
+ ALT="$\nu = 0.20$"></SPAN>. Provide the solution in [<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img370.svg"
+ ALT="$10^{6}$"></SPAN>psi]<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img175.svg"
+ ALT="$^{-1}$"></SPAN> units.
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+The constrained modulus is
+<P><!-- MATH
+ \begin{displaymath}
+M = \frac{(1-\nu) E}{(1+\nu)(1-2\nu)} = \frac{(1-0.20) 10 \text{ GPa} }{(1+0.20)(1-2 \times 0.20)} = 11.11 \text{ GPa} = 1.6 \times 10^{6} \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img371.svg"
+ ALT="$\displaystyle M = \frac{(1-\nu) E}{(1+\nu)(1-2\nu)} = \frac{(1-0.20) 10 \text{ ...
+...(1+0.20)(1-2 \times 0.20)} = 11.11 \text{ GPa} = 1.6 \times 10^{6} \text{ psi}
+$">
+</DIV><P></P>
+Hence,
+<P><!-- MATH
+ \begin{displaymath}
+C_{pp} = \frac{1}{M \phi} = \frac{1}{1.6 \times 10^{6} psi \times 0.20} = 3.1 \: [10^{6} \text{psi}]^{-1} = 3.1 \: \mu \text{sip} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.31ex; vertical-align: -2.15ex; " SRC="img372.svg"
+ ALT="$\displaystyle C_{pp} = \frac{1}{M \phi} = \frac{1}{1.6 \times 10^{6} psi \times 0.20} = 3.1 \: [10^{6}$">&nbsp; &nbsp;psi<IMG STYLE="height: 2.84ex; vertical-align: -0.69ex; " SRC="img373.svg"
+ ALT="$\displaystyle ]^{-1} = 3.1 \: \mu$">&nbsp; &nbsp;sip<IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img374.svg"
+ ALT="$\displaystyle \: \: \blacksquare
+$">
+</DIV><P></P>   
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node43.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node37.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node41.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html545"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node43.html">3.3.6 Generalized linear elasticity</A>
+<B> Up:</B> <A
+ HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
+<B> Previous:</B> <A
+ HREF="node41.html">3.3.4 Calculation of horizontal</A>
+ &nbsp; <B>  <A ID="tex2html546"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
 
 </BODY>
 </HTML>
