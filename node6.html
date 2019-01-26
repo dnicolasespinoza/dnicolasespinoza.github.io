@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>1.2.2 Wellbore completion</TITLE>
-<META NAME="description" CONTENT="1.2.2 Wellbore completion">
+<TITLE>2. Subsurface Stresses and Pore Pressure</TITLE>
+<META NAME="description" CONTENT="2. Subsurface Stresses and Pore Pressure">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,8 +15,8 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
-<LINK REL="next" HREF="node7.html">
-<LINK REL="previous" HREF="node5.html">
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node2.html">
 <LINK REL="next" HREF="node7.html">
 </HEAD>
 
@@ -27,53 +27,101 @@
  HREF="node7.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node4.html">
+ HREF="IPG.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node5.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html401"
+<A ID="tex2html404"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node7.html">1.2.3 Reservoir geomechanics</A>
+ HREF="node7.html">2.1 Lithostatic gradient</A>
 <B> Up:</B> <A
- HREF="node4.html">1.2 Geomechanics in the</A>
+ HREF="IPG.html">Introduction to Energy Geomechanics</A>
 <B> Previous:</B> <A
- HREF="node5.html">1.2.1 Drilling and wellbore</A>
- &nbsp; <B>  <A ID="tex2html402"
+ HREF="node5.html">1.3 Problems</A>
+ &nbsp; <B>  <A ID="tex2html405"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION00222000000000000000">
-<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Wellbore completion</A>
-</H2>
+<H1><A ID="SECTION00300000000000000000">
+<SPAN CLASS="arabic">2</SPAN>. Subsurface Stresses and Pore Pressure</A>
+</H1>
 
 <P>
-A single wellbore offers little contact area with the reservoir.
-Hydraulic fractures seek to increase such contact area, particularly in low-permeability reservoirs. Hence, even a small flow velocity can result in a large flow rate [bbl/min] if the contact area is large. 
-Hydraulic fracture propagation depends on local stresses, bounding layers, and reservoir rock heterogeneity.
-Hydraulic fracturing has been used in the petroleum industry since <SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img12.svg"
- ALT="$\sim $"></SPAN>1950.
-Improved completion methods take advantage of horizontal wellbores, proppants, acid solutions, and a variety of chemicals to enhance reservoir drainage.
+Similarly to fluid pressure, rock stresses change with depth.
+Yet, changes in rock stresses depend not only on depth but also on the properties of the rock and tectonic stresses if any.
+This chapter presents a summary of the calculation of vertical stress (total and effective) and pore pressure with depth. 
+The chapter also reviews the concept of horizontal stress from a phenomenological point of view.
+The calculation of horizontal stress requires a mechanical model that will be introduced in subsequent chapters.
 
 <P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<DIV class="CENTER"><A ID="fig:lec1-6"></A><A ID="53"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 1.4:</STRONG>
-Pictorial representation of multistage hydraulic fracturing in a horizontal well.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par13987" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img37.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/1-6.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html406"
+  HREF="node7.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Lithostatic gradient</A>
+<UL>
+<LI><A ID="tex2html407"
+  HREF="node7.html#SECTION00311000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stress concept and equilibrium 1D</A>
+<LI><A ID="tex2html408"
+  HREF="node7.html#SECTION00312000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Rock vertical stress gradient</A>
+<UL>
+<LI><A ID="tex2html409"
+  HREF="node7.html#SECTION00312100000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Onshore total vertical stress</A>
+<LI><A ID="tex2html410"
+  HREF="node7.html#SECTION00312200000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Offshore total vertical stress</A>
+<LI><A ID="tex2html411"
+  HREF="node7.html#SECTION00312300000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> General calculation of total vertical stress</A>
+</UL>
+</UL>
+<BR>
+<LI><A ID="tex2html412"
+  HREF="node8.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Non-hydrostatic pore pressure</A>
+<UL>
+<LI><A ID="tex2html413"
+  HREF="node8.html#SECTION00321000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Mechanisms of overpressure</A>
+<LI><A ID="tex2html414"
+  HREF="node8.html#SECTION00322000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Disequilibrium compaction and excess pore pressure</A>
+<LI><A ID="tex2html415"
+  HREF="node8.html#SECTION00323000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Reservoir depletion</A>
+</UL>
+<BR>
+<LI><A ID="tex2html416"
+  HREF="node9.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Horizontal stresses</A>
+<UL>
+<LI><A ID="tex2html417"
+  HREF="node9.html#SECTION00331000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Background</A>
+<LI><A ID="tex2html418"
+  HREF="node9.html#SECTION00332000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Geological indicators</A>
+<LI><A ID="tex2html419"
+  HREF="node9.html#SECTION00333000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> In-situ measurement</A>
+<LI><A ID="tex2html420"
+  HREF="node9.html#SECTION00334000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Stress Regimes</A>
+<UL>
+<LI><A ID="tex2html421"
+  HREF="node9.html#SECTION00334100000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Normal faulting stress regime</A>
+<LI><A ID="tex2html422"
+  HREF="node9.html#SECTION00334200000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Strike slip faulting stress regime</A>
+<LI><A ID="tex2html423"
+  HREF="node9.html#SECTION00334300000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN> Reverse faulting stress regime</A>
+</UL>
+<LI><A ID="tex2html424"
+  HREF="node9.html#SECTION00335000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Ideal orientation of open-mode fractures</A>
+</UL>
+<BR>
+<LI><A ID="tex2html425"
+  HREF="node10.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN> Problems</A>
+<LI><A ID="tex2html426"
+  HREF="node11.html"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN> Further reading and references</A>
+</UL>
+<!--End of Table of Child-Links-->
 <BR><HR>
 
 </BODY>

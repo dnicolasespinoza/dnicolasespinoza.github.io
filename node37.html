@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3.3 Constitutive equation: stress-strain relationships</TITLE>
-<META NAME="description" CONTENT="3.3 Constitutive equation: stress-strain relationships">
+<TITLE>6. Wellbore stability</TITLE>
+<META NAME="description" CONTENT="6. Wellbore stability">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,8 +15,8 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
-<LINK REL="next" HREF="node44.html">
-<LINK REL="previous" HREF="node36.html">
+<LINK REL="next" HREF="node46.html">
+<LINK REL="previous" HREF="node31.html">
 <LINK REL="next" HREF="node38.html">
 </HEAD>
 
@@ -27,172 +27,99 @@
  HREF="node38.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node31.html">
+ HREF="IPG.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node36.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html529"
+<A ID="tex2html595"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node38.html">3.3.1 Linear isotropic elasticity</A>
+ HREF="node38.html">6.1 The wellbore environment</A>
 <B> Up:</B> <A
- HREF="node31.html">3. Fundamentals of linear</A>
+ HREF="IPG.html">Introduction to Energy Geomechanics</A>
 <B> Previous:</B> <A
- HREF="node36.html">3.2 Kinematic equations: displacements</A>
- &nbsp; <B>  <A ID="tex2html530"
+ HREF="node36.html">5.5 Applications</A>
+ &nbsp; <B>  <A ID="tex2html596"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00430000000000000000">
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Constitutive equation: stress-strain relationships</A>
+<H1><A ID="SECTION00700000000000000000">
+<SPAN CLASS="arabic">6</SPAN>. Wellbore stability</A>
 </H1>
 
-<P>
-Constitutive equations tell us how a solid deforms (in time) as a response to stresses, to changes of temperature and to changes of pore pressure among others.
-How to choose a constitutive equation depends on the material properties, the magnitude of strain changes, the magnitude of stresses, and the loading rate among other factors.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:lec4-12"></A><A ID="1577"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.8:</STRONG>
-Example of deformations imparted by an applied stress.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14827" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img259.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/4-12.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-The simplest constitutive relationship for solids is linear elasticity, in which stresses and strains are linearly related by constant coefficients.
-The examples in Figure <A HREF="#fig:elasticity1D2D3D">3.9</A> correspond to applications of linear elasticity in various dimensions:
-
-<UL>
-<LI>(TOP) Hooke's law: the force <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img260.svg"
- ALT="$F$"></SPAN> [N] required to produce an elongation <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img261.svg"
- ALT="$\Delta x$"></SPAN> [m] in a spring with mechanical constant <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img160.svg"
- ALT="$k$"></SPAN> [N/m] is <!-- MATH
- $F = k \Delta x$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img262.svg"
- ALT="$F = k \Delta x$"></SPAN>
-</LI>
-<LI>(MIDDLE) Consider a prismatic solid bar with cross sectional area <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img47.svg"
- ALT="$A$"></SPAN> and length <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img167.svg"
- ALT="$L$"></SPAN>. The force required to produce an elongation <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img261.svg"
- ALT="$\Delta x$"></SPAN> [m] is inversely proportional to <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img167.svg"
- ALT="$L$"></SPAN>, and proportional to proportional to <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img47.svg"
- ALT="$A$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img263.svg"
- ALT="$E$"></SPAN> (the stiffness modulus of the solid), such that 
-	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\frac{F}{A} = E \frac{\Delta x}{L}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img264.svg"
- ALT="$\displaystyle \frac{F}{A} = E \frac{\Delta x}{L}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>	
-</LI>
-<LI>(BOTTOM) In general the stress tensor <!-- MATH
- $\uuline{\sigma}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img265.svg"
- ALT="$\uuline{\sigma}$"></SPAN> is proportional to the strain tensor <!-- MATH
- $\uuline{\varepsilon}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img266.svg"
- ALT="$\uuline{\varepsilon}$"></SPAN> through the stiffness tensor <!-- MATH
- $\uuline{C}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img267.svg"
- ALT="$\uuline{C}$"></SPAN>
-	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img268.svg"
- ALT="$\displaystyle \uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-</LI>
-</UL>	
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:elasticity1D2D3D"></A><A ID="1599"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.9:</STRONG>
-From Hooke's law to generalized 3D linear elasticity</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14862" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img269.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/4-13.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
 <P>
 <BR><HR>
 <!--Table of Child-Links-->
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html531"
-  HREF="node38.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Linear isotropic elasticity</A>
-<LI><A ID="tex2html532"
-  HREF="node39.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> The isotropic solid in Voigt notation</A>
-<LI><A ID="tex2html533"
-  HREF="node40.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Effective stress and elasticity</A>
-<LI><A ID="tex2html534"
-  HREF="node41.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Calculation of horizontal stress according to linear elasticity</A>
-<LI><A ID="tex2html535"
-  HREF="node42.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Calculation of reservoir compressibility with linear elasticity</A>
-<LI><A ID="tex2html536"
-  HREF="node43.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Generalized linear elasticity problem</A>
+<LI><A ID="tex2html597"
+  HREF="node38.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> The wellbore environment</A>
+<LI><A ID="tex2html598"
+  HREF="node39.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kirsch solution for stresses around a cylindrical cavity</A>
+<UL>
+<LI><A ID="tex2html599"
+  HREF="node39.html#SECTION00721000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Cylindrical coordinate system</A>
+<LI><A ID="tex2html600"
+  HREF="node39.html#SECTION00722000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kirsch solution components</A>
+<LI><A ID="tex2html601"
+  HREF="node39.html#SECTION00723000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Complete Kirsch set of equations</A>
+</UL>
+<BR>
+<LI><A ID="tex2html602"
+  HREF="node40.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN> Shear failure and wellbore breakouts</A>
+<UL>
+<LI><A ID="tex2html603"
+  HREF="node40.html#SECTION00731000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Breakout angle determination</A>
+<LI><A ID="tex2html604"
+  HREF="node40.html#SECTION00732000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Breakout measurement</A>
+<LI><A ID="tex2html605"
+  HREF="node40.html#SECTION00733000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Maximum horizontal stress determination from breakout angle</A>
+</UL>
+<BR>
+<LI><A ID="tex2html606"
+  HREF="node41.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Tensile fractures and wellbore breakdown</A>
+<UL>
+<LI><A ID="tex2html607"
+  HREF="node41.html#SECTION00741000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Identification of tensile fractures in wellbores</A>
+</UL>
+<BR>
+<LI><A ID="tex2html608"
+  HREF="node42.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">5</SPAN> The mud window</A>
+<LI><A ID="tex2html609"
+  HREF="node43.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN> Mechanical stability of deviated wellbores</A>
+<UL>
+<LI><A ID="tex2html610"
+  HREF="node43.html#SECTION00761000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> Wellbore orientation</A>
+<LI><A ID="tex2html611"
+  HREF="node43.html#SECTION00762000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Stresses on deviated wellbores</A>
+<LI><A ID="tex2html612"
+  HREF="node43.html#SECTION00763000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN> Breakout analysis for deviated wellbores</A>
+<LI><A ID="tex2html613"
+  HREF="node43.html#SECTION00764000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Tensile fractures analysis for deviated wellbores</A>
+</UL>
+<BR>
+<LI><A ID="tex2html614"
+  HREF="node44.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">7</SPAN> Thermal, chemical, and leak-off effects on wellbore stability</A>
+<UL>
+<LI><A ID="tex2html615"
+  HREF="node44.html#SECTION00771000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">1</SPAN> Thermal effects</A>
+<LI><A ID="tex2html616"
+  HREF="node44.html#SECTION00772000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">2</SPAN> Chemo-electrical effects</A>
+<LI><A ID="tex2html617"
+  HREF="node44.html#SECTION00773000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">3</SPAN> Leak-off effects</A>
+</UL>
+<BR>
+<LI><A ID="tex2html618"
+  HREF="node45.html"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">8</SPAN> Strength anisotropy</A>
 </UL>
 <!--End of Table of Child-Links-->
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node38.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node31.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node36.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html529"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node38.html">3.3.1 Linear isotropic elasticity</A>
-<B> Up:</B> <A
- HREF="node31.html">3. Fundamentals of linear</A>
-<B> Previous:</B> <A
- HREF="node36.html">3.2 Kinematic equations: displacements</A>
- &nbsp; <B>  <A ID="tex2html530"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
+<BR><HR>
 
 </BODY>
 </HTML>

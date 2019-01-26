@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3.3.4 Calculation of horizontal stress according to linear elasticity</TITLE>
-<META NAME="description" CONTENT="3.3.4 Calculation of horizontal stress according to linear elasticity">
+<TITLE>6.4 Tensile fractures and wellbore breakdown</TITLE>
+<META NAME="description" CONTENT="6.4 Tensile fractures and wellbore breakdown">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -32,559 +32,261 @@
 <A
  HREF="node40.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html543"
+<A ID="tex2html631"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node42.html">3.3.5 Calculation of reservoir</A>
+ HREF="node42.html">6.5 The mud window</A>
 <B> Up:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
+ HREF="node37.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node40.html">3.3.3 Effective stress and</A>
- &nbsp; <B>  <A ID="tex2html544"
+ HREF="node40.html">6.3 Shear failure and</A>
+ &nbsp; <B>  <A ID="tex2html632"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<H2><A ID="SECTION00434000000000000000"></A>
-<A ID="sec:CalcHzStress"></A>
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html633"
+  HREF="node41.html#SECTION00741000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Identification of tensile fractures in wellbores</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00740000000000000000"></A>
+<A ID="sec:TensileFracs"></A>
 <BR>
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Calculation of horizontal stress according to linear elasticity
-</H2> 
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Tensile fractures and wellbore breakdown
+</H1>
 
 <P>
-Let us revisit the problem of stress calculation in a half-space, such as the Earth's shallow subsurface. 
-We already know that the vertical total stress (<!-- MATH
- $S_v = S_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img317.svg"
- ALT="$S_v = S_{33}$"></SPAN>) is a function of depth and rock bulk mass density.
+Wellbore tensile (or open mode) fractures occur when the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img24.svg"
+ ALT="$\sigma _3$"></SPAN> on the wellbore wall goes below the limit for tensile stress: the tensile strength. 
+Unconsolidated sands have no tensile strength. 
+Hence, an open-mode fracture occurs as soon as effective stress goes to zero.  
+The minimum hoop stress is located on the wall of the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img736.svg"
+ ALT="$(r=a)$"></SPAN> and at <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img669.svg"
+ ALT="$\theta = 0$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img674.svg"
+ ALT="$\pi$"></SPAN> (Fig. <A HREF="#fig:TensFracsSchematic">6.14</A>):
+
+<P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz
+\sigma_{\theta \theta}  =
+			-(P_W - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin} 
+			+ \sigma^{\Delta T} 
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.52ex; vertical-align: -2.21ex; " SRC="img129.svg"
- ALT="$\displaystyle S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img737.svg"
+ ALT="$\displaystyle \sigma_{\theta \theta} =
+-(P_W - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin}
++ \sigma^{\Delta T}$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">22</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">16</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P> 
-
-<P>
-The effective vertical stress will be 
 <P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_v(z) = S_v(z) - P_p
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img318.svg"
- ALT="$\displaystyle \sigma_v(z) = S_v(z) - P_p$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">23</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P> 
 
 <P>
-Let us now assume that the half space did not deform in horizontal directions (<!-- MATH
- $\varepsilon_{11}=\varepsilon_{22}$
+Notice that we have added a temperature term <!-- MATH
+ $\sigma^{\Delta T}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img319.svg"
- ALT="$\varepsilon_{11}=\varepsilon_{22}$"></SPAN>). This means that the solid is laterally contained at &ldquo;repose&rdquo; and no additional strain have been added either compressive or tensile. 
-Such is the case of a sedimentary basin with no additional tectonic strains.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.21ex; vertical-align: -0.11ex; " SRC="img738.svg"
+ ALT="$\sigma^{\Delta T}$"></SPAN> that takes into account wellbore cooling, an important phenomenon that contributes to tensile fractures in wellbores.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:lec4-X"></A><A ID="1972"></A>
+<DIV class="CENTER"><A ID="fig:TensFracsSchematic"></A><A ID="6575"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.13:</STRONG>
-Uniaxial strain condition with sedimentation in a tectonically passive environment.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par15008" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.14:</STRONG>
+Occurrence of tensile fractures around a vertical wellbore.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17295" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="./UniaxialStrainSchematics.png"
- ALT="Image UniaxialStrainSchematics"></DIV></TD></TR>
+ SRC="img739.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-13.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-Let's now use the equation 	<!-- MATH
- $\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$
+Matching the lowest value of hoop stress <!-- MATH
+ $\sigma_{\theta \theta}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img320.svg"
- ALT="$\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$"></SPAN> together with the equilibrium equation. 
-Shear strains are zero. 
-Hence <!-- MATH
- $\uuline{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T$
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img21.svg"
+ ALT="$\sigma _{\theta \theta }$"></SPAN> with tensile strength <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img702.svg"
+ ALT="$T_s$"></SPAN> permits finding the mud pressure <!-- MATH
+ $P_W = P_{b}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.83ex; vertical-align: -1.73ex; " SRC="img321.svg"
- ALT="$\uuline{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T$"></SPAN>.
-Then, the multiplication of <!-- MATH
- $\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img740.svg"
+ ALT="$P_W = P_{b}$"></SPAN> that would produce a tensile (or open mode) fracture:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:Pb"></A><!-- MATH
+ \begin{equation}
+-T_s  =
+			-(P_b - P_p)  -\sigma_{Hmax} + 3 \sigma_{hmin} 
+			+ \sigma^{\Delta T} 
+\end{equation}
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img320.svg"
- ALT="$\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$"></SPAN>, results in 
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img741.svg"
+ ALT="$\displaystyle -T_s =
+-(P_b - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin}
++ \sigma^{\Delta T}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">17</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+and therefore
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-\left\lbrace
-	\begin{array}{l}
- 		\sigma_{11} = \sigma_{22} = 
-			\frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{33}  \\
-		\sigma_{33} = \frac{(1-\nu) E}{(1+\nu)(1-2\nu)} 		 			\varepsilon_{33}  
-	\end{array}
-	\right.
+P_b = P_p - \sigma_{Hmax} + 3 \sigma_{hmin} +  T_s
+			+ \sigma^{\Delta T} 
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img322.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{l}
-\sigma_{11} = \sigma_{22} =
-\fr...
-...(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{33}
-\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img742.svg"
+ ALT="$\displaystyle P_b = P_p - \sigma_{Hmax} + 3 \sigma_{hmin} + T_s
++ \sigma^{\Delta T}$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">24</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">18</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-Let us express <!-- MATH
- $\varepsilon_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img271.svg"
- ALT="$\varepsilon_{33}$"></SPAN> as a function of <!-- MATH
- $\sigma_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img270.svg"
- ALT="$\sigma_{33}$"></SPAN> and plug it in the equation for horizontal stresses. 
-The result is
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_{11} = \sigma_{22} = \frac{\nu}{1-\nu} \sigma_{33}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.55ex; vertical-align: -1.89ex; " SRC="img323.svg"
- ALT="$\displaystyle \sigma_{11} = \sigma_{22} = \frac{\nu}{1-\nu} \sigma_{33}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">25</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P> 
+The subscript <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img743.svg"
+ ALT="$b$"></SPAN> of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img744.svg"
+ ALT="$P_b$"></SPAN> corresponds to &ldquo;breakdown&rdquo; pressure because in some cases when <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img745.svg"
+ ALT="$P_b &gt; S_3$"></SPAN>, a mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img746.svg"
+ ALT="$P_W&gt;P_b$"></SPAN> can create a hydraulic fracture that propagates far from the wellbore and causes lost circulation.
+When <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img747.svg"
+ ALT="$P_b &lt; S_3$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img746.svg"
+ ALT="$P_W&gt;P_b$"></SPAN>, the mud pressure will produce short tensile fractures around the wellbore that do not propagate far from the wellbore.
 
 <P>
-or equivalently
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_{h} = \frac{\nu}{1-\nu} \sigma_{v}
-\end{equation}
+In the equations above we have added the contribution of thermal stresses <!-- MATH
+ $\sigma^{\Delta T} = [\alpha_T E/(1-\nu)] \Delta T$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.55ex; vertical-align: -1.89ex; " SRC="img324.svg"
- ALT="$\displaystyle \sigma_{h} = \frac{\nu}{1-\nu} \sigma_{v}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">26</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P> 
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.79ex; vertical-align: -0.69ex; " SRC="img748.svg"
+ ALT="$\sigma^{\Delta T} = [\alpha_T E/(1-\nu)] \Delta T$"></SPAN> where <SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img749.svg"
+ ALT="$\alpha_T$"></SPAN> is the linear thermal expansion coefficient and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img408.svg"
+ ALT="$\Delta T$"></SPAN> is the change in temperature (<!-- MATH
+ $\sigma^{\Delta T}<0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.30ex; vertical-align: -0.20ex; " SRC="img750.svg"
+ ALT="$\sigma^{\Delta T}&lt;0$"></SPAN> for <!-- MATH
+ $\Delta T < 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.20ex; " SRC="img751.svg"
+ ALT="$\Delta T &lt; 0$"></SPAN>).
+Wellbores are usually drilled and logged with drilling mud cooler than the formation <!-- MATH
+ $T_{mud} < T_{rock}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img752.svg"
+ ALT="$T_{mud} &lt; T_{rock}$"></SPAN>. 
+Hence, ignoring thermal stresses is conservative for preventing breakouts but it is not for tensile fractures.
 
 <P>
-For typical values of <!-- MATH
- $\nu \sim 0.25$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img325.svg"
- ALT="$\nu \sim 0.25$"></SPAN>, the horizontal stress coefficient <!-- MATH
- $\nu/(1-\nu) \sim 1/3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img326.svg"
- ALT="$\nu/(1-\nu) \sim 1/3 $"></SPAN>, thus, the effective horizontal stress is one third of the effective vertical stress. 
-Contrary to a fluid, the solid does not push sideways with all its weight. 
-It pushes sideways with just a fraction of its weight proportionally to its tendency to deform sideways, i.e., the Poisson ratio).
-Notice that <!-- MATH
- $\nu \rightarrow 0.5$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img327.svg"
- ALT="$\nu \rightarrow 0.5$"></SPAN> implies <!-- MATH
- $\nu/(1-\nu) \rightarrow 1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img328.svg"
- ALT="$\nu/(1-\nu) \rightarrow 1$"></SPAN>.
-An &ldquo;effective&rdquo; <!-- MATH
- $\nu \sim 0.5$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img329.svg"
- ALT="$\nu \sim 0.5$"></SPAN> is applicable for fluids, soft rocks under undrained loading, and salt rocks.
+Fig. <A HREF="#fig:TensFracsSurface">6.15</A> shows an example of calculation of the local minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> around a wellbore. 
+The locations with the lowest stress align with the direction of the far-field maximum horizontal stress in the plane perpendicular to wellbore axis.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:lec4-X"></A><A ID="2014"></A>
+<DIV class="CENTER"><A ID="fig:TensFracsSurface"></A><A ID="6598"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.14:</STRONG>
-Lateral stress coefficient as a function of Poisson's ratio.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par15038" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.15:</STRONG>
+Example of calculation of tensile strength required for wellbore stability. The figure shows that a tensile strength of <SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img25.svg"
+ ALT="$\sim 3$"></SPAN> MPa is required to avert tensile fractures in this example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17336" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="./lateralstres-coeff.png"
- ALT="Image lateralstres-coeff"></DIV></TD></TR>
+ SRC="img753.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-14.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-The total horizontal stresses are obtained from adding pore pressure to the effective horizontal stresses: <!-- MATH
- $S_{11} = \sigma_{11} + P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img330.svg"
- ALT="$S_{11} = \sigma_{11} + P_p$"></SPAN> and <!-- MATH
- $S_{33} = \sigma_{33} + P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img331.svg"
- ALT="$S_{33} = \sigma_{33} + P_p$"></SPAN>. 
+<SPAN  CLASS="textit">PROBLEM 6.3:</SPAN> Calculate the maximum mud weight (ppg) in a vertical wellbore for avoiding drilling-induced tensile fractures in a site onshore at 7000 ft of depth where  <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img31.svg"
+ ALT="$S_{hmin} =$"></SPAN> 4300 psi and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img30.svg"
+ ALT="$S_{Hmax} =$"></SPAN> 6300 psi and with hydrostatic pore pressure. 
+The rock mechanical properties are <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img700.svg"
+ ALT="$UCS =$"></SPAN> 3500 psi, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img701.svg"
+ ALT="$\mu_i=$"></SPAN> 0.6, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img702.svg"
+ ALT="$T_s$"></SPAN> = 800 psi. 
 
 <P>
-Let us now relax the assumption of horizontal strains equal to zero, such that <!-- MATH
- $\varepsilon_{11} \neq \varepsilon_{22} \neq 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img332.svg"
- ALT="$\varepsilon_{11} \neq \varepsilon_{22} \neq 0$"></SPAN>, but are known quantities.
-We use the equation <!-- MATH
- $\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img320.svg"
- ALT="$\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$"></SPAN> again. Shear strains are zero. 
-Hence <!-- MATH
- $\uuline{\varepsilon} = [\varepsilon_{11},\varepsilon_{22},\varepsilon_{33},0,0,0]^T$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.83ex; vertical-align: -1.73ex; " SRC="img333.svg"
- ALT="$\uuline{\varepsilon} = [\varepsilon_{11},\varepsilon_{22},\varepsilon_{33},0,0,0]^T$"></SPAN>. 
-The resulting equations are,
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\left\lbrace
-	\begin{array}{l}
-		\sigma_{11} = 
-			\frac{(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{11}
-			+ \frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{22}
-			+ \frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{33} \\
-		\sigma_{22} = 
-			\frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{11}
-		+ \frac{(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{22}
-			+ \frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{33} \\
-		\sigma_{33} = 
-			\frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{11}
-		+   \frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{22}
-		+	\frac{(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{33}  
-	\end{array}
-	\right.	
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img334.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{l}
-\sigma_{11} =
-\frac{(1-\nu) E}{...
-...(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{33}
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">27</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Let us now substitute <!-- MATH
- $\varepsilon_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img271.svg"
- ALT="$\varepsilon_{33}$"></SPAN> in the equations of <!-- MATH
- $\sigma_{11}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img335.svg"
- ALT="$\sigma_{11}$"></SPAN> and <!-- MATH
- $\sigma_{22}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img336.svg"
- ALT="$\sigma_{22}$"></SPAN> as a function of <!-- MATH
- $\sigma_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img270.svg"
- ALT="$\sigma_{33}$"></SPAN>. The result is:
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\left\lbrace
-		\begin{array}{l}	 	
-	 	\sigma_{11} =  
-	 		\frac{\nu}{1-\nu} \sigma_{33} + 
-	 		\frac{E}{1-\nu^2} \varepsilon_{11} +
-	 		\frac{\nu E}{1-\nu^2} \varepsilon_{22} \\
-	 	\sigma_{22} =  
-	 		\frac{\nu}{1-\nu} \sigma_{33}
-	 		\frac{\nu E}{1-\nu^2} \varepsilon_{11} +
-	 		\frac{E}{1-\nu^2} \varepsilon_{22} \\
-		\end{array}
-		\right.	
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img337.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{l}
-\sigma_{11} =
-\frac{\nu}{1-\nu}...
-...11} +
-\frac{E}{1-\nu^2} \varepsilon_{22} \\
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">28</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P> 
-
-<P>
-Horizontal strains are usually caused by tectonic plate movement. Hence, we can call them &ldquo;tectonic strains&rdquo;. 
-Let us call <!-- MATH
- $\varepsilon_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img338.svg"
- ALT="$\varepsilon_{Hmax}$"></SPAN> the maximum (compressive) tectonic strain, and  <!-- MATH
- $\varepsilon_{Hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img339.svg"
- ALT="$\varepsilon_{Hmin}$"></SPAN> the minimum tectonic strain in a given direction. 
-As a result the maximum effective horizontal stress and minimum horizontal stresses are:
-<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:tectonicstrains"></A><!-- MATH
- \begin{equation}
-\left\lbrace
-		\begin{array}{l}	 	
-	 	\sigma_{Hmax} =  \frac{\nu}{1-\nu} \sigma_{v} + 
-	 		E' \varepsilon_{Hmax} +
-	 		\nu E'\varepsilon_{hmin}  \\
-	 	\sigma_{hmin} =  \frac{\nu}{1-\nu} \sigma_{v} +
-	 		\nu E' \varepsilon_{Hmax} +
-	 		E' \varepsilon_{hmin} \\
-		\end{array}
-		\right.
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img340.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{l}
-\sigma_{Hmax} = \frac{\nu}{1-\n...
-...arepsilon_{Hmax} +
-E' \varepsilon_{hmin} \\
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">29</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P> 
-
-<P>
-where <!-- MATH
- $E' = \frac{E}{1-\nu^2}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.31ex; vertical-align: -1.14ex; " SRC="img341.svg"
- ALT="$E' = \frac{E}{1-\nu^2}$"></SPAN> is called the plane strain modulus.
-We will see later that the plane strain modulus, rather than the Young's modulus, appears in many of the equations of interest to subsurface applications.
-The total horizontal stresses are obtained aging from adding pore pressure to the effective horizontal stresses: <!-- MATH
- $S_{Hmax} = \sigma_{Hmax} + P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img342.svg"
- ALT="$S_{Hmax} = \sigma_{Hmax} + P_p$"></SPAN> and <!-- MATH
- $S_{hmin} = \sigma_{hmin} + P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img343.svg"
- ALT="$S_{hmin} = \sigma_{hmin} + P_p$"></SPAN>. Notice that you need to use effective vertical stress <!-- MATH
- $\sigma_{v} = S_{v} - P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img344.svg"
- ALT="$\sigma_{v} = S_{v} - P_p$"></SPAN> in the equation above.
-These equations have been coded in a Jupyter notebook available at <kbd><A ID="tex2html58"
-  HREF="https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=HorizontalStresses_Widget.ipynb">https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=HorizontalStresses_Widget.ipynb</A></kbd>.
-The algorithm further assumes a linear increase of strain with depth.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:elastic-summary"></A><A ID="2457"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.15:</STRONG>
-Table with elastic moduli formulas. See the complete table scrolling to the bottom in <kbd><A ID="tex2html59"
-  HREF="https://en.wikipedia.org/wiki/Young's_modulus">https://en.wikipedia.org/wiki/Young's_modulus</A></kbd></CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par15078" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img345.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/4-21.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-<SPAN  CLASS="textit">EXAMPLE 3.4</SPAN>: 
-Calculate the total horizontal stresses in a section of the Barnett Shale located at 7950 ft (TVD) using the theory of linear elasticity.
-Assume constant vertical stress <!-- MATH
- $\mathrm{d}S_v/\mathrm{d}z = 23.8$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img346.svg"
- ALT="$\mathrm{d}S_v/\mathrm{d}z = 23.8$"></SPAN> MPa/km, overpressure parameter <!-- MATH
- $\lambda_p = 0.7$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img347.svg"
- ALT="$\lambda_p = 0.7$"></SPAN>, shale Young's modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img348.svg"
- ALT="$E = 5$"></SPAN> MMpsi, Poisson's ratio <!-- MATH
- $\nu = 0.22$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img349.svg"
- ALT="$\nu = 0.22$"></SPAN>, and tectonic strains <!-- MATH
- $\varepsilon_{hmin} = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img350.svg"
- ALT="$\varepsilon_{hmin} = 0$"></SPAN> and <!-- MATH
- $\varepsilon_{Hmax} = 0.0002$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.06ex; vertical-align: -0.47ex; " SRC="img351.svg"
- ALT="$\varepsilon_{Hmax} = 0.0002$"></SPAN>.
-
-<P>
-<BR>
-<BR>
 SOLUTION <BR>
-At a depth of 7950 ft
+The problem variables are the same of problem 6.1.
+The breakdown pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img744.svg"
+ ALT="$P_b$"></SPAN> in the absence of thermal effects is
 <P><!-- MATH
  \begin{displaymath}
-S_v = 23.8 \frac{\text{MPa}}{\text{km}} \frac{1\frac{\text{psi}}{\text{ft}}}{\frac{\text{MPa}}{\text{km}}} * 7950 \text{ ft} = 8227 \text {psi}
+P_b = 3080 \text{ psi} - 3220 \text{ psi} + 3 \times 1220 \text{ psi} +  800 \text{ psi} = 4320 \text{ psi}
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 6.70ex; vertical-align: -2.73ex; " SRC="img352.svg"
- ALT="$\displaystyle S_v = 23.8 \frac{\text{MPa}}{\text{km}} \frac{1\frac{\text{psi}}{\text{ft}}}{\frac{\text{MPa}}{\text{km}}} * 7950 \text{ ft} = 8227 \text {psi}
-$">
+<IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img754.svg"
+ ALT="$\displaystyle P_b = 3080$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img755.svg"
+ ALT="$\displaystyle - 3220$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img756.svg"
+ ALT="$\displaystyle + 3 \times 1220$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img757.svg"
+ ALT="$\displaystyle + 800$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img758.svg"
+ ALT="$\displaystyle = 4320$">&nbsp; &nbsp; psi
 </DIV><P></P>
+This pressure can be achieved with an equivalent circulation density of 
 <P><!-- MATH
  \begin{displaymath}
-P_p = \lambda_p S_v = 0.7 * 8227 \text {psi} = 5759 \text{ psi}
+\frac{4320 \text{ psi}} {7000 \text{ ft}} \times
+\frac{8.33 \text{ ppg}} {0.44 \text{ psi/ft}} =
+11.68 \text{ ppg} \: \: \blacksquare
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img353.svg"
- ALT="$\displaystyle P_p = \lambda_p S_v = 0.7 * 8227$"><IMG STYLE="height: 2.21ex; vertical-align: -0.56ex; " SRC="img354.svg"
- ALT="$\displaystyle \text {psi} = 5759 \text{ psi}
+<IMG STYLE="height: 5.49ex; vertical-align: -2.28ex; " SRC="img759.svg"
+ ALT="$\displaystyle \frac{4320 \text{ psi}} {7000 \text{ ft}} \times
+\frac{8.33 \text{ ppg}} {0.44 \text{ psi/ft}} =
+11.68 \text{ ppg} \: \: \blacksquare
 $">
 </DIV><P></P>
-Hence, the effective vertical stress is 
-<P><!-- MATH
- \begin{displaymath}
-\sigma_v = S_v - P_p = 8227 \text {psi} - 5759 \text{ psi} = 2468 \text{ psi}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img355.svg"
- ALT="$\displaystyle \sigma_v = S_v - P_p = 8227$"><IMG STYLE="height: 2.21ex; vertical-align: -0.56ex; " SRC="img356.svg"
- ALT="$\displaystyle \text {psi} - 5759 \text{ psi} = 2468 \text{ psi}
-$">
-</DIV><P></P>
-Now, we are in conditions of using Eq. <A HREF="#eq:tectonicstrains">3.29</A>.
-Let us first calculate the plane strain modulus:
-<P><!-- MATH
- \begin{displaymath}
-E' = \frac{E}{1-\nu^2} = \frac{5 \times 10^6 \text{ psi}}{1-0.22^2} = 5.25 \times 10^6 \text{ psi}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.49ex; vertical-align: -1.89ex; " SRC="img357.svg"
- ALT="$\displaystyle E' = \frac{E}{1-\nu^2} = \frac{5 \times 10^6 \text{ psi}}{1-0.22^2} = 5.25 \times 10^6 \text{ psi}
-$">
-</DIV><P></P>
-Then,
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\left\lbrace
-		\begin{array}{l}	 	
-	 	\sigma_{Hmax} =  \frac{\nu}{1-\nu} \sigma_{v} + 
-	 		E' \varepsilon_{Hmax} +
-	 		\nu E'\varepsilon_{hmin} =
-	 		\frac{0.22}{1-0.22} 2468 \text{ psi} + 
-	 		5.25 \times 10^6 \text{ psi} *0.0002 = 1745 \text{ psi}\\
-	 	\sigma_{hmin} =  \frac{\nu}{1-\nu} \sigma_{v} +
-	 		\nu E' \varepsilon_{Hmax} +
-	 		E' \varepsilon_{hmin} =
-	 		\frac{0.22}{1-0.22} 2468 \text{ psi} +
-	 		0.22 * 5.25 \times 10^6 \text{ psi} *0.0002 = 927 \text{ psi}  \\
-		\end{array}
-		\right.
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img358.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{l}
-\sigma_{Hmax} = \frac{\nu}{1-\n...
-...^6 \text{ psi} *0.0002 = 927 \text{ psi} \\
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P> 
+
+<H2><A ID="SECTION00741000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Identification of tensile fractures in wellbores</A>
+</H2>
 
 <P>
-Finally, let us compute the total horizontal stresses adding pore pressure:
+Similarly to breakouts, drilling-induced tensile fractures  can be identified and measured with borehole imaging tools (Fig. <A HREF="#fig:BoreholeImagingTfracs">6.16</A>). 
+The azimuth of tensile fractures coincides with the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN> in vertical wells.
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\left\lbrace
-		\begin{array}{l}	 	
-	 	S_{Hmax} = \sigma_{Hmax} + P_p =  1745 \text{ psi} + 5759 \text{ psi} = 7504 \text{ psi}\\
-	 	S_{hmin} = \sigma_{hmin} + P_p =  927 \text{ psi} + 5759 \text{ psi} = 6686 \text{ psi} 
-		\end{array}
-		\right. \: \: \blacksquare
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img359.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{l}
-S_{Hmax} = \sigma_{Hmax} + P_p ...
-...{ psi} = 6686 \text{ psi}
-\end{array}\right. \: \: \blacksquare\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P> 
 
+<DIV class="CENTER"><A ID="fig:BoreholeImagingTfracs"></A><A ID="6619"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.16:</STRONG>
+Examples of drilling-induced tensile fractures along wellbores as seen with borehole imaging tools. Similarly to breakouts, tensile fractures can also help determine the orientation of the far field stresses. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17368" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img760.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-15.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -598,17 +300,17 @@ S_{Hmax} = \sigma_{Hmax} + P_p ...
 <A
  HREF="node40.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html543"
+<A ID="tex2html631"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node42.html">3.3.5 Calculation of reservoir</A>
+ HREF="node42.html">6.5 The mud window</A>
 <B> Up:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
+ HREF="node37.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node40.html">3.3.3 Effective stress and</A>
- &nbsp; <B>  <A ID="tex2html544"
+ HREF="node40.html">6.3 Shear failure and</A>
+ &nbsp; <B>  <A ID="tex2html632"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3.1.2 Application of Cauchy's equations for total vertical stress calculation</TITLE>
-<META NAME="description" CONTENT="3.1.2 Application of Cauchy's equations for total vertical stress calculation">
+<TITLE>5.3 Frictional strength of faults and fault types</TITLE>
+<META NAME="description" CONTENT="5.3 Frictional strength of faults and fault types">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -27,90 +27,774 @@
  HREF="node35.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node32.html">
+ HREF="node31.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node33.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html523"
+<A ID="tex2html577"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node35.html">3.1.3 Continuum mechanics solution</A>
+ HREF="node35.html">5.4 Determination of normal</A>
 <B> Up:</B> <A
- HREF="node32.html">3.1 Stress tensor</A>
+ HREF="node31.html">5. Stresses on Faults</A>
 <B> Previous:</B> <A
- HREF="node33.html">3.1.1 Cauchy's equations of</A>
- &nbsp; <B>  <A ID="tex2html524"
+ HREF="node33.html">5.2 Mapping of faults</A>
+ &nbsp; <B>  <A ID="tex2html578"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<H2><A ID="SECTION00412000000000000000">
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Application of Cauchy's equations for total vertical stress calculation</A>
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html579"
+  HREF="node34.html#SECTION00631000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Fault strength</A>
+<LI><A ID="tex2html580"
+  HREF="node34.html#SECTION00632000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Normal faults</A>
+<LI><A ID="tex2html581"
+  HREF="node34.html#SECTION00633000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Thrust and reverse faults</A>
+<LI><A ID="tex2html582"
+  HREF="node34.html#SECTION00634000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Strike-slip faults</A>
+<LI><A ID="tex2html583"
+  HREF="node34.html#SECTION00635000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Stress and faulting regimes</A>
+<LI><A ID="tex2html584"
+  HREF="node34.html#SECTION00636000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Ideal orientation of faults</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00630000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN> Frictional strength of faults and fault types</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00631000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Fault strength</A>
 </H2>
 
 <P>
-Consider a half-space where the surface coincides with the origin of the coordinate system and gravity <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img229.svg"
- ALT="$g$"></SPAN> points in direction 3, hence <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img230.svg"
- ALT="$b_3 = g$"></SPAN> in Eq. <A HREF="node33.html#eq:Cauchy">3.2</A>.
-We assume infinite extension in directions 1 and 2, therefore there are no variations in directions 1 and 2, such that <!-- MATH
- $\partial()/\partial x_1 = \partial()/\partial x_2 = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img231.svg"
- ALT="$\partial()/\partial x_1 = \partial()/\partial x_2 = 0$"></SPAN>.
-Notice there are 6 unknowns and 3 equations in Eq. <A HREF="node33.html#eq:Cauchy">3.2</A> (remember <!-- MATH
- $S_{ij} = S_{ji}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img214.svg"
- ALT="$S_{ij}=S_{ji}$"></SPAN> ).
-The only equation we can solve is the third one.
-Integration of the third equation yields the (vertical) stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img232.svg"
- ALT="$S_{33}$"></SPAN>,
+At the large scale, the Earth's crust is constituted by &ldquo;already broken" rock layers. 
+These discontinuities are comprised mostly of faults. 
+The cementation or cohesive strength of faults is negligible because the rock is already broken at those interfaces.
+Hence, a large block of rock does not have any cohesive strength or &ldquo;unconfined compression strength&rdquo;. 
+Hence, its shear strength depends only on frictional strength according to the Coulomb frictional criterion (Fig. <A HREF="#fig:StrengthFaults">5.10</A>).
+You may think of &ldquo;El Capit&#225;n&rdquo; rock cliff (<kbd><A ID="tex2html105"
+  HREF="https://www.reviewjournal.com/wp-content/uploads/2018/06/10646363_web1_yosemite-fatal-fall_6053325.jpg">https://www.reviewjournal.com/wp-content/uploads/2018/06/10646363_web1_yosemite-fatal-fall_6053325.jpg</A></kbd>) as an example of a rock mass, strong and continuous, but that is an exception not the rule. 
+Furthermore, the size of &ldquo;El Capit&#225;n&rdquo; (<SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img14.svg"
+ ALT="$\sim $"></SPAN> 900 m <SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img14.svg"
+ ALT="$\sim $"></SPAN> 3000 ft) is smaller than the size of sedimentary basins (<SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img14.svg"
+ ALT="$\sim $"></SPAN> 100 km and bigger). 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:StrengthFaults"></A><A ID="4403"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.10:</STRONG>
+Limits on effective principal stresses</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15897" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img508.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-20.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Because the lack of cohesive strength of the Earth's crust at the large scale, its shear strength just depends on frictional strength through the friction coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img162.svg"
+ ALT="$\mu$"></SPAN> (or equivalent friction parameter <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img464.svg"
+ ALT="$q$"></SPAN>). The coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img445.svg"
+ ALT="$\mu_i$"></SPAN> is the internal frictional angle of rock before rupture, while <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img162.svg"
+ ALT="$\mu$"></SPAN> is the friction coefficient after initial rupture.
+Hence, the shear strength of large blocks in the Earth's crust is simply
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-S_{33}(x_3) = \int_0^{x_3} \rho(x_3) g \: dx_3
+\sigma_1 = q \: \sigma_3
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.52ex; vertical-align: -2.21ex; " SRC="img233.svg"
- ALT="$\displaystyle S_{33}(x_3) = \int_0^{x_3} \rho(x_3) g \: dx_3$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img509.svg"
+ ALT="$\displaystyle \sigma_1 = q \: \sigma_3$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>		
+
+<P>
+where
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+q = \left( \sqrt{\mu^2 +1} + \mu \right) ^2 = \frac{1+\sin \: \varphi}{1-\sin \: \varphi}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.36ex; vertical-align: -2.15ex; " SRC="img510.svg"
+ ALT="$\displaystyle q = \left( \sqrt{\mu^2 +1} + \mu \right) ^2 = \frac{1+\sin \: \varphi}{1-\sin \: \varphi}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>		
+
+<P>
+For typical friction coefficients the coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img464.svg"
+ ALT="$q$"></SPAN> varies from 3 to 7. This means that the maximum ratio between maximum principal effective stress and minimum principal effective stress is <!-- MATH
+ $\sigma_1/\sigma_3 <$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img511.svg"
+ ALT="$\sigma_1/\sigma_3 &lt; $"></SPAN> 3 to 7 (See Table <A HREF="#table:FrictionAnisotropy">5.1</A>). This ratio is usually called &ldquo;(effective) stress anisotropy&rdquo;. 
+
+<P>
+<BR><P></P>
+<DIV class="CENTER">
+<DIV class="CENTER">
+<A ID="table:FrictionAnisotropy"></A><A ID="4415"></A>
+<TABLE class="PAD  BORDER" style="">
+<CAPTION><STRONG>Table 5.1:</STRONG>
+Relationship between friction coefficients, maximum stress anisotropy, and expected failure angle.</CAPTION>
+<TR><TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img162.svg"
+ ALT="$\mu$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img464.svg"
+ ALT="$q$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img68.svg"
+ ALT="$\phi$"></SPAN></TD>
+<TD CLASS="CENTER"><!-- MATH
+ $\pi/4 + \phi/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img512.svg"
+ ALT="$\pi/4 + \phi/2$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">0.6</TD>
+<TD CLASS="CENTER">3.1</TD>
+<TD CLASS="CENTER"><!-- MATH
+ $\sim 30 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img513.svg"
+ ALT="$\sim 30 ^{\circ}$"></SPAN></TD>
+<TD CLASS="CENTER"><!-- MATH
+ $\sim 60 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img514.svg"
+ ALT="$\sim 60 ^{\circ}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">1.0</TD>
+<TD CLASS="CENTER">5.8</TD>
+<TD CLASS="CENTER"><!-- MATH
+ $45 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img515.svg"
+ ALT="$45 ^{\circ}$"></SPAN></TD>
+<TD CLASS="CENTER"><!-- MATH
+ $67.5 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img516.svg"
+ ALT="$67.5 ^{\circ}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">1.2</TD>
+<TD CLASS="CENTER">7.6</TD>
+<TD CLASS="CENTER"><!-- MATH
+ $50 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img517.svg"
+ ALT="$50 ^{\circ}$"></SPAN></TD>
+<TD CLASS="CENTER"><!-- MATH
+ $70 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img518.svg"
+ ALT="$70 ^{\circ}$"></SPAN></TD>
+</TR>
+</TABLE></DIV>
+</DIV>
+<BR>
+
+<P>
+The maximum allowable stress anisotropy in a geological formation depends on its shear strength.
+Faults form or reactivate when this stress anisotropy, and therefore shear strength, is surpassed.	
+
+<UL>
+<LI><!-- MATH
+ $\sigma_1 / \sigma_3 > q$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img519.svg"
+ ALT="$\sigma_1 / \sigma_3 &gt; q$"></SPAN> implies fault slip.
+</LI>
+<LI><!-- MATH
+ $\sigma_1 / \sigma_3 < q$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img520.svg"
+ ALT="$\sigma_1 / \sigma_3 &lt; q$"></SPAN> implies no fault slip.
+</LI>
+</UL>
+These relationships can also be worked out in terms of total stresses  but it is easier and more meaningful to keep them in terms of effective stresses (just do not forget pore pressure).
+
+<P>
+
+<H2><A ID="SECTION00632000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Normal faults</A>
+</H2>
+
+<P>
+A normal fault is caused by in-situ stress conditions in which 		<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+		\begin{array}{l}
+			S_1 = S_v \\
+			S_2 = S_{Hmax} \\
+			S_3 = S_{hmin} \\
+		\end{array}
+	\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img521.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+S_1 = S_v \\
+S_2 = S_{Hmax} \\
+S_3 = S_{hmin} \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
+where <!-- MATH
+ $S_1 > S_2 > S_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img522.svg"
+ ALT="$S_1 &gt; S_2 &gt; S_3$"></SPAN>.
+These stress conditions are typical of tectonically passive and laterally extensional environments.	
+For example, the Permian Basin in Texas is mostly under normal faultin stress regime.
+The fault plane is a shear rupture plane. Its orientation is (<!-- MATH
+ $\pi/4 + \varphi/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img460.svg"
+ ALT="$\pi/4 + \varphi/2$"></SPAN>) in vertical direction from the horizontal plane (the plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN>). 
+The blocks move along the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> and do work against <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN>. 
+At any point in the fault, the block above the fault is called the &ldquo;hanging-wall&rdquo; and the block below is the &ldquo;footwall&rdquo; (Fig. <A HREF="#fig:NormalFault">5.11</A>). 
 
 <P>
-equivalent to Eq. <A HREF="node15.html#eq:VertStressGral">2.11</A>.
 
-<P>
-
-<DIV class="CENTER"><A ID="fig:lec4-7"></A><A ID="1400"></A>
+<DIV class="CENTER"><A ID="fig:NormalFault"></A><A ID="4441"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.4:</STRONG>
-Stress gradient in a solid half-space</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14762" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 5.11:</STRONG>
+Single normal fault</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15974" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img234.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/4-7.pdf}"></DIV></TD></TR>
+ SRC="img523.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/6-12.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-You may wonder &ldquo;what about <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img235.svg"
- ALT="$S_{11}$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img236.svg"
- ALT="$S_{22}$"></SPAN>?
-The horizontal stresses cannot be determined with the current equations.
-The solution to this problem will be developed in section <A HREF="node41.html#sec:CalcHzStress">3.3.4</A>.
+Normal faults usually occur in pairs. 
+Notice that the shear failure angle includes two possible solutions (for <!-- MATH
+ $S_1 \neq S_2 \neq S_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img524.svg"
+ ALT="$S_1 \neq S_2 \neq S_3$"></SPAN>). These are called conjugate solutions. 
+The block that moves down in between two normal conjugate faults is termed &ldquo;graben&rdquo;, while the ones that move up relative to the footwall  are called &ldquo;horst&rdquo;. 
+These geological structures occur frequently in hydrocarbon systems with structural fault traps.
 
 <P>
-<BR><HR>
+
+<DIV class="CENTER"><A ID="fig:lec6-X"></A><A ID="4446"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.12:</STRONG>
+Conjugate normal faults forming graben and horst structures.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15981" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img525.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/6-13.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00633000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Thrust and reverse faults</A>
+</H2>
+
+<P>
+A thrust fault is caused by in-situ stress conditions in which 		
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+		\begin{array}{l}
+			S_1 = S_{Hmax} \\
+			S_2 = S_{hmin} \\
+			S_3 = S_v \\
+		\end{array}
+	\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img526.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+S_1 = S_{Hmax} \\
+S_2 = S_{hmin} \\
+S_3 = S_v \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+These stress conditions are typical of locations with high compressive tectonic strains.
+For example, sedimentary basins close to the Andes and Himalayas foothills are under reverse faulting regime.	
+The fault plane is a shear rupture plane. Its orientation is <!-- MATH
+ $(\pi/4 + \varphi/2)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img527.svg"
+ ALT="$(\pi/4 + \varphi/2)$"></SPAN> in vertical direction from a vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN>. 
+The blocks move along the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN> and do work against gravity <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> (surface lift). 
+As with normal faulting, the block above the fault is called the &ldquo;hanging-wall&rdquo; and the block below the &ldquo;footwall&rdquo;.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec6-X"></A><A ID="4461"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.13:</STRONG>
+Thrust fault example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par15997" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img528.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-14.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+A fault that may have been caused by paleo-stresses corresponding to a normal stress regime, but now moves according to in-situ stress conditions of a thrust fault stress environment is termed a reverse fault.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec6-X"></A><A ID="4466"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.14:</STRONG>
+Reverse fault example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16002" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img529.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-15.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00634000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Strike-slip faults</A>
+</H2>
+
+<P>
+A strike-slip fault is caused by in-situ stress conditions in which 	
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+		\begin{array}{l}
+			S_1 = S_{Hmax} \\
+			S_2 = S_v \\
+			S_3 = S_{hmin} \\
+		\end{array}
+	\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img530.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+S_1 = S_{Hmax} \\
+S_2 = S_v \\
+S_3 = S_{hmin} \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+These stress conditions are typical of high compressive tectonic strains mostly in one direction.
+Some sedimentary basins around the Rockies and near California are under strike slip regime.	
+The fault plane is a shear rupture plane and it is vertical. Its orientation is <!-- MATH
+ $(\pi/4 + \varphi/2)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img527.svg"
+ ALT="$(\pi/4 + \varphi/2)$"></SPAN> in horizontal direction from a vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN>. 
+The schematic in Fig. <A HREF="#fig:StrikeSlipSchematics">5.15</A> shows an oblique fault, not a pure strike-slip fault.
+The fault is called strike-slip, because it slips in horizontal direction, in the direction of the fault strike. 
+Notice that oblique faults move with a combination of vertical and horizontal displacements.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:StrikeSlipSchematics"></A><A ID="4481"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.15:</STRONG>
+Strike-slip fault example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16014" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img531.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-16.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00635000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Stress and faulting regimes</A>
+</H2>
+
+<P>
+The type of fault that occurs for each stress combination gives rise to the name of stress faulting regime (Table <A HREF="#table:Andersonian">5.2</A>). 
+Notice that stresses may change in magnitude and direction with time at a given location (see stress map in Fig. <A HREF="#fig:WorldStressMap">5.16</A> - other maps available at <kbd><A ID="tex2html113"
+  HREF="http://www.world-stress-map.org/">http://www.world-stress-map.org/</A></kbd>). Furthermore, the same location may evolve through different stress regimes over geological periods of time.
+The stress regime can also change with depth at the same location.
+Changes of stress regime with depth are critical for defining the geometry of fluid-driven fractures.
+
+<P>
+<BR><P></P>
+<DIV class="CENTER">
+<DIV class="CENTER">
+<A ID="table:Andersonian"></A><A ID="4489"></A>
+<TABLE class="PAD  BORDER" style="">
+<CAPTION><STRONG>Table 5.2:</STRONG>
+The Andersonian faulting classification system.</CAPTION>
+<TR><TD CLASS="CENTER">Faulting regime</TD>
+<TD CLASS="CENTER">Maximum principal</TD>
+<TD CLASS="CENTER">Intermediate principal</TD>
+<TD CLASS="CENTER">Minimum principal</TD>
+</TR>
+<TR><TD CLASS="CENTER">&nbsp;</TD>
+<TD CLASS="CENTER">stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN></TD>
+<TD CLASS="CENTER">stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img193.svg"
+ ALT="$S_2$"></SPAN></TD>
+<TD CLASS="CENTER">stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">Normal</TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">Strike-slip</TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">Reverse</TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img532.svg"
+ ALT="$S_{v}$"></SPAN></TD>
+</TR>
+</TABLE></DIV>
+</DIV>
+<BR>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:WorldStressMap"></A><A ID="4954"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.16:</STRONG>
+World stress map <kbd><A ID="tex2html115"
+  HREF="http://www.world-stress-map.org/">http://www.world-stress-map.org/</A></kbd>. The figure above shows directions of maximum horizontal stresses based on various types of field measurements. The orientation of maximum horizontal stress varies with location and is strongly influenced by plate movement and imparted tectonic strains.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16067" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img533.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-18.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00636000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Ideal orientation of faults</A>
+</H2>
+
+<P>
+The ideal orientation of a hydraulic fracture is a plane perpendicular to the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> direction.
+Similarly, we can also tell what would be the orientation of ideal conjugate pairs of shear fractures (faults) for a given state of stress. 
+The dip and strike will depend on <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN>, and the friction angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img449.svg"
+ ALT="$\varphi$"></SPAN> (Fig. <A HREF="#fig:FracIdealOrientation">5.17</A>). 
+Such ideal conjugate pair of shear fractures would be located:
+
+<UL>
+<LI>in planes that are in between the planes perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN>,
+</LI>
+<LI>in planes that are co-linear with <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img193.svg"
+ ALT="$S_2$"></SPAN>,
+</LI>
+<LI>in planes that are at 45<!-- MATH
+ $^{\circ} + \varphi/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img534.svg"
+ ALT="$^{\circ} + \varphi/2$"></SPAN> from the plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN>
+</LI>
+</UL>
+Notice that all these angles vary according to the stress regime.
+Faults formed in NF stress regime tend to be steep.
+Faults formed in RF stress regime are not too steep.
+Faults formed in SS stress regime are vertical.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:FracIdealOrientation"></A><A ID="4514"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.17:</STRONG>
+Summary of ideal (a) hydraulic fracture orientation, (b) normal fault orientation, (c) strike-slip fault orientation, and (d) thrust (reverse) faults orientation.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16091" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./6-IdealFaultOrientation.png"
+ ALT="Image 6-IdealFaultOrientation"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+<SPAN  CLASS="textit">PROBLEM 5.1:</SPAN> Find the ideal orientation of a hydraulic fracture and faults (shear fractures) at a location subjected to the following state of stress and conditions:
+
+<UL>
+<LI>Stress regime: Normal faulting 
+</LI>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> is a principal stress
+</LI>
+<LI>Azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN> is N60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img8.svg"
+ ALT="$^{\circ }$"></SPAN>W
+</LI>
+<LI>Friction angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img449.svg"
+ ALT="$\varphi$"></SPAN> = 30<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img8.svg"
+ ALT="$^{\circ }$"></SPAN>. 	
+</LI>
+</UL> 
+
+<P>
+SOLUTION <BR>
+First, recognize the planes of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> and their orientations with respect to the geographical coordinate system.
+The plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> in this case is a horizontal plane (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> plane, a principal stress) and the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> is a vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN>.
+
+<P>
+
+<DIV class="CENTER">
+<DIV CLASS="centerline" ID="par16117" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img535.svg"
+ ALT="\includegraphics[scale=0.75]{.././Figures/split/6-IdealFracP1.pdf}"></DIV>
+
+</DIV> 
+<P>
+A hydraulic fracture would be perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN>, in this case <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN>. Hence, the strike is <!-- MATH
+ $\phi_{HF} = 030^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img536.svg"
+ ALT="$\phi_{HF} = 030^{\circ}$"></SPAN> and the dip is <!-- MATH
+ $\delta_{HF} = 90^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img537.svg"
+ ALT="$\delta_{HF} = 90^{\circ}$"></SPAN> because <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> is horizontal.
+
+<P>
+Faults will also depend on the friction angle.
+In this case, the failure angle is:
+<P><!-- MATH
+ \begin{displaymath}
+\beta = 45^{\circ} + \varphi / 2 =  45^{\circ} + 30^{\circ} / 2 = 60^{\circ}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img538.svg"
+ ALT="$\displaystyle \beta = 45^{\circ} + \varphi / 2 = 45^{\circ} + 30^{\circ} / 2 = 60^{\circ} $">
+</DIV><P></P>
+The fault planes are at <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img10.svg"
+ ALT="$\beta $"></SPAN> going from the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> to the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN>.
+Thus, the strike of the two possible faults is <!-- MATH
+ $\phi_{F1} = \phi_{F2} = 030^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img539.svg"
+ ALT="$\phi_{F1} = \phi_{F2} = 030^{\circ}$"></SPAN> and the dips are <!-- MATH
+ $\delta_{F1} = 60^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img540.svg"
+ ALT="$\delta_{F1} = 60^{\circ}$"></SPAN>SE and <!-- MATH
+ $\delta_{F1} = 60^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img540.svg"
+ ALT="$\delta_{F1} = 60^{\circ}$"></SPAN>NW. <!-- MATH
+ $\: \: \blacksquare$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img129.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+
+<P>
+<SPAN  CLASS="textit">PROBLEM 5.2:</SPAN> Find the ideal orientation of a hydraulic fracture and faults (shear fractures) at a location subjected to the following state of stress and conditions:
+
+<UL>
+<LI>Stress regime: Strike-slip faulting 
+</LI>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> is a principal stress
+</LI>
+<LI>Azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN> is 010<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img8.svg"
+ ALT="$^{\circ }$"></SPAN>
+</LI>
+<LI>Friction angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img449.svg"
+ ALT="$\varphi$"></SPAN> = 40<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img8.svg"
+ ALT="$^{\circ }$"></SPAN>. 	
+</LI>
+</UL> 
+
+<P>
+SOLUTION <BR>
+First, recognize the planes of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> and their orientations with respect to the geographical coordinate system.
+The plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> in this case is a vertical plane (<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN> plane) and the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> is another vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN>.
+
+<P>
+
+<DIV class="CENTER">
+<DIV CLASS="centerline" ID="par16167" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img541.svg"
+ ALT="\includegraphics[scale=0.75]{.././Figures/split/6-IdealFracP2.pdf}"></DIV>
+
+</DIV> 
+<P>
+A hydraulic fracture would be perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN>, in this case <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN>. Hence, the strike is <!-- MATH
+ $\phi_{HF} = 010^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img542.svg"
+ ALT="$\phi_{HF} = 010^{\circ}$"></SPAN> and the dip is <!-- MATH
+ $\delta_{HF} = 90^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img537.svg"
+ ALT="$\delta_{HF} = 90^{\circ}$"></SPAN> because <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> is horizontal.
+
+<P>
+Faults will also depend on the friction angle.
+In this case, the failure angle is:
+<P><!-- MATH
+ \begin{displaymath}
+\beta = 45^{\circ} + \varphi / 2 =  45^{\circ} + 40^{\circ} / 2 = 65^{\circ}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img543.svg"
+ ALT="$\displaystyle \beta = 45^{\circ} + \varphi / 2 = 45^{\circ} + 40^{\circ} / 2 = 65^{\circ} $">
+</DIV><P></P>
+The fault planes are at <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img10.svg"
+ ALT="$\beta $"></SPAN> going from the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> to the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN>.
+Thus, the strikes of the two possible faults are <!-- MATH
+ $\phi_{F1} = 345^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img544.svg"
+ ALT="$\phi_{F1} = 345^{\circ}$"></SPAN> and <!-- MATH
+ $\phi_{F2} =  035^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img545.svg"
+ ALT="$\phi_{F2} = 035^{\circ}$"></SPAN>, the dip is <!-- MATH
+ $\delta_{F1} = \delta_{F2} = 90^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img546.svg"
+ ALT="$\delta_{F1} = \delta_{F2} = 90^{\circ}$"></SPAN>. <!-- MATH
+ $\: \: \blacksquare$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img129.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node35.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node33.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html577"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node35.html">5.4 Determination of normal</A>
+<B> Up:</B> <A
+ HREF="node31.html">5. Stresses on Faults</A>
+<B> Previous:</B> <A
+ HREF="node33.html">5.2 Mapping of faults</A>
+ &nbsp; <B>  <A ID="tex2html578"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
 
 </BODY>
 </HTML>

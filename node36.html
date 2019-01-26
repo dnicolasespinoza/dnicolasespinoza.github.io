@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3.2 Kinematic equations: displacements and strains</TITLE>
-<META NAME="description" CONTENT="3.2 Kinematic equations: displacements and strains">
+<TITLE>5.5 Applications</TITLE>
+<META NAME="description" CONTENT="5.5 Applications">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,8 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
-<LINK REL="next" HREF="node37.html">
-<LINK REL="previous" HREF="node32.html">
+<LINK REL="previous" HREF="node35.html">
 <LINK REL="next" HREF="node37.html">
 </HEAD>
 
@@ -32,270 +31,494 @@
 <A
  HREF="node35.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html527"
+<A ID="tex2html589"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
+ HREF="node37.html">6. Wellbore stability</A>
 <B> Up:</B> <A
- HREF="node31.html">3. Fundamentals of linear</A>
+ HREF="node31.html">5. Stresses on Faults</A>
 <B> Previous:</B> <A
- HREF="node35.html">3.1.3 Continuum mechanics solution</A>
- &nbsp; <B>  <A ID="tex2html528"
+ HREF="node35.html">5.4 Determination of normal</A>
+ &nbsp; <B>  <A ID="tex2html590"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<H1><A ID="SECTION00420000000000000000">
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kinematic equations: displacements and strains</A>
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html591"
+  HREF="node36.html#SECTION00651000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN> Critically stressed fractures and permeability</A>
+<LI><A ID="tex2html592"
+  HREF="node36.html#SECTION00652000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN> Determination of horizontal stresses assuming limit equilibrium</A>
+<LI><A ID="tex2html593"
+  HREF="node36.html#SECTION00653000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN> Determination of stress regime and horizontal stress direction from fault orientation</A>
+<LI><A ID="tex2html594"
+  HREF="node36.html#SECTION00654000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN> Fault reactivation</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00650000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN> Applications</A>
 </H1>
 
 <P>
-Applications of stresses result in solid deformation and displacements.
-Figure <A HREF="#fig:FreeFEMexample">3.6</A> shows an example of a solid body with its corresponding displacement vector field from the original to the deformed state.
-In this particular case, the solid is anchored at the bottom and deforms due to the application of a force (from left to right) on the top.
+
+<H2><A ID="SECTION00651000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN> Critically stressed fractures and permeability</A>
+</H2>
+
+<P>
+A critically-stressed fracture or fault has a ratio between shear stress and normal effective stress <!-- MATH
+ $\tau/\sigma_n$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img15.svg"
+ ALT="$\tau /\sigma _n$"></SPAN> which approaches the friction angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img625.svg"
+ ALT="$\mu \sim$"></SPAN> 0.6-1.0. 
+The fracture is said to be &ldquo;critically stressed&rdquo; because it is practically failing (although slowly). 
+Such fractures -if exhibit dilation during sliding- tend to be more hydraulically conductive than (1) fractures with low <!-- MATH
+ $\tau/\sigma_n$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img15.svg"
+ ALT="$\tau /\sigma _n$"></SPAN> ratio (on the right of the Mohr circle), and (2) fractures with even lower <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img444.svg"
+ ALT="$\sigma_n$"></SPAN> but negligible <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img443.svg"
+ ALT="$\tau$"></SPAN> (points in the far left of the Mohr circle) <A HREF="#fig:FracPermMohr">5.22</A>.
+The concept of critically stressed fractures adds one more level of dependency to the well known dependence of fracture permeability as a function of normal effective stress.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:FreeFEMexample"></A><A ID="1420"></A>
+<DIV class="CENTER"><A ID="fig:FracPermMohr"></A><A ID="4980"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.6:</STRONG>
-Example of displacement vector field for a solid anchored on the bottom and with a force (left to right) applied on the top surface. All other solid surfaces (but the bottom) can move freely.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14778" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 5.22:</STRONG>
+Effective normal and shear stress on fractures normalized by <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img12.svg"
+ ALT="$S_V$"></SPAN> (There is a mistake in the figure: the x-axis should read <!-- MATH
+ $(S_n-P_p)/S_v$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img13.svg"
+ ALT="$(S_n-P_p)/S_v$"></SPAN>). Critically stressed fractures (left) and non-critically stressed fractures(right).</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16727" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img238.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/4-9.pdf}"></DIV></TD></TR>
+ SRC="img626.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-67.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-Yet, absolute displacements are not enough to determine stresses.
-A solid may translate or rotate in space without development of any internal stresses required to equilibrate external actions (imagine a cookie &ldquo;floating&rdquo; in zero gravity within the Space International Station).
+Hence, the state of stress determines which fractures are hydraulically conductive and also determines permeability anisotropy in a fractured reservoir. 
+The same reasoning applies to large faults.
+There are faults that may be more easily reactivated due to pore pressure changes because of their orientation respect to the current state of stress.
+Fractures that have an orientation that favors high <!-- MATH
+ $\tau/\sigma_n$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img15.svg"
+ ALT="$\tau /\sigma _n$"></SPAN> ratio are said to be &ldquo;critically oriented&rdquo;.
+[make figure example and corresponding assignment with wellbore placement]
 
 <P>
-Let's look at Figure <A HREF="#fig:kinematics2D">3.7</A> in order to relate displacements to strains:
+Natural fractures can help fluid drainage.
+Usually fractures have a permeability that depends on the state of stress, where critically oriented fractures have higher permeability than non-critically oriented fractures.
+The orientation of such fractures is critical for determining the orientation of a horizontal wellbore that minimizes the least resistance path of fluids from the rock matrix to the wellbore.
+See example in Fig. <A HREF="#fig:FracResPerm">5.23</A>.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:FracResPerm"></A><A ID="4844"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.23:</STRONG>
+Example of horizontal wellbore placement in a fractured reservoir. The horizontal wellbore should be ideally perpendicular to critically stressed fractures.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16742" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./6-FractureReservoirPerm.png"
+ ALT="Image 6-FractureReservoirPerm"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Fractures can also create and reactivate during hydraulic fracturing.
+The dots in Fig. <A HREF="#fig:HydFracMicroseismicity">5.24</A> indicate micro-to-nano earthquakes hypocenters (at depth) triggered by rock failure during hydraulic fracturing.
+Hydraulic fracturing imparts changes of stresses that reactivate some critically oriented fractures in tight reservoirs.
+These reactivated fractures are useful to contribute to increase the permeability of tight reservoirs at the large scale (also known as Stimulated Reservoir Volume SRV).
+Some of these created fractures may close and seal-off fairly quickly upon depletion if not propped.
+Significant ongoing research addresses how to maintain the permeability of these fractures in the long-term.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:HydFracMicroseismicity"></A><A ID="4983"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.24:</STRONG>
+Shear fracture reactivation in multistage hydraulic fracturing evidenced by microseismic activity - Image from <a href="http://dx.doi.org/10.1190/INT-2016-0199.1">[Wilson et al. 2018 - Interpretation]</a></CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16746" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./6-Microseismicity.png"
+ ALT="Image 6-Microseismicity"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00652000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN> Determination of horizontal stresses assuming limit equilibrium</A>
+</H2>
+
+<P>
+Tectonic plates drive movements of the Earth's crust  (Fig.  <A HREF="#fig:BrittleCrust">5.25</A>). 
+High temperatures and high effective stresses at great depth favor ductile deformation. 
+Low temperatures and low effective stresses in the near-surface favor brittle failure. 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:BrittleCrust"></A><A ID="4858"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.25:</STRONG>
+Schematic of a section of the Earth's crust with brittle failure near surface and ductile deformation at depths greater than <SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img14.svg"
+ ALT="$\sim $"></SPAN> 16 km.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16751" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img627.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/6-21.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+As a result of ubiquitous shear failure and faulting of the Earth's shallow crust, friction equilibrium limits the maximum magnitude of stresses imparted by tectonic strains. 
+The limit is proportional to the frictional strength of faults. Because faults are cohesion-less, the frictional strength equation is simply:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\sigma_1 = q \sigma_3
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img628.svg"
+ ALT="$\displaystyle \sigma_1 = q \sigma_3$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">14</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+(like sand, zero-intercept in the y-axis) where <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img23.svg"
+ ALT="$\sigma _1$"></SPAN> is the maximum effective principal stress, <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img24.svg"
+ ALT="$\sigma _3$"></SPAN> is the minimum effective principal stress, and <!-- MATH
+ $q=[1+\sin(\varphi)]/[1-\sin(\varphi)]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img629.svg"
+ ALT="$q=[1+\sin(\varphi)]/[1-\sin(\varphi)]$"></SPAN> is the anisotropy factor. 
+The shear strength of the brittle crust has a direct implication in determining the maximum and minimum values of horizontal stresses for each stress regime. 
+Frictional equilibrium of the brittle crust implies that horizontal stresses are controlled by shear failure. 
+Hence, for
 
 <UL>
-<LI>(LEFT) A solid is stretched on its face 1 in direction 1 only. This type of deformation produces a change of volume of the solid and contributes to volumetric strain. The resulting deformation or strain (change of length divided original length) is
-	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\varepsilon_{11} = \frac{\Delta u_1}{\Delta x_1}
-\end{equation}
+<LI>normal stress regime (NF): <!-- MATH
+ $\sigma_{hmin}$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img239.svg"
- ALT="$\displaystyle \varepsilon_{11} = \frac{\Delta u_1}{\Delta x_1}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img547.svg"
+ ALT="$\sigma_{hmin}$"></SPAN> cannot be smaller than <!-- MATH
+ $\sigma_{v}/q$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img630.svg"
+ ALT="$\sigma_{v}/q$"></SPAN>, for
 </LI>
-<LI>(CENTER) A solid is stretched on its face 2 in direction 2 only.  This type of deformation also contributes to volumetric strain. The resulting strain is
-	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\varepsilon_{22} = \frac{\Delta u_2}{\Delta x_2}
-\end{equation}
+<LI>strike-slip stress regime (SS): <!-- MATH
+ $\sigma_{Hmax}$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img240.svg"
- ALT="$\displaystyle \varepsilon_{22} = \frac{\Delta u_2}{\Delta x_2}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img548.svg"
+ ALT="$\sigma_{Hmax}$"></SPAN> cannot be greater than <!-- MATH
+ $q \: \sigma_{hmin}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img631.svg"
+ ALT="$q \: \sigma_{hmin}$"></SPAN>, and for
 </LI>
-<LI>(RIGHT) The solid is now distorted. Notice that the faces do not make a right angle anymore. The change of volume is negligible for small deformations. The resulting distortion or shear strain is proportional to the change in angle between faces 1 and 2. Hence the change of angle is <!-- MATH
- $\pi - \left[ \pi - \arctan(\Delta u_1 / \Delta x_2) + \arctan(\Delta u_2 / \Delta x_1) \right]$
+<LI>reverse stress regime (RF): <!-- MATH
+ $\sigma_{Hmax}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img241.svg"
- ALT="$\pi - \left[ \pi - \arctan(\Delta u_1 / \Delta x_2) + \arctan(\Delta u_2 / \Delta x_1) \right] $"></SPAN>. The shear strain is 1/2 of the total change of  the angle and therefore (for small changes <!-- MATH
- $\arctan(x/y) \sim x/y$
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img548.svg"
+ ALT="$\sigma_{Hmax}$"></SPAN> cannot be greater than <!-- MATH
+ $q \: \sigma_{v}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img242.svg"
- ALT="$\arctan(x/y) \sim x/y$"></SPAN>)
-	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\varepsilon_{12} = \frac{1}{2} \left( \frac{\Delta u_1}{\Delta x_2} + \frac{\Delta u_2}{\Delta x_1} \right)
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img243.svg"
- ALT="$\displaystyle \varepsilon_{12} = \frac{1}{2} \left( \frac{\Delta u_1}{\Delta x_2} + \frac{\Delta u_2}{\Delta x_1} \right)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-The average in the equation ensures capturing shear distortion rather than rotation. 
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img632.svg"
+ ALT="$q \: \sigma_{v}$"></SPAN>.
 </LI>
-</UL>		
+</UL>
+
+<P>
+As a result, the assumption of limit frictional equilibrium permits estimating minimum and maximum horizontal stresses if effective stresses <!-- MATH
+ $\sigma_{hmin}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img547.svg"
+ ALT="$\sigma_{hmin}$"></SPAN> or <!-- MATH
+ $\sigma_{v}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img550.svg"
+ ALT="$\sigma_{v}$"></SPAN> are known.
+
+<P>
+<SPAN  CLASS="textit">PROBLEM 5.13:</SPAN> A given site onshore is known to be subjected to a NF stress regime and hydrostatic pore pressure. Calculate the total horizontal minimum stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN> at a depth of 5000 ft assuming frictional equilibrium of faults and friction angle <!-- MATH
+ $\phi = 30^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img633.svg"
+ ALT="$\phi = 30^{\circ}$"></SPAN>.
+
+<P>
+SOLUTION <BR>
+The solution is a lower bound estimation of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img185.svg"
+ ALT="$S_{hmin}$"></SPAN> for normal faulting stress regime dictated by frictional equilibrium.
+
+<DIV class="CENTER">
+<DIV CLASS="centerline" ID="par16790" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./6-ShminNF.png"
+ ALT="Image 6-ShminNF"></DIV>
+
+</DIV> <!-- MATH
+ $\: \: \blacksquare$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img129.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+
+<P>
+<SPAN  CLASS="textit">PROBLEM 5.14:</SPAN> A given site onshore is known to be subjected to a RF stress regime. Hard pressure is detected at 2000 ft with <!-- MATH
+ $\lambda_p=0.82$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img634.svg"
+ ALT="$\lambda_p=0.82$"></SPAN>. Calculate the total maximum horizontal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN> at this depth assuming frictional equilibrium of faults and friction angle <!-- MATH
+ $\phi = 30^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img633.svg"
+ ALT="$\phi = 30^{\circ}$"></SPAN>.
+
+<P>
+SOLUTION <BR>
+The solution is an upper bound for <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img184.svg"
+ ALT="$S_{Hmax}$"></SPAN>.
+
+<DIV class="CENTER">
+<DIV CLASS="centerline" ID="par16801" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./6-SHmaxRF.png"
+ ALT="Image 6-SHmaxRF"></DIV>
+
+</DIV> Let us assume a lithostatic stress gradient of 1 psi/ft, hence
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+S_v = 1 \text{ psi/ft} \times 2000 \text{ ft} = 2000 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img635.svg"
+ ALT="$\displaystyle S_v = 1$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img114.svg"
+ ALT="$\displaystyle \times 2000$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img636.svg"
+ ALT="$\displaystyle = 2000$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.21ex; vertical-align: -0.11ex; " SRC="img637.svg"
+ ALT="$\displaystyle $">
+</DIV><P></P>
+
+<P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> is the minimum principal since the site is subjected to reverse faulting regime.
+Given the overpressure parameter, pore pressure is
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+P_p = \lambda_p S_v = 0.82 \times 2000 \text{ psi} = 1640 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img638.svg"
+ ALT="$\displaystyle P_p = \lambda_p S_v = 0.82 \times 2000$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img639.svg"
+ ALT="$\displaystyle = 1640$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.21ex; vertical-align: -0.11ex; " SRC="img637.svg"
+ ALT="$\displaystyle $">
+</DIV><P></P>
+
+<P>
+and effective vertical stress is  
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\sigma_v = S_v - P_p = 2000 \text{ psi} - 1640 \text{ psi} = 360 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img640.svg"
+ ALT="$\displaystyle \sigma_v = S_v - P_p = 2000$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img641.svg"
+ ALT="$\displaystyle - 1640$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img642.svg"
+ ALT="$\displaystyle = 360$">&nbsp; &nbsp; psi
+</DIV><P></P>
+
+<P>
+Finally, the maximum effective horizontal stress depends on the vertical effective stress (reverse faulting regime), so that 
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\sigma_{Hmax} = q \: \sigma_v = \frac{1+\sin 30^{\circ}}{1-\sin 30^{\circ}} 360 \text{ psi} = 1080 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.17ex; vertical-align: -1.89ex; " SRC="img643.svg"
+ ALT="$\displaystyle \sigma_{Hmax} = q \: \sigma_v = \frac{1+\sin 30^{\circ}}{1-\sin 30^{\circ}} 360$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img644.svg"
+ ALT="$\displaystyle = 1080$">&nbsp; &nbsp; psi
+</DIV><P></P>
+and therefore
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+S_{Hmax} = \sigma_{Hmax} + P_p = 1080 \text{ psi} + 1640 \text{ psi} = 2720 \text{ psi} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img645.svg"
+ ALT="$\displaystyle S_{Hmax} = \sigma_{Hmax} + P_p = 1080$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img646.svg"
+ ALT="$\displaystyle + 1640$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img647.svg"
+ ALT="$\displaystyle = 2720$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img381.svg"
+ ALT="$\displaystyle \: \: \blacksquare
+$">
+</DIV><P></P> 
+
+<P>
+The bounding limits of minimum and maximum horizontal stress for a given vertical stress and pore pressure can be plotted through Zoback's (effective) stress polygon (Fig.  <A HREF="#fig:StressPolygon">5.26</A>).
+The colored lines represent the bounds for normal faulting stress regime (NF), strike-slip faulting stress regime (SS), and reverse faulting stress regime (RF).
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:kinematics2D"></A><A ID="1447"></A>
+<DIV class="CENTER"><A ID="fig:StressPolygon"></A><A ID="4908"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.7:</STRONG>
-Strain equations for small deformations.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14793" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 5.26:</STRONG>
+The limits of horizontal stresses based on frictional equilibrium can be conveniently plotted in a &ldquo;stress polygon&rdquo; plot. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16825" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img244.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/4-10.pdf}"></DIV></TD></TR>
+ SRC="img648.svg"
+ ALT="\includegraphics[scale=0.50]{.././Figures/split/6-24.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-In summary, strains quantify not the absolute value of displacements, but its variation in space (derivative with respect to <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img245.svg"
- ALT="$x_i$"></SPAN>).
-All other strains are found with similar equations in the 3D case. 
-These strains can be organized in a tensor where elements in the diagonal contribute to volumetric strain, and off-diagonal elements are shear strains.
+Fig. <A HREF="#fig:StressPolygonNF-SS">5.27</A> shows an example of where the state of stress would plot in the stress polygon for a place with a stress regime that fluctuates from NF to SS with depth.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:StressPolygonNF-SS"></A><A ID="4914"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.27:</STRONG>
+Application example of the stress polygon. This particular place exhibits a hybrid stress regime NF and SS depending on depth and likely rock lithology.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16830" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img649.svg"
+ ALT="\includegraphics[scale=0.60]{.././Figures/split/6-25.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00653000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN> Determination of stress regime and horizontal stress direction from fault orientation</A>
+</H2>
+
+<P>
+Mapping of faults and fractures in the subsurface helps interpret the state of stress that caused such fractures.
+In some cases the state of stress that caused such faults may be still acting today.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:Thamama"></A><A ID="4992"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.28:</STRONG>
+Seismic image of the top of an anticline structure (red: shallower, blue: deeper, TOP VIEW). The discontinuities in the seismic image are strike-slip faults. Image from <a href="https://www.onepetro.org/conference-paper/IPTC-10646-MS">[IPTC-10646-MS]</a>.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16836" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./6-ThamamaHorizon.png"
+ ALT="Image 6-ThamamaHorizon"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00654000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN> Fault reactivation</A>
+</H2>
+
+<P>
+Depletion and injection of fluids in the subsurface cause changes in pore pressure and therefore on effective stresses.
+Fluid injection such as in hydraulic fracturing, water-flooding, and waste-water disposal can reach adjacent faults (if any) and decrease the effective normal stress <!-- MATH
+ $\sigma_n = S_n - P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img596.svg"
+ ALT="$\sigma_n = S_n - P_p $"></SPAN> acting on faults. 
+In hydraulic fracturing, the injection of fluids is temporary and limited to the fracture completion size.
+In water-flooding, pressure build-up is limited by the producer wells.
+In waste-water injection, the pressure build-up is controlled by the aquifer size, compressibility and compartmentalization.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec6-X"></A><A ID="4927"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.29:</STRONG>
+Fault reactivation. Injection of fluids changes the pore pressure and lowers effective normal stress on faults increasing <!-- MATH
+ $\tau/\sigma_n$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img15.svg"
+ ALT="$\tau /\sigma _n$"></SPAN>.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16843" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img650.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-FaultReactivation.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The change of stresses produced by increases of pore pressure assuming constant total vertical stress and negligible poroelastic effects is 
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-\uuline{\varepsilon} =
-	\left[
-	\begin{array}{ccc}
-		\cfrac{\partial u_1}{\partial x_1} & \cfrac{1}{2} \left( \cfrac{\partial u_1}{\partial x_2} + \cfrac{\partial u_2}{\partial x_1} \right) &  \cfrac{1}{2} \left( \cfrac{\partial u_1}{\partial x_3} + \cfrac{\partial u_3}{\partial x_1} \right)\\
-		\cfrac{1}{2} \left( \cfrac{\partial u_2}{\partial x_1} + \cfrac{\partial u_1}{\partial x_2} \right) & \cfrac{\partial u_2}{\partial x_2} & \cfrac{1}{2} \left( \cfrac{\partial u_2}{\partial x_3} + \cfrac{\partial u_3}{\partial x_2} \right)\\
-		\cfrac{1}{2} \left( \cfrac{\partial u_3}{\partial x_1} + \cfrac{\partial u_1}{\partial x_3} \right) &  \cfrac{1}{2} \left( \cfrac{\partial u_3}{\partial x_2} + \cfrac{\partial u_2}{\partial x_3} \right) & \cfrac{\partial u_3}{\partial x_3}	
-	\end{array}		
-	\right] =	
-	\left[
-	\begin{array}{ccc}
-		\varepsilon_{11} & \varepsilon_{12}  &  \varepsilon_{13} \\
-		\varepsilon_{21} & \varepsilon_{22}  &  \varepsilon_{23} \\
-		\varepsilon_{31} & \varepsilon_{32}  &  \varepsilon_{33}
-	\end{array}		
-	\right] 
+\left\lbrace
+	\begin{array}{l}
+		\Delta \sigma_v = - \Delta P_p \\
+		\Delta \sigma_{hmin} \leq - \Delta P_p \\
+	\end{array}
+	\right.
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
 <TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img246.svg"
- ALT="\begin{displaymath}\uuline{\varepsilon} =
-\left[
-\begin{array}{ccc}
-\cfrac{\part...
-...n_{31} &amp; \varepsilon_{32} &amp; \varepsilon_{33}
-\end{array}\right]\end{displaymath}"></SPAN></TD>
+ SRC="img651.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+\Delta \sigma_v = - \Delta P_p \\
+\Delta \sigma_{hmin} \leq - \Delta P_p \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">15</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-The summation of all diagonal terms yields the volumetric strain 
-<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:volstrain"></A><!-- MATH
- \begin{equation}
-\varepsilon_{vol} = \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33}
-\end{equation}
+The result is a shift of the Mohr circle to the left, closer to the shear failure or &ldquo;reactivation&rdquo; line. 
+The magnitude of change of pore pressure needed to reactivate a fault is (at least) equal to the horizontal distance between the point of the Mohr-circle  of such fault and the failure line. Hence, a critically oriented fracture needs the lowest <!-- MATH
+ $\Delta P_p$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.94ex; vertical-align: -0.48ex; " SRC="img247.svg"
- ALT="$\displaystyle \varepsilon_{vol} = \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-<SPAN  CLASS="textit">EXAMPLE 3.1</SPAN>: Demonstrate the equality in Eq. <A HREF="#eq:volstrain">3.8</A> from simple geometrical concepts. Hint: the initial volume of the solid is <!-- MATH
- $\Delta x_1 \Delta x_2 \Delta x_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img248.svg"
- ALT="$\Delta x_1 \Delta x_2 \Delta x_3$"></SPAN>. 
-
-<P>
-<BR>
-<BR>
-SOLUTION <BR>
-The definition of volumetric strain is the ratio between the change of volume <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img249.svg"
- ALT="$\Delta V$"></SPAN> and the initial volume <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img250.svg"
- ALT="$V_0$"></SPAN>:
-<P><!-- MATH
- \begin{displaymath}
-\varepsilon_{vol} =  \frac{\Delta V}{V_0}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img251.svg"
- ALT="$\displaystyle \varepsilon_{vol} = \frac{\Delta V}{V_0}
-$">
-</DIV><P></P>
-
-<P>
-For an elementary cubic volume with initial volume <!-- MATH
- $\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img252.svg"
- ALT="$\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3$"></SPAN> and volume after deformation <!-- MATH
- $(\mathrm{d} x_1 + \mathrm{d}u_1)(\mathrm{d} u_2 + \mathrm{d}u_2)(\mathrm{d} x_3 + \mathrm{d} u_3)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img253.svg"
- ALT="$(\mathrm{d} x_1 + \mathrm{d}u_1)(\mathrm{d} u_2 + \mathrm{d}u_2)(\mathrm{d} x_3 + \mathrm{d} u_3)$"></SPAN>, the equation above results
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\varepsilon_{vol} =  \frac{[(\mathrm{d} x_1 + \mathrm{d}u_1)(\mathrm{d} x_2 + \mathrm{d}u_2)(\mathrm{d} x_3 + \mathrm{d}u_3) - (\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)]}{(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img254.svg"
- ALT="$\displaystyle \varepsilon_{vol} = \frac{[(\mathrm{d} x_1 + \mathrm{d}u_1)(\math...
-...athrm{d} x_2 \mathrm{d} x_3)]}{(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)}
-$">
-</DIV><P></P>
-
-<P>
-Let us discard all the products containing <!-- MATH
- $\mathrm{d}u_i \mathrm{d}u_j$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img255.svg"
- ALT="$\mathrm{d}u_i \mathrm{d}u_j$"></SPAN> and also <!-- MATH
- $\mathrm{d}u_1 \mathrm{d}u_2 \mathrm{d}u_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img256.svg"
- ALT="$\mathrm{d}u_1 \mathrm{d}u_2 \mathrm{d}u_3$"></SPAN> because they are much smaller than the other terms (<!-- MATH
- $\mathrm{d}u_i << \mathrm{d}x_j$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img257.svg"
- ALT="$\mathrm{d}u_i &lt;&lt; \mathrm{d}x_j $"></SPAN>), then
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\varepsilon_{vol} \sim  \frac{(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d}u_3 +
-							 \mathrm{d} x_1 \mathrm{d} x_3 \mathrm{d}u_2 +
-							 \mathrm{d} x_2 \mathrm{d} x_3 \mathrm{d}u_1)}
-							 {(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)}
-				=  \frac{\mathrm{d}u_1}{\mathrm{d} x_1} + 
-				   \frac{\mathrm{d}u_2}{\mathrm{d} x_2} + 
-				   \frac{\mathrm{d}u_3}{\mathrm{d} x_3} 
-				= \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33} \: \: \blacksquare
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img258.svg"
- ALT="$\displaystyle \varepsilon_{vol} \sim \frac{(\mathrm{d} x_1 \mathrm{d} x_2 \math...
-...
-= \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33} \: \: \blacksquare
-$">
-</DIV><P></P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img146.svg"
+ ALT="$\Delta P_p$"></SPAN> to reactivate. 
 
 <P>
 
@@ -310,17 +533,17 @@ $">
 <A
  HREF="node35.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html527"
+<A ID="tex2html589"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
+ HREF="node37.html">6. Wellbore stability</A>
 <B> Up:</B> <A
- HREF="node31.html">3. Fundamentals of linear</A>
+ HREF="node31.html">5. Stresses on Faults</A>
 <B> Previous:</B> <A
- HREF="node35.html">3.1.3 Continuum mechanics solution</A>
- &nbsp; <B>  <A ID="tex2html528"
+ HREF="node35.html">5.4 Determination of normal</A>
+ &nbsp; <B>  <A ID="tex2html590"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

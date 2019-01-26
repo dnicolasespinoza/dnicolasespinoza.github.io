@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3.3.1 Linear isotropic elasticity</TITLE>
-<META NAME="description" CONTENT="3.3.1 Linear isotropic elasticity">
+<TITLE>6.1 The wellbore environment</TITLE>
+<META NAME="description" CONTENT="6.1 The wellbore environment">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -32,207 +32,116 @@
 <A
  HREF="node37.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html537"
+<A ID="tex2html619"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node39.html">3.3.2 The isotropic solid</A>
+ HREF="node39.html">6.2 Kirsch solution for</A>
 <B> Up:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
+ HREF="node37.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
- &nbsp; <B>  <A ID="tex2html538"
+ HREF="node37.html">6. Wellbore stability</A>
+ &nbsp; <B>  <A ID="tex2html620"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION00431000000000000000">
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Linear isotropic elasticity</A>
-</H2>
+<H1><A ID="SECTION00710000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> The wellbore environment</A>
+</H1>
 
 <P>
-Consider a prismatic solid with length <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img167.svg"
- ALT="$L$"></SPAN> to which we apply a stress <!-- MATH
- $\sigma_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img270.svg"
- ALT="$\sigma_{33}$"></SPAN> on top face 3 (Figure <A HREF="#fig:YoungPoisson">3.10</A>). 
-The bottom face is not allowed to move in direction 3 but can slide sideways. 
-The four other faces are free to move in all directions. 
-Notice that the top face can also deform in directions 1 and 2.
-The Young modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img263.svg"
- ALT="$E$"></SPAN> is defined as the ratio between the applied stress <!-- MATH
- $\sigma_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img270.svg"
- ALT="$\sigma_{33}$"></SPAN> and the resulting strain (in the direction of the applied stress) <!-- MATH
- $\varepsilon_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img271.svg"
- ALT="$\varepsilon_{33}$"></SPAN> 
-	<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:YoungDef"></A><!-- MATH
- \begin{equation}
-E = \frac{\sigma_{33}}{\varepsilon_{33}}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.71ex; vertical-align: -2.05ex; " SRC="img272.svg"
- ALT="$\displaystyle E = \frac{\sigma_{33}}{\varepsilon_{33}}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-The solid will most likely tend to enlarge in the direction perpendicular to the stress applied. 
-The Poisson ratio (greek letter nu) is defined as (-1) times the ratio between the strain perpendicular to the applied stress <!-- MATH
- $\varepsilon_{11}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img273.svg"
- ALT="$\varepsilon_{11}$"></SPAN> (or <!-- MATH
- $\varepsilon_{22}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img274.svg"
- ALT="$\varepsilon_{22}$"></SPAN>) and the strain in the direction of the applied stress <!-- MATH
- $\varepsilon_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img271.svg"
- ALT="$\varepsilon_{33}$"></SPAN> 
-	<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:PoissonDef"></A><!-- MATH
- \begin{equation}
-\nu = -\frac{\varepsilon_{11}}{\varepsilon_{33}}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.71ex; vertical-align: -2.05ex; " SRC="img275.svg"
- ALT="$\displaystyle \nu = -\frac{\varepsilon_{11}}{\varepsilon_{33}}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-These two coefficients are the two coefficients conventionally used as elasticity constants in continuum mechanics. 
-We will see later that in the subsurface we almost never find conditions of laterally &ldquo;unconfined&rdquo; stress loading.	
+Wellbore stability is critical for drilling.
+A stable open-hole requires the surrounding sediment and rock to bear the stresses concentrated around the cavity.
+The surrounding rock must hold stresses until casing is set or for undetermined time if left uncased.
 
 <P>
-
-<DIV class="CENTER"><A ID="fig:YoungPoisson"></A><A ID="1622"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.10:</STRONG>
-Unconfined stress loading (compression) of a linear elastic solid. Because the solid is isotropic, the same equations are valid for compression in any other direction, and also in tension.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14888" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img276.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/4-14.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-The real behavior of rocks differs from the linear elastic assumption.
-Figure <A HREF="#fig:YoungLab">3.11</A> shows an schematic representation of a typical unconfined loading test.
-The figures plots axial stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img277.svg"
- ALT="$\sigma_a$"></SPAN> in the vertical axis and axial strain <!-- MATH
- $\epsilon_a$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img278.svg"
- ALT="$\epsilon_a$"></SPAN> in the horizontal axis.
-Often, rock plugs are not perfectly parallel or may have some microcracks.
-Both features make the initial loading look less stiff than the actual rock stiffness.
-After the initial loading, the rock may show a linear response -where the Young modulus is measured- followed by softening approaching rock failure and the peak stress.
-When the test is performed under unconfined conditions, the peak stress is termed the &ldquo;unconfined compressive strength (UCS)&rdquo; of the rock (further explained in Section <A HREF="node52.html#Ch:Failure">4</A>). 
-The Poisson ratio can be measured in the same range of the measurement of <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img263.svg"
- ALT="$E$"></SPAN> when lateral strain transducers are available.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:YoungLab"></A><A ID="1629"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.11:</STRONG>
-Schematic of stress-strain curve in the laboratory. </CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14899" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="./YoungLab.png"
- ALT="Image YoungLab"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-<SPAN  CLASS="textit">EXAMPLE 3.2</SPAN>: Compute the (axial) strain expected for a rock subjected to 3000 psi of (axial) stress under unconfined axial loading for:
+Wellbore stability depends on two set of variables: one set out of our control and another set that we can control.
 
 <UL>
-<LI>A soft mudstone E = 1 GPa
+<LI>In-situ variables out of our control include far-field stresses <!-- MATH
+ $\uuline{S}{}_G$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img652.svg"
+ ALT="$\uuline{S}{}_G$"></SPAN>, pore presssure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1.svg"
+ ALT="$P_p$"></SPAN>, and rock properties.
 </LI>
-<LI>A soft sandstone E = 10 GPa
+<LI>Controllable variables include mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img16.svg"
+ ALT="$P_W$"></SPAN>, mud composition, mud chemistry, and wellbore orientation (direction azimuth and deviation).  
 </LI>
-<LI>A hard limestone E = 50 GPa 
-</LI>
-</UL>
+</UL> 
 
 <P>
-<BR>
-<BR>
-SOLUTION <BR>
-Let us work in SI units:
-<P><!-- MATH
- \begin{displaymath}
-\sigma_a = 3000 \text{ psi} = 3000 \frac{1}{145} \text{ MPa} = 20.7 \text{ MPa}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img279.svg"
- ALT="$\displaystyle \sigma_a = 3000$">&nbsp; &nbsp; psi<IMG STYLE="height: 4.86ex; vertical-align: -1.70ex; " SRC="img280.svg"
- ALT="$\displaystyle = 3000 \frac{1}{145}$">&nbsp; &nbsp; MPa<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img281.svg"
- ALT="$\displaystyle = 20.7$">&nbsp; &nbsp; MPa
-</DIV><P></P>
-Then 
-<P><!-- MATH
- \begin{displaymath}
-\varepsilon_a(1 \text{ GPa}) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{1000 \text{ MPa}} = 0.0207 = 2.07 \%
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img282.svg"
- ALT="$\displaystyle \varepsilon_a(1$">&nbsp; &nbsp; GPa<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img283.svg"
- ALT="$\displaystyle ) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{1000 \text{ MPa}} = 0.0207 = 2.07 \%
-$">
-</DIV><P></P>
-<P><!-- MATH
- \begin{displaymath}
-\varepsilon_a(10 \text{ GPa}) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{10000 \text{ MPa}} = 0.00207 = 0.207 \%
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img284.svg"
- ALT="$\displaystyle \varepsilon_a(10$">&nbsp; &nbsp; GPa<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img285.svg"
- ALT="$\displaystyle ) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{10000 \text{ MPa}} = 0.00207 = 0.207 \%
-$">
-</DIV><P></P>
-<P><!-- MATH
- \begin{displaymath}
-\varepsilon_a(50 \text{ GPa}) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{50000 \text{ MPa}} = 0.00041 = 0.041 \%
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img286.svg"
- ALT="$\displaystyle \varepsilon_a(50$">&nbsp; &nbsp; GPa<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img287.svg"
- ALT="$\displaystyle ) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{50000 \text{ MPa}} = 0.00041 = 0.041 \%
-$">
-</DIV><P></P>
+The pressure in the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img16.svg"
+ ALT="$P_W$"></SPAN> is one of the main variables to maintain wellbore stability.
+Mud (mass) density and vertical depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img63.svg"
+ ALT="$z$"></SPAN> (TVD) determine the mud pressure (in the absence of additional pressure controls at the  surface). Thus
 
 <P>
-Notice that rocks can be quite stiff and even for an effective stress as large as 3000 psi (equivalent to a depth onshore of&nbsp;5000 ft under hydrostatic pore pressure), the deformation is in the order of 1 percent to 1 thousandth or less. <!-- MATH
- $\: \: \blacksquare$
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+P_W = \rho_{mud} \: g \: z
+\end{equation}
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img128.svg"
- ALT="$\: \: \blacksquare$"></SPAN>
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img653.svg"
+ ALT="$\displaystyle P_W = \rho_{mud} \: g \: z$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>   
 
+<P>
+The pressure gradient in the wellbore mud is <!-- MATH
+ $dP_W/dz = \rho_{mud} g$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img654.svg"
+ ALT="$dP_W/dz = \rho_{mud} g$"></SPAN> (Fig. <A HREF="#fig:ECD">6.1</A>). 
+This quantity is usually measured and reported in p.p.g. (pounds-force per gallon).
+For example the density of fresh water is 9800 N/m<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img71.svg"
+ ALT="$^3$"></SPAN>, about 8.3 ppg. 
+The lithostatic gradient of 1 psi/ft is equivalent to 18.9 ppg.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:ECD"></A><A ID="6245"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.1:</STRONG>
+Wellbore mud pressure and equivalent circulation density. Mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img16.svg"
+ ALT="$P_W$"></SPAN> is usually reported in terms of gradient (depth-independent) rather than in absolute values.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16874" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img655.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-ECD.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Over-balanced drilling implies <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img656.svg"
+ ALT="$P_W &gt; P_p$"></SPAN>. 
+Over-balanced drilling favors the formation of a &ldquo;mud-cake&rdquo; on the wall of the wellbore which permits adding stress support on the wellbore wall approximately equal to <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img657.svg"
+ ALT="$P_W - P_p$"></SPAN> (Fig. <A HREF="#fig:mudcake">6.2</A>).
+The resulting effect is similar to an impermeable and elastic membrane applying a stress on the wellbore wall (similar to the membranes used in triaxial tests).     
+Under-balanced drilling <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img658.svg"
+ ALT="$P_W &lt; P_p$"></SPAN> may be preferred in some specific instances.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:mudcake"></A><A ID="6251"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.2:</STRONG>
+Leak-off of mud filtrate favors clogging of mud particulates which help apply a normal stress on the wellbore wall. This layer of particulates is called mud-cake.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par16889" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./7-mudcake.png"
+ ALT="Image 7-mudcake"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -246,17 +155,17 @@ Notice that rocks can be quite stiff and even for an effective stress as large a
 <A
  HREF="node37.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html537"
+<A ID="tex2html619"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node39.html">3.3.2 The isotropic solid</A>
+ HREF="node39.html">6.2 Kirsch solution for</A>
 <B> Up:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
+ HREF="node37.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node37.html">3.3 Constitutive equation: stress-strain</A>
- &nbsp; <B>  <A ID="tex2html538"
+ HREF="node37.html">6. Wellbore stability</A>
+ &nbsp; <B>  <A ID="tex2html620"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

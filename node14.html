@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>2.1.2.2 Offshore total vertical stress</TITLE>
-<META NAME="description" CONTENT="2.1.2.2 Offshore total vertical stress">
+<TITLE>3.2 Kinematic equations: displacements and strains</TITLE>
+<META NAME="description" CONTENT="3.2 Kinematic equations: displacements and strains">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -32,183 +32,271 @@
 <A
  HREF="node13.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html446"
+<A ID="tex2html480"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node15.html">2.1.2.3 General total vertical</A>
+ HREF="node15.html">3.3 Constitutive equation: stress-strain</A>
 <B> Up:</B> <A
- HREF="node12.html">2.1.2 Rock vertical stress</A>
+ HREF="node12.html">3. Fundamentals of linear</A>
 <B> Previous:</B> <A
- HREF="node13.html">2.1.2.1 Onshore total vertical</A>
- &nbsp; <B>  <A ID="tex2html447"
+ HREF="node13.html">3.1 Stress tensor</A>
+ &nbsp; <B>  <A ID="tex2html481"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H3><A ID="SECTION00312200000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Offshore total vertical stress</A>
-</H3>
+<H1><A ID="SECTION00420000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kinematic equations: displacements and strains</A>
+</H1>
 
 <P>
-In an offshore case you have to take into account the presence of overlying water thickness <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img105.svg"
- ALT="$z_w$"></SPAN>. 
-Again, we assume constant mass densities for simplicity. 
-In the water, you cannot define a stress because there is no solid phase.
-Within the water zone, fluid pressure will increase according to Eq. <A HREF="node13.html#eq:hydrostporepress">2.7</A>. 
-This pore pressure will continue increasing in the seafloor sediments as long as there is a connected pore network from the seafloor to depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img62.svg"
- ALT="$z$"></SPAN>.
-Stresses start to develop at the seafloor beyond depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.81ex; vertical-align: -0.45ex; " SRC="img106.svg"
- ALT="$z &gt; z_w$"></SPAN>, such that the total vertical stress will be 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-S_v = \rho_{w} g \, z_w + \rho_{bulk} g (z-z_w)
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img107.svg"
- ALT="$\displaystyle S_v = \rho_{w} g \, z_w + \rho_{bulk} g (z-z_w)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Notice that the total stress does not start at 0 at the seafloor <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img108.svg"
- ALT="$z=z_w$"></SPAN>.
-However, the important and &ldquo;physically meaningful&rdquo; quantity is effective stress and this one does start at zero at the seafloor.
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_v = S_v - P_p =  \rho_{bulk} g (z-z_w) \quad \text{for} \quad z \geq z_w
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img109.svg"
- ALT="$\displaystyle \sigma_v = S_v - P_p = \rho_{bulk} g (z-z_w)$">&nbsp; &nbsp;for<IMG STYLE="height: 2.03ex; vertical-align: -0.45ex; " SRC="img110.svg"
- ALT="$\displaystyle \quad z \geq z_w$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-This makes sense because otherwise an octopus would not be able to dig in sand at the seafloor (take a look at this video <kbd><A ID="tex2html17"
-  HREF="https://www.youtube.com/watch?v=LSeYVTo7DFs">https://www.youtube.com/watch?v=LSeYVTo7DFs</A></kbd>).
-We will see later that stress is a &ldquo;tensor&rdquo; (with numerical values that depend on the orientation of the coordinate system) and that pore pressure affects effective stresses in the normal directions. 
+Applications of stresses result in solid deformation and displacements.
+Figure <A HREF="#fig:FreeFEMexample">3.6</A> shows an example of a solid body with its corresponding displacement vector field from the original to the deformed state.
+In this particular case, the solid is anchored at the bottom and deforms due to the application of a force (from left to right) on the top.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:OffshorePpSv"></A><A ID="300"></A>
+<DIV class="CENTER"><A ID="fig:FreeFEMexample"></A><A ID="1550"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 2.6:</STRONG>
-Offshore pressure and total stress gradient.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14183" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 3.6:</STRONG>
+Example of displacement vector field for a solid anchored on the bottom and with a force (left to right) applied on the top surface. All other solid surfaces (but the bottom) can move freely.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14959" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img111.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/2-OffshorePpSv.pdf}"></DIV></TD></TR>
+ SRC="img245.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-9.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-<SPAN  CLASS="textit">EXAMPLE 2.3</SPAN>: Compute the pore pressure and vertical stress at 9000 ft of depth (TVD) underneath an offshore drilling rig with water depth of 2000 ft. 
-The pore pressure gradient is 0.44 psi/ft and the lithostatic gradient is 1 psi/ft. 
-The hydrostatic pressure gradient above the seafloor is 0.44 psi/ft as well. 
-Make a plot of pressure and vertical stress versus depth. Calculate effective stress at 9000 ft of depth. 
-Show results in MPa and psi.
+Yet, absolute displacements are not enough to determine stresses.
+A solid may translate or rotate in space without development of any internal stresses required to equilibrate external actions (imagine a cookie &ldquo;floating&rdquo; in zero gravity within the Space International Station).
+
+<P>
+Let's look at Figure <A HREF="#fig:kinematics2D">3.7</A> in order to relate displacements to strains:
+
+<UL>
+<LI>(LEFT) A solid is stretched on its face 1 in direction 1 only. This type of deformation produces a change of volume of the solid and contributes to volumetric strain. The resulting deformation or strain (change of length divided original length) is
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\varepsilon_{11} = \frac{\Delta u_1}{\Delta x_1}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img246.svg"
+ ALT="$\displaystyle \varepsilon_{11} = \frac{\Delta u_1}{\Delta x_1}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+</LI>
+<LI>(CENTER) A solid is stretched on its face 2 in direction 2 only.  This type of deformation also contributes to volumetric strain. The resulting strain is
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\varepsilon_{22} = \frac{\Delta u_2}{\Delta x_2}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img247.svg"
+ ALT="$\displaystyle \varepsilon_{22} = \frac{\Delta u_2}{\Delta x_2}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+</LI>
+<LI>(RIGHT) The solid is now distorted. Notice that the faces do not make a right angle anymore. The change of volume is negligible for small deformations. The resulting distortion or shear strain is proportional to the change in angle between faces 1 and 2. Hence the change of angle is <!-- MATH
+ $\pi - \left[ \pi - \arctan(\Delta u_1 / \Delta x_2) + \arctan(\Delta u_2 / \Delta x_1) \right]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img248.svg"
+ ALT="$\pi - \left[ \pi - \arctan(\Delta u_1 / \Delta x_2) + \arctan(\Delta u_2 / \Delta x_1) \right] $"></SPAN>. The shear strain is 1/2 of the total change of  the angle and therefore (for small changes <!-- MATH
+ $\arctan(x/y) \sim x/y$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img249.svg"
+ ALT="$\arctan(x/y) \sim x/y$"></SPAN>)
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\varepsilon_{12} = \frac{1}{2} \left( \frac{\Delta u_1}{\Delta x_2} + \frac{\Delta u_2}{\Delta x_1} \right)
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img250.svg"
+ ALT="$\displaystyle \varepsilon_{12} = \frac{1}{2} \left( \frac{\Delta u_1}{\Delta x_2} + \frac{\Delta u_2}{\Delta x_1} \right)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+The average in the equation ensures capturing shear distortion rather than rotation. 
+</LI>
+</UL>		
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:kinematics2D"></A><A ID="1577"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.7:</STRONG>
+Strain equations for small deformations.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14974" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img251.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-10.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+In summary, strains quantify not the absolute value of displacements, but its variation in space (derivative with respect to <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img252.svg"
+ ALT="$x_i$"></SPAN>).
+All other strains are found with similar equations in the 3D case. 
+These strains can be organized in a tensor where elements in the diagonal contribute to volumetric strain, and off-diagonal elements are shear strains.
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{\varepsilon} =
+	\left[
+	\begin{array}{ccc}
+		\cfrac{\partial u_1}{\partial x_1} & \cfrac{1}{2} \left( \cfrac{\partial u_1}{\partial x_2} + \cfrac{\partial u_2}{\partial x_1} \right) &  \cfrac{1}{2} \left( \cfrac{\partial u_1}{\partial x_3} + \cfrac{\partial u_3}{\partial x_1} \right)\\
+		\cfrac{1}{2} \left( \cfrac{\partial u_2}{\partial x_1} + \cfrac{\partial u_1}{\partial x_2} \right) & \cfrac{\partial u_2}{\partial x_2} & \cfrac{1}{2} \left( \cfrac{\partial u_2}{\partial x_3} + \cfrac{\partial u_3}{\partial x_2} \right)\\
+		\cfrac{1}{2} \left( \cfrac{\partial u_3}{\partial x_1} + \cfrac{\partial u_1}{\partial x_3} \right) &  \cfrac{1}{2} \left( \cfrac{\partial u_3}{\partial x_2} + \cfrac{\partial u_2}{\partial x_3} \right) & \cfrac{\partial u_3}{\partial x_3}	
+	\end{array}		
+	\right] =	
+	\left[
+	\begin{array}{ccc}
+		\varepsilon_{11} & \varepsilon_{12}  &  \varepsilon_{13} \\
+		\varepsilon_{21} & \varepsilon_{22}  &  \varepsilon_{23} \\
+		\varepsilon_{31} & \varepsilon_{32}  &  \varepsilon_{33}
+	\end{array}		
+	\right] 
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img253.svg"
+ ALT="\begin{displaymath}\uuline{\varepsilon} =
+\left[
+\begin{array}{ccc}
+\cfrac{\part...
+...n_{31} &amp; \varepsilon_{32} &amp; \varepsilon_{33}
+\end{array}\right]\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The summation of all diagonal terms yields the volumetric strain 
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:volstrain"></A><!-- MATH
+ \begin{equation}
+\varepsilon_{vol} = \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.94ex; vertical-align: -0.48ex; " SRC="img254.svg"
+ ALT="$\displaystyle \varepsilon_{vol} = \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">EXAMPLE 3.1</SPAN>: Demonstrate the equality in Eq. <A HREF="#eq:volstrain">3.8</A> from simple geometrical concepts. Hint: the initial volume of the solid is <!-- MATH
+ $\Delta x_1 \Delta x_2 \Delta x_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img255.svg"
+ ALT="$\Delta x_1 \Delta x_2 \Delta x_3$"></SPAN>. 
 
 <P>
 <BR>
 <BR>
 SOLUTION <BR>
-The pore pressure and hydrostatic gradient at <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img62.svg"
- ALT="$z$"></SPAN> = 9000 ft of total depth with water depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img105.svg"
- ALT="$z_w$"></SPAN> = 2000 ft are
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-P_p = \rho_w g z_w + \frac{dP_p}{dz} (z-z_w)  = 0.44 \text{psi/ft} 2000 \text{ ft} + 0.44 \text{ psi/ft} (9000-2000) \text{ ft} =   3960 \text{ psi}
-\end{equation*}
+The definition of volumetric strain is the ratio between the change of volume <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img256.svg"
+ ALT="$\Delta V$"></SPAN> and the initial volume <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img257.svg"
+ ALT="$V_0$"></SPAN>:
+<P><!-- MATH
+ \begin{displaymath}
+\varepsilon_{vol} =  \frac{\Delta V}{V_0}
+\end{displaymath}
  -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.98ex; vertical-align: -1.70ex; " SRC="img112.svg"
- ALT="$\displaystyle P_p = \rho_w g z_w + \frac{dP_p}{dz} (z-z_w) = 0.44$">&nbsp; &nbsp;psi/ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img113.svg"
- ALT="$\displaystyle 2000$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img114.svg"
- ALT="$\displaystyle + 0.44$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img115.svg"
- ALT="$\displaystyle (9000-2000)$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img116.svg"
- ALT="$\displaystyle = 3960$">&nbsp; &nbsp; psi</SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-and
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-S_v = \rho_w g z_w + \frac{dS_v}{dz} (z-z_w)  = 0.44 \text{ psi/ft} 2000 \text{ ft} + 1.00 \text{ psi/ft} (9000-2000) \text{ ft} = 7880 \text{ psi},
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.97ex; vertical-align: -1.70ex; " SRC="img117.svg"
- ALT="$\displaystyle S_v = \rho_w g z_w + \frac{dS_v}{dz} (z-z_w) = 0.44$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img113.svg"
- ALT="$\displaystyle 2000$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img118.svg"
- ALT="$\displaystyle + 1.00$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img115.svg"
- ALT="$\displaystyle (9000-2000)$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img119.svg"
- ALT="$\displaystyle = 7880$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.91ex; vertical-align: -0.56ex; " SRC="img120.svg"
- ALT="$\displaystyle ,$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-hence,
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\sigma_v = S_v - P_p = 7880 \text{ psi} - 3960 \text{ psi} = 3920 \text{ psi}.
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img121.svg"
- ALT="$\displaystyle \sigma_v = S_v - P_p = 7880$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img122.svg"
- ALT="$\displaystyle - 3960$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img123.svg"
- ALT="$\displaystyle = 3920$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.46ex; vertical-align: -0.11ex; " SRC="img124.svg"
- ALT="$\displaystyle .$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img258.svg"
+ ALT="$\displaystyle \varepsilon_{vol} = \frac{\Delta V}{V_0}
+$">
+</DIV><P></P>
 
 <P>
-The values in SI units are <!-- MATH
- $P_p = 27.31 \text{ MPa}$
+For an elementary cubic volume with initial volume <!-- MATH
+ $\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img125.svg"
- ALT="$P_p = 27.31$">&nbsp; &nbsp; MPa</SPAN>, <!-- MATH
- $S_v =  54.34 \text{ MPa}$
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img259.svg"
+ ALT="$\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3$"></SPAN> and volume after deformation <!-- MATH
+ $(\mathrm{d} x_1 + \mathrm{d}u_1)(\mathrm{d} u_2 + \mathrm{d}u_2)(\mathrm{d} x_3 + \mathrm{d} u_3)$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img126.svg"
- ALT="$S_v = 54.34$">&nbsp; &nbsp; MPa</SPAN>, and <!-- MATH
- $\sigma_v = 27.03 \text{ MPa}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img127.svg"
- ALT="$\sigma_v = 27.03$">&nbsp; &nbsp; MPa</SPAN>. 
-<!-- MATH
- $\: \: \blacksquare$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img128.svg"
- ALT="$\: \: \blacksquare$"></SPAN>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img260.svg"
+ ALT="$(\mathrm{d} x_1 + \mathrm{d}u_1)(\mathrm{d} u_2 + \mathrm{d}u_2)(\mathrm{d} x_3 + \mathrm{d} u_3)$"></SPAN>, the equation above results
 
 <P>
-For an interactive example, check my Jupyter notebook at  <kbd><A ID="tex2html19"
-  HREF="https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=PorePressureVerticalStress_Widget.ipynb">https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=PorePressureVerticalStress_Widget.ipynb</A></kbd>
+<P><!-- MATH
+ \begin{displaymath}
+\varepsilon_{vol} =  \frac{[(\mathrm{d} x_1 + \mathrm{d}u_1)(\mathrm{d} x_2 + \mathrm{d}u_2)(\mathrm{d} x_3 + \mathrm{d}u_3) - (\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)]}{(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img261.svg"
+ ALT="$\displaystyle \varepsilon_{vol} = \frac{[(\mathrm{d} x_1 + \mathrm{d}u_1)(\math...
+...athrm{d} x_2 \mathrm{d} x_3)]}{(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)}
+$">
+</DIV><P></P>
+
+<P>
+Let us discard all the products containing <!-- MATH
+ $\mathrm{d}u_i \mathrm{d}u_j$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img262.svg"
+ ALT="$\mathrm{d}u_i \mathrm{d}u_j$"></SPAN> and also <!-- MATH
+ $\mathrm{d}u_1 \mathrm{d}u_2 \mathrm{d}u_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img263.svg"
+ ALT="$\mathrm{d}u_1 \mathrm{d}u_2 \mathrm{d}u_3$"></SPAN> because they are much smaller than the other terms (<!-- MATH
+ $\mathrm{d}u_i << \mathrm{d}x_j$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img264.svg"
+ ALT="$\mathrm{d}u_i &lt;&lt; \mathrm{d}x_j $"></SPAN>), then
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\varepsilon_{vol} \sim  \frac{(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d}u_3 +
+							 \mathrm{d} x_1 \mathrm{d} x_3 \mathrm{d}u_2 +
+							 \mathrm{d} x_2 \mathrm{d} x_3 \mathrm{d}u_1)}
+							 {(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)}
+				=  \frac{\mathrm{d}u_1}{\mathrm{d} x_1} + 
+				   \frac{\mathrm{d}u_2}{\mathrm{d} x_2} + 
+				   \frac{\mathrm{d}u_3}{\mathrm{d} x_3} 
+				= \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img265.svg"
+ ALT="$\displaystyle \varepsilon_{vol} \sim \frac{(\mathrm{d} x_1 \mathrm{d} x_2 \math...
+...
+= \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33} \: \: \blacksquare
+$">
+</DIV><P></P>
+
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -222,17 +310,17 @@ For an interactive example, check my Jupyter notebook at  <kbd><A ID="tex2html19
 <A
  HREF="node13.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html446"
+<A ID="tex2html480"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node15.html">2.1.2.3 General total vertical</A>
+ HREF="node15.html">3.3 Constitutive equation: stress-strain</A>
 <B> Up:</B> <A
- HREF="node12.html">2.1.2 Rock vertical stress</A>
+ HREF="node12.html">3. Fundamentals of linear</A>
 <B> Previous:</B> <A
- HREF="node13.html">2.1.2.1 Onshore total vertical</A>
- &nbsp; <B>  <A ID="tex2html447"
+ HREF="node13.html">3.1 Stress tensor</A>
+ &nbsp; <B>  <A ID="tex2html481"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>2.1.2.1 Onshore total vertical stress</TITLE>
-<META NAME="description" CONTENT="2.1.2.1 Onshore total vertical stress">
+<TITLE>3.1 Stress tensor</TITLE>
+<META NAME="description" CONTENT="3.1 Stress tensor">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -32,220 +32,387 @@
 <A
  HREF="node12.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html444"
+<A ID="tex2html475"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node14.html">2.1.2.2 Offshore total vertical</A>
+ HREF="node14.html">3.2 Kinematic equations: displacements</A>
 <B> Up:</B> <A
- HREF="node12.html">2.1.2 Rock vertical stress</A>
+ HREF="node12.html">3. Fundamentals of linear</A>
 <B> Previous:</B> <A
- HREF="node12.html">2.1.2 Rock vertical stress</A>
- &nbsp; <B>  <A ID="tex2html445"
+ HREF="node12.html">3. Fundamentals of linear</A>
+ &nbsp; <B>  <A ID="tex2html476"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<H3><A ID="SECTION00312100000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Onshore total vertical stress</A>
-</H3>
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html477"
+  HREF="node13.html#SECTION00411000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Cauchy's equations of stress equilibrium</A>
+<LI><A ID="tex2html478"
+  HREF="node13.html#SECTION00412000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Application of Cauchy's equations for total vertical stress calculation</A>
+<LI><A ID="tex2html479"
+  HREF="node13.html#SECTION00413000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN> Continuum mechanics solution of an arbitrary problem</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00410000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stress tensor</A>
+</H1>
 
 <P>
-First, consider an onshore scenario in which the surface coincides with the water table (in most practical applications this is a reasonable assumption).	
-Assume a constant fluid density <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img65.svg"
- ALT="$\rho_w$"></SPAN> and constant bulk rock mass density <!-- MATH
- $\rho_{bulk}$
+Consider a 3D space with a given right-handed orthogonal coordinate system <!-- MATH
+ $\uline{e}_1$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img66.svg"
- ALT="$\rho_{bulk}$"></SPAN> (remember that it includes fluids within pores).
-Then, the pore pressure gradient as a function of depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img62.svg"
- ALT="$z$"></SPAN> will be
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img214.svg"
+ ALT="$\uline{e}_1$"></SPAN>, <!-- MATH
+ $\uline{e}_2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img215.svg"
+ ALT="$\uline{e}_2$"></SPAN>, <!-- MATH
+ $\uline{e}_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img216.svg"
+ ALT="$\uline{e}_3$"></SPAN> in directions 1, 2 and 3 (Figure <A HREF="#fig:lec4-3">3.1</A>).
+In a right-handed coordinate system, the first element of the base <!-- MATH
+ $\uline{e}_1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img214.svg"
+ ALT="$\uline{e}_1$"></SPAN> is your index finger, the second element of the base <!-- MATH
+ $\uline{e}_2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img215.svg"
+ ALT="$\uline{e}_2$"></SPAN> is your middle finger, and the third element of the base <!-- MATH
+ $\uline{e}_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img216.svg"
+ ALT="$\uline{e}_3$"></SPAN> is your thumb (all in your right hand).   
+
+<P>
+The number that represents the value of a scalar (such as temperature <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img217.svg"
+ ALT="$T$"></SPAN> or pore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1.svg"
+ ALT="$P_p$"></SPAN>) at a given point <!-- MATH
+ $(x_1,x_2,x_3)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img218.svg"
+ ALT="$(x_1,x_2,x_3)$"></SPAN> is independent of the coordinate system orientation and origin.
+However, the numbers that represent the value of a vector (such as velocity <SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.57ex; " SRC="img219.svg"
+ ALT="$\uline{v}$"></SPAN> or force <SPAN CLASS="MATH"><IMG STYLE="height: 2.26ex; vertical-align: -0.57ex; " SRC="img47.svg"
+ ALT="$\uline{F}$"></SPAN>) or a tensor depend on the coordinate system.
+Read the values <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img5.svg"
+ ALT="$S_{ij}$"></SPAN> as the stress on face perpendicular to base vector <!-- MATH
+ $\uline{e}_i$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img6.svg"
+ ALT="$\uline {e}_i$"></SPAN> in the direction of base vector <!-- MATH
+ $\uline{e}_j$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.11ex; vertical-align: -1.01ex; " SRC="img7.svg"
+ ALT="$\uline {e}_j$"></SPAN>.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img5.svg"
+ ALT="$S_{ij}$"></SPAN> is positive if after a displacement <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img220.svg"
+ ALT="$dx_i$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img5.svg"
+ ALT="$S_{ij}$"></SPAN> points in opposite direction to <!-- MATH
+ $\uline{e}_j$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.11ex; vertical-align: -1.01ex; " SRC="img7.svg"
+ ALT="$\uline {e}_j$"></SPAN> (Figure <A HREF="#fig:lec4-3">3.1</A>).
+
+<P>
+Off-diagonal stresses <!-- MATH
+ $S_{ij}=S_{ji}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img221.svg"
+ ALT="$S_{ij}=S_{ji}$"></SPAN> (<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img222.svg"
+ ALT="$i \neq j$"></SPAN>) because of angular momentum equilibrium (the element does not spin around any axis). 
+Hence, the stress tensor is symmetric with respect to the diagonal (top-left to bottom-right).	 
+The stress tensor is written as a matrix with normal stresses in the diagonal and shear stresses in the off-diagonal places.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec4-3"></A><A ID="2537"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.1:</STRONG>
+Graphical and mathematical representation of the  stress tensor. Read <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img5.svg"
+ ALT="$S_{ij}$"></SPAN> as the stress on face perpendicular to <!-- MATH
+ $\uline{e}_i$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img6.svg"
+ ALT="$\uline {e}_i$"></SPAN> in the direction <!-- MATH
+ $\uline{e}_j$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.11ex; vertical-align: -1.01ex; " SRC="img7.svg"
+ ALT="$\uline {e}_j$"></SPAN>. <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img5.svg"
+ ALT="$S_{ij}$"></SPAN> is positive if after a positive displacement <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img5.svg"
+ ALT="$S_{ij}$"></SPAN> points in direction opposite to the directions of the base.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14872" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img223.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-3.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Since the stress tensor is symmetric and is composed by all real numbers, there exist 3 real-valued eigenvalues that we  call principal stresses and denote <!-- MATH
+ $S_1 \geq S_2 \geq S_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img224.svg"
+ ALT="$S_1 \geq S_2 \geq S_3$"></SPAN>. 
+Each principal stress (eigenvalue) is associated with a principal direction (eigenvector).
+The stress tensor is written with principal stresses in the diagonal and zeros in the off-diagonal when we write the stress tensor in a coordinate system aligned with directions of the principal stresses.
+Usually, the principal stresses are ordered from top to bottom starting with <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img192.svg"
+ ALT="$S_1$"></SPAN> at the top.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec4-4"></A><A ID="1456"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.2:</STRONG>
+Principal stresses and directions. Every tensor with non-zero off-diagonal terms can be simplified to a principal stress tensor with zero off-diagonal terms at the orientation that coincides with the principal stresses directions.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14901" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img225.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-4.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00411000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Cauchy's equations of stress equilibrium</A>
+</H2>
+
+<P>
+Equilibrium of stresses requires summation of forces in all directions to be zero when the object is not moving (no acceleration <!-- MATH
+ $m \uline{a} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.57ex; " SRC="img226.svg"
+ ALT="$m \uline{a} = 0$"></SPAN>).
+Consider the schematic in Figure <A HREF="#fig:lec4-5">3.3</A>.
+Summation of forces in direction 1, where the term <!-- MATH
+ $\rho V b_1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img227.svg"
+ ALT="$\rho V b_1$"></SPAN> is the body force component, proportional to the solid mass density <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img228.svg"
+ ALT="$\rho$"></SPAN> and volume <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img229.svg"
+ ALT="$V$"></SPAN>, and the acceleration component <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.45ex; " SRC="img230.svg"
+ ALT="$b_1$"></SPAN>, requires
 
 <P>
 <P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:hydrostporepress"></A><!-- MATH
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\begin{array}{rcl}
+	\sum F_1 & = & 0 \\
+	\sum F_1 & =
+	& + S_{11} dx_2 dx_3 - \left[ S_{11} + (\frac{\partial S_{11}}{\partial x_1}) dx_1 \right] dx_2 dx_3 \\
+	& & + S_{21} dx_1 dx_3 - \left[ S_{21} + (\frac{\partial S_{21}}{\partial x_2}) dx_2 \right] dx_1 dx_3 \\
+	& & + S_{31} dx_1 dx_2 - \left[ S_{31} + (\frac{\partial S_{31}}{\partial x_3}) dx_3 \right] dx_1 dx_2 \\
+	& & - \rho (dx_1 dx_2 dx_3) b_1 = 0	
+\end{array}
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img231.svg"
+ ALT="\begin{displaymath}\begin{array}{rcl}
+\sum F_1 &amp; = &amp; 0 \\
+\sum F_1 &amp; =
+&amp; + S_{1...
+...] dx_1 dx_2 \\
+&amp; &amp; - \rho (dx_1 dx_2 dx_3) b_1 = 0
+\end{array}\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+which eventually reduces to the following equation when canceling terms and dividing by the element volume <!-- MATH
+ $(dx_1 dx_2 dx_3)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img232.svg"
+ ALT="$(dx_1 dx_2 dx_3)$"></SPAN>
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-P_p = \rho_w g \, z
+\frac{\partial S_{11}}{\partial x_1} +
+	\frac{\partial S_{21}}{\partial x_2} + 
+	\frac{\partial S_{31}}{\partial x_3} - 
+	\rho b_1 = 0	
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img88.svg"
- ALT="$\displaystyle P_p = \rho_w g \, z$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.32ex; vertical-align: -2.05ex; " SRC="img233.svg"
+ ALT="$\displaystyle \frac{\partial S_{11}}{\partial x_1} +
+\frac{\partial S_{21}}{\partial x_2} +
+\frac{\partial S_{31}}{\partial x_3} -
+\rho b_1 = 0$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-as long as there is a connected pore network path from depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img62.svg"
- ALT="$z$"></SPAN> to the top, such that the fluid is in hydrostatic equilibrium (it may not happen sometimes).
-The total vertical stress gradient as a function of depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img62.svg"
- ALT="$z$"></SPAN> is calculated with equation <A HREF="node12.html#eq:vertstress-onshore">2.6</A> because in onshore conditions the assumption of constant bulk mass density with depth is acceptable.
-Both (hydrostatic) <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img89.svg"
- ALT="$P_p$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img39.svg"
- ALT="$S_v$"></SPAN> increase linearly with depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img62.svg"
- ALT="$z$"></SPAN> with constant mass densities (Figure <A HREF="#fig:ch2-onshorestress">2.3</A>).
 
-<P>
-
-<DIV class="CENTER"><A ID="fig:ch2-onshorestress"></A><A ID="235"></A>
+<DIV class="CENTER"><A ID="fig:lec4-5"></A><A ID="1489"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 2.3:</STRONG>
-Onshore pressure and vertical stress gradient. (Needs vectorial plot)</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14126" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 3.3:</STRONG>
+Equilibrium of forces in direction 1</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14923" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img90.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/2-OnshorePpSv.pdf}"></DIV></TD></TR>
+ SRC="img234.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-5.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-The difference between total stress and pore pressure is called &ldquo;effective stress&rdquo;; hence, the effective vertical stress is
+A generalization of equilibrium in all directions with all stresses (Figure <A HREF="#fig:lec4-3">3.1</A>) yields the Cauchy's equilibrium equations:
 
 <P>
 <P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:verteffstress"></A><!-- MATH
+<DIV CLASS="mathdisplay"><A ID="eq:Cauchy"></A><!-- MATH
  \begin{equation}
-\sigma_v = S_v - P_p
+\displaystyle
+\left\lbrace
+\begin{array}{rcl}
+	\cfrac{\partial S_{11}}{\partial x_1} +
+	\cfrac{\partial S_{21}}{\partial x_2} + 
+	\cfrac{\partial S_{31}}{\partial x_3} - 
+	\rho b_1 & = & 0 \\
+	\cfrac{\partial S_{12}}{\partial x_1} + 	
+	\cfrac{\partial S_{22}}{\partial x_2} + 
+	\cfrac{\partial S_{33}}{\partial x_3} - 
+	\rho b_2 & = & 0 \\
+	\cfrac{\partial S_{13}}{\partial x_1} + 	
+	\cfrac{\partial S_{23}}{\partial x_2} + 
+	\cfrac{\partial S_{33}}{\partial x_3} - 
+	\rho b_3 & = & 0 \\
+\end{array}
+\right.
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img91.svg"
- ALT="$\displaystyle \sigma_v = S_v - P_p$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img235.svg"
+ ALT="\begin{displaymath}\displaystyle
+\left\lbrace
+\begin{array}{rcl}
+\cfrac{\partial...
+...S_{33}}{\partial x_3} -
+\rho b_3 &amp; = &amp; 0 \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-We will see later that effective stress is a very important quantity and dictates rock deformation and failure. 
-Figure <A HREF="#fig:coffee-effstress">2.4</A> shows an example of effective stress making cohesionless ground coffee strong and stiff like a brick. 
-You will see this example in class how I stand on a &ldquo;brick&rdquo; of ground coffee thanks to Terzaghi's effective stress and its strengthening behavior due to friction.
+
+<H2><A ID="SECTION00412000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Application of Cauchy's equations for total vertical stress calculation</A>
+</H2>
+
+<P>
+Consider a half-space where the surface coincides with the origin of the coordinate system and gravity <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img236.svg"
+ ALT="$g$"></SPAN> points in direction 3, hence <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img237.svg"
+ ALT="$b_3 = g$"></SPAN> in Eq. <A HREF="#eq:Cauchy">3.2</A>.
+We assume infinite extension in directions 1 and 2, therefore there are no variations in directions 1 and 2, such that <!-- MATH
+ $\partial()/\partial x_1 = \partial()/\partial x_2 = 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img238.svg"
+ ALT="$\partial()/\partial x_1 = \partial()/\partial x_2 = 0$"></SPAN>.
+Notice there are 6 unknowns and 3 equations in Eq. <A HREF="#eq:Cauchy">3.2</A> (remember <!-- MATH
+ $S_{ij} = S_{ji}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img221.svg"
+ ALT="$S_{ij}=S_{ji}$"></SPAN> ).
+The only equation we can solve is the third one.
+Integration of the third equation yields the (vertical) stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img239.svg"
+ ALT="$S_{33}$"></SPAN>,
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+S_{33}(x_3) = \int_0^{x_3} \rho(x_3) g \: dx_3
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.52ex; vertical-align: -2.21ex; " SRC="img240.svg"
+ ALT="$\displaystyle S_{33}(x_3) = \int_0^{x_3} \rho(x_3) g \: dx_3$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+equivalent to Eq. <A HREF="node7.html#eq:VertStressGral">2.11</A>.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:coffee-effstress"></A><A ID="244"></A>
+<DIV class="CENTER"><A ID="fig:lec4-7"></A><A ID="1530"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 2.4:</STRONG>
-Example of Terzaghi's effective stress with ground coffee</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14133" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 3.4:</STRONG>
+Stress gradient in a solid half-space</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14943" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img92.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/2-20.pdf}"></DIV>
-.</TD></TR>
+ SRC="img241.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-7.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-Similar to the membrane effect conceptualized in Figure <A HREF="#fig:coffee-effstress">2.4</A>, the mudcake that forms around a wellbore during drilling provides an effective stress to the surrounding rock.
-This is a result of the sharp pressure gradient between the mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img93.svg"
- ALT="$P_w$"></SPAN> and the pore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img89.svg"
- ALT="$P_p$"></SPAN> in the formation (Figure <A HREF="node92.html#fig:mudcake">6.2</A>).
+You may wonder &ldquo;what about <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img242.svg"
+ ALT="$S_{11}$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img243.svg"
+ ALT="$S_{22}$"></SPAN>?
+The horizontal stresses cannot be determined with the current equations.
+The solution to this problem will be developed in section <A HREF="node15.html#sec:CalcHzStress">3.3.4</A>.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:mudcake"></A><A ID="251"></A>
+<H2><A ID="SECTION00413000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN> Continuum mechanics solution of an arbitrary problem</A>
+</H2>
+
+<P>
+As highlighted before, notice that there are 6 unknowns (9 unknowns if displacements are included) and 3 equations in Cauchy's equations of equilibrium (Eq. <A HREF="#eq:Cauchy">3.2</A>).
+The solution of a general problem with arbitrary boundary conditions requires more equations to have a determined problem (as many equations as unknowns).
+The solution of such problem requires knowledge of the material properties.
+We need equations that relate displacement to stresses. These equations divide in two:
+
+<UL>
+<LI>kinematic equations, that relate displacements to strains, and
+</LI>
+<LI>constitutive equations, that relate strains to stresses.
+</LI>
+</UL>		
+Figure <A HREF="#fig:potato-eq">3.5</A> shows an example of an arbitrary shaped continuous solid subjected to external stresses, external forces, body froces, and displacement constraints. 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:potato-eq"></A><A ID="1543"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 2.5:</STRONG>
-Schematic of mudcake effect to provide effective stress on the wall of a wellbore</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14142" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 3.5:</STRONG>
+A general equilibrium problem.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par14953" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="./mudcake.png"
- ALT="Image mudcake"></DIV>
-.</TD></TR>
+ SRC="img244.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-8.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
-<P>
-<SPAN  CLASS="textit">EXAMPLE 2.2</SPAN>: 
-Compute the pore pressure and vertical stress at 4000 ft of depth (TVD) underneath an onshore drilling rig. 
-The pore pressure gradient is hydrostatic with brine mass density of 1.04 g/cm<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img71.svg"
- ALT="$^3$"></SPAN> and the average rock bulk density is about 2.35 g/cm<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img71.svg"
- ALT="$^3$"></SPAN>. 
-Make a plot of pressure and vertical stress versus depth. 
-Show results in MPa and psi.
-<BR>
-<BR>
-
-<P>
-SOLUTION <BR>
-The corresponding hydrostatic and lithostatic gradients are
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\frac{dP_p}{dz} = \rho_w g = 1040 \text{ kg/m}^3 \: 9.8 \text{ m/s}^2 = 10.19 \text{ MPa/km}
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.98ex; vertical-align: -1.70ex; " SRC="img94.svg"
- ALT="$\displaystyle \frac{dP_p}{dz} = \rho_w g = 1040$">&nbsp; &nbsp; kg/m<IMG STYLE="height: 2.26ex; vertical-align: -0.11ex; " SRC="img78.svg"
- ALT="$\displaystyle ^3 \: 9.8$">&nbsp; &nbsp; m/s<IMG STYLE="height: 2.26ex; vertical-align: -0.11ex; " SRC="img95.svg"
- ALT="$\displaystyle ^2 = 10.19$">&nbsp; &nbsp; MPa/km</SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-and
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\frac{dS_v}{dz} = \rho_{bulk} g = 2350 \text{ kg/m}^3 \: 9.8 \text{ m/s}^2 = 23.03 \text{ MPa/km}
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.97ex; vertical-align: -1.70ex; " SRC="img96.svg"
- ALT="$\displaystyle \frac{dS_v}{dz} = \rho_{bulk} g = 2350$">&nbsp; &nbsp; kg/m<IMG STYLE="height: 2.26ex; vertical-align: -0.11ex; " SRC="img78.svg"
- ALT="$\displaystyle ^3 \: 9.8$">&nbsp; &nbsp; m/s<IMG STYLE="height: 2.26ex; vertical-align: -0.11ex; " SRC="img97.svg"
- ALT="$\displaystyle ^2 = 23.03$">&nbsp; &nbsp; MPa/km</SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-Hence, the pore pressure and hydrostatic gradient at 4000 ft (1219.2 m) of depth are
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-P_p = \frac{dP_p}{dz} z = 10.19 \text{ MPa/km} \: 1.219 \text{ km} =  12.43 \text{ MPa} = 1801 \text{ psi}
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.98ex; vertical-align: -1.70ex; " SRC="img98.svg"
- ALT="$\displaystyle P_p = \frac{dP_p}{dz} z = 10.19$">&nbsp; &nbsp; MPa/km<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img99.svg"
- ALT="$\displaystyle \: 1.219$">&nbsp; &nbsp; km<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img100.svg"
- ALT="$\displaystyle = 12.43$">&nbsp; &nbsp; MPa<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img101.svg"
- ALT="$\displaystyle = 1801$">&nbsp; &nbsp; psi</SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-and
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\frac{dS_v}{dz} z = 23.03 \text{ MPa/km} \: 1.219 \text{ km} =  28.07 \text{ MPa} = 4070 \text{ psi}.
-	\: \: \blacksquare
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.97ex; vertical-align: -1.70ex; " SRC="img102.svg"
- ALT="$\displaystyle \frac{dS_v}{dz} z = 23.03$">&nbsp; &nbsp; MPa/km<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img99.svg"
- ALT="$\displaystyle \: 1.219$">&nbsp; &nbsp; km<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img103.svg"
- ALT="$\displaystyle = 28.07$">&nbsp; &nbsp; MPa<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img104.svg"
- ALT="$\displaystyle = 4070$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img81.svg"
- ALT="$\displaystyle . \: \: \blacksquare$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -259,17 +426,17 @@ and
 <A
  HREF="node12.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html444"
+<A ID="tex2html475"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node14.html">2.1.2.2 Offshore total vertical</A>
+ HREF="node14.html">3.2 Kinematic equations: displacements</A>
 <B> Up:</B> <A
- HREF="node12.html">2.1.2 Rock vertical stress</A>
+ HREF="node12.html">3. Fundamentals of linear</A>
 <B> Previous:</B> <A
- HREF="node12.html">2.1.2 Rock vertical stress</A>
- &nbsp; <B>  <A ID="tex2html445"
+ HREF="node12.html">3. Fundamentals of linear</A>
+ &nbsp; <B>  <A ID="tex2html476"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 
