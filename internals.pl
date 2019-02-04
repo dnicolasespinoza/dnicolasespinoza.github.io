@@ -58,8 +58,16 @@ $key = q/eq:compactionexp/;
 $ref_files{$key} = "$dir".q|node8.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:constitutiveDsigma/;
+$ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:hydrostporepress/;
 $ref_files{$key} = "$dir".q|node7.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:straintensor/;
+$ref_files{$key} = "$dir".q|node14.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:tectonicstrains/;
@@ -234,6 +242,10 @@ $key = q/fig:KirschPw/;
 $ref_files{$key} = "$dir".q|node39.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:LateralEffStressCoeff/;
+$ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:LeakoffInstability/;
 $ref_files{$key} = "$dir".q|node44.html|; 
 $noresave{$key} = "$nosave";
@@ -270,12 +282,20 @@ $key = q/fig:PrincStressesDevWell/;
 $ref_files{$key} = "$dir".q|node43.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:Principi/;
+$ref_files{$key} = "$dir".q|node13.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:REVCylCoord/;
 $ref_files{$key} = "$dir".q|node39.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:RequiredUCS/;
 $ref_files{$key} = "$dir".q|node40.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ReservoirCompaction/;
+$ref_files{$key} = "$dir".q|node15.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:RockMicrostructure/;
@@ -288,6 +308,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:SandStrength/;
 $ref_files{$key} = "$dir".q|node25.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:SedRockAnisotropy/;
+$ref_files{$key} = "$dir".q|node16.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StrainHardSoft/;
@@ -332,6 +356,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:StrikeSlipSchematics/;
 $ref_files{$key} = "$dir".q|node34.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TVIandOR/;
+$ref_files{$key} = "$dir".q|node16.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:TensFracsSchematic/;
@@ -543,7 +571,7 @@ $ref_files{$key} = "$dir".q|node13.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec4-X/;
-$ref_files{$key} = "$dir".q|node16.html|; 
+$ref_files{$key} = "$dir".q|node15.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec5A-X/;

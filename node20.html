@@ -55,12 +55,33 @@
 <P>
 
 <OL>
-<LI>Draw the normal and shear stresses defined as positive on the four sides of the following square according to the given 2D coordinate system.
+<LI>An axial deviatoric test was performed in an organic-rich  Mancos shale sample. The sample was cored in the direction of bedding. The sample diameter was <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img414.svg"
+ ALT="$D = 1.00$"></SPAN> in and the sample length was <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img415.svg"
+ ALT="$L = 2.01$"></SPAN> in. The test was conducted in &ldquo;as received conditions&rdquo;. The data is available <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/blob/master/UndergradHomework/HW3/Mancos_Unconf100_PL7.dat">here</a>. 
+The data contains Time (s), Axial Force (lb), axial displacement (in), and radial displacement (in).
+	
+<UL>
+<LI>Calculate the axial stress as a function of axial force.
+</LI>
+<LI>Calculate axial and radial strains utilizing the displacements <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img416.svg"
+ ALT="$\Delta L$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img417.svg"
+ ALT="$\Delta D$"></SPAN>. Calculate the volumetric strain as well.
+</LI>
+<LI>In the same graph, plot of axial stress  versus axial strain and axial stress versus axial strain.
+</LI>
+<LI>Utilizing linear curve fitting, compute Young's modulus and Poisson's ratio in the interval of axial strain between 0.25% and 0.4%. You may need to plot radial strain versus axial strain to calculate the Poisson's ratio.  
+	
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI>Draw the normal and shear stresses defined as positive on the four sides of the following square solid element according to the given 2D coordinate system.
 
 <P>
 
 <DIV class="CENTER">
-<DIV CLASS="centerline" ID="par15452" ALIGN="CENTER">
+<DIV CLASS="centerline" ID="par12298" ALIGN="CENTER">
 <IMG STYLE=""
  SRC="./CH3-Problem1.png"
  ALT="Image CH3-Problem1"></DIV>
@@ -68,46 +89,89 @@
 </DIV> 
 <P>
 </LI>
-<LI>Using the equations of linear elasticity (<!-- MATH
+<LI>Isotropic loading means that applied stresses are the same in all directions. 
+	
+<OL>
+<LI>Using the equations of 3D linear elasticity (<!-- MATH
  $\uline{\sigma} = \uuline{C} \: \uline{\varepsilon}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img417.svg"
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img418.svg"
  ALT="$\uline{\sigma} = \uuline{C} \: \uline{\varepsilon}$"></SPAN> in Voigt notation) show that by applying an isotropic stress <!-- MATH
  $\sigma_{iso}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img418.svg"
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img419.svg"
  ALT="$\sigma_{iso}$"></SPAN> (no shear) the volumetric strain is equal to  <!-- MATH
  $\varepsilon_{vol}=\frac{3(1-2\nu)}{E} \sigma_{iso}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.42ex; vertical-align: -0.91ex; " SRC="img419.svg"
- ALT="$\varepsilon_{vol}=\frac{3(1-2\nu)}{E} \sigma_{iso}$"></SPAN>. Write out the resulting strain and stress tensors.
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.42ex; vertical-align: -0.91ex; " SRC="img420.svg"
+ ALT="$\varepsilon_{vol}=\frac{3(1-2\nu)}{E} \sigma_{iso}$"></SPAN>.
+</LI>
+<LI>What would be the volumetric strain <!-- MATH
+ $\varepsilon_{vol}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img421.svg"
+ ALT="$\varepsilon_{vol}$"></SPAN>, for a shale rock with <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img422.svg"
+ ALT="$E = 4$"></SPAN> MMpsi and <SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img423.svg"
+ ALT="$\nu = 0.2$"></SPAN>, when subjected to an isotropic change of stress <!-- MATH
+ $\sigma_{iso} =$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img424.svg"
+ ALT="$\sigma_{iso} =$"></SPAN> 3,000 psi? Write the full (3D) acting stress tensors  and resulting strain tensor as matrices 3 <SPAN CLASS="MATH"><IMG STYLE="height: 1.75ex; vertical-align: -0.30ex; " SRC="img160.svg"
+ ALT="$\times$"></SPAN> 3.
+</LI>
+<LI>What is the shale bulk modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img345.svg"
+ ALT="$K$"></SPAN>?
+	
+</LI>
+</OL> 
 
 <P>
 </LI>
-<LI>Using the equations of linear elasticity (<!-- MATH
+<LI>One-dimensional strain loading implies changes of stress with changes in strain in only one direction (usually the vertical direction).
+	
+<OL>
+<LI>Using the equations of 3D linear elasticity (<!-- MATH
  $\uline{\sigma} = \uuline{C} \: \uline{\varepsilon}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img417.svg"
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img418.svg"
  ALT="$\uline{\sigma} = \uuline{C} \: \uline{\varepsilon}$"></SPAN> in Voigt notation) show that by applying stress in one direction (say 1) and not letting the solid expand in the other two, you can recover  the following expression <!-- MATH
- $\sigma_{11} = \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} \varepsilon_{11}$
+ $\sigma_{11} = \cfrac{E(1-\nu)}{(1+\nu)(1-2\nu)} \varepsilon_{11}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.87ex; vertical-align: -1.36ex; " SRC="img420.svg"
- ALT="$\sigma_{11} = \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} \varepsilon_{11}$"></SPAN>. The proportionality coefficient is called the constrained modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img159.svg"
- ALT="$M$"></SPAN>. Is it lower or higher than E? What is the physical explanation? Write out the resulting strain and stress tensors.
+<SPAN CLASS="MATH"><IMG STYLE="height: 6.15ex; vertical-align: -2.28ex; " SRC="img425.svg"
+ ALT="$\sigma_{11} = \cfrac{E(1-\nu)}{(1+\nu)(1-2\nu)} \varepsilon_{11}$"></SPAN>.
+</LI>
+<LI>The proportionality coefficient in the equation above is called the constrained modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img13.svg"
+ ALT="$M$"></SPAN>. Is it lower or higher than E? What is the physical explanation?
+</LI>
+<LI>A high porosity carbonate reservoir is subjected to depletion and a change of effective vertical stress of 20 MPa. The carbonate rock Young's modulus is 1.5 GPa and the Poisson's ratio is 0.10. What are the resulting strain and stress tensors due to compaction? Write the results as <!-- MATH
+ $3 \times 3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img426.svg"
+ ALT="$3 \times 3$"></SPAN> matrices.
+</LI>
+<LI>What are the bulk and pore compressibilities of this carbonate rock if <!-- MATH
+ $\phi = 0.35$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img427.svg"
+ ALT="$\phi = 0.35$"></SPAN>. Provide answers in <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img143.svg"
+ ALT="$\mu$"></SPAN>sip.
+	
+</LI>
+</OL>
 
 <P>
 </LI>
-<LI>The top of the Barnett shale is located at about 7950 ft TVD. At this depth:
+<LI>The top of the Barnett shale is located at about 7,950 ft TVD. At this depth:
 	
 <OL>
 <LI>Compute the total vertical stress assuming a lithostatic gradient of 23.8 MPa/km.
 </LI>
 <LI>Compute the effective vertical stress assuming hydrostatic pore pressure gradient.
 </LI>
-<LI>Compute horizontal effective stresses assuming linear isotropic elasticity, <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img307.svg"
+<LI>Compute horizontal effective stresses assuming linear isotropic elasticity, <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img299.svg"
  ALT="$\nu$"></SPAN>=0.22 and that horizontal strains are nearly zero.
 </LI>
-<LI>Write out the tensor of effective stresses.
+<LI>Write the tensor of effective stresses as a matrix.
 </LI>
 <LI>Compute total horizontal stress. 
 </LI>
@@ -115,16 +179,19 @@
 </LI>
 <LI>Compute the ratio between total horizontal stress and total vertical stress.
 </LI>
-<LI>Compute effective and total stresses assuming there is overpressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img139.svg"
- ALT="$\lambda_p$"></SPAN>=0.7, tectonic strains <!-- MATH
+<LI>Compute effective and total stresses assuming there is overpressure with <!-- MATH
+ $\lambda_p = 0.7$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img349.svg"
+ ALT="$\lambda_p = 0.7$"></SPAN>, tectonic strains are <!-- MATH
  $\varepsilon_{hmin} = 0$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img357.svg"
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img352.svg"
  ALT="$\varepsilon_{hmin} = 0$"></SPAN> and <!-- MATH
  $\varepsilon_{Hmax} = 0.0002$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.06ex; vertical-align: -0.47ex; " SRC="img358.svg"
- ALT="$\varepsilon_{Hmax} = 0.0002$"></SPAN> and the shale Young’s modulus is <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img355.svg"
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.06ex; vertical-align: -0.47ex; " SRC="img353.svg"
+ ALT="$\varepsilon_{Hmax} = 0.0002$"></SPAN>, and the shale Young’s modulus is <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img350.svg"
  ALT="$E = 5$"></SPAN> MMpsi.
 	
 </LI>
