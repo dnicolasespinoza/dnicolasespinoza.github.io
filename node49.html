@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>Thermo-elasticity</TITLE>
-<META NAME="description" CONTENT="Thermo-elasticity">
+<TITLE>7.1 Fluid-driven fractures in nature</TITLE>
+<META NAME="description" CONTENT="7.1 Fluid-driven fractures in nature">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -15,6 +15,7 @@
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
+<LINK REL="next" HREF="node50.html">
 <LINK REL="previous" HREF="node48.html">
 <LINK REL="next" HREF="node50.html">
 </HEAD>
@@ -26,215 +27,55 @@
  HREF="node50.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node47.html">
+ HREF="node48.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node48.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html565"
+<A ID="tex2html767"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node50.html">Problems</A>
+ HREF="node50.html">7.2 Hydraulic fractures in</A>
 <B> Up:</B> <A
- HREF="node47.html">Multiphysics problems</A>
+ HREF="node48.html">7. Hydraulic fracturing</A>
 <B> Previous:</B> <A
- HREF="node48.html">Poro-elasticity</A>
- &nbsp; <B>  <A ID="tex2html566"
+ HREF="node48.html">7. Hydraulic fracturing</A>
+ &nbsp; <B>  <A ID="tex2html768"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A ID="SECTION00472000000000000000">
-Thermo-elasticity</A>
-</H2>
+<H1><A ID="SECTION00810000000000000000">
+<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">1</SPAN> Fluid-driven fractures in nature</A>
+</H1>
 
 <P>
-Changes of temperature change the equilibrium distance between molecules in solids, and therefore induce strains.
-Imagine a solids heated up, but not allowed to dilate in vertical direction <A HREF="#fig:ThermalSwellStress">3.23</A>. 
-The result is an increase of stress in vertical direction rather than a deformation in vertical direction.
-
-<P>
-The coefficient of thermal dilation <SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img405.svg"
- ALT="$\alpha_L$"></SPAN> quantifies strains as a function of changes of temperature <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img217.svg"
- ALT="$T$"></SPAN> at constant pressure <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img406.svg"
- ALT="$p$"></SPAN>. 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\alpha_L = \left. \cfrac{1}{L} \cfrac{dL}{DT} \right|_p
-\end{equation}
+Dikes forms when pressurized magma overcomes the minimum principal stress in the subsurface. 
+Dikes form large vertical planes in places with marked stress anisotropy with <!-- MATH
+ $S_3=S_{hmin}$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 7.59ex; vertical-align: -3.45ex; " SRC="img407.svg"
- ALT="$\displaystyle \alpha_L = \left. \cfrac{1}{L} \cfrac{dL}{DT} \right\vert _p$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">36</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Under unconstrained conditions, a negative change in temperature causes shrinkage and a positive change in temperature causes dilation.
-The updated elastic equations make explicit that stresses can be changed as a result of a change in temperature <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img408.svg"
- ALT="$\Delta T$"></SPAN> and/or as a result of a change of volumetric strains. 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:LameThermoElasticity"></A><!-- MATH
- \begin{equation}
-\left\lbrace
-	\begin{array}{rcl}
-		\sigma_{11} & = & (\lambda + 2 \mu) \: \varepsilon_{11} + \lambda \: \varepsilon_{22} + \lambda \: \varepsilon_{33} + 3 K \alpha_L \Delta T \\
-		\sigma_{22} & = & \lambda \: \varepsilon_{11} + (\lambda + 2 \mu) \: \varepsilon_{22} + \lambda \: \varepsilon_{33} + 3 K \alpha_L \Delta T \\
-		\sigma_{33} & = & \lambda \: \varepsilon_{11} + \lambda \: \varepsilon_{22} + (\lambda + 2 \mu) \: \varepsilon_{33} + 3 K \alpha_L \Delta T \\
-		\sigma_{12} & = & 2 \mu \: \varepsilon_{12}\\
-		\sigma_{13} & = & 2 \mu \: \varepsilon_{13}\\
-		\sigma_{23} & = & 2 \mu \: \varepsilon_{23}\\
-	\end{array}
-	\right.
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img409.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{rcl}
-\sigma_{11} &amp; = &amp; (\lambda + ...
-...igma_{23} &amp; = &amp; 2 \mu \: \varepsilon_{23}\\
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">37</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Equation <A HREF="#eq:LameThermoElasticity">3.37</A> does not include the effects of pore pressure.
-The coupled thermo-poro-elastic equations are covered in the Advanced Geomechanics course.
-
-<P>
-Thermal(-induced) stresses can cause reductions in fracture gradient when drilling with relatively cold drilling mud and enhanced fractured reactivation when injecting cold fluids in a hot reservoir.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img206.svg"
+ ALT="$S_3 = S_{hmin}$"></SPAN>.
+Google &ldquo;Shiprock New Mexico&rdquo; to find more great pictures of dikes.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:ThermalSwellStress"></A><A ID="2481"></A>
+<DIV class="CENTER"><A ID="fig:dikes"></A><A ID="8454"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.23:</STRONG>
-Thermo-elasticity example of swelling thermal stress.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par15430" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 7.1:</STRONG>
+Formation and examples of dikes: large and natural fluid-driven fractures.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par20686" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img410.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/4-23.pdf}"></DIV></TD></TR>
+ SRC="img886.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/9A-7.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-<SPAN  CLASS="textit">EXAMPLE 3.6</SPAN>: Derive an expression for the thermal swelling stress of the example shown in Figure <A HREF="#fig:ThermalSwellStress">3.23</A>.
-
-<P>
-<BR>
-<BR>
-SOLUTION <BR>
-Let us assume the axis 3 in the vertical direction, then <!-- MATH
- $\sigma_{11}=\sigma_{22}=0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img411.svg"
- ALT="$\sigma_{11}=\sigma_{22}=0$"></SPAN>, <!-- MATH
- $\varepsilon_{11}=\varepsilon_{22} \neq 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img412.svg"
- ALT="$\varepsilon_{11}=\varepsilon_{22} \neq 0$"></SPAN>, <!-- MATH
- $\varepsilon_{33}=0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img413.svg"
- ALT="$\varepsilon_{33}=0$"></SPAN>.
-Then, for <!-- MATH
- $\Delta T \neq 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img414.svg"
- ALT="$\Delta T \neq 0$"></SPAN> in Eq. <A HREF="#eq:LameThermoElasticity">3.37</A>,
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\left\lbrace
-	\begin{array}{rcl}
-		0 & = & (\lambda + 2 \mu) \: \varepsilon_{11} + \lambda \: \varepsilon_{11} + 3 K \alpha_L \Delta T\\
-		\sigma_{33} & = & \lambda \: \varepsilon_{11} + \lambda \: \varepsilon_{11} + 3 K \alpha_L \Delta T \\
-	\end{array}
-	\right.
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img415.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{rcl}
-0 &amp; = &amp; (\lambda + 2 \mu) \: ...
-...\varepsilon_{11} + 3 K \alpha_L \Delta T \\
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Solving for <!-- MATH
- $\varepsilon_{11}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img280.svg"
- ALT="$\varepsilon_{11}$"></SPAN> and pluging it the <!-- MATH
- $\sigma_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img277.svg"
- ALT="$\sigma_{33}$"></SPAN> equation results in
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\sigma_{33} = \left( \frac{6-\mu/K}{3+\mu/K} \right) K \alpha_L \Delta T \: \: \blacksquare
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img416.svg"
- ALT="$\displaystyle \sigma_{33} = \left( \frac{6-\mu/K}{3+\mu/K} \right) K \alpha_L \Delta T \: \: \blacksquare
-$">
-</DIV><P></P>
-
-<P>
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node50.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node47.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node48.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html565"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node50.html">Problems</A>
-<B> Up:</B> <A
- HREF="node47.html">Multiphysics problems</A>
-<B> Previous:</B> <A
- HREF="node48.html">Poro-elasticity</A>
- &nbsp; <B>  <A ID="tex2html566"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
+<BR><HR>
 
 </BODY>
 </HTML>

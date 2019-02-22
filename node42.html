@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>6.5 The mud window</TITLE>
-<META NAME="description" CONTENT="6.5 The mud window">
+<TITLE>6.3 Shear failure and wellbore breakouts</TITLE>
+<META NAME="description" CONTENT="6.3 Shear failure and wellbore breakouts">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -27,109 +27,605 @@
  HREF="node43.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node37.html">
+ HREF="node39.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node41.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html634"
+<A ID="tex2html717"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node43.html">6.6 Mechanical stability of</A>
+ HREF="node43.html">6.4 Tensile fractures and</A>
 <B> Up:</B> <A
- HREF="node37.html">6. Wellbore stability</A>
+ HREF="node39.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node41.html">6.4 Tensile fractures and</A>
- &nbsp; <B>  <A ID="tex2html635"
+ HREF="node41.html">6.2 Kirsch solution for</A>
+ &nbsp; <B>  <A ID="tex2html718"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<H1><A ID="SECTION00750000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">5</SPAN> The mud window</A>
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html719"
+  HREF="node42.html#SECTION00731000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Breakout angle determination</A>
+<LI><A ID="tex2html720"
+  HREF="node42.html#SECTION00732000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Breakout measurement</A>
+<LI><A ID="tex2html721"
+  HREF="node42.html#SECTION00733000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Maximum horizontal stress determination from breakout angle</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00730000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN> Shear failure and wellbore breakouts</A>
 </H1>
 
 <P>
-As seen in previous sections, low mud pressure (small mud wall support <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img473.svg"
- ALT="$\sigma_3$"></SPAN> for hoop stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img472.svg"
- ALT="$\sigma_1$"></SPAN>) encourages shear failure while too much pressure encourages tensile fractures (well pressure adds tensile hoop stresses). 
-Hence there is range of mud pressure for which the wellbore will remain stable during drilling. 
-This is called the <SPAN  CLASS="textit">mud  window</SPAN> and has a lower  bound (LB) and an upper bound (UB) which depend on wellbore mechanical stability as well as in other various technical requirements (Fig. <A HREF="#fig:MudWindow"><IMG  ALT="[*]" SRC="crossref.png"></A>).
+Wellbore breakouts occur when the stress anisotropy <!-- MATH
+ $\sigma_1/\sigma_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img754.svg"
+ ALT="$\sigma_1/\sigma_3$"></SPAN> surpasses the shear strength limit of the wellbore rock.
+Maximum anisotropy is found at <!-- MATH
+ $\theta= \pi/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img733.svg"
+ ALT="$\theta = \pi/2$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img734.svg"
+ ALT="$3\pi/2$"></SPAN>, for which 
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{rcl}
+		\sigma_1 = \sigma_{\theta \theta} & = &
+			-(P_W - P_p) +3\sigma_{Hmax} -\sigma_{hmin} \\
+		\sigma_3 = \sigma_{rr} & = & (P_W - P_p) 	 
+	\end{array}
+\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img755.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{rcl}
+\sigma_1 = \sigma_{\theta \th...
+...\\
+\sigma_3 = \sigma_{rr} &amp; = &amp; (P_W - P_p)
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:MudWindow"></A><A ID="6848"></A>
+<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="6922"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure:</STRONG>
-Mud window based on mechanical wellbore stability, pore pressure and minimum principal stress. HF: hydraulic fracture.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14242" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.8:</STRONG>
+Initiation of wellbore breakouts</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par20122" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img786.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/7-18.pdf}"></DIV></TD></TR>
+ SRC="img756.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-5.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-Small breakouts <!-- MATH
- $w_{BO} \leqslant 60^{\circ}$
+Hence, replacing <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img32.svg"
+ ALT="$\sigma _1$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img33.svg"
+ ALT="$\sigma _3$"></SPAN> into a shear failure equation (Eq. ) permits finding the mud pressure <!-- MATH
+ $P_{Wshear}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img787.svg"
- ALT="$w_{BO} \leqslant 60^{\circ}$"></SPAN> may not compromise wellbore stability and permit setting a more flexible lower bound for the mud window.
-Large breakouts <!-- MATH
- $w_{BO} \geqslant 120^{\circ}$
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img757.svg"
+ ALT="$P_{Wshear}$"></SPAN> that would produce a tiny shear failure (or breakout) at <!-- MATH
+ $\theta= \pi/2$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img788.svg"
- ALT="$w_{BO} \geqslant 120^{\circ}$"></SPAN> can lead to uncontrolled shear failure and breakout growth leading to stuck borehole assemblies and even wellbore collapse.
-Likewise, small drilling-induced tensile fractures with wellbore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img670.svg"
- ALT="$P_W$"></SPAN> lower than the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
- ALT="$S_3$"></SPAN> can be safe and extend the upper bound for the mud window.
-However, wellbore pressures above <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
- ALT="$S_3$"></SPAN> can result into uncontrolled mud-driven fracture propagation. 
-Eq. <A HREF="node41.html#eq:Pb"><IMG  ALT="[*]" SRC="crossref.png"></A> may suggest a safe breakdown pressure value above the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img769.svg"
- ALT="$P_b &gt; S_3$"></SPAN>.
-However, this calculation assumes tensile strength everywhere in the the borehole wall.
-Any rock flaw or fracture (<!-- MATH
- $T_S = 0 MPa$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img789.svg"
- ALT="$T_S = 0 MPa$"></SPAN>) may reduce drastically <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img768.svg"
- ALT="$P_b$"></SPAN>.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img733.svg"
+ ALT="$\theta = \pi/2$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img734.svg"
+ ALT="$3\pi/2$"></SPAN>:
 
 <P>
-There are other factors to take into account in the determination of the mud window in addition to mechanical wellbore stability.
-First, a mud pressure below the pore pressure will induce formation fluid flow into the wellbore. 
-The fluid flow rate will depend on the permeability of the formation.
-Tight formations may be drilled underbalanced with negligible formation fluid production.
-High mud pressure respect to the pore pressure will promote mud losses (by leak-off) and damage reservoir permeability.
-Second, a mud pressure above the far field minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
- ALT="$S_3$"></SPAN> may cause uncontrolled hydraulic fracture propagation and lost circulation events. 
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left[
+			-(P_W - P_p) +3\sigma_{Hmax} -\sigma_{hmin} 
+		\right] = UCS + q \left[ P_W - P_p \right]	 
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img758.svg"
+ ALT="$\displaystyle \left[
+-(P_W - P_p) +3\sigma_{Hmax} -\sigma_{hmin}
+\right] = UCS + q \left[ P_W - P_p \right]$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
 
 <P>
-Maximizing the mud window -taking advantage of geomechanical understanding among other variables- is extremely important to minimize the number of casing setting points and minimize drilling times (Fig. <A HREF="#fig:WellboreCasingDepths"><IMG  ALT="[*]" SRC="crossref.png"></A>).
-The mud pressure gradient in a wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img790.svg"
- ALT="$dP_W/dz$"></SPAN> is a constant and depends solely on the mud density.
-Therefore, drilling designs are based on the mud pressure respect to a datum (usually the rotary Kelly bushing - RKB) expressed on terms of &ldquo;equivalent density&rdquo;. 
-In any open-hole section the value of pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img670.svg"
- ALT="$P_W$"></SPAN> in a plot  equivalent density v.s. depth is a straight vertical line (Fig. <A HREF="node38.html#fig:ECD"><IMG  ALT="[*]" SRC="crossref.png"></A>).
-The depth of casing setting results from a selection of mud densities that cover the range between of the mud window as a function of depth.
-Wider mud windows reduce the number of casing setting points.  
+Hence,
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+P_{Wshear} = P_p + \frac{3\sigma_{Hmax} -\sigma_{hmin}
+			- UCS}{1+q}  
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.40ex; vertical-align: -2.15ex; " SRC="img759.svg"
+ ALT="$\displaystyle P_{Wshear} = P_p + \frac{3\sigma_{Hmax} -\sigma_{hmin}
+- UCS}{1+q}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Mud pressure <!-- MATH
+ $P_W < P_{Wshear}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img760.svg"
+ ALT="$P_W &lt; P_{Wshear}$"></SPAN> would extend the breakout further in the neighbohood of <!-- MATH
+ $\theta= \pi/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img733.svg"
+ ALT="$\theta = \pi/2$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img734.svg"
+ ALT="$3\pi/2$"></SPAN> (See Fig. <A HREF="#fig:BreakoutPhoto">6.9</A>).  
+Thus, <!-- MATH
+ $P_{Wshear}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img757.svg"
+ ALT="$P_{Wshear}$"></SPAN> is the lowest mud pressure before initiation of breakouts. 
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:WellboreCasingDepths"></A><A ID="6860"></A>
+<DIV class="CENTER"><A ID="fig:BreakoutPhoto"></A><A ID="6942"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure:</STRONG>
-Drilling mud density and wellbore design. The figure on the right is an improved design of the one on the left, based on careful geomechanical analysis of wellbore stability.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par14269" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.9:</STRONG>
+Example of wellbore breakout [Zoback 2013 - Fig. 6.15]. Observe the inclination of shear fractures as the propagate into the rock. The material that falls into the wellbore is taken out as drilling cuttings. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par20149" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img791.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/7-20.pdf}"></DIV></TD></TR>
+ SRC="img761.svg"
+ ALT="\includegraphics[scale=0.50]{.././Figures/split/7-7.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
+<P>
+<SPAN  CLASS="textit">PROBLEM 6.1:</SPAN> Calculate the minimum mud weight (ppg) in a vertical wellbore for avoiding shear failure (breakouts) in a site onshore at 7000 ft of depth where <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img40.svg"
+ ALT="$S_{hmin} =$"></SPAN> 4300 psi and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img39.svg"
+ ALT="$S_{Hmax} =$"></SPAN> 6300 psi and with hydrostatic pore pressure. 
+The rock mechanical properties are <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img762.svg"
+ ALT="$UCS =$"></SPAN> 3500 psi, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img763.svg"
+ ALT="$\mu_i=$"></SPAN> 0.6, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img764.svg"
+ ALT="$T_s$"></SPAN> = 800 psi. 
+
+<P>
+SOLUTION <BR>
+Hydrostatic pore pressure results in: 
+<P><!-- MATH
+ \begin{displaymath}
+P_p = 7000 \text{ ft} \times 0.44 \text{ psi/ft} = 3080 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img765.svg"
+ ALT="$\displaystyle P_p = 7000$">&nbsp; &nbsp; ft<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img766.svg"
+ ALT="$\displaystyle \times 0.44$">&nbsp; &nbsp; psi/ft<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img767.svg"
+ ALT="$\displaystyle = 3080$">&nbsp; &nbsp; psi
+</DIV><P></P>
+
+<P>
+The effective horizontal stresses are:
+<P><!-- MATH
+ \begin{displaymath}
+\sigma_{Hmax} = 6300 \text{ psi} - 3080 \text{ psi} = 3220 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.06ex; vertical-align: -0.47ex; " SRC="img768.svg"
+ ALT="$\displaystyle \sigma_{Hmax} = 6300$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img769.svg"
+ ALT="$\displaystyle - 3080$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img770.svg"
+ ALT="$\displaystyle = 3220$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.21ex; vertical-align: -0.11ex; " SRC="img535.svg"
+ ALT="$\displaystyle $">
+</DIV><P></P>
+and 
+<P><!-- MATH
+ \begin{displaymath}
+\sigma_{hmin} = 4300 \text{ psi} - 3080 \text{ psi} = 1220 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img771.svg"
+ ALT="$\displaystyle \sigma_{hmin} = 4300$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img769.svg"
+ ALT="$\displaystyle - 3080$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img772.svg"
+ ALT="$\displaystyle = 1220$">&nbsp; &nbsp; psi<IMG STYLE="height: 0.21ex; vertical-align: -0.11ex; " SRC="img535.svg"
+ ALT="$\displaystyle $">
+</DIV><P></P>
+
+<P>
+The friction angle is <!-- MATH
+ $\arctan(0.6)=30.96^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img773.svg"
+ ALT="$\arctan(0.6)=30.96^{\circ}$"></SPAN>, and therefore, the friction stress anisotropy ratio is
+<P><!-- MATH
+ \begin{displaymath}
+q = \frac{1+ \sin 30.96^{\circ} }{1- \sin 30.96^{\circ} } = 3.12
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.17ex; vertical-align: -1.89ex; " SRC="img774.svg"
+ ALT="$\displaystyle q = \frac{1+ \sin 30.96^{\circ} }{1- \sin 30.96^{\circ} } = 3.12
+$">
+</DIV><P></P>
+
+<P>
+Thus, the minimum mud pressure for avoiding shear failure (breakouts) is
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+P_{Wshear} = 3080 \text{ psi} + \frac{3 \times 3220 \text{ psi} - 1220 \text{ psi} - 3500 \text{ psi} }{1+3.12} =
+		4279 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img775.svg"
+ ALT="$\displaystyle P_{Wshear} = 3080$">&nbsp; &nbsp; psi<IMG STYLE="height: 5.10ex; vertical-align: -1.89ex; " SRC="img776.svg"
+ ALT="$\displaystyle + \frac{3 \times 3220 \text{ psi} - 1220 \text{ psi} - 3500 \text{ psi} }{1+3.12} =
+4279 \text{ psi}
+$">
+</DIV><P></P>
+
+<P>
+This pressure can be achieved with an equivalent circulation density of 
+<P><!-- MATH
+ \begin{displaymath}
+\frac{4279 \text{ psi}} {7000 \text{ ft}} \times
+\frac{8.3 \text{ ppg}} {0.44 \text{ psi/ft}} =
+11.57 \text{ ppg} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.49ex; vertical-align: -2.28ex; " SRC="img777.svg"
+ ALT="$\displaystyle \frac{4279 \text{ psi}} {7000 \text{ ft}} \times
+\frac{8.3 \text{ ppg}} {0.44 \text{ psi/ft}} =
+11.57 \text{ ppg} \: \: \blacksquare
+$">
+</DIV><P></P>  
+
+<P>
+
+<H2><A ID="SECTION00731000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Breakout angle determination</A>
+</H2>
+
+<P>
+For a given set of problem variables (far field stress, pore pressure, and mud pressure), we can calculate the required strength of the rock to have a stable wellbore.
+Let us consider the example of Fig. <A HREF="#fig:RequiredUCS">6.10</A> that shows the required <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img487.svg"
+ ALT="$UCS$"></SPAN> to resist shear failure assuming the friction angle is <!-- MATH
+ $\varphi = 30^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img618.svg"
+ ALT="$\varphi = 30^{\circ}$"></SPAN>.
+For example, if the rock had a <!-- MATH
+ $UCS \sim 25$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img778.svg"
+ ALT="$UCS \sim 25$"></SPAN> MPa, one may expect a <!-- MATH
+ $\sim 90^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img779.svg"
+ ALT="$\sim 90^{\circ}$"></SPAN> wide breakout.  
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:RequiredUCS"></A><A ID="6980"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.10:</STRONG>
+Example of required UCS with Mohr-Coulomb analysis to verify likelihood of wellbore breakouts.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par20196" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img780.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-6.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Alternatively, you could solve the previous problem analytically.
+The procedure consists in setting shear failure at the point in the wellbore at an angle <!-- MATH
+ $(w_{BO}/2)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img781.svg"
+ ALT="$(w_{BO}/2)$"></SPAN> from <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img782.svg"
+ ALT="$\pi/2$"></SPAN> or <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img734.svg"
+ ALT="$3\pi/2$"></SPAN>. 
+Hence, at a point on the wellbore wall at <!-- MATH
+ $\theta_B = \pi/2 - w_{BO}/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img783.svg"
+ ALT="$\theta_B = \pi/2 - w_{BO}/2$"></SPAN>:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{rcl}
+		\sigma_{\theta \theta} & = &
+			-(P_W - P_p) + (\sigma_{Hmax} + \sigma_{hmin}) 
+			- 2(\sigma_{Hmax} - \sigma_{hmin}) 
+			                          \cos (2 \theta_B)  \\
+		\sigma_{rr} & = &  +(P_W - P_p)  
+	\end{array}
+\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img784.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{rcl}
+\sigma_{\theta \theta} &amp; = &amp;
+...
+...\theta_B) \\
+\sigma_{rr} &amp; = &amp; +(P_W - P_p)
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:BreakoutAngle"></A><A ID="6998"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.11:</STRONG>
+Determination of breakout angle with Mohr-Coulomb failure criterion. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par20211" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img785.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-10.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Say hoop stress reaches the maximum principal stress anisotropy allowed by the Mohr-Coulomb shear failure criterion (<!-- MATH
+ $\sigma_1 = UCS + q \: \sigma_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img786.svg"
+ ALT="$\sigma_1 = UCS + q \: \sigma_3$"></SPAN>) where the breakout begins (rock about to fail - Fig. <A HREF="#fig:BreakoutAngle">6.11</A>), then
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left[ -(P_W - P_p) + (\sigma_{Hmax} + \sigma_{hmin})
+	- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (2 \theta_B) \right]
+	= UCS + q (P_W - P_p)  
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img787.svg"
+ ALT="$\displaystyle \left[ -(P_W - P_p) + (\sigma_{Hmax} + \sigma_{hmin})
+- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (2 \theta_B) \right]
+= UCS + q (P_W - P_p)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+which after some algebraic manipulations results in:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:BreakoutAngle"></A><!-- MATH
+ \begin{equation}
+2 \theta_B = \arccos \left[ \frac{ \sigma_{Hmax} + \sigma_{hmin} - UCS - (1+q)(P_W - P_p)}{2(\sigma_{Hmax} - \sigma_{hmin})} \right]
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img788.svg"
+ ALT="$\displaystyle 2 \theta_B = \arccos \left[ \frac{ \sigma_{Hmax} + \sigma_{hmin} - UCS - (1+q)(P_W - P_p)}{2(\sigma_{Hmax} - \sigma_{hmin})} \right]$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The breakout angle is 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+w_{BO} = \pi - 2 \theta_B
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img789.svg"
+ ALT="$\displaystyle w_{BO} = \pi - 2 \theta_B$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">13</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The procedure assumes the rock in the breakout (likely already gone) is still resisting hoop stresses and therefore it is not accurate for large breakouts (<!-- MATH
+ $\sim w_{BO} > 60^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img790.svg"
+ ALT="$\sim w_{BO} &gt; 60^{\circ}$"></SPAN>).
+
+<P>
+You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. <A HREF="#eq:BreakoutAngle">6.12</A>
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+P_{WBO} = P_p + \frac{ (\sigma_{Hmax} + \sigma_{hmin})
+	- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (\pi - w_{BO}) - UCS}{1+q} 
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.55ex; vertical-align: -2.15ex; " SRC="img791.svg"
+ ALT="$\displaystyle P_{WBO} = P_p + \frac{ (\sigma_{Hmax} + \sigma_{hmin})
+- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (\pi - w_{BO}) - UCS}{1+q}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">14</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">PROBLEM 6.2:</SPAN> Calculate the breakout angle in a vertical wellbore for a mud weight of 10 ppg in a site onshore at 7000 ft of depth where  <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img40.svg"
+ ALT="$S_{hmin} =$"></SPAN> 4300 psi and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img39.svg"
+ ALT="$S_{Hmax} =$"></SPAN> 6300 psi and with hydrostatic pore pressure. 
+The rock mechanical properties are <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img762.svg"
+ ALT="$UCS =$"></SPAN> 3500 psi, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img763.svg"
+ ALT="$\mu_i=$"></SPAN> 0.6, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img764.svg"
+ ALT="$T_s$"></SPAN> = 800 psi. 
+
+<P>
+SOLUTION <BR>
+The problem variables are the same of problem 6.1.
+For a 10 ppg mud, the resulting mud pressure is
+<P><!-- MATH
+ \begin{displaymath}
+10 \text{ ppg} \times
+\frac{0.44 \text{ psi/ft}} {8.3 \text{ ppg}} \times
+7000 \text{ psi} = 3710 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img792.svg"
+ ALT="$\displaystyle 10$">&nbsp; &nbsp; ppg<IMG STYLE="height: 5.55ex; vertical-align: -2.15ex; " SRC="img793.svg"
+ ALT="$\displaystyle \times
+\frac{0.44 \text{ psi/ft}} {8.3 \text{ ppg}} \times
+7000 \text{ psi} = 3710 \text{ psi}
+$">
+</DIV><P></P>  
+
+<P>
+Hence, the expected wellbore breakout angle is
+<P><!-- MATH
+ \begin{displaymath}
+w_{BO} = 180^{\circ} - \arccos \left[ \frac{ 3220 \text{ psi} + 1220 \text{ psi} - 3500 \text{ psi} - (1+3.12)(3710 \text{ psi} - 3080 \text{ psi})}{2(3220 \text{ psi} - 1220 \text{ psi})} \right] = 66 ^{\circ} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img794.svg"
+ ALT="$\displaystyle w_{BO} = 180^{\circ} - \arccos \left[ \frac{ 3220 \text{ psi} + 1...
+...3220 \text{ psi} - 1220 \text{ psi})} \right] = 66 ^{\circ} \: \: \blacksquare
+$">
+</DIV><P></P>
+
+<P>
+
+<H2><A ID="SECTION00732000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Breakout measurement</A>
+</H2>
+
+<P>
+Breakouts and tensile induced fractures (Section <A HREF="node43.html#sec:TensileFracs">6.4</A>) can be identified and measured with borehole imaging tools (Fig. <A HREF="#fig:BoreholeImaging">6.12</A>). 
+Breakouts appear as wide bands of longer travel time or higher electrical resistivity in borehole images. 
+Tensile fractures appear as narrow bands of longer travel time or higher electrical resistivity.
+Borehole images also permit identifying the direction of the stresses that caused such breakouts or tensile induced fractures. 
+For example, the azimuth of breakouts coincides with the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img44.svg"
+ ALT="$S_{hmin}$"></SPAN> in vertical wells.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:BoreholeImaging"></A><A ID="7395"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.12:</STRONG>
+Examples of wellbore breakouts and tensile fractures in borehole images. Learn more about wellbore imaging tools here: <kbd><A ID="tex2html146"
+  HREF="http://petrowiki.org/Borehole_imaging">http://petrowiki.org/Borehole_imaging</A></kbd>.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par20246" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img795.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-8.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Breakouts can also be detected from caliper measurements.
+Caliper tools permit measuring directly the size and shape of the borehole (Fig. <A HREF="#fig:WellboreCaliper">6.13</A>). 
+Thus, the caliper log is extremely useful to measure breakouts and extended breakouts (washouts). For the same mud density, the caliper log reflects changes of rock properties along the well and correlate with other well logging measurements.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:WellboreCaliper"></A><A ID="7060"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.13:</STRONG>
+Example of caliper measurements to identify wellbore breakouts.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par20251" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img796.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-9.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00733000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Maximum horizontal stress determination from breakout angle</A>
+</H2>
+
+<P>
+Breakouts are a consequence of stress anisotropy in the plane perpendicular to the wellbore. 
+Hence, knowing the size and orientation of breakouts permits measuring and calculating the direction and magnitudes of stresses that caused such breakouts. 
+This technique is very useful for measuring orientation of horizontal stresses.
+In addition, if we know the rock properties <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img487.svg"
+ ALT="$UCS$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img507.svg"
+ ALT="$q$"></SPAN>, then 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+S_{Hmax} = P_p + \frac{UCS + (1+q)(P_W - P_p)
+		- \sigma_{hmin} \left[ 1 + 2 \cos (\pi - w_{BO}) \right]}
+		{1 - 2 \cos (\pi - w_{BO})}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.69ex; vertical-align: -2.28ex; " SRC="img797.svg"
+ ALT="$\displaystyle S_{Hmax} = P_p + \frac{UCS + (1+q)(P_W - P_p)
+- \sigma_{hmin} \left[ 1 + 2 \cos (\pi - w_{BO}) \right]}
+{1 - 2 \cos (\pi - w_{BO})}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">15</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -138,22 +634,22 @@ Drilling mud density and wellbore design. The figure on the right is an improved
  HREF="node43.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node37.html">
+ HREF="node39.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node41.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html634"
+<A ID="tex2html717"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node43.html">6.6 Mechanical stability of</A>
+ HREF="node43.html">6.4 Tensile fractures and</A>
 <B> Up:</B> <A
- HREF="node37.html">6. Wellbore stability</A>
+ HREF="node39.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node41.html">6.4 Tensile fractures and</A>
- &nbsp; <B>  <A ID="tex2html635"
+ HREF="node41.html">6.2 Kirsch solution for</A>
+ &nbsp; <B>  <A ID="tex2html718"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 
