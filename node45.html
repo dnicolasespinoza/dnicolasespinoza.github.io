@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>6.6 Mechanical stability of deviated wellbores</TITLE>
-<META NAME="description" CONTENT="6.6 Mechanical stability of deviated wellbores">
+<TITLE>6.4 Tensile fractures and wellbore breakdown</TITLE>
+<META NAME="description" CONTENT="6.4 Tensile fractures and wellbore breakdown">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -27,22 +27,22 @@
  HREF="node46.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node39.html">
+ HREF="node41.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node44.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html727"
+<A ID="tex2html756"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node46.html">6.7 Thermal, chemical, and</A>
+ HREF="node46.html">6.5 The mud window</A>
 <B> Up:</B> <A
- HREF="node39.html">6. Wellbore stability</A>
+ HREF="node41.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node44.html">6.5 The mud window</A>
- &nbsp; <B>  <A ID="tex2html728"
+ HREF="node44.html">6.3 Shear failure and</A>
+ &nbsp; <B>  <A ID="tex2html757"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
@@ -51,504 +51,242 @@
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html729"
-  HREF="node45.html#SECTION00761000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> Wellbore orientation</A>
-<LI><A ID="tex2html730"
-  HREF="node45.html#SECTION00762000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Stresses on deviated wellbores</A>
-<LI><A ID="tex2html731"
-  HREF="node45.html#SECTION00763000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN> Breakout analysis for deviated wellbores</A>
-<LI><A ID="tex2html732"
-  HREF="node45.html#SECTION00764000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Tensile fractures analysis for deviated wellbores</A>
+<LI><A ID="tex2html758"
+  HREF="node45.html#SECTION00741000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Identification of tensile fractures in wellbores</A>
 </UL>
 <!--End of Table of Child-Links-->
 <HR>
 
-<H1><A ID="SECTION00760000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN> Mechanical stability of deviated wellbores</A>
+<H1><A ID="SECTION00740000000000000000"></A>
+<A ID="sec:TensileFracs"></A>
+<BR>
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Tensile fractures and wellbore breakdown
 </H1>
 
 <P>
-The following subsections present a guide for calculating stresses at the wall of deviated wellbores and identifying stress magnitudes and locations for shear failure (breakouts) and tensile fractures.
-
-<P>
-
-<H2><A ID="SECTION00761000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> Wellbore orientation</A>
-</H2>
-
-<P>
-At any point along the trajectory of a deviated wellbore, the tangent orientation permits defining wellbore azimuth <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img829.svg"
- ALT="$\delta$"></SPAN> and deviation <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img482.svg"
- ALT="$\varphi$"></SPAN> (Fig. <A HREF="#fig:WellOrientation">6.19</A>).
-Azimuth <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img829.svg"
- ALT="$\delta$"></SPAN> is the angle between the projection of the trajectory on a horizontal plane and the North.
-Deviation <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img482.svg"
- ALT="$\varphi$"></SPAN> is the angle between a vertical line and the trajectory.
-These two variables can be plotted in a half-hemisphere projection plot (stereonet).
-Notice that a point in this plot represents just one point along a wellbore trajectory.
-Fig. <A HREF="#fig:WellOrientation">6.19</A> shows an example of the full trajectory of a wellbore. 
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:WellOrientation"></A><A ID="7155"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.19:</STRONG>
-Convention for plotting the orientation of a deviated wellbore on a lower hemisphere projection. The example shows the deviation survey for a real wellbore (radius amplified to highlight small deviations). Notice that it starts slightly deviated on surface and then turns into vertical direction at depth.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20401" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img830.svg"
- ALT="\includegraphics[scale=0.45]{.././Figures/split/7-DevSurvey.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-<SPAN  CLASS="textit">PROBLEM 6.4:</SPAN> Consider a place where vertical stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress and the maximum horizontal stress acts in E-W direction. 
-
-<OL>
-<LI>Find the planes with maximum stress anisotropy for normal faulting, strike-slip, and reverse faulting stress regimes. 
-</LI>
-<LI>Plot the orientation of wellbores in those planes of  maximum stress anisotropy in a stereonet projection plot.
-</LI>
-<LI>Where around the wellbore would breakouts and tensile fractures occur in each case?  
-</LI>
-</OL>
-
-<P>
-SOLUTION <BR>
-The solution below shows just one of the possible solutions for horizontal wells.
-
-<DIV class="CENTER">
-<DIV CLASS="centerline" ID="par20408" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img831.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/8-ExampleDevWells.pdf}"></DIV>
-
-</DIV> 
-<P>
-
-<H2><A ID="SECTION00762000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Stresses on deviated wellbores</A>
-</H2>
-
-<P>
-Let us define a coordinate system for a point along the trajectory of a deviated wellbore. 
-The first element <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img832.svg"
- ALT="$x_b$"></SPAN> of the cartesian base goes from the center of a cross-section of the wellbore at a given depth to the deepest point around the cross-section (perpendicular to the axis).  
-The second element of the base <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img833.svg"
- ALT="$y_b$"></SPAN> goes from the center to the side on a horizontal plane. 
-The third element of the base <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img834.svg"
- ALT="$z_b$"></SPAN> goes along the direction of the wellbore.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="7167"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.20:</STRONG>
-The wellbore coordinate system.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20417" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img835.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/8-WellCoordSystem.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-Based on the previous definition, it is possible to construct a transformation matrix <!-- MATH
- $R_{GW}=f(\delta,\varphi)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img836.svg"
- ALT="$R_{GW}=f(\delta,\varphi)$"></SPAN> that links the geographical coordinate system and the wellbore coordinate system.
+Wellbore tensile (or open mode) fractures occur when the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img491.svg"
+ ALT="$\sigma_3$"></SPAN> on the wellbore wall goes below the limit for tensile stress: the tensile strength. 
+Unconsolidated sands have no tensile strength. 
+Hence, an open-mode fracture occurs as soon as effective stress goes to zero.  
+The minimum hoop stress is located on the wall of the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img821.svg"
+ ALT="$(r=a)$"></SPAN> and at <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img753.svg"
+ ALT="$\theta = 0$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img758.svg"
+ ALT="$\pi$"></SPAN> (Fig. <A HREF="#fig:TensFracsSchematic"><IMG  ALT="[*]" SRC="crossref.png"></A>):
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-\uuline{S}{}_W =
-			R_{GW} \uuline{S}{}_G R_{GW}^T
+\sigma_{\theta \theta}  =
+			-(P_W - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin} 
+			+ \sigma^{\Delta T} 
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.94ex; vertical-align: -1.73ex; " SRC="img837.svg"
- ALT="$\displaystyle \uuline{S}{}_W =
-R_{GW} \uuline{S}{}_G R_{GW}^T$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img822.svg"
+ ALT="$\displaystyle \sigma_{\theta \theta} =
+-(P_W - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin}
++ \sigma^{\Delta T}$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">19</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">16</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-Furthermore, the wellbore stresses can be calculated from the principal stress tensor according with:
+Notice that we have added a temperature term <!-- MATH
+ $\sigma^{\Delta T}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.21ex; vertical-align: -0.11ex; " SRC="img823.svg"
+ ALT="$\sigma^{\Delta T}$"></SPAN> that takes into account wellbore cooling, an important phenomenon that contributes to tensile fractures in wellbores.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:TensFracsSchematic"></A><A ID="7561"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure:</STRONG>
+Occurrence of tensile fractures around a vertical wellbore.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par18457" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img824.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-13.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Matching the lowest value of hoop stress <!-- MATH
+ $\sigma_{\theta \theta}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img741.svg"
+ ALT="$\sigma_{\theta \theta}$"></SPAN> with tensile strength <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img787.svg"
+ ALT="$T_s$"></SPAN> permits finding the mud pressure <!-- MATH
+ $P_W = P_{b}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img825.svg"
+ ALT="$P_W = P_{b}$"></SPAN> that would produce a tensile (or open mode) fracture:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:Pb"></A><!-- MATH
+ \begin{equation}
+-T_s  =
+			-(P_b - P_p)  -\sigma_{Hmax} + 3 \sigma_{hmin} 
+			+ \sigma^{\Delta T} 
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img826.svg"
+ ALT="$\displaystyle -T_s =
+-(P_b - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin}
++ \sigma^{\Delta T}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">17</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+and therefore
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-\uuline{S}{}_W =
-			R_{GW} R_{PG}^T \uuline{S}{}_P R_{PG} R_{GW}^T
+P_b = P_p - \sigma_{Hmax} + 3 \sigma_{hmin} +  T_s
+			+ \sigma^{\Delta T} 
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.94ex; vertical-align: -1.73ex; " SRC="img838.svg"
- ALT="$\displaystyle \uuline{S}{}_W =
-R_{GW} R_{PG}^T \uuline{S}{}_P R_{PG} R_{GW}^T$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.00ex; vertical-align: -0.78ex; " SRC="img827.svg"
+ ALT="$\displaystyle P_b = P_p - \sigma_{Hmax} + 3 \sigma_{hmin} + T_s
++ \sigma^{\Delta T}$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">20</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">18</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-Where <!-- MATH
- $\uuline{S}{}_P$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img839.svg"
- ALT="$\uuline{S}{}_P$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img632.svg"
- ALT="$R_{PG}$"></SPAN> are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system.
-The tensor <!-- MATH
- $\uuline{S}{}_W$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img840.svg"
- ALT="$\uuline{S}{}_W$"></SPAN> is composed by the following stresses:
+The subscript <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img828.svg"
+ ALT="$b$"></SPAN> of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img829.svg"
+ ALT="$P_b$"></SPAN> corresponds to &ldquo;breakdown&rdquo; pressure because in some cases when <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img830.svg"
+ ALT="$P_b &gt; S_3$"></SPAN>, a mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img831.svg"
+ ALT="$P_W&gt;P_b$"></SPAN> can create a hydraulic fracture that propagates far from the wellbore and causes lost circulation.
+When <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img832.svg"
+ ALT="$P_b &lt; S_3$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img831.svg"
+ ALT="$P_W&gt;P_b$"></SPAN>, the mud pressure will produce short tensile fractures around the wellbore that do not propagate far from the wellbore.
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\uuline{S}{}_W =
-	\left[
-		\begin{array}{ccc}
-			S_{11} & S_{12} & S_{13} \\
-			S_{21} & S_{22} & S_{23} \\
-			S_{31} & S_{32} & S_{33} \\
-		\end{array}
-	\right]
-\end{equation}
+In the equations above we have added the contribution of thermal stresses <!-- MATH
+ $\sigma^{\Delta T} = [\alpha_T E/(1-\nu)] \Delta T$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img841.svg"
- ALT="\begin{displaymath}\uuline{S}{}_W =
-\left[
-\begin{array}{ccc}
-S_{11} &amp; S_{12} &amp; ...
-...2} &amp; S_{23} \\
-S_{31} &amp; S_{32} &amp; S_{33} \\
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">21</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.79ex; vertical-align: -0.69ex; " SRC="img833.svg"
+ ALT="$\sigma^{\Delta T} = [\alpha_T E/(1-\nu)] \Delta T$"></SPAN> where <SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img834.svg"
+ ALT="$\alpha_T$"></SPAN> is the linear thermal expansion coefficient and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img413.svg"
+ ALT="$\Delta T$"></SPAN> is the change in temperature (<!-- MATH
+ $\sigma^{\Delta T}<0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.30ex; vertical-align: -0.20ex; " SRC="img835.svg"
+ ALT="$\sigma^{\Delta T}&lt;0$"></SPAN> for <!-- MATH
+ $\Delta T < 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.20ex; " SRC="img836.svg"
+ ALT="$\Delta T &lt; 0$"></SPAN>).
+Wellbores are usually drilled and logged with drilling mud cooler than the formation <!-- MATH
+ $T_{mud} < T_{rock}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img837.svg"
+ ALT="$T_{mud} &lt; T_{rock}$"></SPAN>. 
+Hence, ignoring thermal stresses is conservative for preventing breakouts but it is not for tensile fractures.
 
 <P>
-Stresses on the plane of the cross-section of the deviated wellbore at the wellbore wall <!-- MATH
- $(\sigma_{rr}, \sigma_{\theta \theta}, \sigma_{zz}, \sigma_{\theta z})$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img842.svg"
- ALT="$(\sigma_{rr}, \sigma_{\theta \theta}, \sigma_{zz}, \sigma_{\theta z})$"></SPAN> depend on far-field stresses <!-- MATH
- $\sigma_{11} = S_{11} - P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img843.svg"
- ALT="$\sigma_{11} = S_{11} - P_p$"></SPAN>, <!-- MATH
- $\sigma_{22} = S_{22} - P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img844.svg"
- ALT="$\sigma_{22} = S_{22} - P_p$"></SPAN>, <!-- MATH
- $\sigma_{33} = S_{33} - P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img845.svg"
- ALT="$\sigma_{33} = S_{33} - P_p$"></SPAN>, <!-- MATH
- $\sigma_{12} = S_{12}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img846.svg"
- ALT="$\sigma_{12} = S_{12}$"></SPAN>, <!-- MATH
- $\sigma_{13} = S_{13}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img847.svg"
- ALT="$\sigma_{13} = S_{13}$"></SPAN>, and <!-- MATH
- $\sigma_{23} = S_{23}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img848.svg"
- ALT="$\sigma_{23} = S_{23}$"></SPAN>. 
-The Kirsch equations require additional far field shear terms <!-- MATH
- $\sigma_{12}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img849.svg"
- ALT="$\sigma_{12}$"></SPAN>, <!-- MATH
- $\sigma_{13}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img850.svg"
- ALT="$\sigma_{13}$"></SPAN>, and <!-- MATH
- $\sigma_{23}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img851.svg"
- ALT="$\sigma_{23}$"></SPAN> in order to account for principal stresses not coinciding with the wellbore orientation.
-The solution of Kirsch equation with far-field shear stresses is provided in Fig. <A HREF="#fig:KirschDevWell">6.21</A>.
+Fig. <A HREF="#fig:TensFracsSurface"><IMG  ALT="[*]" SRC="crossref.png"></A> shows an example of calculation of the local minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$S_3$"></SPAN> around a wellbore. 
+The locations with the lowest stress align with the direction of the far-field maximum horizontal stress in the plane perpendicular to wellbore axis.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:KirschDevWell"></A><A ID="7232"></A>
+<DIV class="CENTER"><A ID="fig:TensFracsSurface"></A><A ID="7584"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.21:</STRONG>
-Stresses around the wall of a deviated wellbore.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20456" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure:</STRONG>
+Example of calculation of tensile strength required for wellbore stability. The figure shows that a tensile strength of <SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img839.svg"
+ ALT="$\sim 3$"></SPAN> MPa is required to avert tensile fractures in this example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par18498" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img852.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/8-3.pdf}"></DIV></TD></TR>
+ SRC="img838.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-14.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-Solving for principal stresses <!-- MATH
- $(\sigma_{tmax}, \sigma_{rr}, \sigma_{tmin})$
+<SPAN  CLASS="textit">PROBLEM 6.3:</SPAN> Calculate the maximum mud weight (ppg) in a vertical wellbore for avoiding drilling-induced tensile fractures in a site onshore at 7000 ft of depth where  <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img606.svg"
+ ALT="$S_{hmin} =$"></SPAN> 4300 psi and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img605.svg"
+ ALT="$S_{Hmax} =$"></SPAN> 6300 psi and with hydrostatic pore pressure. 
+The rock mechanical properties are <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img785.svg"
+ ALT="$UCS =$"></SPAN> 3500 psi, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img786.svg"
+ ALT="$\mu_i=$"></SPAN> 0.6, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img787.svg"
+ ALT="$T_s$"></SPAN> = 800 psi. 
+
+<P>
+SOLUTION <BR>
+The problem variables are the same of problem 6.1.
+The breakdown pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img829.svg"
+ ALT="$P_b$"></SPAN> in the absence of thermal effects is
+<P><!-- MATH
+ \begin{displaymath}
+P_b = 3080 \text{ psi} - 3220 \text{ psi} + 3 \times 1220 \text{ psi} +  800 \text{ psi} = 4320 \text{ psi}
+\end{displaymath}
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img853.svg"
- ALT="$(\sigma_{tmax}, \sigma_{rr}, \sigma_{tmin})$"></SPAN> on the wellbore wall permits checking for rock failure (tensile of shear).
-The principal stresses may not be necessarily aligned with the wellbore axis leading to an angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img854.svg"
- ALT="$\omega$"></SPAN> (see Fig. <A HREF="#fig:PrincStressesDevWell">6.22</A>).
-Because of such angle, tensile fractures in deviated wellbores can occur at an angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img854.svg"
- ALT="$\omega$"></SPAN> from the axis of the wellbore and appear as a series of short inclined (en-&#233;chelon) fractures instead of a long tensile fracture parallel to the wellbore axis as in Fig. <A HREF="node43.html#fig:BoreholeImagingTfracs">6.16</A>.
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img840.svg"
+ ALT="$\displaystyle P_b = 3080$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img841.svg"
+ ALT="$\displaystyle - 3220$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img842.svg"
+ ALT="$\displaystyle + 3 \times 1220$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img843.svg"
+ ALT="$\displaystyle + 800$">&nbsp; &nbsp; psi<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img844.svg"
+ ALT="$\displaystyle = 4320$">&nbsp; &nbsp; psi
+</DIV><P></P>
+This pressure can be achieved with an equivalent circulation density of 
+<P><!-- MATH
+ \begin{displaymath}
+\frac{4320 \text{ psi}} {7000 \text{ ft}} \times
+\frac{8.33 \text{ ppg}} {0.44 \text{ psi/ft}} =
+11.68 \text{ ppg} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.49ex; vertical-align: -2.28ex; " SRC="img845.svg"
+ ALT="$\displaystyle \frac{4320 \text{ psi}} {7000 \text{ ft}} \times
+\frac{8.33 \text{ ppg}} {0.44 \text{ psi/ft}} =
+11.68 \text{ ppg} \: \: \blacksquare
+$">
+</DIV><P></P>
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:PrincStressesDevWell"></A><A ID="7242"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.22:</STRONG>
-Principal stresses around the wall of a deviated wellbore. (<!-- MATH
- $\Delta P = P_W - P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img35.svg"
- ALT="$\Delta P = P_W - P_p$"></SPAN>).</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20467" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img855.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/8-4.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-
-<H2><A ID="SECTION00763000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN> Breakout analysis for deviated wellbores</A>
+<H2><A ID="SECTION00741000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Identification of tensile fractures in wellbores</A>
 </H2>
 
 <P>
-Consider a place subjected to strike-slip stress regime with <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img194.svg"
- ALT="$S_{Hmax}$"></SPAN> oriented at an azimuth of 070<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN> with known values of principal stresses (Fig <A HREF="#fig:BreakoutDevWellbore">6.23</A>).
-The maximum stress anisotropy lies in a plane that contains <!-- MATH
- $S_1 = S_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img212.svg"
- ALT="$S_1 = S_{Hmax}$"></SPAN> and <!-- MATH
- $S_3 = S_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img206.svg"
- ALT="$S_3 = S_{hmin}$"></SPAN>, a plane perpendicular to the axis of a vertical wellbore.
-Hence, maximum stress amplification at the wellbore wall will happen for a vertical wellbore.
-The minimum stress anisotropy lies in a plane that contains <!-- MATH
- $S_2 = S_{v}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img856.svg"
- ALT="$S_2 = S_{v}$"></SPAN> and <!-- MATH
- $S_3 = S_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img206.svg"
- ALT="$S_3 = S_{hmin}$"></SPAN>, perpendicular to a horizontal  wellbore drilled in direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img194.svg"
- ALT="$S_{Hmax}$"></SPAN>.
-Given a mud pressure and a fixed friction angle, we can calculate the maximum required <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img487.svg"
- ALT="$UCS$"></SPAN> for a given wellbore orientation using a shear failure criterion <!-- MATH
- $\sigma_1 = UCS + q \: \sigma_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img786.svg"
- ALT="$\sigma_1 = UCS + q \: \sigma_3$"></SPAN>, and the principal stresses from equations in Fig. <A HREF="#fig:PrincStressesDevWell">6.22</A>.
-The plots in Fig. <A HREF="#fig:BreakoutDevWellbore">6.23</A> are examples of this calculation.
-The maximum required <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img487.svg"
- ALT="$UCS$"></SPAN> corresponds to the wellbore direction with maximum stress anisotropy (vertical wellbore - red region), and the minimum required <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img487.svg"
- ALT="$UCS$"></SPAN> corresponds to the wellbore direction with minimum stress anisotropy (horizontal wellbore with <!-- MATH
- $\delta = 070^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img857.svg"
- ALT="$\delta = 070^{\circ}$"></SPAN> - blue region).
-Following the same concepts discussed before, we would expect breakouts at 160<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN> and 340<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN> of azimuth on the sides of a vertical wellbore.
-A horizontal wellbore drilled in the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img44.svg"
- ALT="$S_{hmin}$"></SPAN> would tend to develop breakouts on the top and bottom of the wellbore.
+Similarly to breakouts, drilling-induced tensile fractures  can be identified and measured with borehole imaging tools (Fig. <A HREF="#fig:BoreholeImagingTfracs"><IMG  ALT="[*]" SRC="crossref.png"></A>). 
+The azimuth of tensile fractures coincides with the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img174.svg"
+ ALT="$S_{Hmax}$"></SPAN> in vertical wells.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:BreakoutDevWellbore"></A><A ID="7262"></A>
+<DIV class="CENTER"><A ID="fig:BoreholeImagingTfracs"></A><A ID="7605"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.23:</STRONG>
-Stereonet plots to verify the rock strength required to avoid breakouts and the wellbore breakout angle for a given rock strength and wellbore pressure. </CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20507" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure:</STRONG>
+Examples of drilling-induced tensile fractures along wellbores as seen with borehole imaging tools. Similarly to breakouts, tensile fractures can also help determine the orientation of the far field stresses. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par18530" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img858.svg"
- ALT="\includegraphics[scale=0.70]{.././Figures/split/8-BreakoutsDevWells.pdf}"></DIV></TD></TR>
+ SRC="img846.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/7-15.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
-<P>
-<SPAN  CLASS="textit">PROBLEM 6.5:</SPAN> Consider a place with principal stresses <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img859.svg"
- ALT="$S_v = 70$"></SPAN> MPa, <!-- MATH
- $S_{Hmax} = 67$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img860.svg"
- ALT="$S_{Hmax} = 67$"></SPAN> MPa (at 070<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN>),  <!-- MATH
- $S_{hmin} = 45$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img861.svg"
- ALT="$S_{hmin} = 45$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img862.svg"
- ALT="$P_p = 32$"></SPAN> MPa, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img863.svg"
- ALT="$P_W = 32$"></SPAN> MPa. Calculate the required UCS using the Coulomb failure criterion (with <!-- MATH
- $\mu_i = 0.8$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img864.svg"
- ALT="$\mu_i = 0.8$"></SPAN>) for all possible wellbore orientations.
-Plot results in a stereonet projection.
-
-<P>
-SOLUTION <BR>
-
-<DIV class="CENTER">
-<DIV CLASS="centerline" ID="par20526" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img865.svg"
- ALT="\includegraphics[scale=0.70]{.././Figures/split/8-BreakoutsDevWells-EXNF.pdf}"></DIV>
-
-</DIV> 
-<P>
-<SPAN  CLASS="textit">PROBLEM 6.6:</SPAN> Consider a place with principal stresses <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img859.svg"
- ALT="$S_v = 70$"></SPAN> MPa, <!-- MATH
- $S_{Hmax} = 105$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img866.svg"
- ALT="$S_{Hmax} = 105$"></SPAN> MPa (at 070<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN>),  <!-- MATH
- $S_{hmin} = 85$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img867.svg"
- ALT="$S_{hmin} = 85$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img862.svg"
- ALT="$P_p = 32$"></SPAN> MPa, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img863.svg"
- ALT="$P_W = 32$"></SPAN> MPa. Calculate the required UCS using the Coulomb failure criterion (with <!-- MATH
- $\mu_i = 0.8$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img864.svg"
- ALT="$\mu_i = 0.8$"></SPAN>) for all possible wellbore orientations.
-Plot results in a stereonet projection.
-
-<P>
-SOLUTION <BR>
-
-<DIV class="CENTER">
-<DIV CLASS="centerline" ID="par20542" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img868.svg"
- ALT="\includegraphics[scale=0.70]{.././Figures/split/8-BreakoutsDevWells-EXRF.pdf}"></DIV>
-
-</DIV> 
-<P>
-
-<H2><A ID="SECTION00764000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Tensile fractures analysis for deviated wellbores</A>
-</H2>
-
-<P>
-The procedure to find tensile failure is equivalent to the one used for shear failure, but using a tensile strength failure criterion.
-For example, consider a place subjected to normal faulting stress regime with <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img194.svg"
- ALT="$S_{Hmax}$"></SPAN> oriented at an azimuth of 070<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN> and known values of principal stresses (Fig. <A HREF="#fig:TfracsDevWellbore">6.24</A>).
-The maximum stress anisotropy lies in a plane that contains <!-- MATH
- $S_1 = S_{v}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img869.svg"
- ALT="$S_1 = S_{v}$"></SPAN> and <!-- MATH
- $S_3 = S_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img206.svg"
- ALT="$S_3 = S_{hmin}$"></SPAN>, perpendicular to a horizontal wellbore drilled in the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img194.svg"
- ALT="$S_{Hmax}$"></SPAN>.
-For a given rock tensile strength, we can calculate the maximum mud pressure that the wellbore can bear without failing in tension.
-Fig. <A HREF="#fig:TfracsDevWellbore">6.24</A> shows an example of this calculation.
-The maximum possible <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img25.svg"
- ALT="$P_W$"></SPAN> corresponds to the wellbore direction with minimum stress anisotropy (blue region), and the minimum possible <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img25.svg"
- ALT="$P_W$"></SPAN> corresponds to the wellbore direction with maximum stress anisotropy (red region).
-For example, tensile fractures would tend to occur in the top and bottom of a horizontal wellbore drilled in the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img194.svg"
- ALT="$S_{Hmax}$"></SPAN>.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:TfracsDevWellbore"></A><A ID="7417"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.24:</STRONG>
-Calculation of required <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img36.svg"
- ALT="$T_S$"></SPAN> as a function of wellbore orientation in order to prevent open-mode fractures with <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img37.svg"
- ALT="$P_W = 35$"></SPAN> MPa. Stresses and pore pressure: <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img38.svg"
- ALT="$S_v =$"></SPAN> 70 MPa, <!-- MATH
- $S_{Hmax} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img39.svg"
- ALT="$S_{Hmax} =$"></SPAN> 55 MPa, <!-- MATH
- $S_{hmin} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img40.svg"
- ALT="$S_{hmin} =$"></SPAN> 45 MPa, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img41.svg"
- ALT="$P_p =$"></SPAN> 32 MPa, Notice that the stress regimes dictates the orientation of the least and most convenient drilling direction.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20561" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img870.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/8-TensfracsDevWells.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-<SPAN  CLASS="textit">PROBLEM 6.7:</SPAN> Consider a place with principal stresses <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img859.svg"
- ALT="$S_v = 70$"></SPAN> MPa, <!-- MATH
- $S_{Hmax} = 105$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img866.svg"
- ALT="$S_{Hmax} = 105$"></SPAN> MPa (at 070<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN>),  <!-- MATH
- $S_{hmin} = 55$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img871.svg"
- ALT="$S_{hmin} = 55$"></SPAN> MPa, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img862.svg"
- ALT="$P_p = 32$"></SPAN> MPa. 
-Calculate the maximum wellbore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img25.svg"
- ALT="$P_W$"></SPAN> at the limit of tensile strength with <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img872.svg"
- ALT="$T_s = 0$"></SPAN> MPa) for all possible wellbore orientations.
-Plot results in a stereonet projection.
-
-<P>
-SOLUTION <BR>
-TBD <BR>
-
-<P>
-<SPAN  CLASS="textit">PROBLEM 6.8:</SPAN> Consider a place with principal stresses <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img859.svg"
- ALT="$S_v = 70$"></SPAN> MPa, <!-- MATH
- $S_{Hmax} = 105$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img866.svg"
- ALT="$S_{Hmax} = 105$"></SPAN> MPa (at 070<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img17.svg"
- ALT="$^{\circ }$"></SPAN>),  <!-- MATH
- $S_{hmin} = 85$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img867.svg"
- ALT="$S_{hmin} = 85$"></SPAN> MPa, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img862.svg"
- ALT="$P_p = 32$"></SPAN> MPa. 
-Calculate the maximum wellbore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img25.svg"
- ALT="$P_W$"></SPAN> at the limit of tensile strength with <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img872.svg"
- ALT="$T_s = 0$"></SPAN> MPa) for all possible wellbore orientations.
-Plot results in a stereonet projection.
-
-<P>
-SOLUTION <BR>
-TBD <BR>
-
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -557,22 +295,22 @@ TBD <BR>
  HREF="node46.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node39.html">
+ HREF="node41.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node44.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html727"
+<A ID="tex2html756"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node46.html">6.7 Thermal, chemical, and</A>
+ HREF="node46.html">6.5 The mud window</A>
 <B> Up:</B> <A
- HREF="node39.html">6. Wellbore stability</A>
+ HREF="node41.html">6. Wellbore stability</A>
 <B> Previous:</B> <A
- HREF="node44.html">6.5 The mud window</A>
- &nbsp; <B>  <A ID="tex2html728"
+ HREF="node44.html">6.3 Shear failure and</A>
+ &nbsp; <B>  <A ID="tex2html757"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 
