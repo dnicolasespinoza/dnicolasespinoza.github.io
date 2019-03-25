@@ -10,13 +10,13 @@ Substitution of arg to newlabelxx delayed.
 ? brace missing for \oldcontentsline
 {eqnarray} does not have 3 columns, inserting blank cell
 
-No number for "Wellboremudpressureandequivalentcirculationdensity.Mudpressure<SPANCLASS="MATH">$P_W$</SPAN>isusuallyreportedintermsofgradient(depth-independent)ratherthaninabsolutevalues."
+No number for "Wellboremudpressureandequivalentdensity.Mudpressure<SPANCLASS="MATH">$P_W$</SPAN>isusuallyreportedintermsofgradient(depth-independent)ratherthaninabsolutevalues."
 
 No number for "Leak-offofmudfiltratefavorscloggingofmudparticulateswhichhelpapplyanormalstressonthewellborewall.Thislayerofparticulatesiscalledmud-cake."
 
-No number for "Infinitesimalvolumeelementincylindricalcoordinatesandassociatedstresses."
+No number for "Infinitesimalvolumeelementincylindricalcoordinatesandassociatednormalandshearstresses."
 
-No number for "Kirschsolutionforfarfieldstress<SPANCLASS="MATH">$sigma_{infty}$</SPAN>."
+No number for "Kirschsolutionforfarfieldisotropicstress<SPANCLASS="MATH">$sigma_{infty}$</SPAN>."
 
 No number for "Kirschsolutionforwellborepressure<SPANCLASS="MATH">$P_W$</SPAN>."
 
@@ -24,11 +24,11 @@ No number for "Kirschsolutionforfar-fielddeviatoricstress<SPANCLASS="MATH">$Delt
 
 No number for "ExampleofsolutionofKirschequations.Theeffectiveradialstressatthewellborewallis<SPANCLASS="MATH">$P_W-P_p=0$</SPAN>.Top:solutionforradial<SPANCLASS="MATH"></SPAN>andhoop<SPANCLASS="MATH"></SPAN>stresses.Bottom:solutionforprincipalstresses(eigenvaluesfrom<SPANCLASS="MATH"></SPAN>,<SPANCLASS="MATH"></SPAN>,and<SPANCLASS="MATH"></SPAN>).Noticethat<SPANCLASS="MATH"></SPAN>isthehighestattopandbottomand<SPANCLASS="MATH"></SPAN>isthelowestatthesides.Theinfluenceofthecavityextendtoafewwellboreradii."
 
-No number for "Initiationofwellborebreakouts"
+No number for "Wellborepressureforinitiationofwellborebreakouts."
 
 No number for "Exampleofwellborebreakout[Zoback2013-Fig.6.15].Observetheinclinationofshearfracturesasthepropagateintotherock.Thematerialthatfallsintothewellboreistakenoutasdrillingcuttings."
 
-No number for "ExampleofrequiredUCSwithMohr-Coulombanalysistoverifylikelihoodofwellborebreakouts."
+No number for "Exampleofrequired<SPANCLASS="MATH">$UCS$</SPAN>withMohr-Coulombanalysistoverifylikelihoodofwellborebreakouts."
 
 No number for "DeterminationofbreakoutanglewithMohr-Coulombfailurecriterion."
 

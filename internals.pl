@@ -95,7 +95,7 @@ $ref_files{$key} = "$dir".q|node14.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:2DFracModels/;
-$ref_files{$key} = "$dir".q|node53.html|; 
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:3DMohrCircle/;
@@ -158,12 +158,16 @@ $key = q/fig:Creep/;
 $ref_files{$key} = "$dir".q|node18.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:DecaturMS/;
+$ref_files{$key} = "$dir".q|node38.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:DirectTensionRock/;
 $ref_files{$key} = "$dir".q|node24.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:DrainageFracture/;
-$ref_files{$key} = "$dir".q|node53.html|; 
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ECD/;
@@ -183,7 +187,7 @@ $ref_files{$key} = "$dir".q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ExampleLeakoff/;
-$ref_files{$key} = "$dir".q|node52.html|; 
+$ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:Failure-LengthScales/;
@@ -223,7 +227,7 @@ $ref_files{$key} = "$dir".q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracturesEOR/;
-$ref_files{$key} = "$dir".q|node52.html|; 
+$ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FreeFEMexample/;
@@ -255,7 +259,7 @@ $ref_files{$key} = "$dir".q|node9.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:IdealLeakoffTest/;
-$ref_files{$key} = "$dir".q|node52.html|; 
+$ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:KirschDev/;
@@ -323,7 +327,7 @@ $ref_files{$key} = "$dir".q|node13.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ProcessesFracturing/;
-$ref_files{$key} = "$dir".q|node53.html|; 
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:REVCylCoord/;
@@ -367,11 +371,11 @@ $ref_files{$key} = "$dir".q|node38.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StepRateTest-Example/;
-$ref_files{$key} = "$dir".q|node52.html|; 
+$ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StepRateTest-Schematic/;
-$ref_files{$key} = "$dir".q|node52.html|; 
+$ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StereoNet/;
@@ -527,7 +531,7 @@ $ref_files{$key} = "$dir".q|node7.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:dikes/;
-$ref_files{$key} = "$dir".q|node51.html|; 
+$ref_files{$key} = "$dir".q|node53.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:elastic-summary/;
@@ -655,15 +659,15 @@ $ref_files{$key} = "$dir".q|node38.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lect-X/;
-$ref_files{$key} = "$dir".q|node59.html|; 
+$ref_files{$key} = "$dir".q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:minifracFCP/;
-$ref_files{$key} = "$dir".q|node52.html|; 
+$ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:minifracISIP/;
-$ref_files{$key} = "$dir".q|node52.html|; 
+$ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:mudcake/;
@@ -676,6 +680,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:potato-eq/;
 $ref_files{$key} = "$dir".q|node13.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:stresses-breakouts/;
+$ref_files{$key} = "$dir".q|node44.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:vertstress-bar/;
