@@ -10,66 +10,6 @@ Substitution of arg to newlabelxx delayed.
 ? brace missing for \oldcontentsline
 {eqnarray} does not have 3 columns, inserting blank cell
 
-No number for "Wellboremudpressureandequivalentdensity.Mudpressure<SPANCLASS="MATH">$P_W$</SPAN>isusuallyreportedintermsofgradient(depth-independent)ratherthaninabsolutevalues."
-
-No number for "Leak-offofmudfiltratefavorscloggingofmudparticulateswhichhelpapplyanormalstressonthewellborewall.Thislayerofparticulatesiscalledmud-cake."
-
-No number for "Infinitesimalvolumeelementincylindricalcoordinatesandassociatednormalandshearstresses."
-
-No number for "Kirschsolutionforfarfieldisotropicstress<SPANCLASS="MATH">$sigma_{infty}$</SPAN>."
-
-No number for "Kirschsolutionforwellborepressure<SPANCLASS="MATH">$P_W$</SPAN>."
-
-No number for "Kirschsolutionforfar-fielddeviatoricstress<SPANCLASS="MATH">$Deltasigma$</SPAN>."
-
-No number for "ExampleofsolutionofKirschequations.Theeffectiveradialstressatthewellborewallis<SPANCLASS="MATH">$P_W-P_p=0$</SPAN>.Top:solutionforradial<SPANCLASS="MATH"></SPAN>andhoop<SPANCLASS="MATH"></SPAN>stresses.Bottom:solutionforprincipalstresses(eigenvaluesfrom<SPANCLASS="MATH"></SPAN>,<SPANCLASS="MATH"></SPAN>,and<SPANCLASS="MATH"></SPAN>).Noticethat<SPANCLASS="MATH"></SPAN>isthehighestattopandbottomand<SPANCLASS="MATH"></SPAN>isthelowestatthesides.Theinfluenceofthecavityextendtoafewwellboreradii."
-
-No number for "Wellborepressureforinitiationofwellborebreakouts."
-
-No number for "Exampleofwellborebreakout[Zoback2013-Fig.6.15].Observetheinclinationofshearfracturesasthepropagateintotherock.Thematerialthatfallsintothewellboreistakenoutasdrillingcuttings."
-
-No number for "Exampleofrequired<SPANCLASS="MATH">$UCS$</SPAN>withMohr-Coulombanalysistoverifylikelihoodofwellborebreakouts."
-
-No number for "DeterminationofbreakoutanglewithMohr-Coulombfailurecriterion."
-
-No number for "Examplesofwellborebreakoutsandtensilefracturesinboreholeimages.Learnmoreaboutwellboreimagingtoolshere:<kbd>http://petrowiki.org/Borehole_imaging</kbd>."
-
-No number for "Exampleofcalipermeasurementstoidentifywellborebreakouts."
-
-No number for "Occurrenceoftensilefracturesaroundaverticalwellbore."
-
-No number for "Exampleofcalculationoftensilestrengthrequiredforwellborestability.Thefigureshowsthatatensilestrengthof<SPANCLASS="MATH">$sim3$</SPAN>MPaisrequiredtoaverttensilefracturesinthisexample."
-
-No number for "Examplesofdrilling-inducedtensilefracturesalongwellboresasseenwithboreholeimagingtools.Similarlytobreakouts,tensilefracturescanalsohelpdeterminetheorientationofthefarfieldstresses."
-
-No number for "Mudwindowbasedonmechanicalwellborestability,porepressureandminimumprincipalstress.HF:hydraulicfracture."
-
-No number for "Drillingmuddensityandwellboredesign.Thefigureontherightisanimproveddesignoftheoneontheleft,basedoncarefulgeomechanicalanalysisofwellborestability."
-
-No number for "Conventionforplottingtheorientationofadeviatedwellboreonalowerhemisphereprojection.Theexampleshowsthedeviationsurveyforarealwellbore(radiusamplifiedtohighlightsmalldeviations).Noticethatitstartsslightlydeviatedonsurfaceandthenturnsintoverticaldirectionatdepth."
-
-No number for "Thewellborecoordinatesystem."
-
-No number for "Stressesaroundthewallofadeviatedwellbore."
-
-No number for "Principalstressesaroundthewallofadeviatedwellbore.(<SPANCLASS="MATH">$DeltaP=P_W-P_p$</SPAN>)."
-
-No number for "Stereonetplotstoverifytherockstrengthrequiredtoavoidbreakoutsandthewellborebreakoutangleforagivenrockstrengthandwellborepressure."
-
-No number for "Calculationofrequired<SPANCLASS="MATH">$T_S$</SPAN>asafunctionofwellboreorientationinordertopreventopen-modefractureswith<SPANCLASS="MATH"></SPAN>MPa.Stressesandporepressure:<SPANCLASS="MATH"></SPAN>70MPa,<SPANCLASS="MATH"></SPAN>55MPa,<SPANCLASS="MATH"></SPAN>45MPa,and<SPANCLASS="MATH"></SPAN>32MPa,Noticethatthestressregimesdictatestheorientationoftheleastandmostconvenientdrillingdirection."
-
-No number for "Exampleofsolutionofheatdiffusivityandthermoelasticsolutionaroundawellbore.[makeyourown]"
-
-No number for "Schematicofclayplateletpair,forcesbetweenthem,andequilibriuminterparticledistance."
-
-No number for "Exampleofshalehydrationandswellingduetoexposuretolowsalinitywater."
-
-No number for "Shalesensitivity:variationofnearwellborestressesandtime-dependentbreakoutangle<SPANCLASS="MATH">$w_{BO}$</SPAN>predictionexample."
-
-No number for "Lossofmudcakeafterexcessiveparticlefiltration.Thelossofmudcakeleadstoadecreaseineffectivestressradialsupportandthereforerockshearstrength."
-
-No number for "Implicationsofrockstrengthanisotropyonwellborebreakouts.[bringyourfigureofdeviatedwellboreinlaminatedrock"
-
 No number for "Formationandexamplesofdikes:largeandnaturalfluid-drivenfractures."
 
 No number for "Idealleakofftestwith<SPANCLASS="MATH">$S_v>S_{Hmax}=S_{hmin}$</SPAN>."

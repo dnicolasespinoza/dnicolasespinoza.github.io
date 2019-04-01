@@ -42,6 +42,10 @@ $key = q/eq:PoreCompwithEnu/;
 $ref_files{$key} = "$dir".q|node15.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:RGW/;
+$ref_files{$key} = "$dir".q|node47.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:SGcalc/;
 $ref_files{$key} = "$dir".q|node37.html|; 
 $noresave{$key} = "$nosave";
@@ -160,6 +164,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:DecaturMS/;
 $ref_files{$key} = "$dir".q|node38.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:DevWellFailure/;
+$ref_files{$key} = "$dir".q|node47.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:DirectTensionRock/;
