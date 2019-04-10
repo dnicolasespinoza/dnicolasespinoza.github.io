@@ -30,6 +30,10 @@ $key = q/eq:LameThermoElasticity/;
 $ref_files{$key} = "$dir".q|node19.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:Navier/;
+$ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:Pb/;
 $ref_files{$key} = "$dir".q|node45.html|; 
 $noresave{$key} = "$nosave";
@@ -254,6 +258,10 @@ $key = q/fig:GrabenHorst/;
 $ref_files{$key} = "$dir".q|node36.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:GriffithSol/;
+$ref_files{$key} = "$dir".q|node55.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:HydFracMicroseismicity/;
 $ref_files{$key} = "$dir".q|node38.html|; 
 $noresave{$key} = "$nosave";
@@ -308,6 +316,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:MudWindow/;
 $ref_files{$key} = "$dir".q|node46.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:NetPressure/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NormalFault/;
