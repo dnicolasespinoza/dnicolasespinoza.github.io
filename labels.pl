@@ -22,12 +22,20 @@ $key = q/eq:FrictionangleParamq/;
 $external_labels{$key} = "$URL/" . q|node25.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:KI_cstP/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:LameFull/;
 $external_labels{$key} = "$URL/" . q|node15.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:LameThermoElasticity/;
 $external_labels{$key} = "$URL/" . q|node19.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:LineCrackPo/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:Navier/;
@@ -100,6 +108,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/eq:volstrain/;
 $external_labels{$key} = "$URL/" . q|node14.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:wo_cstP/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:2DFracModels/;
@@ -204,6 +216,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:Failure-LengthScales/;
 $external_labels{$key} = "$URL/" . q|node23.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FailureMechanisms/;
+$external_labels{$key} = "$URL/" . q|node30.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FaultGenesis/;
@@ -372,6 +388,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:RockShearData/;
 $external_labels{$key} = "$URL/" . q|node25.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:SCB/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:SandFailureLenoir/;
@@ -773,12 +793,20 @@ $key = q/eq:FrictionangleParamq/;
 $external_latex_labels{$key} = q|4.6|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:KI_cstP/;
+$external_latex_labels{$key} = q|7.7|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:LameFull/;
 $external_latex_labels{$key} = q|3.22|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:LameThermoElasticity/;
 $external_latex_labels{$key} = q|3.40|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:LineCrackPo/;
+$external_latex_labels{$key} = q|7.4|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:Navier/;
@@ -853,8 +881,12 @@ $key = q/eq:volstrain/;
 $external_latex_labels{$key} = q|3.8|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:wo_cstP/;
+$external_latex_labels{$key} = q|7.5|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:2DFracModels/;
-$external_latex_labels{$key} = q|7.16|; 
+$external_latex_labels{$key} = q|7.17|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:3DMohrCircle/;
@@ -957,6 +989,10 @@ $key = q/fig:Failure-LengthScales/;
 $external_latex_labels{$key} = q|4.2|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FailureMechanisms/;
+$external_latex_labels{$key} = q|4.21|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FaultGenesis/;
 $external_latex_labels{$key} = q|5.1|; 
 $noresave{$key} = "$nosave";
@@ -1006,7 +1042,7 @@ $external_latex_labels{$key} = q|5.12|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:GriffithSol/;
-$external_latex_labels{$key} = q|7.14|; 
+$external_latex_labels{$key} = q|7.15|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:HydFracMicroseismicity/;
@@ -1066,7 +1102,7 @@ $external_latex_labels{$key} = q|6.16|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NetPressure/;
-$external_latex_labels{$key} = q|7.13|; 
+$external_latex_labels{$key} = q|7.14|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NormalFault/;
@@ -1094,7 +1130,7 @@ $external_latex_labels{$key} = q|3.2|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ProcessesFracturing/;
-$external_latex_labels{$key} = q|7.12|; 
+$external_latex_labels{$key} = q|7.13|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:REVCylCoord/;
@@ -1121,8 +1157,8 @@ $key = q/fig:RockShearData/;
 $external_latex_labels{$key} = q|4.13|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:SandFailureLenoir/;
-$external_latex_labels{$key} = q|4.21|; 
+$key = q/fig:SCB/;
+$external_latex_labels{$key} = q|7.16|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:SandStrength/;

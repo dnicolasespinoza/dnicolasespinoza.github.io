@@ -22,12 +22,20 @@ $key = q/eq:FrictionangleParamq/;
 $ref_files{$key} = "$dir".q|node25.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:KI_cstP/;
+$ref_files{$key} = "$dir".q|node55.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:LameFull/;
 $ref_files{$key} = "$dir".q|node15.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:LameThermoElasticity/;
 $ref_files{$key} = "$dir".q|node19.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:LineCrackPo/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:Navier/;
@@ -100,6 +108,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/eq:volstrain/;
 $ref_files{$key} = "$dir".q|node14.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:wo_cstP/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:2DFracModels/;
@@ -204,6 +216,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:Failure-LengthScales/;
 $ref_files{$key} = "$dir".q|node23.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FailureMechanisms/;
+$ref_files{$key} = "$dir".q|node30.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FaultGenesis/;
@@ -372,6 +388,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:RockShearData/;
 $ref_files{$key} = "$dir".q|node25.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:SCB/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:SandFailureLenoir/;
