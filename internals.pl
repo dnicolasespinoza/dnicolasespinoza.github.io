@@ -230,6 +230,10 @@ $key = q/fig:FaultsOutcrop/;
 $ref_files{$key} = "$dir".q|node34.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FracBarriers/;
+$ref_files{$key} = "$dir".q|node55.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FracIdealOrientation/;
 $ref_files{$key} = "$dir".q|node36.html|; 
 $noresave{$key} = "$nosave";
@@ -290,8 +294,16 @@ $key = q/fig:HzStresses/;
 $ref_files{$key} = "$dir".q|node9.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:HzWells/;
+$ref_files{$key} = "$dir".q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:IdealLeakoffTest/;
 $ref_files{$key} = "$dir".q|node54.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KGD/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:KirschDev/;
@@ -344,6 +356,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:OffshorePpSv/;
 $ref_files{$key} = "$dir".q|node7.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:PKN/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:PScsGcs/;
@@ -410,6 +426,10 @@ $key = q/fig:ShearStrengthLimit/;
 $ref_files{$key} = "$dir".q|node38.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:StageDistance/;
+$ref_files{$key} = "$dir".q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:StepRateTest-Example/;
 $ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";
@@ -436,6 +456,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:StrengthFaults/;
 $ref_files{$key} = "$dir".q|node36.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogExample/;
+$ref_files{$key} = "$dir".q|node55.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogWF/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressPolygon/;
@@ -718,6 +746,10 @@ $key = q/fig:overpressure/;
 $ref_files{$key} = "$dir".q|node8.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:pad/;
+$ref_files{$key} = "$dir".q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:potato-eq/;
 $ref_files{$key} = "$dir".q|node13.html|; 
 $noresave{$key} = "$nosave";
@@ -736,6 +768,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:CalcHzStress/;
 $ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:CoupledFracProblem/;
+$ref_files{$key} = "$dir".q|node55.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:StressLogs/;
+$ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:TensileFracs/;

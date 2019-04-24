@@ -230,6 +230,10 @@ $key = q/fig:FaultsOutcrop/;
 $external_labels{$key} = "$URL/" . q|node34.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FracBarriers/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FracIdealOrientation/;
 $external_labels{$key} = "$URL/" . q|node36.html|; 
 $noresave{$key} = "$nosave";
@@ -290,8 +294,16 @@ $key = q/fig:HzStresses/;
 $external_labels{$key} = "$URL/" . q|node9.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:HzWells/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:IdealLeakoffTest/;
 $external_labels{$key} = "$URL/" . q|node54.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KGD/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:KirschDev/;
@@ -344,6 +356,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:OffshorePpSv/;
 $external_labels{$key} = "$URL/" . q|node7.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:PKN/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:PScsGcs/;
@@ -410,6 +426,10 @@ $key = q/fig:ShearStrengthLimit/;
 $external_labels{$key} = "$URL/" . q|node38.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:StageDistance/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:StepRateTest-Example/;
 $external_labels{$key} = "$URL/" . q|node54.html|; 
 $noresave{$key} = "$nosave";
@@ -436,6 +456,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:StrengthFaults/;
 $external_labels{$key} = "$URL/" . q|node36.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogExample/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogWF/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressPolygon/;
@@ -718,6 +746,10 @@ $key = q/fig:overpressure/;
 $external_labels{$key} = "$URL/" . q|node8.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:pad/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:potato-eq/;
 $external_labels{$key} = "$URL/" . q|node13.html|; 
 $noresave{$key} = "$nosave";
@@ -736,6 +768,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:CalcHzStress/;
 $external_labels{$key} = "$URL/" . q|node15.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:CoupledFracProblem/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:StressLogs/;
+$external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:TensileFracs/;
@@ -1001,6 +1041,10 @@ $key = q/fig:FaultsOutcrop/;
 $external_latex_labels{$key} = q|5.2|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FracBarriers/;
+$external_latex_labels{$key} = q|7.20|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FracIdealOrientation/;
 $external_latex_labels{$key} = q|5.17|; 
 $noresave{$key} = "$nosave";
@@ -1057,8 +1101,16 @@ $key = q/fig:HzStresses/;
 $external_latex_labels{$key} = q|2.18|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:HzWells/;
+$external_latex_labels{$key} = q|7.23|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:IdealLeakoffTest/;
 $external_latex_labels{$key} = q|7.2|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:KGD/;
+$external_latex_labels{$key} = q|7.19|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:KirschDev/;
@@ -1111,6 +1163,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:OffshorePpSv/;
 $external_latex_labels{$key} = q|2.6|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:PKN/;
+$external_latex_labels{$key} = q|7.18|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:PScsGcs/;
@@ -1173,6 +1229,10 @@ $key = q/fig:ShearStrengthLimit/;
 $external_latex_labels{$key} = q|5.25|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:StageDistance/;
+$external_latex_labels{$key} = q|7.24|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:StepRateTest-Example/;
 $external_latex_labels{$key} = q|7.9|; 
 $noresave{$key} = "$nosave";
@@ -1199,6 +1259,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:StrengthFaults/;
 $external_latex_labels{$key} = q|5.10|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogExample/;
+$external_latex_labels{$key} = q|7.22|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogWF/;
+$external_latex_labels{$key} = q|7.21|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressPolygon/;
@@ -1461,6 +1529,10 @@ $key = q/fig:overpressure/;
 $external_latex_labels{$key} = q|2.16|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:pad/;
+$external_latex_labels{$key} = q|7.25|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:potato-eq/;
 $external_latex_labels{$key} = q|3.5|; 
 $noresave{$key} = "$nosave";
@@ -1479,6 +1551,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:CalcHzStress/;
 $external_latex_labels{$key} = q|3.3.4|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:CoupledFracProblem/;
+$external_latex_labels{$key} = q|7.3.2|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:StressLogs/;
+$external_latex_labels{$key} = q|7.3.4|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:TensileFracs/;
