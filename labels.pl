@@ -234,8 +234,16 @@ $key = q/fig:FracBarriers/;
 $external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FracBranching/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FracIdealOrientation/;
 $external_labels{$key} = "$URL/" . q|node36.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracInterference/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracPermMohr/;
@@ -342,8 +350,16 @@ $key = q/fig:MicroFracCoalescence/;
 $external_labels{$key} = "$URL/" . q|node30.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:Microseismicity/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:MudWindow/;
 $external_labels{$key} = "$URL/" . q|node46.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Multicluster/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NetPressure/;
@@ -424,6 +440,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:ShearStrengthLimit/;
 $external_labels{$key} = "$URL/" . q|node38.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Sneddon/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StageDistance/;
@@ -576,6 +596,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:YoungPoisson/;
 $external_labels{$key} = "$URL/" . q|node15.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ZipperFrac/;
+$external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:balloon/;
@@ -1045,8 +1069,16 @@ $key = q/fig:FracBarriers/;
 $external_latex_labels{$key} = q|7.20|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FracBranching/;
+$external_latex_labels{$key} = q|7.30|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FracIdealOrientation/;
 $external_latex_labels{$key} = q|5.17|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracInterference/;
+$external_latex_labels{$key} = q|7.27|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracResPerm/;
@@ -1149,8 +1181,16 @@ $key = q/fig:MicroFracCoalescence/;
 $external_latex_labels{$key} = q|4.23|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:Microseismicity/;
+$external_latex_labels{$key} = q|7.31|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:MudWindow/;
 $external_latex_labels{$key} = q|6.16|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Multicluster/;
+$external_latex_labels{$key} = q|7.29|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NetPressure/;
@@ -1227,6 +1267,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:ShearStrengthLimit/;
 $external_latex_labels{$key} = q|5.25|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Sneddon/;
+$external_latex_labels{$key} = q|7.26|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StageDistance/;
@@ -1375,6 +1419,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:YoungPoisson/;
 $external_latex_labels{$key} = q|3.10|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ZipperFrac/;
+$external_latex_labels{$key} = q|7.28|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:balloon/;

@@ -234,8 +234,16 @@ $key = q/fig:FracBarriers/;
 $ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FracBranching/;
+$ref_files{$key} = "$dir".q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FracIdealOrientation/;
 $ref_files{$key} = "$dir".q|node36.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracInterference/;
+$ref_files{$key} = "$dir".q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracPermMohr/;
@@ -342,8 +350,16 @@ $key = q/fig:MicroFracCoalescence/;
 $ref_files{$key} = "$dir".q|node30.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:Microseismicity/;
+$ref_files{$key} = "$dir".q|node56.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:MudWindow/;
 $ref_files{$key} = "$dir".q|node46.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Multicluster/;
+$ref_files{$key} = "$dir".q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:NetPressure/;
@@ -424,6 +440,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:ShearStrengthLimit/;
 $ref_files{$key} = "$dir".q|node38.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Sneddon/;
+$ref_files{$key} = "$dir".q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StageDistance/;
@@ -576,6 +596,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:YoungPoisson/;
 $ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ZipperFrac/;
+$ref_files{$key} = "$dir".q|node56.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:balloon/;
