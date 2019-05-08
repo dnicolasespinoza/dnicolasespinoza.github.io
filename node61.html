@@ -32,7 +32,7 @@
 <A
  HREF="node60.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html860"
+<A ID="tex2html859"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
@@ -42,7 +42,7 @@
  HREF="node60.html">8. Reservoir depletion and</A>
 <B> Previous:</B> <A
  HREF="node60.html">8. Reservoir depletion and</A>
- &nbsp; <B>  <A ID="tex2html861"
+ &nbsp; <B>  <A ID="tex2html860"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
@@ -51,9 +51,9 @@
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
+<LI><A ID="tex2html861"
+  HREF="node61.html#SECTION00911000000000000000"><SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Rock compressibility and permeability</A>
 <LI><A ID="tex2html862"
-  HREF="node61.html#SECTION00911000000000000000"><SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Rock compressibility and permability</A>
-<LI><A ID="tex2html863"
   HREF="node61.html#SECTION00912000000000000000"><SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Linear poroelasticity solution</A>
 </UL>
 <!--End of Table of Child-Links-->
@@ -64,33 +64,67 @@
 </H1>
 
 <P>
+Reservoir depletion requires changes of pore pressure.
+A decrease of pore pressure <!-- MATH
+ $(P_f - P_o)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.65ex; vertical-align: -0.81ex; " SRC="img1111.svg"
+ ALT="$(P_f - P_o)$"></SPAN> results in increased effective stress in the depressurized region.
+Effective stresses increase because the overburden <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> remains constant above the reservoir but the pore pressure decreases.
+The result is compaction of the reservoir (Fig. <A HREF="#fig:DepletionSchematic">8.1</A>).
+Such deformation also affects neighboring formations and faults.
+Changes in ground surface elevation are refered as &ldquo;subsidence".
+Differential displacements (for example across a fault) can result in casing damage and shearing.
+Significant compaction in the reservoir layer can result in casing buckling.
+The reduction of pore pressure also causes a reduction of total horizontal stress within the reservoir.
 
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10912"></A>
+<P>
+
+<DIV class="CENTER"><A ID="fig:DepletionSchematic"></A><A ID="10918"></A>
 <TABLE>
 <CAPTION class="BOTTOM"><STRONG>Figure 8.1:</STRONG>
-zzz</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24285" ALIGN="CENTER">
+Schematic of deformation induced by reservoir depletion.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24556" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img1109.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/10-1.jpg}"></DIV></TD></TR>
+ SRC="img1112.svg"
+ ALT="\includegraphics[scale=0.50]{.././Figures/split/10-1.jpg}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
 
 <H2><A ID="SECTION00911000000000000000">
-<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Rock compressibility and permability</A>
+<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Rock compressibility and permeability</A>
 </H2>
 
 <P>
+Reservoir depletion in horizontal, laterally extensive and thin reservoirs approximates to a one-dimensional-strain stress path, i.e. there is change in strain only in the vertical direction
+(Fig. <A HREF="#fig:DepletionSchematic">8.1</A>).
+Such stress path results in increased effective stresses in both vertical and horizontal directions.
 
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10918"></A>
+<P>
+Increased effective stresses result in reduction of porosity and permeability in most cases.
+The permeability of fractured rocks tends to be more sensitive to stress than typical rock matrices.
+The reason is that permeability is proportional to the <!-- MATH
+ $d_{pore}^2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.04ex; vertical-align: -1.01ex; " SRC="img1113.svg"
+ ALT="$d_{pore}^2$"></SPAN> in rock matrix, while permeability is proportional to the <SPAN CLASS="MATH"><IMG STYLE="height: 3.17ex; vertical-align: -1.14ex; " SRC="img1114.svg"
+ ALT="$w_{f}^3$"></SPAN> 
+in fractures (Fig. <A HREF="#fig:Kcompressibility">8.2</A>).
+The variability of rock permeability with stress is called &ldquo;fracture compressibility".
+The decline curves of unconventional formations are highly influenced by fracture compressibility.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:Kcompressibility"></A><A ID="10928"></A>
 <TABLE>
 <CAPTION class="BOTTOM"><STRONG>Figure 8.2:</STRONG>
-zzz</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24291" ALIGN="CENTER">
+Impact of increased effective stress on porosity and permeability</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24566" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img1110.svg"
+ SRC="img1115.svg"
  ALT="\includegraphics[scale=0.55]{.././Figures/split/10-2.jpg}"></DIV></TD></TR>
 </TABLE>
 </DIV>
@@ -102,85 +136,540 @@ zzz</CAPTION>
 </H2>
 
 <P>
+Let us use the theory of poroelasticity (Section <A HREF="node19.html#sec:poroelasticity">3.7.1</A>) to solve for the changes of total and effective stresses with depletion.
+According to this theory, effective stress must be corrected for the Biot coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img18.svg"
+ ALT="$\alpha $"></SPAN> so that,
 
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10924"></A>
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{\sigma} = \uuline{S} - \alpha P_p \uuline{I}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img436.svg"
+ ALT="$\displaystyle \uuline{\sigma} = \uuline{S} - \alpha P_p \uuline{I}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+We use this equation of effective stress together with linear isotropic elasticity in order to relate stresses to strain (<!-- MATH
+ $\uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img376.svg"
+ ALT="$\uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}$"></SPAN>, and the assumption of one-dimensional strain <!-- MATH
+ $\uuline{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.83ex; vertical-align: -1.73ex; " SRC="img361.svg"
+ ALT="$\uuline{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T$"></SPAN> (3-vertical direction):
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:ComplianceMatrix"></A><!-- MATH
+ \begin{equation}
+%compliance matrix
+	\left[
+		\begin{array} {c}
+			S_{11} - \alpha P_p\\
+			S_{22} - \alpha P_p\\
+			S_{33} - \alpha P_p\\
+			S_{12} \cfrac{}{} \\
+			S_{13} \cfrac{}{} \\
+			S_{23} \cfrac{}{}
+		\end{array}
+	\right]
+	= \cfrac{E}{(1+\nu)(1-2\nu)}
+	\left[
+	\begin{array}{cccccc}
+		1-\nu & \nu & \nu & 0 & 0 & 0\\
+		\nu & 1-\nu & \nu & 0 & 0 & 0\\
+		\nu & \nu & 1-\nu & 0 & 0 & 0\\
+		0 & 0 & 0 & \cfrac{(1-2\nu)}{2} & 0 & 0 \\
+		0 & 0 & 0 & 0 & \cfrac{(1-2\nu)}{2} & 0 \\
+		0 & 0 & 0 & 0 & 0 & \cfrac{(1-2\nu)}{2}
+	\end{array}
+	\right]
+	\:
+	\left[
+		\begin{array} {c}
+			0 \\
+			0 \\
+			\varepsilon_{33} \\
+			0 \cfrac{}{} \\
+			0  \cfrac{}{}\\
+			0 \cfrac{}{}
+		\end{array}
+	\right]
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img1116.svg"
+ ALT="\begin{displaymath}%compliance matrix
+\left[
+\begin{array}{c}
+S_{11} - \alpha P...
+... \cfrac{}{} \\
+0 \cfrac{}{}\\
+0 \cfrac{}{}
+\end{array}\right]\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The equation corresponding to the 3rd row results in:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\varepsilon_{33} = \frac{S_{33} - \alpha P_p}{ \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} }
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 6.78ex; vertical-align: -3.52ex; " SRC="img1117.svg"
+ ALT="$\displaystyle \varepsilon_{33} = \frac{S_{33} - \alpha P_p}{ \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} }$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The denominator is the constrained modulus <!-- MATH
+ $M = E(1-\nu)/(1+\nu)/(1-2\nu)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img1118.svg"
+ ALT="$M = E(1-\nu)/(1+\nu)/(1-2\nu)$"></SPAN>.
+Hence, the vertical strain in the reservoir layer is:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\Delta \varepsilon_{33} = -\frac{\alpha}{M}  \Delta P_p
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.36ex; vertical-align: -1.70ex; " SRC="img1119.svg"
+ ALT="$\displaystyle \Delta \varepsilon_{33} = -\frac{\alpha}{M} \Delta P_p$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Remember that <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img12.svg"
+ ALT="$S_{33}$"></SPAN> is the overburden stress and does not change with time or with reservoir pore pressure.
+Notice that depletion (<!-- MATH
+ $\Delta P_p<0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1120.svg"
+ ALT="$\Delta P_p&lt;0$"></SPAN>) results in compaction (<!-- MATH
+ $\Delta \varepsilon_{33}>0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img1121.svg"
+ ALT="$\Delta \varepsilon_{33}&gt;0$"></SPAN>).
+This deformation is linked to the reservoir compressibility, hence, <!-- MATH
+ $C_{bp} = \alpha / M$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.65ex; vertical-align: -0.81ex; " SRC="img1122.svg"
+ ALT="$C_{bp} = \alpha / M$"></SPAN> (See Section <A HREF="node15.html#sec:ResCompress">3.3.5</A>).
+
+<P>
+Combining Equations from rows 1 and 3 (or 2 and 3), results in 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:CoeffA"></A><!-- MATH
+ \begin{equation}
+\Delta S_{11} = \alpha \frac{1-2\nu}{1-\nu} \:  \Delta P_p
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.05ex; vertical-align: -1.89ex; " SRC="img1123.svg"
+ ALT="$\displaystyle \Delta S_{11} = \alpha \frac{1-2\nu}{1-\nu} \: \Delta P_p$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Depletion (<!-- MATH
+ $\Delta P_p<0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1120.svg"
+ ALT="$\Delta P_p&lt;0$"></SPAN>) results in decreases of horizontal stress (<!-- MATH
+ $\Delta S_{11}<0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img1124.svg"
+ ALT="$\Delta S_{11}&lt;0$"></SPAN>).
+The same change of stress occurs in direction 2.
+The coefficient of proportionality in the previous equation is usually referred as <!-- MATH
+ $A = \alpha \frac{1-2\nu}{1-\nu}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.19ex; vertical-align: -1.08ex; " SRC="img1125.svg"
+ ALT="$A = \alpha \frac{1-2\nu}{1-\nu}$"></SPAN> and varies typically from 0.5 to 0.9.
+The prediction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img270.svg"
+ ALT="$S_{11}$"></SPAN> can be validated through hydraulic fracture tests that measure minimum horizontal total stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img57.svg"
+ ALT="$S_{hmin}$"></SPAN> in places with normal faulting and strike slip regime.
+
+<P>
+A total stress path plot describes the value of total stresses as a function of pore pressure (Fig. <A HREF="#fig:TotalStressPath">8.3</A>). 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:TotalStressPath"></A><A ID="11011"></A>
 <TABLE>
 <CAPTION class="BOTTOM"><STRONG>Figure 8.3:</STRONG>
-zzz</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24297" ALIGN="CENTER">
+Total stress path plot. (a) Conceptual plot. (b) Example from the North Sea. The points corresponds to measurements from hydraulic fracture tests.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24608" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img1111.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/10-3.jpg}"></DIV></TD></TR>
+ SRC="img1126.svg"
+ ALT="\includegraphics[scale=1.05]{.././Figures/split/10-TotalStressPath.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
+Depletion results in increased effective stresses.
+The change of vertical effective stress <!-- MATH
+ $\sigma_{33} = S_{33} - \alpha P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1127.svg"
+ ALT="$\sigma_{33} = S_{33} - \alpha P_p$"></SPAN> (with <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img12.svg"
+ ALT="$S_{33}$"></SPAN> constant) is
 
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10929"></A>
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\Delta \sigma_{33} = - \alpha \Delta P_p
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1128.svg"
+ ALT="$\displaystyle \Delta \sigma_{33} = - \alpha \Delta P_p$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+From Equation <A HREF="#eq:CoeffA">8.5</A>, the change of horizontal effective stress with pressure is 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\Delta \sigma_{11} = - \alpha \frac{\nu}{1-\nu} \Delta P_p
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.55ex; vertical-align: -1.89ex; " SRC="img1129.svg"
+ ALT="$\displaystyle \Delta \sigma_{11} = - \alpha \frac{\nu}{1-\nu} \Delta P_p$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Both, horizontal and vertical effective stresses increase with depth.
+This results in a shift of the Mohr circle to the right and up, i.e. increased mean effective stress and increased deviatoric stress (Fig. <A HREF="#fig:MohrCircleDepletion">8.4</A>).
+Large compressive and shear stresses can result in rock failure under compression and shear.
+Grain crushing can significantly decrease the rock permeability.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:MohrCircleDepletion"></A><A ID="11029"></A>
 <TABLE>
 <CAPTION class="BOTTOM"><STRONG>Figure 8.4:</STRONG>
-zzz</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24302" ALIGN="CENTER">
+Change of effective stress with depletion. Both horizontal and vertical effective stresses increase within the depleted reservoir.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24621" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img1112.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/10-4.jpg}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10934"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 8.5:</STRONG>
-Influence of Poisson's ratio.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24307" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img1113.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/10-8.jpg}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10939"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 8.6:</STRONG>
-zzz</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24312" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img1114.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/10-5.jpg}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10944"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 8.7:</STRONG>
-zzz</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24317" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img1115.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/10-6.jpg}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-
-<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="10949"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 8.8:</STRONG>
-zzz</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24322" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img1116.svg"
+ SRC="img1130.svg"
  ALT="\includegraphics[scale=0.55]{.././Figures/split/10-7.jpg}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-<BR><HR>
+ <BR>
+<SPAN  CLASS="textit">PROBLEM 8.1:</SPAN> Calculate the following due to depletion of 35 MPa.
+
+<DIV class="CENTER">
+
+<P><A ID="fig:lect-X"></A></P><DIV CLASS="centerline" ID="par24626" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img1131.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/10-5.jpg}"></DIV>
+
+</DIV> 
+<P>
+
+<OL>
+<LI>Displacement <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img1132.svg"
+ ALT="$\Delta H$"></SPAN> at the top of the reservoir.  
+</LI>
+<LI>Pore compressibility <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img404.svg"
+ ALT="$C_{pp}$"></SPAN>.
+</LI>
+<LI>Change of total horizontal stress <!-- MATH
+ $\Delta S_{h}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img1133.svg"
+ ALT="$\Delta S_{h}$"></SPAN>.
+</LI>
+<LI>Changes of effective vertical <!-- MATH
+ $\Delta \sigma_{v}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img1134.svg"
+ ALT="$\Delta \sigma_{v}$"></SPAN> and horizontal stresses <!-- MATH
+ $\Delta \sigma_{h}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img1135.svg"
+ ALT="$\Delta \sigma_{h}$"></SPAN>.
+</LI>
+<LI>Change of permeability <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img1136.svg"
+ ALT="$k/k_o$"></SPAN> with the following law (<!-- MATH
+ $c_f = 0.25$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.41ex; vertical-align: -0.81ex; " SRC="img1137.svg"
+ ALT="$c_f = 0.25$"></SPAN> MPa<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img204.svg"
+ ALT="$^{-1}$"></SPAN> ):
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+k = k_o \: \exp \left[ -c_f (\sigma_h - \sigma_h^o) \right]
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.65ex; vertical-align: -0.81ex; " SRC="img1138.svg"
+ ALT="$\displaystyle k = k_o \: \exp \left[ -c_f (\sigma_h - \sigma_h^o) \right]$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+</LI>
+</OL> 
+
+<P>
+SOLUTION <BR>
+
+<P>
+
+<OL>
+<LI>The constrained modulus is
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+M = \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} = 14.8 \text{ GPa}
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img1139.svg"
+ ALT="$\displaystyle M = \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} = 14.8$">&nbsp; &nbsp; GPa</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+Then, the displacement at the top of the reservoir is <!-- MATH
+ $\Delta H = \Delta \varepsilon_{33}  H$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img1140.svg"
+ ALT="$\Delta H = \Delta \varepsilon_{33} H$"></SPAN>,	where
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\varepsilon_{33} = -\frac{\alpha}{M}  \Delta P_p = 0.21 \%
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.36ex; vertical-align: -1.70ex; " SRC="img1141.svg"
+ ALT="$\displaystyle \varepsilon_{33} = -\frac{\alpha}{M} \Delta P_p = 0.21 \%$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+Hence, <!-- MATH
+ $\Delta H = 0.21\% \:  100 \text{m } = 0.21$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.24ex; " SRC="img1142.svg"
+ ALT="$\Delta H = 0.21\% \: 100$">&nbsp; &nbsp;m&nbsp;<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img1143.svg"
+ ALT="$= 0.21$"></SPAN> m. 
+
+<P>
+</LI>
+<LI>The bulk compressibility is 
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+C_{bp} = \frac{\alpha}{M} =
+		        0.06 \times 10^{-9} \frac{1}{\text{MPa }} =
+		        0.42 \times 10^{-6} \frac{1}{\text{psi }} 
+	
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.31ex; vertical-align: -2.15ex; " SRC="img1144.svg"
+ ALT="$\displaystyle C_{bp} = \frac{\alpha}{M} =
+0.06 \times 10^{-9} \frac{1}{\text{MPa }} =
+0.42 \times 10^{-6} \frac{1}{\text{psi }}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+Thus, the pore compressibility is 
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+C_{pp} = \frac{C_{bp}}{\phi} =
+		         2.0 \times 10^{-6} \frac{1}{\text{psi }} =
+		         2.0 \: \mu \text{sip}
+	
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.44ex; vertical-align: -2.15ex; " SRC="img1145.svg"
+ ALT="$\displaystyle C_{pp} = \frac{C_{bp}}{\phi} =
+2.0 \times 10^{-6} \frac{1}{\text{psi }} =
+2.0 \: \mu \text{sip}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+</LI>
+<LI>The change of total horizontal stress  is
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\Delta S_{h} = \alpha \frac{1-2\nu}{1-\nu} \:  \Delta P_p
+		             = 0.716 \times (-35 \text{ MPa }) \sim -25 	\text{ MPa }
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.05ex; vertical-align: -1.89ex; " SRC="img1146.svg"
+ ALT="$\displaystyle \Delta S_{h} = \alpha \frac{1-2\nu}{1-\nu} \: \Delta P_p
+= 0.716 \times (-35$">&nbsp; &nbsp; MPa&nbsp;<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img1147.svg"
+ ALT="$\displaystyle ) \sim -25$">&nbsp; &nbsp; MPa&nbsp;</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+</LI>
+<LI>The changes of effective stresses are 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\Delta \sigma_{33} = - \alpha \Delta P_p =
+						- 0.9 \times (-35 \text{ MPa })
+						= + 31.5 \text{ MPa }
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img1148.svg"
+ ALT="$\displaystyle \Delta \sigma_{33} = - \alpha \Delta P_p =
+- 0.9 \times (-35$">&nbsp; &nbsp; MPa&nbsp;<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img1149.svg"
+ ALT="$\displaystyle )
+= + 31.5$">&nbsp; &nbsp; MPa&nbsp;</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\Delta \sigma_{11} = - \alpha \frac{\nu}{1-\nu} \Delta P_p
+		                  = + 6.45 \text{ MPa }
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.55ex; vertical-align: -1.89ex; " SRC="img1150.svg"
+ ALT="$\displaystyle \Delta \sigma_{11} = - \alpha \frac{\nu}{1-\nu} \Delta P_p
+= + 6.45$">&nbsp; &nbsp; MPa&nbsp;</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+</LI>
+<LI>Last, the ratio between final and initial permeability <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img1136.svg"
+ ALT="$k/k_o$"></SPAN> is
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\frac{k}{k_o} = \exp \left[ -c_f (\sigma_h - \sigma_h^o) \right]
+		= \exp \left[ -0.25 \text{ MPa}^{-1} (+6.45 \text{ MPa}) \right] \sim 0.2  \: \: \blacksquare
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.32ex; vertical-align: -2.05ex; " SRC="img1151.svg"
+ ALT="$\displaystyle \frac{k}{k_o} = \exp \left[ -c_f (\sigma_h - \sigma_h^o) \right]
+...
+... -0.25 \text{ MPa}^{-1} (+6.45 \text{ MPa}) \right] \sim 0.2 \: \: \blacksquare$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+</LI>
+</OL> 
+
+<P>
+ <BR>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node62.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node60.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node60.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html859"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node62.html">8.2 Changes of stress</A>
+<B> Up:</B> <A
+ HREF="node60.html">8. Reservoir depletion and</A>
+<B> Previous:</B> <A
+ HREF="node60.html">8. Reservoir depletion and</A>
+ &nbsp; <B>  <A ID="tex2html860"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
 
 </BODY>
 </HTML>

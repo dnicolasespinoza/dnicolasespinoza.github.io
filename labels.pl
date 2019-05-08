@@ -14,6 +14,14 @@ $key = q/eq:Cauchy/;
 $external_labels{$key} = "$URL/" . q|node13.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:CoeffA/;
+$external_labels{$key} = "$URL/" . q|node61.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:ComplianceMatrix/;
+$external_labels{$key} = "$URL/" . q|node61.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:CoulombTS/;
 $external_labels{$key} = "$URL/" . q|node25.html|; 
 $noresave{$key} = "$nosave";
@@ -182,6 +190,10 @@ $key = q/fig:DecaturMS/;
 $external_labels{$key} = "$URL/" . q|node38.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:DepletionSchematic/;
+$external_labels{$key} = "$URL/" . q|node61.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:DevWellFailure/;
 $external_labels{$key} = "$URL/" . q|node47.html|; 
 $noresave{$key} = "$nosave";
@@ -314,6 +326,10 @@ $key = q/fig:KGD/;
 $external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:Kcompressibility/;
+$external_labels{$key} = "$URL/" . q|node61.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:KirschDev/;
 $external_labels{$key} = "$URL/" . q|node43.html|; 
 $noresave{$key} = "$nosave";
@@ -352,6 +368,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:Microseismicity/;
 $external_labels{$key} = "$URL/" . q|node56.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:MohrCircleDepletion/;
+$external_labels{$key} = "$URL/" . q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:MudWindow/;
@@ -552,6 +572,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:ThrustFault/;
 $external_labels{$key} = "$URL/" . q|node36.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TotalStressPath/;
+$external_labels{$key} = "$URL/" . q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:TriaxialCell/;
@@ -798,6 +822,10 @@ $key = q/sec:CoupledFracProblem/;
 $external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/sec:ResCompress/;
+$external_labels{$key} = "$URL/" . q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/sec:StressLogs/;
 $external_labels{$key} = "$URL/" . q|node55.html|; 
 $noresave{$key} = "$nosave";
@@ -847,6 +875,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/eq:Cauchy/;
 $external_latex_labels{$key} = q|3.2|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:CoeffA/;
+$external_latex_labels{$key} = q|8.5|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:ComplianceMatrix/;
+$external_latex_labels{$key} = q|8.2|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:CoulombTS/;
@@ -1017,6 +1053,10 @@ $key = q/fig:DecaturMS/;
 $external_latex_labels{$key} = q|5.30|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:DepletionSchematic/;
+$external_latex_labels{$key} = q|8.1|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:DevWellFailure/;
 $external_latex_labels{$key} = q|6.19|; 
 $noresave{$key} = "$nosave";
@@ -1145,6 +1185,10 @@ $key = q/fig:KGD/;
 $external_latex_labels{$key} = q|7.19|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:Kcompressibility/;
+$external_latex_labels{$key} = q|8.2|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:KirschDev/;
 $external_latex_labels{$key} = q|6.6|; 
 $noresave{$key} = "$nosave";
@@ -1183,6 +1227,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:Microseismicity/;
 $external_latex_labels{$key} = q|7.31|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:MohrCircleDepletion/;
+$external_latex_labels{$key} = q|8.4|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:MudWindow/;
@@ -1381,6 +1429,10 @@ $key = q/fig:ThrustFault/;
 $external_latex_labels{$key} = q|5.13|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TotalStressPath/;
+$external_latex_labels{$key} = q|8.3|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:TriaxialCell/;
 $external_latex_labels{$key} = q|4.14|; 
 $noresave{$key} = "$nosave";
@@ -1558,7 +1610,7 @@ $external_latex_labels{$key} = q|5.29|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lect-X/;
-$external_latex_labels{$key} = q|8.8|; 
+$external_latex_labels{$key} = q|8.1.2|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:minifracFCP/;
@@ -1603,6 +1655,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:CoupledFracProblem/;
 $external_latex_labels{$key} = q|7.3.2|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:ResCompress/;
+$external_latex_labels{$key} = q|3.3.5|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:StressLogs/;

@@ -14,6 +14,14 @@ $key = q/eq:Cauchy/;
 $ref_files{$key} = "$dir".q|node13.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:CoeffA/;
+$ref_files{$key} = "$dir".q|node61.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:ComplianceMatrix/;
+$ref_files{$key} = "$dir".q|node61.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:CoulombTS/;
 $ref_files{$key} = "$dir".q|node25.html|; 
 $noresave{$key} = "$nosave";
@@ -182,6 +190,10 @@ $key = q/fig:DecaturMS/;
 $ref_files{$key} = "$dir".q|node38.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:DepletionSchematic/;
+$ref_files{$key} = "$dir".q|node61.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:DevWellFailure/;
 $ref_files{$key} = "$dir".q|node47.html|; 
 $noresave{$key} = "$nosave";
@@ -314,6 +326,10 @@ $key = q/fig:KGD/;
 $ref_files{$key} = "$dir".q|node55.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:Kcompressibility/;
+$ref_files{$key} = "$dir".q|node61.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:KirschDev/;
 $ref_files{$key} = "$dir".q|node43.html|; 
 $noresave{$key} = "$nosave";
@@ -352,6 +368,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:Microseismicity/;
 $ref_files{$key} = "$dir".q|node56.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:MohrCircleDepletion/;
+$ref_files{$key} = "$dir".q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:MudWindow/;
@@ -552,6 +572,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:ThrustFault/;
 $ref_files{$key} = "$dir".q|node36.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TotalStressPath/;
+$ref_files{$key} = "$dir".q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:TriaxialCell/;
@@ -796,6 +820,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:CoupledFracProblem/;
 $ref_files{$key} = "$dir".q|node55.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:ResCompress/;
+$ref_files{$key} = "$dir".q|node15.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:StressLogs/;
