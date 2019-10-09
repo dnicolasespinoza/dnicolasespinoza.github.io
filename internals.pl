@@ -586,6 +586,10 @@ $key = q/fig:UCS/;
 $ref_files{$key} = "$dir".q|node25.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:USGSstressmap/;
+$ref_files{$key} = "$dir".q|node9.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:WellOrientation/;
 $ref_files{$key} = "$dir".q|node47.html|; 
 $noresave{$key} = "$nosave";

@@ -586,6 +586,10 @@ $key = q/fig:UCS/;
 $external_labels{$key} = "$URL/" . q|node25.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:USGSstressmap/;
+$external_labels{$key} = "$URL/" . q|node9.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:WellOrientation/;
 $external_labels{$key} = "$URL/" . q|node47.html|; 
 $noresave{$key} = "$nosave";
@@ -930,7 +934,7 @@ $external_latex_labels{$key} = q|6.19|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:SGcalc/;
-$external_latex_labels{$key} = q|5.7|; 
+$external_latex_labels{$key} = q|5.8|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:UCS-CohStrength-q/;
@@ -1082,7 +1086,7 @@ $external_latex_labels{$key} = q|4.20|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ExBarnett/;
-$external_latex_labels{$key} = q|2.26|; 
+$external_latex_labels{$key} = q|2.27|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ExampleLeakoff/;
@@ -1134,7 +1138,7 @@ $external_latex_labels{$key} = q|4.22|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracsWellOrient/;
-$external_latex_labels{$key} = q|2.25|; 
+$external_latex_labels{$key} = q|2.26|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracturesEOR/;
@@ -1441,6 +1445,10 @@ $key = q/fig:UCS/;
 $external_latex_labels{$key} = q|4.10|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:USGSstressmap/;
+$external_latex_labels{$key} = q|2.23|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:WellOrientation/;
 $external_latex_labels{$key} = q|6.18|; 
 $noresave{$key} = "$nosave";
@@ -1478,7 +1486,7 @@ $external_latex_labels{$key} = q|7.28|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:balloon/;
-$external_latex_labels{$key} = q|2.24|; 
+$external_latex_labels{$key} = q|2.25|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ch2-SvNSexample/;
@@ -1574,7 +1582,7 @@ $external_latex_labels{$key} = q|2.21|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec3-22/;
-$external_latex_labels{$key} = q|2.23|; 
+$external_latex_labels{$key} = q|2.24|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec3-3/;
