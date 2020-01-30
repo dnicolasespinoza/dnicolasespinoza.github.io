@@ -458,6 +458,10 @@ $key = q/fig:SedRockAnisotropy/;
 $ref_files{$key} = "$dir".q|node16.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:ShaleCompaction/;
+$ref_files{$key} = "$dir".q|node8.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:ShearStrengthLimit/;
 $ref_files{$key} = "$dir".q|node38.html|; 
 $noresave{$key} = "$nosave";
@@ -664,6 +668,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:intro-FaultFoldSeismic/;
 $ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:intro-appgeomech/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:intro-stressmap/;

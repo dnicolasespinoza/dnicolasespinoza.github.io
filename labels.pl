@@ -458,6 +458,10 @@ $key = q/fig:SedRockAnisotropy/;
 $external_labels{$key} = "$URL/" . q|node16.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:ShaleCompaction/;
+$external_labels{$key} = "$URL/" . q|node8.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:ShearStrengthLimit/;
 $external_labels{$key} = "$URL/" . q|node38.html|; 
 $noresave{$key} = "$nosave";
@@ -664,6 +668,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:intro-FaultFoldSeismic/;
 $external_labels{$key} = "$URL/" . q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:intro-appgeomech/;
+$external_labels{$key} = "$URL/" . q|node2.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:intro-stressmap/;
@@ -1086,7 +1094,7 @@ $external_latex_labels{$key} = q|4.20|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ExBarnett/;
-$external_latex_labels{$key} = q|2.27|; 
+$external_latex_labels{$key} = q|2.28|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ExampleLeakoff/;
@@ -1138,7 +1146,7 @@ $external_latex_labels{$key} = q|4.22|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracsWellOrient/;
-$external_latex_labels{$key} = q|2.26|; 
+$external_latex_labels{$key} = q|2.27|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracturesEOR/;
@@ -1170,11 +1178,11 @@ $external_latex_labels{$key} = q|5.22|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:HzStressGlobalMap/;
-$external_latex_labels{$key} = q|2.20|; 
+$external_latex_labels{$key} = q|2.21|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:HzStresses/;
-$external_latex_labels{$key} = q|2.18|; 
+$external_latex_labels{$key} = q|2.19|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:HzWells/;
@@ -1317,6 +1325,10 @@ $key = q/fig:SedRockAnisotropy/;
 $external_latex_labels{$key} = q|3.18|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:ShaleCompaction/;
+$external_latex_labels{$key} = q|2.15|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:ShearStrengthLimit/;
 $external_latex_labels{$key} = q|5.25|; 
 $noresave{$key} = "$nosave";
@@ -1446,7 +1458,7 @@ $external_latex_labels{$key} = q|4.10|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:USGSstressmap/;
-$external_latex_labels{$key} = q|2.23|; 
+$external_latex_labels{$key} = q|2.24|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:WellOrientation/;
@@ -1486,7 +1498,7 @@ $external_latex_labels{$key} = q|7.28|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:balloon/;
-$external_latex_labels{$key} = q|2.25|; 
+$external_latex_labels{$key} = q|2.26|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ch2-SvNSexample/;
@@ -1518,15 +1530,19 @@ $external_latex_labels{$key} = q|3.9|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:intro-FaultFoldSeismic/;
-$external_latex_labels{$key} = q|1.2|; 
+$external_latex_labels{$key} = q|1.3|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:intro-stressmap/;
+$key = q/fig:intro-appgeomech/;
 $external_latex_labels{$key} = q|1.1|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:intro-stressmap/;
+$external_latex_labels{$key} = q|1.2|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:intro-wellbores/;
-$external_latex_labels{$key} = q|1.3|; 
+$external_latex_labels{$key} = q|1.4|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:kinematics2D/;
@@ -1534,11 +1550,11 @@ $external_latex_labels{$key} = q|3.7|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec1-5/;
-$external_latex_labels{$key} = q|1.5|; 
+$external_latex_labels{$key} = q|1.6|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec1-6/;
-$external_latex_labels{$key} = q|1.4|; 
+$external_latex_labels{$key} = q|1.5|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec2-10/;
@@ -1562,11 +1578,11 @@ $external_latex_labels{$key} = q|2.14|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec2-16/;
-$external_latex_labels{$key} = q|2.15|; 
+$external_latex_labels{$key} = q|2.16|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec2-17/;
-$external_latex_labels{$key} = q|2.17|; 
+$external_latex_labels{$key} = q|2.18|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec2-9/;
@@ -1574,19 +1590,19 @@ $external_latex_labels{$key} = q|2.9|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec3-16/;
-$external_latex_labels{$key} = q|2.19|; 
+$external_latex_labels{$key} = q|2.20|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec3-2/;
-$external_latex_labels{$key} = q|2.21|; 
+$external_latex_labels{$key} = q|2.22|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec3-22/;
-$external_latex_labels{$key} = q|2.24|; 
+$external_latex_labels{$key} = q|2.25|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec3-3/;
-$external_latex_labels{$key} = q|2.22|; 
+$external_latex_labels{$key} = q|2.23|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec4-12/;
@@ -1634,7 +1650,7 @@ $external_latex_labels{$key} = q|6.2|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:overpressure/;
-$external_latex_labels{$key} = q|2.16|; 
+$external_latex_labels{$key} = q|2.17|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:pad/;
