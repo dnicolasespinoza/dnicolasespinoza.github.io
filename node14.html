@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
-<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
-<HTML lang="EN">
+<!--Converted with LaTeX2HTML 2018 (Released Feb 1, 2018) -->
+<HTML>
 <HEAD>
 <TITLE>3.2 Kinematic equations: displacements and strains</TITLE>
 <META NAME="description" CONTENT="3.2 Kinematic equations: displacements and strains">
@@ -9,62 +9,62 @@
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
 <LINK REL="next" HREF="node15.html">
 <LINK REL="previous" HREF="node13.html">
+<LINK REL="up" HREF="node12.html">
 <LINK REL="next" HREF="node15.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A
- HREF="node15.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node12.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node13.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html610"
+<A NAME="tex2html751"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html747"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html741"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html749"
   HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A
- HREF="node15.html">3.3 Constitutive equation: stress-strain</A>
-<B> Up:</B> <A
- HREF="node12.html">3. Fundamentals of Linear</A>
-<B> Previous:</B> <A
- HREF="node13.html">3.1 Stress tensor</A>
- &nbsp; <B>  <A ID="tex2html611"
+<B> Next:</B> <A NAME="tex2html752"
+  HREF="node15.html">3.3 Constitutive equation: stress-strain</A>
+<B> Up:</B> <A NAME="tex2html748"
+  HREF="node12.html">3. Fundamentals of Linear</A>
+<B> Previous:</B> <A NAME="tex2html742"
+  HREF="node13.html">3.1 Stress tensor</A>
+ &nbsp; <B>  <A NAME="tex2html750"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00420000000000000000">
+<H1><A NAME="SECTION00420000000000000000">
 <SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kinematic equations: displacements and strains</A>
 </H1>
 
 <P>
 Applications of stresses result in solid deformation and displacements.
-Figure <A HREF="#fig:FreeFEMexample">3.6</A> shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
+Figure <A HREF="#fig:FreeFEMexample">3.7</A> shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
 In this particular case, the solid is anchored at the bottom and deforms due to the application of a force (from left to right) on the top.
 Hence, displacements at the bottom are zero and displacements on the top are the maximum.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:FreeFEMexample"></A><A ID="1666"></A>
+<DIV ALIGN="CENTER"><A NAME="fig:FreeFEMexample"></A><A NAME="1718"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.6:</STRONG>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3.7:</STRONG>
 Example of displacement vector field for a solid anchored on the bottom and with a force (left to right) applied on the top surface. All other solid surfaces (but the bottom) can move freely.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20743" ALIGN="CENTER">
+<TR><TD><DIV CLASS="centerline" ID="par21073" ALIGN="CENTER">
 <IMG STYLE=""
  SRC="img287.svg"
  ALT="\includegraphics[scale=0.65]{.././Figures/split/4-9.pdf}"></DIV></TD></TR>
@@ -73,11 +73,11 @@ Example of displacement vector field for a solid anchored on the bottom and with
  
 <P>
 Yet, absolute displacements are not enough to determine stresses.
-A solid may translate or rotate in space without development of any internal stresses required to equilibrate external actions (imagine a cookie &ldquo;floating&rdquo; in zero gravity within the  International Space Station <kbd><A ID="tex2html58"
-  HREF="https://www.youtube.com/watch?v=q5uV4fTV0Zo">https://www.youtube.com/watch?v=q5uV4fTV0Zo</A></kbd>).
+A solid may translate or rotate in space without development of any internal stresses required to equilibrate external actions (imagine a cookie &ldquo;floating&rdquo; in zero gravity within the  International Space Station <TT><A NAME="tex2html60"
+  HREF="https://www.youtube.com/watch?v=q5uV4fTV0Zo">https://www.youtube.com/watch?v=q5uV4fTV0Zo</A></TT>).
 
 <P>
-Let's look at Figure <A HREF="#fig:kinematics2D">3.7</A> in order to relate displacements to strains:
+Let's look at Figure <A HREF="#fig:kinematics2D">3.8</A> in order to relate displacements to strains:
 
 <UL>
 <LI>(LEFT) A solid is stretched on its face 1 (perpendicular to <!-- MATH
@@ -86,35 +86,35 @@ Let's look at Figure <A HREF="#fig:kinematics2D">3.7</A> in order to relate disp
 <SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img257.svg"
  ALT="$\uline{e}_1$"></SPAN>) in direction 1 only. This type of deformation produces a change of volume of the solid and therefore contributes to volumetric strain. The resulting deformation or strain (change of length divided original length) is
 	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
  \begin{equation}
 \varepsilon_{11} = \frac{\Delta u_1}{\Delta x_1}
 \end{equation}
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img288.svg"
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img288.svg"
  ALT="$\displaystyle \varepsilon_{11} = \frac{\Delta u_1}{\Delta x_1}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
 (<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P>
+<BR CLEAR="ALL"><P></P>
 </LI>
 <LI>(CENTER) A solid is stretched on its face 2 in direction 2 only.  This type of deformation also contributes to volumetric strain. The resulting strain is
 	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
  \begin{equation}
 \varepsilon_{22} = \frac{\Delta u_2}{\Delta x_2}
 \end{equation}
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img289.svg"
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img289.svg"
  ALT="$\displaystyle \varepsilon_{22} = \frac{\Delta u_2}{\Delta x_2}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
 (<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P>
+<BR CLEAR="ALL"><P></P>
 </LI>
 <LI>(RIGHT) The solid is now distorted. Notice that the faces do not make a right angle anymore. The change of volume is negligible for small deformations. The resulting distortion or shear strain is proportional to the change in angle between faces 1 and 2. Hence the change of angle is <!-- MATH
  $\pi - \left[ \pi - \arctan(\Delta u_1 / \Delta x_2) + \arctan(\Delta u_2 / \Delta x_1) \right]$
@@ -126,30 +126,30 @@ Let's look at Figure <A HREF="#fig:kinematics2D">3.7</A> in order to relate disp
 <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img291.svg"
  ALT="$\arctan(x/y) \sim x/y$"></SPAN>)
 	<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><!-- MATH
  \begin{equation}
 \varepsilon_{12} = \frac{1}{2} \left( \frac{\Delta u_1}{\Delta x_2} + \frac{\Delta u_2}{\Delta x_1} \right)
 \end{equation}
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img292.svg"
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img292.svg"
  ALT="$\displaystyle \varepsilon_{12} = \frac{1}{2} \left( \frac{\Delta u_1}{\Delta x_2} + \frac{\Delta u_2}{\Delta x_1} \right)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
 (<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P>
+<BR CLEAR="ALL"><P></P>
 The average in the equation ensures capturing shear distortion rather than rotation. 
 </LI>
 </UL>		
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:kinematics2D"></A><A ID="1695"></A>
+<DIV ALIGN="CENTER"><A NAME="fig:kinematics2D"></A><A NAME="1747"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.7:</STRONG>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3.8:</STRONG>
 Strain equations for small deformations.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par20760" ALIGN="CENTER">
+<TR><TD><DIV CLASS="centerline" ID="par21090" ALIGN="CENTER">
 <IMG STYLE=""
  SRC="img293.svg"
  ALT="\includegraphics[scale=0.65]{.././Figures/split/4-10.pdf}"></DIV></TD></TR>
@@ -164,7 +164,7 @@ Similarly to the stress tensor, strains can be organized in a tensor where eleme
 
 <P>
 <P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:straintensor"></A><!-- MATH
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:straintensor"></A><!-- MATH
  \begin{equation}
 \uuline{\varepsilon} =
 	\left[
@@ -183,9 +183,9 @@ Similarly to the stress tensor, strains can be organized in a tensor where eleme
 	\right] 
 \end{equation}
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG STYLE=""
  SRC="img295.svg"
  ALT="\begin{displaymath}\uuline{\varepsilon} =
 \left[
@@ -193,27 +193,27 @@ Similarly to the stress tensor, strains can be organized in a tensor where eleme
 \cfrac{\part...
 ...n_{31} &amp; \varepsilon_{32} &amp; \varepsilon_{33}
 \end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
 (<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P>
+<BR CLEAR="ALL"><P></P>
 
 <P>
 The summation of all diagonal terms yields the volumetric strain 
 <P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:volstrain"></A><!-- MATH
+<DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq:volstrain"></A><!-- MATH
  \begin{equation}
 \varepsilon_{vol} = \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33}
 \end{equation}
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.94ex; vertical-align: -0.48ex; " SRC="img296.svg"
+<TABLE CLASS="equation" CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.94ex; vertical-align: -0.48ex; " SRC="img296.svg"
  ALT="$\displaystyle \varepsilon_{vol} = \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
+<TD NOWRAP CLASS="eqno" WIDTH="10" ALIGN="RIGHT">
 (<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P>
+<BR CLEAR="ALL"><P></P>
 
 <P>
  <BR>
@@ -236,7 +236,7 @@ The definition of volumetric strain is the ratio between the change of volume <S
 \end{displaymath}
  -->
 </P>
-<DIV CLASS="mathdisplay">
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
 <IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img300.svg"
  ALT="$\displaystyle \varepsilon_{vol} = \frac{\Delta V}{V_0}
 $">
@@ -260,7 +260,7 @@ For an elementary cubic volume with initial volume <!-- MATH
 \end{displaymath}
  -->
 </P>
-<DIV CLASS="mathdisplay">
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
 <IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img303.svg"
  ALT="$\displaystyle \varepsilon_{vol} = \frac{[(\mathrm{d} x_1 + \mathrm{d}u_1)(\math...
 ...athrm{d} x_2 \mathrm{d} x_3)]}{(\mathrm{d} x_1 \mathrm{d} x_2 \mathrm{d} x_3)}
@@ -284,7 +284,7 @@ Let us discard all the products containing <!-- MATH
  $\mathrm{d}u_i << \mathrm{d}x_j$
  -->
 <SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img307.svg"
- ALT="$\mathrm{d}u_i &lt;&lt; \mathrm{d}x_j $"></SPAN>), then
+ ALT="$\mathrm{d}u_i &#171; \mathrm{d}x_j $"></SPAN>), then
 
 <P>
 <P><!-- MATH
@@ -300,7 +300,7 @@ Let us discard all the products containing <!-- MATH
 \end{displaymath}
  -->
 </P>
-<DIV CLASS="mathdisplay">
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
 <IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img308.svg"
  ALT="$\displaystyle \varepsilon_{vol} \sim \frac{(\mathrm{d} x_1 \mathrm{d} x_2 \math...
 ...
@@ -315,26 +315,26 @@ $">
 
 <DIV CLASS="navigation"><HR>
 <!--Navigation Panel-->
-<A
- HREF="node15.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node12.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node13.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html610"
+<A NAME="tex2html751"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html747"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html741"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html749"
   HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A
- HREF="node15.html">3.3 Constitutive equation: stress-strain</A>
-<B> Up:</B> <A
- HREF="node12.html">3. Fundamentals of Linear</A>
-<B> Previous:</B> <A
- HREF="node13.html">3.1 Stress tensor</A>
- &nbsp; <B>  <A ID="tex2html611"
+<B> Next:</B> <A NAME="tex2html752"
+  HREF="node15.html">3.3 Constitutive equation: stress-strain</A>
+<B> Up:</B> <A NAME="tex2html748"
+  HREF="node12.html">3. Fundamentals of Linear</A>
+<B> Previous:</B> <A NAME="tex2html742"
+  HREF="node13.html">3.1 Stress tensor</A>
+ &nbsp; <B>  <A NAME="tex2html750"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

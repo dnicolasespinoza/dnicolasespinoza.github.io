@@ -1,4 +1,4 @@
-# LaTeX2HTML 2018.3 (Released July 19, 2018)
+# LaTeX2HTML 2018 (Released Feb 1, 2018)
 # Associate internals original text with physical files.
 
 
@@ -18,12 +18,20 @@ $key = q/eq:CoeffA/;
 $ref_files{$key} = "$dir".q|node61.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:CoeffLateralEffStress/;
+$ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:ComplianceMatrix/;
 $ref_files{$key} = "$dir".q|node61.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:CoulombTS/;
 $ref_files{$key} = "$dir".q|node25.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:FracGradient/;
+$ref_files{$key} = "$dir".q|node15.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:FrictionangleParamq/;
@@ -250,6 +258,10 @@ $key = q/fig:FracBranching/;
 $ref_files{$key} = "$dir".q|node56.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:FracGradient/;
+$ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FracIdealOrientation/;
 $ref_files{$key} = "$dir".q|node36.html|; 
 $noresave{$key} = "$nosave";
@@ -452,6 +464,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:SandStrength/;
 $ref_files{$key} = "$dir".q|node25.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ScalarVectorTensor/;
+$ref_files{$key} = "$dir".q|node13.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:SedRockAnisotropy/;
@@ -852,6 +868,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/subsec:faultreact/;
 $ref_files{$key} = "$dir".q|node38.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/tab:Anderson/;
+$ref_files{$key} = "$dir".q|node9.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/table:Andersonian/;
