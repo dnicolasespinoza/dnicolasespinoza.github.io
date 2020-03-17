@@ -1,4 +1,4 @@
-# LaTeX2HTML 2018 (Released Feb 1, 2018)
+# LaTeX2HTML 2018.3 (Released July 19, 2018)
 # Associate labels original text with physical files.
 
 
@@ -302,6 +302,10 @@ $key = q/fig:FrictionBlock/;
 $external_labels{$key} = "$URL/" . q|node25.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:GeneralContMechProblem/;
+$external_labels{$key} = "$URL/" . q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:GeolMapFault/;
 $external_labels{$key} = "$URL/" . q|node35.html|; 
 $noresave{$key} = "$nosave";
@@ -535,6 +539,10 @@ $external_labels{$key} = "$URL/" . q|node38.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressRelax/;
+$external_labels{$key} = "$URL/" . q|node18.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressRelaxField/;
 $external_labels{$key} = "$URL/" . q|node18.html|; 
 $noresave{$key} = "$nosave";
 
@@ -889,7 +897,7 @@ $noresave{$key} = "$nosave";
 1;
 
 
-# LaTeX2HTML 2018 (Released Feb 1, 2018)
+# LaTeX2HTML 2018.3 (Released July 19, 2018)
 # labels from external_latex_labels array.
 
 
@@ -930,7 +938,7 @@ $external_latex_labels{$key} = q|3.31|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:FrictionangleParamq/;
-$external_latex_labels{$key} = q|4.6|; 
+$external_latex_labels{$key} = q|4.7|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:KI_cstP/;
@@ -942,7 +950,7 @@ $external_latex_labels{$key} = q|3.22|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:LameThermoElasticity/;
-$external_latex_labels{$key} = q|3.42|; 
+$external_latex_labels{$key} = q|3.44|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:LineCrackPo/;
@@ -950,7 +958,7 @@ $external_latex_labels{$key} = q|7.4|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:Navier/;
-$external_latex_labels{$key} = q|3.38|; 
+$external_latex_labels{$key} = q|3.40|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:Pb/;
@@ -962,7 +970,7 @@ $external_latex_labels{$key} = q|3.14|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:PoreCompwithEnu/;
-$external_latex_labels{$key} = q|3.37|; 
+$external_latex_labels{$key} = q|3.39|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:RGW/;
@@ -974,7 +982,7 @@ $external_latex_labels{$key} = q|5.8|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:UCS-CohStrength-q/;
-$external_latex_labels{$key} = q|4.5|; 
+$external_latex_labels{$key} = q|4.6|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:VertStressDiscrete/;
@@ -1086,7 +1094,7 @@ $external_latex_labels{$key} = q|4.11|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:Creep/;
-$external_latex_labels{$key} = q|3.23|; 
+$external_latex_labels{$key} = q|3.24|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:DecaturMS/;
@@ -1193,6 +1201,10 @@ $key = q/fig:FrictionBlock/;
 $external_latex_labels{$key} = q|4.8|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:GeneralContMechProblem/;
+$external_latex_labels{$key} = q|3.19|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:GeolMapFault/;
 $external_latex_labels{$key} = q|5.8|; 
 $noresave{$key} = "$nosave";
@@ -1262,7 +1274,7 @@ $external_latex_labels{$key} = q|6.29|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:LoadingUnloading/;
-$external_latex_labels{$key} = q|3.21|; 
+$external_latex_labels{$key} = q|3.22|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:MicroFracCoalescence/;
@@ -1358,7 +1370,7 @@ $external_latex_labels{$key} = q|3.1|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:SedRockAnisotropy/;
-$external_latex_labels{$key} = q|3.20|; 
+$external_latex_labels{$key} = q|3.21|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ShaleCompaction/;
@@ -1394,7 +1406,7 @@ $external_latex_labels{$key} = q|4.19|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StrainrateStiffness/;
-$external_latex_labels{$key} = q|3.22|; 
+$external_latex_labels{$key} = q|3.23|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StrengthAnisotropy/;
@@ -1422,7 +1434,11 @@ $external_latex_labels{$key} = q|5.27|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressRelax/;
-$external_latex_labels{$key} = q|3.24|; 
+$external_latex_labels{$key} = q|3.25|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressRelaxField/;
+$external_latex_labels{$key} = q|3.26|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StrikeConvention/;
@@ -1442,7 +1458,7 @@ $external_latex_labels{$key} = q|5.15|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:TVIandOR/;
-$external_latex_labels{$key} = q|3.19|; 
+$external_latex_labels{$key} = q|3.20|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:TensFracsSchematic/;
@@ -1474,7 +1490,7 @@ $external_latex_labels{$key} = q|6.25|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ThermalSwellStress/;
-$external_latex_labels{$key} = q|3.25|; 
+$external_latex_labels{$key} = q|3.27|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ThrustFault/;
