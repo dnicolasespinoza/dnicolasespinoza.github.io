@@ -334,6 +334,10 @@ $key = q/fig:HzWells/;
 $ref_files{$key} = "$dir".q|node56.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:IdealFaultsGeneralCase/;
+$ref_files{$key} = "$dir".q|node36.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:IdealLeakoffTest/;
 $ref_files{$key} = "$dir".q|node54.html|; 
 $noresave{$key} = "$nosave";

@@ -334,6 +334,10 @@ $key = q/fig:HzWells/;
 $external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:IdealFaultsGeneralCase/;
+$external_labels{$key} = "$URL/" . q|node36.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:IdealLeakoffTest/;
 $external_labels{$key} = "$URL/" . q|node54.html|; 
 $noresave{$key} = "$nosave";
@@ -1038,11 +1042,11 @@ $external_latex_labels{$key} = q|7.17|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:3DMohrCircle/;
-$external_latex_labels{$key} = q|5.18|; 
+$external_latex_labels{$key} = q|5.19|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:AnglesMatrixRPG/;
-$external_latex_labels{$key} = q|5.20|; 
+$external_latex_labels{$key} = q|5.21|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:BakerHughesJS/;
@@ -1074,7 +1078,7 @@ $external_latex_labels{$key} = q|6.9|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:BrittleCrust/;
-$external_latex_labels{$key} = q|5.24|; 
+$external_latex_labels{$key} = q|5.25|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ClayPlatelet/;
@@ -1098,7 +1102,7 @@ $external_latex_labels{$key} = q|3.24|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:DecaturMS/;
-$external_latex_labels{$key} = q|5.30|; 
+$external_latex_labels{$key} = q|5.31|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:DepletionSchematic/;
@@ -1166,7 +1170,7 @@ $external_latex_labels{$key} = q|3.17|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracIdealOrientation/;
-$external_latex_labels{$key} = q|5.17|; 
+$external_latex_labels{$key} = q|5.18|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracInterference/;
@@ -1174,7 +1178,7 @@ $external_latex_labels{$key} = q|7.27|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracResPerm/;
-$external_latex_labels{$key} = q|5.23|; 
+$external_latex_labels{$key} = q|5.24|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracWellImaging/;
@@ -1218,7 +1222,7 @@ $external_latex_labels{$key} = q|7.15|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:HydFracMicroseismicity/;
-$external_latex_labels{$key} = q|5.22|; 
+$external_latex_labels{$key} = q|5.23|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:HzStressGlobalMap/;
@@ -1231,6 +1235,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:HzWells/;
 $external_latex_labels{$key} = q|7.23|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:IdealFaultsGeneralCase/;
+$external_latex_labels{$key} = q|5.17|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:IdealLeakoffTest/;
@@ -1314,7 +1322,7 @@ $external_latex_labels{$key} = q|7.18|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:PScsGcs/;
-$external_latex_labels{$key} = q|5.19|; 
+$external_latex_labels{$key} = q|5.20|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:PoreCollapse/;
@@ -1378,7 +1386,7 @@ $external_latex_labels{$key} = q|2.15|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ShearStrengthLimit/;
-$external_latex_labels{$key} = q|5.25|; 
+$external_latex_labels{$key} = q|5.26|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:Sneddon/;
@@ -1426,11 +1434,11 @@ $external_latex_labels{$key} = q|7.21|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressPolygon/;
-$external_latex_labels{$key} = q|5.26|; 
+$external_latex_labels{$key} = q|5.27|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressPolygonNF-SS/;
-$external_latex_labels{$key} = q|5.27|; 
+$external_latex_labels{$key} = q|5.28|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressRelax/;
@@ -1482,7 +1490,7 @@ $external_latex_labels{$key} = q|6.24|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:Thamama/;
-$external_latex_labels{$key} = q|5.28|; 
+$external_latex_labels{$key} = q|5.29|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:ThermalEffectsWell/;
@@ -1682,7 +1690,7 @@ $external_latex_labels{$key} = q|4.3|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lec6-X/;
-$external_latex_labels{$key} = q|5.29|; 
+$external_latex_labels{$key} = q|5.30|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:lect-X/;
