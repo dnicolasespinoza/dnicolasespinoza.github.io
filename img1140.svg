@@ -10,42 +10,44 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="170mm"
+   height="135mm"
+   viewBox="0 0 170 135"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="9-PadFrac.svg">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="img1140.svg">
   <defs
      id="defs2">
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Mend"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path4616"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Mstart"
        style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path4613"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
-         transform="scale(0.4) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <clipPath
        id="clipPath831"
@@ -135,9 +137,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="284.88427"
-     inkscape:cy="757.03074"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-91.73146"
+     inkscape:cy="623.4212"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -161,10 +163,11 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-162)">
     <g
        id="g837"
-       transform="matrix(0.28222222,0,0,-0.28222222,-6.7412076,165.49374)"
+       transform="matrix(0.28222222,0,0,-0.28222222,-19.035606,304.47389)"
        clip-path="url(#clipPath7013)">
       <g
          id="g839"
@@ -196,50 +199,50 @@
     <text
        style="font-variant:normal;font-weight:normal;font-size:5.07999992px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.28222221"
        id="text865"
-       x="143.00314"
-       y="149.39462">
+       x="130.70874"
+       y="288.37479">
       <tspan
-         x="143.00314 144.28331 148.34222 150.77554 153.16823 155.69806 157.05951 158.20758 160.53931 162.2411 164.67442 166.37622 169.05339 170.21671 171.38002"
-         y="149.39462"
+         x="130.70874 131.98891 136.04782 138.48114 140.87383 143.40366 144.76511 145.91318 148.2449 149.9467 152.38002 154.08182 156.75899 157.9223 159.08562"
+         y="288.37479"
          sodipodi:role="line"
          id="tspan863"
          style="stroke-width:0.28222221">Image: Statoil</tspan>
     </text>
     <path
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
-       d="m 157.25175,124.61787 6.75052,-3.93609"
+       d="m 144.95735,263.59802 6.75052,-3.93609"
        id="path4605"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8);marker-end:url(#Arrow1Mend-1)"
-       d="m 143.46849,101.94796 20.92463,9.57656"
+       d="m 131.17409,240.92811 20.92463,9.57656"
        id="path4605-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="155.34822"
-       y="103.94866"
+       x="143.05382"
+       y="242.92882"
        id="text6986"><tspan
          sodipodi:role="line"
          id="tspan6984"
-         x="155.34822"
-         y="103.94866"
-         style="stroke-width:0.26458332;fill:#ffffff;stroke:none;-inkscape-font-specification:Gigi;font-family:Gigi;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">l<tspan
-   style="font-size:65%;baseline-shift:sub"
+         x="143.05382"
+         y="242.92882"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gigi;-inkscape-font-specification:Gigi;fill:#ffffff;stroke:none;stroke-width:0.26458332">l<tspan
+   style="font-size:64.99999762%;baseline-shift:sub"
    id="tspan6988">l</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="164.43382"
-       y="125.46287"
+       x="152.13942"
+       y="264.44302"
        id="text6986-3"><tspan
          sodipodi:role="line"
          id="tspan6984-4"
-         x="164.43382"
-         y="125.46287"
+         x="152.13942"
+         y="264.44302"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gigi;-inkscape-font-specification:Gigi;fill:#ffffff;stroke:none;stroke-width:0.26458332">l<tspan
    style="font-size:3.66888881px;baseline-shift:sub;stroke-width:0.26458332"
    id="tspan6988-5">w</tspan></tspan></text>
