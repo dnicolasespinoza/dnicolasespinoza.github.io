@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>1.1 WP1: Subsurface Stresses, Stress Tensor and Invariants</TITLE>
+<META NAME="description" CONTENT="1.1 WP1: Subsurface Stresses, Stress Tensor and Invariants">
+<META NAME="keywords" CONTENT="AdvancedGeomech">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+
+<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html45"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node4.html">1.2 WP2: 3D Stress</A>
+<B> Up:</B> <A
+ HREF="node2.html">1. Weekly Projects</A>
+<B> Previous:</B> <A
+ HREF="node2.html">1. Weekly Projects</A>
+ &nbsp; <B>  <A ID="tex2html46"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html47"
+  HREF="node3.html#SECTION00211000000000000000"><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1</A>
+<LI><A ID="tex2html48"
+  HREF="node3.html#SECTION00212000000000000000"><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00210000000000000000">
+<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> WP1: Subsurface Stresses, Stress Tensor and Invariants</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00211000000000000000">
+<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1</A>
+</H2>
+
+<P>
+The figure below displays principal stresses in a well from the Vaca Muerta Formation 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:stress-map-VMF"></A><A ID="56"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 1.1:</STRONG>
+Calibrated stress log for an unconventional formation(Image credit: <a href="https://www.onepetro.org/conference-paper/SPE-180965-MS">SPE-180965-MS</a>).</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par326" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img1.svg"
+ ALT="\includegraphics[scale=1.00]{.././Figures/WP1_VMF.PNG}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The figure does not show absolute depth values. This is a way oil companies &ldquo;sanitize&rdquo; their data, so that they do not reveal too much information that competitors could use to their advantage. We do know that depth grid spacing is 25 m. 
+You will have to digitize this image to get numerical values. I recommend using <kbd><A ID="tex2html2"
+  HREF="https://apps.automeris.io/wpd/">https://apps.automeris.io/wpd/</A></kbd>.
+
+<P>
+Tasks:
+
+<OL>
+<LI>Calculate the average pore pressure (PPRS_3) gradient between depth A and depth B in [MPa/km] and [psi/ft]
+</LI>
+<LI>Calculate the average vertical stress (SigV) gradient between depth A and depth B
+</LI>
+<LI>Calculate a reasonable guess for depth A 
+</LI>
+<LI>Write out the principal stress tensors (as matrices 3x3) at depths A, B, C, D and E assuming vertical stress is a principal stress
+</LI>
+<LI>Classify A, B, C, D and E according to stress regime (Normal, Strike Slip, Reverse Faulting)
+</LI>
+<LI>Plot 3D Mohr circles of effective stresses for A, B, C, D and E
+</LI>
+<LI>Plot <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img2.svg"
+ ALT="$p$"></SPAN>-<SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img3.svg"
+ ALT="$q$"></SPAN> points for A, B, C, D and E
+</LI>
+<LI>Plot <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
+ ALT="$I_1$"></SPAN>-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img5.svg"
+ ALT="$J_2$"></SPAN> points for A, B, C, D and E
+</LI>
+<LI>In which direction would a hydraulic fracture open-up in the interval under study in this formation? Justify.
+</LI>
+</OL>
+
+<P>
+
+<H2><A ID="SECTION00212000000000000000">
+<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2</A>
+</H2>
+
+<P>
+Go to <kbd><A ID="tex2html3"
+  HREF="https://github.com/dnicolasespinoza/GeomechanicsJupyter">https://github.com/dnicolasespinoza/GeomechanicsJupyter</A></kbd> and download the files <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/blob/master/1_14-1_Composite.las">1_14-1_Composite.las</a> and <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/blob/master/1_14-1_deviation_mod.dev">1_14-1 deviation_mod.dev</a>. The first one is a well logging file (.LAS). 
+You will find here measured depth (DEPTH - Track 1) and bulk mass density (RHOB - Track 8). Track 3 also shows bulk density correction (DRHO). Add RHOB to DRHO to obtain the corrected bulk mass density. 
+The second file has the deviation survey of the well. 
+Use this file to calculate true vertical depth subsea (TVDSS) as a function of measured depth (MD) in the well logging file. 
+Water depth at this location is 104 m TVDSS. 
+You may assume an average bulk mass density of 2 g/cc between the seafloor and the beginning of the density data. 
+Summations with discrete data sets can be easily done through a ‘for’ loop or with a spreadsheet.
+
+<P>
+
+<OL>
+<LI>Plot all available tracks with depth in the y-axis.  
+</LI>
+<LI>Calculate and plot vertical stress using the density log.
+</LI>
+<LI>Calculate and plot hypothetical ‘hydrostatic’ pore pressure.
+</LI>
+</OL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node2.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html45"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node4.html">1.2 WP2: 3D Stress</A>
+<B> Up:</B> <A
+ HREF="node2.html">1. Weekly Projects</A>
+<B> Previous:</B> <A
+ HREF="node2.html">1. Weekly Projects</A>
+ &nbsp; <B>  <A ID="tex2html46"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
