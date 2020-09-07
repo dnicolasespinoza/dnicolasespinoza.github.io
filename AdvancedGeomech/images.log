@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  25 AUG 2020 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  7 SEP 2020 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,6 +361,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 122.
 LaTeX Info: Redefining \pageref on input line 122.
 LaTeX Info: Redefining \nameref on input line 122.
+(./images.out) (./images.out)
 \@outlinefile=\write4
 \openout4 = `images.out'.
 
@@ -395,9 +396,9 @@ File: .././Figures/WP1_VMF.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/WP1_VMF.PNG  used on input line 151.
 (pdftex.def)             Requested size: 393.87053pt x 558.88663pt.
 
-:tex2html_wrap327:lthtmlCropMarkHeight:=564.88663pt
+:tex2html_wrap651:lthtmlCropMarkHeight:=564.88663pt
 
-:tex2html_wrap327:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap651:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 Preview: Tightpage -32891 -32891 32891 32891
 [1 <.././Figures/WP1_VMF.PNG>]
 LaTeX Font Info:    Try loading font information for U+msa on input line 157.
@@ -409,54 +410,153 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 157.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-:tex2html_wrap_inline332:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline656:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline332:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline656:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-:tex2html_wrap_inline334:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline658:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline334:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline658:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [3]
 
-:tex2html_wrap_inline336:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline660:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline336:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline660:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [4]
 
-:tex2html_wrap_inline338:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline662:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline338:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline662:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+
+:tex2html_wrap_inline667:lthtmlCropMarkHeight:=10.71457pt
+
+:tex2html_wrap_inline667:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[6]
+
+:tex2html_wrap_inline669:lthtmlCropMarkHeight:=10.71457pt
+
+:tex2html_wrap_inline669:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+[7]
+<.././Figures/WellFrac.PNG, id=32, 661.2705pt x 328.8285pt>
+File: .././Figures/WellFrac.PNG Graphic file (type png)
+<use .././Figures/WellFrac.PNG>
+Package pdftex.def Info: .././Figures/WellFrac.PNG  used on input line 196.
+(pdftex.def)             Requested size: 495.95164pt x 246.62077pt.
+
+:tex2html_wrap671:lthtmlCropMarkHeight:=252.62077pt
+
+:tex2html_wrap671:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[8 <.././Figures/WellFrac.PNG>]
+
+:tex2html_wrap_inline676:lthtmlCropMarkHeight:=13.48248pt
+
+:tex2html_wrap_inline676:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
+[9]
+
+:tex2html_wrap_inline678:lthtmlCropMarkHeight:=13.62646pt
+
+:tex2html_wrap_inline678:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[10]
+
+:tex2html_wrap_inline684:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline684:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[11]
+
+:tex2html_wrap_inline686:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline686:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[12]
+
+:tex2html_wrap_inline690:lthtmlCropMarkHeight:=13.05666pt
+
+:tex2html_wrap_inline690:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[13]
+
+:tex2html_wrap_inline694:lthtmlCropMarkHeight:=13.62646pt
+
+:tex2html_wrap_inline694:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+[14]
+
+:tex2html_wrap_inline696:lthtmlCropMarkHeight:=13.62646pt
+
+:tex2html_wrap_inline696:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+[15]
+
+:tex2html_wrap_inline698:lthtmlCropMarkHeight:=13.62646pt
+
+:tex2html_wrap_inline698:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+[16]
+<.././Figures/FaultsHighIsland.PNG, id=65, 720.89325pt x 361.35pt>
+File: .././Figures/FaultsHighIsland.PNG Graphic file (type png)
+<use .././Figures/FaultsHighIsland.PNG>
+Package pdftex.def Info: .././Figures/FaultsHighIsland.PNG  used on input line 
+251.
+(pdftex.def)             Requested size: 504.62184pt x 252.94327pt.
+
+:tex2html_wrap703:lthtmlCropMarkHeight:=258.94327pt
+
+:tex2html_wrap703:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[17 <.././Figures/FaultsHighIsland.PNG>]
+
+:tex2html_wrap_inline894:lthtmlCropMarkHeight:=13.48248pt
+
+:tex2html_wrap_inline894:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+[18]
+
+:tex2html_wrap_inline900:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline900:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[19]
+
+:tex2html_wrap_inline902:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline902:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[20]
+
+:tex2html_wrap_inline904:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline904:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+[21]
+
+:tex2html_wrap_inline905:lthtmlCropMarkHeight:=13.05666pt
+
+:tex2html_wrap_inline905:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[22]
+
+:tex2html_wrap_inline907:lthtmlCropMarkHeight:=13.05666pt
+
+:tex2html_wrap_inline907:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
 (./images.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
-
-Package rerunfilecheck Warning: File `images.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `images.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+Package rerunfilecheck Info: File `images.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
  ) 
 Here is how much of TeX's memory you used:
- 7086 strings out of 494880
- 102238 string characters out of 6179600
- 184364 words of memory out of 5000000
- 10324 multiletter control sequences out of 15000+600000
+ 7103 strings out of 494880
+ 102644 string characters out of 6179600
+ 184719 words of memory out of 5000000
+ 10335 multiletter control sequences out of 15000+600000
  8707 words of font info for 34 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 33i,6n,26p,295b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,6n,26p,318b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on images.pdf (5 pages, 511792 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on images.pdf (23 pages, 1273970 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
