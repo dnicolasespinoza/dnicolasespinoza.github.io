@@ -482,6 +482,10 @@ $key = q/fig:SedRockAnisotropy/;
 $ref_files{$key} = "$dir".q|node16.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:SeismicCP/;
+$ref_files{$key} = "$dir".q|node35.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:ShaleCompaction/;
 $ref_files{$key} = "$dir".q|node8.html|; 
 $noresave{$key} = "$nosave";
