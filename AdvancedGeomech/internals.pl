@@ -2,12 +2,20 @@
 # Associate internals original text with physical files.
 
 
+$key = q/fig:Biot/;
+$ref_files{$key} = "$dir".q|node7.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FaultsHIB/;
 $ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracWellImaging/;
 $ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:LostHills/;
+$ref_files{$key} = "$dir".q|node5.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:stress-map-VMF/;
