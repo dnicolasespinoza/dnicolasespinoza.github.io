@@ -6,8 +6,20 @@ $key = q/fig:Biot/;
 $external_labels{$key} = "$URL/" . q|node7.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:DevWell/;
+$external_labels{$key} = "$URL/" . q|node9.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:FaultsHIB/;
 $external_labels{$key} = "$URL/" . q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracStress1/;
+$external_labels{$key} = "$URL/" . q|node6.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracStress2/;
+$external_labels{$key} = "$URL/" . q|node8.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracWellImaging/;
@@ -38,11 +50,23 @@ $external_latex_labels{$key} = q|<|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:Biot/;
-$external_latex_labels{$key} = q|1.6|; 
+$external_latex_labels{$key} = q|1.8|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:DevWell/;
+$external_latex_labels{$key} = q|1.11|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FaultsHIB/;
 $external_latex_labels{$key} = q|1.3|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracStress1/;
+$external_latex_labels{$key} = q|1.5|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracStress2/;
+$external_latex_labels{$key} = q|1.9|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracWellImaging/;

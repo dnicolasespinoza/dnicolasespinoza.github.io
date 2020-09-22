@@ -2,12 +2,7 @@ No implementation found for style `authblk'
 No implementation found for style `mathtools'
 No implementation found for style `ulem'
 No implementation found for style `soul'
-No implementation found for style `enumitem'
 
 Substitution of arg to newlabelxx delayed.
 
 ? brace missing for \oldcontentsline
-
-? brace missing for \alph
-
-counter \endtex not defined
