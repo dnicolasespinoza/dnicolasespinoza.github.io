@@ -2,6 +2,14 @@
 # Associate internals original text with physical files.
 
 
+$key = q/eq:VTIComplianceMatrix/;
+$ref_files{$key} = "$dir".q|node5.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:VTIStiffnessMatrix/;
+$ref_files{$key} = "$dir".q|node5.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:Biot/;
 $ref_files{$key} = "$dir".q|node7.html|; 
 $noresave{$key} = "$nosave";
@@ -12,6 +20,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:FaultsHIB/;
 $ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracModelPS/;
+$ref_files{$key} = "$dir".q|node6.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracStress1/;

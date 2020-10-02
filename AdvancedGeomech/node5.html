@@ -32,7 +32,7 @@
 <A
  HREF="node4.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html113"
+<A ID="tex2html118"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
@@ -42,7 +42,7 @@
  HREF="node2.html">1. Weekly Projects</A>
 <B> Previous:</B> <A
  HREF="node4.html">1.2 WP2: 3D Stress</A>
- &nbsp; <B>  <A ID="tex2html114"
+ &nbsp; <B>  <A ID="tex2html119"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
@@ -51,8 +51,10 @@
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html115"
+<LI><A ID="tex2html120"
   HREF="node5.html#SECTION00231000000000000000"><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: One-dimensional mechanical Earth model (MEM)</A>
+<LI><A ID="tex2html121"
+  HREF="node5.html#SECTION00232000000000000000"><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Vertical transverse isotropic elastic properties</A>
 </UL>
 <!--End of Table of Child-Links-->
 <HR>
@@ -113,13 +115,285 @@ At every depth (and data-point) along the vertical well:
 <TABLE>
 <CAPTION class="BOTTOM"><STRONG>Figure 1.4:</STRONG>
 Bulk rock mass density, P-wave slowness, and S-wave slowness along a vertical well in the Lost Hills field.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par1785" ALIGN="CENTER">
+<TR><TD><DIV CLASS="centerline" ID="par2170" ALIGN="CENTER">
 <IMG STYLE=""
  SRC="img30.svg"
  ALT="\includegraphics[scale=0.60]{.././Figures/LostHills.PNG}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
+<P>
+
+<H2><A ID="SECTION00232000000000000000">
+<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Vertical transverse isotropic elastic properties</A>
+</H2>
+
+<P>
+VTI compliance matrix (3 - vertical direction perpendicular to bedding):
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:VTIComplianceMatrix"></A><!-- MATH
+ \begin{equation}
+%compliance matrix
+	\left[
+		\begin{array} {c}
+			\varepsilon_{11} \cfrac{}{}\\
+			\varepsilon_{22} \cfrac{}{}\\
+			\varepsilon_{33} \cfrac{}{}\\
+			2 \varepsilon_{23} \cfrac{}{}\\
+			2 \varepsilon_{13} \cfrac{}{}\\
+			2 \varepsilon_{12} \cfrac{}{}
+		\end{array}
+	\right] =
+	\left[
+	\begin{array}{cccccc}
+		+\cfrac{1}{E_h} & -\cfrac{\nu_h}{E_h} & -\cfrac{\nu_v}{E_v} & 0 & 0 & 0\\
+		-\cfrac{\nu_h}{E_h} & +\cfrac{1}{E_h} & -\cfrac{\nu_v}{E_v} & 0 & 0 & 0\\
+		-\cfrac{\nu_v}{E_v} & -\cfrac{\nu_v}{E_v} & +\cfrac{1}{E_v} & 0 & 0 & 0\\
+		0 & 0 & 0 & \cfrac{1}{G_v} & 0 & 0 \\
+		0 & 0 & 0 & 0 & \cfrac{1}{G_v} & 0 \\
+		0 & 0 & 0 & 0 & 0 & \cfrac{1}{G_h}
+	\end{array}
+	\right] \:
+	\left[
+		\begin{array} {c}
+			\sigma_{11} \cfrac{}{}\\
+			\sigma_{22} \cfrac{}{}\\
+			\sigma_{33} \cfrac{}{}\\
+			\sigma_{23} \cfrac{}{}\\
+			\sigma_{13} \cfrac{}{}\\
+			\sigma_{12} \cfrac{}{}
+		\end{array}
+	\right]
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img31.svg"
+ ALT="\begin{displaymath}%compliance matrix
+\left[
+\begin{array}{c}
+\varepsilon_{11} ...
+...ma_{13} \cfrac{}{}\\
+\sigma_{12} \cfrac{}{}
+\end{array}\right]\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+where and <!-- MATH
+ $G_h = \cfrac{E_h}{2(1+\nu_h)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 6.15ex; vertical-align: -2.28ex; " SRC="img32.svg"
+ ALT="$G_h = \cfrac{E_h}{2(1+\nu_h)}$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img33.svg"
+ ALT="$G_v$"></SPAN> is not related to the other parameters.
+
+<P>
+In terms of stiffness coefficients:
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+E_h = \frac{(C_{11}-C_{12}) \left[ C_{33}(C_{11}+C_{12})-2\: C_{13}^2 \right]}{C_{11}C_{33}–C_{13}^2}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 6.19ex; vertical-align: -2.41ex; " SRC="img34.svg"
+ ALT="$\displaystyle E_h = \frac{(C_{11}-C_{12}) \left[ C_{33}(C_{11}+C_{12})-2\: C_{13}^2 \right]}{C_{11}C_{33}–C_{13}^2} $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+E_v = C_{33} - \frac{2\:C_{13}^2}{C_{11}+C_{12}}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.64ex; vertical-align: -2.05ex; " SRC="img35.svg"
+ ALT="$\displaystyle E_v = C_{33} - \frac{2\:C_{13}^2}{C_{11}+C_{12}} $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\nu_h =  \frac{C_{13}}{C_{11}+C_{12}}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img36.svg"
+ ALT="$\displaystyle \nu_h = \frac{C_{13}}{C_{11}+C_{12}} $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+\nu_v =  \frac{C_{12}C_{33}-C_{13}^2}{C_{11}C_{33}+C_{13}^2}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 6.00ex; vertical-align: -2.41ex; " SRC="img37.svg"
+ ALT="$\displaystyle \nu_v = \frac{C_{12}C_{33}-C_{13}^2}{C_{11}C_{33}+C_{13}^2}$">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+G_v = C_{44}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img38.svg"
+ ALT="$\displaystyle G_v = C_{44} $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+G_h = C_{66} =  \frac{C_{11}-C_{12}}{2}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img39.svg"
+ ALT="$\displaystyle G_h = C_{66} = \frac{C_{11}-C_{12}}{2} $">
+</DIV><P></P>
+
+<P>
+VTI stiffness matrix (3 - vertical direction perpendicular to bedding):
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:VTIStiffnessMatrix"></A><!-- MATH
+ \begin{equation}
+%compliance matrix
+	\left[
+		\begin{array} {c}
+			\sigma_{11} \\
+			\sigma_{22} \\
+			\sigma_{33} \\
+			\sigma_{23} \\
+			\sigma_{13} \\
+			\sigma_{12}
+		\end{array}
+	\right]	
+	= 
+	\left[
+	\begin{array}{cccccc}
+		C_{11} & C_{12} & C_{13} & 0 & 0 & 0\\
+		C_{12} & C_{11} & C_{13} & 0 & 0 & 0\\
+		C_{13} & C_{13} & C_{33} & 0 & 0 & 0\\
+		0 & 0 & 0 & C_{44} & 0 & 0 \\
+		0 & 0 & 0 & 0 & C_{44} & 0 \\
+		0 & 0 & 0 & 0 & 0 & C_{66}
+	\end{array}
+	\right]
+	\:
+	\left[
+		\begin{array} {c}
+			\varepsilon_{11} \\
+			\varepsilon_{22} \\
+			\varepsilon_{33} \\
+			2 \varepsilon_{23}  \\
+			2 \varepsilon_{13}  \\
+			2 \varepsilon_{12} 
+		\end{array}
+	\right]
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img40.svg"
+ ALT="\begin{displaymath}%compliance matrix
+\left[
+\begin{array}{c}
+\sigma_{11} \\
+\...
+...\
+2 \varepsilon_{13} \\
+2 \varepsilon_{12}
+\end{array}\right]\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+or in terms of Young moduli and Poisson ratios
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+C_{11} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] \left( \frac{E_h E_v - \nu_v^2 E_h^2}{1+\nu_h} \right)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.95ex; vertical-align: -2.31ex; " SRC="img41.svg"
+ ALT="$\displaystyle C_{11} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] \left( \frac{E_h E_v - \nu_v^2 E_h^2}{1+\nu_h} \right) $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+C_{33} =  \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] (E_v^2 - \nu_h E_v^2)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img42.svg"
+ ALT="$\displaystyle C_{33} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] (E_v^2 - \nu_h E_v^2) $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+C_{12} =  \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] \left( \frac{\nu_v^2 E_h^2 + \nu_h E_h E_v}{1+\nu_h} \right)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.95ex; vertical-align: -2.31ex; " SRC="img43.svg"
+ ALT="$\displaystyle C_{12} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] \left( \frac{\nu_v^2 E_h^2 + \nu_h E_h E_v}{1+\nu_h} \right) $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+C_{13} =  \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] (\nu_v E_h E_v)
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img44.svg"
+ ALT="$\displaystyle C_{13} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] (\nu_v E_h E_v) $">
+</DIV><P></P>
+
+<P>
+<P><!-- MATH
+ \begin{displaymath}
+C_{66} = \frac{C_{11}-C_{12}}{2} = G_h = \cfrac{E_h}{2(1+\nu_h)}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 6.15ex; vertical-align: -2.28ex; " SRC="img45.svg"
+ ALT="$\displaystyle C_{66} = \frac{C_{11}-C_{12}}{2} = G_h = \cfrac{E_h}{2(1+\nu_h)} $">
+</DIV><P></P>
+
+<P>
+The parameter <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img46.svg"
+ ALT="$C_{44}$"></SPAN> is independent of all other parameters.
+
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -133,7 +407,7 @@ Bulk rock mass density, P-wave slowness, and S-wave slowness along a vertical we
 <A
  HREF="node4.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html113"
+<A ID="tex2html118"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
@@ -143,7 +417,7 @@ Bulk rock mass density, P-wave slowness, and S-wave slowness along a vertical we
  HREF="node2.html">1. Weekly Projects</A>
 <B> Previous:</B> <A
  HREF="node4.html">1.2 WP2: 3D Stress</A>
- &nbsp; <B>  <A ID="tex2html114"
+ &nbsp; <B>  <A ID="tex2html119"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 
