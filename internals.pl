@@ -78,6 +78,10 @@ $key = q/eq:SGcalc/;
 $ref_files{$key} = "$dir".q|node37.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:StiffnessMatrix/;
+$ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:UCS-CohStrength-q/;
 $ref_files{$key} = "$dir".q|node25.html|; 
 $noresave{$key} = "$nosave";
@@ -614,6 +618,10 @@ $key = q/fig:TotalStressPath/;
 $ref_files{$key} = "$dir".q|node61.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TriaxSchematic/;
+$ref_files{$key} = "$dir".q|node25.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:TriaxialCell/;
 $ref_files{$key} = "$dir".q|node25.html|; 
 $noresave{$key} = "$nosave";
@@ -659,6 +667,10 @@ $ref_files{$key} = "$dir".q|node15.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:YoungPoisson/;
+$ref_files{$key} = "$dir".q|node15.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:YoungSummary/;
 $ref_files{$key} = "$dir".q|node15.html|; 
 $noresave{$key} = "$nosave";
 
