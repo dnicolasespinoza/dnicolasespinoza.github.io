@@ -15,7 +15,7 @@ $external_labels{$key} = "$URL/" . q|node7.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:DevWell/;
-$external_labels{$key} = "$URL/" . q|node9.html|; 
+$external_labels{$key} = "$URL/" . q|node10.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FaultsHIB/;
@@ -31,7 +31,7 @@ $external_labels{$key} = "$URL/" . q|node6.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracStress2/;
-$external_labels{$key} = "$URL/" . q|node8.html|; 
+$external_labels{$key} = "$URL/" . q|node9.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracWellImaging/;
