@@ -42,6 +42,14 @@ $key = q/fig:LostHills/;
 $ref_files{$key} = "$dir".q|node5.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:PKNequations/;
+$ref_files{$key} = "$dir".q|node12.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressShadow/;
+$ref_files{$key} = "$dir".q|node11.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:stress-map-VMF/;
 $ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";

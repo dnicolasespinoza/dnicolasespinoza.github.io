@@ -42,6 +42,14 @@ $key = q/fig:LostHills/;
 $external_labels{$key} = "$URL/" . q|node5.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:PKNequations/;
+$external_labels{$key} = "$URL/" . q|node12.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressShadow/;
+$external_labels{$key} = "$URL/" . q|node11.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:stress-map-VMF/;
 $external_labels{$key} = "$URL/" . q|node3.html|; 
 $noresave{$key} = "$nosave";
@@ -99,6 +107,14 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:LostHills/;
 $external_latex_labels{$key} = q|1.4|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:PKNequations/;
+$external_latex_labels{$key} = q|1.14|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressShadow/;
+$external_latex_labels{$key} = q|1.13|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:stress-map-VMF/;
