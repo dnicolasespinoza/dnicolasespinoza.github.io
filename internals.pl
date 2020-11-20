@@ -110,6 +110,10 @@ $key = q/eq:hydrostporepress/;
 $ref_files{$key} = "$dir".q|node7.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/eq:matrixRPG/;
+$ref_files{$key} = "$dir".q|node37.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/eq:straintensor/;
 $ref_files{$key} = "$dir".q|node14.html|; 
 $noresave{$key} = "$nosave";
@@ -148,6 +152,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:BakerHughesJS/;
 $ref_files{$key} = "$dir".q|node35.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BlockFracsPerm/;
+$ref_files{$key} = "$dir".q|node38.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:BoreholeImaging/;
@@ -634,6 +642,10 @@ $key = q/fig:USGSstressmap/;
 $ref_files{$key} = "$dir".q|node9.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:WellIntro/;
+$ref_files{$key} = "$dir".q|node42.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:WellOrientation/;
 $ref_files{$key} = "$dir".q|node47.html|; 
 $noresave{$key} = "$nosave";
@@ -700,6 +712,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:dikes/;
 $ref_files{$key} = "$dir".q|node53.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:dsn/;
+$ref_files{$key} = "$dir".q|node37.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:elastic-summary/;
@@ -888,6 +904,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/sec:TensileFracs/;
 $ref_files{$key} = "$dir".q|node45.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:Thermoelasticity/;
+$ref_files{$key} = "$dir".q|node19.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:poroelasticity/;
