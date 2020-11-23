@@ -190,9 +190,9 @@ $key = q/dS_vslashdz;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="|."$dir".q|img87.svg"
  ALT="$dS_v/dz$">|; 
 
-$key = q/de=upsilondvarepsilon_p^p;MSF=1.6;LFS=11;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 2.70ex; vertical-align: -0.74ex; " SRC="|."$dir".q|img108.svg"
- ALT="$de= \upsilon d\varepsilon_p^p$">|; 
+$key = q/de=-upsilondvarepsilon_p;MSF=1.6;LFS=11;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="|."$dir".q|img108.svg"
+ ALT="$de= -\upsilon d\varepsilon_p$">|; 
 
 $key = q/displaystyleC_{11}=left[frac{1}{(1-nu_h)E_v-2nu_v^2E_h}right]left(frac{E_hE_v-nu_v^2E_h^2}{1+nu_h}right);MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 5.95ex; vertical-align: -2.31ex; " SRC="|."$dir".q|img41.svg"
@@ -238,21 +238,21 @@ $key = q/displaystylenu_v=frac{C_{12}C_{33}-C_{13}^2}{C_{11}C_{33}+C_{13}^2};MSF
 $cached_env_img{$key} = q|<IMG STYLE="height: 6.00ex; vertical-align: -2.41ex; " SRC="|."$dir".q|img37.svg"
  ALT="$\displaystyle \nu_v = \frac{C_{12}C_{33}-C_{13}^2}{C_{11}C_{33}+C_{13}^2}$">|; 
 
-$key = q/dp_o^prime=dvarepsilon_p^pfrac{upsilon}{lambda-kappa}p_o^prime;MSF=1.6;LFS=11;AAT/;
-$cached_env_img{$key} = q|<IMG STYLE="height: 3.04ex; vertical-align: -1.08ex; " SRC="|."$dir".q|img109.svg"
- ALT="$dp_o^\prime = d\varepsilon_p^p \frac{\upsilon}{\lambda-\kappa} p_o^\prime$">|; 
+$key = q/dp_o^prime=dvarepsilon_{p^prime}^pfrac{upsilon}{lambda-kappa}p_o^prime;MSF=1.6;LFS=11;AAT/;
+$cached_env_img{$key} = q|<IMG STYLE="height: 3.15ex; vertical-align: -1.20ex; " SRC="|."$dir".q|img109.svg"
+ ALT="$dp_o^\prime = d\varepsilon_{p^\prime}^p \frac{\upsilon}{\lambda-\kappa} p_o^\prime$">|; 
 
-$key = q/dq=1.2dp^prime;MSF=1.6;LFS=11;AAT/;
+$key = q/dq=0.9:dp^prime;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="|."$dir".q|img102.svg"
- ALT="$dq=1.2dp^\prime$">|; 
+ ALT="$dq=0.9 \: dp^\prime$">|; 
 
 $key = q/dq=3dp^prime;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="|."$dir".q|img92.svg"
  ALT="$dq=3dp^\prime$">|; 
 
-$key = q/dvarepsilon_p^e=frac{kappa}{upsilon}frac{dp^prime}{p^prime};:dvarepsilon_q^e=frac{dq}{3G};MSF=1.6;LFS=11;AAT/;
+$key = q/dvarepsilon_{p^prime}^e=frac{kappa}{upsilon}frac{dp^prime}{p^prime};:dvarepsilon_q^e=frac{dq}{3G};MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 3.69ex; vertical-align: -1.24ex; " SRC="|."$dir".q|img104.svg"
- ALT="$d\varepsilon_p^e = \frac{\kappa}{\upsilon} \frac{dp^\prime}{p^\prime}; \: d\varepsilon_q^e = \frac{dq}{3G} $">|; 
+ ALT="$d\varepsilon_{p^\prime}^e = \frac{\kappa}{\upsilon} \frac{dp^\prime}{p^\prime}; \: d\varepsilon_q^e = \frac{dq}{3G} $">|; 
 
 $key = q/e;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="|."$dir".q|img101.svg"
@@ -321,12 +321,12 @@ $key = q/lambda_p;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="|."$dir".q|img90.svg"
  ALT="$\lambda_p$">|; 
 
-$key = q/left[{matrix}dvarepsilon_p^pdvarepsilon_q^p{matrix}right]=frac{lambda-kappa}{upsM^2-eta^2}{matrix}right]left[{matrix}dp^primedq{matrix}right];MSF=1.6;LFS=11;AAT/;
+$key = q/left[{matrix}dvarepsilon_{p^prime}^pdvarepsilon_q^p{matrix}right]=frac{lambda-kaM^2-eta^2}{matrix}right]left[{matrix}dp^primedq{matrix}right];MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG STYLE="height: 7.15ex; vertical-align: -3.01ex; " SRC="|."$dir".q|img105.svg"
  ALT="$\left[ \begin{matrix}
-d\varepsilon_p^p \\\\
+d\varepsilon_{p^\prime}^p \\\\
 d\varepsilon_q^p\\\\
-\end{matrix} \...
+\end{...
 ...trix} \right]
 \left[ \begin{matrix}
 dp^\prime \\\\
