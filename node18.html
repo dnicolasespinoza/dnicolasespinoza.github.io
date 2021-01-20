@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3.6 Time-dependent deformation: Visco-elasticity</TITLE>
-<META NAME="description" CONTENT="3.6 Time-dependent deformation: Visco-elasticity">
+<TITLE>3.5 Permanent deformation: Elasto-plasticity</TITLE>
+<META NAME="description" CONTENT="3.5 Permanent deformation: Elasto-plasticity">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -27,133 +27,79 @@
  HREF="node19.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node12.html">
+ HREF="node13.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node17.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html640"
+<A ID="tex2html656"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node19.html">3.7 Multiphysics problems</A>
+ HREF="node19.html">3.6 Time-dependent deformation: Visco-elasticity</A>
 <B> Up:</B> <A
- HREF="node12.html">3. Fundamentals of Solid</A>
+ HREF="node13.html">3. Fundamentals of Solid</A>
 <B> Previous:</B> <A
- HREF="node17.html">3.5 Permanent deformation: Elasto-plasticity</A>
- &nbsp; <B>  <A ID="tex2html641"
+ HREF="node17.html">3.4 Elastic anisotropy</A>
+ &nbsp; <B>  <A ID="tex2html657"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A ID="SECTION00460000000000000000">
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Time-dependent deformation: Visco-elasticity</A>
+<H1><A ID="SECTION00450000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Permanent deformation: Elasto-plasticity</A>
 </H1>
 
 <P>
-So far, we have assumed that rock strain-stress response is independent of loading rate, however, this is not true.
-The stiffness of rocks is not the same if loaded in a time frame of thousands of years (geological time), years (reservoir production time), or during a few minutes (drilling and laboratory time).
-Rocks tend to be softer and more ductile as the loading time frame increases.
+Most rocks will exhibit permanent (plastic) deformation when loaded at large strains <!-- MATH
+ $\varepsilon \gtrsim 0.001$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.43ex; vertical-align: -0.64ex; " SRC="img453.svg"
+ ALT="$\varepsilon \gtrsim 0.001$"></SPAN>.
+Plastic deformation includes plastic compression strains and plastic shear strains.
+The theory of elasto-plasticity is covered in the Advanced Geomechanics course <kbd><A ID="tex2html86"
+  HREF="https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj">https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj</A></kbd>.
+Figure <A HREF="#fig:LoadingUnloading">3.23</A> shows an example of permanent deformation during a typical deviatoric loading test to measure Young's modulus.
+First-time loading usually involves plastic deformation and creep.
+Therefore the loading Young's modulus <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img454.svg"
+ ALT="$E_{load}$"></SPAN> results smaller than the unloading modulus <!-- MATH
+ $E_{unload}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img455.svg"
+ ALT="$E_{unload}$"></SPAN>.
+While <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img454.svg"
+ ALT="$E_{load}$"></SPAN> calculation lumps elastic, plastic, and creep strains, <!-- MATH
+ $E_{unload}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img455.svg"
+ ALT="$E_{unload}$"></SPAN> involves mostly elastic strains.
+Notice the the re-loading modulus is similar to the unloading modulus <!-- MATH
+ $E_{unload} \sim E_{unload}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img456.svg"
+ ALT="$E_{unload} \sim E_{unload}$"></SPAN> because a re-loading path is not a first-time loading.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:StrainrateStiffness"></A><A ID="2948"></A>
+<DIV class="CENTER"><A ID="fig:LoadingUnloading"></A><A ID="3017"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.24:</STRONG>
-Strain-rate dependent stiffness. [Put your own data] </CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par22604" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img456.svg"
- ALT="\includegraphics[scale=0.50]{.././Figures/split/5B-18.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-Another manifestation of visco-elasticity is time-dependent deformation, usually known as &ldquo;creep&rdquo;.
-Whenever a change of stress is applied and set constant, deformations may continue with time.
-An example of this type of response is when drilling through salt rocks. 
-Stresses intensify around the wellbore after the hole is bored. 
-The wellbore walls will deform if left uncased and stick to the drilling string.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:Creep"></A><A ID="2725"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.25:</STRONG>
-Time-dependent deformation: Creep.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par22609" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 3.23:</STRONG>
+Loading and unloading stress paths for a shale sample. Two unloading-reloading paths were performed before rock failure. Notice that <!-- MATH
+ $E_{load} < E_{unload}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img15.svg"
+ ALT="$E_{load} &lt; E_{unload}$"></SPAN> because of plastic and creep strains.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par22782" ALIGN="CENTER">
 <IMG STYLE=""
  SRC="img457.svg"
- ALT="\includegraphics[scale=0.60]{.././Figures/split/5-CreepTXC.pdf}"></DIV></TD></TR>
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/LoadingUnloading.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-One other manifestation of visco-elasticity is time-dependent stress change or stress relaxation.
-Whenever a change of strain is applied and set constant, stresses may relax with time.
-For example, unconsolidated sands may relax horizontal stresses with time after a tectonic strain is applied (Figure <A HREF="#fig:StressRelaxField">3.27</A>). 
-Therefore, neglecting visco-elasticity may result in an overestimation of horizontal stresses in unconsolidated sands with a purely elastic model.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:StressRelax"></A><A ID="2731"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.26:</STRONG>
-Time-dependent deformation: stress relaxation.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par22614" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img458.svg"
- ALT="\includegraphics[scale=0.60]{.././Figures/split/5-StressRelaxTXC.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-
-<DIV class="CENTER"><A ID="fig:StressRelaxField"></A><A ID="2952"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.27:</STRONG>
-Impact of stress relaxation in horizontal stresses in the subsurface. (a) Decrease of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> due to deviatoric stress relaxation caused by a paleo-tectonic strain <!-- MATH
- $\varepsilon_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img16.svg"
- ALT="$\varepsilon _{Hmax}$"></SPAN>. (b)Increase of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN> due to deviatoric stress relaxation caused by overburden stress.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par22619" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img459.svg"
- ALT="\includegraphics[scale=0.45]{.././Figures/split/4-StressRelaxField.PNG}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node19.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node12.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node17.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html640"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node19.html">3.7 Multiphysics problems</A>
-<B> Up:</B> <A
- HREF="node12.html">3. Fundamentals of Solid</A>
-<B> Previous:</B> <A
- HREF="node17.html">3.5 Permanent deformation: Elasto-plasticity</A>
- &nbsp; <B>  <A ID="tex2html641"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
+<BR><HR>
 
 </BODY>
 </HTML>

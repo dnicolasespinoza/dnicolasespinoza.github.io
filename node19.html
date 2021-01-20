@@ -3,8 +3,8 @@
 <!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3.7 Multiphysics problems</TITLE>
-<META NAME="description" CONTENT="3.7 Multiphysics problems">
+<TITLE>3.6 Time-dependent deformation: Visco-elasticity</TITLE>
+<META NAME="description" CONTENT="3.6 Time-dependent deformation: Visco-elasticity">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -27,292 +27,107 @@
  HREF="node20.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node12.html">
+ HREF="node13.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node18.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html642"
+<A ID="tex2html658"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node20.html">3.8 Problems</A>
+ HREF="node20.html">3.7 Multiphysics problems</A>
 <B> Up:</B> <A
- HREF="node12.html">3. Fundamentals of Solid</A>
+ HREF="node13.html">3. Fundamentals of Solid</A>
 <B> Previous:</B> <A
- HREF="node18.html">3.6 Time-dependent deformation: Visco-elasticity</A>
- &nbsp; <B>  <A ID="tex2html643"
+ HREF="node18.html">3.5 Permanent deformation: Elasto-plasticity</A>
+ &nbsp; <B>  <A ID="tex2html659"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html644"
-  HREF="node19.html#SECTION00471000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">1</SPAN> Poro-elasticity</A>
-<LI><A ID="tex2html645"
-  HREF="node19.html#SECTION00472000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">2</SPAN> Thermo-elasticity</A>
-</UL>
-<!--End of Table of Child-Links-->
-<HR>
-
-<H1><A ID="SECTION00470000000000000000">
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN> Multiphysics problems</A>
+<H1><A ID="SECTION00460000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Time-dependent deformation: Visco-elasticity</A>
 </H1>
 
 <P>
-
-<H2><A ID="SECTION00471000000000000000"></A>
-<A ID="sec:poroelasticity"></A>
-<BR>
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">1</SPAN> Poro-elasticity
-</H2>
-
-<P>
-When rocks deform, most of the deformation transfers into changes of porosity. 
-As a matter of fact, the solid phase can also deform and change volume. 
-In that case the equation that links stresses and deformations <!-- MATH
- $\uuline{\varepsilon} = \uuline{D} \: \uuline{\sigma}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img460.svg"
- ALT="$\uuline{\varepsilon} = \uuline{D} \: \uuline{\sigma}$"></SPAN> needs to be corrected according to Biot's effective stress:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\uuline{\sigma} = \uuline{S} - \alpha P_p \uuline{I}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img461.svg"
- ALT="$\displaystyle \uuline{\sigma} = \uuline{S} - \alpha P_p \uuline{I}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">41</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P> 
-
-<P>
-where <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img23.svg"
- ALT="$\alpha $"></SPAN> is the Biot coefficient and <!-- MATH
- $\uuline{I}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img462.svg"
- ALT="$\uuline{I}$"></SPAN> is the identity tensor. 
-In the case of linear elastic and isotropic porous media, the Biot coefficient is:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\alpha = 1 - \frac{K_{drained}}{K_{unj}}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.62ex; vertical-align: -2.38ex; " SRC="img463.svg"
- ALT="$\displaystyle \alpha = 1 - \frac{K_{drained}}{K_{unj}}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">42</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P> 
-
-<P>
-where <!-- MATH
- $K_{drained}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img464.svg"
- ALT="$K_{drained}$"></SPAN> is the drained bulk modulus of the porous solid and <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img465.svg"
- ALT="$K_{unj}$"></SPAN> is the unjacketed bulk modulus.
-The unjacketed bulk modulus is equal to the mineral bulk modulus <!-- MATH
- $K_{unj} = K_{m}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img466.svg"
- ALT="$K_{unj} = K_{m}$"></SPAN> when all porosity is connected and the rock has a mono-mineral composition.
-In anisotropic media, the poroelasticity correction factor becomes a tensor <!-- MATH
- $\uuline{\alpha}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img467.svg"
- ALT="$\uuline{\alpha}$"></SPAN>.
-The corrections for poroelasticity <!-- MATH
- $\alpha \neq 1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img468.svg"
- ALT="$\alpha \neq 1$"></SPAN> become significant in tight rocks with high stiffness, and low and unconnected porosity.
+So far, we have assumed that rock strain-stress response is independent of loading rate, however, this is not true.
+The stiffness of rocks is not the same if loaded in a time frame of thousands of years (geological time), years (reservoir production time), or during a few minutes (drilling and laboratory time).
+Rocks tend to be softer and more ductile as the loading time frame increases.
 
 <P>
 
-<H2><A ID="SECTION00472000000000000000"></A>
-<A ID="sec:Thermoelasticity"></A>
-<BR>
-<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">2</SPAN> Thermo-elasticity
-</H2>
-
-<P>
-Changes of temperature in solids change the equilibrium distance between molecules, and therefore induce strains.
-Imagine a solid heated up, but not allowed to dilate in vertical direction (Figure <A HREF="#fig:ThermalSwellStress">3.28</A>). 
-The result is an increase of stress in vertical direction rather than a deformation in vertical direction.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:ThermalSwellStress"></A><A ID="2767"></A>
+<DIV class="CENTER"><A ID="fig:StrainrateStiffness"></A><A ID="3019"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 3.28:</STRONG>
-Thermo-elasticity example of dilation thermal stress.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par22659" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 3.24:</STRONG>
+Strain-rate dependent stiffness. [Put your own data] </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par22792" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img469.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/4-23.pdf}"></DIV></TD></TR>
+ SRC="img458.svg"
+ ALT="\includegraphics[scale=0.50]{.././Figures/split/5B-18.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-The coefficient of thermal dilation <SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img470.svg"
- ALT="$\alpha_L$"></SPAN> quantifies strains as a function of changes of temperature <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img264.svg"
- ALT="$T$"></SPAN> at constant pressure <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img471.svg"
- ALT="$p$"></SPAN>, and it is defined as 
+Another manifestation of visco-elasticity is time-dependent deformation, usually known as &ldquo;creep&rdquo;.
+Whenever a change of stress is applied and set constant, deformations may continue with time.
+An example of this type of response is when drilling through salt rocks. 
+Stresses intensify around the wellbore after the hole is bored. 
+The wellbore walls will deform if left uncased and stick to the drilling string.
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\alpha_L = \left. \cfrac{1}{L} \cfrac{ \mathrm{d} L}{ \mathrm{d} T} \right|_p
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 7.59ex; vertical-align: -3.45ex; " SRC="img472.svg"
- ALT="$\displaystyle \alpha_L = \left. \cfrac{1}{L} \cfrac{ \mathrm{d} L}{ \mathrm{d} T} \right\vert _p$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">43</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
+
+<DIV class="CENTER"><A ID="fig:Creep"></A><A ID="2796"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.25:</STRONG>
+Time-dependent deformation: Creep.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par22797" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img459.svg"
+ ALT="\includegraphics[scale=0.60]{.././Figures/split/5-CreepTXC.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+One other manifestation of visco-elasticity is time-dependent stress change or stress relaxation.
+Whenever a change of strain is applied and set constant, stresses may relax with time.
+For example, unconsolidated sands may relax horizontal stresses with time after a tectonic strain is applied (Figure <A HREF="#fig:StressRelaxField">3.27</A>). 
+Therefore, neglecting visco-elasticity may result in an overestimation of horizontal stresses in unconsolidated sands with a purely elastic model.
 
 <P>
-Under unconstrained (displacement) conditions, a negative change in temperature causes shrinkage and a positive change in temperature causes dilation.
-The elastic equations extended to consider thermal changes make explicit that stresses can be changed as a result of a change in temperature <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img473.svg"
- ALT="$\Delta T$"></SPAN> and/or as a result of a change of volumetric strains. 
 
+<DIV class="CENTER"><A ID="fig:StressRelax"></A><A ID="2802"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.26:</STRONG>
+Time-dependent deformation: stress relaxation.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par22802" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img460.svg"
+ ALT="\includegraphics[scale=0.60]{.././Figures/split/5-StressRelaxTXC.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:LameThermoElasticity"></A><!-- MATH
- \begin{equation}
-\left\lbrace
-	\begin{array}{rcl}
-		\sigma_{11} & = & (\lambda + 2 \mu) \: \varepsilon_{11} + \lambda \: \varepsilon_{22} + \lambda \: \varepsilon_{33} + 3 K \alpha_L \Delta T \\
-		\sigma_{22} & = & \lambda \: \varepsilon_{11} + (\lambda + 2 \mu) \: \varepsilon_{22} + \lambda \: \varepsilon_{33} + 3 K \alpha_L \Delta T \\
-		\sigma_{33} & = & \lambda \: \varepsilon_{11} + \lambda \: \varepsilon_{22} + (\lambda + 2 \mu) \: \varepsilon_{33} + 3 K \alpha_L \Delta T \\
-		\sigma_{23} & = & 2 \mu \: \varepsilon_{23}\\
-		\sigma_{13} & = & 2 \mu \: \varepsilon_{13}\\
-		\sigma_{12} & = & 2 \mu \: \varepsilon_{12}\\
-	\end{array}
-	\right.
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img474.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{rcl}
-\sigma_{11} &amp; = &amp; (\lambda + ...
-...igma_{12} &amp; = &amp; 2 \mu \: \varepsilon_{12}\\
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">44</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
 
-<P>
-Eq. <A HREF="#eq:LameThermoElasticity">3.44</A> does not include the effects of pore pressure.
-The coupled thermo-poro-elastic equations are covered in the Advanced Geomechanics course.
-
-<P>
-Thermal(-induced) stresses can cause reductions in fracture gradient when drilling with relatively cold drilling mud. 
-Thermal(-induced) stresses can also cause enhanced fractured reactivation when injecting cold fluids in a hot reservoir, such as in deep geothermal energy recovery.
-
-<P>
- <BR>
-<SPAN  CLASS="textit">EXAMPLE 3.6</SPAN>: Derive an expression of the thermal swelling stress (in vertical direction) for the example shown in Figure <A HREF="#fig:ThermalSwellStress">3.28</A>.
-
-<P>
-<BR>
-<BR>
-SOLUTION <BR>
-Let us assume the axis 3 in the vertical direction, then <!-- MATH
- $\sigma_{11}=\sigma_{22}=0$
+<DIV class="CENTER"><A ID="fig:StressRelaxField"></A><A ID="3023"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.27:</STRONG>
+Impact of stress relaxation in horizontal stresses in the subsurface. (a) Decrease of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN> due to deviatoric stress relaxation caused by a paleo-tectonic strain <!-- MATH
+ $\varepsilon_{Hmax}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img475.svg"
- ALT="$\sigma_{11}=\sigma_{22}=0$"></SPAN>, <!-- MATH
- $\varepsilon_{11}=\varepsilon_{22} \neq 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img476.svg"
- ALT="$\varepsilon_{11}=\varepsilon_{22} \neq 0$"></SPAN>, <!-- MATH
- $\varepsilon_{33}=0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img477.svg"
- ALT="$\varepsilon_{33}=0$"></SPAN>.
-Then, for <!-- MATH
- $\Delta T \neq 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img478.svg"
- ALT="$\Delta T \neq 0$"></SPAN>, a simplification of Eq. <A HREF="#eq:LameThermoElasticity">3.44</A> results in,
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\left\lbrace
-	\begin{array}{rcl}
-		0 & = & (\lambda + 2 \mu) \: \varepsilon_{11} + \lambda \: \varepsilon_{11} + 3 K \alpha_L \Delta T\\
-		\sigma_{33} & = & \lambda \: \varepsilon_{11} + \lambda \: \varepsilon_{11} + 3 K \alpha_L \Delta T \\
-	\end{array}
-	\right.
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img479.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{rcl}
-0 &amp; = &amp; (\lambda + 2 \mu) \: ...
-...\varepsilon_{11} + 3 K \alpha_L \Delta T \\
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Solving for <!-- MATH
- $\varepsilon_{11}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img330.svg"
- ALT="$\varepsilon_{11}$"></SPAN> and pluging it the <!-- MATH
- $\sigma_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img327.svg"
- ALT="$\sigma_{33}$"></SPAN> equation results in
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\sigma_{33} = \left( \frac{6-\mu/K}{3+\mu/K} \right) K \alpha_L \Delta T \: \: \blacksquare
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img480.svg"
- ALT="$\displaystyle \sigma_{33} = \left( \frac{6-\mu/K}{3+\mu/K} \right) K \alpha_L \Delta T \: \: \blacksquare
-$">
-</DIV><P></P>
- <BR>
-
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img16.svg"
+ ALT="$\varepsilon _{Hmax}$"></SPAN>. (b)Increase of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN> due to deviatoric stress relaxation caused by overburden stress.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par22807" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img461.svg"
+ ALT="\includegraphics[scale=0.45]{.././Figures/split/4-StressRelaxField.PNG}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -321,22 +136,22 @@ $">
  HREF="node20.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node12.html">
+ HREF="node13.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node18.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html642"
+<A ID="tex2html658"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node20.html">3.8 Problems</A>
+ HREF="node20.html">3.7 Multiphysics problems</A>
 <B> Up:</B> <A
- HREF="node12.html">3. Fundamentals of Solid</A>
+ HREF="node13.html">3. Fundamentals of Solid</A>
 <B> Previous:</B> <A
- HREF="node18.html">3.6 Time-dependent deformation: Visco-elasticity</A>
- &nbsp; <B>  <A ID="tex2html643"
+ HREF="node18.html">3.5 Permanent deformation: Elasto-plasticity</A>
+ &nbsp; <B>  <A ID="tex2html659"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 
