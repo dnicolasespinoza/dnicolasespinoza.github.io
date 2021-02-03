@@ -1,4 +1,4 @@
-# LaTeX2HTML 2018.3 (Released July 19, 2018)
+# LaTeX2HTML 2018 (Released Feb 1, 2018)
 # Associate internals original text with physical files.
 
 
@@ -552,6 +552,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:StressLogExample/;
 $ref_files{$key} = "$dir".q|node56.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogPermian/;
+$ref_files{$key} = "$dir".q|node11.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressLogWF/;

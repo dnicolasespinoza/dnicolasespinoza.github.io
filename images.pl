@@ -1,4 +1,4 @@
-# LaTeX2HTML 2018.3 (Released July 19, 2018)
+# LaTeX2HTML 2018 (Released Feb 1, 2018)
 # Associate images original text with physical files.
 
 
@@ -269,7 +269,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; "
 $key = q/DeltaP_pslashDeltazsim0.44;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="123" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img7.png"
+ SRC="|."$dir".q|img8.png"
  ALT="$\Delta P_p / \Delta z \sim 0.44$">|; 
 
 $key = q/DeltaPslashL;MSF=1.6;LFS=11;AAT/;
@@ -279,13 +279,13 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; "
 $key = q/DeltaS_hslashDeltaz=0.63;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="124" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img9.png"
+ SRC="|."$dir".q|img10.png"
  ALT="$\Delta S_h / \Delta z = 0.63$">|; 
 
 $key = q/DeltaS_vslashDeltazsim1;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="101" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img6.png"
+ SRC="|."$dir".q|img7.png"
  ALT="$\Delta S_v / \Delta z \sim 1$">|; 
 
 $key = q/DeltaS_{11}<0;MSF=1.6;LFS=11;AAT/;
@@ -403,7 +403,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 2.33ex; vertical-align: -0.30ex; "
 $key = q/E=5times10^6;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="96" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img15.png"
+ SRC="|."$dir".q|img16.png"
  ALT="$E = 5 \times 10^6$">|; 
 
 $key = q/E_h>E_v;MSF=1.6;LFS=11;AAT/;
@@ -657,7 +657,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; "
 $key = q/P_p=lambda_pS_v;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="82" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img11.png"
+ SRC="|."$dir".q|img12.png"
  ALT="$P_p = \lambda_p S_v$">|; 
 
 $key = q/P_p>P_p^{text{hydrostatic}};MSF=1.6;LFS=11;AAT/;
@@ -1885,7 +1885,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 5.73ex; vertical-align: -2.48ex; "
 $key = q/displaystyleS_h=sigma_{h}+P_p=frac{nu}{1-nu}sigma_{v}+P_p=frac{nu}{1-nu}(S_v-P_p)+P_p=frac{nu}{1-nu}S_v+frac{1-2nu}{1-nu}P_p;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="584" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img4.png"
+ SRC="|."$dir".q|img5.png"
  ALT="$\displaystyle S_h = \sigma_{h} + P_p
 = \frac{\nu}{1-\nu} \sigma_{v} + P_p
 = \fr...
@@ -1947,7 +1947,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 5.69ex; vertical-align: -2.28ex; "
 $key = q/displaystyleS_{Hmax}=sigma_{Hmax}+P_p;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="167" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img13.png"
+ SRC="|."$dir".q|img14.png"
  ALT="$\displaystyle S_{Hmax} = \sigma_{Hmax} + P_p $">|; 
 
 $key = q/displaystyleS_{Hmax}=sigma_{Hmax}+P_p=1080;MSF=1.6;LFS=11;AAT/;
@@ -1957,7 +1957,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; "
 $key = q/displaystyleS_{hmin}=sigma_{hmin}+P_p.;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="159" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img14.png"
+ SRC="|."$dir".q|img15.png"
  ALT="$\displaystyle S_{hmin} = \sigma_{hmin} + P_p. $">|; 
 
 $key = q/displaystyleT_S=frac{2084text{N}}{pi(0.0254text{m})(0.0127text{m})}=2.06times10^6text{Pa}=2.06text{MPa}::blacksquare;MSF=1.6;LFS=11;AAT/;
@@ -2084,7 +2084,7 @@ $">|;
 $key = q/displaystylefrac{DeltaS_h}{Deltaz}==left(frac{nu}{1-nu}right)frac{DeltaS_v}{Deltaz}+left(frac{1-2nu}{1-nu}right)frac{DeltaP_p}{Deltaz};MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="326" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img5.png"
+ SRC="|."$dir".q|img6.png"
  ALT="$\displaystyle \frac{\Delta S_h}{\Delta z} =
 = \left( \frac{\nu}{1-\nu} \right)
 ...
@@ -3717,7 +3717,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; "
 $key = q/nu=0.25;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="68" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
- SRC="|."$dir".q|img8.png"
+ SRC="|."$dir".q|img9.png"
  ALT="$\nu = 0.25$">|; 
 
 $key = q/nu=0.2;MSF=1.6;LFS=11;AAT/;
@@ -3855,7 +3855,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; "
 $key = q/phi_{shale};MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="47" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img10.png"
+ SRC="|."$dir".q|img11.png"
  ALT="$\phi_{shale}$">|; 
 
 $key = q/pi-left[pi-arctan(Deltau_1slashDeltax_2)+arctan(Deltau_2slashDeltax_1)right];MSF=1.6;LFS=11;AAT/;
@@ -4137,7 +4137,7 @@ $cached_env_img{$key} = q|<IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; "
 $key = q/sigma_v=S_v-P_p;MSF=1.6;LFS=11;AAT/;
 $cached_env_img{$key} = q|<IMG
  WIDTH="103" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
- SRC="|."$dir".q|img12.png"
+ SRC="|."$dir".q|img13.png"
  ALT="$\sigma_v = S_v - P_p$">|; 
 
 $key = q/sigma_v=WslashA;MSF=1.6;LFS=11;AAT/;
@@ -5423,6 +5423,17 @@ $cached_env_img{$key} = q|<IMG STYLE=""
 0.612 \\\\
 -0.612 \\\\
 -0.5
+\end{array}\right]\end{displaymath}">|; 
+
+$key = q/{displaymath}underset{=}{varepsilon}=left[{array}{ccc}cfrac{partialu_1}{partialx31}&varepsilon_{32}&varepsilon_{33}{array}right]{displaymath};MSF=1.6;LFS=11;AAT/;
+$cached_env_img{$key} = q|<IMG
+ WIDTH="626" HEIGHT="164" BORDER="0"
+ SRC="|."$dir".q|img4.png"
+ ALT="\begin{displaymath}\underset{=}{\varepsilon} =
+\left[
+\begin{array}{ccc}
+\cfrac{...
+...n_{31} &amp; \varepsilon_{32} &amp; \varepsilon_{33}
 \end{array}\right]\end{displaymath}">|; 
 
 $key = q/{displaymath}uuline{S}{}_G=left[{array}{ccc}-0.707&0.707&00&0&10.707&0.707&0{arr.5&0-12.5&47.5&00&0&40{array}right]::blacksquare{displaymath};MSF=1.6;LFS=11;AAT/;

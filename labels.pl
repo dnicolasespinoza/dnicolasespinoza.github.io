@@ -1,4 +1,4 @@
-# LaTeX2HTML 2018.3 (Released July 19, 2018)
+# LaTeX2HTML 2018 (Released Feb 1, 2018)
 # Associate labels original text with physical files.
 
 
@@ -554,6 +554,10 @@ $key = q/fig:StressLogExample/;
 $external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:StressLogPermian/;
+$external_labels{$key} = "$URL/" . q|node11.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:StressLogWF/;
 $external_labels{$key} = "$URL/" . q|node56.html|; 
 $noresave{$key} = "$nosave";
@@ -945,7 +949,7 @@ $noresave{$key} = "$nosave";
 1;
 
 
-# LaTeX2HTML 2018.3 (Released July 19, 2018)
+# LaTeX2HTML 2018 (Released Feb 1, 2018)
 # labels from external_latex_labels array.
 
 
@@ -1495,6 +1499,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:StressLogExample/;
 $external_latex_labels{$key} = q|7.22|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:StressLogPermian/;
+$external_latex_labels{$key} = q|2.29|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressLogWF/;
