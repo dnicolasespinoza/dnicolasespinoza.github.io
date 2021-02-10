@@ -1,4 +1,4 @@
-# LaTeX2HTML 2018 (Released Feb 1, 2018)
+# LaTeX2HTML 2018.3 (Released July 19, 2018)
 # Associate internals original text with physical files.
 
 
@@ -115,7 +115,7 @@ $ref_files{$key} = "$dir".q|node38.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:straintensor/;
-$ref_files{$key} = "$dir".q|node15.html|; 
+$ref_files{$key} = "$dir".q|node21.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:tectonicstrains/;

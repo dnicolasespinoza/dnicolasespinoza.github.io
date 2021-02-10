@@ -1,4 +1,4 @@
-# LaTeX2HTML 2018 (Released Feb 1, 2018)
+# LaTeX2HTML 2018.3 (Released July 19, 2018)
 # Associate labels original text with physical files.
 
 
@@ -115,7 +115,7 @@ $external_labels{$key} = "$URL/" . q|node38.html|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:straintensor/;
-$external_labels{$key} = "$URL/" . q|node15.html|; 
+$external_labels{$key} = "$URL/" . q|node21.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:tectonicstrains/;
@@ -949,7 +949,7 @@ $noresave{$key} = "$nosave";
 1;
 
 
-# LaTeX2HTML 2018 (Released Feb 1, 2018)
+# LaTeX2HTML 2018.3 (Released July 19, 2018)
 # labels from external_latex_labels array.
 
 
@@ -1070,7 +1070,7 @@ $external_latex_labels{$key} = q|5.7|;
 $noresave{$key} = "$nosave";
 
 $key = q/eq:straintensor/;
-$external_latex_labels{$key} = q|3.7|; 
+$external_latex_labels{$key} = q|3.46|; 
 $noresave{$key} = "$nosave";
 
 $key = q/eq:tectonicstrains/;
