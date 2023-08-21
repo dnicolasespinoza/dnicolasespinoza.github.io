@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 
-<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>5.4 Determination of normal and shear stresses on the fault plane</TITLE>
-<META NAME="description" CONTENT="5.4 Determination of normal and shear stresses on the fault plane">
+<TITLE>5.3 Frictional strength of faults and fault types</TITLE>
+<META NAME="description" CONTENT="5.3 Frictional strength of faults and fault types">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
@@ -27,22 +27,22 @@
  HREF="node39.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node34.html">
+ HREF="node35.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node37.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html765"
+<A ID="tex2html779"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node39.html">5.5 Applications</A>
+ HREF="node39.html">5.4 Determination of normal</A>
 <B> Up:</B> <A
- HREF="node34.html">5. Stresses on Faults</A>
+ HREF="node35.html">5. Stresses on Faults</A>
 <B> Previous:</B> <A
- HREF="node37.html">5.3 Frictional strength of</A>
- &nbsp; <B>  <A ID="tex2html766"
+ HREF="node37.html">5.2 Mapping of faults</A>
+ &nbsp; <B>  <A ID="tex2html780"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
@@ -51,2378 +51,768 @@
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html767"
-  HREF="node38.html#SECTION00641000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Mohr's circle method</A>
-<LI><A ID="tex2html768"
-  HREF="node38.html#SECTION00642000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Tensor method</A>
+<LI><A ID="tex2html781"
+  HREF="node38.html#SECTION00731000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Fault strength</A>
+<LI><A ID="tex2html782"
+  HREF="node38.html#SECTION00732000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Normal faults</A>
+<LI><A ID="tex2html783"
+  HREF="node38.html#SECTION00733000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Thrust and reverse faults</A>
+<LI><A ID="tex2html784"
+  HREF="node38.html#SECTION00734000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Strike-slip faults</A>
+<LI><A ID="tex2html785"
+  HREF="node38.html#SECTION00735000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Stress and faulting regimes</A>
+<LI><A ID="tex2html786"
+  HREF="node38.html#SECTION00736000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Ideal orientation of faults</A>
 </UL>
 <!--End of Table of Child-Links-->
 <HR>
 
-<H1><A ID="SECTION00640000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN> Determination of normal and shear stresses on the fault plane</A>
+<H1><A ID="SECTION00730000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN> Frictional strength of faults and fault types</A>
 </H1>
 
 <P>
-In this section we will review two methods to calculate normal and shear stresses on fractures and faults.
-The first part reviews the Mohr circle method in order to have a conceptual understanding of stress projection on faults and maximum ratio between shear stress and effective normal stress.
-The second part discusses the tensor method, which requires the definition of three coordinate systems and matrix multiplication. 
-The tensor method can be easily implemented in a computer script but is laborious to work out manually.	
 
-<P>
-
-<H2><A ID="SECTION00641000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Mohr's circle method</A>
+<H2><A ID="SECTION00731000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Fault strength</A>
 </H2>
 
 <P>
-The 3D Mohr circle is a graphical representation of the stress tensor and all its projections (or possibles values of normal effective stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img522.svg"
- ALT="$\sigma_n$"></SPAN> and shear stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img521.svg"
- ALT="$\tau$"></SPAN>) on a given plane. 
-Consider a horizontal plane in Fig. <A HREF="#fig:3DMohrCircle">5.20</A>, the normal stress is the vertical stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> and there is no shear stress. 
-Consider a vertical plane with strike East-West in Fig. <A HREF="#fig:3DMohrCircle">5.20</A>, you get the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN>.
-Consider a vertical plane with strike North-South in Fig. <A HREF="#fig:3DMohrCircle">5.20</A>, you get the maximum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN>.
+At the large scale, the Earth's crust is constituted by &ldquo;already broken" rock layers. 
+These discontinuities are comprised mostly of faults. 
+The cementation or cohesive strength of faults is negligible because the rock is already broken at those interfaces.
+Hence, a large block of rock does not have any cohesive strength or &ldquo;unconfined compression strength&rdquo;. 
+As a result, its shear strength depends only on frictional strength according to the Coulomb frictional criterion (Fig. <A HREF="#fig:StrengthFaults">5.11</A>).
+You may think of &ldquo;El Capitán&rdquo; rock cliff (<kbd><A ID="tex2html156"
+  HREF="https://www.reviewjournal.com/wp-content/uploads/2018/06/10646363_web1_yosemite-fatal-fall_6053325.jpg">https://www.reviewjournal.com/wp-content/uploads/2018/06/10646363_web1_yosemite-fatal-fall_6053325.jpg</A></kbd>) as an example of a rock mass, strong and continuous, but that is an exception, not the rule. 
+Furthermore, the size of &ldquo;El Capitán&rdquo; (<SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img29.svg"
+ ALT="$\sim $"></SPAN> 900 m <SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img29.svg"
+ ALT="$\sim $"></SPAN> 3000 ft) is smaller than the size of sedimentary basins (<SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img29.svg"
+ ALT="$\sim $"></SPAN> 100 km and bigger). 
 
 <P>
-Likewise, non-trivial solutions of stress projection at an arbitrary plane angle include all the points delimited by the three Mohr circles.
-Let's consider solutions along each circle in Fig. <A HREF="#fig:3DMohrCircle">5.20</A>. 
+Because of the lack of cohesive strength of the Earth's crust at the large scale, its shear strength just depends on frictional strength through the friction coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img216.svg"
+ ALT="$\mu$"></SPAN> (or equivalent friction parameter <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img590.svg"
+ ALT="$q$"></SPAN>). The coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img561.svg"
+ ALT="$\mu_i$"></SPAN> is the internal frictional angle of rock before rupture, while <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img216.svg"
+ ALT="$\mu$"></SPAN> is the friction coefficient after initial rupture.
+Hence, the shear strength of large blocks in the Earth's crust is simply
 
-<UL>
-<LI>The blue circle (center C<SPAN CLASS="MATH"><IMG STYLE="height: 1.30ex; vertical-align: -0.45ex; " SRC="img656.svg"
- ALT="$_1$"></SPAN>) represents the possible state of stresses that result as a combination of <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img3.svg"
- ALT="$\sigma _v$"></SPAN> and <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN>. The shear stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img521.svg"
- ALT="$\tau$"></SPAN> and normal effective stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img522.svg"
- ALT="$\sigma_n$"></SPAN> of any plane in between the planes of <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img3.svg"
- ALT="$\sigma _v$"></SPAN> and <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN> and colinear with <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN> can be found through the angle <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img657.svg"
- ALT="$\beta_1$"></SPAN> measured from <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img3.svg"
- ALT="$\sigma _v$"></SPAN>.
-</LI>
-<LI>The green circle (center C<SPAN CLASS="MATH"><IMG STYLE="height: 1.30ex; vertical-align: -0.45ex; " SRC="img31.svg"
- ALT="$_2$"></SPAN>) represents the possible state of stresses that result as a combination of <!-- MATH
- $\sigma_{v}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img658.svg"
- ALT="$\sigma_{v}$"></SPAN> and <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN>. The shear stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img521.svg"
- ALT="$\tau$"></SPAN> and normal effective stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img522.svg"
- ALT="$\sigma_n$"></SPAN> of any plane in between the planes of <!-- MATH
- $\sigma_{v}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img658.svg"
- ALT="$\sigma_{v}$"></SPAN> and <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN> and colinear with <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN> can be found through the angle <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img659.svg"
- ALT="$\beta_2$"></SPAN> measured from <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN>
-</LI>
-<LI>The red circle (center C<SPAN CLASS="MATH"><IMG STYLE="height: 1.30ex; vertical-align: -0.45ex; " SRC="img660.svg"
- ALT="$_3$"></SPAN>) represents the possible state of stresses that result as a combination of <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN> and <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN>. The shear stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img521.svg"
- ALT="$\tau$"></SPAN> and normal effective stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img522.svg"
- ALT="$\sigma_n$"></SPAN> of any plane in between the planes of <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN> and <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN> and colinear with <!-- MATH
- $\sigma_{v}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img658.svg"
- ALT="$\sigma_{v}$"></SPAN> can be found through the angle <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img661.svg"
- ALT="$\beta_3$"></SPAN> measured from <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN>
-</LI>
-</UL>
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:3DMohrCircle"></A><A ID="5730"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 5.20:</STRONG>
-The 3D Mohr circle</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24158" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img662.svg"
- ALT="\includegraphics[scale=0.75]{.././Figures/split/6-3DMohrCircle.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-For this example (normal faulting, <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> azimuth E-W), an ideal fault would occur with a strike E-W and dip 60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> (assuming  <!-- MATH
- $\varphi = 30^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img663.svg"
- ALT="$\varphi = 30^{\circ}$"></SPAN>). This is the orientation of a plane with maximum <!-- MATH
- $\tau/\sigma_n$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img30.svg"
- ALT="$\tau /\sigma _n$"></SPAN>. 
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.3:</SPAN> Find the shear and normal effective stresses on a fault plane within the following state of stress and conditions:
-
-<UL>
-<LI>Fault: strike azimuth = 000<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>, dip = 60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>.
-</LI>
-<LI>State of stress: <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img49.svg"
- ALT="$S_v =$"></SPAN> 23 MPa (principal), <!-- MATH
- $S_{Hmax} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img50.svg"
- ALT="$S_{Hmax} =$"></SPAN> 20 MPa, <!-- MATH
- $S_{hmin} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img51.svg"
- ALT="$S_{hmin} =$"></SPAN> 13.8 MPa (azimuth: 090<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>), and <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img52.svg"
- ALT="$P_p =$"></SPAN> 10 MPa. 	
-</LI>
-</UL> 
-
-<P>
-SOLUTION <BR>
-
-<DIV class="CENTER">
-<DIV CLASS="centerline" ID="par24185" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img664.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/6-3DMohrCircleP1.pdf}"></DIV>
-
-</DIV> The effective stresses are: <!-- MATH
- $\sigma_v =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img665.svg"
- ALT="$\sigma_v =$"></SPAN> 13 MPa, <!-- MATH
- $\sigma_{Hmax} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img666.svg"
- ALT="$\sigma_{Hmax} =$"></SPAN> 10 MPa, <!-- MATH
- $\sigma_{hmin} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img667.svg"
- ALT="$\sigma_{hmin} =$"></SPAN> 3.8 MPa.
-Based on the Mohr circle of <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img3.svg"
- ALT="$\sigma _v$"></SPAN> with <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN> and trigonometry: 
-<P><!-- MATH
- \begin{displaymath}
-\sigma_n = \left( \frac{13 \text{ MPa} + 3.8 \text{ MPa}}{2} \right) + \left( \frac{13 \text{ MPa} - 3.8 \text{ MPa}}{2} \right) \cos(2 \cdot 60^{\circ}) = 6.1 \text{ MPa}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img668.svg"
- ALT="$\displaystyle \sigma_n = \left( \frac{13 \text{ MPa} + 3.8 \text{ MPa}}{2} \rig...
-... MPa} - 3.8 \text{ MPa}}{2} \right) \cos(2 \cdot 60^{\circ}) = 6.1 \text{ MPa}
-$">
-</DIV><P></P>
-<P><!-- MATH
- \begin{displaymath}
-\tau = \left( \frac{13 \text{ MPa} - 3.8 \text{ MPa}}{2} \right) \sin(2 \cdot 60^{\circ}) = 4.0 \text{ MPa}
-	\: \: \blacksquare
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img669.svg"
- ALT="$\displaystyle \tau = \left( \frac{13 \text{ MPa} - 3.8 \text{ MPa}}{2} \right) \sin(2 \cdot 60^{\circ}) = 4.0 \text{ MPa}
-\: \: \blacksquare
-$">
-</DIV><P></P>
- <BR>
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.4:</SPAN> Find the shear and normal effective stresses on a fault plane within the following state of stress and conditions:
-
-<UL>
-<LI>Fault: strike azimuth = N60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>E, dip: 90<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>.
-</LI>
-<LI>State of stress: <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img49.svg"
- ALT="$S_v =$"></SPAN> 30 MPa (principal), <!-- MATH
- $S_{Hmax} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img50.svg"
- ALT="$S_{Hmax} =$"></SPAN> 45 MPa, <!-- MATH
- $S_{hmin} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img51.svg"
- ALT="$S_{hmin} =$"></SPAN> 25 MPa (azimuth: N30<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>E), and <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img52.svg"
- ALT="$P_p =$"></SPAN> 15 MPa. 
-</LI>
-</UL> 
-
-<P>
-SOLUTION <BR>
-
-<DIV class="CENTER">
-<DIV CLASS="centerline" ID="par24215" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img670.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/6-3DMohrCircleP2.pdf}"></DIV>
-
-</DIV> 
-<P>
-The effective stresses are: <!-- MATH
- $\sigma_v =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img665.svg"
- ALT="$\sigma_v =$"></SPAN> 15 MPa, <!-- MATH
- $\sigma_{Hmax} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img666.svg"
- ALT="$\sigma_{Hmax} =$"></SPAN> 30 MPa, <!-- MATH
- $\sigma_{hmin} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img667.svg"
- ALT="$\sigma_{hmin} =$"></SPAN> 10 MPa.
-Based on the Mohr circle of <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN> with <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN> and trigonometry: 
-<P><!-- MATH
- \begin{displaymath}
-\sigma_n = \left( \frac{30 \text{ MPa} + 10 \text{ MPa}}{2} \right) + \left( \frac{30 \text{ MPa} - 10 \text{ MPa}}{2} \right) \cos(2 \cdot 30^{\circ}) = 25 \text{ MPa}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img671.svg"
- ALT="$\displaystyle \sigma_n = \left( \frac{30 \text{ MPa} + 10 \text{ MPa}}{2} \righ...
-...t{ MPa} - 10 \text{ MPa}}{2} \right) \cos(2 \cdot 30^{\circ}) = 25 \text{ MPa}
-$">
-</DIV><P></P>
-<P><!-- MATH
- \begin{displaymath}
-\tau = \left( \frac{30 \text{ MPa} - 10 \text{ MPa}}{2} \right) \sin(2 \cdot 30^{\circ}) = 8.7 \text{ MPa}
-	\: \: \blacksquare
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img672.svg"
- ALT="$\displaystyle \tau = \left( \frac{30 \text{ MPa} - 10 \text{ MPa}}{2} \right) \sin(2 \cdot 30^{\circ}) = 8.7 \text{ MPa}
-\: \: \blacksquare
-$">
-</DIV><P></P>
- <BR>
-
-<P>
-
-<H2><A ID="SECTION00642000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Tensor method</A>
-</H2>
-
-<P>
-This subsection describes the procedure to calculate stresses <!-- MATH
- $(\sigma_n, \tau)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img545.svg"
- ALT="$(\sigma_n,\tau)$"></SPAN> on an arbitrary plane given its orientation respect to the geographical coordinate system <!-- MATH
- $(strike,dip)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img673.svg"
- ALT="$(strike,dip)$"></SPAN> and the in-situ stress tensor of principal stresses <!-- MATH
- $\uuline{S}{}_P$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img674.svg"
- ALT="$\uuline{S}{}_P$"></SPAN> (given its principal values and principal directions). 
-
-<P>
-The <SPAN  CLASS="textit">first step</SPAN> consists on defining the principal stress coordinate system and the geographical coordinate system (both right-handed coordinate systems). 
-
-<UL>
-<LI>The principal stress coordinate system has the three principal directions as bases of the system in the order of most compressive to least compressive: <!-- MATH
- $\uline{e}_1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img263.svg"
- ALT="$\uline{e}_1$"></SPAN> for <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
- ALT="$S_1$"></SPAN>, <!-- MATH
- $\uline{e}_2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img264.svg"
- ALT="$\uline{e}_2$"></SPAN> for <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img238.svg"
- ALT="$S_2$"></SPAN>, and <!-- MATH
- $\uline{e}_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img265.svg"
- ALT="$\uline{e}_3$"></SPAN> for <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img4.svg"
- ALT="$S_3$"></SPAN> (Fig. <A HREF="#fig:PScsGcs">5.21</A>). The stress tensor is termed <!-- MATH
- $\uuline{S}{}_P$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img674.svg"
- ALT="$\uuline{S}{}_P$"></SPAN> in this coordinate system.
-</LI>
-<LI>The geographical coordinate system has bases <!-- MATH
- $\uline{e}_1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img263.svg"
- ALT="$\uline{e}_1$"></SPAN> pointing in North direction, <!-- MATH
- $\uline{e}_2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img264.svg"
- ALT="$\uline{e}_2$"></SPAN> pointing in East direction, and <!-- MATH
- $\uline{e}_3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img265.svg"
- ALT="$\uline{e}_3$"></SPAN> pointing down in direction of increasing depth (Fig. <A HREF="#fig:PScsGcs">5.21</A>). We will refer this basis as the &ldquo;NED&rdquo; basis. The stress tensor is termed <!-- MATH
- $\uuline{S}{}_G$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img675.svg"
- ALT="$\uuline{S}{}_G$"></SPAN> in this coordinate system.
-</LI>
-</UL>
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:PScsGcs"></A><A ID="5819"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 5.21:</STRONG>
-The stress tensor in principal directions and geographical coordinate systems.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24260" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img676.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/6-32.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-The <SPAN  CLASS="textit">second step</SPAN> involves constructing a change of basis matrix <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img677.svg"
- ALT="$R_{PG}$"></SPAN> from the Principal Stress to the Geographical Coordinate system.
-This matrix depends on the projections of the elements of the new base on the old base according to the cosines of the director angles <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img23.svg"
- ALT="$\alpha $"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img24.svg"
- ALT="$\beta $"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img25.svg"
- ALT="$\gamma $"></SPAN> (Fig. <A HREF="#fig:AnglesMatrixRPG">5.22</A>).
-Table <A HREF="#table:RPGsummary">5.3</A> summarizes the meaning of <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img23.svg"
- ALT="$\alpha $"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img24.svg"
- ALT="$\beta $"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img25.svg"
- ALT="$\gamma $"></SPAN> for cases in which vertical stress is a principal stress.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:AnglesMatrixRPG"></A><A ID="5828"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 5.22:</STRONG>
-Transformation matrix from the principal directions to geographical coordinate system and corresponding angles.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24279" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img678.svg"
- ALT="\includegraphics[scale=0.65]{.././Figures/split/6-33.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
 <P>
 <P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:matrixRPG"></A><!-- MATH
+<DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		\cos \alpha \cos \beta & \sin \alpha \cos \beta  & -\sin \beta \\
-		\cos \alpha \sin \beta \sin \gamma - \sin \alpha \cos \gamma  & \sin \alpha \sin \beta \sin \gamma + \cos \alpha \cos \gamma  & \cos \beta \sin \gamma \\
-		\cos \alpha \sin \beta \cos \gamma + \sin \alpha \sin \gamma  & \sin \alpha \sin \beta \cos \gamma - \cos \alpha \sin \gamma  & \cos \beta \cos \gamma
-	\end{array}
-	\right]
+\tau = \mu \: \sigma_n
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img679.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
-\cos \alpha \cos \beta &amp; \...
-... \alpha \sin \gamma &amp; \cos \beta \cos \gamma
-\end{array}\right]\end{displaymath}"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img654.svg"
+ ALT="$\displaystyle \tau = \mu \: \sigma_n$"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
 </TABLE></DIV>
-<P></P>
+<P></P>		
 
+<P>
+which can be rewritten in terms of principal stresses as
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\sigma_1 = q \: \sigma_3
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img655.svg"
+ ALT="$\displaystyle \sigma_1 = q \: \sigma_3$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>		
+
+<P>
+where
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+q = \left( \sqrt{\mu^2 +1} + \mu \right) ^2 = \frac{1+\sin \: \varphi}{1-\sin \: \varphi}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.36ex; vertical-align: -2.15ex; " SRC="img656.svg"
+ ALT="$\displaystyle q = \left( \sqrt{\mu^2 +1} + \mu \right) ^2 = \frac{1+\sin \: \varphi}{1-\sin \: \varphi}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>		
+
+<P>
+For typical friction coefficients the coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img590.svg"
+ ALT="$q$"></SPAN> varies from 3 to 7. This means that the maximum ratio between maximum principal effective stress and minimum principal effective stress is <!-- MATH
+ $\sigma_1/\sigma_3 \sim$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img657.svg"
+ ALT="$\sigma_1/\sigma_3 \sim $"></SPAN> 3 to 7 (See Table <A HREF="#table:FrictionAnisotropy">5.1</A>). 
+This ratio is usually called &ldquo;(effective) stress anisotropy&rdquo;. 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:StrengthFaults"></A><A ID="5808"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.11:</STRONG>
+Limits on effective principal stresses.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24275" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img658.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-20.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
 <BR><P></P>
 <DIV class="CENTER">
 <DIV class="CENTER">
-<A ID="table:RPGsummary"></A>
-<BR>
-<BR>
-<A ID="5839"></A>
+<A ID="table:FrictionAnisotropy"></A><A ID="5812"></A>
 <TABLE class="PAD  BORDER" style="">
-<CAPTION><STRONG>Table 5.3:</STRONG>
-Summary of possible values of <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img23.svg"
- ALT="$\alpha $"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img24.svg"
- ALT="$\beta $"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img25.svg"
- ALT="$\gamma $"></SPAN> for vertical stress being a principal stress. Notes: 
-(1) these angles indicate solely the orientation of principal stresses with respect to the geographical coordinate system, (2) this <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img24.svg"
- ALT="$\beta $"></SPAN> has nothing to do with the angle used in the Mohr's circle method to solve for stresses on a fault.</CAPTION>
-<TR><TD CLASS="CENTER">&nbsp;</TD>
-<TD CLASS="CENTER">Normal faulting</TD>
-<TD CLASS="CENTER">Strike slip</TD>
-<TD CLASS="CENTER">Reverse faulting</TD>
-</TR>
-<TR><TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img23.svg"
- ALT="$\alpha $"></SPAN></TD>
-<TD CLASS="CENTER">Azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN></TD>
-<TD CLASS="CENTER">Azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN></TD>
-<TD CLASS="CENTER">Azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN></TD>
-</TR>
-<TR><TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img24.svg"
- ALT="$\beta $"></SPAN></TD>
+<CAPTION><STRONG>Table 5.1:</STRONG>
+Relationship between friction coefficients, maximum stress anisotropy, and expected failure angle.</CAPTION>
+<TR><TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img216.svg"
+ ALT="$\mu$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img590.svg"
+ ALT="$q$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img107.svg"
+ ALT="$\phi$"></SPAN></TD>
 <TD CLASS="CENTER"><!-- MATH
- $90^{\circ}$
+ $\pi/4 + \phi/2$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img680.svg"
- ALT="$90^{\circ}$"></SPAN></TD>
-<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img681.svg"
- ALT="$0^{\circ}$"></SPAN></TD>
-<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img681.svg"
- ALT="$0^{\circ}$"></SPAN></TD>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img659.svg"
+ ALT="$\pi/4 + \phi/2$"></SPAN></TD>
 </TR>
-<TR><TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img25.svg"
- ALT="$\gamma $"></SPAN></TD>
-<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img681.svg"
- ALT="$0^{\circ}$"></SPAN></TD>
+<TR><TD CLASS="CENTER">0.6</TD>
+<TD CLASS="CENTER">3.1</TD>
 <TD CLASS="CENTER"><!-- MATH
- $90^{\circ}$
+ $\sim 30 ^{\circ}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img680.svg"
- ALT="$90^{\circ}$"></SPAN></TD>
-<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img681.svg"
- ALT="$0^{\circ}$"></SPAN></TD>
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img660.svg"
+ ALT="$\sim 30 ^{\circ}$"></SPAN></TD>
+<TD CLASS="CENTER"><!-- MATH
+ $\sim 60 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img661.svg"
+ ALT="$\sim 60 ^{\circ}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">1.0</TD>
+<TD CLASS="CENTER">5.8</TD>
+<TD CLASS="CENTER"><!-- MATH
+ $45 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img662.svg"
+ ALT="$45 ^{\circ}$"></SPAN></TD>
+<TD CLASS="CENTER"><!-- MATH
+ $67.5 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img663.svg"
+ ALT="$67.5 ^{\circ}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">1.2</TD>
+<TD CLASS="CENTER">7.6</TD>
+<TD CLASS="CENTER"><!-- MATH
+ $50 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img664.svg"
+ ALT="$50 ^{\circ}$"></SPAN></TD>
+<TD CLASS="CENTER"><!-- MATH
+ $70 ^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img665.svg"
+ ALT="$70 ^{\circ}$"></SPAN></TD>
 </TR>
 </TABLE></DIV>
 </DIV>
 <BR>
 
 <P>
-Check out this link <kbd><A ID="tex2html156"
-  HREF="https://mybinder.org/v2/gh/johntfoster/rotation_widget/master?filepath=rotation_widget-rise.ipynb">https://mybinder.org/v2/gh/johntfoster/rotation_widget/master?filepath=rotation_widget-rise.ipynb</A></kbd> for an animation of <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img23.svg"
- ALT="$\alpha $"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img24.svg"
- ALT="$\beta $"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img25.svg"
- ALT="$\gamma $"></SPAN> in arbitrary directions.
+The maximum allowable stress anisotropy in a geological formation depends on its shear strength.
+Faults form or reactivate when this stress anisotropy, and therefore shear strength, is surpassed.	
 
-<P>
-With the matrix <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img677.svg"
- ALT="$R_{PG}$"></SPAN>, we can calculate the stress tensor <!-- MATH
- $\uuline{S}{}_P$
+<UL>
+<LI><!-- MATH
+ $\sigma_1 / \sigma_3 > q$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img674.svg"
- ALT="$\uuline{S}{}_P$"></SPAN> as a function of <!-- MATH
- $\uuline{S}{}_G$
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img666.svg"
+ ALT="$\sigma_1 / \sigma_3 &gt; q$"></SPAN> implies fault slip.
+</LI>
+<LI><!-- MATH
+ $\sigma_1 / \sigma_3 < q$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img675.svg"
- ALT="$\uuline{S}{}_G$"></SPAN>, 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\uuline{S}_P = R_{PG} \uuline{S}{}_G R_{PG}^T
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.05ex; vertical-align: -1.84ex; " SRC="img682.svg"
- ALT="$\displaystyle \uuline{S}_P = R_{PG} \uuline{S}{}_G R_{PG}^T$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and therefore:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:SGcalc"></A><!-- MATH
- \begin{equation}
-\uuline{S}_G = R_{PG}^T \uuline{S}{}_P R_{PG}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.05ex; vertical-align: -1.84ex; " SRC="img683.svg"
- ALT="$\displaystyle \uuline{S}_G = R_{PG}^T \uuline{S}{}_P R_{PG}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-where the superscript <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img266.svg"
- ALT="$T$"></SPAN> stands for &ldquo;transpose&rdquo;.
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.5:</SPAN> Calculate <!-- MATH
- $\uuline{S}{}_G$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img675.svg"
- ALT="$\uuline{S}{}_G$"></SPAN> in a normal faulting stress regime case (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img684.svg"
- ALT="$S_1 = 30$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img685.svg"
- ALT="$S_2 = 25$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img686.svg"
- ALT="$S_3 = 20$"></SPAN> MPa) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN> N-S. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
-
-<P>
-SOLUTION <BR>
-The principal stress tensor is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		30 & 0  & 0 \\
-		0  & 25 & 0 \\
-		0  &  0 & 20
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img687.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-30 &amp; 0 &amp; 0 \\
-0 &amp; 25 &amp; 0 \\
-0 &amp; 0 &amp; 20
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img240.svg"
- ALT="$S_1 = S_v$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img688.svg"
- ALT="$\alpha = 0^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 90^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img689.svg"
- ALT="$\beta = 90^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img690.svg"
- ALT="$\gamma = 0^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		0  & 0  & -1 \\
-		0  & 1  & 0 \\
-		1  & 0  & 0
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img691.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
-0 &amp; 0 &amp; -1 \\
-0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Finally, using equation <A HREF="#eq:SGcalc">5.9</A>
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		0  & 0  & -1 \\
-		0  & 1  & 0 \\
-		1  & 0  & 0
-	\end{array}
-	\right]^T
-		\:
-	\left[
-	\begin{array}{ccc}
-		30 & 0  & 0 \\
-		0  & 25 & 0 \\
-		0  &  0 & 20
-	\end{array}
-	\right]
-		\:
-	\left[
-	\begin{array}{ccc}
-		0  & 0  & -1 \\
-		0  & 1  & 0 \\
-		1  & 0  & 0
-	\end{array}
-	\right]
-	=
-	\left[
-	\begin{array}{ccc}
-		20 & 0  & 0 \\
-		0  & 25 & 0 \\
-		0  &  0 & 30
-	\end{array}
-	\right] 
-	\: \: \blacksquare
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img692.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
-0 &amp; 0 &amp; -1 \\
-0 &amp;...
-...0 &amp; 25 &amp; 0 \\
-0 &amp; 0 &amp; 30
-\end{array}\right]
-\: \: \blacksquare\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
- <BR>
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.6:</SPAN> Calculate <!-- MATH
- $\uuline{S}{}_G$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img675.svg"
- ALT="$\uuline{S}{}_G$"></SPAN> in a strike-slip faulting stress regime case (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img684.svg"
- ALT="$S_1 = 30$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img685.svg"
- ALT="$S_2 = 25$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img686.svg"
- ALT="$S_3 = 20$"></SPAN> MPa) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> N-S. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
-
-<P>
-SOLUTION <BR>
-The principal stress tensor is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		30 & 0  & 0 \\
-		0  & 25 & 0 \\
-		0  &  0 & 20
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img687.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-30 &amp; 0 &amp; 0 \\
-0 &amp; 25 &amp; 0 \\
-0 &amp; 0 &amp; 20
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <!-- MATH
- $S_1 = S_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img248.svg"
- ALT="$S_1 = S_{Hmax}$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img249.svg"
- ALT="$S_2 = S_v$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img688.svg"
- ALT="$\alpha = 0^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img693.svg"
- ALT="$\beta = 0^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 90^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img694.svg"
- ALT="$\gamma = 90^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		1  & 0  & 0 \\
-		0  & 0  & 1 \\
-		0  & -1 & 0
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img695.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-0 &amp; -1 &amp; 0
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Finally, using equation <A HREF="#eq:SGcalc">5.9</A>
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		1  & 0  & 0 \\
-		0  & 0  & 1 \\
-		0  & -1 & 0
-	\end{array}
-	\right]^T
-		\:
-	\left[
-	\begin{array}{ccc}
-		30 & 0  & 0 \\
-		0  & 25 & 0 \\
-		0  &  0 & 20
-	\end{array}
-	\right]
-		\:
-	\left[
-	\begin{array}{ccc}
-		1  & 0  & 0 \\
-		0  & 0  & 1 \\
-		0  & -1 & 0
-	\end{array}
-	\right]
-	=
-	\left[
-	\begin{array}{ccc}
-		30 & 0  & 0 \\
-		0  & 20 & 0 \\
-		0  &  0 & 25
-	\end{array}
-	\right] 
-	\: \: \blacksquare
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img696.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
-1 &amp; 0 &amp; 0 \\
-0 &amp; ...
-...0 &amp; 20 &amp; 0 \\
-0 &amp; 0 &amp; 25
-\end{array}\right]
-\: \: \blacksquare\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
- <BR>
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.7:</SPAN> Calculate <!-- MATH
- $\uuline{S}{}_G$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img675.svg"
- ALT="$\uuline{S}{}_G$"></SPAN> in a reverse faulting stress regime case (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img684.svg"
- ALT="$S_1 = 30$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img685.svg"
- ALT="$S_2 = 25$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img686.svg"
- ALT="$S_3 = 20$"></SPAN> MPa) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> E-W. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
-
-<P>
-SOLUTION <BR>
-
-<P>
-The principal stress tensor is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		30 & 0  & 0 \\
-		0  & 25 & 0 \\
-		0  &  0 & 20
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img687.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-30 &amp; 0 &amp; 0 \\
-0 &amp; 25 &amp; 0 \\
-0 &amp; 0 &amp; 20
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <!-- MATH
- $S_1 = S_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img248.svg"
- ALT="$S_1 = S_{Hmax}$"></SPAN> and <!-- MATH
- $S_2 = S_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img251.svg"
- ALT="$S_2 = S_{hmin}$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 90^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img697.svg"
- ALT="$\alpha = 90^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img693.svg"
- ALT="$\beta = 0^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img690.svg"
- ALT="$\gamma = 0^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		0  & 1  & 0 \\
-		-1 & 0  & 0 \\
-		0  & 0  & 1
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img698.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
-0 &amp; 1 &amp; 0 \\
--1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Finally, using equation <A HREF="#eq:SGcalc">5.9</A>
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		0  & 1  & 0 \\
-		-1 & 0  & 0 \\
-		0  & 0  & 1
-	\end{array}
-	\right]^T
-		\:
-	\left[
-	\begin{array}{ccc}
-		30 & 0  & 0 \\
-		0  & 25 & 0 \\
-		0  &  0 & 20
-	\end{array}
-	\right]
-		\:
-	\left[
-	\begin{array}{ccc}
-		0  & 1  & 0 \\
-		-1 & 0  & 0 \\
-		0  & 0  & 1
-	\end{array}
-	\right]
-	=
-	\left[
-	\begin{array}{ccc}
-		25 & 0  & 0 \\
-		0  & 30 & 0 \\
-		0  &  0 & 20
-	\end{array}
-	\right] 
-	\: \: \blacksquare
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img699.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
-0 &amp; 1 &amp; 0 \\
--1 &amp;...
-...0 &amp; 30 &amp; 0 \\
-0 &amp; 0 &amp; 20
-\end{array}\right]
-\: \: \blacksquare\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
- <BR>
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.8:</SPAN> Calculate <!-- MATH
- $\uuline{S}{}_G$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img675.svg"
- ALT="$\uuline{S}{}_G$"></SPAN> in a strike-slip faulting stress regime case (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img700.svg"
- ALT="$S_1 = 60$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img701.svg"
- ALT="$S_2 = 40$"></SPAN> MPa, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img702.svg"
- ALT="$S_3 = 35$"></SPAN> MPa) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> being 135<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
-
-<P>
-SOLUTION <BR>
-
-<P>
-The principal stress tensor is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		60 & 0  & 0 \\
-		0  & 40 & 0 \\
-		0  &  0 & 35
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img703.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-60 &amp; 0 &amp; 0 \\
-0 &amp; 40 &amp; 0 \\
-0 &amp; 0 &amp; 35
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <!-- MATH
- $S_1 = S_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img248.svg"
- ALT="$S_1 = S_{Hmax}$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img249.svg"
- ALT="$S_2 = S_v$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 135^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img704.svg"
- ALT="$\alpha = 135^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img693.svg"
- ALT="$\beta = 0^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 90^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img694.svg"
- ALT="$\gamma = 90^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		-0.707  & 0.707  & 0 \\
-		0  & 0  & 1 \\
-		0.707  & 0.707 & 0
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img705.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
--0.707 &amp; 0.707 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-0.707 &amp; 0.707 &amp; 0
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Finally, using equation <A HREF="#eq:SGcalc">5.9</A>
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		-0.707  & 0.707  & 0 \\
-		0  & 0  & 1 \\
-		0.707  & 0.707 & 0
-	\end{array}
-	\right]^T
-		\:
-	\left[
-	\begin{array}{ccc}
-		60 & 0  & 0 \\
-		0  & 40 & 0 \\
-		0  &  0 & 35
-	\end{array}
-	\right]
-		\:
-	\left[
-	\begin{array}{ccc}
-		-0.707  & 0.707  & 0 \\
-		0  & 0  & 1 \\
-		0.707  & 0.707 & 0
-	\end{array}
-	\right]
-	=
-	\left[
-	\begin{array}{ccc}
-		47.5  & -12.5  & 0 \\
-	   -12.5  &  47.5  & 0 \\
-		 0    &  0     & 40
-	\end{array}
-	\right] 
-	\: \: \blacksquare
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img706.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
--0.707 &amp; 0.707 &amp; 0...
-...&amp; 47.5 &amp; 0 \\
-0 &amp; 0 &amp; 40
-\end{array}\right]
-\: \: \blacksquare\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
- <BR>
-
-<P>
-The <SPAN  CLASS="textit">third step</SPAN> consists in defining the fault plane coordinate system.
-The coordinate system basis is comprised of <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img707.svg"
- ALT="$n_d$"></SPAN> (dip), <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img708.svg"
- ALT="$n_s$"></SPAN> (strike), and <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img709.svg"
- ALT="$n_n$"></SPAN> (normal) vectors: d-s-n right-handed basis.
-The three vectors depend solely in two variables: <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img710.svg"
- ALT="$strike$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img613.svg"
- ALT="$dip$"></SPAN> of the fault.  
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img667.svg"
+ ALT="$\sigma_1 / \sigma_3 &lt; q$"></SPAN> implies no fault slip.
+</LI>
+</UL>
+These relationships can also be worked out in terms of total stresses  but it is easier and more meaningful to keep them in terms of effective stresses (just do not forget about pore pressure).
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:dsn"></A><A ID="6052"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 5.23:</STRONG>
-Fault coordinate system as a function of strike and dip.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par24485" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="img711.svg"
- ALT="\includegraphics[scale=0.60]{.././Figures/split/6-39.pdf}"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-The <SPAN  CLASS="textit">fourth step</SPAN> (and last) consists in projecting the stress tensor based on the geographical coordinate system onto the fault base vectors.
-The stress vector acting on the plane of the fault is <SPAN CLASS="MATH"><IMG STYLE="height: 2.10ex; vertical-align: -0.57ex; " SRC="img290.svg"
- ALT="$\uline{t}$"></SPAN> (note that <SPAN CLASS="MATH"><IMG STYLE="height: 2.10ex; vertical-align: -0.57ex; " SRC="img290.svg"
- ALT="$\uline{t}$"></SPAN> is not necessarily aligned with <!-- MATH
- $\uline{n}_d$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img712.svg"
- ALT="$\uline{n}_d$"></SPAN>, <!-- MATH
- $\uline{n}_s$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img713.svg"
- ALT="$\uline{n}_s$"></SPAN> or <!-- MATH
- $\uline{n}_n$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img714.svg"
- ALT="$\uline{n}_n$"></SPAN>) and is calculated according to: 
+<H2><A ID="SECTION00732000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Normal faults</A>
+</H2>
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\uline{t} = \uuline{S}{}_G \uline{n}_n
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img715.svg"
- ALT="$\displaystyle \uline{t} = \uuline{S}{}_G \uline{n}_n$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-The total normal stress on the plane of the fault is <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img716.svg"
- ALT="$S_n$"></SPAN> (aligned with <!-- MATH
- $\uline{n}_n$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img714.svg"
- ALT="$\uline{n}_n$"></SPAN>): 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-S_n = \uline{t} \cdot \uline{n}_n
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.36ex; vertical-align: -0.68ex; " SRC="img717.svg"
- ALT="$\displaystyle S_n = \uline{t} \cdot \uline{n}_n$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-The effective normal stress on the fault plane is <!-- MATH
- $\sigma_n = S_n - P_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img718.svg"
- ALT="$\sigma_n = S_n - P_p $"></SPAN>.
-The shear stresses on the plane of the fault is aligned with <!-- MATH
- $\uline{n}_d$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img712.svg"
- ALT="$\uline{n}_d$"></SPAN> and <!-- MATH
- $\uline{n}_s$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img713.svg"
- ALT="$\uline{n}_s$"></SPAN> are: 
-
-<P>
-<P></P>
+A normal fault is caused by in-situ stress conditions in which 		<P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
 \left\lbrace
-	\begin{array}{l}
-		\tau_d = \uline{t} \cdot \uline{n}_d \\
-		\tau_s = \uline{t} \cdot \uline{n}_s
-	\end{array}
+		\begin{array}{l}
+			S_1 = S_v \\
+			S_2 = S_{Hmax} \\
+			S_3 = S_{hmin} \\
+		\end{array}
 	\right.
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
 <TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img719.svg"
+ SRC="img668.svg"
  ALT="\begin{displaymath}\left\lbrace
 \begin{array}{l}
-\tau_d = \uline{t} \cdot \uline{n}_d \\
-\tau_s = \uline{t} \cdot \uline{n}_s
+S_1 = S_v \\
+S_2 = S_{Hmax} \\
+S_3 = S_{hmin} \\
 \end{array}\right.\end{displaymath}"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
-
-<P>
-The dot product is used in all these vector to vector multiplications. The geometrical meaning is the projection of one vector onto the other.
-
-<P>
-The effective normal stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img522.svg"
- ALT="$\sigma_n$"></SPAN> and absolute shear <!-- MATH
- $\tau = \sqrt{\tau_d^2 + \tau_s^2}$
+where <!-- MATH
+ $S_1 > S_2 > S_3$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 4.47ex; vertical-align: -1.52ex; " SRC="img720.svg"
- ALT="$\tau = \sqrt{\tau_d^2 + \tau_s^2}$"></SPAN> can also be calculated with the following equations:
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img669.svg"
+ ALT="$S_1 &gt; S_2 &gt; S_3$"></SPAN>.
+These stress conditions are typical of tectonically passive and laterally extensional environments.	
+For example, the Permian Basin in Texas is mostly under normal faulting stress regime.
+The fault plane is a shear rupture plane. Its orientation is (<!-- MATH
+ $\pi/4 + \varphi/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img575.svg"
+ ALT="$\pi/4 + \varphi/2$"></SPAN>) in vertical direction from the horizontal plane (the plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN>) to the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN>. 
+The blocks move along the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> and do work against <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN>. 
+At any point in the fault, the block above the fault is called the &ldquo;hanging-wall&rdquo; and the block below is the &ldquo;footwall&rdquo; (Fig. <A HREF="#fig:NormalFault">5.12</A>). 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:NormalFault"></A><A ID="5839"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.12:</STRONG>
+Single normal fault</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24338" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img670.svg"
+ ALT="\includegraphics[scale=0.50]{.././Figures/split/6-12.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Normal faults usually occur in pairs. 
+Notice that the shear failure angle includes two possible solutions (for <!-- MATH
+ $S_1 \neq S_2 \neq S_3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img671.svg"
+ ALT="$S_1 \neq S_2 \neq S_3$"></SPAN>). These are called conjugate solutions. 
+The block that moves down in between two normal conjugate faults is termed &ldquo;graben&rdquo;, while the ones that move up relative to the footwall  are called &ldquo;horst&rdquo; (Fig. <A HREF="#fig:GrabenHorst">5.13</A>). 
+These geological structures occur frequently in hydrocarbon systems with structural fault traps.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:GrabenHorst"></A><A ID="5845"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.13:</STRONG>
+Conjugate normal faults forming graben and horst structures.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24345" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img672.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/6-13.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00733000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Thrust and reverse faults</A>
+</H2>
+
+<P>
+A thrust fault is caused by in-situ stress conditions in which 		
 
 <P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-\sigma_n = \uline{t} \cdot \uline{n}_n - P_p
+\left\lbrace
+		\begin{array}{l}
+			S_1 = S_{Hmax} \\
+			S_2 = S_{hmin} \\
+			S_3 = S_v \\
+		\end{array}
+	\right.
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img721.svg"
- ALT="$\displaystyle \sigma_n = \uline{t} \cdot \uline{n}_n - P_p$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img673.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+S_1 = S_{Hmax} \\
+S_2 = S_{hmin} \\
+S_3 = S_v \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">13</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
+
+<P>
+These stress conditions are typical of locations with high compressive tectonic strains.
+For example, sedimentary basins close to the Andes and Himalayas foothills are under reverse faulting regime.	
+The fault plane is a shear rupture plane. 
+Its orientation is <!-- MATH
+ $(\pi/4 + \varphi/2)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img674.svg"
+ ALT="$(\pi/4 + \varphi/2)$"></SPAN> in vertical direction from a vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN> to the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img675.svg"
+ ALT="$S_{v}$"></SPAN> (Fig. <A HREF="#fig:ThrustFault">5.14</A>). 
+The blocks move along the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN> and do work against gravity <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> (surface uplift). 
+As with normal faulting, the block above the fault is called the &ldquo;hanging-wall&rdquo; and the block below the &ldquo;footwall&rdquo;.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:ThrustFault"></A><A ID="5862"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.14:</STRONG>
+Thrust fault example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24363" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img676.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/6-14.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+A fault that may have been caused by paleo-stresses corresponding to a normal stress regime, but now moves according to in-situ stress conditions of a thrust fault stress environment is termed a reverse fault (Fig. <A HREF="#fig:ReverseFault">5.15</A>).
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:ReverseFault"></A><A ID="5868"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.15:</STRONG>
+Reverse fault example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24368" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img677.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/6-15.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00734000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Strike-slip faults</A>
+</H2>
+
+<P>
+A strike-slip fault is caused by in-situ stress conditions in which 	
+
+<P>
 <P></P>
 <DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
-\tau^2 = ||\uline{t}||^2 - ||\uline{t} \cdot \uline{n}_n||^2
+\left\lbrace
+		\begin{array}{l}
+			S_1 = S_{Hmax} \\
+			S_2 = S_v \\
+			S_3 = S_{hmin} \\
+		\end{array}
+	\right.
 \end{equation}
  -->
 <TABLE CLASS="equation" >
 <TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.84ex; vertical-align: -0.69ex; " SRC="img722.svg"
- ALT="$\displaystyle \tau^2 = \vert\vert\uline{t}\vert\vert^2 - \vert\vert\uline{t} \cdot \uline{n}_n\vert\vert^2$"></SPAN></TD>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img678.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+S_1 = S_{Hmax} \\
+S_2 = S_v \\
+S_3 = S_{hmin} \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">14</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-The <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> is the angle of the shear stress <!-- MATH
- $\uline{\tau}_d + \uline{\tau}_s$
+These stress conditions are typical of high compressive tectonic strains mostly in one direction.
+Some sedimentary basins around the Rocky Mountains and near California are under strike slip regime.	
+The fault plane is a shear rupture plane and it is vertical. Its orientation is <!-- MATH
+ $(\pi/4 + \varphi/2)$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.13ex; vertical-align: -0.68ex; " SRC="img724.svg"
- ALT="$\uline{\tau}_d + \uline{\tau}_s$"></SPAN> with respect to <!-- MATH
- $\uline{n}_s$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.78ex; vertical-align: -0.68ex; " SRC="img713.svg"
- ALT="$\uline{n}_s$"></SPAN> (horizontal line) and quantifies the direction of expected fault movement in the fault plane.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img674.svg"
+ ALT="$(\pi/4 + \varphi/2)$"></SPAN> in horizontal direction from a vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN> towards a plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN>. 
+The schematic in Fig. <A HREF="#fig:StrikeSlipSchematics">5.16</A> shows an oblique fault, not a pure strike-slip fault.
+The fault is called strike-slip, because it slips in horizontal direction, in the direction of the fault strike. 
+Notice that oblique faults move with a combination of vertical and horizontal displacements.
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-rake = \arctan \left( \frac{\tau_d}{\tau_s} \right)
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img725.svg"
- ALT="$\displaystyle rake = \arctan \left( \frac{\tau_d}{\tau_s} \right)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">15</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
 
+<DIV class="CENTER"><A ID="fig:StrikeSlipSchematics"></A><A ID="5884"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.16:</STRONG>
+Strike-slip fault example.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24382" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img679.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-16.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00735000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Stress and faulting regimes</A>
+</H2>
+
+<P>
+The type of fault that occurs for each stress combination gives rise to the name of the stress faulting regime (Table <A HREF="#table:Andersonian">5.2</A>). 
+Notice that stresses may change in magnitude and direction with time at a given location (see stress map in Fig. <A HREF="#fig:WorldStressMap">5.17</A> - other maps available at <kbd><A ID="tex2html164"
+  HREF="http://www.world-stress-map.org/">http://www.world-stress-map.org/</A></kbd>). Furthermore, the same location may evolve through different stress regimes over geological periods of time.
+The stress regime can also change with depth at the same location.
+Changes of stress regime with depth are critical for defining the geometry of fluid-driven fractures.
+
+<P>
+<BR><P></P>
+<DIV class="CENTER">
+<DIV class="CENTER">
+<A ID="table:Andersonian"></A><A ID="5892"></A>
+<TABLE class="PAD  BORDER" style="">
+<CAPTION><STRONG>Table 5.2:</STRONG>
+The Andersonian faulting classification system.</CAPTION>
+<TR><TD CLASS="CENTER">Faulting regime</TD>
+<TD CLASS="CENTER">Maximum principal</TD>
+<TD CLASS="CENTER">Intermediate principal</TD>
+<TD CLASS="CENTER">Minimum principal</TD>
+</TR>
+<TR><TD CLASS="CENTER">&nbsp;</TD>
+<TD CLASS="CENTER">stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN></TD>
+<TD CLASS="CENTER">stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img250.svg"
+ ALT="$S_2$"></SPAN></TD>
+<TD CLASS="CENTER">stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">Normal (NF)</TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">Strike-slip (SS)</TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN></TD>
+</TR>
+<TR><TD CLASS="CENTER">Reverse (RF)</TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN></TD>
+<TD CLASS="CENTER"><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img675.svg"
+ ALT="$S_{v}$"></SPAN></TD>
+</TR>
+</TABLE></DIV>
+</DIV>
+<BR>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:WorldStressMap"></A><A ID="6787"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.17:</STRONG>
+World stress map <kbd><A ID="tex2html166"
+  HREF="http://www.world-stress-map.org/">http://www.world-stress-map.org/</A></kbd>. The figure above shows directions of maximum horizontal stresses based on various types of field measurements. The orientation of maximum horizontal stress varies with location and is strongly influenced by plate movement and imparted tectonic strains.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24435" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img680.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/6-18.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00736000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Ideal orientation of faults</A>
+</H2>
+
+<P>
+The ideal orientation of a hydraulic fracture is a plane perpendicular to the minimum principal stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN> direction.
+Similarly, we can also tell what would be the orientation of ideal conjugate pairs of shear fractures (faults) for a given state of stress. 
+The dip and strike will depend on <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN>, and the friction angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img566.svg"
+ ALT="$\varphi$"></SPAN> (Fig. <A HREF="#fig:FracIdealOrientation">5.19</A>). 
+Such ideal conjugate pair of shear fractures would be located:
+
+<UL>
+<LI>in planes that are in between the planes perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN>,
+</LI>
+<LI>in planes that are co-linear with <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img250.svg"
+ ALT="$S_2$"></SPAN>,
+</LI>
+<LI>in planes that are at <!-- MATH
+ $\pi/4 + \varphi/2$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img575.svg"
+ ALT="$\pi/4 + \varphi/2$"></SPAN> from the plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> towards the plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN>.
+</LI>
+</UL>
+The general solution is shown in Figure <A HREF="#fig:IdealFaultsGeneralCase">5.18</A>.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:IdealFaultsGeneralCase"></A><A ID="5917"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.18:</STRONG>
+Ideal orientation of a pair of conjugate shear fractures (faults) as a function of the orientation of principal stresses and the friction angle.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24461" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img681.svg"
+ ALT="\includegraphics[scale=0.50]{.././Figures/split/6-IdealFaultOrientationGC.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Notice that all these angles vary according to the stress regime.
+Faults formed in NF stress regime tend to be steep.
+Faults formed in RF stress regime are not too steep.
+Faults formed in SS stress regime are vertical.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:FracIdealOrientation"></A><A ID="5922"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.19:</STRONG>
+Summary of ideal pairs of shear fractures in (left) normal fault stress regime, (center) strike-slip stress regime, and (right) thrust (reverse) faulting stress regime. From top to bottom the figure shows: block diagrams with stresses, block diagram with shear fractures, stereonets, and 3D Mohr circles.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24466" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./6-IdealFaultOrientation.png"
+ ALT="Image 6-IdealFaultOrientation"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
  <BR>
-<SPAN  CLASS="textit">PROBLEM 5.9:</SPAN> Calculate <SPAN CLASS="MATH"><IMG STYLE="height: 1.64ex; vertical-align: -0.11ex; " SRC="img726.svg"
- ALT="$t$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img716.svg"
- ALT="$S_n$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img727.svg"
- ALT="$\tau_d$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img728.svg"
- ALT="$\tau_s$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> for a fault with strike 000<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> and dip 60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>E in a place with normal faulting stress regime (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img729.svg"
- ALT="$S_v = 23$"></SPAN> MPa, <!-- MATH
- $S_{Hmax} = 15$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img730.svg"
- ALT="$S_{Hmax} = 15$"></SPAN> MPa, <!-- MATH
- $S_{hmin} = 13.8$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img731.svg"
- ALT="$S_{hmin} = 13.8$"></SPAN> MPa) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN> equal to 90<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
+<SPAN  CLASS="textit">PROBLEM 5.1:</SPAN> Find the ideal orientation of a hydraulic fracture and faults (shear fractures) at a location subjected to the following state of stress and conditions:
+
+<UL>
+<LI>Stress regime: Normal faulting 
+</LI>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> is a principal stress
+</LI>
+<LI>Azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN> is N60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img23.svg"
+ ALT="$^{\circ }$"></SPAN>W
+</LI>
+<LI>Friction angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img566.svg"
+ ALT="$\varphi$"></SPAN> = 30<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img23.svg"
+ ALT="$^{\circ }$"></SPAN>. 	
+</LI>
+</UL> 
 
 <P>
 SOLUTION <BR>
+First, recognize the planes of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN> and their orientations with respect to the geographical coordinate system.
+The plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> in this case is a horizontal plane (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> plane, a principal stress) and the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN> is a vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN>.
 
 <P>
-The tensor of principal stresses is 
+
+<DIV class="CENTER">
+<DIV CLASS="centerline" ID="par24492" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img682.svg"
+ ALT="\includegraphics[scale=0.75]{.././Figures/split/6-IdealFracP1.pdf}"></DIV>
+
+</DIV> 
+<P>
+A hydraulic fracture would be perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN>, in this case <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN>. Hence, the strike is <!-- MATH
+ $\phi_{HF} = 030^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img683.svg"
+ ALT="$\phi_{HF} = 030^{\circ}$"></SPAN> and the dip is <!-- MATH
+ $\delta_{HF} = 90^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img684.svg"
+ ALT="$\delta_{HF} = 90^{\circ}$"></SPAN> because <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN> is horizontal.
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		23 & 0  & 0 \\
-		0  & 15 & 0 \\
-		0  &  0 & 13.8
-	\end{array}
-	\right]
-\end{equation*}
+The dip of faults depends on the friction angle.
+In this case, the failure angle is:
+<P><!-- MATH
+ \begin{displaymath}
+\beta = 45^{\circ} + \varphi / 2 =  45^{\circ} + 30^{\circ} / 2 = 60^{\circ}
+\end{displaymath}
  -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img732.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-23 &amp; 0 &amp; 0 \\
-0 &amp; 15 &amp; 0 \\
-0 &amp; 0 &amp; 13.8
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img240.svg"
- ALT="$S_1 = S_v$"></SPAN> and the azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN> is 90<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 90^{\circ}$
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img685.svg"
+ ALT="$\displaystyle \beta = 45^{\circ} + \varphi / 2 = 45^{\circ} + 30^{\circ} / 2 = 60^{\circ} $">
+</DIV><P></P>
+The fault planes are at <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img25.svg"
+ ALT="$\beta $"></SPAN> going from the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> to the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN>.
+Thus, the strike of the two possible faults is <!-- MATH
+ $\phi_{F1} = \phi_{F2} = 030^{\circ}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img697.svg"
- ALT="$\alpha = 90^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 90^{\circ}$
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img686.svg"
+ ALT="$\phi_{F1} = \phi_{F2} = 030^{\circ}$"></SPAN> and the dips are <!-- MATH
+ $\delta_{F1} = 60^{\circ}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img689.svg"
- ALT="$\beta = 90^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 0^{\circ}$
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img687.svg"
+ ALT="$\delta_{F1} = 60^{\circ}$"></SPAN>SE and <!-- MATH
+ $\delta_{F1} = 60^{\circ}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img690.svg"
- ALT="$\gamma = 0^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		0  & 0  & -1 \\
-		-1  & 0  & 0 \\
-		0  & 1 & 0
-	\end{array}
-	\right]
-\end{equation*}
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img687.svg"
+ ALT="$\delta_{F1} = 60^{\circ}$"></SPAN>NW. <!-- MATH
+ $\: \: \blacksquare$
  -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img733.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
-0 &amp; 0 &amp; -1 \\
--1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and the total stress in the geographical coordinate system results 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		15 & 0  & 0 \\
-		0  & 13.8 & 0 \\
-		0  &  0 & 23
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img734.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
-15 &amp; 0 &amp; 0 \\
-0 &amp; 13.8 &amp; 0 \\
-0 &amp; 0 &amp; 23
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Given the orientation of the fault, the vector normal to the fault is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uline{n}{}_n
-	=
-	\left[
-	\begin{array}{c}
-		0 \\
-		0.867 \\
-		-0.5
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img735.svg"
- ALT="\begin{displaymath}\uline{n}{}_n
-=
-\left[
-\begin{array}{c}
-0 \\
-0.867 \\
--0.5
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Finally, the stresses on the fault are
-
-<P>
-<!-- MATH
- $\uline{t}= [0,11.95,-11.50]$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img736.svg"
- ALT="$\uline{t}= [0,11.95,-11.50]$"></SPAN> MPa.
-<BR>
-<!-- MATH
- $S_n = 16.1$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img737.svg"
- ALT="$S_n = 16.1$"></SPAN> MPa <BR>
-<!-- MATH
- $\tau_d = -3.98$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img738.svg"
- ALT="$\tau_d = -3.98$"></SPAN> MPa <BR>
-<!-- MATH
- $\tau_s = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img739.svg"
- ALT="$\tau_s = 0$"></SPAN> MPa <BR>
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> = 90<!-- MATH
- $^{\circ} \: \: \blacksquare$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img740.svg"
- ALT="$^{\circ} \: \: \blacksquare $"></SPAN> <BR>
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img156.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+ <BR>
 
 <P>
  <BR>
-<SPAN  CLASS="textit">PROBLEM 5.10:</SPAN> Calculate <SPAN CLASS="MATH"><IMG STYLE="height: 1.64ex; vertical-align: -0.11ex; " SRC="img726.svg"
- ALT="$t$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img716.svg"
- ALT="$S_n$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img727.svg"
- ALT="$\tau_d$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img728.svg"
- ALT="$\tau_s$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> for a fault with strike 060<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> and dip 90<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> in a place with strike-slip stress regime (<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img741.svg"
- ALT="$S_v = 30$"></SPAN> MPa, <!-- MATH
- $S_{Hmax} = 45$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img742.svg"
- ALT="$S_{Hmax} = 45$"></SPAN> MPa, <!-- MATH
- $S_{hmin} = 25$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img743.svg"
- ALT="$S_{hmin} = 25$"></SPAN> MPa) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> equal to  120<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
+<SPAN  CLASS="textit">PROBLEM 5.2:</SPAN> Find the ideal orientation of a hydraulic fracture and faults (shear fractures) at a location subjected to the following state of stress and conditions:
 
-<P>
-SOLUTION <BR>
-The tensor of principal stresses is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		45 & 0  & 0 \\
-		0  & 30 & 0 \\
-		0  &  0 & 25
-	\end{array}
-	\right] \text{ MPa}
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img744.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-45 &amp; 0 &amp; 0 \\
-0 &amp; 30 &amp; 0 \\
-0 &amp; 0 &amp; 25
-\end{array}\right] \text{ MPa}\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img240.svg"
- ALT="$S_1 = S_v$"></SPAN> and the azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> is 120<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 120^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img745.svg"
- ALT="$\alpha = 120^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img693.svg"
- ALT="$\beta = 0^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 90^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img694.svg"
- ALT="$\gamma = 90^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		-0.5  & 0.866  & 0 \\
-		0  & 0  & 1 \\
-		0.866  & 0.5 & 0
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img746.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
--0.5 &amp; 0.866 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-0.866 &amp; 0.5 &amp; 0
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and the total stress in the geographical coordinate system results 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		30 & -8.66  & 0 \\
-		-8.66  & 40 & 0 \\
-		0  &  0 & 30
-	\end{array}
-	\right] \text{ MPa}
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img747.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
-30 &amp; -8.66 &amp; 0 \\
--8.66 &amp; 40 &amp; 0 \\
-0 &amp; 0 &amp; 30
-\end{array}\right] \text{ MPa}\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Given the orientation of the fault, the vector normal to the fault is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uline{n}{}_n
-	=
-	\left[
-	\begin{array}{c}
-		-0.866 \\
-		0.5 \\
-		0
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img748.svg"
- ALT="\begin{displaymath}\uline{n}{}_n
-=
-\left[
-\begin{array}{c}
--0.866 \\
-0.5 \\
-0
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Finally, the stresses on the fault are
-
-<P>
-<!-- MATH
- $\uline{t}= [-30.31,27.5,0]$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img749.svg"
- ALT="$\uline{t}= [-30.31,27.5,0]$"></SPAN> MPa.
-<BR>
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img750.svg"
- ALT="$S_n = 40$"></SPAN> MPa <BR>
-<!-- MATH
- $\tau_d = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img751.svg"
- ALT="$\tau_d = 0$"></SPAN> MPa <BR>
-<!-- MATH
- $\tau_s = 8.66$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img752.svg"
- ALT="$\tau_s = 8.66$"></SPAN> MPa <BR>
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> = 0<!-- MATH
- $^{\circ} \: \: \blacksquare$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img740.svg"
- ALT="$^{\circ} \: \: \blacksquare $"></SPAN> <BR>
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.11:</SPAN> Calculate <SPAN CLASS="MATH"><IMG STYLE="height: 1.64ex; vertical-align: -0.11ex; " SRC="img726.svg"
- ALT="$t$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img716.svg"
- ALT="$S_n$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img727.svg"
- ALT="$\tau_d$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img728.svg"
- ALT="$\tau_s$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> for conjugate faults with strike 045<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> and 225<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> both with dip 60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> in a place with normal faulting stress regime (<!-- MATH
- $S_v = 5000$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img753.svg"
- ALT="$S_v = 5000$"></SPAN> psi, <!-- MATH
- $S_{Hmax} = 4000$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img754.svg"
- ALT="$S_{Hmax} = 4000$"></SPAN> psi, <!-- MATH
- $S_{hmin} = 3000$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img755.svg"
- ALT="$S_{hmin} = 3000$"></SPAN> psi) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN> equal to  90<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
-
-<P>
-SOLUTION <BR>
-The tensor of principal stresses is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		5000 & 0  & 0 \\
-		0  & 4000 & 0 \\
-		0  &  0 & 3000
-	\end{array}
-	\right] \text{ psi}
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img756.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-5000 &amp; 0 &amp; 0 \\
-0 &amp; 4000 &amp; 0 \\
-0 &amp; 0 &amp; 3000
-\end{array}\right] \text{ psi}\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img240.svg"
- ALT="$S_1 = S_v$"></SPAN> and the azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN> is 90<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 90^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img697.svg"
- ALT="$\alpha = 90^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 90^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img689.svg"
- ALT="$\beta = 90^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 0^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img690.svg"
- ALT="$\gamma = 0^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		0  & 0  & -1 \\
-		-1  & 0  & 0 \\
-		0  & 1 & 0
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img733.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
-0 &amp; 0 &amp; -1 \\
--1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and the total stress tensor in the geographical coordinate system results 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		4000 & 0  & 0 \\
-		0  & 3000 & 0 \\
-		0  &  0 & 5000
-	\end{array}
-	\right] \text{ psi}
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img757.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
-4000 &amp; 0 &amp; 0 \\
-0 &amp; 3000 &amp; 0 \\
-0 &amp; 0 &amp; 5000
-\end{array}\right] \text{ psi}\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Let us consider the first fault with strike of 045<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> and dip of 60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>, the vector normal to the faults is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uline{n}{}_{n}
-	=
-	\left[
-	\begin{array}{c}
-		-0.612 \\
-		0.612 \\
-		-0.5
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img758.svg"
- ALT="\begin{displaymath}\uline{n}{}_{n}
-=
-\left[
-\begin{array}{c}
--0.612 \\
-0.612 \\
--0.5
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-The stresses on this fault are
-
-<P>
-<!-- MATH
- $\uline{t}= [-2450,1840,-2500]$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img759.svg"
- ALT="$\uline{t}= [-2450,1840,-2500]$"></SPAN> psi.
-<BR>
-<!-- MATH
- $S_n = 3870$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img760.svg"
- ALT="$S_n = 3870$"></SPAN> psi <BR>
-<!-- MATH
- $\tau_d = -649$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img761.svg"
- ALT="$\tau_d = -649$"></SPAN> psi <BR>
-<!-- MATH
- $\tau_s = -433$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img762.svg"
- ALT="$\tau_s = -433$"></SPAN> psi <BR>
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> = 56.3<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
+<UL>
+<LI>Stress regime: Strike-slip faulting 
+</LI>
+<LI><SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> is a principal stress
+</LI>
+<LI>Azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN> is 010<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img23.svg"
  ALT="$^{\circ }$"></SPAN>
-<BR>
-
-<P>
-Let us consider the fault with strike of 225<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> and dip of 60<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>, the vector normal to the faults is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uline{n}{}_{n}
-	=
-	\left[
-	\begin{array}{c}
-		0.612 \\
-		-0.612 \\
-		-0.5
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img763.svg"
- ALT="\begin{displaymath}\uline{n}{}_{n}
-=
-\left[
-\begin{array}{c}
-0.612 \\
--0.612 \\
--0.5
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-The stresses on this fault are
-
-<P>
-<!-- MATH
- $\uline{t}= [2450,-1840,-2500]$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img764.svg"
- ALT="$\uline{t}= [2450,-1840,-2500]$"></SPAN> psi.
-<BR>
-<!-- MATH
- $S_n = 3870$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img760.svg"
- ALT="$S_n = 3870$"></SPAN> psi <BR>
-<!-- MATH
- $\tau_d = -649$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img761.svg"
- ALT="$\tau_d = -649$"></SPAN> psi <BR>
-<!-- MATH
- $\tau_s = -433$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img762.svg"
- ALT="$\tau_s = -433$"></SPAN> psi <BR>
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> = 56.3<!-- MATH
- $^{\circ} \: \: \blacksquare$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img740.svg"
- ALT="$^{\circ} \: \: \blacksquare $"></SPAN> <BR>
-
-<P>
- <BR>
-<SPAN  CLASS="textit">PROBLEM 5.12:</SPAN> Calculate <SPAN CLASS="MATH"><IMG STYLE="height: 1.64ex; vertical-align: -0.11ex; " SRC="img726.svg"
- ALT="$t$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img716.svg"
- ALT="$S_n$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img727.svg"
- ALT="$\tau_d$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img728.svg"
- ALT="$\tau_s$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN>, and <!-- MATH
- $\tau / \sigma_n$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img30.svg"
- ALT="$\tau /\sigma _n$"></SPAN> for a fault with strike 120<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> and 70<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> dip in a place with reverse faulting stress regime (<!-- MATH
- $S_v = 1000$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img765.svg"
- ALT="$S_v = 1000$"></SPAN> psi, <!-- MATH
- $S_{Hmax} = 2400$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img766.svg"
- ALT="$S_{Hmax} = 2400$"></SPAN> psi, <!-- MATH
- $S_{hmin} = 1200$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img767.svg"
- ALT="$S_{hmin} = 1200$"></SPAN> psi) with azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> equal to  150<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> and pore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img768.svg"
- ALT="$P_p = 440$"></SPAN> psi. <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN> is a principal stress.  
+</LI>
+<LI>Friction angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img566.svg"
+ ALT="$\varphi$"></SPAN> = 40<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img23.svg"
+ ALT="$^{\circ }$"></SPAN>. 	
+</LI>
+</UL> 
 
 <P>
 SOLUTION <BR>
-The tensor of principal stresses is 
+First, recognize the planes of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN> and their orientations with respect to the geographical coordinate system.
+The plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> in this case is a vertical plane (<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
+ ALT="$S_{Hmax}$"></SPAN> plane) and the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN> is another vertical plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN>.
 
 <P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_P
-	=
-	\left[
-	\begin{array}{ccc}
-		2400 & 0  & 0 \\
-		0  & 1200 & 0 \\
-		0  &  0 & 1000
-	\end{array}
-	\right] \text{ psi}
-\end{equation*}
+
+<DIV class="CENTER">
+<DIV CLASS="centerline" ID="par24542" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img688.svg"
+ ALT="\includegraphics[scale=0.75]{.././Figures/split/6-IdealFracP2.pdf}"></DIV>
+
+</DIV> 
+<P>
+A hydraulic fracture would be perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN>, in this case <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN>. Hence, the strike is <!-- MATH
+ $\phi_{HF} = 010^{\circ}$
  -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img769.svg"
- ALT="\begin{displaymath}\uuline{S}{}_P
-=
-\left[
-\begin{array}{ccc}
-2400 &amp; 0 &amp; 0 \\
-0 &amp; 1200 &amp; 0 \\
-0 &amp; 0 &amp; 1000
-\end{array}\right] \text{ psi}\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img689.svg"
+ ALT="$\phi_{HF} = 010^{\circ}$"></SPAN> and the dip is <!-- MATH
+ $\delta_{HF} = 90^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img684.svg"
+ ALT="$\delta_{HF} = 90^{\circ}$"></SPAN> because <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN> is horizontal.
 
 <P>
-and the pore pressure is <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img768.svg"
- ALT="$P_p = 440$"></SPAN> psi.
-
-<P>
-Using Table <A HREF="#table:RPGsummary">5.3</A> and considering that <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img252.svg"
- ALT="$S_3 = S_v$"></SPAN> and the azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> is 150<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN>, the angles of the principal stress coordinate result <!-- MATH
- $\alpha = 150^{\circ}$
+The dip of faults depends on the friction angle.
+In this case, the failure angle is:
+<P><!-- MATH
+ \begin{displaymath}
+\beta = 45^{\circ} + \varphi / 2 =  45^{\circ} + 40^{\circ} / 2 = 65^{\circ}
+\end{displaymath}
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img770.svg"
- ALT="$\alpha = 150^{\circ}$"></SPAN>, <!-- MATH
- $\beta = 0^{\circ}$
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img690.svg"
+ ALT="$\displaystyle \beta = 45^{\circ} + \varphi / 2 = 45^{\circ} + 40^{\circ} / 2 = 65^{\circ} $">
+</DIV><P></P>
+The fault planes are at <SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img25.svg"
+ ALT="$\beta $"></SPAN> going from the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img19.svg"
+ ALT="$S_1$"></SPAN> to the plane of <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img20.svg"
+ ALT="$S_3$"></SPAN>.
+Thus, the strikes of the two possible faults are <!-- MATH
+ $\phi_{F1} = 345^{\circ}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img693.svg"
- ALT="$\beta = 0^{\circ}$"></SPAN>, and <!-- MATH
- $\gamma = 0^{\circ}$
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img691.svg"
+ ALT="$\phi_{F1} = 345^{\circ}$"></SPAN> and <!-- MATH
+ $\phi_{F2} =  035^{\circ}$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img690.svg"
- ALT="$\gamma = 0^{\circ}$"></SPAN>. 
-The change of coordinate system matrix results
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-R_{PG}
-	=
-	\left[
-	\begin{array}{ccc}
-		-0.866  & 0.5  & 0 \\
-		-0.5  & -0.866  & 0 \\
-		0  & 0 & 1
-	\end{array}
-	\right]
-\end{equation*}
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img692.svg"
+ ALT="$\phi_{F2} = 035^{\circ}$"></SPAN>, the dip is <!-- MATH
+ $\delta_{F1} = \delta_{F2} = 90^{\circ}$
  -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img771.svg"
- ALT="\begin{displaymath}R_{PG}
-=
-\left[
-\begin{array}{ccc}
--0.866 &amp; 0.5 &amp; 0 \\
--0.5 &amp; -0.866 &amp; 0 \\
-0 &amp; 0 &amp; 1
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and the total stress in the geographical coordinate system results 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uuline{S}{}_G
-	=
-	\left[
-	\begin{array}{ccc}
-		2100 & -520  & 0 \\
-		-520  & 1500 & 0 \\
-		0  &  0 & 1000
-	\end{array}
-	\right] \text{ psi}
-\end{equation*}
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.18ex; vertical-align: -0.47ex; " SRC="img693.svg"
+ ALT="$\delta_{F1} = \delta_{F2} = 90^{\circ}$"></SPAN>. <!-- MATH
+ $\: \: \blacksquare$
  -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img772.svg"
- ALT="\begin{displaymath}\uuline{S}{}_G
-=
-\left[
-\begin{array}{ccc}
-2100 &amp; -520 &amp; 0 \\
--520 &amp; 1500 &amp; 0 \\
-0 &amp; 0 &amp; 1000
-\end{array}\right] \text{ psi}\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Given the orientation of the fault, the vector normal to the fault is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation*}
-\uline{n}{}_n
-	=
-	\left[
-	\begin{array}{c}
-		-0.814 \\
-		-0.470 \\
-		-0.342
-	\end{array}
-	\right]
-\end{equation*}
- -->
-<TABLE CLASS="equation*" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img773.svg"
- ALT="\begin{displaymath}\uline{n}{}_n
-=
-\left[
-\begin{array}{c}
--0.814 \\
--0.470 \\
--0.342
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-&nbsp;&nbsp;&nbsp;</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Finally, the stresses on the fault are
-
-<P>
-<!-- MATH
- $\uline{t}= [-1465,-281,-342]$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img774.svg"
- ALT="$\uline{t}= [-1465,-281,-342]$"></SPAN> psi.
-<BR>
-<!-- MATH
- $S_n = 1441$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img775.svg"
- ALT="$S_n = 1441$"></SPAN> psi, <!-- MATH
- $\sigma_n = 1001$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img776.svg"
- ALT="$\sigma_n = 1001$"></SPAN> psi <BR>
-<!-- MATH
- $\tau_d = 160$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img777.svg"
- ALT="$\tau_d = 160$"></SPAN> psi, <!-- MATH
- $\tau_s = 488$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img778.svg"
- ALT="$\tau_s = 488$"></SPAN> psi, <!-- MATH
- $\tau = 514$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img779.svg"
- ALT="$\tau = 514$"></SPAN> psi <BR>
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img723.svg"
- ALT="$rake$"></SPAN> = 18.21<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img22.svg"
- ALT="$^{\circ }$"></SPAN> <BR>
-
-<P>
-The ratio of shear to normal effective stress is 
-<!-- MATH
- $\tau / \sigma_n = 0.51  \: \: \blacksquare$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img780.svg"
- ALT="$\tau / \sigma_n = 0.51 \: \: \blacksquare$"></SPAN>
-
-<P>
-Example: make 3D Mohr-Circle filled with color corresponding to <!-- MATH
- $\tau / \sigma_n$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img30.svg"
- ALT="$\tau /\sigma _n$"></SPAN> value, stereo net, and fractures in 3D.  
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img156.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+ <BR>
 
 <P>
 
@@ -2432,22 +822,22 @@ Example: make 3D Mohr-Circle filled with color corresponding to <!-- MATH
  HREF="node39.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node34.html">
+ HREF="node35.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node37.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html765"
+<A ID="tex2html779"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node39.html">5.5 Applications</A>
+ HREF="node39.html">5.4 Determination of normal</A>
 <B> Up:</B> <A
- HREF="node34.html">5. Stresses on Faults</A>
+ HREF="node35.html">5. Stresses on Faults</A>
 <B> Previous:</B> <A
- HREF="node37.html">5.3 Frictional strength of</A>
- &nbsp; <B>  <A ID="tex2html766"
+ HREF="node37.html">5.2 Mapping of faults</A>
+ &nbsp; <B>  <A ID="tex2html780"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

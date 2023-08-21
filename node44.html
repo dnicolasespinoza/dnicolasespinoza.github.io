@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 
-<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>6.2 Kirsch solution for stresses around a cylindrical cavity</TITLE>
-<META NAME="description" CONTENT="6.2 Kirsch solution for stresses around a cylindrical cavity">
+<TITLE>6.1 The wellbore environment</TITLE>
+<META NAME="description" CONTENT="6.1 The wellbore environment">
 <META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
 <LINK REL="STYLESHEET" HREF="IPG.css">
 
@@ -27,554 +27,137 @@
  HREF="node45.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node42.html">
+ HREF="node43.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node43.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html807"
+<A ID="tex2html827"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node45.html">6.3 Shear failure and</A>
+ HREF="node45.html">6.2 Kirsch solution for</A>
 <B> Up:</B> <A
- HREF="node42.html">6. Wellbore Stability</A>
+ HREF="node43.html">6. Wellbore Stability</A>
 <B> Previous:</B> <A
- HREF="node43.html">6.1 The wellbore environment</A>
- &nbsp; <B>  <A ID="tex2html808"
+ HREF="node43.html">6. Wellbore Stability</A>
+ &nbsp; <B>  <A ID="tex2html828"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html809"
-  HREF="node44.html#SECTION00721000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Cylindrical coordinate system</A>
-<LI><A ID="tex2html810"
-  HREF="node44.html#SECTION00722000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kirsch solution components</A>
-<LI><A ID="tex2html811"
-  HREF="node44.html#SECTION00723000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Complete Kirsch solution</A>
-</UL>
-<!--End of Table of Child-Links-->
-<HR>
-
-<H1><A ID="SECTION00720000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kirsch solution for stresses around a cylindrical cavity</A>
+<H1><A ID="SECTION00810000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> The wellbore environment</A>
 </H1>
 
 <P>
-
-<H2><A ID="SECTION00721000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Cylindrical coordinate system</A>
-</H2>
-
-<P>
-The cylindrical symmetry of a wellbore prompts the utilization of a cylindrical coordinate system rather than a rectangular cartesian coordinate system.
-The volume element of stresses in cylindrical coordinates is shown in Fig. <A HREF="#fig:REVCylCoord">6.4</A>.
-The distance <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img822.svg"
- ALT="$r$"></SPAN> is measured from the center axis of the wellbore.
-The angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img46.svg"
- ALT="$\theta $"></SPAN> is measured with respect to a predefined plane.
+Wellbore stability is critical for drilling.
+A stable open-hole requires the surrounding sediment and rock to bear the stresses that amplify around the wellbore cavity.
+The surrounding rock must hold stresses until casing is set or for undetermined time if left uncased.
 
 <P>
+Wellbore stability depends on two set of variables (Figure <A HREF="#fig:WellIntro">6.1</A>): one set which is out of our control and another set of variables that we can control.
 
-<DIV class="CENTER"><A ID="fig:REVCylCoord"></A><A ID="8291"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.4:</STRONG>
-Infinitesimal volume element in cylindrical coordinates and associated normal and shear stresses.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par25126" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="./7-REVCylCoord.png"
- ALT="Image 7-REVCylCoord"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-The normal stresses are radial stress <!-- MATH
- $\sigma_{rr}$
+<UL>
+<LI>In-situ variables out of our control include far-field stresses <!-- MATH
+ $\uuline{S}{}_G$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img36.svg"
- ALT="$\sigma _{rr}$"></SPAN>, tangential or hoop stress <!-- MATH
- $\sigma_{\theta \theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img37.svg"
- ALT="$\sigma _{\theta \theta }$"></SPAN>, and axial stress <!-- MATH
- $\sigma_{zz}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img833.svg"
- ALT="$\sigma_{zz}$"></SPAN>. 
-The shear stresses are <!-- MATH
- $\sigma_{r \theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img38.svg"
- ALT="$\sigma _{r\theta }$"></SPAN>, <!-- MATH
- $\sigma_{r z}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img834.svg"
- ALT="$\sigma_{r z}$"></SPAN>, and <!-- MATH
- $\sigma_{\theta z}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img835.svg"
- ALT="$\sigma_{\theta z}$"></SPAN>.
-
-<P>
-
-<H2><A ID="SECTION00722000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kirsch solution components</A>
-</H2>
-
-<P>
-The Kirsch solution allows us to calculate normal and shear stresses around a circular cavity in a homogeneous linear elastic solid .
-The complete Kirsch solution assumes independent action of multiple factors, namely far-field isotropic stress, deviatoric stress, wellbore pressure and pore pressure.
-
-<P>
-
-<OL>
-<LI><SPAN  CLASS="textbf">Isotropic far-field stress:</SPAN> The solution for a compressive isotropic far field stress <!-- MATH
- $\sigma_{\infty}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img33.svg"
- ALT="$\sigma _{\infty }$"></SPAN> is shown in Fig. <A HREF="#fig:KirschFarField">6.5</A>.
-The presence of the wellbore amplifies compressive stresses 2 times <!-- MATH
- $\sigma_{\theta \theta}/\sigma_{\infty}=2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img836.svg"
- ALT="$\sigma_{\theta \theta}/\sigma_{\infty}=2$"></SPAN> all around the wellbore wall in circumferential direction.
-The presence of the wellbore cavity also creates infinitely large stress anisotropy at the wellbore wall <!-- MATH
- $\sigma_{\theta \theta}/\sigma_{rr}= \infty$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img837.svg"
- ALT="$\sigma_{\theta \theta}/\sigma_{rr}= \infty$"></SPAN> all around the wellbore wall, since <!-- MATH
- $\sigma_{rr}=0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img838.svg"
- ALT="$\sigma_{rr}=0$"></SPAN> in this case.
-Stresses decrease inversely proportional to <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img839.svg"
- ALT="$r^2$"></SPAN> and are neglible at <SPAN CLASS="MATH"><IMG STYLE="height: 1.06ex; vertical-align: -0.11ex; " SRC="img28.svg"
- ALT="$\sim $"></SPAN>4 radii from the wellbore wall.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:KirschFarField"></A><A ID="8985"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.5:</STRONG>
-Kirsch solution for far field isotropic stress <!-- MATH
- $\sigma_{\infty}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img33.svg"
- ALT="$\sigma _{\infty }$"></SPAN>.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par25155" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="./7-KirschFarField.png"
- ALT="Image 7-KirschFarField"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img713.svg"
+ ALT="$\uuline{S}{}_G$"></SPAN>, pore presssure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1.svg"
+ ALT="$P_p$"></SPAN>, and rock properties.
 </LI>
-<LI><SPAN  CLASS="textbf">Inner wellbore pressure:</SPAN> The solution for fluid wall pressure in the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img32.svg"
- ALT="$P_W$"></SPAN> is shown in Fig. <A HREF="#fig:KirschPw">6.6</A>.
-We assume a non-porous solid now.
-This assumption will be relaxed later on.
-Wellbore pressure adds compression on the wellbore wall <!-- MATH
- $\sigma_{rr} = +P_W$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img840.svg"
- ALT="$\sigma_{rr} = +P_W $"></SPAN>, and induces cavity expansion and tensile hoop stresses <!-- MATH
- $\sigma_{\theta\theta} = - P_W$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img841.svg"
- ALT="$\sigma_{\theta\theta} = - P_W$"></SPAN> all around the wellbore.
+<LI>Controllable variables include mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img33.svg"
+ ALT="$P_W$"></SPAN> (<SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img206.svg"
+ ALT="$W$"></SPAN> for wellbore), mud composition, mud fluid chemistry, and wellbore orientation (direction azimuth and deviation).  
+</LI>
+</UL> 
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:KirschPw"></A><A ID="8321"></A>
+<DIV class="CENTER"><A ID="fig:WellIntro"></A><A ID="8550"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.6:</STRONG>
-Kirsch solution for wellbore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img32.svg"
- ALT="$P_W$"></SPAN>.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par25169" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.1:</STRONG>
+Wellbore stability analysis includes inherent variables, such as in-situ stresses and rock properties, and controllable variables, such as wellbore orientation and mud pressure during drilling.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par25568" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="./7-KirschPw.png"
- ALT="Image 7-KirschPw"></DIV></TD></TR>
+ SRC="img864.svg"
+ ALT="\includegraphics[scale=0.45]{.././Figures/split/8-WellIntro.PNG}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-</LI>
-<LI><SPAN  CLASS="textbf">Deviatoric stress:</SPAN> The solution for a deviatoric stress <!-- MATH
- $\Delta \sigma$
+The pressure in the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img33.svg"
+ ALT="$P_W$"></SPAN> is one of the main variables to maintain wellbore stability.
+Mud (mass) density and vertical depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img102.svg"
+ ALT="$z$"></SPAN> (TVD) determine the mud hydrostatic pressure (in the absence of additional pressure controls at the  surface - such as in managed pressure drilling):
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+P_W = \rho_{mud} \: g \: z
+\end{equation}
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img34.svg"
- ALT="$\Delta \sigma $"></SPAN> aligned with <!-- MATH
- $\theta = 0$
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img865.svg"
+ ALT="$\displaystyle P_W = \rho_{mud} \: g \: z$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>   
+
+<P>
+The pressure gradient within the wellbore is proportional to mud density <!-- MATH
+ $dP_W/dz = \rho_{mud} g$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img842.svg"
- ALT="$\theta = 0$"></SPAN> is shown in Fig. <A HREF="#fig:KirschDev">6.7</A>.
-The deviatoric stress results in compression on the wellbore wall <!-- MATH
- $\sigma_{\theta \theta} = 3 \Delta \sigma$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img843.svg"
- ALT="$\sigma_{\theta \theta} = 3 \Delta \sigma$"></SPAN> at <!-- MATH
- $\theta = \pi/2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img844.svg"
- ALT="$\theta = \pi/2$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img845.svg"
- ALT="$3\pi/2$"></SPAN>, and in tension <!-- MATH
- $\sigma_{\theta \theta} = - \Delta \sigma$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img846.svg"
- ALT="$\sigma_{\theta \theta} = - \Delta \sigma$"></SPAN> at <!-- MATH
- $\theta = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img842.svg"
- ALT="$\theta = 0$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img847.svg"
- ALT="$\pi$"></SPAN>.
-Hence, the presence of the wellbore amplifies compressive stresses 3 times <!-- MATH
- $\sigma_{\theta \theta}/\sigma_{\infty}=3$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img848.svg"
- ALT="$\sigma_{\theta \theta}/\sigma_{\infty}=3$"></SPAN> at <!-- MATH
- $\theta = \pi/2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img844.svg"
- ALT="$\theta = \pi/2$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img845.svg"
- ALT="$3\pi/2$"></SPAN>.
-The variation of stresses around the wellbore depend on harmonic functions <!-- MATH
- $\sin (\theta)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img849.svg"
- ALT="$\sin (\theta)$"></SPAN> and <!-- MATH
- $\cos (\theta)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img850.svg"
- ALT="$\cos (\theta)$"></SPAN>.
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img866.svg"
+ ALT="$dP_W/dz = \rho_{mud} g$"></SPAN> (Fig. <A HREF="#fig:ECD">6.2</A>). 
+This quantity is usually measured and reported in p.p.g. (pounds-force per gallon).
+For example the pressure gradient for fresh water is 9,800 N/m<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img110.svg"
+ ALT="$^3$"></SPAN> (= 9.8 MPa/km = 0.44 psi/ft), about 8.3 ppg. 
+The lithostatic gradient of 1 psi/ft is equivalent to 1 (psi/ft) <SPAN CLASS="MATH"><IMG STYLE="height: 1.75ex; vertical-align: -0.30ex; " SRC="img533.svg"
+ ALT="$\times$"></SPAN> (8.3 ppg/0.44 (psi/ft)) =  18.9 ppg.
+The &ldquo;equivalent circulation density&rdquo; is also reported in ppg and take into account pressure drops in the annulus.
 
 <P>
 
-<DIV class="CENTER"><A ID="fig:KirschDev"></A><A ID="8332"></A>
+<DIV class="CENTER"><A ID="fig:ECD"></A><A ID="8560"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.7:</STRONG>
-Kirsch solution for far-field deviatoric stress <!-- MATH
- $\Delta \sigma$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img34.svg"
- ALT="$\Delta \sigma $"></SPAN>.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par25203" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.2:</STRONG>
+Wellbore mud pressure and equivalent density. Mud pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img33.svg"
+ ALT="$P_W$"></SPAN> is usually reported in terms of gradient (depth-independent) rather than in absolute values.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par25585" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="./7-KirschDev.png"
- ALT="Image 7-KirschDev"></DIV></TD></TR>
+ SRC="img867.svg"
+ ALT="\includegraphics[scale=0.85]{.././Figures/split/7-ECD.pdf}"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
 <P>
-</LI>
-<LI><SPAN  CLASS="textbf">Pore pressure:</SPAN>  The last step consists in assuming a perfect mud-cake, so that, the effective stress wall support (as shown in Fig. <A HREF="#fig:KirschPw">6.6</A>) is <!-- MATH
- $(P_W - P_p)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img851.svg"
- ALT="$(P_W - P_p)$"></SPAN> instead of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img32.svg"
- ALT="$P_W$"></SPAN>.
-
-<P>
-</LI>
-</OL>
+Over-balanced drilling implies <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img868.svg"
+ ALT="$P_W &gt; P_p$"></SPAN>. 
+Over-balanced drilling favors the formation of a &ldquo;mud-cake&rdquo; or &ldquo;filter-cake&rdquo; on the wall of the wellbore which permits adding stress support on the wellbore wall approximately equal to <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img869.svg"
+ ALT="$P_W - P_p$"></SPAN> (Fig. <A HREF="#fig:mudcake">6.3</A>).
+The resulting effect is similar to an impermeable and elastic membrane applying a stress on the wellbore wall (similar to the membranes used in triaxial tests).     
+Under-balanced drilling <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img870.svg"
+ ALT="$P_W &lt; P_p$"></SPAN> may be preferred in some specific instances.
 
 <P>
 
-<H2><A ID="SECTION00723000000000000000">
-<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Complete Kirsch solution</A>
-</H2>
-
-<P>
-Consider a vertical wellbore subjected to horizontal stresses <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN>, both principal stresses, vertical stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
- ALT="$S_v$"></SPAN>, pore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1.svg"
- ALT="$P_p$"></SPAN>, and wellbore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img32.svg"
- ALT="$P_W$"></SPAN>.
-The corresponding effective in-situ stresses are <!-- MATH
- $\sigma_{Hmax}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img404.svg"
- ALT="$\sigma_{Hmax}$"></SPAN>, <!-- MATH
- $\sigma_{hmin}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img403.svg"
- ALT="$\sigma_{hmin}$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img3.svg"
- ALT="$\sigma _v$"></SPAN>.
-The Kirsch solution for a wellbore with radius <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img852.svg"
- ALT="$a$"></SPAN> within a linear elastic and isotropic solid is:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\left\lbrace
-	\begin{array}{rcl}
-		\sigma_{rr} & = &
-			(P_W - P_p) \left( \frac{a^2}{r^2} \right) +
-			\frac{\sigma_{Hmax}+\sigma_{hmin}}{2} \left( 1 -\frac{a^2}{r^2} \right) + 
-			\frac{\sigma_{Hmax}-\sigma_{hmin}}{2} \left( 1 -4 \frac{a^2}{r^2} +3 \frac{a^4}{r^4} \right) \cos (2\theta) \\
-		\sigma_{\theta \theta} & = & 
-			-(P_W - P_p) \left( \frac{a^2}{r^2} \right)
-			+\frac{\sigma_{Hmax}+\sigma_{hmin}}{2} \left( 1 +\frac{a^2}{r^2} \right) - 
-			\frac{\sigma_{Hmax}-\sigma_{hmin}}{2} \left( 1 +3 \frac{a^4}{r^4} \right) \cos (2\theta) \\
-		\sigma_{r \theta} & = & 
-			\frac{\sigma_{Hmax}-\sigma_{hmin}}{2} \left( 1 +2 \frac{a^2}{r^2} -3 \frac{a^4}{r^4} \right) \sin (2\theta) \\
-		\sigma_{zz} & = & \sigma_v - 2 \nu \left( \sigma_{Hmax}-\sigma_{hmin} \right) \left( \frac{a^2}{r^2} \right) \cos (2\theta) 			
-	\end{array}
-\right.
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img853.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{rcl}
-\sigma_{rr} &amp; = &amp;
-(P_W - P_p)...
-...left( \frac{a^2}{r^2} \right) \cos (2\theta)
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-where <!-- MATH
- $\sigma_{rr}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img36.svg"
- ALT="$\sigma _{rr}$"></SPAN> is the radial effective stress, <!-- MATH
- $\sigma_{\theta \theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img37.svg"
- ALT="$\sigma _{\theta \theta }$"></SPAN> is the tangential (hoop) effective stress, <!-- MATH
- $\sigma_{r\theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img38.svg"
- ALT="$\sigma _{r\theta }$"></SPAN> is the shear stress in a plane perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img822.svg"
- ALT="$r$"></SPAN> in tangential direction <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img46.svg"
- ALT="$\theta $"></SPAN>, and <!-- MATH
- $\sigma_{zz}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img833.svg"
- ALT="$\sigma_{zz}$"></SPAN> is the vertical effective stress in direction <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img99.svg"
- ALT="$z$"></SPAN>. 
-The angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img46.svg"
- ALT="$\theta $"></SPAN> is the angle between the direction of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN> and the point at which stress is considered.
-The distance <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img822.svg"
- ALT="$r$"></SPAN> is measured from the center of the wellbore.  
-For example, at the wellbore wall <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img854.svg"
- ALT="$r=a$"></SPAN>.
-
-<P>
-An example of the solution of Kirsch equations for <!-- MATH
- $S_{Hmax}=22$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img855.svg"
- ALT="$S_{Hmax}=22$"></SPAN> MPa, <!-- MATH
- $S_{hmin}=13$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img856.svg"
- ALT="$S_{hmin}=13$"></SPAN> MPa, and <!-- MATH
- $P_W=P_p=10$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img857.svg"
- ALT="$P_W=P_p=10$"></SPAN> MPa is available in Figure <A HREF="#fig:KirschExample">6.8</A>. 
-The plots show radial <!-- MATH
- $\sigma_{rr}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img36.svg"
- ALT="$\sigma _{rr}$"></SPAN> and tangential <!-- MATH
- $\sigma_{\theta \theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img37.svg"
- ALT="$\sigma _{\theta \theta }$"></SPAN> effective stresses, as well as the calculated principal stresses  <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img40.svg"
- ALT="$\sigma _3$"></SPAN> and <!-- MATH
- $\sigma_{1}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img858.svg"
- ALT="$\sigma_{1}$"></SPAN>.
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:KirschExample"></A><A ID="8994"></A>
+<DIV class="CENTER"><A ID="fig:mudcake"></A><A ID="8566"></A>
 <TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 6.8:</STRONG>
-Example of solution of Kirsch equations. The effective radial stress at the wellbore wall is <!-- MATH
- $P_W-P_p = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img35.svg"
- ALT="$P_W-P_p = 0$"></SPAN>. Top: solution for radial <!-- MATH
- $\sigma_{rr}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img36.svg"
- ALT="$\sigma _{rr}$"></SPAN> and hoop <!-- MATH
- $\sigma_{\theta\theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img37.svg"
- ALT="$\sigma _{\theta \theta }$"></SPAN> stresses. Bottom: solution for principal stresses (eigenvalues from <!-- MATH
- $\sigma_{\theta\theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img37.svg"
- ALT="$\sigma _{\theta \theta }$"></SPAN>, <!-- MATH
- $\sigma_{rr}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img36.svg"
- ALT="$\sigma _{rr}$"></SPAN>, and <!-- MATH
- $\sigma_{r\theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img38.svg"
- ALT="$\sigma _{r\theta }$"></SPAN> ). Notice that <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img39.svg"
- ALT="$\sigma _1$"></SPAN> is the highest at top and bottom and <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img40.svg"
- ALT="$\sigma _3$"></SPAN> is the lowest at the sides. The influence of the cavity extend to a few wellbore radii.</CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par25272" ALIGN="CENTER">
+<CAPTION class="BOTTOM"><STRONG>Figure 6.3:</STRONG>
+Leak-off of mud filtrate favors clogging of mud particulates which help apply a normal stress on the wellbore wall. This layer of particulates is called mud-cake.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par25600" ALIGN="CENTER">
 <IMG STYLE=""
- SRC="img859.svg"
- ALT="\includegraphics[scale=0.55]{.././Figures/split/7-3.pdf}"></DIV></TD></TR>
+ SRC="./7-mudcake.png"
+ ALT="Image 7-mudcake"></DIV></TD></TR>
 </TABLE>
 </DIV>
  
-<P>
-Let us obtain <!-- MATH
- $\sigma_{rr}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img36.svg"
- ALT="$\sigma _{rr}$"></SPAN> and <!-- MATH
- $\sigma_{\theta \theta}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img37.svg"
- ALT="$\sigma _{\theta \theta }$"></SPAN> at the wellbore wall <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img854.svg"
- ALT="$r=a$"></SPAN>.
-The radial stress for all <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img46.svg"
- ALT="$\theta $"></SPAN> is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_{rr}(r=a) = P_W - P_p
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img860.svg"
- ALT="$\displaystyle \sigma_{rr}(r=a) = P_W - P_p$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-The hoop stress depends on <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img46.svg"
- ALT="$\theta $"></SPAN>, 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_{\theta \theta} (r=a) =
-			-(P_W - P_p) +(\sigma_{Hmax}+\sigma_{hmin}) 
-			-2(\sigma_{Hmax}-\sigma_{hmin}) \cos (2\theta) 
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img861.svg"
- ALT="$\displaystyle \sigma_{\theta \theta} (r=a) =
--(P_W - P_p) +(\sigma_{Hmax}+\sigma_{hmin})
--2(\sigma_{Hmax}-\sigma_{hmin}) \cos (2\theta)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and it is the minimum at <!-- MATH
- $\theta = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img842.svg"
- ALT="$\theta = 0$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img847.svg"
- ALT="$\pi$"></SPAN> (azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img5.svg"
- ALT="$S_{Hmax}$"></SPAN>) and the maximum at <!-- MATH
- $\theta = \pi/2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img844.svg"
- ALT="$\theta = \pi/2$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img845.svg"
- ALT="$3\pi/2$"></SPAN> (azimuth of <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
- ALT="$S_{hmin}$"></SPAN>): 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\left\lbrace
-	\begin{array}{rcl}
-		\sigma_{\theta \theta} (r=a,\theta=0) & = &
-			-(P_W - P_p) -\sigma_{Hmax} + 3 \: \sigma_{hmin} \\
-		\sigma_{\theta \theta} (r=a,\theta=\pi/2) & = &  
-			-(P_W - P_p) +3 \: \sigma_{Hmax} -\sigma_{hmin} 
-	\end{array}
-\right.
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img862.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{rcl}
-\sigma_{\theta \theta} (r=a,\...
-..._W - P_p) +3 \: \sigma_{Hmax} -\sigma_{hmin}
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-These locations will be prone to develop tensile fractures (<!-- MATH
- $\theta = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img842.svg"
- ALT="$\theta = 0$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img847.svg"
- ALT="$\pi$"></SPAN>) and shear fractures (<!-- MATH
- $\theta = \pi/2$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img844.svg"
- ALT="$\theta = \pi/2$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img845.svg"
- ALT="$3\pi/2$"></SPAN>).
-The shear stress around the wellbore wall is <!-- MATH
- $\sigma_{r \theta} = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img863.svg"
- ALT="$\sigma_{r \theta} = 0$"></SPAN>.
-This makes sense because fluids (drilling mud) cannot apply steady shear stresses on the surface of a solid.
-Finally, the effective vertical stress is 
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_{zz} (r=a) =  \sigma_v - 2\nu (\sigma_{Hmax}-\sigma_{hmin}) \cos (2\theta)
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img864.svg"
- ALT="$\displaystyle \sigma_{zz} (r=a) = \sigma_v - 2\nu (\sigma_{Hmax}-\sigma_{hmin}) \cos (2\theta)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -583,22 +166,22 @@ Finally, the effective vertical stress is
  HREF="node45.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node42.html">
+ HREF="node43.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node43.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html807"
+<A ID="tex2html827"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node45.html">6.3 Shear failure and</A>
+ HREF="node45.html">6.2 Kirsch solution for</A>
 <B> Up:</B> <A
- HREF="node42.html">6. Wellbore Stability</A>
+ HREF="node43.html">6. Wellbore Stability</A>
 <B> Previous:</B> <A
- HREF="node43.html">6.1 The wellbore environment</A>
- &nbsp; <B>  <A ID="tex2html808"
+ HREF="node43.html">6. Wellbore Stability</A>
+ &nbsp; <B>  <A ID="tex2html828"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 
