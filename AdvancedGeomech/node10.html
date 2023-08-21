@@ -1,300 +1,59 @@
 <!DOCTYPE HTML>
 
-<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>1.8 WP8: Soft Sediment Constitutive Models</TITLE>
-<META NAME="description" CONTENT="1.8 WP8: Soft Sediment Constitutive Models">
+<TITLE>About this document ...</TITLE>
+<META NAME="description" CONTENT="About this document ...">
 <META NAME="keywords" CONTENT="AdvancedGeomech">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
 <LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
 
-<LINK REL="next" HREF="node11.html">
 <LINK REL="previous" HREF="node9.html">
-<LINK REL="next" HREF="node11.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next_g.png"> 
 <A
- HREF="node11.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node2.html">
+ HREF="AdvancedGeomech.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node9.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html162"
+<A ID="tex2html384"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A
- HREF="node11.html">1.9 WP9: Hydraulic Fracturing</A>
 <B> Up:</B> <A
- HREF="node2.html">1. Weekly Projects</A>
+ HREF="AdvancedGeomech.html">Advanced Geomechanics - Class</A>
 <B> Previous:</B> <A
- HREF="node9.html">1.7 WP7: Rock Failure</A>
- &nbsp; <B>  <A ID="tex2html163"
+ HREF="node9.html">8. Appendix</A>
+ &nbsp; <B>  <A ID="tex2html385"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html164"
-  HREF="node10.html#SECTION00281000000000000000"><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Compressibility of mudrocks</A>
-<LI><A ID="tex2html165"
-  HREF="node10.html#SECTION00282000000000000000"><SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Cam-clay model</A>
-</UL>
-<!--End of Table of Child-Links-->
-<HR>
-
-<H1><A ID="SECTION00280000000000000000">
-<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">8</SPAN> WP8: Soft Sediment Constitutive Models</A>
+<H1><A ID="SECTION001000000000000000000">
+About this document ...</A>
 </H1>
-
+ <STRONG>Advanced Geomechanics - Class Notes</STRONG><P>
+This document was generated using the
+<A HREF="http://www.latex2html.org/">LaTeX2HTML</A> translator Version 2019.2 (Released June 5, 2019)
 <P>
-
-<H2><A ID="SECTION00281000000000000000">
-<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Compressibility of mudrocks</A>
-</H2> 
-
+The command line arguments were: <BR>
+ <kbd>latex2html AdvancedGeomech.tex -show_section_numbers -split 3</kbd>
 <P>
-The following data set contains well-logging measurements of porosity of a mudrock as a function of depth (Eugene Island – offshore Louisiana):
-
-<P>
-
-<DIV class="CENTER"><A ID="fig:DevWell"></A><A ID="535"></A>
-<TABLE>
-<CAPTION class="BOTTOM"><STRONG>Figure 1.12:</STRONG>
-Example of shale dis-equilibrium compaction evidenced by porosity deviation from the normal compaction trend (image source: Gordon and Flemings, 1998 <kbd><A ID="tex2html30"
-  HREF=" https://doi.org/10.1046/j.1365-2117.1998.00052.x">https://doi.org/10.1046/j.1365-2117.1998.00052.x</A></kbd>). Note about subplot 3: The x-axis &ldquo;Shale Porosity&rdquo; goes from 0.1 to 0.4 in logarithmic scale. </CAPTION>
-<TR><TD><DIV CLASS="centerline" ID="par2768" ALIGN="CENTER">
-<IMG STYLE=""
- SRC="./EugeneIsland.png"
- ALT="Image EugeneIsland"></DIV></TD></TR>
-</TABLE>
-</DIV>
- 
-<P>
-<DL COMPACT>
-<DD></DD>
-<DT>a.</DT>
-<DD>Compute and plot pore pressure assuming a hypothetical hydrostatic pore pressure gradient <SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img86.svg"
- ALT="$dP_p/dz$"></SPAN> = 0.465 psi/ft. 
-</DD>
-<DT>b.</DT>
-<DD>Compute and plot total vertical stress assuming <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img87.svg"
- ALT="$dS_v/dz$"></SPAN> = 0.950 psi/ft and pick the seafloor from the shallowest data point in “percent sand” plot.
-</DD>
-<DT>c.</DT>
-<DD>Digitize shale porosity data (at least&nbsp;20 equally spaced points) and fit an equation of porosity as a function of vertical effective stress from depth 400 m to 1800 m assuming hydrostatic pore pressure and models: <BR>
-Exponential on porosity: <!-- MATH
- $\phi = \phi_0 \exp \left(-\beta\sigma_v \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img88.svg"
- ALT="$\phi = \phi_0 \exp \left(-\beta\sigma_v \right) $"></SPAN> <BR>
-Logarithmic on void ratio: <!-- MATH
- $e = e_0 - C_c \ln \left(\frac{\sigma_v}{1 \text{ MPa}} \right)$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.99ex; vertical-align: -0.92ex; " SRC="img89.svg"
- ALT="$e = e_0 - C_c \ln \left(\frac{\sigma_v}{1 \text{ MPa}} \right) $"></SPAN> <BR>
-Show the porosity-effective vertical stress and void ratio-effective vertical stress plots.
-</DD>
-<DT>d.</DT>
-<DD>Calculate and plot actual pore pressure between the interval 1800 m to 3400 m assuming porosity is a function of vertical effective stress with the models calculated in point 3.
-</DD>
-<DT>e.</DT>
-<DD>Calculate and plot overpressure parameter <SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img90.svg"
- ALT="$\lambda_p$"></SPAN> as a function of depth.
-</DD>
-<DT>f.</DT>
-<DD>Summarize all results with plots of 
-<BR>(Left) Porosity (model and data) in log scale as a function of depth (y-axis)
-	<BR>(Middle) <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img91.svg"
- ALT="$S_v$"></SPAN> and actual <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img66.svg"
- ALT="$P_p$"></SPAN> as a function of depth (y-axis)
-	<BR>(Right) Overpressure parameter as a function of depth (y-axis)
-</DD>
-</DL>
-
-<P>
-
-<H2><A ID="SECTION00282000000000000000">
-<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">8</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Cam-clay model</A>
-</H2> 
-
-<P>
-Write a script that simulates a (axisymmetric) triaxial loading test (<!-- MATH
- $dq=3dp^\prime$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img92.svg"
- ALT="$dq=3dp^\prime$"></SPAN>) for a mudrock with the following properties: 
-
-<P>
-
-<UL>
-<LI>Elastic shear modulus, <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img93.svg"
- ALT="$G$"></SPAN> = 1 MPa;
-</LI>
-<LI>Pre-consolidation stress, <SPAN CLASS="MATH"><IMG STYLE="height: 2.56ex; vertical-align: -0.68ex; " SRC="img94.svg"
- ALT="$p'_o$"></SPAN> = 250 [kPa]  
-</LI>
-<LI>Friction angle at critical state, <!-- MATH
- $\phi_{CS} = 24^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img95.svg"
- ALT="$\phi_{CS} = 24^{\circ}$"></SPAN> 
-</LI>
-<LI>Loading compressibility, <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img96.svg"
- ALT="$\lambda$"></SPAN> = 0.25; 
-</LI>
-<LI>Unloading compressibility, <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img97.svg"
- ALT="$\kappa$"></SPAN> = 0.05; 
-</LI>
-<LI>Initial void ratio, <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img98.svg"
- ALT="$e_o$"></SPAN> = 1.15; 
-</LI>
-</UL>
-
-<P>
-The initial state of stress is <SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img99.svg"
- ALT="$p'$"></SPAN>= 200 kPa; <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img5.svg"
- ALT="$q$"></SPAN> = 0 kPa. Load the sample until the critical state.
-
-<P>
-<DL COMPACT>
-<DD></DD>
-<DT>a.</DT>
-<DD>Plot the stress path <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img5.svg"
- ALT="$q$"></SPAN> versus <SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img99.svg"
- ALT="$p'$"></SPAN>. Plot the initial yield surface and the final yield surface. Is there hardening or softening?
-</DD>
-<DT>b.</DT>
-<DD>Plot <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img5.svg"
- ALT="$q$"></SPAN> as a function of <!-- MATH
- $\varepsilon_q$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.78ex; " SRC="img100.svg"
- ALT="$\varepsilon_q$"></SPAN>. Why does it approximate an asymptotic value?
-</DD>
-<DT>c.</DT>
-<DD>Plot void ratio <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img101.svg"
- ALT="$e$"></SPAN> as a function of <SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img99.svg"
- ALT="$p'$"></SPAN> (with <SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img99.svg"
- ALT="$p'$"></SPAN> in logarithmic scale). Why is there a clear change of slope?
-</DD>
-<DT>d.</DT>
-<DD>EXTRA: Repeat the exercise from the initial condition for a uniaxial-strain stress path approximated by <!-- MATH
- $dq=0.9 \: dp^\prime$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img102.svg"
- ALT="$dq=0.9 \: dp^\prime$"></SPAN>, up to <!-- MATH
- $p^\prime = 400$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img103.svg"
- ALT="$p^\prime = 400$"></SPAN> kPa). Plot the stress path <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img5.svg"
- ALT="$q$"></SPAN> versus <SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img99.svg"
- ALT="$p'$"></SPAN> and void ratio <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img101.svg"
- ALT="$e$"></SPAN> as a function of <SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img99.svg"
- ALT="$p'$"></SPAN> (with <SPAN CLASS="MATH"><IMG STYLE="height: 2.44ex; vertical-align: -0.56ex; " SRC="img99.svg"
- ALT="$p'$"></SPAN> in logarithmic scale). Compare the uniaxial-strain stress-path with the triaxial deviatoric loading stress path.
-<P>
-</DD>
-</DL>
-
-<P>
-Equations: 
-<BR>
-Incremental elastic deformations: 
-<!-- MATH
- $d\varepsilon_{p^\prime}^e = \frac{\kappa}{\upsilon} \frac{dp^\prime}{p^\prime}; \: d\varepsilon_q^e = \frac{dq}{3G}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.69ex; vertical-align: -1.24ex; " SRC="img104.svg"
- ALT="$d\varepsilon_{p^\prime}^e = \frac{\kappa}{\upsilon} \frac{dp^\prime}{p^\prime}; \: d\varepsilon_q^e = \frac{dq}{3G} $"></SPAN>
-<BR>
-Incremental plastic deformation: 
-<!-- MATH
- $\left[ \begin{matrix}
-	d\varepsilon_{p^\prime}^p \\
-	d\varepsilon_q^p\\
-\end{matrix} \right] =
-\frac{\lambda-\kappa}{\upsilon p^\prime\left(M^2+\eta^2\right)}
-\left[ \begin{matrix}
-	M^2-\eta^2 & 2\eta \\
-	2\eta & \frac{4\eta^2}{M^2-\eta^2} \\
-\end{matrix} \right]
-\left[ \begin{matrix}
-	dp^\prime \\
-	dq \\
-\end{matrix}\right] $
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 7.15ex; vertical-align: -3.01ex; " SRC="img105.svg"
- ALT="$\left[ \begin{matrix}
-d\varepsilon_{p^\prime}^p \\
-d\varepsilon_q^p\\
-\end{...
-...trix} \right]
-\left[ \begin{matrix}
-dp^\prime \\
-dq \\
-\end{matrix}\right] $"></SPAN>
-
-<P>
-where <!-- MATH
- $\upsilon=1+e$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img106.svg"
- ALT="$\upsilon=1+e$"></SPAN> is the specific volume, <SPAN CLASS="MATH"><IMG STYLE="height: 2.57ex; vertical-align: -0.69ex; " SRC="img107.svg"
- ALT="$\eta=q/p'$"></SPAN>, and <!-- MATH
- $de= -\upsilon d\varepsilon_p$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img108.svg"
- ALT="$de= -\upsilon d\varepsilon_p$"></SPAN>.
-
-<P>
-The incremental change of the yield surface is: <!-- MATH
- $dp_o^\prime = d\varepsilon_{p^\prime}^p \frac{\upsilon}{\lambda-\kappa} p_o^\prime$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 3.15ex; vertical-align: -1.20ex; " SRC="img109.svg"
- ALT="$dp_o^\prime = d\varepsilon_{p^\prime}^p \frac{\upsilon}{\lambda-\kappa} p_o^\prime$"></SPAN>.
-
-<P>
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node11.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node2.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node9.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html162"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node11.html">1.9 WP9: Hydraulic Fracturing</A>
-<B> Up:</B> <A
- HREF="node2.html">1. Weekly Projects</A>
-<B> Previous:</B> <A
- HREF="node9.html">1.7 WP7: Rock Failure</A>
- &nbsp; <B>  <A ID="tex2html163"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
+The translation was initiated on 2023-08-21
+<BR><HR>
 
 </BODY>
 </HTML>

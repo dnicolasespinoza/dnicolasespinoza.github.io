@@ -1,22 +1,22 @@
 <!DOCTYPE HTML>
 
-<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>4. Hydro-mechanical coupled processes: Poro-elasticity</TITLE>
-<META NAME="description" CONTENT="4. Hydro-mechanical coupled processes: Poro-elasticity">
+<TITLE>4. Thermo- and chemo-mechanical coupled processes</TITLE>
+<META NAME="description" CONTENT="4. Thermo- and chemo-mechanical coupled processes">
 <META NAME="keywords" CONTENT="AdvancedGeomech">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
-<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
 <LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
 
-<LINK REL="next" HREF="node32.html">
-<LINK REL="previous" HREF="node20.html">
+<LINK REL="next" HREF="node30.html">
+<LINK REL="previous" HREF="node19.html">
 <LINK REL="next" HREF="node27.html">
 </HEAD>
 
@@ -32,25 +32,30 @@
 <A
  HREF="node25.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html343"
+<A ID="tex2html387"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node27.html">4.1 Strain partition in</A>
+ HREF="node27.html">4.1 Thermo-elasticity</A>
 <B> Up:</B> <A
  HREF="AdvancedGeomech.html">Advanced Geomechanics - Class</A>
 <B> Previous:</B> <A
- HREF="node25.html">3.5 Navier's equation</A>
- &nbsp; <B>  <A ID="tex2html344"
+ HREF="node25.html">3.6 WP5: Poroelasticity</A>
+ &nbsp; <B>  <A ID="tex2html388"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
 <H1><A ID="SECTION00500000000000000000">
-<SPAN CLASS="arabic">4</SPAN>. Hydro-mechanical coupled processes: Poro-elasticity</A>
+<SPAN CLASS="arabic">4</SPAN>. Thermo- and chemo-mechanical coupled processes</A>
 </H1>
+
+<P>
+This document is a draft.
+Find hand written notes here: <kbd><A ID="tex2html31"
+  HREF="https://github.com/dnicolasespinoza/GeomechanicsJupyter/tree/master/ClassNotes">https://github.com/dnicolasespinoza/GeomechanicsJupyter/tree/master/ClassNotes</A></kbd>. 
 
 <P>
 <BR><HR>
@@ -58,26 +63,41 @@
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html345"
-  HREF="node27.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Strain partition in the porous solid</A>
-<LI><A ID="tex2html346"
-  HREF="node28.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Free energy of the porous solid and poro-elastic equations</A>
-<LI><A ID="tex2html347"
-  HREF="node29.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN> Measurement of poro-elastic parameters</A>
-<LI><A ID="tex2html348"
-  HREF="node30.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">4</SPAN> Drained and undrained problems</A>
+<LI><A ID="tex2html389"
+  HREF="node27.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Thermo-elasticity</A>
 <UL>
-<LI><A ID="tex2html349"
-  HREF="node30.html#SECTION00541000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Drained solution of in-situ stress and stress change with depletion</A>
+<LI><A ID="tex2html390"
+  HREF="node27.html#SECTION00511000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Applications</A>
+<LI><A ID="tex2html391"
+  HREF="node27.html#SECTION00512000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Constitutive equations</A>
+<LI><A ID="tex2html392"
+  HREF="node27.html#SECTION00513000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN> Thermal-stress under uniaxial-strain condition</A>
+<LI><A ID="tex2html393"
+  HREF="node27.html#SECTION00514000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">4</SPAN> Thermal-stress in wellbores</A>
+<LI><A ID="tex2html394"
+  HREF="node27.html#SECTION00515000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">5</SPAN> Diffusivity equation for thermo-elasticity</A>
+<LI><A ID="tex2html395"
+  HREF="node27.html#SECTION00516000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">6</SPAN> Thermo-poroelasticity</A>
 </UL>
 <BR>
-<LI><A ID="tex2html350"
-  HREF="node31.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">5</SPAN> Undrained problems</A>
+<LI><A ID="tex2html396"
+  HREF="node28.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Chemo-mechanics</A>
 <UL>
-<LI><A ID="tex2html351"
-  HREF="node31.html#SECTION00551000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN> Undrained loading parameters</A>
-<LI><A ID="tex2html352"
-  HREF="node31.html#SECTION00552000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN> Examples of undrained response in the subsurface</A>
+<LI><A ID="tex2html397"
+  HREF="node28.html#SECTION00521000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> General constitutive equation</A>
+<LI><A ID="tex2html398"
+  HREF="node28.html#SECTION00522000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Changes of brine salinity in shales</A>
+<LI><A ID="tex2html399"
+  HREF="node28.html#SECTION00523000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Adsorption-induced deformation</A>
+</UL>
+<BR>
+<LI><A ID="tex2html400"
+  HREF="node29.html"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN> WP6: Applications of Thermoelasticity</A>
+<UL>
+<LI><A ID="tex2html401"
+  HREF="node29.html#SECTION00531000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Thermal stress around a wellbore</A>
+<LI><A ID="tex2html402"
+  HREF="node29.html#SECTION00532000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Thermal stress in a reservoir</A>
 </UL></UL>
 <!--End of Table of Child-Links-->
 <BR><HR>
