@@ -282,6 +282,10 @@ $key = q/fig:Subsidence/;
 $external_labels{$key} = "$URL/" . q|node4.html|; 
 $noresave{$key} = "$nosave";
 
+$key = q/fig:TE-applications/;
+$external_labels{$key} = "$URL/" . q|node4.html|; 
+$noresave{$key} = "$nosave";
+
 $key = q/fig:VTI/;
 $external_labels{$key} = "$URL/" . q|node3.html|; 
 $noresave{$key} = "$nosave";
@@ -616,6 +620,10 @@ $noresave{$key} = "$nosave";
 
 $key = q/fig:Subsidence/;
 $external_latex_labels{$key} = q|3.16 1D-strain subsidence|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:TE-applications/;
+$external_latex_labels{$key} = q|3.29 Applications of thermoelasticity|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:VTI/;

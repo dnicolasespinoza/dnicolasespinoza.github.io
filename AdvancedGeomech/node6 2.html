@@ -1,0 +1,626 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>5. Inelasticity</TITLE>
+<META NAME="description" CONTENT="5. Inelasticity">
+<META NAME="keywords" CONTENT="AdvancedGeomech">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="AdvancedGeomech.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html392"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node7.html">6. Mechanics of fluid driven</A>
+<B> Up:</B> <A
+ HREF="AdvancedGeomech.html">Advanced Geomechanics - Class Notes</A>
+<B> Previous:</B> <A
+ HREF="node5.html">4. Thermo- and chemo-mechanical coupled</A>
+ &nbsp; <B>  <A ID="tex2html393"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html394"
+  HREF="node6.html#SECTION00610000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN> Examples of inelasticity in the subsurface</A>
+<LI><A ID="tex2html395"
+  HREF="node6.html#SECTION00620000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN> The yield surface</A>
+<UL>
+<LI><A ID="tex2html396"
+  HREF="node6.html#SECTION00621000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Tresca</A>
+<LI><A ID="tex2html397"
+  HREF="node6.html#SECTION00622000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Von Mises</A>
+<LI><A ID="tex2html398"
+  HREF="node6.html#SECTION00623000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Mohr-Coulomb</A>
+<LI><A ID="tex2html399"
+  HREF="node6.html#SECTION00624000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN> Drucker-Prager</A>
+<LI><A ID="tex2html400"
+  HREF="node6.html#SECTION00625000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN> Lade</A>
+</UL>
+<BR>
+<LI><A ID="tex2html401"
+  HREF="node6.html#SECTION00630000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN> Plastic strains</A>
+<LI><A ID="tex2html402"
+  HREF="node6.html#SECTION00640000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN> WP7: Rock Failure and Application to Wellbore Stability</A>
+<UL>
+<LI><A ID="tex2html403"
+  HREF="node6.html#SECTION00641000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Determination of shear and tensile strength</A>
+<LI><A ID="tex2html404"
+  HREF="node6.html#SECTION00642000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Shear and tensile failure in vertical and deviated wellbores</A>
+</UL>
+<BR>
+<LI><A ID="tex2html405"
+  HREF="node6.html#SECTION00650000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN> Critical state soil mechanics</A>
+<LI><A ID="tex2html406"
+  HREF="node6.html#SECTION00660000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">6</SPAN> Brittle to ductile transition</A>
+<LI><A ID="tex2html407"
+  HREF="node6.html#SECTION00670000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">7</SPAN> Special cases for changes in the yield surface</A>
+<LI><A ID="tex2html408"
+  HREF="node6.html#SECTION00680000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">8</SPAN> Visco-elasticity and Visco-plasticity</A>
+<LI><A ID="tex2html409"
+  HREF="node6.html#SECTION00690000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">9</SPAN> WP8: Soft Sediment Constitutive Models</A>
+<UL>
+<LI><A ID="tex2html410"
+  HREF="node6.html#SECTION00691000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">9</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Compressibility of mudrocks</A>
+<LI><A ID="tex2html411"
+  HREF="node6.html#SECTION00692000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">9</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Cam-clay model</A>
+</UL>
+<BR>
+<LI><A ID="tex2html412"
+  HREF="node6.html#SECTION006100000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">10</SPAN> Suggested Reading</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00600000000000000000">
+<SPAN CLASS="arabic">5</SPAN>. Inelasticity</A>
+</H1>
+
+<P>
+This document is a draft.
+Find hand written notes here: <kbd><A ID="tex2html76"
+  HREF="https://github.com/dnicolasespinoza/GeomechanicsJupyter/tree/master/ClassNotes">https://github.com/dnicolasespinoza/GeomechanicsJupyter/tree/master/ClassNotes</A></kbd>. 
+
+<P>
+
+<H1><A ID="SECTION00610000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN> Examples of inelasticity in the subsurface</A>
+</H1>
+
+<P>
+
+<H1><A ID="SECTION00620000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN> The yield surface</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00621000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Tresca</A>
+</H2>
+
+<P>
+
+<H2><A ID="SECTION00622000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Von Mises</A>
+</H2>
+
+<P>
+
+<H2><A ID="SECTION00623000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Mohr-Coulomb</A>
+</H2>
+
+<P>
+
+<H2><A ID="SECTION00624000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN> Drucker-Prager</A>
+</H2>
+
+<P>
+
+<H2><A ID="SECTION00625000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN> Lade</A>
+</H2>
+
+<P>
+
+<H1><A ID="SECTION00630000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">3</SPAN> Plastic strains</A>
+</H1>
+
+<P>
+
+<H1><A ID="SECTION00640000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN> WP7: Rock Failure and Application to Wellbore Stability</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00641000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Determination of shear and tensile strength</A>
+</H2> 
+
+<P>
+The following data set has experimental data of shear strength for the Darley Dale Sandstone measured in an axisymmetric triaxial cell.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:FracStress2"></A><A ID="810"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.1:</STRONG>
+Peak stress measured from triaxial tests (image source: Jaeger et al. 2007 - FRM 4th Ed).</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par5051" ALIGN="CENTER">
+<IMG
+  WIDTH="457" HEIGHT="422" STYLE=""
+ SRC="./DarleyDale.png"
+ ALT="Image DarleyDale"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+where <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.35ex; vertical-align: -0.45ex; " SRC="img146.svg"
+ ALT="$S_1$"></SPAN> is the maximum total principal stress, <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.35ex; vertical-align: -0.45ex; " SRC="img147.svg"
+ ALT="$S_3$"></SPAN> is the minimum total principal stress, and <!-- MATH
+ $P_{pore \: fluid}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.71ex; vertical-align: -0.81ex; " SRC="img148.svg"
+ ALT="$P_{pore \: fluid}$"></SPAN> is the pore pressure in the rock.
+
+<P>
+
+<OL>
+<LI>Determine the best fitting parameters of a Coulomb criterion: <!-- MATH
+ $\sigma_1 = UCS + q \sigma_3$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.46ex; vertical-align: -0.56ex; " SRC="img149.svg"
+ ALT="$\sigma_1 = UCS + q \sigma_3$"></SPAN>.
+</LI>
+<LI>Determine the corresponding values of cohesive strength <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.35ex; vertical-align: -0.45ex; " SRC="img150.svg"
+ ALT="$S_0$"></SPAN> and friction angle <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.87ex; vertical-align: -0.56ex; " SRC="img151.svg"
+ ALT="$\varphi$"></SPAN> from point (1) and draw the shear failure line together with Mohr circles at failure.
+</LI>
+<LI>Determine the corresponding fitting parameters for a Drucker-Prager criterion and plot experimental data in a <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.35ex; vertical-align: -0.45ex; " SRC="img17.svg"
+ ALT="$I_1$"></SPAN> v.s. <!-- MATH
+ $(J_2)^{1/2}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 3.11ex; vertical-align: -0.69ex; " SRC="img152.svg"
+ ALT="$(J_2)^{1/2}$"></SPAN> space.
+</LI>
+<LI>Compute the corresponding tensile strength assuming a reasonable ratio of unconfined compression strength to tensile strength (browse Jaeger’s book).
+</LI>
+</OL>
+
+<P>
+
+<H2><A ID="SECTION00642000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Shear and tensile failure in vertical and deviated wellbores</A>
+</H2> 
+
+<P>
+For this assignment you have to be able to calculate principal stresses on the wall of a wellbore at an arbitrary deviation and azimuth (See Chapter 6 of my notes &ldquo;Wellbore stability&rdquo; (<kbd><A ID="tex2html78"
+  HREF="https://dnicolasespinoza.github.io/">https://dnicolasespinoza.github.io/</A></kbd>) and Zoback's book Ch. 8).
+
+<P>
+Develop a script to compute and illustrate graphically (lower hemisphere projection):
+
+<P>
+
+<OL>
+<LI>The likelihood of tensile fractures considering wellbore mud pressure is equal to pore pressure in the formation <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.68ex; vertical-align: -0.78ex; " SRC="img153.svg"
+ ALT="$P_W = P_p$"></SPAN> and a simple tensile strength criterion (independent of intermediate and maximum principal stresses), i.e., required <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.35ex; vertical-align: -0.45ex; " SRC="img96.svg"
+ ALT="$T_s$"></SPAN>.
+</LI>
+<LI>The likelihood of breakouts considering wellbore mud pressure is equal to pore pressure in the formation <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.68ex; vertical-align: -0.78ex; " SRC="img153.svg"
+ ALT="$P_W = P_p$"></SPAN> and a simple unconfined compression strength criterion, i.e., required <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.01ex; vertical-align: -0.11ex; " SRC="img95.svg"
+ ALT="$UCS$"></SPAN>.
+</LI>
+<LI>The wellbore breakout angle <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.78ex; vertical-align: -0.47ex; " SRC="img154.svg"
+ ALT="$w_{BO}$"></SPAN> considering a Mohr-Coulomb shear failure criterion and the properties of the Darley Dale Sandstone from Exercise 1.
+</LI>
+<LI>The wellbore breakout angle <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.78ex; vertical-align: -0.47ex; " SRC="img154.svg"
+ ALT="$w_{BO}$"></SPAN> considering a linear <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.35ex; vertical-align: -0.45ex; " SRC="img17.svg"
+ ALT="$I_1$"></SPAN> v.s. <!-- MATH
+ $(J_2)^{1/2}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 3.11ex; vertical-align: -0.69ex; " SRC="img152.svg"
+ ALT="$(J_2)^{1/2}$"></SPAN> shear failure criterion and the properties of the Darley Dale Sandstone from Exercise 1.
+</LI>
+<LI>The wellbore breakout angle <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.78ex; vertical-align: -0.47ex; " SRC="img154.svg"
+ ALT="$w_{BO}$"></SPAN> considering a Modified Lade shear failure criterion (Zoback's book, p. 100) and the properties of the Darley Dale Sandstone from point 1.
+</LI>
+</OL>
+
+<P>
+Limit your wellbore breakout angle plots to <!-- MATH
+ $0^{\circ} < w_{BO} < 60^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.39ex; vertical-align: -0.47ex; " SRC="img155.svg"
+ ALT="$0^{\circ} &lt; w_{BO} &lt; 60^{\circ}$"></SPAN> because predictions with linear elasticity over <!-- MATH
+ $w_{BO} > 60^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.39ex; vertical-align: -0.47ex; " SRC="img156.svg"
+ ALT="$w_{BO} &gt; 60^{\circ}$"></SPAN> are likely highly inaccurate. 
+Test your script with the three examples given in Zobacks's book in Figures 8.2 and 10.4 (normal faulting, strike-slip faulting, and reverse faulting). When computing breakouts assume <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.36ex; vertical-align: -0.47ex; " SRC="img157.svg"
+ ALT="$P_W$"></SPAN> = 32 MPa (NF), <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.36ex; vertical-align: -0.47ex; " SRC="img157.svg"
+ ALT="$P_W$"></SPAN> = 40 MPa (SSF), and <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.36ex; vertical-align: -0.47ex; " SRC="img157.svg"
+ ALT="$P_W$"></SPAN> = 52 MPa (RF). Use a Poisson ratio of 0.25 for stress calculations.  
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:DevWell"></A><A ID="1045"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.2:</STRONG>
+Wellbore stability results plotted as lower hemisphere projections (image source: Zoback 2013 - RG). Note: <!-- MATH
+ $P_{mud} = P_W$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.38ex; vertical-align: -0.48ex; " SRC="img3.svg"
+ ALT="$P_{mud} = P_W$"></SPAN> in the figure above.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par5100" ALIGN="CENTER">
+<IMG
+  WIDTH="1281" HEIGHT="768" STYLE=""
+ SRC="./DeviatedWell.png"
+ ALT="Image DeviatedWell"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H1><A ID="SECTION00650000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">5</SPAN> Critical state soil mechanics</A>
+</H1>
+
+<P>
+
+<H1><A ID="SECTION00660000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">6</SPAN> Brittle to ductile transition</A>
+</H1>
+
+<P>
+
+<H1><A ID="SECTION00670000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">7</SPAN> Special cases for changes in the yield surface</A>
+</H1>
+
+<P>
+
+<H1><A ID="SECTION00680000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">8</SPAN> Visco-elasticity and Visco-plasticity</A>
+</H1>
+
+<P>
+
+<H1><A ID="SECTION00690000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">9</SPAN> WP8: Soft Sediment Constitutive Models</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00691000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">9</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Compressibility of mudrocks</A>
+</H2> 
+
+<P>
+The following data set contains well-logging measurements of porosity of a mudrock as a function of depth (Eugene Island – offshore Louisiana):
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:DevWell"></A><A ID="1047"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 5.3:</STRONG>
+Example of shale dis-equilibrium compaction evidenced by porosity deviation from the normal compaction trend (image source: Gordon and Flemings, 1998 <kbd><A ID="tex2html80"
+  HREF=" https://doi.org/10.1046/j.1365-2117.1998.00052.x">https://doi.org/10.1046/j.1365-2117.1998.00052.x</A></kbd>). Note about subplot 3: The x-axis &ldquo;Shale Porosity&rdquo; goes from 0.1 to 0.4 in logarithmic scale. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par5114" ALIGN="CENTER">
+<IMG
+  WIDTH="628" HEIGHT="685" STYLE=""
+ SRC="./EugeneIsland.png"
+ ALT="Image EugeneIsland"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<OL>
+<LI>Compute and plot pore pressure assuming a hypothetical hydrostatic pore pressure gradient <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.84ex; vertical-align: -0.78ex; " SRC="img158.svg"
+ ALT="$dP_p/dz$"></SPAN> = 0.465 psi/ft. 
+</LI>
+<LI>Compute and plot total vertical stress assuming <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.74ex; vertical-align: -0.69ex; " SRC="img159.svg"
+ ALT="$dS_v/dz$"></SPAN> = 0.950 psi/ft and pick the seafloor from the shallowest data point in “percent sand” plot.
+</LI>
+<LI>Digitize shale porosity data (at least&nbsp;20 equally spaced points) and fit an equation of porosity as a function of vertical effective stress from depth 400 m to 1800 m assuming hydrostatic pore pressure and models: <BR>
+Exponential on porosity: <!-- MATH
+ $\phi = \phi_0 \exp \left(-\beta\sigma_v \right)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.74ex; vertical-align: -0.69ex; " SRC="img160.svg"
+ ALT="$\phi = \phi_0 \exp \left(-\beta\sigma_v \right) $"></SPAN> <BR>
+Logarithmic on void ratio: <!-- MATH
+ $e = e_0 - C_c \ln \left(\frac{\sigma_v}{1 \text{ MPa}} \right)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 3.20ex; vertical-align: -0.92ex; " SRC="img161.svg"
+ ALT="$e = e_0 - C_c \ln \left(\frac{\sigma_v}{1 \text{ MPa}} \right) $"></SPAN> <BR>
+Show the porosity-effective vertical stress and void ratio-effective vertical stress plots.
+</LI>
+<LI>Calculate and plot actual pore pressure between the interval 1800 m to 3400 m assuming porosity is a function of vertical effective stress with the models calculated in point 3.
+</LI>
+<LI>Calculate and plot overpressure parameter <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.71ex; vertical-align: -0.78ex; " SRC="img162.svg"
+ ALT="$\lambda_p$"></SPAN> as a function of depth.
+</LI>
+<LI>Summarize all results with plots of 
+	<BR>(Left) Porosity (model and data) in log scale as a function of depth (y-axis)
+	<BR>(Middle) <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.35ex; vertical-align: -0.45ex; " SRC="img163.svg"
+ ALT="$S_v$"></SPAN> and actual <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.68ex; vertical-align: -0.78ex; " SRC="img110.svg"
+ ALT="$P_p$"></SPAN> as a function of depth (y-axis)
+	<BR>(Right) Overpressure parameter as a function of depth (y-axis)
+</LI>
+</OL>
+
+<P>
+
+<H2><A ID="SECTION00692000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">9</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Cam-clay model</A>
+</H2> 
+
+<P>
+Write a script that simulates a (axisymmetric) triaxial loading test (<!-- MATH
+ $dq=3dp^\prime$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img164.svg"
+ ALT="$dq=3dp^\prime$"></SPAN>) for a mudrock with the following properties: 
+
+<P>
+
+<UL>
+<LI>Elastic shear modulus, <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.01ex; vertical-align: -0.11ex; " SRC="img165.svg"
+ ALT="$G$"></SPAN> = 1 MPa;
+</LI>
+<LI>Pre-consolidation stress, <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.78ex; vertical-align: -0.68ex; " SRC="img166.svg"
+ ALT="$p'_o$"></SPAN> = 250 [kPa]  
+</LI>
+<LI>Friction angle at critical state, <!-- MATH
+ $\phi_{CS} = 24^{\circ}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.49ex; vertical-align: -0.56ex; " SRC="img167.svg"
+ ALT="$\phi_{CS} = 24^{\circ}$"></SPAN> 
+</LI>
+<LI>Loading compressibility, <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.03ex; vertical-align: -0.11ex; " SRC="img168.svg"
+ ALT="$\lambda$"></SPAN> = 0.25; 
+</LI>
+<LI>Unloading compressibility, <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.42ex; vertical-align: -0.11ex; " SRC="img169.svg"
+ ALT="$\kappa$"></SPAN> = 0.05; 
+</LI>
+<LI>Initial void ratio, <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.77ex; vertical-align: -0.45ex; " SRC="img170.svg"
+ ALT="$e_o$"></SPAN> = 1.15; 
+</LI>
+</UL>
+
+<P>
+The initial state of stress is <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img1.svg"
+ ALT="$p'$"></SPAN>= 200 kPa; <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.87ex; vertical-align: -0.56ex; " SRC="img2.svg"
+ ALT="$q$"></SPAN> = 0 kPa. Load the sample until the critical state.
+
+<P>
+
+<OL>
+<LI>Plot the stress path <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.87ex; vertical-align: -0.56ex; " SRC="img2.svg"
+ ALT="$q$"></SPAN> versus <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img1.svg"
+ ALT="$p'$"></SPAN>. Plot the initial yield surface and the final yield surface. Is there hardening or softening?
+</LI>
+<LI>Plot <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.87ex; vertical-align: -0.56ex; " SRC="img2.svg"
+ ALT="$q$"></SPAN> as a function of <!-- MATH
+ $\varepsilon_q$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.10ex; vertical-align: -0.78ex; " SRC="img171.svg"
+ ALT="$\varepsilon_q$"></SPAN>. Why does it approximate an asymptotic value?
+</LI>
+<LI>Plot void ratio <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.42ex; vertical-align: -0.11ex; " SRC="img172.svg"
+ ALT="$e$"></SPAN> as a function of <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img1.svg"
+ ALT="$p'$"></SPAN> (with <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img1.svg"
+ ALT="$p'$"></SPAN> in logarithmic scale). Why is there a clear change of slope?
+</LI>
+<LI>EXTRA: Repeat the exercise from the initial condition for a uniaxial-strain stress path approximated by <!-- MATH
+ $dq=0.9 \: dp^\prime$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img173.svg"
+ ALT="$dq=0.9 \: dp^\prime$"></SPAN>, up to <!-- MATH
+ $p^\prime = 400$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img174.svg"
+ ALT="$p^\prime = 400$"></SPAN> kPa). Plot the stress path <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.87ex; vertical-align: -0.56ex; " SRC="img2.svg"
+ ALT="$q$"></SPAN> versus <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img1.svg"
+ ALT="$p'$"></SPAN> and void ratio <SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.42ex; vertical-align: -0.11ex; " SRC="img172.svg"
+ ALT="$e$"></SPAN> as a function of <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img1.svg"
+ ALT="$p'$"></SPAN> (with <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.65ex; vertical-align: -0.56ex; " SRC="img1.svg"
+ ALT="$p'$"></SPAN> in logarithmic scale). Compare the uniaxial-strain stress-path with the triaxial deviatoric loading stress path.
+
+<P>
+</LI>
+</OL>
+
+<P>
+Equations: 
+<BR>
+Incremental elastic deformations: 
+<!-- MATH
+ $d\varepsilon_{p^\prime}^e = \frac{\kappa}{\upsilon} \frac{dp^\prime}{p^\prime}; \: d\varepsilon_q^e = \frac{dq}{3G}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 3.90ex; vertical-align: -1.24ex; " SRC="img175.svg"
+ ALT="$d\varepsilon_{p^\prime}^e = \frac{\kappa}{\upsilon} \frac{dp^\prime}{p^\prime}; \: d\varepsilon_q^e = \frac{dq}{3G} $"></SPAN>
+<BR>
+Incremental plastic deformation: 
+<!-- MATH
+ $\left[ \begin{matrix}
+	d\varepsilon_{p^\prime}^p \\
+	d\varepsilon_q^p\\
+\end{matrix} \right] =
+\frac{\lambda-\kappa}{\upsilon p^\prime\left(M^2+\eta^2\right)}
+\left[ \begin{matrix}
+	M^2-\eta^2 & 2\eta \\
+	2\eta & \frac{4\eta^2}{M^2-\eta^2} \\
+\end{matrix} \right]
+\left[ \begin{matrix}
+	dp^\prime \\
+	dq \\
+\end{matrix}\right] $
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 7.37ex; vertical-align: -3.01ex; " SRC="img176.svg"
+ ALT="$\left[ \begin{matrix}
+d\varepsilon_{p^\prime}^p \\
+d\varepsilon_q^p\\
+\end{...
+...trix} \right]
+\left[ \begin{matrix}
+dp^\prime \\
+dq \\
+\end{matrix}\right] $"></SPAN>
+
+<P>
+where <!-- MATH
+ $\upsilon=1+e$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.11ex; vertical-align: -0.30ex; " SRC="img177.svg"
+ ALT="$\upsilon=1+e$"></SPAN> is the specific volume, <SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.78ex; vertical-align: -0.69ex; " SRC="img178.svg"
+ ALT="$\eta=q/p'$"></SPAN>, and <!-- MATH
+ $de= -\upsilon d\varepsilon_p$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.71ex; vertical-align: -0.78ex; " SRC="img179.svg"
+ ALT="$de= -\upsilon d\varepsilon_p$"></SPAN>.
+
+<P>
+The incremental change of the yield surface is: <!-- MATH
+ $dp_o^\prime = d\varepsilon_{p^\prime}^p \frac{\upsilon}{\lambda-\kappa} p_o^\prime$
+ -->
+<SPAN CLASS="MATH"><IMG
+ STYLE="height: 3.37ex; vertical-align: -1.20ex; " SRC="img180.svg"
+ ALT="$dp_o^\prime = d\varepsilon_{p^\prime}^p \frac{\upsilon}{\lambda-\kappa} p_o^\prime$"></SPAN>.
+
+<P>
+
+<H1><A ID="SECTION006100000000000000000">
+<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">10</SPAN> Suggested Reading</A>
+</H1>
+
+<P>
+
+<UL>
+<LI>Deviated wellbores in anisotropic rock: <kbd><A ID="tex2html83"
+  HREF="https://doi.org/10.1016/j.ijrmms.2018.10.033">https://doi.org/10.1016/j.ijrmms.2018.10.033</A></kbd>
+</LI>
+</UL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="AdvancedGeomech.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html392"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node7.html">6. Mechanics of fluid driven</A>
+<B> Up:</B> <A
+ HREF="AdvancedGeomech.html">Advanced Geomechanics - Class Notes</A>
+<B> Previous:</B> <A
+ HREF="node5.html">4. Thermo- and chemo-mechanical coupled</A>
+ &nbsp; <B>  <A ID="tex2html393"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

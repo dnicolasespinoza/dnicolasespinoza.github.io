@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>2.5 WP3: Horizontal Stresses Computed with Linear Elasticity</TITLE>
+<META NAME="description" CONTENT="2.5 WP3: Horizontal Stresses Computed with Linear Elasticity">
+<META NAME="keywords" CONTENT="AdvancedGeomech">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
+
+<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html342"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node17.html">2.6 Navier's equation</A>
+<B> Up:</B> <A
+ HREF="node11.html">2. Continuum mechanics</A>
+<B> Previous:</B> <A
+ HREF="node15.html">2.4 1D subsurface mechanical</A>
+ &nbsp; <B>  <A ID="tex2html343"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html344"
+  HREF="node16.html#SECTION00351000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: One-dimensional mechanical Earth model (MEM)</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00350000000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN> WP3: Horizontal Stresses Computed with Linear Elasticity</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00351000000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: One-dimensional mechanical Earth model (MEM)</A>
+</H2>
+
+<P>
+Download the file <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/tree/master/GradHomework">LostHills.xls</a>. 
+We would like to know the state of stress in the subsurface and its influence on a hydraulic fracture completion. 
+At every depth (and data-point) along the vertical well:
+
+<P>
+
+ <OL>
+<LI>Compute (and plot) total vertical stress as a function of depth (you may assume homogeneous rock above 1,750 ft), and overpressure parameter.
+</LI>
+<LI>Compute dynamic Poisson’s ratio and dynamic Young’s modulus from compressive and shear slowness (be careful with unit conversion).
+</LI>
+<LI>Compute static Young's modulus using a coefficient <!-- MATH
+ $E_{static} = 0.65 \cdot E_{dynamic}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.50ex; vertical-align: -0.81ex; " SRC="img26.svg"
+ ALT="$E_{static} = 0.65 \cdot E_{dynamic}$"></SPAN>.
+</LI>
+<LI>Compute (and plot) static plane strain modulus <!-- MATH
+ $E'_{static} = E_{static} / (1-\nu^2)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.79ex; vertical-align: -0.76ex; " SRC="img27.svg"
+ ALT="$E'_{static} = E_{static} / (1-\nu^2)$"></SPAN> (Poisson ratio remains the same).
+</LI>
+<LI>Compute (and plot) horizontal stress assuming theory of elasticity and no tectonic strains.
+</LI>
+<LI>Compute (and plot) total maximum and minimum horizontal stress assuming theory of elasticity and <!-- MATH
+ $\varepsilon_{Hmax}=0.0015$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.06ex; vertical-align: -0.47ex; " SRC="img28.svg"
+ ALT="$\varepsilon_{Hmax}=0.0015$"></SPAN> and <!-- MATH
+ $\varepsilon_{hmin}=0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img29.svg"
+ ALT="$\varepsilon_{hmin}=0$"></SPAN>.
+</LI>
+<LI>The pay-zone is between 2,100 ft and 2,450 ft. A hydraulic fracture is planned to be executed with a vertical well at a depth between 2,130 ft and 2,160 ft. What will be the height of this fracture? Will it reach out to the entire pay zone?
+</LI>
+</OL>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:LostHills"></A><A ID="152"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 2.1:</STRONG>
+Bulk rock mass density, P-wave slowness, and S-wave slowness along a vertical well in the Lost Hills field.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par4029" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img30.svg"
+ ALT="\includegraphics[scale=0.60]{.././Figures/LostHills.PNG}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node11.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html342"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node17.html">2.6 Navier's equation</A>
+<B> Up:</B> <A
+ HREF="node11.html">2. Continuum mechanics</A>
+<B> Previous:</B> <A
+ HREF="node15.html">2.4 1D subsurface mechanical</A>
+ &nbsp; <B>  <A ID="tex2html343"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

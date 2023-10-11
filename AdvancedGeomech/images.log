@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.21)  18 SEP 2023 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.21)  11 OCT 2023 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -472,30 +472,30 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 152
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-:tex2html_wrap_inline5148:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline5409:lthtmlCropMarkHeight:=14.41812pt
 
-:tex2html_wrap_inline5148:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline5409:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 Preview: Tightpage -65781 -65781 65781 65781
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-:tex2html_wrap_inline5150:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline5411:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5150:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline5411:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [2]
 
-:tex2html_wrap_inline5154:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5415:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5154:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline5415:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [3]
 
-:tex2html_wrap_inline5158:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5419:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5158:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline5419:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [4]
 
-:tex2html_wrap_inline5164:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5425:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5164:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
+:tex2html_wrap_inline5425:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
 [5]
 <.././Figures/CH1-01.PNG, id=28, 1160.335pt x 1086.0575pt>
 File: .././Figures/CH1-01.PNG Graphic file (type png)
@@ -503,9 +503,9 @@ File: .././Figures/CH1-01.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-01.PNG  used on input line 184.
 (pdftex.def)             Requested size: 464.12578pt x 434.4153pt.
 
-:tex2html_wrap5169:lthtmlCropMarkHeight:=440.4153pt
+:tex2html_wrap5430:lthtmlCropMarkHeight:=440.4153pt
 
-:tex2html_wrap5169:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5430:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [6 <.././Figures/CH1-01.PNG>]
 <.././Figures/CH1-02.PNG, id=35, 1160.335pt x 1086.0575pt>
 File: .././Figures/CH1-02.PNG Graphic file (type png)
@@ -513,9 +513,9 @@ File: .././Figures/CH1-02.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-02.PNG  used on input line 191.
 (pdftex.def)             Requested size: 464.12578pt x 434.4153pt.
 
-:tex2html_wrap5175:lthtmlCropMarkHeight:=440.4153pt
+:tex2html_wrap5436:lthtmlCropMarkHeight:=440.4153pt
 
-:tex2html_wrap5175:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5436:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [7 <.././Figures/CH1-02.PNG>]
 <.././Figures/CH1-03.PNG, id=42, 1134.2375pt x 1221.56375pt>
 File: .././Figures/CH1-03.PNG Graphic file (type png)
@@ -523,9 +523,9 @@ File: .././Figures/CH1-03.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-03.PNG  used on input line 197.
 (pdftex.def)             Requested size: 453.68697pt x 488.61685pt.
 
-:tex2html_wrap5180:lthtmlCropMarkHeight:=494.61685pt
+:tex2html_wrap5441:lthtmlCropMarkHeight:=494.61685pt
 
-:tex2html_wrap5180:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5441:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [8 <.././Figures/CH1-03.PNG>]
 <.././Figures/CH1-04.PNG, id=48, 1109.14375pt x 709.65125pt>
 File: .././Figures/CH1-04.PNG Graphic file (type png)
@@ -533,9 +533,9 @@ File: .././Figures/CH1-04.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-04.PNG  used on input line 204.
 (pdftex.def)             Requested size: 443.64964pt x 283.85547pt.
 
-:tex2html_wrap5186:lthtmlCropMarkHeight:=289.85547pt
+:tex2html_wrap5447:lthtmlCropMarkHeight:=289.85547pt
 
-:tex2html_wrap5186:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5447:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [9 <.././Figures/CH1-04.PNG>]
 <.././Figures/CH1-05.PNG, id=54, 1109.14375pt x 312.16624pt>
 File: .././Figures/CH1-05.PNG Graphic file (type png)
@@ -543,9 +543,9 @@ File: .././Figures/CH1-05.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-05.PNG  used on input line 210.
 (pdftex.def)             Requested size: 443.64964pt x 124.86427pt.
 
-:tex2html_wrap5191:lthtmlCropMarkHeight:=130.86427pt
+:tex2html_wrap5452:lthtmlCropMarkHeight:=130.86427pt
 
-:tex2html_wrap5191:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5452:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [10 <.././Figures/CH1-05.PNG>]
 <.././Figures/CH1-06.PNG, id=60, 1168.365pt x 1015.795pt>
 File: .././Figures/CH1-06.PNG Graphic file (type png)
@@ -553,9 +553,9 @@ File: .././Figures/CH1-06.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-06.PNG  used on input line 216.
 (pdftex.def)             Requested size: 467.33772pt x 406.3108pt.
 
-:tex2html_wrap5196:lthtmlCropMarkHeight:=412.3108pt
+:tex2html_wrap5457:lthtmlCropMarkHeight:=412.3108pt
 
-:tex2html_wrap5196:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5457:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [11 <.././Figures/CH1-06.PNG>]
 <.././Figures/CH1-07.PNG, id=66, 1112.155pt x 695.59875pt>
 File: .././Figures/CH1-07.PNG Graphic file (type png)
@@ -563,9 +563,9 @@ File: .././Figures/CH1-07.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-07.PNG  used on input line 223.
 (pdftex.def)             Requested size: 444.85413pt x 278.23457pt.
 
-:tex2html_wrap5202:lthtmlCropMarkHeight:=284.23457pt
+:tex2html_wrap5463:lthtmlCropMarkHeight:=284.23457pt
 
-:tex2html_wrap5202:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5463:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [12 <.././Figures/CH1-07.PNG>]
 <.././Figures/CH1-08.PNG, id=72, 1112.155pt x 759.83875pt>
 File: .././Figures/CH1-08.PNG Graphic file (type png)
@@ -573,9 +573,9 @@ File: .././Figures/CH1-08.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-08.PNG  used on input line 229.
 (pdftex.def)             Requested size: 444.85413pt x 303.93011pt.
 
-:tex2html_wrap5207:lthtmlCropMarkHeight:=309.93011pt
+:tex2html_wrap5468:lthtmlCropMarkHeight:=309.93011pt
 
-:tex2html_wrap5207:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5468:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [13 <.././Figures/CH1-08.PNG>]
 <.././Figures/CH1-09.PNG, id=79, 1112.155pt x 858.20625pt>
 File: .././Figures/CH1-09.PNG Graphic file (type png)
@@ -583,9 +583,9 @@ File: .././Figures/CH1-09.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-09.PNG  used on input line 235.
 (pdftex.def)             Requested size: 444.85413pt x 343.27641pt.
 
-:tex2html_wrap5212:lthtmlCropMarkHeight:=349.27641pt
+:tex2html_wrap5473:lthtmlCropMarkHeight:=349.27641pt
 
-:tex2html_wrap5212:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5473:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [14 <.././Figures/CH1-09.PNG>]
 <.././Figures/CH1-10.PNG, id=85, 1112.155pt x 729.72626pt>
 File: .././Figures/CH1-10.PNG Graphic file (type png)
@@ -593,9 +593,9 @@ File: .././Figures/CH1-10.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-10.PNG  used on input line 241.
 (pdftex.def)             Requested size: 444.85413pt x 291.88533pt.
 
-:tex2html_wrap5217:lthtmlCropMarkHeight:=297.88533pt
+:tex2html_wrap5478:lthtmlCropMarkHeight:=297.88533pt
 
-:tex2html_wrap5217:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5478:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [15 <.././Figures/CH1-10.PNG>]
 <.././Figures/WP1_VMF.PNG, id=91, 393.8715pt x 558.888pt>
 File: .././Figures/WP1_VMF.PNG Graphic file (type png)
@@ -603,24 +603,24 @@ File: .././Figures/WP1_VMF.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/WP1_VMF.PNG  used on input line 249.
 (pdftex.def)             Requested size: 393.87053pt x 558.88663pt.
 
-:tex2html_wrap5232:lthtmlCropMarkHeight:=564.88663pt
+:tex2html_wrap5493:lthtmlCropMarkHeight:=564.88663pt
 
-:tex2html_wrap5232:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5493:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [16 <.././Figures/WP1_VMF.PNG>]
 
-:tex2html_wrap_inline5237:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline5498:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5237:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline5498:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [17]
 
-:tex2html_wrap_inline5241:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5502:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5241:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline5502:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [18]
 
-:tex2html_wrap_inline5243:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5504:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5243:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline5504:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [19]
 <.././Figures/CH1-11.PNG, id=111, 1170.3725pt x 736.7525pt>
 File: .././Figures/CH1-11.PNG Graphic file (type png)
@@ -628,9 +628,9 @@ File: .././Figures/CH1-11.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-11.PNG  used on input line 275.
 (pdftex.def)             Requested size: 468.1407pt x 294.69577pt.
 
-:tex2html_wrap5247:lthtmlCropMarkHeight:=300.69577pt
+:tex2html_wrap5508:lthtmlCropMarkHeight:=300.69577pt
 
-:tex2html_wrap5247:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5508:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [20 <.././Figures/CH1-11.PNG>]
 <.././Figures/CH1-12.PNG, id=117, 1170.3725pt x 1248.665pt>
 File: .././Figures/CH1-12.PNG Graphic file (type png)
@@ -638,9 +638,9 @@ File: .././Figures/CH1-12.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-12.PNG  used on input line 281.
 (pdftex.def)             Requested size: 468.1407pt x 499.45715pt.
 
-:tex2html_wrap5252:lthtmlCropMarkHeight:=505.45715pt
+:tex2html_wrap5513:lthtmlCropMarkHeight:=505.45715pt
 
-:tex2html_wrap5252:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5513:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [21 <.././Figures/CH1-12.PNG>]
 <.././Figures/CH1-13.PNG, id=123, 1048.91875pt x 1207.51125pt>
 File: .././Figures/CH1-13.PNG Graphic file (type png)
@@ -648,19 +648,19 @@ File: .././Figures/CH1-13.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH1-13.PNG  used on input line 288.
 (pdftex.def)             Requested size: 419.56006pt x 482.99594pt.
 
-:tex2html_wrap5258:lthtmlCropMarkHeight:=488.99594pt
+:tex2html_wrap5519:lthtmlCropMarkHeight:=488.99594pt
 
-:tex2html_wrap5258:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5519:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [22 <.././Figures/CH1-13.PNG>]
 
-:tex2html_wrap_inline5265:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline5526:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5265:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline5526:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [23]
 
-:tex2html_wrap_inline5267:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline5528:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5267:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline5528:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [24]
 <.././Figures/WellFrac.PNG, id=137, 661.2705pt x 328.8285pt>
 File: .././Figures/WellFrac.PNG Graphic file (type png)
@@ -673,49 +673,49 @@ Overfull \hbox (23.92053pt too wide) in paragraph at lines 308--309
  []
 
 
-:tex2html_wrap5269:lthtmlCropMarkHeight:=252.62077pt
+:tex2html_wrap5530:lthtmlCropMarkHeight:=252.62077pt
 
-:tex2html_wrap5269:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5530:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [25 <.././Figures/WellFrac.PNG>]
 
-:tex2html_wrap_inline5276:lthtmlCropMarkHeight:=13.62646pt
+:tex2html_wrap_inline5537:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline5276:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline5537:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [26]
 
-:tex2html_wrap_inline5282:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline5543:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline5282:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline5543:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [27]
 
-:tex2html_wrap_inline5284:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline5545:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline5284:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline5545:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [28]
 
-:tex2html_wrap_inline5288:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline5549:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5288:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline5549:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [29]
 
-:tex2html_wrap_inline5292:lthtmlCropMarkHeight:=13.62646pt
+:tex2html_wrap_inline5553:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline5292:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+:tex2html_wrap_inline5553:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
 [30]
 
-:tex2html_wrap_inline5294:lthtmlCropMarkHeight:=13.62646pt
+:tex2html_wrap_inline5555:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline5294:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+:tex2html_wrap_inline5555:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
 [31]
 
-:tex2html_wrap_inline5296:lthtmlCropMarkHeight:=13.62646pt
+:tex2html_wrap_inline5557:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline5296:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+:tex2html_wrap_inline5557:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
 [32]
 
-:tex2html_wrap_inline5298:lthtmlCropMarkHeight:=13.62646pt
+:tex2html_wrap_inline5559:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline5298:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+:tex2html_wrap_inline5559:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
 [33]
 <.././Figures/FaultsHighIsland.PNG, id=179, 720.89325pt x 361.35pt>
 File: .././Figures/FaultsHighIsland.PNG Graphic file (type png)
@@ -729,39 +729,39 @@ Overfull \hbox (32.59073pt too wide) in paragraph at lines 363--364
  []
 
 
-:tex2html_wrap5301:lthtmlCropMarkHeight:=258.94327pt
+:tex2html_wrap5562:lthtmlCropMarkHeight:=258.94327pt
 
-:tex2html_wrap5301:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5562:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [34 <.././Figures/FaultsHighIsland.PNG>]
 
-:tex2html_wrap_inline5492:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5753:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5492:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline5753:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [35]
 
-:tex2html_wrap_inline5498:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline5759:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline5498:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline5759:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [36]
 
-:tex2html_wrap_inline5500:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline5761:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline5500:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline5761:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [37]
 
-:tex2html_wrap_inline5502:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline5763:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline5502:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline5763:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [38]
 
-:tex2html_wrap_inline5503:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline5764:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5503:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline5764:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [39]
 
-:tex2html_wrap_inline5505:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline5766:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5505:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline5766:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [40]
 <.././Figures/CH2-01.PNG, id=210, 1146.2825pt x 965.6075pt>
 File: .././Figures/CH2-01.PNG Graphic file (type png)
@@ -769,9 +769,9 @@ File: .././Figures/CH2-01.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-01.PNG  used on input line 407.
 (pdftex.def)             Requested size: 458.50488pt x 386.23616pt.
 
-:tex2html_wrap5515:lthtmlCropMarkHeight:=392.23616pt
+:tex2html_wrap5776:lthtmlCropMarkHeight:=392.23616pt
 
-:tex2html_wrap5515:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5776:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [41 <.././Figures/CH2-01.PNG>]
 <.././Figures/CH2-02.PNG, id=216, 971.63pt x 987.69pt>
 File: .././Figures/CH2-02.PNG Graphic file (type png)
@@ -779,9 +779,9 @@ File: .././Figures/CH2-02.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-02.PNG  used on input line 415.
 (pdftex.def)             Requested size: 388.64511pt x 395.069pt.
 
-:tex2html_wrap5522:lthtmlCropMarkHeight:=401.069pt
+:tex2html_wrap5783:lthtmlCropMarkHeight:=401.069pt
 
-:tex2html_wrap5522:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5783:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [42 <.././Figures/CH2-02.PNG>]
 <.././Figures/CH2-03.PNG, id=222, 1088.065pt x 1107.13625pt>
 File: .././Figures/CH2-03.PNG Graphic file (type png)
@@ -789,9 +789,9 @@ File: .././Figures/CH2-03.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-03.PNG  used on input line 422.
 (pdftex.def)             Requested size: 435.21829pt x 442.84665pt.
 
-:tex2html_wrap5528:lthtmlCropMarkHeight:=448.84665pt
+:tex2html_wrap5789:lthtmlCropMarkHeight:=448.84665pt
 
-:tex2html_wrap5528:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5789:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [43 <.././Figures/CH2-03.PNG>]
 <.././Figures/CH2-04.PNG, id=229, 1137.24875pt x 590.205pt>
 File: .././Figures/CH2-04.PNG Graphic file (type png)
@@ -799,9 +799,9 @@ File: .././Figures/CH2-04.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-04.PNG  used on input line 428.
 (pdftex.def)             Requested size: 454.89145pt x 236.0778pt.
 
-:tex2html_wrap5533:lthtmlCropMarkHeight:=242.0778pt
+:tex2html_wrap5794:lthtmlCropMarkHeight:=242.0778pt
 
-:tex2html_wrap5533:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5794:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [44 <.././Figures/CH2-04.PNG>]
 <.././Figures/CH2-05.PNG, id=235, 867.24pt x 394.47375pt>
 File: .././Figures/CH2-05.PNG Graphic file (type png)
@@ -809,9 +809,9 @@ File: .././Figures/CH2-05.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-05.PNG  used on input line 434.
 (pdftex.def)             Requested size: 346.88986pt x 157.7867pt.
 
-:tex2html_wrap5538:lthtmlCropMarkHeight:=163.7867pt
+:tex2html_wrap5799:lthtmlCropMarkHeight:=163.7867pt
 
-:tex2html_wrap5538:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5799:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [45 <.././Figures/CH2-05.PNG>]
 <.././Figures/CH2-06.PNG, id=241, 1126.2075pt x 632.3625pt>
 File: .././Figures/CH2-06.PNG Graphic file (type png)
@@ -819,9 +819,9 @@ File: .././Figures/CH2-06.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-06.PNG  used on input line 442.
 (pdftex.def)             Requested size: 450.47502pt x 252.94052pt.
 
-:tex2html_wrap5545:lthtmlCropMarkHeight:=258.94052pt
+:tex2html_wrap5806:lthtmlCropMarkHeight:=258.94052pt
 
-:tex2html_wrap5545:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5806:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [46 <.././Figures/CH2-06.PNG>]
 <.././Figures/CH2-07.PNG, id=247, 1126.2075pt x 671.50874pt>
 File: .././Figures/CH2-07.PNG Graphic file (type png)
@@ -829,9 +829,9 @@ File: .././Figures/CH2-07.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-07.PNG  used on input line 448.
 (pdftex.def)             Requested size: 450.47502pt x 268.59874pt.
 
-:tex2html_wrap5550:lthtmlCropMarkHeight:=274.59874pt
+:tex2html_wrap5811:lthtmlCropMarkHeight:=274.59874pt
 
-:tex2html_wrap5550:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5811:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [47 <.././Figures/CH2-07.PNG>]
 <.././Figures/CH2-08.PNG, id=253, 1167.36125pt x 809.0225pt>
 File: .././Figures/CH2-08.PNG Graphic file (type png)
@@ -839,9 +839,9 @@ File: .././Figures/CH2-08.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-08.PNG  used on input line 455.
 (pdftex.def)             Requested size: 466.93623pt x 323.60327pt.
 
-:tex2html_wrap5556:lthtmlCropMarkHeight:=329.60327pt
+:tex2html_wrap5817:lthtmlCropMarkHeight:=329.60327pt
 
-:tex2html_wrap5556:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5817:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [48 <.././Figures/CH2-08.PNG>]
 <.././Figures/CH2-09.PNG, id=259, 1050.92625pt x 828.09375pt>
 File: .././Figures/CH2-09.PNG Graphic file (type png)
@@ -849,9 +849,9 @@ File: .././Figures/CH2-09.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-09.PNG  used on input line 462.
 (pdftex.def)             Requested size: 420.36307pt x 331.23163pt.
 
-:tex2html_wrap5562:lthtmlCropMarkHeight:=337.23163pt
+:tex2html_wrap5823:lthtmlCropMarkHeight:=337.23163pt
 
-:tex2html_wrap5562:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5823:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [49 <.././Figures/CH2-09.PNG>]
 <.././Figures/CH2-10.PNG, id=266, 1095.09125pt x 672.5125pt>
 File: .././Figures/CH2-10.PNG Graphic file (type png)
@@ -859,9 +859,9 @@ File: .././Figures/CH2-10.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-10.PNG  used on input line 469.
 (pdftex.def)             Requested size: 438.02873pt x 269.00023pt.
 
-:tex2html_wrap5568:lthtmlCropMarkHeight:=275.00023pt
+:tex2html_wrap5829:lthtmlCropMarkHeight:=275.00023pt
 
-:tex2html_wrap5568:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5829:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [50 <.././Figures/CH2-10.PNG>]
 <.././Figures/CH2-11.PNG, id=272, 1095.09125pt x 724.7075pt>
 File: .././Figures/CH2-11.PNG Graphic file (type png)
@@ -869,9 +869,9 @@ File: .././Figures/CH2-11.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-11.PNG  used on input line 475.
 (pdftex.def)             Requested size: 438.02873pt x 289.87787pt.
 
-:tex2html_wrap5573:lthtmlCropMarkHeight:=295.87787pt
+:tex2html_wrap5834:lthtmlCropMarkHeight:=295.87787pt
 
-:tex2html_wrap5573:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5834:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [51 <.././Figures/CH2-11.PNG>]
 <.././Figures/CH2-12.PNG, id=278, 867.24pt x 521.95pt>
 File: .././Figures/CH2-12.PNG Graphic file (type png)
@@ -879,9 +879,9 @@ File: .././Figures/CH2-12.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-12.PNG  used on input line 481.
 (pdftex.def)             Requested size: 346.88986pt x 208.77629pt.
 
-:tex2html_wrap5578:lthtmlCropMarkHeight:=214.77629pt
+:tex2html_wrap5839:lthtmlCropMarkHeight:=214.77629pt
 
-:tex2html_wrap5578:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5839:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [52 <.././Figures/CH2-12.PNG>]
 <.././Figures/CH2-13.PNG, id=284, 1104.125pt x 817.0525pt>
 File: .././Figures/CH2-13.PNG Graphic file (type png)
@@ -889,9 +889,9 @@ File: .././Figures/CH2-13.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-13.PNG  used on input line 489.
 (pdftex.def)             Requested size: 441.64218pt x 326.81522pt.
 
-:tex2html_wrap5585:lthtmlCropMarkHeight:=332.81522pt
+:tex2html_wrap5846:lthtmlCropMarkHeight:=332.81522pt
 
-:tex2html_wrap5585:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5846:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [53 <.././Figures/CH2-13.PNG>]
 <.././Figures/CH2-14.PNG, id=290, 998.73125pt x 790.955pt>
 File: .././Figures/CH2-14.PNG Graphic file (type png)
@@ -899,9 +899,9 @@ File: .././Figures/CH2-14.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-14.PNG  used on input line 496.
 (pdftex.def)             Requested size: 399.48541pt x 316.3764pt.
 
-:tex2html_wrap5591:lthtmlCropMarkHeight:=322.3764pt
+:tex2html_wrap5852:lthtmlCropMarkHeight:=322.3764pt
 
-:tex2html_wrap5591:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5852:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [54 <.././Figures/CH2-14.PNG>]
 <.././Figures/CH2-15.PNG, id=296, 920.43875pt x 784.9325pt>
 File: .././Figures/CH2-15.PNG Graphic file (type png)
@@ -909,9 +909,9 @@ File: .././Figures/CH2-15.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-15.PNG  used on input line 503.
 (pdftex.def)             Requested size: 368.16898pt x 313.96744pt.
 
-:tex2html_wrap5597:lthtmlCropMarkHeight:=319.96744pt
+:tex2html_wrap5858:lthtmlCropMarkHeight:=319.96744pt
 
-:tex2html_wrap5597:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5858:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [55 <.././Figures/CH2-15.PNG>]
 <.././Figures/CH2-16.PNG, id=303, 740.7675pt x 421.575pt>
 File: .././Figures/CH2-16.PNG Graphic file (type png)
@@ -919,9 +919,9 @@ File: .././Figures/CH2-16.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-16.PNG  used on input line 509.
 (pdftex.def)             Requested size: 296.30174pt x 168.627pt.
 
-:tex2html_wrap5602:lthtmlCropMarkHeight:=174.627pt
+:tex2html_wrap5863:lthtmlCropMarkHeight:=174.627pt
 
-:tex2html_wrap5602:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5863:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [56 <.././Figures/CH2-16.PNG>]
 <.././Figures/CH2-17.PNG, id=309, 858.20625pt x 490.83376pt>
 File: .././Figures/CH2-17.PNG Graphic file (type png)
@@ -929,9 +929,9 @@ File: .././Figures/CH2-17.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-17.PNG  used on input line 515.
 (pdftex.def)             Requested size: 343.27641pt x 196.33002pt.
 
-:tex2html_wrap5607:lthtmlCropMarkHeight:=202.33002pt
+:tex2html_wrap5868:lthtmlCropMarkHeight:=202.33002pt
 
-:tex2html_wrap5607:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5868:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [57 <.././Figures/CH2-17.PNG>]
 <.././Figures/CH2-18.PNG, id=315, 892.33376pt x 422.57875pt>
 File: .././Figures/CH2-18.PNG Graphic file (type png)
@@ -939,92 +939,92 @@ File: .././Figures/CH2-18.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-18.PNG  used on input line 521.
 (pdftex.def)             Requested size: 356.92719pt x 169.0285pt.
 
-:tex2html_wrap5612:lthtmlCropMarkHeight:=175.0285pt
+:tex2html_wrap5873:lthtmlCropMarkHeight:=175.0285pt
 
-:tex2html_wrap5612:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5873:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [58 <.././Figures/CH2-18.PNG>]
 
-:displaymath5618:lthtmlCropMarkHeight:=176.06873pt
+:displaymath5879:lthtmlCropMarkHeight:=176.06873pt
 
-:displaymath5618:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:displaymath5879:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [59]
 
-:tex2html_wrap_inline5620:lthtmlCropMarkHeight:=23.87044pt
+:tex2html_wrap_inline5881:lthtmlCropMarkHeight:=23.87044pt
 
-:tex2html_wrap_inline5620:lthtmlCropMarkDepth:=10.24864pt:1ex:=4.71457pt
+:tex2html_wrap_inline5881:lthtmlCropMarkDepth:=10.24864pt:1ex:=4.71457pt
 [60]
 
-:tex2html_wrap_inline5622:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5883:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5622:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline5883:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [61]
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 577.
 
 
-:tex2html_wrap_indisplay5624:lthtmlCropMarkHeight:=23.41057pt
+:tex2html_wrap_indisplay5885:lthtmlCropMarkHeight:=23.41057pt
 
-:tex2html_wrap_indisplay5624:lthtmlCropMarkDepth:=10.85855pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5885:lthtmlCropMarkDepth:=10.85855pt:1ex:=4.71457pt
 [62]
 
-:tex2html_wrap_indisplay5626:lthtmlCropMarkHeight:=22.53697pt
+:tex2html_wrap_indisplay5887:lthtmlCropMarkHeight:=22.53697pt
 
-:tex2html_wrap_indisplay5626:lthtmlCropMarkDepth:=9.15364pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5887:lthtmlCropMarkDepth:=9.15364pt:1ex:=4.71457pt
 [63]
 
-:tex2html_wrap_indisplay5628:lthtmlCropMarkHeight:=22.53697pt
+:tex2html_wrap_indisplay5889:lthtmlCropMarkHeight:=22.53697pt
 
-:tex2html_wrap_indisplay5628:lthtmlCropMarkDepth:=10.85855pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5889:lthtmlCropMarkDepth:=10.85855pt:1ex:=4.71457pt
 [64]
 
-:tex2html_wrap_indisplay5630:lthtmlCropMarkHeight:=20.89023pt
+:tex2html_wrap_indisplay5891:lthtmlCropMarkHeight:=20.89023pt
 
-:tex2html_wrap_indisplay5630:lthtmlCropMarkDepth:=9.15364pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5891:lthtmlCropMarkDepth:=9.15364pt:1ex:=4.71457pt
 [65]
 
-:tex2html_wrap_indisplay5632:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_indisplay5893:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_indisplay5632:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5893:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [66]
 
-:tex2html_wrap_indisplay5634:lthtmlCropMarkHeight:=20.89023pt
+:tex2html_wrap_indisplay5895:lthtmlCropMarkHeight:=20.89023pt
 
-:tex2html_wrap_indisplay5634:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5895:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
 [67]
 
-:displaymath5636:lthtmlCropMarkHeight:=95.09995pt
+:displaymath5897:lthtmlCropMarkHeight:=95.09995pt
 
-:displaymath5636:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:displaymath5897:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [68]
 
-:tex2html_wrap_indisplay5638:lthtmlCropMarkHeight:=22.73352pt
+:tex2html_wrap_indisplay5899:lthtmlCropMarkHeight:=22.73352pt
 
-:tex2html_wrap_indisplay5638:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5899:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
 [69]
 
-:tex2html_wrap_indisplay5640:lthtmlCropMarkHeight:=21.87761pt
+:tex2html_wrap_indisplay5901:lthtmlCropMarkHeight:=21.87761pt
 
-:tex2html_wrap_indisplay5640:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5901:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
 [70]
 
-:tex2html_wrap_indisplay5642:lthtmlCropMarkHeight:=22.73352pt
+:tex2html_wrap_indisplay5903:lthtmlCropMarkHeight:=22.73352pt
 
-:tex2html_wrap_indisplay5642:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5903:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
 [71]
 
-:tex2html_wrap_indisplay5644:lthtmlCropMarkHeight:=21.87761pt
+:tex2html_wrap_indisplay5905:lthtmlCropMarkHeight:=21.87761pt
 
-:tex2html_wrap_indisplay5644:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5905:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
 [72]
 
-:tex2html_wrap_indisplay5646:lthtmlCropMarkHeight:=23.87044pt
+:tex2html_wrap_indisplay5907:lthtmlCropMarkHeight:=23.87044pt
 
-:tex2html_wrap_indisplay5646:lthtmlCropMarkDepth:=10.24864pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5907:lthtmlCropMarkDepth:=10.24864pt:1ex:=4.71457pt
 [73]
 
-:tex2html_wrap_inline5648:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5909:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5648:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline5909:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [74]
 <.././Figures/CH2-19.PNG, id=390, 903.375pt x 1069.9975pt>
 File: .././Figures/CH2-19.PNG Graphic file (type png)
@@ -1032,9 +1032,9 @@ File: .././Figures/CH2-19.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-19.PNG  used on input line 687.
 (pdftex.def)             Requested size: 361.3436pt x 427.99142pt.
 
-:tex2html_wrap5651:lthtmlCropMarkHeight:=433.99142pt
+:tex2html_wrap5912:lthtmlCropMarkHeight:=433.99142pt
 
-:tex2html_wrap5651:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5912:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [75 <.././Figures/CH2-19.PNG>]
 <.././Figures/CH2-20.PNG, id=396, 701.62125pt x 1225.57875pt>
 File: .././Figures/CH2-20.PNG Graphic file (type png)
@@ -1042,9 +1042,9 @@ File: .././Figures/CH2-20.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-20.PNG  used on input line 693.
 (pdftex.def)             Requested size: 280.64352pt x 490.22282pt.
 
-:tex2html_wrap5656:lthtmlCropMarkHeight:=496.22282pt
+:tex2html_wrap5917:lthtmlCropMarkHeight:=496.22282pt
 
-:tex2html_wrap5656:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5917:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [76 <.././Figures/CH2-20.PNG>]
 <.././Figures/CH2-21.PNG, id=402, 603.25375pt x 391.4625pt>
 File: .././Figures/CH2-21.PNG Graphic file (type png)
@@ -1052,9 +1052,9 @@ File: .././Figures/CH2-21.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-21.PNG  used on input line 699.
 (pdftex.def)             Requested size: 241.29723pt x 156.58221pt.
 
-:tex2html_wrap5661:lthtmlCropMarkHeight:=162.58221pt
+:tex2html_wrap5922:lthtmlCropMarkHeight:=162.58221pt
 
-:tex2html_wrap5661:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5922:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [77 <.././Figures/CH2-21.PNG>]
 <.././Figures/CH2-22.PNG, id=408, 1128.215pt x 931.48pt>
 File: .././Figures/CH2-22.PNG Graphic file (type png)
@@ -1062,9 +1062,9 @@ File: .././Figures/CH2-22.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-22.PNG  used on input line 706.
 (pdftex.def)             Requested size: 451.278pt x 372.5854pt.
 
-:tex2html_wrap5667:lthtmlCropMarkHeight:=378.5854pt
+:tex2html_wrap5928:lthtmlCropMarkHeight:=378.5854pt
 
-:tex2html_wrap5667:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5928:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [78 <.././Figures/CH2-22.PNG>]
 <.././Figures/CH2-23.PNG, id=414, 1235.61626pt x 1068.99374pt>
 File: .././Figures/CH2-23.PNG Graphic file (type png)
@@ -1077,9 +1077,9 @@ Overfull \hbox (22.20663pt too wide) in paragraph at lines 712--713
  []
 
 
-:tex2html_wrap5672:lthtmlCropMarkHeight:=433.58992pt
+:tex2html_wrap5933:lthtmlCropMarkHeight:=433.58992pt
 
-:tex2html_wrap5672:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5933:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [79 <.././Figures/CH2-23.PNG>]
 <.././Figures/CH2-24.PNG, id=421, 933.4875pt x 1114.1625pt>
 File: .././Figures/CH2-24.PNG Graphic file (type png)
@@ -1087,29 +1087,29 @@ File: .././Figures/CH2-24.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-24.PNG  used on input line 718.
 (pdftex.def)             Requested size: 373.38838pt x 445.6571pt.
 
-:tex2html_wrap5677:lthtmlCropMarkHeight:=451.6571pt
+:tex2html_wrap5938:lthtmlCropMarkHeight:=451.6571pt
 
-:tex2html_wrap5677:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5938:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [80 <.././Figures/CH2-24.PNG>]
 
-:tex2html_wrap_inline5685:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline5946:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5685:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+:tex2html_wrap_inline5946:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
 [81]
 
-:tex2html_wrap_inline5687:lthtmlCropMarkHeight:=15.12923pt
+:tex2html_wrap_inline5948:lthtmlCropMarkHeight:=15.12923pt
 
-:tex2html_wrap_inline5687:lthtmlCropMarkDepth:=3.06699pt:1ex:=4.71457pt
+:tex2html_wrap_inline5948:lthtmlCropMarkDepth:=3.06699pt:1ex:=4.71457pt
 [82]
 
-:tex2html_wrap_inline5689:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline5950:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5689:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
+:tex2html_wrap_inline5950:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
 [83]
 
-:tex2html_wrap_inline5691:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline5952:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5691:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline5952:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [84]
 <.././Figures/LostHills.PNG, id=443, 532.99126pt x 424.58624pt>
 File: .././Figures/LostHills.PNG Graphic file (type png)
@@ -1117,9 +1117,9 @@ File: .././Figures/LostHills.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/LostHills.PNG  used on input line 751.
 (pdftex.def)             Requested size: 319.79723pt x 254.75371pt.
 
-:tex2html_wrap5693:lthtmlCropMarkHeight:=260.75371pt
+:tex2html_wrap5954:lthtmlCropMarkHeight:=260.75371pt
 
-:tex2html_wrap5693:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5954:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [85 <.././Figures/LostHills.PNG>]
 <.././Figures/CH2-25.PNG, id=450, 869.2475pt x 555.07375pt>
 File: .././Figures/CH2-25.PNG Graphic file (type png)
@@ -1127,9 +1127,9 @@ File: .././Figures/CH2-25.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-25.PNG  used on input line 758.
 (pdftex.def)             Requested size: 347.69284pt x 222.02556pt.
 
-:tex2html_wrap5699:lthtmlCropMarkHeight:=228.02556pt
+:tex2html_wrap5960:lthtmlCropMarkHeight:=228.02556pt
 
-:tex2html_wrap5699:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5960:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [86 <.././Figures/CH2-25.PNG>]
 <.././Figures/CH2-26.PNG, id=456, 1221.56375pt x 1129.21875pt>
 File: .././Figures/CH2-26.PNG Graphic file (type png)
@@ -1142,9 +1142,9 @@ Overfull \hbox (16.58574pt too wide) in paragraph at lines 765--766
  []
 
 
-:tex2html_wrap5705:lthtmlCropMarkHeight:=457.6795pt
+:tex2html_wrap5966:lthtmlCropMarkHeight:=457.6795pt
 
-:tex2html_wrap5705:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5966:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [87 <.././Figures/CH2-26.PNG>]
 <.././Figures/CH2-27.PNG, id=462, 1177.39874pt x 671.50874pt>
 File: .././Figures/CH2-27.PNG Graphic file (type png)
@@ -1152,9 +1152,9 @@ File: .././Figures/CH2-27.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-27.PNG  used on input line 772.
 (pdftex.def)             Requested size: 470.95116pt x 268.59874pt.
 
-:tex2html_wrap5711:lthtmlCropMarkHeight:=274.59874pt
+:tex2html_wrap5972:lthtmlCropMarkHeight:=274.59874pt
 
-:tex2html_wrap5711:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5972:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [88 <.././Figures/CH2-27.PNG>]
 <.././Figures/CH2-28.PNG, id=468, 1177.39874pt x 610.28pt>
 File: .././Figures/CH2-28.PNG Graphic file (type png)
@@ -1162,9 +1162,9 @@ File: .././Figures/CH2-28.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-28.PNG  used on input line 779.
 (pdftex.def)             Requested size: 470.95116pt x 244.10767pt.
 
-:tex2html_wrap5717:lthtmlCropMarkHeight:=250.10767pt
+:tex2html_wrap5978:lthtmlCropMarkHeight:=250.10767pt
 
-:tex2html_wrap5717:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5978:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [89 <.././Figures/CH2-28.PNG>]
 <.././Figures/CH2-29.PNG, id=474, 1177.39874pt x 755.82375pt>
 File: .././Figures/CH2-29.PNG Graphic file (type png)
@@ -1172,9 +1172,9 @@ File: .././Figures/CH2-29.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-29.PNG  used on input line 785.
 (pdftex.def)             Requested size: 470.95116pt x 302.32414pt.
 
-:tex2html_wrap5722:lthtmlCropMarkHeight:=308.32414pt
+:tex2html_wrap5983:lthtmlCropMarkHeight:=308.32414pt
 
-:tex2html_wrap5722:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5983:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [90 <.././Figures/CH2-29.PNG>]
 <.././Figures/CH2-30.PNG, id=480, 948.54375pt x 468.75125pt>
 File: .././Figures/CH2-30.PNG Graphic file (type png)
@@ -1182,194 +1182,194 @@ File: .././Figures/CH2-30.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH2-30.PNG  used on input line 791.
 (pdftex.def)             Requested size: 379.41077pt x 187.49716pt.
 
-:tex2html_wrap5727:lthtmlCropMarkHeight:=193.49716pt
+:tex2html_wrap5988:lthtmlCropMarkHeight:=193.49716pt
 
-:tex2html_wrap5727:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap5988:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [91 <.././Figures/CH2-30.PNG>]
 
-:tex2html_wrap_indisplay5734:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_indisplay5995:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_indisplay5734:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5995:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [92]
 
-:tex2html_wrap_indisplay5735:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_indisplay5996:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_indisplay5735:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5996:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [93]
 
-:tex2html_wrap_indisplay5737:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_indisplay5998:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_indisplay5737:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay5998:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
 [94]
 
-:tex2html_wrap_indisplay5739:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_indisplay6000:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_indisplay5739:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6000:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [95]
 
-:tex2html_wrap_indisplay5741:lthtmlCropMarkHeight:=21.87761pt
+:tex2html_wrap_indisplay6002:lthtmlCropMarkHeight:=21.87761pt
 
-:tex2html_wrap_indisplay5741:lthtmlCropMarkDepth:=10.7092pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6002:lthtmlCropMarkDepth:=10.7092pt:1ex:=4.71457pt
 [96]
 
-:tex2html_wrap_indisplay5743:lthtmlCropMarkHeight:=20.90428pt
+:tex2html_wrap_indisplay6004:lthtmlCropMarkHeight:=20.90428pt
 
-:tex2html_wrap_indisplay5743:lthtmlCropMarkDepth:=10.9293pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6004:lthtmlCropMarkDepth:=10.9293pt:1ex:=4.71457pt
 [97]
 
-:tex2html_wrap_inline5745:lthtmlCropMarkHeight:=14.21255pt
+:tex2html_wrap_inline6006:lthtmlCropMarkHeight:=14.21255pt
 
-:tex2html_wrap_inline5745:lthtmlCropMarkDepth:=4.79314pt:1ex:=4.71457pt
+:tex2html_wrap_inline6006:lthtmlCropMarkDepth:=4.79314pt:1ex:=4.71457pt
 [98]
 
-:tex2html_wrap_inline5747:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_inline6008:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_inline5747:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6008:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [99]
 
-:tex2html_wrap_inline5751:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6012:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5751:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6012:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [100]
 
-:tex2html_wrap_inline5753:lthtmlCropMarkHeight:=16.71274pt
+:tex2html_wrap_inline6014:lthtmlCropMarkHeight:=16.71274pt
 
-:tex2html_wrap_inline5753:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6014:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [101]
 
-:tex2html_wrap_indisplay5755:lthtmlCropMarkHeight:=20.90428pt
+:tex2html_wrap_indisplay6016:lthtmlCropMarkHeight:=20.90428pt
 
-:tex2html_wrap_indisplay5755:lthtmlCropMarkDepth:=10.9293pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6016:lthtmlCropMarkDepth:=10.9293pt:1ex:=4.71457pt
 [102]
 
-:tex2html_wrap_inline5758:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6019:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5758:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6019:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [103]
 
-:displaymath5760:lthtmlCropMarkHeight:=62.4598pt
+:displaymath6021:lthtmlCropMarkHeight:=62.4598pt
 
-:displaymath5760:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:displaymath6021:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [104]
 
-:displaymath5762:lthtmlCropMarkHeight:=135.55093pt
+:displaymath6023:lthtmlCropMarkHeight:=135.55093pt
 
-:displaymath5762:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:displaymath6023:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [105]
 
-:tex2html_wrap_inline5764:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline6025:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5764:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6025:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [106]
 
-:tex2html_wrap_inline5766:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline6027:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5766:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6027:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [107]
 
-:tex2html_wrap_inline5768:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline6029:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5768:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6029:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [108]
 
-:tex2html_wrap_inline5770:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline6031:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline5770:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6031:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [109]
 
-:tex2html_wrap_inline5772:lthtmlCropMarkHeight:=13.22179pt
+:tex2html_wrap_inline6033:lthtmlCropMarkHeight:=13.22179pt
 
-:tex2html_wrap_inline5772:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6033:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [110]
 
-:tex2html_wrap_inline5774:lthtmlCropMarkHeight:=13.22179pt
+:tex2html_wrap_inline6035:lthtmlCropMarkHeight:=13.22179pt
 
-:tex2html_wrap_inline5774:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6035:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [111]
 
-:tex2html_wrap_inline5776:lthtmlCropMarkHeight:=13.22179pt
+:tex2html_wrap_inline6037:lthtmlCropMarkHeight:=13.22179pt
 
-:tex2html_wrap_inline5776:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6037:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [112]
 
-:tex2html_wrap_inline5783:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6044:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5783:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6044:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [113]
 
-:tex2html_wrap_inline5785:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6046:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5785:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6046:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [114]
 
-:tex2html_wrap_inline5787:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6048:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5787:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6048:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [115]
 
-:tex2html_wrap_inline5789:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6050:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5789:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6050:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [116]
 
-:tex2html_wrap_inline5791:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6052:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5791:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6052:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [117]
 
-:tex2html_wrap_inline5793:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6054:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline5793:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6054:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [118]
 
-:tex2html_wrap_inline5795:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6056:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5795:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6056:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [119]
 
-:tex2html_wrap_inline5797:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6058:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5797:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline6058:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [120]
 
-:tex2html_wrap_inline5799:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6060:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5799:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline6060:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [121]
 
-:tex2html_wrap_inline5801:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6062:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5801:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6062:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [122]
 
-:tex2html_wrap_inline5803:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6064:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5803:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6064:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [123]
 
-:tex2html_wrap_inline5805:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline6066:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline5805:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline6066:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [124]
 
-:tex2html_wrap_inline5819:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6080:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5819:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6080:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [125]
 
-:tex2html_wrap_inline5825:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6086:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5825:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6086:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [126]
 
-:tex2html_wrap_inline5836:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6097:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5836:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6097:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [127]
 
-:tex2html_wrap_inline5842:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline6103:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline5842:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline6103:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [128]
 <.././Figures/FracModel.PNG, id=643, 994.31474pt x 517.33275pt>
 File: .././Figures/FracModel.PNG Graphic file (type png)
@@ -1382,14 +1382,14 @@ Overfull \hbox (25.12505pt too wide) in paragraph at lines 1059--1060
  []
 
 
-:tex2html_wrap5848:lthtmlCropMarkHeight:=264.66574pt
+:tex2html_wrap6109:lthtmlCropMarkHeight:=264.66574pt
 
-:tex2html_wrap5848:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6109:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [129 <.././Figures/FracModel.PNG>]
 
-:tex2html_wrap_inline5873:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6134:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline5873:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6134:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [130]
 <.././Figures/CH3-01.PNG, id=653, 1262.7175pt x 1190.4475pt>
 File: .././Figures/CH3-01.PNG Graphic file (type png)
@@ -1397,9 +1397,9 @@ File: .././Figures/CH3-01.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-01.PNG  used on input line 1073.
 (pdftex.def)             Requested size: 378.81818pt x 357.13701pt.
 
-:tex2html_wrap5885:lthtmlCropMarkHeight:=363.13701pt
+:tex2html_wrap6146:lthtmlCropMarkHeight:=363.13701pt
 
-:tex2html_wrap5885:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6146:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [131 <.././Figures/CH3-01.PNG>]
 <.././Figures/CH3-02.PNG, id=659, 1053.9375pt x 750.805pt>
 File: .././Figures/CH3-02.PNG Graphic file (type png)
@@ -1407,9 +1407,9 @@ File: .././Figures/CH3-02.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-02.PNG  used on input line 1079.
 (pdftex.def)             Requested size: 316.18369pt x 225.24323pt.
 
-:tex2html_wrap5890:lthtmlCropMarkHeight:=231.24323pt
+:tex2html_wrap6151:lthtmlCropMarkHeight:=231.24323pt
 
-:tex2html_wrap5890:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6151:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [132 <.././Figures/CH3-02.PNG>]
 <.././Figures/CH3-03.PNG, id=665, 1201.48875pt x 573.14125pt>
 File: .././Figures/CH3-03.PNG Graphic file (type png)
@@ -1417,9 +1417,9 @@ File: .././Figures/CH3-03.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-03.PNG  used on input line 1085.
 (pdftex.def)             Requested size: 360.44942pt x 171.9437pt.
 
-:tex2html_wrap5895:lthtmlCropMarkHeight:=177.9437pt
+:tex2html_wrap6156:lthtmlCropMarkHeight:=177.9437pt
 
-:tex2html_wrap5895:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6156:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [133 <.././Figures/CH3-03.PNG>]
 <.././Figures/CH3-04.PNG, id=673, 1129.21875pt x 1243.64626pt>
 File: .././Figures/CH3-04.PNG Graphic file (type png)
@@ -1427,9 +1427,9 @@ File: .././Figures/CH3-04.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-04.PNG  used on input line 1092.
 (pdftex.def)             Requested size: 338.76823pt x 373.09676pt.
 
-:tex2html_wrap5901:lthtmlCropMarkHeight:=379.09676pt
+:tex2html_wrap6162:lthtmlCropMarkHeight:=379.09676pt
 
-:tex2html_wrap5901:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6162:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [134 <.././Figures/CH3-04.PNG>]
 <.././Figures/CH3-05.PNG, id=679, 1164.35pt x 414.54875pt>
 File: .././Figures/CH3-05.PNG Graphic file (type png)
@@ -1437,9 +1437,9 @@ File: .././Figures/CH3-05.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-05.PNG  used on input line 1098.
 (pdftex.def)             Requested size: 349.3077pt x 124.36557pt.
 
-:tex2html_wrap5906:lthtmlCropMarkHeight:=130.36557pt
+:tex2html_wrap6167:lthtmlCropMarkHeight:=130.36557pt
 
-:tex2html_wrap5906:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6167:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [135 <.././Figures/CH3-05.PNG>]
 <.././Figures/CH3-06.PNG, id=685, 824.07875pt x 331.2375pt>
 File: .././Figures/CH3-06.PNG Graphic file (type png)
@@ -1447,9 +1447,9 @@ File: .././Figures/CH3-06.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-06.PNG  used on input line 1104.
 (pdftex.def)             Requested size: 247.22552pt x 99.37201pt.
 
-:tex2html_wrap5911:lthtmlCropMarkHeight:=105.37201pt
+:tex2html_wrap6172:lthtmlCropMarkHeight:=105.37201pt
 
-:tex2html_wrap5911:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6172:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [136 <.././Figures/CH3-06.PNG>]
 <.././Figures/CH3-07.PNG, id=691, 1213.53375pt x 1244.65pt>
 File: .././Figures/CH3-07.PNG Graphic file (type png)
@@ -1457,9 +1457,9 @@ File: .././Figures/CH3-07.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-07.PNG  used on input line 1110.
 (pdftex.def)             Requested size: 364.06294pt x 373.39787pt.
 
-:tex2html_wrap5916:lthtmlCropMarkHeight:=379.39787pt
+:tex2html_wrap6177:lthtmlCropMarkHeight:=379.39787pt
 
-:tex2html_wrap5916:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6177:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [137 <.././Figures/CH3-07.PNG>]
 <.././Figures/CH3-08.PNG, id=697, 1426.32875pt x 544.0325pt>
 File: .././Figures/CH3-08.PNG Graphic file (type png)
@@ -1467,9 +1467,9 @@ File: .././Figures/CH3-08.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-08.PNG  used on input line 1117.
 (pdftex.def)             Requested size: 427.90193pt x 163.211pt.
 
-:tex2html_wrap5922:lthtmlCropMarkHeight:=169.211pt
+:tex2html_wrap6183:lthtmlCropMarkHeight:=169.211pt
 
-:tex2html_wrap5922:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6183:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [138 <.././Figures/CH3-08.PNG>]
 <.././Figures/CH3-09.PNG, id=703, 1426.32875pt x 541.02126pt>
 File: .././Figures/CH3-09.PNG Graphic file (type png)
@@ -1477,9 +1477,9 @@ File: .././Figures/CH3-09.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-09.PNG  used on input line 1123.
 (pdftex.def)             Requested size: 427.90193pt x 162.30762pt.
 
-:tex2html_wrap5931:lthtmlCropMarkHeight:=168.30762pt
+:tex2html_wrap6192:lthtmlCropMarkHeight:=168.30762pt
 
-:tex2html_wrap5931:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6192:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [139 <.././Figures/CH3-09.PNG>]
 <.././Figures/CH3-10.PNG, id=710, 1426.32875pt x 669.50125pt>
 File: .././Figures/CH3-10.PNG Graphic file (type png)
@@ -1487,9 +1487,9 @@ File: .././Figures/CH3-10.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-10.PNG  used on input line 1129.
 (pdftex.def)             Requested size: 427.90193pt x 200.85191pt.
 
-:tex2html_wrap5936:lthtmlCropMarkHeight:=206.85191pt
+:tex2html_wrap6197:lthtmlCropMarkHeight:=206.85191pt
 
-:tex2html_wrap5936:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6197:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [140 <.././Figures/CH3-10.PNG>]
 <.././Figures/CH3-11.PNG, id=716, 1426.32875pt x 909.3975pt>
 File: .././Figures/CH3-11.PNG Graphic file (type png)
@@ -1497,9 +1497,9 @@ File: .././Figures/CH3-11.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-11.PNG  used on input line 1136.
 (pdftex.def)             Requested size: 427.90193pt x 272.82135pt.
 
-:tex2html_wrap5942:lthtmlCropMarkHeight:=278.82135pt
+:tex2html_wrap6203:lthtmlCropMarkHeight:=278.82135pt
 
-:tex2html_wrap5942:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6203:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [141 <.././Figures/CH3-11.PNG>]
 <.././Figures/CH3-12.PNG, id=722, 1217.54875pt x 470.75874pt>
 File: .././Figures/CH3-12.PNG Graphic file (type png)
@@ -1507,9 +1507,9 @@ File: .././Figures/CH3-12.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-12.PNG  used on input line 1144.
 (pdftex.def)             Requested size: 365.26744pt x 141.22871pt.
 
-:tex2html_wrap5949:lthtmlCropMarkHeight:=147.22871pt
+:tex2html_wrap6210:lthtmlCropMarkHeight:=147.22871pt
 
-:tex2html_wrap5949:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6210:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [142 <.././Figures/CH3-12.PNG>]
 <.././Figures/CH3-13.PNG, id=728, 1157.32375pt x 998.73125pt>
 File: .././Figures/CH3-13.PNG Graphic file (type png)
@@ -1517,9 +1517,9 @@ File: .././Figures/CH3-13.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-13.PNG  used on input line 1150.
 (pdftex.def)             Requested size: 347.1998pt x 299.62169pt.
 
-:tex2html_wrap5954:lthtmlCropMarkHeight:=305.62169pt
+:tex2html_wrap6215:lthtmlCropMarkHeight:=305.62169pt
 
-:tex2html_wrap5954:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6215:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [143 <.././Figures/CH3-13.PNG>]
 <.././Figures/CH3-14.PNG, id=734, 984.67876pt x 253.94875pt>
 File: .././Figures/CH3-14.PNG Graphic file (type png)
@@ -1527,9 +1527,9 @@ File: .././Figures/CH3-14.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-14.PNG  used on input line 1156.
 (pdftex.def)             Requested size: 295.4059pt x 76.1852pt.
 
-:tex2html_wrap5959:lthtmlCropMarkHeight:=82.1852pt
+:tex2html_wrap6220:lthtmlCropMarkHeight:=82.1852pt
 
-:tex2html_wrap5959:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6220:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [144 <.././Figures/CH3-14.PNG>]
 <.././Figures/CH3-15.PNG, id=740, 1173.38374pt x 1017.8025pt>
 File: .././Figures/CH3-15.PNG Graphic file (type png)
@@ -1537,9 +1537,9 @@ File: .././Figures/CH3-15.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-15.PNG  used on input line 1162.
 (pdftex.def)             Requested size: 352.01784pt x 305.34311pt.
 
-:tex2html_wrap5964:lthtmlCropMarkHeight:=311.34311pt
+:tex2html_wrap6225:lthtmlCropMarkHeight:=311.34311pt
 
-:tex2html_wrap5964:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6225:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [145 <.././Figures/CH3-15.PNG>]
 <.././Figures/CH3-16.PNG, id=747, 1247.66125pt x 410.53375pt>
 File: .././Figures/CH3-16.PNG Graphic file (type png)
@@ -1547,9 +1547,9 @@ File: .././Figures/CH3-16.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-16.PNG  used on input line 1168.
 (pdftex.def)             Requested size: 374.30125pt x 123.16107pt.
 
-:tex2html_wrap5969:lthtmlCropMarkHeight:=129.16107pt
+:tex2html_wrap6230:lthtmlCropMarkHeight:=129.16107pt
 
-:tex2html_wrap5969:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6230:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [146 <.././Figures/CH3-16.PNG>]
 <.././Figures/CH3-17.PNG, id=753, 1055.945pt x 1005.7575pt>
 File: .././Figures/CH3-17.PNG Graphic file (type png)
@@ -1557,9 +1557,9 @@ File: .././Figures/CH3-17.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-17.PNG  used on input line 1175.
 (pdftex.def)             Requested size: 316.78595pt x 301.72958pt.
 
-:tex2html_wrap5975:lthtmlCropMarkHeight:=307.72958pt
+:tex2html_wrap6236:lthtmlCropMarkHeight:=307.72958pt
 
-:tex2html_wrap5975:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6236:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [147 <.././Figures/CH3-17.PNG>]
 <.././Figures/CH3-18.PNG, id=759, 1165.35374pt x 568.1225pt>
 File: .././Figures/CH3-18.PNG Graphic file (type png)
@@ -1567,9 +1567,9 @@ File: .././Figures/CH3-18.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-18.PNG  used on input line 1183.
 (pdftex.def)             Requested size: 349.60883pt x 170.43805pt.
 
-:tex2html_wrap5982:lthtmlCropMarkHeight:=176.43805pt
+:tex2html_wrap6243:lthtmlCropMarkHeight:=176.43805pt
 
-:tex2html_wrap5982:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6243:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [148 <.././Figures/CH3-18.PNG>]
 <.././Figures/CH3-19.PNG, id=765, 999.735pt x 438.63875pt>
 File: .././Figures/CH3-19.PNG Graphic file (type png)
@@ -1577,9 +1577,9 @@ File: .././Figures/CH3-19.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-19.PNG  used on input line 1189.
 (pdftex.def)             Requested size: 299.9228pt x 131.59264pt.
 
-:tex2html_wrap5987:lthtmlCropMarkHeight:=137.59264pt
+:tex2html_wrap6248:lthtmlCropMarkHeight:=137.59264pt
 
-:tex2html_wrap5987:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6248:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [149 <.././Figures/CH3-19.PNG>]
 <.././Figures/CH3-20.PNG, id=771, 999.735pt x 438.63875pt>
 File: .././Figures/CH3-20.PNG Graphic file (type png)
@@ -1587,9 +1587,9 @@ File: .././Figures/CH3-20.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-20.PNG  used on input line 1195.
 (pdftex.def)             Requested size: 299.9228pt x 131.59264pt.
 
-:tex2html_wrap5992:lthtmlCropMarkHeight:=137.59264pt
+:tex2html_wrap6253:lthtmlCropMarkHeight:=137.59264pt
 
-:tex2html_wrap5992:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6253:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [150 <.././Figures/CH3-20.PNG>]
 <.././Figures/CH3-21.PNG, id=777, 1164.35pt x 882.29625pt>
 File: .././Figures/CH3-21.PNG Graphic file (type png)
@@ -1597,9 +1597,9 @@ File: .././Figures/CH3-21.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-21.PNG  used on input line 1202.
 (pdftex.def)             Requested size: 349.3077pt x 264.69092pt.
 
-:tex2html_wrap5998:lthtmlCropMarkHeight:=270.69092pt
+:tex2html_wrap6259:lthtmlCropMarkHeight:=270.69092pt
 
-:tex2html_wrap5998:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6259:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [151 <.././Figures/CH3-21.PNG>]
 <.././Figures/CH3-22.PNG, id=784, 1155.31625pt x 865.2325pt>
 File: .././Figures/CH3-22.PNG Graphic file (type png)
@@ -1607,9 +1607,9 @@ File: .././Figures/CH3-22.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-22.PNG  used on input line 1208.
 (pdftex.def)             Requested size: 346.59755pt x 259.57175pt.
 
-:tex2html_wrap6003:lthtmlCropMarkHeight:=265.57175pt
+:tex2html_wrap6264:lthtmlCropMarkHeight:=265.57175pt
 
-:tex2html_wrap6003:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6264:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [152 <.././Figures/CH3-22.PNG>]
 <.././Figures/CH3-24.PNG, id=790, 1092.08pt x 438.63875pt>
 File: .././Figures/CH3-24.PNG Graphic file (type png)
@@ -1617,9 +1617,9 @@ File: .././Figures/CH3-24.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-24.PNG  used on input line 1215.
 (pdftex.def)             Requested size: 327.62653pt x 131.59264pt.
 
-:tex2html_wrap6009:lthtmlCropMarkHeight:=137.59264pt
+:tex2html_wrap6270:lthtmlCropMarkHeight:=137.59264pt
 
-:tex2html_wrap6009:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6270:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [153 <.././Figures/CH3-24.PNG>]
 <.././Figures/CH3-25.PNG, id=796, 1090.0725pt x 662.475pt>
 File: .././Figures/CH3-25.PNG Graphic file (type png)
@@ -1627,9 +1627,9 @@ File: .././Figures/CH3-25.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-25.PNG  used on input line 1221.
 (pdftex.def)             Requested size: 327.02428pt x 198.74403pt.
 
-:tex2html_wrap6014:lthtmlCropMarkHeight:=204.74403pt
+:tex2html_wrap6275:lthtmlCropMarkHeight:=204.74403pt
 
-:tex2html_wrap6014:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6275:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [154 <.././Figures/CH3-25.PNG>]
 <.././Figures/CH3-26.PNG, id=802, 943.525pt x 662.475pt>
 File: .././Figures/CH3-26.PNG Graphic file (type png)
@@ -1637,9 +1637,9 @@ File: .././Figures/CH3-26.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-26.PNG  used on input line 1227.
 (pdftex.def)             Requested size: 283.05968pt x 198.74403pt.
 
-:tex2html_wrap6019:lthtmlCropMarkHeight:=204.74403pt
+:tex2html_wrap6280:lthtmlCropMarkHeight:=204.74403pt
 
-:tex2html_wrap6019:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6280:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [155 <.././Figures/CH3-26.PNG>]
 <.././Figures/CH3-27.PNG, id=808, 1049.9225pt x 586.19pt>
 File: .././Figures/CH3-27.PNG Graphic file (type png)
@@ -1647,49 +1647,49 @@ File: .././Figures/CH3-27.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/CH3-27.PNG  used on input line 1233.
 (pdftex.def)             Requested size: 314.97917pt x 175.85835pt.
 
-:tex2html_wrap6024:lthtmlCropMarkHeight:=181.85835pt
+:tex2html_wrap6285:lthtmlCropMarkHeight:=181.85835pt
 
-:tex2html_wrap6024:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6285:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [156 <.././Figures/CH3-27.PNG>]
 
-:tex2html_wrap_inline6031:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6292:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6031:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6292:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [157]
 
-:tex2html_wrap_inline6033:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6294:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6033:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6294:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [158]
 
-:tex2html_wrap_inline6041:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6302:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6041:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline6302:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [159]
 
-:tex2html_wrap_inline6043:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6304:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6043:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6304:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [160]
 
-:tex2html_wrap_inline6045:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6306:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6045:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6306:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [161]
 
-:tex2html_wrap_inline6047:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6308:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6047:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline6308:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [162]
 
-:tex2html_wrap_inline6049:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6310:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6049:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
+:tex2html_wrap_inline6310:lthtmlCropMarkDepth:=1.7839pt:1ex:=4.71457pt
 [163]
 
-:tex2html_wrap_inline6051:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6312:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6051:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6312:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [164]
 <.././Figures/Biot.PNG, id=848, 316.5426pt x 165.7392pt>
 File: .././Figures/Biot.PNG Graphic file (type png)
@@ -1697,9 +1697,9 @@ File: .././Figures/Biot.PNG Graphic file (type png)
 Package pdftex.def Info: .././Figures/Biot.PNG  used on input line 1289.
 (pdftex.def)             Requested size: 316.54182pt x 165.73877pt.
 
-:tex2html_wrap6059:lthtmlCropMarkHeight:=171.73877pt
+:tex2html_wrap6320:lthtmlCropMarkHeight:=171.73877pt
 
-:tex2html_wrap6059:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6320:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [165 <.././Figures/Biot.PNG>]
 <.././Figures/ResModel_Depletion.PNG, id=854, 622.4856pt x 359.9046pt>
 File: .././Figures/ResModel_Depletion.PNG Graphic file (type png)
@@ -1708,375 +1708,520 @@ Package pdftex.def Info: .././Figures/ResModel_Depletion.PNG  used on input lin
 e 1296.
 (pdftex.def)             Requested size: 373.49425pt x 215.94441pt.
 
-:tex2html_wrap6074:lthtmlCropMarkHeight:=221.94441pt
+:tex2html_wrap6335:lthtmlCropMarkHeight:=221.94441pt
 
-:tex2html_wrap6074:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap6335:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [166 <.././Figures/ResModel_Depletion.PNG>]
 
-:tex2html_wrap_inline6079:lthtmlCropMarkHeight:=17.39447pt
+:tex2html_wrap_inline6340:lthtmlCropMarkHeight:=17.39447pt
 
-:tex2html_wrap_inline6079:lthtmlCropMarkDepth:=5.9195pt:1ex:=4.71457pt
+:tex2html_wrap_inline6340:lthtmlCropMarkDepth:=5.9195pt:1ex:=4.71457pt
 [167]
 
-:tex2html_wrap_inline6085:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline6346:lthtmlCropMarkHeight:=14.41812pt
 
-:tex2html_wrap_inline6085:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline6346:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [168]
+<.././Figures/CH3-28.PNG, id=869, 1104.125pt x 720.6925pt>
+File: .././Figures/CH3-28.PNG Graphic file (type png)
+<use .././Figures/CH3-28.PNG>
+Package pdftex.def Info: .././Figures/CH3-28.PNG  used on input line 1316.
+(pdftex.def)             Requested size: 441.64218pt x 288.2719pt.
 
-:displaymath6108:lthtmlCropMarkHeight:=100.91609pt
+:tex2html_wrap6359:lthtmlCropMarkHeight:=294.2719pt
 
-:displaymath6108:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
-[169]
+:tex2html_wrap6359:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[169 <.././Figures/CH3-28.PNG>]
+<.././Figures/CH3-29.PNG, id=876, 1033.8625pt x 384.43625pt>
+File: .././Figures/CH3-29.PNG Graphic file (type png)
+<use .././Figures/CH3-29.PNG>
+Package pdftex.def Info: .././Figures/CH3-29.PNG  used on input line 1323.
+(pdftex.def)             Requested size: 413.53767pt x 153.77177pt.
 
-:displaymath6110:lthtmlCropMarkHeight:=68.17625pt
+:tex2html_wrap6365:lthtmlCropMarkHeight:=159.77177pt
 
-:displaymath6110:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
-[170]
+:tex2html_wrap6365:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[170 <.././Figures/CH3-29.PNG>]
+<.././Figures/CH3-30.PNG, id=882, 1088.065pt x 316.18124pt>
+File: .././Figures/CH3-30.PNG Graphic file (type png)
+<use .././Figures/CH3-30.PNG>
+Package pdftex.def Info: .././Figures/CH3-30.PNG  used on input line 1329.
+(pdftex.def)             Requested size: 435.21829pt x 126.47025pt.
 
-:tex2html_wrap_indisplay6112:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap6370:lthtmlCropMarkHeight:=132.47025pt
 
-:tex2html_wrap_indisplay6112:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
-[171]
+:tex2html_wrap6370:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[171 <.././Figures/CH3-30.PNG>]
+<.././Figures/CH3-31.PNG, id=888, 1224.575pt x 943.525pt>
+File: .././Figures/CH3-31.PNG Graphic file (type png)
+<use .././Figures/CH3-31.PNG>
+Package pdftex.def Info: .././Figures/CH3-31.PNG  used on input line 1335.
+(pdftex.def)             Requested size: 489.82132pt x 377.4033pt.
 
-:tex2html_wrap_inline6114:lthtmlCropMarkHeight:=13.60416pt
+Overfull \hbox (17.7902pt too wide) in paragraph at lines 1335--1336
+[][] 
+ []
 
-:tex2html_wrap_inline6114:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
-[172]
 
-:tex2html_wrap_indisplay6116:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap6375:lthtmlCropMarkHeight:=383.4033pt
 
-:tex2html_wrap_indisplay6116:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
-[173]
+:tex2html_wrap6375:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[172 <.././Figures/CH3-31.PNG>]
+<.././Figures/CH3-32.PNG, id=894, 1179.40625pt x 751.80875pt>
+File: .././Figures/CH3-32.PNG Graphic file (type png)
+<use .././Figures/CH3-32.PNG>
+Package pdftex.def Info: .././Figures/CH3-32.PNG  used on input line 1341.
+(pdftex.def)             Requested size: 471.75415pt x 300.71817pt.
 
-:tex2html_wrap_inline6118:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap6380:lthtmlCropMarkHeight:=306.71817pt
 
-:tex2html_wrap_inline6118:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
-[174]
+:tex2html_wrap6380:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[173 <.././Figures/CH3-32.PNG>]
+<.././Figures/CH3-33.PNG, id=900, 1157.32375pt x 650.43pt>
+File: .././Figures/CH3-33.PNG Graphic file (type png)
+<use .././Figures/CH3-33.PNG>
+Package pdftex.def Info: .././Figures/CH3-33.PNG  used on input line 1348.
+(pdftex.def)             Requested size: 462.9213pt x 260.16739pt.
 
-:tex2html_wrap_indisplay6120:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap6386:lthtmlCropMarkHeight:=266.16739pt
 
-:tex2html_wrap_indisplay6120:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap6386:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[174 <.././Figures/CH3-33.PNG>]
+
+:tex2html_wrap_indisplay6391:lthtmlCropMarkHeight:=13.60416pt
+
+:tex2html_wrap_indisplay6391:lthtmlCropMarkDepth:=7.665pt:1ex:=4.71457pt
 [175]
 
-:tex2html_wrap_indisplay6122:lthtmlCropMarkHeight:=18.12231pt
+:tex2html_wrap_inline6393:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_indisplay6122:lthtmlCropMarkDepth:=9.15364pt:1ex:=4.71457pt
+:tex2html_wrap_inline6393:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [176]
 
-:tex2html_wrap_indisplay6126:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_inline6395:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_indisplay6126:lthtmlCropMarkDepth:=7.665pt:1ex:=4.71457pt
+:tex2html_wrap_inline6395:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [177]
 
-:tex2html_wrap_inline6128:lthtmlCropMarkHeight:=13.05666pt
+:displaymath6397:lthtmlCropMarkHeight:=54.29997pt
 
-:tex2html_wrap_inline6128:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:displaymath6397:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [178]
 
-:tex2html_wrap_inline6130:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6399:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6130:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6399:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [179]
 
-:displaymath6132:lthtmlCropMarkHeight:=54.29997pt
+:tex2html_wrap_inline6401:lthtmlCropMarkHeight:=10.71457pt
 
-:displaymath6132:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6401:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [180]
 
-:tex2html_wrap_inline6134:lthtmlCropMarkHeight:=10.71457pt
+:displaymath6403:lthtmlCropMarkHeight:=69.73816pt
 
-:tex2html_wrap_inline6134:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:displaymath6403:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [181]
 
-:tex2html_wrap_inline6136:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6405:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6136:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6405:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [182]
 
-:displaymath6138:lthtmlCropMarkHeight:=69.73816pt
+:tex2html_wrap_indisplay6407:lthtmlCropMarkHeight:=21.87761pt
 
-:displaymath6138:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6407:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
 [183]
 
-:tex2html_wrap_inline6140:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6409:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline6140:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6409:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [184]
 
-:tex2html_wrap_indisplay6142:lthtmlCropMarkHeight:=21.87761pt
+:tex2html_wrap_indisplay6411:lthtmlCropMarkHeight:=21.87761pt
 
-:tex2html_wrap_indisplay6142:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6411:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
 [185]
 
-:tex2html_wrap_inline6144:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_indisplay6413:lthtmlCropMarkHeight:=21.0119pt
 
-:tex2html_wrap_inline6144:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6413:lthtmlCropMarkDepth:=8.42366pt:1ex:=4.71457pt
 [186]
 
-:tex2html_wrap_indisplay6146:lthtmlCropMarkHeight:=21.87761pt
+:tex2html_wrap_indisplay6415:lthtmlCropMarkHeight:=21.0119pt
 
-:tex2html_wrap_indisplay6146:lthtmlCropMarkDepth:=10.40265pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6415:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
 [187]
 
-:tex2html_wrap_indisplay6148:lthtmlCropMarkHeight:=21.0119pt
+:tex2html_wrap_inline6417:lthtmlCropMarkHeight:=15.12923pt
 
-:tex2html_wrap_indisplay6148:lthtmlCropMarkDepth:=8.42366pt:1ex:=4.71457pt
+:tex2html_wrap_inline6417:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
 [188]
 
-:tex2html_wrap_indisplay6150:lthtmlCropMarkHeight:=21.0119pt
+:tex2html_wrap_inline6419:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_indisplay6150:lthtmlCropMarkDepth:=7.51115pt:1ex:=4.71457pt
+:tex2html_wrap_inline6419:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [189]
 
-:tex2html_wrap_inline6152:lthtmlCropMarkHeight:=15.12923pt
+:tex2html_wrap_inline6421:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6152:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
+:tex2html_wrap_inline6421:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [190]
 
-:tex2html_wrap_inline6154:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline6423:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline6154:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline6423:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [191]
+<.././Figures/CH3-34.PNG, id=977, 1143.27126pt x 1107.13625pt>
+File: .././Figures/CH3-34.PNG Graphic file (type png)
+<use .././Figures/CH3-34.PNG>
+Package pdftex.def Info: .././Figures/CH3-34.PNG  used on input line 1493.
+(pdftex.def)             Requested size: 457.3004pt x 442.84665pt.
 
-:tex2html_wrap_inline6156:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap6425:lthtmlCropMarkHeight:=448.84665pt
 
-:tex2html_wrap_inline6156:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
-[192]
+:tex2html_wrap6425:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[192 <.././Figures/CH3-34.PNG>]
+<.././Figures/CH3-35.PNG, id=983, 1159.33125pt x 632.3625pt>
+File: .././Figures/CH3-35.PNG Graphic file (type png)
+<use .././Figures/CH3-35.PNG>
+Package pdftex.def Info: .././Figures/CH3-35.PNG  used on input line 1500.
+(pdftex.def)             Requested size: 463.72429pt x 252.94052pt.
 
-:tex2html_wrap_inline6158:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap6431:lthtmlCropMarkHeight:=258.94052pt
 
-:tex2html_wrap_inline6158:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
-[193]
+:tex2html_wrap6431:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[193 <.././Figures/CH3-35.PNG>]
 
-:tex2html_wrap_inline6175:lthtmlCropMarkHeight:=13.48248pt
+:displaymath6437:lthtmlCropMarkHeight:=100.91609pt
 
-:tex2html_wrap_inline6175:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:displaymath6437:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [194]
+<.././Figures/CH3-36.PNG, id=994, 1052.93375pt x 673.51625pt>
+File: .././Figures/CH3-36.PNG Graphic file (type png)
+<use .././Figures/CH3-36.PNG>
+Package pdftex.def Info: .././Figures/CH3-36.PNG  used on input line 1520.
+(pdftex.def)             Requested size: 421.16605pt x 269.40172pt.
 
-:tex2html_wrap_inline6177:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap6439:lthtmlCropMarkHeight:=275.40172pt
 
-:tex2html_wrap_inline6177:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
-[195]
+:tex2html_wrap6439:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[195 <.././Figures/CH3-36.PNG>]
 
-:tex2html_wrap_inline6179:lthtmlCropMarkHeight:=13.48248pt
+:displaymath6445:lthtmlCropMarkHeight:=68.17625pt
 
-:tex2html_wrap_inline6179:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+:displaymath6445:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [196]
 
-:tex2html_wrap_inline6181:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_indisplay6447:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline6181:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6447:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
 [197]
 
-:tex2html_wrap_inline6183:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6449:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_inline6183:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6449:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
 [198]
 
-:tex2html_wrap_inline6185:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_indisplay6451:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_inline6185:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6451:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [199]
 
-:tex2html_wrap_inline6189:lthtmlCropMarkHeight:=15.97366pt
+:tex2html_wrap_inline6453:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6189:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline6453:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [200]
 
-:tex2html_wrap_inline6192:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_indisplay6455:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_inline6192:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6455:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [201]
 
-:tex2html_wrap_inline6200:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_indisplay6457:lthtmlCropMarkHeight:=18.12231pt
 
-:tex2html_wrap_inline6200:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
+:tex2html_wrap_indisplay6457:lthtmlCropMarkDepth:=9.15364pt:1ex:=4.71457pt
 [202]
+<.././Figures/CH3-37.PNG, id=1030, 1151.30125pt x 564.1075pt>
+File: .././Figures/CH3-37.PNG Graphic file (type png)
+<use .././Figures/CH3-37.PNG>
+Package pdftex.def Info: .././Figures/CH3-37.PNG  used on input line 1576.
+(pdftex.def)             Requested size: 460.51234pt x 225.63899pt.
 
-:tex2html_wrap_inline6210:lthtmlCropMarkHeight:=13.62646pt
+:tex2html_wrap6461:lthtmlCropMarkHeight:=231.63899pt
 
-:tex2html_wrap_inline6210:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
-[203]
+:tex2html_wrap6461:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[203 <.././Figures/CH3-37.PNG>]
+<.././Figures/CH3-38.PNG, id=1036, 1247.66125pt x 827.09pt>
+File: .././Figures/CH3-38.PNG Graphic file (type png)
+<use .././Figures/CH3-38.PNG>
+Package pdftex.def Info: .././Figures/CH3-38.PNG  used on input line 1583.
+(pdftex.def)             Requested size: 499.05566pt x 330.83012pt.
 
-:tex2html_wrap_inline6212:lthtmlCropMarkHeight:=13.62646pt
+Overfull \hbox (27.02455pt too wide) in paragraph at lines 1583--1584
+[][] 
+ []
 
-:tex2html_wrap_inline6212:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
-[204]
 
-:tex2html_wrap_inline6214:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap6467:lthtmlCropMarkHeight:=336.83012pt
 
-:tex2html_wrap_inline6214:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
-[205]
+:tex2html_wrap6467:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[204 <.././Figures/CH3-38.PNG>]
+<.././Figures/CH3-39.PNG, id=1042, 1117.17375pt x 1203.49625pt>
+File: .././Figures/CH3-39.PNG Graphic file (type png)
+<use .././Figures/CH3-39.PNG>
+Package pdftex.def Info: .././Figures/CH3-39.PNG  used on input line 1590.
+(pdftex.def)             Requested size: 446.86159pt x 481.38997pt.
 
-:tex2html_wrap_inline6238:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap6473:lthtmlCropMarkHeight:=487.38997pt
 
-:tex2html_wrap_inline6238:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
-[206]
+:tex2html_wrap6473:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[205 <.././Figures/CH3-39.PNG>]
+<.././Figures/CH3-40.PNG, id=1049, 1249.66875pt x 1041.8925pt>
+File: .././Figures/CH3-40.PNG Graphic file (type png)
+<use .././Figures/CH3-40.PNG>
+Package pdftex.def Info: .././Figures/CH3-40.PNG  used on input line 1596.
+(pdftex.def)             Requested size: 499.85864pt x 416.74962pt.
 
-:tex2html_wrap_inline6240:lthtmlCropMarkHeight:=14.2125pt
+Overfull \hbox (27.82753pt too wide) in paragraph at lines 1596--1597
+[][] 
+ []
 
-:tex2html_wrap_inline6240:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+
+:tex2html_wrap6478:lthtmlCropMarkHeight:=422.74962pt
+
+:tex2html_wrap6478:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[206 <.././Figures/CH3-40.PNG>]
+
+:tex2html_wrap_inline6501:lthtmlCropMarkHeight:=13.48248pt
+
+:tex2html_wrap_inline6501:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [207]
 
-:tex2html_wrap_inline6242:lthtmlCropMarkHeight:=14.21248pt
+:tex2html_wrap_inline6503:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6242:lthtmlCropMarkDepth:=2.7375pt:1ex:=4.71457pt
+:tex2html_wrap_inline6503:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [208]
 
-:tex2html_wrap_inline6244:lthtmlCropMarkHeight:=15.30754pt
+:tex2html_wrap_inline6505:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6244:lthtmlCropMarkDepth:=3.83258pt:1ex:=4.71457pt
+:tex2html_wrap_inline6505:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
 [209]
 
-:tex2html_wrap_inline6246:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_inline6507:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6246:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6507:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [210]
 
-:tex2html_wrap_inline6248:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6509:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6248:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6509:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [211]
 
-:tex2html_wrap_inline6253:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline6511:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6253:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6511:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [212]
 
-:tex2html_wrap_inline6255:lthtmlCropMarkHeight:=13.48248pt
+:tex2html_wrap_inline6515:lthtmlCropMarkHeight:=15.97366pt
 
-:tex2html_wrap_inline6255:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6515:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [213]
 
-:tex2html_wrap_inline6257:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline6518:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6257:lthtmlCropMarkDepth:=2.70702pt:1ex:=4.71457pt
+:tex2html_wrap_inline6518:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [214]
 
-:tex2html_wrap_inline6259:lthtmlCropMarkHeight:=13.62646pt
+:tex2html_wrap_inline6526:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6259:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6526:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
 [215]
 
-:tex2html_wrap_inline6261:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_inline6536:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline6261:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6536:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
 [216]
 
-:tex2html_wrap_inline6263:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6538:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline6263:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6538:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
 [217]
 
-:tex2html_wrap_inline6265:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6540:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6265:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
+:tex2html_wrap_inline6540:lthtmlCropMarkDepth:=1.695pt:1ex:=4.71457pt
 [218]
 
-:tex2html_wrap_inline6277:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6564:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline6277:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6564:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [219]
 
-:tex2html_wrap_inline6279:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6566:lthtmlCropMarkHeight:=14.2125pt
 
-:tex2html_wrap_inline6279:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6566:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
 [220]
 
-:tex2html_wrap_inline6285:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline6568:lthtmlCropMarkHeight:=14.21248pt
 
-:tex2html_wrap_inline6285:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6568:lthtmlCropMarkDepth:=2.7375pt:1ex:=4.71457pt
 [221]
 
-:tex2html_wrap_inline6287:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline6570:lthtmlCropMarkHeight:=15.30754pt
 
-:tex2html_wrap_inline6287:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6570:lthtmlCropMarkDepth:=3.83258pt:1ex:=4.71457pt
 [222]
 
-:tex2html_wrap_inline6299:lthtmlCropMarkHeight:=17.1067pt
+:tex2html_wrap_inline6572:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_inline6299:lthtmlCropMarkDepth:=5.33156pt:1ex:=4.71457pt
+:tex2html_wrap_inline6572:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [223]
 
-:tex2html_wrap_inline6301:lthtmlCropMarkHeight:=25.16264pt
+:tex2html_wrap_inline6574:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6301:lthtmlCropMarkDepth:=13.68767pt:1ex:=4.71457pt
+:tex2html_wrap_inline6574:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [224]
 
-:tex2html_wrap_inline6303:lthtmlCropMarkHeight:=13.05666pt
+:tex2html_wrap_inline6579:lthtmlCropMarkHeight:=14.41812pt
 
-:tex2html_wrap_inline6303:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+:tex2html_wrap_inline6579:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [225]
 
-:tex2html_wrap_inline6305:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline6581:lthtmlCropMarkHeight:=13.48248pt
 
-:tex2html_wrap_inline6305:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+:tex2html_wrap_inline6581:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [226]
 
-:tex2html_wrap_inline6307:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_inline6583:lthtmlCropMarkHeight:=14.41812pt
 
-:tex2html_wrap_inline6307:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6583:lthtmlCropMarkDepth:=2.70702pt:1ex:=4.71457pt
 [227]
 
-:tex2html_wrap_inline6309:lthtmlCropMarkHeight:=14.77165pt
+:tex2html_wrap_inline6585:lthtmlCropMarkHeight:=13.62646pt
 
-:tex2html_wrap_inline6309:lthtmlCropMarkDepth:=5.14697pt:1ex:=4.71457pt
+:tex2html_wrap_inline6585:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [228]
 
-:tex2html_wrap_inline6332:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline6587:lthtmlCropMarkHeight:=13.60416pt
 
-:tex2html_wrap_inline6332:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6587:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [229]
 
-:tex2html_wrap_inline6343:lthtmlCropMarkHeight:=13.60416pt
+:tex2html_wrap_inline6589:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6343:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+:tex2html_wrap_inline6589:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [230]
 
-:tex2html_wrap_inline6345:lthtmlCropMarkHeight:=15.12923pt
+:tex2html_wrap_inline6591:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6345:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+:tex2html_wrap_inline6591:lthtmlCropMarkDepth:=1.64249pt:1ex:=4.71457pt
 [231]
 
-:tex2html_wrap_inline6347:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6603:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6347:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+:tex2html_wrap_inline6603:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
 [232]
 
-:tex2html_wrap_inline6349:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6605:lthtmlCropMarkHeight:=10.71457pt
 
-:tex2html_wrap_inline6349:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+:tex2html_wrap_inline6605:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
 [233]
 
-:tex2html_wrap_inline6351:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6611:lthtmlCropMarkHeight:=14.41812pt
 
-:tex2html_wrap_inline6351:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6611:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [234]
 
-:tex2html_wrap_inline6357:lthtmlCropMarkHeight:=10.71457pt
+:tex2html_wrap_inline6613:lthtmlCropMarkHeight:=14.41812pt
 
-:tex2html_wrap_inline6357:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6613:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
 [235]
 
-:tex2html_wrap_inline6374:lthtmlCropMarkHeight:=15.12923pt
+:tex2html_wrap_inline6625:lthtmlCropMarkHeight:=17.1067pt
 
-:tex2html_wrap_inline6374:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6625:lthtmlCropMarkDepth:=5.33156pt:1ex:=4.71457pt
 [236]
 
-:tex2html_wrap_inline6376:lthtmlCropMarkHeight:=14.41812pt
+:tex2html_wrap_inline6627:lthtmlCropMarkHeight:=25.16264pt
 
-:tex2html_wrap_inline6376:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+:tex2html_wrap_inline6627:lthtmlCropMarkDepth:=13.68767pt:1ex:=4.71457pt
 [237]
 
-:tex2html_wrap_inline6378:lthtmlCropMarkHeight:=15.12923pt
+:tex2html_wrap_inline6629:lthtmlCropMarkHeight:=13.05666pt
 
-:tex2html_wrap_inline6378:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+:tex2html_wrap_inline6629:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
 [238]
 
-:tex2html_wrap_inline6382:lthtmlCropMarkHeight:=14.2125pt
+:tex2html_wrap_inline6631:lthtmlCropMarkHeight:=14.41812pt
 
-:tex2html_wrap_inline6382:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
-[239] (./images.aux)
+:tex2html_wrap_inline6631:lthtmlCropMarkDepth:=2.73749pt:1ex:=4.71457pt
+[239]
+
+:tex2html_wrap_inline6633:lthtmlCropMarkHeight:=13.60416pt
+
+:tex2html_wrap_inline6633:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+[240]
+
+:tex2html_wrap_inline6635:lthtmlCropMarkHeight:=14.77165pt
+
+:tex2html_wrap_inline6635:lthtmlCropMarkDepth:=5.14697pt:1ex:=4.71457pt
+[241]
+
+:tex2html_wrap_inline6658:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline6658:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+[242]
+
+:tex2html_wrap_inline6669:lthtmlCropMarkHeight:=13.60416pt
+
+:tex2html_wrap_inline6669:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+[243]
+
+:tex2html_wrap_inline6671:lthtmlCropMarkHeight:=15.12923pt
+
+:tex2html_wrap_inline6671:lthtmlCropMarkDepth:=0.9125pt:1ex:=4.71457pt
+[244]
+
+:tex2html_wrap_inline6673:lthtmlCropMarkHeight:=10.71457pt
+
+:tex2html_wrap_inline6673:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+[245]
+
+:tex2html_wrap_inline6675:lthtmlCropMarkHeight:=10.71457pt
+
+:tex2html_wrap_inline6675:lthtmlCropMarkDepth:=3.19804pt:1ex:=4.71457pt
+[246]
+
+:tex2html_wrap_inline6677:lthtmlCropMarkHeight:=10.71457pt
+
+:tex2html_wrap_inline6677:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[247]
+
+:tex2html_wrap_inline6683:lthtmlCropMarkHeight:=10.71457pt
+
+:tex2html_wrap_inline6683:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[248]
+
+:tex2html_wrap_inline6700:lthtmlCropMarkHeight:=15.12923pt
+
+:tex2html_wrap_inline6700:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[249]
+
+:tex2html_wrap_inline6702:lthtmlCropMarkHeight:=14.41812pt
+
+:tex2html_wrap_inline6702:lthtmlCropMarkDepth:=2.12917pt:1ex:=4.71457pt
+[250]
+
+:tex2html_wrap_inline6704:lthtmlCropMarkHeight:=15.12923pt
+
+:tex2html_wrap_inline6704:lthtmlCropMarkDepth:=0.0pt:1ex:=4.71457pt
+[251]
+
+:tex2html_wrap_inline6708:lthtmlCropMarkHeight:=14.2125pt
+
+:tex2html_wrap_inline6708:lthtmlCropMarkDepth:=3.33946pt:1ex:=4.71457pt
+[252] (./images.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2084,10 +2229,10 @@ Package rerunfilecheck Info: File `images.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13418 strings out of 478287
- 210740 string characters out of 5849289
- 505582 words of memory out of 5000000
- 31120 multiletter control sequences out of 15000+600000
+ 13523 strings out of 478287
+ 213192 string characters out of 5849289
+ 505679 words of memory out of 5000000
+ 31199 multiletter control sequences out of 15000+600000
  474326 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,11n,76p,452b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2101,10 +2246,10 @@ pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb>
-Output written on images.pdf (239 pages, 11164468 bytes).
+Output written on images.pdf (252 pages, 13357616 bytes).
 PDF statistics:
- 1273 PDF objects out of 1440 (max. 8388607)
- 851 compressed objects within 9 object streams
- 239 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1355 PDF objects out of 1440 (max. 8388607)
+ 894 compressed objects within 9 object streams
+ 252 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>3.6 WP5: Poroelasticity</TITLE>
+<META NAME="description" CONTENT="3.6 WP5: Poroelasticity">
+<META NAME="keywords" CONTENT="AdvancedGeomech">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
+
+<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+
+<LINK REL="previous" HREF="node24.html">
+<LINK REL="next" HREF="node26.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html383"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node26.html">4. Thermo- and chemo-mechanical</A>
+<B> Up:</B> <A
+ HREF="node19.html">3. Hydro-mechanical coupled processes:</A>
+<B> Previous:</B> <A
+ HREF="node24.html">3.5 Undrained problems</A>
+ &nbsp; <B>  <A ID="tex2html384"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html385"
+  HREF="node25.html#SECTION00461000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Biot coefficient determination</A>
+<LI><A ID="tex2html386"
+  HREF="node25.html#SECTION00462000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Depletion stress path</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00460000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> WP5: Poroelasticity</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00461000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Biot coefficient determination</A>
+</H2>
+
+<P>
+The file <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter">BiotCoeffExperiment.xlsx</a> has data from a laboratory experiment on a reservoir sandstone that shows axial and radial deformations caused by alternating variations of confining stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img65.svg"
+ ALT="$P_c$"></SPAN> and pore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img66.svg"
+ ALT="$P_p$"></SPAN>. 
+
+<P>
+<DL class="COMPACT">
+<DD></DD>
+<DT>a.</DT>
+<DD>Plot pressure and stresses as a function of time.
+</DD>
+<DT>b.</DT>
+<DD>What are the dPc/dt and dPp/dt loading rates when either confining or pore pressure are increased?? 
+</DD>
+<DT>c.</DT>
+<DD>Fit a straight line to the data to obtain a unique relationship between <!-- MATH
+ $\varepsilon_{vol}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img67.svg"
+ ALT="$\varepsilon_{vol}$"></SPAN> and <!-- MATH
+ $\sigma_{mean}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img68.svg"
+ ALT="$\sigma_{mean}$"></SPAN> (effective), and calculate the bulk Biot coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img69.svg"
+ ALT="$\alpha$"></SPAN>. Assuming isotropic elasticity and that the Poisson Ratio is 0.25, what is the Young's modulus? 
+</DD>
+<DT>d.</DT>
+<DD>Plot together the volumetric strain with Terzaghi’s and Biot’s effective stresses. 
+</DD>
+<DT>e.</DT>
+<DD>If permeability is k = 100 mD, the fluid is water, porosity is 0.28, and the sample length is 0.05 m with top and bottom drainage, what is the characteristic time for pore pressure diffusion <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img70.svg"
+ ALT="$T_{ch}$"></SPAN>? How does it compare to the pressure/stress loading time? Would it be drained or undrained loading? Note: you need the diffusivity parameter for which you have to look up for properties of water. 
+</DD>
+<DT>f.</DT>
+<DD>EXTRA: Use the theory of transverse isotropic poro-elasticity to figure out the stress paths needed to measure directly <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img71.svg"
+ ALT="$\alpha_h$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img72.svg"
+ ALT="$\alpha_v$"></SPAN>.
+</DD>
+</DL>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:Biot"></A><A ID="399"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.1:</STRONG>
+Variation of volumetric strain with Terzaghi's effective stress.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par4214" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img73.svg"
+ ALT="\includegraphics[scale=1.0]{.././Figures/Biot.PNG}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00462000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Depletion stress path</A>
+</H2>
+
+<P>
+For this problem you have to use the geomechanical module of reservoir simulator CMG <kbd><A ID="tex2html28"
+  HREF="https://www.cmgl.ca/">https://www.cmgl.ca/</A></kbd>. 
+The software is available to UT Austin students here: <kbd><A ID="tex2html29"
+  HREF="http://pge.utexas.edu/LRC/">http://pge.utexas.edu/LRC/</A></kbd>  
+
+<P>
+<DL class="COMPACT">
+<DD></DD>
+<DT>a.</DT>
+<DD>Review the files <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/">CMG_Geomechanics_Tutorial.pdf</a> and <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/">CMG_Running_InputFile.pdf</a>.
+</DD>
+<DT>b.</DT>
+<DD>Change the vertical stress and well schedule as shown in the figure below (example files: <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/">Injection1.dat</a> and <a href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/">Production1.dat</a>.
+<DIV class="CENTER"><A ID="fig:Biot"></A><A ID="416"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.2:</STRONG>
+Schematic cross section of reservoir model for depletion.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par4229" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img74.svg"
+ ALT="\includegraphics[scale=0.60]{.././Figures/ResModel_Depletion.PNG}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ </DD>
+<DT>c.</DT>
+<DD>What is initial boundary condition in each direction? (i.e. constant stress or zero displacement). 
+</DD>
+<DT>d.</DT>
+<DD>Plot 1 - Plot minimum principal total stress (Total stress I), vertical total stress (Total stress K), and pore pressure (Pressure) vs time. (**Note: Please remove initial data (time = 0) when you plot).
+</DD>
+<DT>e.</DT>
+<DD>Plot 2 - Plot minimum principal stress (y-axis) vs pore pressure (x-axis), and verify the slope of the curve is similar with <!-- MATH
+ $\alpha \frac{\left(1-2\nu\right)}{(1-\nu)}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.87ex; vertical-align: -1.36ex; " SRC="img75.svg"
+ ALT="$\alpha \frac{\left(1-2\nu\right)}{(1-\nu)}$"></SPAN> (<SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img69.svg"
+ ALT="$\alpha$"></SPAN> is the Biot coefficient and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img50.svg"
+ ALT="$\nu$"></SPAN> is Poisson’s ratio - **Note: Please remove initial data (time = 0) when you plot pressure and stresses).
+</DD>
+<DT>f.</DT>
+<DD>Run the simulation again using Biot coefficient from the previous laboratory problem, repeat the question “d” using the new simulation result and plot on the same figure.
+</DD>
+<DT>g.</DT>
+<DD>Plot the stress path with Mohr circles for the initial (0.1 days) and final time (100 days).
+</DD>
+<DT>h.</DT>
+<DD>Plot the stress path in the <SPAN CLASS="MATH"><IMG STYLE="height: 2.57ex; vertical-align: -0.69ex; " SRC="img76.svg"
+ ALT="$(p',q)$"></SPAN> space for the same period of time.
+</DD>
+<DT>i.</DT>
+<DD>What is the absolute minimum pressure to create a hydraulic fracture (i.e. minimum principal total stress) at the end of the simulation when bottom-hole pressure is BHP = 240 psi? Compare with the analytical solution.
+</DD>
+</DL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html383"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node26.html">4. Thermo- and chemo-mechanical</A>
+<B> Up:</B> <A
+ HREF="node19.html">3. Hydro-mechanical coupled processes:</A>
+<B> Previous:</B> <A
+ HREF="node24.html">3.5 Undrained problems</A>
+ &nbsp; <B>  <A ID="tex2html384"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
