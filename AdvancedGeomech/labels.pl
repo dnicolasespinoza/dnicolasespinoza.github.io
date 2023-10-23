@@ -438,7 +438,7 @@ $external_latex_labels{$key} = q|3.12 1D-strain pore pressure depletion|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:DevWell/;
-$external_latex_labels{$key} = q|4.3 Example of shale dis-equilibrium compaction evidenced by porosity deviation from the normal compaction trend (image source: Gordon and Flemings, 1998 <kbd><A ID="tex2html2"
+$external_latex_labels{$key} = q|4.35 Example of shale dis-equilibrium compaction evidenced by porosity deviation from the normal compaction trend (image source: Gordon and Flemings, 1998 <kbd><A ID="tex2html2"
   HREF=" https://doi.org/10.1046/j.1365-2117.1998.00052.x">https://doi.org/10.1046/j.1365-2117.1998.00052.x</A></kbd>). Note about subplot 3: The x-axis &ldquo;Shale Porosity&rdquo; goes from 0.1 to 0.4 in logarithmic scale|; 
 $noresave{$key} = "$nosave";
 
@@ -491,7 +491,7 @@ $external_latex_labels{$key} = q|2.33 Fracture width and stress beyond tip|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracStress2/;
-$external_latex_labels{$key} = q|4.1 Peak stress measured from triaxial tests (image source: Jaeger et al. 2007 - FRM 4th Ed)|; 
+$external_latex_labels{$key} = q|4.14 Peak stress measured from triaxial tests (image source: Jaeger et al. 2007 - FRM 4th Ed)|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:FracWellImaging/;
