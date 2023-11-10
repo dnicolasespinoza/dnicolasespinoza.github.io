@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>5.2 The yield surface</TITLE>
-<META NAME="description" CONTENT="5.2 The yield surface">
-<META NAME="keywords" CONTENT="AdvancedGeomech">
+<TITLE>4.8 Rock damage and failure revisited</TITLE>
+<META NAME="description" CONTENT="4.8 Rock damage and failure revisited">
+<META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,7 +13,7 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
-<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+<LINK REL="STYLESHEET" HREF="IPG.css">
 
 <LINK REL="next" HREF="node33.html">
 <LINK REL="previous" HREF="node31.html">
@@ -27,80 +27,111 @@
  HREF="node33.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node30.html">
+ HREF="node24.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node31.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html443"
+<A ID="tex2html742"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node33.html">5.3 Plastic strains</A>
+ HREF="node33.html">4.9 Problems</A>
 <B> Up:</B> <A
- HREF="node30.html">5. Inelasticity</A>
+ HREF="node24.html">4. Rock Yield and</A>
 <B> Previous:</B> <A
- HREF="node31.html">5.1 Examples of inelasticity</A>
- &nbsp; <B>  <A ID="tex2html444"
+ HREF="node31.html">4.7 Deformation beyond the</A>
+ &nbsp; <B>  <A ID="tex2html743"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html445"
-  HREF="node32.html#SECTION00621000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Tresca</A>
-<LI><A ID="tex2html446"
-  HREF="node32.html#SECTION00622000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Von Mises</A>
-<LI><A ID="tex2html447"
-  HREF="node32.html#SECTION00623000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Mohr-Coulomb</A>
-<LI><A ID="tex2html448"
-  HREF="node32.html#SECTION00624000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN> Drucker-Prager</A>
-<LI><A ID="tex2html449"
-  HREF="node32.html#SECTION00625000000000000000"><SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN> Lade</A>
-</UL>
-<!--End of Table of Child-Links-->
-<HR>
-
-<H1><A ID="SECTION00620000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN> The yield surface</A>
+<H1><A ID="SECTION00680000000000000000">
+<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">8</SPAN> Rock damage and failure revisited</A>
 </H1>
 
 <P>
-
-<H2><A ID="SECTION00621000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Tresca</A>
-</H2>
-
-<P>
-
-<H2><A ID="SECTION00622000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Von Mises</A>
-</H2>
+Now that we know the macroscopic modes of rock failure we can investigate again the actual mechanisms of rock inelasticity and failure.
+First, uncemented rocks cannot hold tensile stresses and failure takes place through internal shearing (grain to grain friction and rotation) and grain crushing at high mean compressive stress. 
+Fig. <A HREF="#fig:FailureMechanisms">4.22</A> shows experimental evidence of grain rotation in the shearing region of a sand specimen loaded axially (see warm-colored shear band).
+Second, cemented rocks can hold tensile and shear stresses. 
+Most rocks have some level of internal microfracturing or defects that act as fracture tips. 
+Fractures propagate in three modes: opening, in-plane shear, and out-of-plane shear. 	 
 
 <P>
 
-<H2><A ID="SECTION00623000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Mohr-Coulomb</A>
-</H2>
+<DIV class="CENTER"><A ID="fig:FailureMechanisms"></A><A ID="4956"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 4.22:</STRONG>
+Rock failure at the microscale: mechanisms behind rock failure.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24023" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img638.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/5B-12.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Shear and tensile stresses amplify at fracture tips. Therefore fracture propagation usually starts at fracture tips.
+The images in Fig. <A HREF="#fig:FracsTuffo">4.23</A> show the propagation of fractures after applying a vertical stress on Tuffo carbonate samples with a pre-existing crack (thick dark line in the middle).
 
 <P>
 
-<H2><A ID="SECTION00624000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">4</SPAN> Drucker-Prager</A>
-</H2>
+<DIV class="CENTER"><A ID="fig:FracsTuffo"></A><A ID="4962"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 4.23:</STRONG>
+Microfracture propagation in cemented rock. Cracks promote stress concentration and intensification at tips. Failure initiates at crack tips. Propagating fractures may coalesce and make a bigger fracture.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24028" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img639.svg"
+ ALT="\includegraphics[scale=0.60]{.././Figures/split/5B-13.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The coalescence of multiple microfractures can form a macrofracture that defines a macroscopic failure plane (Figure <A HREF="#fig:MicroFracCoalescence">4.24</A>).
 
 <P>
 
-<H2><A ID="SECTION00625000000000000000">
-<SPAN CLASS="arabic">5</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">5</SPAN> Lade</A>
-</H2>
-
+<DIV class="CENTER"><A ID="fig:MicroFracCoalescence"></A><A ID="4968"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 4.24:</STRONG>
+Microfracture coalescence in cemented rock with pre-existing flaws.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par24033" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img640.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/5B-14.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
-<BR><HR>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node33.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node31.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html742"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node33.html">4.9 Problems</A>
+<B> Up:</B> <A
+ HREF="node24.html">4. Rock Yield and</A>
+<B> Previous:</B> <A
+ HREF="node31.html">4.7 Deformation beyond the</A>
+ &nbsp; <B>  <A ID="tex2html743"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
 
 </BODY>
 </HTML>

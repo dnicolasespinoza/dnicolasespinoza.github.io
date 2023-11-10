@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>2.6 Navier's equation</TITLE>
-<META NAME="description" CONTENT="2.6 Navier's equation">
-<META NAME="keywords" CONTENT="AdvancedGeomech">
+<TITLE>3.3 Constitutive equation: stress-strain relationships</TITLE>
+<META NAME="description" CONTENT="3.3 Constitutive equation: stress-strain relationships">
+<META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,7 +13,7 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
-<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+<LINK REL="STYLESHEET" HREF="IPG.css">
 
 <LINK REL="next" HREF="node18.html">
 <LINK REL="previous" HREF="node16.html">
@@ -27,22 +27,22 @@
  HREF="node18.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node11.html">
+ HREF="node14.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node16.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html345"
+<A ID="tex2html676"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node18.html">2.7 WP4: Solution of</A>
+ HREF="node18.html">3.4 Elastic anisotropy</A>
 <B> Up:</B> <A
- HREF="node11.html">2. Continuum mechanics</A>
+ HREF="node14.html">3. Fundamentals of Solid</A>
 <B> Previous:</B> <A
- HREF="node16.html">2.5 WP3: Horizontal Stresses</A>
- &nbsp; <B>  <A ID="tex2html346"
+ HREF="node16.html">3.2 Kinematic equations: displacements</A>
+ &nbsp; <B>  <A ID="tex2html677"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
@@ -51,63 +51,493 @@
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html347"
-  HREF="node17.html#SECTION00361000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> Derivation</A>
-<LI><A ID="tex2html348"
-  HREF="node17.html#SECTION00362000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Analytical solutions</A>
-<LI><A ID="tex2html349"
-  HREF="node17.html#SECTION00363000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN> Numerical solutions</A>
-<LI><A ID="tex2html350"
-  HREF="node17.html#SECTION00364000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Example with FreeFEM++</A>
-<LI><A ID="tex2html351"
-  HREF="node17.html#SECTION00365000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">5</SPAN> Exercise 2: Vertical transverse isotropic elastic properties</A>
-<LI><A ID="tex2html352"
-  HREF="node17.html#SECTION00366000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN> Exercise 3: Displacement Field and Strain Field</A>
+<LI><A ID="tex2html678"
+  HREF="node17.html#SECTION00531000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Linear isotropic elasticity</A>
+<LI><A ID="tex2html679"
+  HREF="node17.html#SECTION00532000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> The isotropic solid in Voigt notation</A>
+<LI><A ID="tex2html680"
+  HREF="node17.html#SECTION00533000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Effective stress and elasticity</A>
+<LI><A ID="tex2html681"
+  HREF="node17.html#SECTION00534000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Calculation of horizontal stress according to linear elasticity</A>
+<LI><A ID="tex2html682"
+  HREF="node17.html#SECTION00535000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Calculation of reservoir compressibility with linear elasticity</A>
+<LI><A ID="tex2html683"
+  HREF="node17.html#SECTION00536000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Generalized linear elasticity problem</A>
 </UL>
 <!--End of Table of Child-Links-->
 <HR>
 
-<H1><A ID="SECTION00360000000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN> Navier's equation</A>
+<H1><A ID="SECTION00530000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Constitutive equation: stress-strain relationships</A>
 </H1>
 
 <P>
-
-<H2><A ID="SECTION00361000000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">1</SPAN> Derivation</A>
-</H2>
+Constitutive equations tell us how a solid deforms (in time) as a response to stresses, to changes of temperature and to changes of pore pressure among others.
+How to choose a constitutive equation depends on the material properties, the magnitude of strain changes, the magnitude of stresses, and the loading rate among other factors.
 
 <P>
 
-<H2><A ID="SECTION00362000000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">2</SPAN> Analytical solutions</A>
-</H2>
+<DIV class="CENTER"><A ID="fig:lec4-12"></A><A ID="2145"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.9:</STRONG>
+Example of deformations imparted by an applied stress.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par22933" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img345.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-12.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The simplest constitutive relationship for solids is linear elasticity, in which stresses and strains are linearly related by constant coefficients.
+The examples in Figure <A HREF="#fig:elasticity1D2D3D">3.10</A> correspond to applications of linear elasticity in various dimensions:
+
+<UL>
+<LI>(TOP) Hooke's law: the force <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img346.svg"
+ ALT="$F$"></SPAN> [N] required to produce an elongation <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img347.svg"
+ ALT="$\Delta x$"></SPAN> [m] in a spring with mechanical constant <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img215.svg"
+ ALT="$k$"></SPAN> [N/m] is 
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+F = k \Delta x
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img348.svg"
+ ALT="$\displaystyle F = k \Delta x$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+</LI>
+<LI>(MIDDLE) Consider a prismatic solid bar with cross sectional area <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img87.svg"
+ ALT="$A$"></SPAN> and length <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img222.svg"
+ ALT="$L$"></SPAN>. The force required to produce an elongation <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img347.svg"
+ ALT="$\Delta x$"></SPAN> [m] is inversely proportional to <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img222.svg"
+ ALT="$L$"></SPAN>, and proportional to proportional to <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img87.svg"
+ ALT="$A$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img349.svg"
+ ALT="$E$"></SPAN> (the stiffness modulus of the solid), such that 
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\frac{F}{A} = E \frac{\Delta x}{L}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img350.svg"
+ ALT="$\displaystyle \frac{F}{A} = E \frac{\Delta x}{L}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+which can be expressed as stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img351.svg"
+ ALT="$\sigma$"></SPAN> and strain <!-- MATH
+ $\varepsilon$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img352.svg"
+ ALT="$\varepsilon$"></SPAN>
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\sigma = E \varepsilon
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img353.svg"
+ ALT="$\displaystyle \sigma = E \varepsilon$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>	
+</LI>
+<LI>(BOTTOM) In general, the stress tensor <!-- MATH
+ $\uuline{\sigma}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img354.svg"
+ ALT="$\uuline{\sigma}$"></SPAN> is proportional to the strain tensor <!-- MATH
+ $\uuline{\varepsilon}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img355.svg"
+ ALT="$\uuline{\varepsilon}$"></SPAN> through the stiffness tensor <!-- MATH
+ $\uuline{C}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img356.svg"
+ ALT="$\uuline{C}$"></SPAN>
+	<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img357.svg"
+ ALT="$\displaystyle \uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+</LI>
+</UL>	
 
 <P>
 
-<H2><A ID="SECTION00363000000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">3</SPAN> Numerical solutions</A>
+<DIV class="CENTER"><A ID="fig:elasticity1D2D3D"></A><A ID="2171"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.10:</STRONG>
+From Hooke's law to generalized 3D linear elasticity.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par22974" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img358.svg"
+ ALT="\includegraphics[scale=0.50]{.././Figures/split/4-13.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00531000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Linear isotropic elasticity</A>
 </H2>
 
 <P>
-
-<H2><A ID="SECTION00364000000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> Example with FreeFEM++</A>
-</H2>
+Consider a prismatic solid with length <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img222.svg"
+ ALT="$L$"></SPAN> to which we apply a stress <!-- MATH
+ $\sigma_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img359.svg"
+ ALT="$\sigma_{33}$"></SPAN> on top face 3 (Figure <A HREF="#fig:YoungPoisson">3.11</A>). 
+The bottom face is not allowed to move in direction 3 but it can slide sideways. 
+The four other faces are free to move in all directions. 
+Notice that the top face can also deform in directions 1 and 2.
+The Young modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img349.svg"
+ ALT="$E$"></SPAN> is defined as the ratio between the applied stress <!-- MATH
+ $\sigma_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img359.svg"
+ ALT="$\sigma_{33}$"></SPAN> and the resulting strain (in the direction of the applied stress) <!-- MATH
+ $\varepsilon_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img360.svg"
+ ALT="$\varepsilon_{33}$"></SPAN> 
+	<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:YoungDef"></A><!-- MATH
+ \begin{equation}
+E = \frac{\sigma_{33}}{\varepsilon_{33}}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.71ex; vertical-align: -2.05ex; " SRC="img361.svg"
+ ALT="$\displaystyle E = \frac{\sigma_{33}}{\varepsilon_{33}}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">13</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+The solid will most likely tend to enlarge in the direction perpendicular to the stress applied. 
+The Poisson ratio (greek letter nu) is defined as (-1) times the ratio between the strain perpendicular to the applied stress <!-- MATH
+ $\varepsilon_{11}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img362.svg"
+ ALT="$\varepsilon_{11}$"></SPAN> (or <!-- MATH
+ $\varepsilon_{22}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img363.svg"
+ ALT="$\varepsilon_{22}$"></SPAN>) and the strain in the direction of the applied stress <!-- MATH
+ $\varepsilon_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img360.svg"
+ ALT="$\varepsilon_{33}$"></SPAN> 
+	<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:PoissonDef"></A><!-- MATH
+ \begin{equation}
+\nu = -\frac{\varepsilon_{11}}{\varepsilon_{33}}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.71ex; vertical-align: -2.05ex; " SRC="img364.svg"
+ ALT="$\displaystyle \nu = -\frac{\varepsilon_{11}}{\varepsilon_{33}}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">14</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+These two coefficients are the two coefficients conventionally used as elasticity constants in continuum mechanics. 
+We will see later that in the subsurface we almost never find conditions of laterally &ldquo;unconfined&rdquo; stress loading like the one shown in Figure <A HREF="#fig:YoungPoisson">3.11</A>.	
 
 <P>
 
-<H2><A ID="SECTION00365000000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">5</SPAN> Exercise 2: Vertical transverse isotropic elastic properties</A>
+<DIV class="CENTER"><A ID="fig:YoungPoisson"></A><A ID="2195"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.11:</STRONG>
+Unconfined stress loading (compression) of a linear elastic isotropic solid. Because the solid is isotropic, the same equations are valid for compression in any other direction, and also in tension.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23000" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img365.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/4-14.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The real behavior of rocks differs from the linear elastic assumption.
+Figure <A HREF="#fig:YoungLab">3.12</A> shows a schematic representation of a typical unconfined loading test.
+The figure plots axial stress <SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img366.svg"
+ ALT="$\sigma_a$"></SPAN> in the vertical axis and axial strain <!-- MATH
+ $\varepsilon_a$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img367.svg"
+ ALT="$\varepsilon_a$"></SPAN> in the horizontal axis.
+Often, rock plugs are not perfectly parallel or may have some microcracks.
+Both features make the initial loading stress-strain behavior look less stiff than the actual rock stiffness.
+After the initial loading, the rock may show a linear response -where the Young modulus is measured- followed by softening approaching rock failure and the peak stress.
+When the test is performed under unconfined conditions, the peak stress is termed the &ldquo;unconfined compressive strength (UCS)&rdquo; of the rock (further explained in Section <A HREF="node24.html#Ch:Failure">4</A>). 
+The Poisson ratio can be measured in the same range of the measurement of <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img349.svg"
+ ALT="$E$"></SPAN> when lateral strain transducers are available.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:YoungLab"></A><A ID="2202"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.12:</STRONG>
+Schematic of stress-strain curve during rock uniaxial loading in the laboratory. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23011" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./YoungLab.png"
+ ALT="Image YoungLab"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The Young modulus of sediments and rocks varies widely. 
+Figure <A HREF="#fig:YoungSummary">3.13</A> shows typical values of Young's modulus.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:YoungSummary"></A><A ID="2208"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.13:</STRONG>
+Typical Young moduli for sediments and rocks. The values correspond to &ldquo;quasi-static&rdquo; loading from stress-strain response. SS: sandstone; SiS: Siltstone; Sh: Shale; Gr: Granite. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23015" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./3-YoungModulusSummary.png"
+ ALT="Image 3-YoungModulusSummary"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+ <BR>
+<SPAN  CLASS="textit">EXAMPLE 3.3</SPAN>: Compute the (axial) strain expected for a rock subjected to 3,000 psi of (axial) stress under unconfined axial loading for:
+
+<UL>
+<LI>A soft mudrock with E = 1 GPa
+</LI>
+<LI>A soft sandstone with E = 10 GPa
+</LI>
+<LI>A hard limestone with E = 50 GPa 
+</LI>
+</UL>
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+Let us work in SI units:
+<P><!-- MATH
+ \begin{displaymath}
+\sigma_a = 3000 \text{ psi} = 3000 \frac{1}{145} \text{ MPa} = 20.7 \text{ MPa}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img368.svg"
+ ALT="$\displaystyle \sigma_a = 3000$">&nbsp; &nbsp; psi<IMG STYLE="height: 4.86ex; vertical-align: -1.70ex; " SRC="img369.svg"
+ ALT="$\displaystyle = 3000 \frac{1}{145}$">&nbsp; &nbsp; MPa<IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img370.svg"
+ ALT="$\displaystyle = 20.7$">&nbsp; &nbsp; MPa
+</DIV><P></P>
+Then 
+<P><!-- MATH
+ \begin{displaymath}
+\varepsilon_a(1 \text{ GPa}) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{1000 \text{ MPa}} = 0.0207 = 2.07 \%
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img371.svg"
+ ALT="$\displaystyle \varepsilon_a(1$">&nbsp; &nbsp; GPa<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img372.svg"
+ ALT="$\displaystyle ) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{1000 \text{ MPa}} = 0.0207 = 2.07 \%
+$">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\varepsilon_a(10 \text{ GPa}) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{10000 \text{ MPa}} = 0.00207 = 0.207 \%
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img373.svg"
+ ALT="$\displaystyle \varepsilon_a(10$">&nbsp; &nbsp; GPa<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img374.svg"
+ ALT="$\displaystyle ) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{10000 \text{ MPa}} = 0.00207 = 0.207 \%
+$">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\varepsilon_a(50 \text{ GPa}) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{50000 \text{ MPa}} = 0.00041 = 0.041 \%
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img375.svg"
+ ALT="$\displaystyle \varepsilon_a(50$">&nbsp; &nbsp; GPa<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img376.svg"
+ ALT="$\displaystyle ) = \frac{\sigma_a}{E} = \frac{20.7 \text{ MPa}}{50000 \text{ MPa}} = 0.00041 = 0.041 \%
+$">
+</DIV><P></P>
+
+<P>
+Notice that rocks can be quite stiff and even for an effective stress as large as 3,000 psi (equivalent to a depth onshore of&nbsp;5,000 ft under hydrostatic pore pressure), the deformation is in the order of 1% to 0.1% or less. <!-- MATH
+ $\: \: \blacksquare$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.77ex; vertical-align: -0.11ex; " SRC="img156.svg"
+ ALT="$\: \: \blacksquare$"></SPAN>
+
+<P>
+ <BR>
+
+<P>
+
+<H2><A ID="SECTION00532000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> The isotropic solid in Voigt notation</A>
 </H2>
 
 <P>
-[To be developed]
-VTI compliance matrix (3 - vertical direction perpendicular to bedding):
+A generalization of the Young's modulus and Poisson's ratio equations (Eq. <A HREF="#eq:YoungDef">3.13</A> and <A HREF="#eq:PoissonDef">3.14</A>) in all directions leads to the 3 independent equations.
 
 <P>
 <P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:VTIComplianceMatrix"></A><!-- MATH
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{rcl}
+		\varepsilon_{11} & = & +\cfrac{1}{E} \: \sigma_{11} -\cfrac{\nu}{E} \: \sigma_{22} -\cfrac{\nu}{E} \: \sigma_{33}\\
+		\varepsilon_{22} & = &  -\cfrac{\nu}{E} \: \sigma_{11} +\cfrac{1}{E} \: \sigma_{22} - \cfrac{\nu}{E} \: \sigma_{33}\\
+		\varepsilon_{33} & = & -\cfrac{\nu}{E} \: \sigma_{11} -\cfrac{\nu}{E} \: \sigma_{22} + \cfrac{1}{E} \: \sigma_{33}
+	\end{array}
+	\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img377.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{rcl}
+\varepsilon_{11} &amp; = &amp; +\cfra...
+...\: \sigma_{22} + \cfrac{1}{E} \: \sigma_{33}
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">15</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+In addition, shear strains <!-- MATH
+ $\varepsilon_{ij}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.78ex; " SRC="img378.svg"
+ ALT="$\varepsilon_{ij}$"></SPAN> are proportional to the applied shear stress through shear modulus <!-- MATH
+ $G=E/[2(1+\nu)]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img379.svg"
+ ALT="$G=E/[2(1+\nu)]$"></SPAN>, such that,
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{rcl}
+		2 \varepsilon_{12} & = & \cfrac{1}{G} \: \sigma_{12}\\
+		2 \varepsilon_{13} & = & \cfrac{1}{G} \: \sigma_{13}\\
+		2 \varepsilon_{23} & = & \cfrac{1}{G} \: \sigma_{23}
+	\end{array}
+	\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img380.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{rcl}
+2 \varepsilon_{12} &amp; = &amp; \cfr...
+...silon_{23} &amp; = &amp; \cfrac{1}{G} \: \sigma_{23}
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">16</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Hence, all six equations permit putting together the shear strain tensor <!-- MATH
+ $\uuline{\varepsilon}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img355.svg"
+ ALT="$\uuline{\varepsilon}$"></SPAN> as a function of the stress tensor <!-- MATH
+ $\uuline{\sigma}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.83ex; vertical-align: -1.73ex; " SRC="img354.svg"
+ ALT="$\uuline{\sigma}$"></SPAN> through compliance fourth-order tensor <!-- MATH
+ $\uuline{D}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img381.svg"
+ ALT="$\uuline{D}$"></SPAN>.
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{\varepsilon} = \uuline{D} \: \uuline{\sigma}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img382.svg"
+ ALT="$\displaystyle \uuline{\varepsilon} = \uuline{D} \: \uuline{\sigma}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">17</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>	
+
+<P>
+For ease of calculation, we will express the stress and strain tensors as <!-- MATH
+ $6 \times 1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img383.svg"
+ ALT="$6 \times 1$"></SPAN> matrices, such that <!-- MATH
+ $\uuline{D}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img381.svg"
+ ALT="$\uuline{D}$"></SPAN> will be a <!-- MATH
+ $6 \times 6$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img384.svg"
+ ALT="$6 \times 6$"></SPAN> matrix. 
+This notation is called Voigt notation.
+Hence, fourth-order tensor <!-- MATH
+ $\uuline{D}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img381.svg"
+ ALT="$\uuline{D}$"></SPAN> can be expressed as a <!-- MATH
+ $6 \times 6$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.90ex; vertical-align: -0.30ex; " SRC="img384.svg"
+ ALT="$6 \times 6$"></SPAN> matrix:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
  \begin{equation}
 %compliance matrix
 	\left[
@@ -122,12 +552,12 @@ VTI compliance matrix (3 - vertical direction perpendicular to bedding):
 	\right] =
 	\left[
 	\begin{array}{cccccc}
-		+\cfrac{1}{E_h} & -\cfrac{\nu_h}{E_h} & -\cfrac{\nu_v}{E_v} & 0 & 0 & 0\\
-		-\cfrac{\nu_h}{E_h} & +\cfrac{1}{E_h} & -\cfrac{\nu_v}{E_v} & 0 & 0 & 0\\
-		-\cfrac{\nu_v}{E_v} & -\cfrac{\nu_v}{E_v} & +\cfrac{1}{E_v} & 0 & 0 & 0\\
-		0 & 0 & 0 & \cfrac{1}{G_v} & 0 & 0 \\
-		0 & 0 & 0 & 0 & \cfrac{1}{G_v} & 0 \\
-		0 & 0 & 0 & 0 & 0 & \cfrac{1}{G_h}
+		+\cfrac{1}{E} & -\cfrac{\nu}{E} & -\cfrac{\nu}{E} & 0 & 0 & 0\\
+		-\cfrac{\nu}{E} & +\cfrac{1}{E} & -\cfrac{\nu}{E} & 0 & 0 & 0\\
+		-\cfrac{\nu}{E} & -\cfrac{\nu}{E} & +\cfrac{1}{E} & 0 & 0 & 0\\
+		0 & 0 & 0 & \cfrac{2(1+\nu)}{E} & 0 & 0 \\
+		0 & 0 & 0 & 0 & \cfrac{2(1+\nu)}{E} & 0 \\
+		0 & 0 & 0 & 0 & 0 & \cfrac{2(1+\nu)}{E}
 	\end{array}
 	\right] \:
 	\left[
@@ -145,7 +575,7 @@ VTI compliance matrix (3 - vertical direction perpendicular to bedding):
 <TABLE CLASS="equation" >
 <TR>
 <TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img31.svg"
+ SRC="img385.svg"
  ALT="\begin{displaymath}%compliance matrix
 \left[
 \begin{array}{c}
@@ -154,100 +584,234 @@ VTI compliance matrix (3 - vertical direction perpendicular to bedding):
 \sigma_{12} \cfrac{}{}
 \end{array}\right]\end{displaymath}"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">18</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-where and <!-- MATH
- $G_h = \cfrac{E_h}{2(1+\nu_h)}$
+For example, let us apply a stress <!-- MATH
+ $\uuline{\sigma} = [0,0,\sigma_{33},0,0,0]^T$
  -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 6.15ex; vertical-align: -2.28ex; " SRC="img32.svg"
- ALT="$G_h = \cfrac{E_h}{2(1+\nu_h)}$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img33.svg"
- ALT="$G_v$"></SPAN> is not related to the other parameters.
-
-<P>
-In terms of stiffness coefficients:
-
-<P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.83ex; vertical-align: -1.73ex; " SRC="img386.svg"
+ ALT="$\uuline{\sigma} = [0,0,\sigma_{33},0,0,0]^T$"></SPAN> as in example in Figure <A HREF="#fig:YoungPoisson">3.11</A>. 
+The result of <!-- MATH
+ $\uuline{D} \: \uuline{\sigma}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img387.svg"
+ ALT="$\uuline{D} \: \uuline{\sigma}$"></SPAN> is 
 <P><!-- MATH
  \begin{displaymath}
-E_h = \frac{(C_{11}-C_{12}) \left[ C_{33}(C_{11}+C_{12})-2\: C_{13}^2 \right]}{C_{11}C_{33}–C_{13}^2}
+\uuline{\varepsilon} = \left [ -\cfrac{\nu}{E} \: \sigma_{33},-\cfrac{\nu}{E} \: \sigma_{33},\cfrac{1}{E} \: \sigma_{33},0,0,0 \right]^T
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 6.19ex; vertical-align: -2.41ex; " SRC="img34.svg"
- ALT="$\displaystyle E_h = \frac{(C_{11}-C_{12}) \left[ C_{33}(C_{11}+C_{12})-2\: C_{13}^2 \right]}{C_{11}C_{33}–C_{13}^2} $">
+<IMG STYLE="height: 7.64ex; vertical-align: -3.01ex; " SRC="img388.svg"
+ ALT="$\displaystyle \uuline{\varepsilon} = \left [ -\cfrac{\nu}{E} \: \sigma_{33},-\cfrac{\nu}{E} \: \sigma_{33},\cfrac{1}{E} \: \sigma_{33},0,0,0 \right]^T $">
 </DIV><P></P>
+which are the same strains we found above in the definition of <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img349.svg"
+ ALT="$E$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img389.svg"
+ ALT="$\nu$"></SPAN>.
 
 <P>
-<P><!-- MATH
- \begin{displaymath}
-E_v = C_{33} - \frac{2\:C_{13}^2}{C_{11}+C_{12}}
-\end{displaymath}
+The inverse of the compliance matrix is the stiffness matrix <!-- MATH
+ $\uuline{C} = \uuline{D}^{-1}$
  -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.64ex; vertical-align: -2.05ex; " SRC="img35.svg"
- ALT="$\displaystyle E_v = C_{33} - \frac{2\:C_{13}^2}{C_{11}+C_{12}} $">
-</DIV><P></P>
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\nu_h =  \frac{C_{12}C_{33}-C_{13}^2}{C_{11}C_{33}-C_{13}^2}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 6.00ex; vertical-align: -2.41ex; " SRC="img36.svg"
- ALT="$\displaystyle \nu_h = \frac{C_{12}C_{33}-C_{13}^2}{C_{11}C_{33}-C_{13}^2} $">
-</DIV><P></P>
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-\nu_v = \frac{C_{13}}{C_{11}+C_{12}}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.29ex; vertical-align: -2.05ex; " SRC="img37.svg"
- ALT="$\displaystyle \nu_v = \frac{C_{13}}{C_{11}+C_{12}} $">
-</DIV><P></P>
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-G_v = C_{44}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img38.svg"
- ALT="$\displaystyle G_v = C_{44} $">
-</DIV><P></P>
-
-<P>
-<P><!-- MATH
- \begin{displaymath}
-G_h = C_{66} =  \frac{C_{11}-C_{12}}{2}
-\end{displaymath}
- -->
-</P>
-<DIV CLASS="mathdisplay">
-<IMG STYLE="height: 4.95ex; vertical-align: -1.70ex; " SRC="img39.svg"
- ALT="$\displaystyle G_h = C_{66} = \frac{C_{11}-C_{12}}{2} $">
-</DIV><P></P>
-
-<P>
-VTI stiffness matrix (3 - vertical direction perpendicular to bedding):
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.83ex; vertical-align: -1.73ex; " SRC="img390.svg"
+ ALT="$\uuline{C} = \uuline{D}^{-1}$"></SPAN> and let us calculate stress as a function of strain.
 
 <P>
 <P></P>
-<DIV CLASS="mathdisplay"><A ID="eq:VTIStiffnessMatrix"></A><!-- MATH
+<DIV CLASS="mathdisplay"><A ID="eq:StiffnessMatrix"></A><!-- MATH
  \begin{equation}
+%stiffness matrix
+	\left[
+		\begin{array} {c}
+			\sigma_{11} \\
+			\sigma_{22} \\
+			\sigma_{33} \\
+			\sigma_{23} \cfrac{}{} \\
+			\sigma_{13} \cfrac{}{} \\
+			\sigma_{12} \cfrac{}{}
+		\end{array}
+	\right]
+	= \cfrac{E}{(1+\nu)(1-2\nu)}
+	\left[
+	\begin{array}{cccccc}
+		1-\nu & \nu & \nu & 0 & 0 & 0\\
+		\nu & 1-\nu & \nu & 0 & 0 & 0\\
+		\nu & \nu & 1-\nu & 0 & 0 & 0\\
+		0 & 0 & 0 & \cfrac{(1-2\nu)}{2} & 0 & 0 \\
+		0 & 0 & 0 & 0 & \cfrac{(1-2\nu)}{2} & 0 \\
+		0 & 0 & 0 & 0 & 0 & \cfrac{(1-2\nu)}{2}
+	\end{array}
+	\right]
+	\:
+	\left[
+		\begin{array} {c}
+			\varepsilon_{11} \\
+			\varepsilon_{22} \\
+			\varepsilon_{33} \\
+			2 \varepsilon_{23} \cfrac{}{} \\
+			2 \varepsilon_{13}  \cfrac{}{}\\
+			2 \varepsilon_{12} \cfrac{}{}
+		\end{array}
+	\right]
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img391.svg"
+ ALT="\begin{displaymath}%stiffness matrix
+\left[
+\begin{array}{c}
+\sigma_{11} \\
+\s...
+... \cfrac{}{}\\
+2 \varepsilon_{12} \cfrac{}{}
+\end{array}\right]\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">19</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Voigt notation is easier to code in computer codes that work with matrices.
+
+<P>
+The Lamé equations are the same equations shown above but use the Lamé parameters <SPAN CLASS="MATH"><IMG STYLE="height: 1.82ex; vertical-align: -0.11ex; " SRC="img392.svg"
+ ALT="$\lambda$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img216.svg"
+ ALT="$\mu$"></SPAN> instead of <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img349.svg"
+ ALT="$E$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img389.svg"
+ ALT="$\nu$"></SPAN>.
+For example, let us write the first equation of the product of the stiffness tensor and the strain tensor in Voigt notation:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\sigma_{11}  = \cfrac{E}{(1+\nu)(1-2\nu)}
+	\left[ (1-\nu) \varepsilon_{11} + \nu \varepsilon_{22} + \nu \varepsilon_{33} \right]
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 6.15ex; vertical-align: -2.28ex; " SRC="img393.svg"
+ ALT="$\displaystyle \sigma_{11} = \cfrac{E}{(1+\nu)(1-2\nu)}
+\left[ (1-\nu) \varepsilon_{11} + \nu \varepsilon_{22} + \nu \varepsilon_{33} \right]$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+or equivalently
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\sigma_{11}  = \cfrac{\nu E}{(1+\nu)(1-2\nu)}
+	(\varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33})
+	+  \cfrac{\nu E}{(1+\nu)(1-2\nu)} \left( -1 + \cfrac{1-\nu}{\nu} \right) \varepsilon_{11}
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 7.15ex; vertical-align: -3.01ex; " SRC="img394.svg"
+ ALT="$\displaystyle \sigma_{11} = \cfrac{\nu E}{(1+\nu)(1-2\nu)}
+(\varepsilon_{11} + ...
+...\nu E}{(1+\nu)(1-2\nu)} \left( -1 + \cfrac{1-\nu}{\nu} \right) \varepsilon_{11}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+where the Lamé parameters are:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\lambda = \cfrac{\nu E}{(1+\nu)(1-2\nu)}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 6.15ex; vertical-align: -2.28ex; " SRC="img395.svg"
+ ALT="$\displaystyle \lambda = \cfrac{\nu E}{(1+\nu)(1-2\nu)}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">20</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+and
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+2\mu =  \cfrac{\nu E}{(1+\nu)(1-2\nu)} \left( -1 + \cfrac{1-\nu}{\nu} \right) = \cfrac{E}{(1+\nu)}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 7.15ex; vertical-align: -3.01ex; " SRC="img396.svg"
+ ALT="$\displaystyle 2\mu = \cfrac{\nu E}{(1+\nu)(1-2\nu)} \left( -1 + \cfrac{1-\nu}{\nu} \right) = \cfrac{E}{(1+\nu)}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">21</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Notice that <SPAN CLASS="MATH"><IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img397.svg"
+ ALT="$\mu = G$"></SPAN>, the shear modulus as defined above.
+Putting equations in all directions together yields the complete set of Lamé's equations: 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:LameFull"></A><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{rcl}
+		\sigma_{11} & = & (\lambda + 2 \mu) \: \varepsilon_{11} + \lambda \: \varepsilon_{22} + \lambda \: \varepsilon_{33}\\
+		\sigma_{22} & = & \lambda \: \varepsilon_{11} + (\lambda + 2 \mu) \: \varepsilon_{22} + \lambda \: \varepsilon_{33}\\
+		\sigma_{33} & = & \lambda \: \varepsilon_{11} + \lambda \: \varepsilon_{22} + (\lambda + 2 \mu) \: \varepsilon_{33}\\
+		\sigma_{23} & = & 2 \mu \: \varepsilon_{23}\\
+		\sigma_{13} & = & 2 \mu \: \varepsilon_{13}\\
+		\sigma_{12} & = & 2 \mu \: \varepsilon_{12}\\
+	\end{array}
+	\right. \text{.}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img398.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{rcl}
+\sigma_{11} &amp; = &amp; (\lambda + ...
+... &amp; = &amp; 2 \mu \: \varepsilon_{12}\\
+\end{array}\right. \text{.}\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">22</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+ <BR>
+<SPAN  CLASS="textit">EXAMPLE 3.4</SPAN>: Write the Lamé equations (Eq. <A HREF="#eq:LameFull">3.22</A>) in matrix format using the Voigt notation.
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
 %compliance matrix
 	\left[
 		\begin{array} {c}
@@ -262,12 +826,12 @@ VTI stiffness matrix (3 - vertical direction perpendicular to bedding):
 	= 
 	\left[
 	\begin{array}{cccccc}
-		C_{11} & C_{12} & C_{13} & 0 & 0 & 0\\
-		C_{12} & C_{11} & C_{13} & 0 & 0 & 0\\
-		C_{13} & C_{13} & C_{33} & 0 & 0 & 0\\
-		0 & 0 & 0 & C_{44} & 0 & 0 \\
-		0 & 0 & 0 & 0 & C_{44} & 0 \\
-		0 & 0 & 0 & 0 & 0 & C_{66}
+		\lambda + 2\mu & \lambda & \lambda & 0 & 0 & 0\\
+		\lambda & \lambda + 2 \mu & \lambda & 0 & 0 & 0\\
+		\lambda & \lambda & \lambda + 2 \mu & 0 & 0 & 0\\
+		0 & 0 & 0 & \mu & 0 & 0 \\
+		0 & 0 & 0 & 0 & \mu & 0 \\
+		0 & 0 & 0 & 0 & 0 & \mu
 	\end{array}
 	\right]
 	\:
@@ -276,107 +840,1208 @@ VTI stiffness matrix (3 - vertical direction perpendicular to bedding):
 			\varepsilon_{11} \\
 			\varepsilon_{22} \\
 			\varepsilon_{33} \\
-			2 \varepsilon_{23}  \\
-			2 \varepsilon_{13}  \\
+			2 \varepsilon_{23} \\
+			2 \varepsilon_{13} \\
 			2 \varepsilon_{12} 
 		\end{array}
-	\right]
-\end{equation}
+	\right] \: \: \blacksquare
+\end{equation*}
  -->
-<TABLE CLASS="equation" >
+<TABLE CLASS="equation*" >
 <TR>
 <TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img40.svg"
+ SRC="img399.svg"
  ALT="\begin{displaymath}%compliance matrix
 \left[
 \begin{array}{c}
 \sigma_{11} \\
 \...
-...\
-2 \varepsilon_{13} \\
+...3} \\
 2 \varepsilon_{12}
-\end{array}\right]\end{displaymath}"></SPAN></TD>
+\end{array}\right] \: \: \blacksquare\end{displaymath}"></SPAN></TD>
 <TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P>
+ <BR>
+
+<P>
+Remember that there are only two independent constitutive parameters in linear isotropic elasticity.
+The usual pair choice is <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img349.svg"
+ ALT="$E$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img389.svg"
+ ALT="$\nu$"></SPAN>.
+However, there are other options depending on the application and equations used, e.g, <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img400.svg"
+ ALT="$K$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img401.svg"
+ ALT="$G$"></SPAN>.  
+A complete list of parameter pairs is available scrolling to the bottom in <kbd><A ID="tex2html96"
+  HREF="https://en.wikipedia.org/wiki/Young's_modulus">https://en.wikipedia.org/wiki/Young's_modulus</A></kbd>.
+Figure <A HREF="#fig:elastic-summary">3.14</A> list the most common equivalencies. 
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:elastic-summary"></A><A ID="2530"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.14:</STRONG>
+Table with equivalencies of the most used elastic moduli in linear isotropic elasticity.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23107" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img402.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-21.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00533000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Effective stress and elasticity</A>
+</H2>
+
+<P>
+Porous solids deform and fail due to the application of effective stresses rather than total stress. 
+Hence, Hooke's law requires to use the effective stress tensor rather than the total stress tensor. 
+The equation <!-- MATH
+ $\uuline{\varepsilon} = \uuline{D} \: \uuline{S}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img403.svg"
+ ALT="$\uuline{\varepsilon} = \uuline{D} \: \uuline{S}$"></SPAN> is incorrect.
+Instead, the stress-strain relationship requires effective stress:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:constitutiveDsigma"></A><!-- MATH
+ \begin{equation}
+\uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - P_p \uuline{I})  = \uuline{D} \: \uuline{\sigma}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.57ex; vertical-align: -1.73ex; " SRC="img404.svg"
+ ALT="$\displaystyle \uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - P_p \uuline{I}) = \uuline{D} \: \uuline{\sigma}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">23</SPAN>)</TD></TR>
 </TABLE></DIV>
 <P></P>
 
 <P>
-or in terms of Young moduli and Poisson ratios
+Pore pressure has an effect on normal stresses only (fluid pressure would not be able to cause solid shear strains). Hence, only pore pressure is subtracted from the diagonal terms of the total stress tensor. 
+The subtracted value is the same in all directions because pore pressure is the same in all directions at a given point location.	
 
 <P>
-<P><!-- MATH
+
+<DIV class="CENTER"><A ID="fig:lec4-X"></A><A ID="2548"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.15:</STRONG>
+The effective stress tensor.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23117" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img405.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-26.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Rigorously, the effective stress tensor needs a correction of pore pressure by the Biot coefficient <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img24.svg"
+ ALT="$\alpha $"></SPAN> that accounts for solid grain deformation with changes in pore pressure. 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - \alpha P_p \uuline{I})
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.57ex; vertical-align: -1.73ex; " SRC="img406.svg"
+ ALT="$\displaystyle \uuline{\varepsilon} = \uuline{D} \: (\uuline{S} - \alpha P_p \uuline{I})$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">24</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+For most problems, the assumption of <!-- MATH
+ $\alpha \sim 1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img407.svg"
+ ALT="$\alpha \sim 1$"></SPAN> is satisfactory. 
+The rock matrix of tight sandstones and shales may have a Biot coeffiecient as low as <!-- MATH
+ $\alpha \sim 0.5$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img408.svg"
+ ALT="$\alpha \sim 0.5$"></SPAN>. 
+The theory of poroelasticity is covered in the &ldquo;Advanced Geomechanics&rdquo; course with a brief introduction in Section <A HREF="node21.html#sec:poroelasticity">3.7.1</A>.
+
+<P>
+
+<H2><A ID="SECTION00534000000000000000"></A>
+<A ID="sec:CalcHzStress"></A>
+<BR>
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Calculation of horizontal stress according to linear elasticity
+</H2> 
+
+<P>
+Let us revisit the problem of stress calculation in a half-space, such as the Earth's shallow subsurface. 
+We already know that the vertical total stress (<!-- MATH
+ $S_v = S_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img409.svg"
+ ALT="$S_v = S_{33}$"></SPAN>) is a function of depth and rock bulk mass density.
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.52ex; vertical-align: -2.21ex; " SRC="img179.svg"
+ ALT="$\displaystyle S_v(z) = \int_0^z \rho_{bulk}(z) g \: dz$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">25</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+The effective vertical stress will be 
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\sigma_v(z) = S_v(z) - P_p
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img410.svg"
+ ALT="$\displaystyle \sigma_v(z) = S_v(z) - P_p$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">26</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+Let us now assume that the half space did not deform in horizontal directions (<!-- MATH
+ $\varepsilon_{11}=\varepsilon_{22}=0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img411.svg"
+ ALT="$\varepsilon_{11}=\varepsilon_{22}=0$"></SPAN>), usually known as a &ldquo;tectonically passive environment&rdquo;. This means that the solid is laterally contained at &ldquo;repose&rdquo; and no additional horizontal strains have been added either compressive or tensile. 
+Such is the case of a sedimentary basin with no additional tectonic strains.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lec4-X"></A><A ID="2570"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.16:</STRONG>
+Uniaxial strain condition with sedimentation in a tectonically passive environment. As sediment burial progresses the sediment compacts only in vertical direction.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23139" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./UniaxialStrainSchematics.png"
+ ALT="Image UniaxialStrainSchematics"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Let us now use Equation <A HREF="#eq:constitutiveDsigma">3.23</A> together with the equilibrium equation. 
+Shear strains are zero. 
+Hence <!-- MATH
+ $\uuline{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.83ex; vertical-align: -1.73ex; " SRC="img412.svg"
+ ALT="$\uuline{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T$"></SPAN>.
+Then, the multiplication of <!-- MATH
+ $\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img413.svg"
+ ALT="$\uuline{\sigma} = \uuline{D} \: \uuline{\varepsilon}$"></SPAN>, results in 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{l}
+ 		\sigma_{11} = \sigma_{22} = 
+			\frac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{33}  \\
+		\sigma_{33} = \frac{(1-\nu) E}{(1+\nu)(1-2\nu)} 		 			\varepsilon_{33}  
+	\end{array}
+	\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img414.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+\sigma_{11} = \sigma_{22} =
+\fr...
+...(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{33}
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">27</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Let us express <!-- MATH
+ $\varepsilon_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img360.svg"
+ ALT="$\varepsilon_{33}$"></SPAN> as a function of <!-- MATH
+ $\sigma_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img359.svg"
+ ALT="$\sigma_{33}$"></SPAN>, and plug it in the equation for horizontal stresses <!-- MATH
+ $\sigma_{11}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img415.svg"
+ ALT="$\sigma_{11}$"></SPAN> and <!-- MATH
+ $\sigma_{22}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img416.svg"
+ ALT="$\sigma_{22}$"></SPAN>. 
+The result is
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\sigma_{11} = \sigma_{22} = \frac{\nu}{1-\nu} \sigma_{33}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.55ex; vertical-align: -1.89ex; " SRC="img417.svg"
+ ALT="$\displaystyle \sigma_{11} = \sigma_{22} = \frac{\nu}{1-\nu} \sigma_{33}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">28</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+or equivalently
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:CoeffLateralEffStress"></A><!-- MATH
+ \begin{equation}
+\sigma_{h} = \frac{\nu}{1-\nu} \sigma_{v}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.55ex; vertical-align: -1.89ex; " SRC="img418.svg"
+ ALT="$\displaystyle \sigma_{h} = \frac{\nu}{1-\nu} \sigma_{v}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">29</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+For typical values of <!-- MATH
+ $\nu \sim 0.25$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img419.svg"
+ ALT="$\nu \sim 0.25$"></SPAN>, the horizontal stress coefficient is <!-- MATH
+ $\nu/(1-\nu) \sim 1/3$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img420.svg"
+ ALT="$\nu/(1-\nu) \sim 1/3 $"></SPAN> (Figure <A HREF="#fig:LateralEffStressCoeff">3.17</A>). 
+Thus, the effective horizontal stress is approximately one third of the effective vertical stress. 
+Contrary to a fluid, the solid does not push sideways with all its weight. 
+It pushes sideways with just a fraction of its weight proportionally to its tendency to deform sideways, i.e., the Poisson ratio.
+Notice that <!-- MATH
+ $\nu \rightarrow 0.5$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img421.svg"
+ ALT="$\nu \rightarrow 0.5$"></SPAN> implies <!-- MATH
+ $\nu/(1-\nu) \rightarrow 1$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img422.svg"
+ ALT="$\nu/(1-\nu) \rightarrow 1$"></SPAN>.
+An &ldquo;effective&rdquo; <!-- MATH
+ $\nu \sim 0.5$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img423.svg"
+ ALT="$\nu \sim 0.5$"></SPAN> is applicable for fluids, soft rocks under undrained loading, and salt rocks.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:LateralEffStressCoeff"></A><A ID="2614"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.17:</STRONG>
+Lateral stress coefficient as a function of Poisson's ratio. Solids do not push sideways with all its weight when compacted vertically. </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23171" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./lateralstres-coeff.png"
+ ALT="Image lateralstres-coeff"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+The total horizontal stresses are obtained by adding pore pressure to the effective horizontal stresses: <!-- MATH
+ $S_{11} = \sigma_{11} + P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img424.svg"
+ ALT="$S_{11} = \sigma_{11} + P_p$"></SPAN> and <!-- MATH
+ $S_{22} = \sigma_{22} + P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img425.svg"
+ ALT="$S_{22} = \sigma_{22} + P_p$"></SPAN>. 
+
+<P>
+Equation <A HREF="#eq:CoeffLateralEffStress">3.29</A> allows us to approximate a lower bound for the fracture gradient, that is, the pressure required to open a hydraulic fracture.
+Such pressure will be equal or greater than the minimum horizontal total stress <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$S_h$"></SPAN> (assuming zero tectonic strains):
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+S_h = \sigma_{h} + P_p
+	 	    = \frac{\nu}{1-\nu} \sigma_{v} + P_p
+	 	    = \frac{\nu}{1-\nu} (S_v - P_p) + P_p
+	 	    = \frac{\nu}{1-\nu} S_v + \frac{1-2\nu}{1-\nu} P_p
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG
+ WIDTH="584" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$\displaystyle S_h = \sigma_{h} + P_p
+= \frac{\nu}{1-\nu} \sigma_{v} + P_p
+= \fr...
+...nu}{1-\nu} (S_v - P_p) + P_p
+= \frac{\nu}{1-\nu} S_v + \frac{1-2\nu}{1-\nu} P_p$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">30</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+The gradient is the variation of pressure (or stress) with depth, i.e., derivative with respect to depth <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img102.svg"
+ ALT="$z$"></SPAN>.
+Assuming that the material properties are constant, then,
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:FracGradient"></A><!-- MATH
+ \begin{equation}
+\frac{\Delta S_h}{\Delta z} =
+	 	    = \left( \frac{\nu}{1-\nu} \right)
+	 	    \frac{\Delta S_v}{\Delta z} 
+	 	    + \left( \frac{1-2\nu}{1-\nu} \right) 
+	 	    \frac{\Delta P_p}{\Delta z}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG
+ WIDTH="326" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$\displaystyle \frac{\Delta S_h}{\Delta z} =
+= \left( \frac{\nu}{1-\nu} \right)
+...
+..._v}{\Delta z}
++ \left( \frac{1-2\nu}{1-\nu} \right)
+\frac{\Delta P_p}{\Delta z}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">31</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+For example, for onshore conditions with typical values <!-- MATH
+ $\Delta S_v / \Delta z \sim 1$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="101" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$\Delta S_v / \Delta z \sim 1$"></SPAN> psi/ft, <!-- MATH
+ $\Delta P_p / \Delta z \sim 0.44$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="123" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\Delta P_p / \Delta z \sim 0.44$"></SPAN> psi/ft, and <!-- MATH
+ $\nu = 0.25$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="68" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="$\nu = 0.25$"></SPAN>, the fracture gradient is <!-- MATH
+ $\Delta S_h / \Delta z = 0.63$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="124" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$\Delta S_h / \Delta z = 0.63$"></SPAN> psi/ft. Figure XX shows a schematic example of the calculated fracture gradient.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:FracGradient"></A><A ID="3246"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.18:</STRONG>
+Schematic representation of the prediction of minimum horizontal total stress <SPAN CLASS="MATH"><IMG
+ WIDTH="23" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$S_h$"></SPAN>, a lower bound for the fracture gradient, using Eq. <A HREF="#eq:FracGradient">3.31</A> </CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23195" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./3-FracGradient.png"
+ ALT="Image 3-FracGradient"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Let us now relax the assumption of horizontal strains equal to zero, such that they are not zero <!-- MATH
+ $\varepsilon_{11} \neq \varepsilon_{22} \neq 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img426.svg"
+ ALT="$\varepsilon_{11} \neq \varepsilon_{22} \neq 0$"></SPAN>, but are known quantities.  
+We use the equation <!-- MATH
+ $\uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img427.svg"
+ ALT="$\uuline{\sigma} = \uuline{C} \: \uuline{\varepsilon}$"></SPAN> again. Shear strains are zero. 
+Hence <!-- MATH
+ $\uuline{\varepsilon} = [\varepsilon_{11},\varepsilon_{22},\varepsilon_{33},0,0,0]^T$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.83ex; vertical-align: -1.73ex; " SRC="img428.svg"
+ ALT="$\uuline{\varepsilon} = [\varepsilon_{11},\varepsilon_{22},\varepsilon_{33},0,0,0]^T$"></SPAN>. 
+The resulting equations are,
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+	\begin{array}{l}
+		\sigma_{11} = 
+			\cfrac{(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{11}
+			+ \cfrac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{22}
+			+ \cfrac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{33} \\
+		\sigma_{22} = 
+			\cfrac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{11}
+		+ \cfrac{(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{22}
+			+ \cfrac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{33} \\
+		\sigma_{33} = 
+			\cfrac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{11}
+		+   \cfrac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{22}
+		+	\cfrac{(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{33}  
+	\end{array}
+	\right.	
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img429.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+\sigma_{11} =
+\cfrac{(1-\nu) E}...
+...(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{33}
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">32</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Let us now substitute <!-- MATH
+ $\varepsilon_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img360.svg"
+ ALT="$\varepsilon_{33}$"></SPAN> in the equations of <!-- MATH
+ $\sigma_{11}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img415.svg"
+ ALT="$\sigma_{11}$"></SPAN> and <!-- MATH
+ $\sigma_{22}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img416.svg"
+ ALT="$\sigma_{22}$"></SPAN> as a function of <!-- MATH
+ $\sigma_{33}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img359.svg"
+ ALT="$\sigma_{33}$"></SPAN>. The result is:
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\left\lbrace
+		\begin{array}{l}	 	
+	 	\sigma_{11} =  
+	 		\cfrac{\nu}{1-\nu} \sigma_{33} + 
+	 		\cfrac{E}{1-\nu^2} \varepsilon_{11} +
+	 		\cfrac{\nu E}{1-\nu^2} \varepsilon_{22} \\
+	 	\sigma_{22} =  
+	 		\cfrac{\nu}{1-\nu} \sigma_{33} +
+	 		\cfrac{\nu E}{1-\nu^2} \varepsilon_{11} +
+	 		\cfrac{E}{1-\nu^2} \varepsilon_{22} \\
+		\end{array}
+		\right.	
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img430.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+\sigma_{11} =
+\cfrac{\nu}{1-\nu...
+...1} +
+\cfrac{E}{1-\nu^2} \varepsilon_{22} \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">33</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+Horizontal strains are usually caused by tectonic plate movement. 
+Hence, we can call them &ldquo;tectonic strains&rdquo; and say that this is a &ldquo;tectonically active&rdquo; environment, particularly for large compressive horizontal strains that may increase horizontal stress over the vertical stress. 
+Let us call <!-- MATH
+ $\varepsilon_{Hmax}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img16.svg"
+ ALT="$\varepsilon _{Hmax}$"></SPAN> the maximum (compressive) tectonic strain, and  <!-- MATH
+ $\varepsilon_{hmin}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img431.svg"
+ ALT="$\varepsilon_{hmin}$"></SPAN> the minimum tectonic strain in a given direction. 
+As a result the maximum effective horizontal stress and minimum horizontal stresses are:
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:tectonicstrains"></A><!-- MATH
+ \begin{equation}
+\left\lbrace
+		\begin{array}{l}	 	
+	 	\sigma_{Hmax} =  \cfrac{\nu}{1-\nu} \sigma_{v} + 
+	 		E' \varepsilon_{Hmax} +
+	 		\nu E'\varepsilon_{hmin}  \\
+	 	\sigma_{hmin} =  \cfrac{\nu}{1-\nu} \sigma_{v} +
+	 		\nu E' \varepsilon_{Hmax} +
+	 		E' \varepsilon_{hmin} \\
+		\end{array}
+		\right.
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img432.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+\sigma_{Hmax} = \cfrac{\nu}{1-\...
+...arepsilon_{Hmax} +
+E' \varepsilon_{hmin} \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">34</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+where <!-- MATH
+ $E' = \frac{E}{1-\nu^2}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.31ex; vertical-align: -1.14ex; " SRC="img433.svg"
+ ALT="$E' = \frac{E}{1-\nu^2}$"></SPAN> is called the plane strain modulus.
+We will see later that the plane strain modulus, rather than the Young's modulus, appears in many of the equations of interest to subsurface applications.
+These equations have been coded in a Jupyter notebook available at <kbd><A ID="tex2html102"
+  HREF="https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=HorizontalStresses_Widget.ipynb">https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=HorizontalStresses_Widget.ipynb</A></kbd>.
+The above algorithm further assumes a linear increase of strain with depth.
+
+<P>
+The following workflow is valid to calculate horizontal total stress with any constitutive (rock property) model:
+
+<OL>
+<LI>Calculate total vertical stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN>
+</LI>
+<LI>Calculate pore pressure <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img1.svg"
+ ALT="$P_p$"></SPAN>.
+	
+<OL>
+<LI>If hydrostatic, use <!-- MATH
+ $\Delta P_p / \Delta z \sim 0.44$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="123" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\Delta P_p / \Delta z \sim 0.44$"></SPAN> psi/ft.
+</LI>
+<LI>If non-hydrostatic, use the method based on shale porosity <!-- MATH
+ $\phi_{shale}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="47" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$\phi_{shale}$"></SPAN> or use directly <!-- MATH
+ $P_p = \lambda_p S_v$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="82" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$P_p = \lambda_p S_v$"></SPAN> if <SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img193.svg"
+ ALT="$\lambda_p$"></SPAN> is given.
+	
+</LI>
+</OL>	
+</LI>
+<LI>Calculate effective vertical stress: <!-- MATH
+ $\sigma_v = S_v - P_p$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="103" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.png"
+ ALT="$\sigma_v = S_v - P_p$"></SPAN>
+</LI>
+<LI>Calculate effective horizontal stresses <!-- MATH
+ $\sigma_{hmin}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img434.svg"
+ ALT="$\sigma_{hmin}$"></SPAN> and <!-- MATH
+ $\sigma_{Hmax}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.57ex; vertical-align: -0.47ex; " SRC="img435.svg"
+ ALT="$\sigma_{Hmax}$"></SPAN>:
+	
+<OL>
+<LI>Assuming linear isotropic elasticity, use Eq. <A HREF="#eq:tectonicstrains">3.34</A> if tectonic strains are not zero or simply Eq. <A HREF="#eq:CoeffLateralEffStress">3.29</A> if tectonic strains are zero.  
+</LI>
+<LI>Assuming subsurface stresses are at yield, use Eqs. in the Chapter about &ldquo;Stresses on Faults&rdquo;.
+</LI>
+<LI>Assuming subsurface stresses are affected by visco-elastic response, add stress relaxation component (Fig. <A HREF="node20.html#fig:StressRelax">3.26</A>)
+	
+</LI>
+</OL>	
+</LI>
+<LI>Calculate total horizontal stress by adding pore pressure to effective horizontal stresses:  <P><!-- MATH
  \begin{displaymath}
-C_{11} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] \left( \frac{E_h E_v - \nu_v^2 E_h^2}{1+\nu_h} \right)
+S_{Hmax} = \sigma_{Hmax} + P_p
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.95ex; vertical-align: -2.31ex; " SRC="img41.svg"
- ALT="$\displaystyle C_{11} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] \left( \frac{E_h E_v - \nu_v^2 E_h^2}{1+\nu_h} \right) $">
+<IMG
+ WIDTH="167" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$\displaystyle S_{Hmax} = \sigma_{Hmax} + P_p $">
 </DIV><P></P>
-
-<P>
-<P><!-- MATH
+and <P><!-- MATH
  \begin{displaymath}
-C_{33} =  \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] (E_v^2 - \nu_h E_v^2)
+S_{hmin} = \sigma_{hmin} + P_p.
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img42.svg"
- ALT="$\displaystyle C_{33} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] (E_v^2 - \nu_h E_v^2) $">
+<IMG
+ WIDTH="159" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$\displaystyle S_{hmin} = \sigma_{hmin} + P_p. $">
 </DIV><P></P>
+</LI>
+</OL>
 
 <P>
+ <BR>
+<SPAN  CLASS="textit">EXAMPLE 3.5</SPAN>: 
+Calculate the total horizontal stresses in a section of the Barnett Shale located at 7,950 ft (TVD) using the theory of linear elasticity.
+Assume a constant vertical stress gradient <!-- MATH
+ $\mathrm{d}S_v/\mathrm{d}z = 23.8$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img436.svg"
+ ALT="$\mathrm{d}S_v/\mathrm{d}z = 23.8$"></SPAN> MPa/km, overpressure parameter <!-- MATH
+ $\lambda_p = 0.7$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img437.svg"
+ ALT="$\lambda_p = 0.7$"></SPAN>, shale Young's modulus <!-- MATH
+ $E = 5 \times 10^6$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="96" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$E = 5 \times 10^6$"></SPAN> psi, Poisson's ratio <!-- MATH
+ $\nu = 0.22$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img438.svg"
+ ALT="$\nu = 0.22$"></SPAN>, and tectonic strains <!-- MATH
+ $\varepsilon_{hmin} = 0$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.08ex; vertical-align: -0.48ex; " SRC="img439.svg"
+ ALT="$\varepsilon_{hmin} = 0$"></SPAN> and <!-- MATH
+ $\varepsilon_{Hmax} = 0.0002$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.06ex; vertical-align: -0.47ex; " SRC="img440.svg"
+ ALT="$\varepsilon_{Hmax} = 0.0002$"></SPAN>.
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+At a depth of 7950 ft
 <P><!-- MATH
  \begin{displaymath}
-C_{12} =  \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] \left( \frac{\nu_v^2 E_h^2 + \nu_h E_h E_v}{1+\nu_h} \right)
+S_v = 23.8 \frac{\text{MPa}}{\text{km}} \times \frac{1 \frac{\text{psi}}{\text{ft}}}{23 \frac{\text{MPa}}{\text{km}}} \times 7950 \text{ ft} = 8227 \text {psi}
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.95ex; vertical-align: -2.31ex; " SRC="img43.svg"
- ALT="$\displaystyle C_{12} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] \left( \frac{\nu_v^2 E_h^2 + \nu_h E_h E_v}{1+\nu_h} \right) $">
+<IMG STYLE="height: 6.70ex; vertical-align: -2.73ex; " SRC="img441.svg"
+ ALT="$\displaystyle S_v = 23.8 \frac{\text{MPa}}{\text{km}} \times \frac{1 \frac{\tex...
+...}}}{23 \frac{\text{MPa}}{\text{km}}} \times 7950 \text{ ft} = 8227 \text {psi}
+$">
 </DIV><P></P>
-
-<P>
 <P><!-- MATH
  \begin{displaymath}
-C_{13} =  \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h}  \right] (\nu_v E_h E_v)
+P_p = \lambda_p S_v = 0.7 \times 8227 \text {psi} = 5759 \text{ psi}
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img44.svg"
- ALT="$\displaystyle C_{13} = \left[ \frac{1}{(1-\nu_h) E_v - 2 \nu_v^2 E_h} \right] (\nu_v E_h E_v) $">
+<IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img442.svg"
+ ALT="$\displaystyle P_p = \lambda_p S_v = 0.7 \times 8227$"><IMG STYLE="height: 2.21ex; vertical-align: -0.56ex; " SRC="img443.svg"
+ ALT="$\displaystyle \text {psi} = 5759 \text{ psi}
+$">
 </DIV><P></P>
-
-<P>
+Hence, the effective vertical stress is 
 <P><!-- MATH
  \begin{displaymath}
-C_{66} = \frac{C_{11}-C_{12}}{2} = G_h = \cfrac{E_h}{2(1+\nu_h)}
+\sigma_v = S_v - P_p = 8227 \text {psi} - 5759 \text{ psi} = 2468 \text{ psi}
 \end{displaymath}
  -->
 </P>
 <DIV CLASS="mathdisplay">
-<IMG STYLE="height: 6.15ex; vertical-align: -2.28ex; " SRC="img45.svg"
- ALT="$\displaystyle C_{66} = \frac{C_{11}-C_{12}}{2} = G_h = \cfrac{E_h}{2(1+\nu_h)} $">
+<IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img444.svg"
+ ALT="$\displaystyle \sigma_v = S_v - P_p = 8227$"><IMG STYLE="height: 2.21ex; vertical-align: -0.56ex; " SRC="img445.svg"
+ ALT="$\displaystyle \text {psi} - 5759 \text{ psi} = 2468 \text{ psi}
+$">
 </DIV><P></P>
+Now, we are in conditions of using Eq. <A HREF="#eq:tectonicstrains">3.34</A>.
+Let us first calculate the plane strain modulus:
+<P><!-- MATH
+ \begin{displaymath}
+E' = \frac{E}{1-\nu^2} = \frac{5 \times 10^6 \text{ psi}}{1-0.22^2} = 5.25 \times 10^6 \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.49ex; vertical-align: -1.89ex; " SRC="img446.svg"
+ ALT="$\displaystyle E' = \frac{E}{1-\nu^2} = \frac{5 \times 10^6 \text{ psi}}{1-0.22^2} = 5.25 \times 10^6 \text{ psi}
+$">
+</DIV><P></P>
+Then,
 
 <P>
-The parameter <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img46.svg"
- ALT="$C_{44}$"></SPAN> is independent of all other parameters.
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\left\lbrace
+		\begin{array}{l}	 	
+	 	\sigma_{Hmax} =  \frac{\nu}{1-\nu} \sigma_{v} + 
+	 		E' \varepsilon_{Hmax} +
+	 		\nu E'\varepsilon_{hmin} =
+	 		\frac{0.22}{1-0.22} 2468 \text{ psi} + 
+	 		5.25 \times 10^6 \text{ psi} \times 0.0002 = 1745 \text{ psi}\\
+	 	\sigma_{hmin} =  \frac{\nu}{1-\nu} \sigma_{v} +
+	 		\nu E' \varepsilon_{Hmax} +
+	 		E' \varepsilon_{hmin} =
+	 		\frac{0.22}{1-0.22} 2468 \text{ psi} +
+	 		0.22 \times 5.25 \times 10^6 \text{ psi} \times 0.0002 = 927 \text{ psi}  \\
+		\end{array}
+		\right.
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img447.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+\sigma_{Hmax} = \frac{\nu}{1-\n...
+...xt{ psi} \times 0.0002 = 927 \text{ psi} \\
+\end{array}\right.\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+Finally, let us compute the total horizontal stresses by adding pore pressure:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation*}
+\left\lbrace
+		\begin{array}{l}	 	
+	 	S_{Hmax} = \sigma_{Hmax} + P_p =  1745 \text{ psi} + 5759 \text{ psi} = 7504 \text{ psi}\\
+	 	S_{hmin} = \sigma_{hmin} + P_p =  927 \text{ psi} + 5759 \text{ psi} = 6686 \text{ psi} 
+		\end{array}
+		\right. \: \: \blacksquare
+\end{equation*}
+ -->
+<TABLE CLASS="equation*" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img448.svg"
+ ALT="\begin{displaymath}\left\lbrace
+\begin{array}{l}
+S_{Hmax} = \sigma_{Hmax} + P_p ...
+...{ psi} = 6686 \text{ psi}
+\end{array}\right. \: \: \blacksquare\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<P></P> 
+ <BR>
+
+<P>
+Horizontal stresses tend to be different in most basins, hence, <!-- MATH
+ $S_{Hmax} > S_{hmin}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img449.svg"
+ ALT="$S_{Hmax} &gt; S_{hmin}$"></SPAN>.
+In practice, differences <!-- MATH
+ $S_{Hmax} - S_{hmin} = \sigma_{Hmax} - \sigma_{hmin} > 0.7$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img450.svg"
+ ALT="$S_{Hmax} - S_{hmin} = \sigma_{Hmax} - \sigma_{hmin} &gt; 0.7$"></SPAN> MPa (100 psi) tend to be enough to force hydraulic fractures to grow mostly perpendicular to <SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img17.svg"
+ ALT="$S_{hmin}$"></SPAN> in places subjected to normal faulting or strike slip stress regime.
+Locations with small horizontal stress anisotropy (mostly normal faulting sites) impose less control on orientations of hydraulic fractures (Chapter 7) and on orientation of faults (Chapter 5).  
+Polygonal faults (Chapter 5 - [update link]) are an example of normal fault growth with strike in all directions because <!-- MATH
+ $S_{Hmax} \sim S_{hmin}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.17ex; vertical-align: -0.48ex; " SRC="img451.svg"
+ ALT="$S_{Hmax} \sim S_{hmin}$"></SPAN>.
 
 <P>
 
-<H2><A ID="SECTION00366000000000000000">
-<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">6</SPAN> Exercise 3: Displacement Field and Strain Field</A>
+<H2><A ID="SECTION00535000000000000000"></A>
+<A ID="sec:ResCompress"></A>
+<BR>
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Calculation of reservoir compressibility with linear elasticity
 </H2>
 
 <P>
-[To be developed]
+The rock pore volume compressibility <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img452.svg"
+ ALT="$C_{pp}$"></SPAN> is a critical parameter in the fluid flow mass conservation equation and therefore on the diffusivity equation (1D example):
 
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\frac{\partial P_p}{\partial t}= \frac{k}{\mu C_t} \frac{\partial^2 P_p}{\partial x^2}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.76ex; vertical-align: -2.15ex; " SRC="img453.svg"
+ ALT="$\displaystyle \frac{\partial P_p}{\partial t}= \frac{k}{\mu C_t} \frac{\partial^2 P_p}{\partial x^2}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">35</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Where the total compressibility is <!-- MATH
+ $C_t = C_g S_g + C_w S_w + C_o S_o + C_{pp}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img454.svg"
+ ALT="$C_t = C_g S_g + C_w S_w + C_o S_o + C_{pp}$"></SPAN>. 
+Reservoir simulators usually calculate the fluid compressibility <!-- MATH
+ $(C_g S_g + C_w S_w + C_o S_o)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img455.svg"
+ ALT="$(C_g S_g + C_w S_w + C_o S_o)$"></SPAN> based in phase behavior, hence, the only required input is <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img452.svg"
+ ALT="$C_{pp}$"></SPAN>.
+For example, compaction drive is proportional to rock compressibility (see <kbd><A ID="tex2html103"
+  HREF="https://petrowiki.org/Compaction_drive_reservoirs">https://petrowiki.org/Compaction_drive_reservoirs</A></kbd>). 
+
+<P>
+The pore volume compressibility <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img452.svg"
+ ALT="$C_{pp}$"></SPAN> tells us what the change of pore volume <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img456.svg"
+ ALT="$V_p$"></SPAN> is due to a change in pore pressure:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+C_{pp} = \left. \frac{1}{V_p} \frac{\mathrm{d}V_p}{\mathrm{d}P_p} \right|_{S_v,\varepsilon_h}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 6.26ex; vertical-align: -2.81ex; " SRC="img457.svg"
+ ALT="$\displaystyle C_{pp} = \left. \frac{1}{V_p} \frac{\mathrm{d}V_p}{\mathrm{d}P_p} \right\vert _{S_v,\varepsilon_h}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">36</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+The equation above captures reservoir boundary conditions in which the total vertical stress <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img2.svg"
+ ALT="$S_v$"></SPAN> remains constant (overburden above the reservoir does not change) and there is no change of lateral strain <!-- MATH
+ $\varepsilon_h$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img458.svg"
+ ALT="$\varepsilon_h$"></SPAN>, a condition also termed as &ldquo;uniaxial strain&rdquo; deformation. 
+Such condition is appropriate in long and thin reservoirs with a compliant caprock (Figure <A HREF="#fig:ReservoirCompaction">3.19</A>).
+
+<P>
+The measurements of <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img452.svg"
+ ALT="$C_{pp}$"></SPAN> are derived from bulk volume measurements.
+Let us assume that the change of pore volume <!-- MATH
+ $\mathrm{d}V_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.49ex; vertical-align: -0.78ex; " SRC="img459.svg"
+ ALT="$\mathrm{d}V_p$"></SPAN> is equal to the change of bulk volume <!-- MATH
+ $\mathrm{d}V_b$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.20ex; vertical-align: -0.48ex; " SRC="img460.svg"
+ ALT="$\mathrm{d}V_b$"></SPAN>, which means that all bulk deformation is caused by change of porosity.
+Hence it is possible to rewrite the definition of <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img452.svg"
+ ALT="$C_{pp}$"></SPAN> as 
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+C_{pp} = \frac{1}{\frac{V_p}{V_b}} \left( \frac{1}{V_b}  \left. \frac{\mathrm{d}V_b}{\mathrm{d}P_p} \right|_{S_v,\varepsilon_h} \right)
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 7.43ex; vertical-align: -3.29ex; " SRC="img461.svg"
+ ALT="$\displaystyle C_{pp} = \frac{1}{\frac{V_p}{V_b}} \left( \frac{1}{V_b} \left. \frac{\mathrm{d}V_b}{\mathrm{d}P_p} \right\vert _{S_v,\varepsilon_h} \right)$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">37</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Porosity is defined as <!-- MATH
+ $\phi = V_p/V_b$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img462.svg"
+ ALT="$\phi = V_p/V_b$"></SPAN> and the term between parenthesis is defined as the bulk compressibility under uniaxial condition <SPAN CLASS="MATH"><IMG STYLE="height: 2.50ex; vertical-align: -0.81ex; " SRC="img214.svg"
+ ALT="$C_{bp}$"></SPAN> (notice <!-- MATH
+ $\varepsilon_{vol} = \mathrm{d}V_b/V_b$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img463.svg"
+ ALT="$\varepsilon_{vol} = \mathrm{d}V_b/V_b$"></SPAN>).
+Hence, the parameter <SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img452.svg"
+ ALT="$C_{pp}$"></SPAN> is linked to the bulk rock compressibility <SPAN CLASS="MATH"><IMG STYLE="height: 2.50ex; vertical-align: -0.81ex; " SRC="img214.svg"
+ ALT="$C_{bp}$"></SPAN> through porosity:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+C_{pp} = \frac{C_{bp}}{\phi}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.44ex; vertical-align: -2.15ex; " SRC="img464.svg"
+ ALT="$\displaystyle C_{pp} = \frac{C_{bp}}{\phi}$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">38</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+where the bulk compressibility with no lateral strain is approximately equal to the inverse of the bulk constrained modulus <!-- MATH
+ $C_{bp} \sim M^{-1}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.85ex; vertical-align: -0.81ex; " SRC="img465.svg"
+ ALT="$C_{bp} \sim M^{-1}$"></SPAN>, where <!-- MATH
+ $M = (1-\nu) E / [(1+\nu)(1-2\nu)]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img466.svg"
+ ALT="$M = (1-\nu) E / [(1+\nu)(1-2\nu)]$"></SPAN> for an isotropic elastic solid. 
+The approximation is due to a correction needed to account for grain compressibility.
+Finally, we can calculate the uniaxial strain pore compressibility using the typical mechanical parameters <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img349.svg"
+ ALT="$E$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img389.svg"
+ ALT="$\nu$"></SPAN> as,
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:PoreCompwithEnu"></A><!-- MATH
+ \begin{equation}
+C_{pp} = \frac{(1+\nu)(1-2\nu)}{(1-\nu) E \phi} \text{.}
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img467.svg"
+ ALT="$\displaystyle C_{pp} = \frac{(1+\nu)(1-2\nu)}{(1-\nu) E \phi}$">&nbsp; &nbsp;.</SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">39</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:ReservoirCompaction"></A><A ID="2904"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.19:</STRONG>
+Pressure depletion causes reservoir compaction. The reservoir compressibility is inversely proportional to the constrained modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img14.svg"
+ ALT="$M$"></SPAN>.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23338" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./reservoir-compressibility.png"
+ ALT="Image reservoir-compressibility"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Unfortunately, the theory of linear elasticity is quite limited  to capture the visco-elasto-plastic behavior of rocks upon depletion during long times and with large strains.
+Hence, Eq. <A HREF="#eq:PoreCompwithEnu">3.39</A> is just a first order approximation.
+
+<P>
+Typical values of pore volume compressibility vary from 2 to 30<!-- MATH
+ $\times 10^{-6} \text{ psi}^{-1}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.33ex; vertical-align: -0.30ex; " SRC="img468.svg"
+ ALT="$\times 10^{-6}$">&nbsp; &nbsp; psi<IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img230.svg"
+ ALT="$^{-1}$"></SPAN>, where <!-- MATH
+ $\times 10^{-6} \text{ psi}^{-1} = \mu \text{sip}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.33ex; vertical-align: -0.30ex; " SRC="img468.svg"
+ ALT="$\times 10^{-6}$">&nbsp; &nbsp; psi<IMG STYLE="height: 2.59ex; vertical-align: -0.56ex; " SRC="img469.svg"
+ ALT="$^{-1} = \mu$">&nbsp; &nbsp;sip</SPAN>.
+Stiff well cemented rocks have low pore volume compressibility <!-- MATH
+ $\sim 2 \: \mu \text{sip}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img470.svg"
+ ALT="$\sim 2 \: \mu$">&nbsp; &nbsp;sip</SPAN> while uncemented loose sediments tend to have high pore volume compressibility <!-- MATH
+ $\sim 30 \: \mu \text{sip}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.56ex; " SRC="img471.svg"
+ ALT="$\sim 30 \: \mu$">&nbsp; &nbsp;sip</SPAN>.
+
+<P>
+ <BR>
+<SPAN  CLASS="textit">EXAMPLE 3.6</SPAN>: Calculate the pore compressibility of a rock tested in the laboratory with porosity <!-- MATH
+ $\phi = 0.20$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img134.svg"
+ ALT="$\phi = 0.20$"></SPAN>, Young's modulus <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img472.svg"
+ ALT="$E = 10$"></SPAN> GPa, and <!-- MATH
+ $\nu = 0.20$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img473.svg"
+ ALT="$\nu = 0.20$"></SPAN>. Provide the solution in [<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img474.svg"
+ ALT="$10^{6}$"></SPAN>psi]<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.11ex; " SRC="img230.svg"
+ ALT="$^{-1}$"></SPAN> units.
+
+<P>
+<BR>
+<BR>
+SOLUTION <BR>
+The constrained modulus is
+<P><!-- MATH
+ \begin{displaymath}
+M = \frac{(1-\nu) E}{(1+\nu)(1-2\nu)} = \frac{(1-0.20) 10 \text{ GPa} }{(1+0.20)(1-2 \times 0.20)} = 11.11 \text{ GPa} = 1.6 \times 10^{6} \text{ psi}
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.68ex; vertical-align: -2.28ex; " SRC="img475.svg"
+ ALT="$\displaystyle M = \frac{(1-\nu) E}{(1+\nu)(1-2\nu)} = \frac{(1-0.20) 10 \text{ ...
+...(1+0.20)(1-2 \times 0.20)} = 11.11 \text{ GPa} = 1.6 \times 10^{6} \text{ psi}
+$">
+</DIV><P></P>
+Hence,
+<P><!-- MATH
+ \begin{displaymath}
+C_{pp} = \frac{1}{M \phi} = \frac{1}{1.6 \times 10^{6} \text{psi} \times 0.20} = 3.1 \: [10^{6} \text{psi}]^{-1} = 3.1 \: \mu \text{sip} \: \: \blacksquare
+\end{displaymath}
+ -->
+</P>
+<DIV CLASS="mathdisplay">
+<IMG STYLE="height: 5.31ex; vertical-align: -2.15ex; " SRC="img476.svg"
+ ALT="$\displaystyle C_{pp} = \frac{1}{M \phi} = \frac{1}{1.6 \times 10^{6} \text{psi}...
+...} = 3.1 \: [10^{6} \text{psi}]^{-1} = 3.1 \: \mu \text{sip} \: \: \blacksquare
+$">
+</DIV><P></P>   
+
+<P>
+ <BR>
+
+<P>
+
+<H2><A ID="SECTION00536000000000000000">
+<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Generalized linear elasticity problem</A>
+</H2>
+
+<P>
+The general solution of a linear elasticity problem requires combining the equilibrium, kinematic, and constitutive equations.
+The result is a differential equation with displacement <SPAN CLASS="MATH"><IMG STYLE="height: 1.67ex; vertical-align: -0.57ex; " SRC="img477.svg"
+ ALT="$\uline{u}$"></SPAN> as the unknown:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><A ID="eq:Navier"></A><!-- MATH
+ \begin{equation}
+(\lambda + G) \nabla (\nabla \cdot \uline{u}) +
+		G \nabla^2 \uline{u} + \rho \uline{b} = 0
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.84ex; vertical-align: -0.69ex; " SRC="img478.svg"
+ ALT="$\displaystyle (\lambda + G) \nabla (\nabla \cdot \uline{u}) +
+G \nabla^2 \uline{u} + \rho \uline{b} = 0$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">40</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P> 
+
+<P>
+where <!-- MATH
+ $\lambda = (\nu E)/[(1+\nu)(1-2\nu)]$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img479.svg"
+ ALT="$\lambda = (\nu E)/[(1+\nu)(1-2\nu)]$"></SPAN> is the first Lamé parameter, <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img401.svg"
+ ALT="$G$"></SPAN> is the shear modulus, <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img307.svg"
+ ALT="$\rho$"></SPAN> is the rock bulk mass density, and <SPAN CLASS="MATH"><IMG STYLE="height: 2.28ex; vertical-align: -0.57ex; " SRC="img322.svg"
+ ALT="$\uline{b}$"></SPAN> is the body force acceleration vector (usually gravity). 
+A review of the gradient <SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img480.svg"
+ ALT="$\nabla ()$"></SPAN>, divergence <!-- MATH
+ $\nabla \cdot ()$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img481.svg"
+ ALT="$\nabla \cdot ()$"></SPAN> and Laplacian <!-- MATH
+ $\nabla^2 ()$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.72ex; vertical-align: -0.69ex; " SRC="img482.svg"
+ ALT="$\nabla^2 ()$"></SPAN> operators is available at <kbd><A ID="tex2html105"
+  HREF="https://en.wikipedia.org/wiki/Vector_calculus_identities">https://en.wikipedia.org/wiki/Vector_calculus_identities</A></kbd>. 
+In summary, these are all derivatives that quantify changes of displacement in space. 
+The full derivation of this equation can be found here: <kbd><A ID="tex2html106"
+  HREF="https://youtu.be/1PnQ10H2vV0">https://youtu.be/1PnQ10H2vV0</A></kbd>.
+
+<P>
+The solution requires knowledge of the domain geometry, boundary conditions and initial conditions. 
+For example, a hydraulic fracture simulator solves numerically these same equations (Figure <A HREF="#fig:GeneralContMechProblem">3.20</A>).
+In this class, we will see analytical solutions of this equation for 1) displacements and stresses around wellbores, and 2) displacements and stresses around planar fractures.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:GeneralContMechProblem"></A><A ID="2956"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 3.20:</STRONG>
+General continuum mechanics problem.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23389" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img483.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/4-GeneralContMechProblem.PNG}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
 
 <DIV CLASS="navigation"><HR>
@@ -385,22 +2050,22 @@ The parameter <SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.
  HREF="node18.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node11.html">
+ HREF="node14.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node16.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html345"
+<A ID="tex2html676"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node18.html">2.7 WP4: Solution of</A>
+ HREF="node18.html">3.4 Elastic anisotropy</A>
 <B> Up:</B> <A
- HREF="node11.html">2. Continuum mechanics</A>
+ HREF="node14.html">3. Fundamentals of Solid</A>
 <B> Previous:</B> <A
- HREF="node16.html">2.5 WP3: Horizontal Stresses</A>
- &nbsp; <B>  <A ID="tex2html346"
+ HREF="node16.html">3.2 Kinematic equations: displacements</A>
+ &nbsp; <B>  <A ID="tex2html677"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 

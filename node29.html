@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>4.3 WP6: Applications of Thermoelasticity</TITLE>
-<META NAME="description" CONTENT="4.3 WP6: Applications of Thermoelasticity">
-<META NAME="keywords" CONTENT="AdvancedGeomech">
+<TITLE>4.5 Yield/failure locus</TITLE>
+<META NAME="description" CONTENT="4.5 Yield/failure locus">
+<META NAME="keywords" CONTENT="IPG">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,8 +13,9 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
-<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+<LINK REL="STYLESHEET" HREF="IPG.css">
 
+<LINK REL="next" HREF="node30.html">
 <LINK REL="previous" HREF="node28.html">
 <LINK REL="next" HREF="node30.html">
 </HEAD>
@@ -26,452 +27,61 @@
  HREF="node30.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="node26.html">
+ HREF="node24.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node28.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html416"
+<A ID="tex2html736"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node30.html">5. Inelasticity</A>
+ HREF="node30.html">4.6 Strength anisotropy</A>
 <B> Up:</B> <A
- HREF="node26.html">4. Thermo- and chemo-mechanical</A>
+ HREF="node24.html">4. Rock Yield and</A>
 <B> Previous:</B> <A
- HREF="node28.html">4.2 Chemo-mechanics</A>
- &nbsp; <B>  <A ID="tex2html417"
+ HREF="node28.html">4.4 Compression failure: Pore</A>
+ &nbsp; <B>  <A ID="tex2html737"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
-<!--Table of Child-Links-->
-<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
-<UL CLASS="ChildLinks">
-<LI><A ID="tex2html418"
-  HREF="node29.html#SECTION00531000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Thermal stress around a wellbore</A>
-<LI><A ID="tex2html419"
-  HREF="node29.html#SECTION00532000000000000000"><SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Thermal stress in a reservoir</A>
-</UL>
-<!--End of Table of Child-Links-->
-<HR>
-
-<H1><A ID="SECTION00530000000000000000">
-<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN> WP6: Applications of Thermoelasticity</A>
+<H1><A ID="SECTION00650000000000000000">
+<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">5</SPAN> Yield/failure locus</A>
 </H1>
 
 <P>
-Theory thermo-Elasticity:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\left\lbrace
-		\begin{array} {ll}
-			\nabla \uuline{\sigma} + \uline{f} = \uline{0} & \text{Equilibrium}\\
-			\uuline{\varepsilon} = \cfrac{1}{2} ( \nabla {\uline{u}} + \nabla {\uline{u}}^T ) & \text{Kinematic} \\
-			\uuline{\sigma} = \uuline{C} \cdot \uuline{\varepsilon} \color{red} + 3 \alpha_L K \theta \uuline{I}; \:\: \theta = T - T_0  & \text{Constitutive}\\
-			\color{red} \cfrac{\partial \theta}{\partial t} = \cfrac{k_T}{\rho c_v} \nabla^2 \theta + \cfrac{3 \beta K T_0}{\rho c_v} \cfrac{\partial \varepsilon_{vol}}{\partial t} & \text{Diffusivity}
-		\end{array}
-	\right.
-\end{equation}
+We can combine all rock failure types in a single <!-- MATH
+ $(\sigma_n,\tau)$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img77.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{ll}
-\nabla \uuline{\sigma} + \ulin...
-...ilon_{vol}}{\partial t} &amp; \text{Diffusivity}
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Theory thermo-poroelasticity:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\left\lbrace
-		\begin{array} {ll}
-			\cfrac{\partial p}{\partial t} - \cfrac{k}{\mu} M \nabla^2 p = - \alpha M \cfrac{\partial \varepsilon_{vol}}{\partial t} \color{red} + \beta_e M  \cfrac{\partial T}{\partial t} & \text{Pore pressure diffusivity}\\
-			\color{red} \cfrac{\partial T}{\partial t} - \kappa_T \nabla^2 T = -\cfrac{\alpha_d}{m_d} \cfrac{\partial \varepsilon_{vol}}{\partial t} + \cfrac{\beta_e}{m_d} \cfrac{\partial p}{\partial t} & \text{Temperature diffusivity}
-		\end{array}
-	\right.
-\end{equation}
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img583.svg"
+ ALT="$(\sigma_n,\tau)$"></SPAN> plot (Fig. <A HREF="#fig:YieldLocus">4.17</A>).
+The rock would fail in tension if the Mohr circle (or state of stress) goes further to the left of <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img48.svg"
+ ALT="$T_S$"></SPAN>. 
+It would fail in shear if it touches the red line <!-- MATH
+ $\tau = S_0 + \mu_i \sigma_n$
  -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img78.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{ll}
-\cfrac{\partial p}{\partial t}...
-...\partial t} &amp; \text{Temperature diffusivity}
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-where the coefficient of volumetric thermal expansion for variation in fluid content at constant frame volume is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\beta_e = \alpha \beta_d + \phi (\beta_f - \beta_s)
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.65ex; vertical-align: -0.81ex; " SRC="img79.svg"
- ALT="$\displaystyle \beta_e = \alpha \beta_d + \phi (\beta_f - \beta_s)$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-where usually <!-- MATH
- $\beta_f > \beta_s$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.52ex; vertical-align: -0.81ex; " SRC="img80.svg"
- ALT="$\beta_f &gt; \beta_s$"></SPAN>. The drained volumetric thermal expansion coefficient is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\beta_d = \beta_s; \: \text{(for an ideal porous medium)}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img81.svg"
- ALT="$\displaystyle \beta_d = \beta_s; \:$">&nbsp; &nbsp;(for an ideal porous medium)</SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">4</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Drained thermoelastic effective stress coefficient (<SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img82.svg"
- ALT="$K$"></SPAN>: Bulk modulus)
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\alpha_d = K \: \beta_d
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 2.27ex; vertical-align: -0.56ex; " SRC="img83.svg"
- ALT="$\displaystyle \alpha_d = K \: \beta_d$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">5</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-and the drained specific heat at constant strain divided reference temperature is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-m_d = \frac{c_d}{T_0}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.71ex; vertical-align: -2.05ex; " SRC="img84.svg"
- ALT="$\displaystyle m_d = \frac{c_d}{T_0}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">6</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.24ex; vertical-align: -0.56ex; " SRC="img627.svg"
+ ALT="$\tau = S_0 + \mu_i \sigma_n$"></SPAN>. 
+Last, it would develop significant compressive plastic strains if it crosses the yield cap (blue line - as you may guess, there is also an equation for it!).	
 
 <P>
 
-<H2><A ID="SECTION00531000000000000000">
-<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Exercise 1: Thermal stress around a wellbore</A>
-</H2> 
-
+<DIV class="CENTER"><A ID="fig:YieldLocus"></A><A ID="4907"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 4.17:</STRONG>
+Summary of basic rock failure modes.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par23979" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img628.svg"
+ ALT="\includegraphics[scale=0.55]{.././Figures/split/5B-YieldLocus.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
 <P>
-
-<H2><A ID="SECTION00532000000000000000">
-<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Exercise 2: Thermal stress in a reservoir</A>
-</H2> 
-
-<P>
-[Exercise to be based on <kbd><A ID="tex2html32"
-  HREF="https://doi.org/10.3390/en14165054">https://doi.org/10.3390/en14165054</A></kbd>]
-
-<P>
-Constitutive equation:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\uuline{\sigma} = \uuline{C} \cdot \uuline{\varepsilon} \color{red} + 3 \alpha_L K \theta \uuline{I}; \:\: \theta = T - T_0
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.44ex; vertical-align: -1.73ex; " SRC="img85.svg"
- ALT="$\displaystyle \uuline{\sigma} = \uuline{C} \cdot \uuline{\varepsilon} \color{red} + 3 \alpha_L K \theta \uuline{I}; \:\: \theta = T - T_0$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">7</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Assuming uniform cooling leads to no horizontal strains: <!-- MATH
- $\varepsilon_{11} = \varepsilon_{22} = 0$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.05ex; vertical-align: -0.45ex; " SRC="img86.svg"
- ALT="$\varepsilon_{11} = \varepsilon_{22} = 0$"></SPAN>. <BR>
-
-<P>
-Furthermore, assuming a compliant caprock, no change of overburden, and small change in pore pressure leads to constant effective vertical stress <!-- MATH
- $\sigma_{33} =$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img87.svg"
- ALT="$\sigma_{33} = $"></SPAN>cst.
-
-<P>
-Let us use the matrix notation for the normal stresses (shear stresses are zero):
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-%compliance matrix
-	\left[
-		\begin{array} {c}
-			\sigma_{11} \\
-			\sigma_{22} \\
-			\sigma_{33}
-		\end{array}
-	\right]	
-	= 
-	\frac{E}{(1+\nu)(1-2\nu)}
-	\left[
-	\begin{array}{ccc}
-		1-\nu & \nu & \nu \\
-		\nu & 1-\nu & \nu \\
-		\nu & \nu & 1-\nu 
-	\end{array}
-	\right]
-	\:
-	\left[
-		\begin{array} {c}
-			0 \\
-			0 \\
-			\varepsilon_{33}  
-		\end{array}
-	\right]
-	+
-	\left[
-		\begin{array} {c}
-			3 \alpha_L K \theta \\
-			3 \alpha_L K \theta \\
-			3 \alpha_L K \theta 
-		\end{array}
-	\right]
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img88.svg"
- ALT="\begin{displaymath}%compliance matrix
-\left[
-\begin{array}{c}
-\sigma_{11} \\
-\...
-...
-3 \alpha_L K \theta \\
-3 \alpha_L K \theta
-\end{array}\right]\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">8</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Solving for <!-- MATH
- $\sigma_{11}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img89.svg"
- ALT="$\sigma_{11}$"></SPAN> and <!-- MATH
- $\sigma_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img90.svg"
- ALT="$\sigma_{33}$"></SPAN> results in:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\left\lbrace
-		\begin{array} {ll}
-			\sigma_{11} =  \cfrac{\nu E}{(1+\nu)(1-2\nu)} \varepsilon_{33} + 3 \alpha_L K \theta \\
-			\sigma_{33} =  \cfrac{(1-\nu) E}{(1+\nu)(1-2\nu)} \varepsilon_{33} + 3 \alpha_L K \theta
-		\end{array}
-	\right.
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
- SRC="img91.svg"
- ALT="\begin{displaymath}\left\lbrace
-\begin{array}{ll}
-\sigma_{11} = \cfrac{\nu E}{(1...
-...\nu)} \varepsilon_{33} + 3 \alpha_L K \theta
-\end{array}\right.\end{displaymath}"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">9</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Replacing <!-- MATH
- $\varepsilon_{33}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img92.svg"
- ALT="$\varepsilon_{33}$"></SPAN> in the first equation leads to
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_{11} =   \left( \frac{\nu}{1-\nu} \right) \sigma_{33} + \left( \frac{1-2\nu}{1-\nu} \right) 3 \alpha_L K \theta
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img93.svg"
- ALT="$\displaystyle \sigma_{11} = \left( \frac{\nu}{1-\nu} \right) \sigma_{33} + \left( \frac{1-2\nu}{1-\nu} \right) 3 \alpha_L K \theta$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">10</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-which expressed in terms of the Young's modulus (<!-- MATH
- $K = E/[3(1-2\nu)]$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img94.svg"
- ALT="$K = E/[3(1-2\nu)]$"></SPAN>) is:
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\sigma_{11} =  \left( \frac{\nu}{1-\nu} \right) \sigma_{33} + \frac{\alpha_L E}{1-\nu} \theta
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.77ex; vertical-align: -2.31ex; " SRC="img95.svg"
- ALT="$\displaystyle \sigma_{11} = \left( \frac{\nu}{1-\nu} \right) \sigma_{33} + \frac{\alpha_L E}{1-\nu} \theta$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">11</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Hence, a variation of horizontal stress with temperature is
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\frac{\partial \sigma_{11}}{\partial \theta} =  + \frac{\alpha_L E}{1-\nu}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 5.16ex; vertical-align: -1.89ex; " SRC="img96.svg"
- ALT="$\displaystyle \frac{\partial \sigma_{11}}{\partial \theta} = + \frac{\alpha_L E}{1-\nu}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">12</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-Which is in the order of
-
-<P>
-<P></P>
-<DIV CLASS="mathdisplay"><!-- MATH
- \begin{equation}
-\frac{\partial \sigma_{11}}{\partial \theta} =  0.1 \frac{\text{MPa}}{^{\circ}\text{C}}
-\end{equation}
- -->
-<TABLE CLASS="equation" >
-<TR>
-<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 4.97ex; vertical-align: -1.70ex; " SRC="img97.svg"
- ALT="$\displaystyle \frac{\partial \sigma_{11}}{\partial \theta} = 0.1 \frac{\text{MPa}}{^{\circ}\text{C}}$"></SPAN></TD>
-<TD  CLASS="eqno" style="text-align:right">
-(<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">13</SPAN>)</TD></TR>
-</TABLE></DIV>
-<P></P>
-
-<P>
-for <!-- MATH
- $\alpha_L = 10^{-5}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.50ex; vertical-align: -0.47ex; " SRC="img98.svg"
- ALT="$\alpha_L = 10^{-5}$"></SPAN> <!-- MATH
- $1/^{\circ}$
- -->
-<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img99.svg"
- ALT="$1/^{\circ}$"></SPAN>C, <SPAN CLASS="MATH"><IMG STYLE="height: 1.79ex; vertical-align: -0.11ex; " SRC="img100.svg"
- ALT="$E = 10$"></SPAN> GPa, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.70ex; vertical-align: -0.11ex; " SRC="img101.svg"
- ALT="$\nu = 0.2$"></SPAN>.
-
-<P>
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A
- HREF="node30.html">
-<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
-<A
- HREF="node26.html">
-<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
-<A
- HREF="node28.html">
-<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html416"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A
- HREF="node30.html">5. Inelasticity</A>
-<B> Up:</B> <A
- HREF="node26.html">4. Thermo- and chemo-mechanical</A>
-<B> Previous:</B> <A
- HREF="node28.html">4.2 Chemo-mechanics</A>
- &nbsp; <B>  <A ID="tex2html417"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
+<BR><HR>
 
 </BODY>
 </HTML>
