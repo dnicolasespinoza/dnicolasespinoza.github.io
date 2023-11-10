@@ -615,7 +615,7 @@ $external_latex_labels{$key} = q|1.6 Stress regime classification|;
 $noresave{$key} = "$nosave";
 
 $key = q/fig:StressShadow/;
-$external_latex_labels{$key} = q|5.1 $S_Hmax$ direction around a propped hydraulic fracture (Roussel and Sharma, 2011)|; 
+$external_latex_labels{$key} = q|5.21 $S_Hmax$ direction around a propped hydraulic fracture (Roussel and Sharma, 2011)|; 
 $noresave{$key} = "$nosave";
 
 $key = q/fig:Subsidence/;
