@@ -3,9 +3,9 @@
 <!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
 <HTML lang="EN">
 <HEAD>
-<TITLE>3. Fundamentals of Solid Continuum Mechanics</TITLE>
-<META NAME="description" CONTENT="3. Fundamentals of Solid Continuum Mechanics">
-<META NAME="keywords" CONTENT="IPG">
+<TITLE>2.3 Constitutive equations</TITLE>
+<META NAME="description" CONTENT="2.3 Constitutive equations">
+<META NAME="keywords" CONTENT="AdvancedGeomech">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
 
@@ -13,10 +13,10 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 <META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
 
-<LINK REL="STYLESHEET" HREF="IPG.css">
+<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
 
-<LINK REL="next" HREF="node24.html">
-<LINK REL="previous" HREF="node8.html">
+<LINK REL="next" HREF="node15.html">
+<LINK REL="previous" HREF="node13.html">
 <LINK REL="next" HREF="node15.html">
 </HEAD>
 
@@ -27,88 +27,69 @@
  HREF="node15.html">
 <IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
 <A
- HREF="IPG.html">
+ HREF="node11.html">
 <IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
 <A
  HREF="node13.html">
 <IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
-<A ID="tex2html647"
+<A ID="tex2html332"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
 <BR>
 <B> Next:</B> <A
- HREF="node15.html">3.1 Stress tensor</A>
+ HREF="node15.html">2.4 1D subsurface mechanical</A>
 <B> Up:</B> <A
- HREF="IPG.html">Introduction to Energy Geomechanics</A>
+ HREF="node11.html">2. Continuum mechanics</A>
 <B> Previous:</B> <A
- HREF="node13.html">2.5 Further reading and</A>
- &nbsp; <B>  <A ID="tex2html648"
+ HREF="node13.html">2.2 Kinematic equations</A>
+ &nbsp; <B>  <A ID="tex2html333"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
-
-<H1><A ID="SECTION00500000000000000000">
-<SPAN CLASS="arabic">3</SPAN>. Fundamentals of Solid Continuum Mechanics</A>
-</H1>
-
-<P>
-<BR><HR>
 <!--Table of Child-Links-->
 <A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A ID="tex2html649"
-  HREF="node15.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stress tensor</A>
+<LI><A ID="tex2html334"
+  HREF="node14.html#SECTION00331000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stiffness matrix reduction to linear isotropic elasticity</A>
+<LI><A ID="tex2html335"
+  HREF="node14.html#SECTION00332000000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Stiffness matrix for vertical transverse isotropic elasticity</A>
 <UL>
-<LI><A ID="tex2html650"
-  HREF="node15.html#SECTION00511000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">1</SPAN> Cauchy's equations of stress equilibrium</A>
-<LI><A ID="tex2html651"
-  HREF="node15.html#SECTION00512000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">2</SPAN> Application of Cauchy's equations for total vertical stress calculation</A>
-<LI><A ID="tex2html652"
-  HREF="node15.html#SECTION00513000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN>.<SPAN CLASS="arabic">3</SPAN> Continuum mechanics solution of an arbitrary problem</A>
-</UL>
-<BR>
-<LI><A ID="tex2html653"
-  HREF="node16.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Kinematic equations: displacements and strains</A>
-<LI><A ID="tex2html654"
-  HREF="node17.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Constitutive equation: stress-strain relationships</A>
-<UL>
-<LI><A ID="tex2html655"
-  HREF="node17.html#SECTION00531000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Linear isotropic elasticity</A>
-<LI><A ID="tex2html656"
-  HREF="node17.html#SECTION00532000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> The isotropic solid in Voigt notation</A>
-<LI><A ID="tex2html657"
-  HREF="node17.html#SECTION00533000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN> Effective stress and elasticity</A>
-<LI><A ID="tex2html658"
-  HREF="node17.html#SECTION00534000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Calculation of horizontal stress according to linear elasticity</A>
-<LI><A ID="tex2html659"
-  HREF="node17.html#SECTION00535000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Calculation of reservoir compressibility with linear elasticity</A>
-<LI><A ID="tex2html660"
-  HREF="node17.html#SECTION00536000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Generalized linear elasticity problem</A>
-</UL>
-<BR>
-<LI><A ID="tex2html661"
-  HREF="node18.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">4</SPAN> Elastic anisotropy</A>
-<LI><A ID="tex2html662"
-  HREF="node19.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">5</SPAN> Permanent deformation: Elasto-plasticity</A>
-<LI><A ID="tex2html663"
-  HREF="node20.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">6</SPAN> Time-dependent deformation: Visco-elasticity</A>
-<LI><A ID="tex2html664"
-  HREF="node21.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN> Multiphysics problems</A>
-<UL>
-<LI><A ID="tex2html665"
-  HREF="node21.html#SECTION00571000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">1</SPAN> Poro-elasticity</A>
-<LI><A ID="tex2html666"
-  HREF="node21.html#SECTION00572000000000000000"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">7</SPAN>.<SPAN CLASS="arabic">2</SPAN> Thermo-elasticity</A>
-</UL>
-<BR>
-<LI><A ID="tex2html667"
-  HREF="node22.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">8</SPAN> Problems</A>
-<LI><A ID="tex2html668"
-  HREF="node23.html"><SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">9</SPAN> Further reading and references</A>
-</UL>
+<LI><A ID="tex2html336"
+  HREF="node14.html#SECTION00332100000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Static moduli</A>
+<LI><A ID="tex2html337"
+  HREF="node14.html#SECTION00332200000000000000"><SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Dynamic moduli</A>
+</UL></UL>
 <!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00330000000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN> Constitutive equations</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00331000000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stiffness matrix reduction to linear isotropic elasticity</A>
+</H2>
+
+<P>
+
+<H2><A ID="SECTION00332000000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN> Stiffness matrix for vertical transverse isotropic elasticity</A>
+</H2> 
+<P>
+
+<H3><A ID="SECTION00332100000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">1</SPAN> Static moduli</A>
+</H3>
+	
+<H3><A ID="SECTION00332200000000000000">
+<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">3</SPAN>.<SPAN CLASS="arabic">2</SPAN>.<SPAN CLASS="arabic">2</SPAN> Dynamic moduli</A>
+</H3>
+
+<P>
 <BR><HR>
 
 </BODY>

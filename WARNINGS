@@ -2,10 +2,4 @@ No implementation found for style `authblk'
 No implementation found for style `mathtools'
 No implementation found for style `ulem'
 No implementation found for style `soul'
-
-IPG.tex is newer than IPG.aux: Please rerun latex.
-
-Substitution of arg to newlabelxx delayed.
-
-? brace missing for \oldcontentsline
-{eqnarray} does not have 3 columns, inserting blank cell
+No implementation found for style `breakcites'

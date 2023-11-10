@@ -1,965 +1,337 @@
-# LaTeX2HTML 2019.2 (Released June 5, 2019)
+# LaTeX2HTML 2021.2 (Released July 1, 2021)
 # Associate internals original text with physical files.
 
 
-$key = q/Ch:Failure/;
-$ref_files{$key} = "$dir".q|node24.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:BreakoutAngle/;
-$ref_files{$key} = "$dir".q|node46.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:Cauchy/;
-$ref_files{$key} = "$dir".q|node15.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:CoeffA/;
-$ref_files{$key} = "$dir".q|node63.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:CoeffLateralEffStress/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:ComplianceMatrix/;
-$ref_files{$key} = "$dir".q|node63.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:CoulombTS/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:FracGradient/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:FrictionangleParamq/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:KI_cstP/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:LameFull/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:LameThermoElasticity/;
-$ref_files{$key} = "$dir".q|node21.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:LineCrackPo/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:Navier/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:Pb/;
-$ref_files{$key} = "$dir".q|node47.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:PoissonDef/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:PoreCompwithEnu/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:RGW/;
-$ref_files{$key} = "$dir".q|node49.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:SGcalc/;
-$ref_files{$key} = "$dir".q|node39.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:StiffnessMatrix/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:Trapezoidal/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:UCS-CohStrength-q/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:VertStressDiscrete/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:VertStressGral/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:YoungDef/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:compactionexp/;
-$ref_files{$key} = "$dir".q|node10.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:constitutiveDsigma/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:hydrostporepress/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:matrixRPG/;
-$ref_files{$key} = "$dir".q|node39.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:straintensor/;
-$ref_files{$key} = "$dir".q|node22.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:tectonicstrains/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:verteffstress/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:vertstress-onshore/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:volstrain/;
-$ref_files{$key} = "$dir".q|node16.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/eq:wo_cstP/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:2DFracModels/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:3DMohrCircle/;
-$ref_files{$key} = "$dir".q|node39.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:AnglesMatrixRPG/;
-$ref_files{$key} = "$dir".q|node39.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BakerHughesJS/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BlockFracsPerm/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BoreholeImaging/;
-$ref_files{$key} = "$dir".q|node46.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BoreholeImagingTfracs/;
-$ref_files{$key} = "$dir".q|node47.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BrazilianTest/;
-$ref_files{$key} = "$dir".q|node26.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BreakoutAngle/;
-$ref_files{$key} = "$dir".q|node46.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BreakoutDevWellbore/;
-$ref_files{$key} = "$dir".q|node49.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BreakoutPhoto/;
-$ref_files{$key} = "$dir".q|node46.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:BrittleCrust/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:CCSintro/;
-$ref_files{$key} = "$dir".q|node5.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ClayPlatelet/;
-$ref_files{$key} = "$dir".q|node50.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ClaySwelling/;
-$ref_files{$key} = "$dir".q|node50.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:CoulombCriterionPS/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:CoulombFailure/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Creep/;
-$ref_files{$key} = "$dir".q|node20.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:DecaturMS/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:DepletionSchematic/;
-$ref_files{$key} = "$dir".q|node63.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:DevWellFailure/;
-$ref_files{$key} = "$dir".q|node49.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:DirectTensionRock/;
-$ref_files{$key} = "$dir".q|node26.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:DrainageFracture/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ECD/;
-$ref_files{$key} = "$dir".q|node44.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ElastoPlastIntro/;
-$ref_files{$key} = "$dir".q|node31.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ElastoplasticityModes/;
-$ref_files{$key} = "$dir".q|node31.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ExBarnett/;
-$ref_files{$key} = "$dir".q|node11.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ExampleLeakoff/;
-$ref_files{$key} = "$dir".q|node56.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Failure-LengthScales/;
-$ref_files{$key} = "$dir".q|node25.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FailureMechanisms/;
-$ref_files{$key} = "$dir".q|node32.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FaultGenesis/;
-$ref_files{$key} = "$dir".q|node36.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FaultsOutcrop/;
-$ref_files{$key} = "$dir".q|node36.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracBarriers/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracBranching/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracGradient/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracIdealOrientation/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracInterference/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracPermMohr/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracResPerm/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracWellImaging/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracsTuffo/;
-$ref_files{$key} = "$dir".q|node32.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracsWellOrient/;
-$ref_files{$key} = "$dir".q|node11.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FracturesEOR/;
-$ref_files{$key} = "$dir".q|node56.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FreeFEMexample/;
-$ref_files{$key} = "$dir".q|node16.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:FrictionBlock/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:GeneralContMechProblem/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:GeolMapFault/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:GeothermalIntro/;
-$ref_files{$key} = "$dir".q|node5.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:GrabenHorst/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:GriffithSol/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:HydFracMicroseismicity/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:HzStressGlobalMap/;
-$ref_files{$key} = "$dir".q|node11.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:HzStresses/;
-$ref_files{$key} = "$dir".q|node11.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:HzWells/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:IdealFaultsGeneralCase/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:IdealLeakoffTest/;
-$ref_files{$key} = "$dir".q|node56.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:KGD/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Kcompressibility/;
-$ref_files{$key} = "$dir".q|node63.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:KirschDev/;
-$ref_files{$key} = "$dir".q|node45.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:KirschDevWell/;
-$ref_files{$key} = "$dir".q|node49.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:KirschExample/;
-$ref_files{$key} = "$dir".q|node45.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:KirschFarField/;
-$ref_files{$key} = "$dir".q|node45.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:KirschPw/;
-$ref_files{$key} = "$dir".q|node45.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:LateralEffStressCoeff/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:LeakoffInstability/;
-$ref_files{$key} = "$dir".q|node50.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:LoadingUnloading/;
-$ref_files{$key} = "$dir".q|node19.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:MicroFracCoalescence/;
-$ref_files{$key} = "$dir".q|node32.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Microseismicity/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:MohrCircleDepletion/;
-$ref_files{$key} = "$dir".q|node63.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:MudWindow/;
-$ref_files{$key} = "$dir".q|node48.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Multicluster/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:NetPressure/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:NormalFault/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:OffshorePpSv/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:PKN/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:PScsGcs/;
-$ref_files{$key} = "$dir".q|node39.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:PoreCollapse/;
-$ref_files{$key} = "$dir".q|node28.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:PrincStressesDevWell/;
-$ref_files{$key} = "$dir".q|node49.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Principi/;
-$ref_files{$key} = "$dir".q|node15.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ProcessesFracturing/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:REVCylCoord/;
-$ref_files{$key} = "$dir".q|node45.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:RequiredUCS/;
-$ref_files{$key} = "$dir".q|node46.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ReservoirCompaction/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ReverseFault/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:RockMicrostructure/;
-$ref_files{$key} = "$dir".q|node25.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:RockShearData/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:SCB/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:SandFailureLenoir/;
-$ref_files{$key} = "$dir".q|node30.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:SandStrength/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ScalarVectorTensor/;
-$ref_files{$key} = "$dir".q|node15.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:SedRockAnisotropy/;
-$ref_files{$key} = "$dir".q|node18.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:SeismicCP/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ShaleCompaction/;
-$ref_files{$key} = "$dir".q|node10.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ShearStrengthLimit/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Sneddon/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StageDistance/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StepRateTest-Example/;
-$ref_files{$key} = "$dir".q|node56.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StepRateTest-Schematic/;
-$ref_files{$key} = "$dir".q|node56.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StereoNet/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrainHardSoft/;
-$ref_files{$key} = "$dir".q|node31.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrainrateStiffness/;
-$ref_files{$key} = "$dir".q|node20.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrengthAnisotropy/;
-$ref_files{$key} = "$dir".q|node30.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrengthFaults/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StressLogExample/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StressLogPermian/;
-$ref_files{$key} = "$dir".q|node12.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StressLogWF/;
-$ref_files{$key} = "$dir".q|node57.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StressPolygon/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StressPolygonNF-SS/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StressRelax/;
-$ref_files{$key} = "$dir".q|node20.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StressRelaxField/;
-$ref_files{$key} = "$dir".q|node20.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrikeConvention/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrikeDipMap/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrikeExample/;
-$ref_files{$key} = "$dir".q|node37.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:StrikeSlipSchematics/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TVIandOR/;
-$ref_files{$key} = "$dir".q|node18.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TXstressmap/;
-$ref_files{$key} = "$dir".q|node11.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TensFracsSchematic/;
-$ref_files{$key} = "$dir".q|node47.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TensFracsSurface/;
-$ref_files{$key} = "$dir".q|node47.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TensStrengthSummary/;
-$ref_files{$key} = "$dir".q|node26.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TensionSteel/;
-$ref_files{$key} = "$dir".q|node26.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TfracsDevWellbore/;
-$ref_files{$key} = "$dir".q|node49.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:Thamama/;
-$ref_files{$key} = "$dir".q|node40.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ThermalEffectsWell/;
-$ref_files{$key} = "$dir".q|node50.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ThermalSwellStress/;
-$ref_files{$key} = "$dir".q|node21.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ThrustFault/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TotalStressPath/;
-$ref_files{$key} = "$dir".q|node63.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TriaxSchematic/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:TriaxialCell/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:UCS/;
-$ref_files{$key} = "$dir".q|node27.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:USGSstressmap/;
-$ref_files{$key} = "$dir".q|node11.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:WellIntro/;
-$ref_files{$key} = "$dir".q|node44.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:WellOrientation/;
-$ref_files{$key} = "$dir".q|node49.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:WellStrengthAnisotropy/;
-$ref_files{$key} = "$dir".q|node51.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:WellboreCaliper/;
-$ref_files{$key} = "$dir".q|node44.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:WellboreCasingDepths/;
-$ref_files{$key} = "$dir".q|node48.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:WellboreInstabilityShale/;
-$ref_files{$key} = "$dir".q|node50.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:WorldStressMap/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:YieldLocus/;
-$ref_files{$key} = "$dir".q|node29.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:YoungLab/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:YoungPoisson/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:YoungSummary/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ZipperFrac/;
-$ref_files{$key} = "$dir".q|node58.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:balloon/;
-$ref_files{$key} = "$dir".q|node11.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ch2-SvNSexample/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ch2-Svgeneralcase/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:ch2-onshorestress/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:coffee-effstress/;
-$ref_files{$key} = "$dir".q|node9.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:dikes/;
-$ref_files{$key} = "$dir".q|node55.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:dsn/;
-$ref_files{$key} = "$dir".q|node39.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:elastic-summary/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:elasticity1D2D3D/;
-$ref_files{$key} = "$dir".q|node17.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:intro-FaultFoldSeismic/;
-$ref_files{$key} = "$dir".q|node4.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:intro-JurassicCoastRollover/;
-$ref_files{$key} = "$dir".q|node4.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/fig:intro-appgeomech/;
+$key = q/eq:VTIComplianceMatrix/;
 $ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:intro-stressmap/;
+$key = q/eq:VTIStiffnessMatrix/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:general-form/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:generic-stress-strain/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:linear-elasticity/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:strain/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:variationnal-form/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:variationnal-form-linear-elasticity/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:well-formulation/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/eq:wellbore-stress/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:1DstrainCompliance/;
 $ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:intro-wellbores/;
+$key = q/fig:1DstrainEq/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:1DstrainStressPaths/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:3DMohrCircle/;
+$ref_files{$key} = "$dir".q|node2.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:AnisotropyRatios/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Biot/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BiotMethod1/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BiotMethod2/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BiotMethod3/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:BiotModulus/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Cauchy/;
+$ref_files{$key} = "$dir".q|node2.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:CharacPorePressDiffTime/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ContMech/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:Depletion/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:DevWell/;
 $ref_files{$key} = "$dir".q|node5.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:kinematics2D/;
-$ref_files{$key} = "$dir".q|node16.html|; 
+$key = q/fig:Diffusivity/;
+$ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec1-5/;
+$key = q/fig:DrainedUndrained/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ELporosity/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:ENuDyn/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:EffectiveStressTensor/;
+$ref_files{$key} = "$dir".q|node2.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:EnergyPorousSolid/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:EqDrainedBulk/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:EqKsN/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:EqPoroelasticity/;
+$ref_files{$key} = "$dir".q|node4.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FaultsHIB/;
+$ref_files{$key} = "$dir".q|node2.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracModelPS/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracStress1/;
+$ref_files{$key} = "$dir".q|node3.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/fig:FracStress2/;
 $ref_files{$key} = "$dir".q|node5.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec1-6/;
-$ref_files{$key} = "$dir".q|node5.html|; 
+$key = q/fig:FracWellImaging/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-10/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:Gdegrad/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-11/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:Invariants/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-12/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:IsoDevStressTensors/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-13/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:IsotropicCompMatrix/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-14/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:IsotropicElasticity/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-16/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:IsotropicStiffMatrix/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-17/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:JacobianDisp/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec2-9/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:KinemEq/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec3-16/;
-$ref_files{$key} = "$dir".q|node11.html|; 
+$key = q/fig:LinElasticity/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec3-18/;
-$ref_files{$key} = "$dir".q|node21.html|; 
+$key = q/fig:LostHills/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec3-2/;
-$ref_files{$key} = "$dir".q|node11.html|; 
+$key = q/fig:MEMTriaxialStrain/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec3-20/;
-$ref_files{$key} = "$dir".q|node21.html|; 
+$key = q/fig:MEMUniaxialStrain/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec3-22/;
-$ref_files{$key} = "$dir".q|node11.html|; 
+$key = q/fig:MEMVTI/;
+$ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec3-24/;
-$ref_files{$key} = "$dir".q|node28.html|; 
+$key = q/fig:MEMandHF/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec3-3/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:MatrixPorStrain/;
+$ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec4-12/;
-$ref_files{$key} = "$dir".q|node17.html|; 
+$key = q/fig:NEDcoord/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec4-3/;
-$ref_files{$key} = "$dir".q|node15.html|; 
+$key = q/fig:NavierDeriv/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec4-4/;
-$ref_files{$key} = "$dir".q|node13.html|; 
+$key = q/fig:NavierSolution/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec4-5/;
-$ref_files{$key} = "$dir".q|node15.html|; 
+$key = q/fig:Orthotropy/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec4-7/;
-$ref_files{$key} = "$dir".q|node15.html|; 
+$key = q/fig:PKNequations/;
+$ref_files{$key} = "$dir".q|node8.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec4-X/;
-$ref_files{$key} = "$dir".q|node17.html|; 
+$key = q/fig:ReussVoigt/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec5A-X/;
-$ref_files{$key} = "$dir".q|node25.html|; 
+$key = q/fig:SVT/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lec6-X/;
-$ref_files{$key} = "$dir".q|node40.html|; 
+$key = q/fig:StaDyn/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:lect-X/;
-$ref_files{$key} = "$dir".q|node63.html|; 
+$key = q/fig:StrainEnergy/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:minifracFCP/;
-$ref_files{$key} = "$dir".q|node56.html|; 
+$key = q/fig:StrainPartition/;
+$ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:minifracISIP/;
-$ref_files{$key} = "$dir".q|node56.html|; 
+$key = q/fig:StrainTensor/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:mudcake/;
-$ref_files{$key} = "$dir".q|node44.html|; 
+$key = q/fig:StressPlane2D/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:overpressure/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:StressPlane3D/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:overpressureGOM/;
-$ref_files{$key} = "$dir".q|node10.html|; 
+$key = q/fig:StressRegimes/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:pad/;
-$ref_files{$key} = "$dir".q|node58.html|; 
+$key = q/fig:StressShadow/;
+$ref_files{$key} = "$dir".q|node6.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:potato-eq/;
-$ref_files{$key} = "$dir".q|node15.html|; 
+$key = q/fig:Subsidence/;
+$ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:stresses-breakouts/;
-$ref_files{$key} = "$dir".q|node46.html|; 
+$key = q/fig:TE-applications/;
+$ref_files{$key} = "$dir".q|node4.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:vertstress-bar/;
-$ref_files{$key} = "$dir".q|node9.html|; 
+$key = q/fig:VTI/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/fig:vertstress-poroussolid/;
-$ref_files{$key} = "$dir".q|node9.html|; 
+$key = q/fig:VTIStaDyn/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/sec:CalcHzStress/;
-$ref_files{$key} = "$dir".q|node17.html|; 
+$key = q/fig:VTIdynamic/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/sec:CoupledFracProblem/;
-$ref_files{$key} = "$dir".q|node57.html|; 
+$key = q/fig:VTIstatic/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/sec:ResCompress/;
-$ref_files{$key} = "$dir".q|node17.html|; 
+$key = q/fig:VariationalFormEquil/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/sec:StressLogs/;
-$ref_files{$key} = "$dir".q|node57.html|; 
+$key = q/fig:VertStress/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/sec:TensileFracs/;
-$ref_files{$key} = "$dir".q|node47.html|; 
+$key = q/fig:VirtualWork/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/sec:Thermoelasticity/;
-$ref_files{$key} = "$dir".q|node21.html|; 
+$key = q/fig:Voigt/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/sec:poroelasticity/;
-$ref_files{$key} = "$dir".q|node21.html|; 
+$key = q/fig:VolumetricStrain/;
+$ref_files{$key} = "$dir".q|node3.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/subsec:faultreact/;
-$ref_files{$key} = "$dir".q|node40.html|; 
+$key = q/fig:pqInvariants/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/tab:Anderson/;
-$ref_files{$key} = "$dir".q|node11.html|; 
+$key = q/fig:stress-map-VMF/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
-$key = q/table:Andersonian/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/table:FrictionAnisotropy/;
-$ref_files{$key} = "$dir".q|node38.html|; 
-$noresave{$key} = "$nosave";
-
-$key = q/table:RPGsummary/;
-$ref_files{$key} = "$dir".q|node39.html|; 
+$key = q/table:FaultsHIBSummary/;
+$ref_files{$key} = "$dir".q|node2.html|; 
 $noresave{$key} = "$nosave";
 
 1;
