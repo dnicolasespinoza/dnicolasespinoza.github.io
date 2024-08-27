@@ -1,0 +1,1086 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4. Rock Yield and Failure &#8212; Introduction to Energy Geomechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch4_RockFailure';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="3. Fundamentals of Solid Continuum Mechanics" href="ch3_ContGeoMech.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/IPGlogo.png" class="logo__image only-light" alt="Introduction to Energy Geomechanics - Home"/>
+    <script>document.write(`<img src="_static/IPGlogo.png" class="logo__image only-dark" alt="Introduction to Energy Geomechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction to Energy Geomechanics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch1_Intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch2_StressPorePressure.html">2. Subsurface Stresses and Pore Pressure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch3_ContGeoMech.html">3. Fundamentals of Solid Continuum Mechanics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Rock Yield and Failure</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch4_RockFailure.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ch4_RockFailure.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>4. Rock Yield and Failure</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminary-concepts">Preliminary concepts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microstructure-of-geologic-materials">Microstructure of geologic materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#length-scales-v-s-process-zone-size">Length scales v.s. process zone size</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-types-of-rock-failure">Overview of types of rock failure</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensile-failure">Tensile failure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-tension">Direct tension}</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-brazilian-test">The Brazilian test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shear-failure">Shear failure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frictional-strength">Frictional Strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unconfined-compression-strength">Unconfined compression strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confined-strength-the-triaxial-test">Confined strength: the triaxial test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triaxial-tests-of-fluid-saturated-rocks-and-sediments">Triaxial tests of fluid saturated rocks and sediments</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compression-failure-pore-collapse">Compression failure: Pore collapse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#yield-failure-locus">Yield/failure locus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strength-anisotropy">Strength anisotropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deformation-beyond-the-elastic-limit">Deformation beyond the elastic limit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rock-damage-and-failure-revisited">Rock damage and failure revisited</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="rock-yield-and-failure">
+<h1>4. Rock Yield and Failure<a class="headerlink" href="#rock-yield-and-failure" title="Link to this heading">#</a></h1>
+<p>\label{Ch:Failure}</p>
+<section id="preliminary-concepts">
+<h2>Preliminary concepts<a class="headerlink" href="#preliminary-concepts" title="Link to this heading">#</a></h2>
+<section id="microstructure-of-geologic-materials">
+<h3>Microstructure of geologic materials<a class="headerlink" href="#microstructure-of-geologic-materials" title="Link to this heading">#</a></h3>
+<p>The microstructure of rocks varies widely, from lumped crystals in igneous rocks to fossil carbonate skeletons in diatomite-rich chalk.
+We will discuss mostly sedimentary rocks (shown in Fig. \ref{fig:RockMicrostructure}). However, igneous rocks can also host hydrocarbons (really? how?) and constitute the basement of sedimentary basins.
+For example, induced seismicity from deep injection of produced-water mostly originates in basement igneous rocks.
+Sedimentary rocks include shales, sandstones, and carbonates among other types.
+The microstructure of rocks governs their failure properties and characteristics.
+For example, uncemented sands cannot hold tensile stresses (Fig. \ref{fig:RockMicrostructure}-a).
+At low mean effective stress (as in the sandboarding picture) rock failure happens through grain rotating and roll-over.
+Sandstone is formed by cemented grains (Fig. \ref{fig:RockMicrostructure}-b).
+At relatively high porosity, the strength of sandstones is dominated by the strength of cemented contacts (bonds).
+At failure, the bonds rather than the grains tend to break.
+Matrix-supported carbonates form a continuous mineral matrix (Fig. \ref{fig:RockMicrostructure}-c).
+Failure usually involves cracking of the solid matrix.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5A-3.pdf}}
+\caption{Influence of rock microstructure on failure mechanisms.}
+\label{fig:RockMicrostructure}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="length-scales-v-s-process-zone-size">
+<h3>Length scales v.s. process zone size<a class="headerlink" href="#length-scales-v-s-process-zone-size" title="Link to this heading">#</a></h3>
+<p>Petroleum and subsurface engineering involves rock failure at many length scales, from the millimeter-scale to the kilometer-scale (Figure \ref{fig:Failure-LengthScales}).
+The failure properties of rock (and many other properties too) depend on the length scale of analysis.	
+Small-scale process zones engage the rock ``matrix’’ properties. Rock cutting at the drill-bit scale  and wellbore stability (in homogeneous and non-fractured rock) are two examples. The samples we test in the laboratory are at this small scale as well.
+Large-scale process zones involve fractures, multiple sedimentary layers, and faults.
+For example, hydraulic fracturing tends to reactivate neighboring fractures in shear and reservoir depletion can reactivate large faults in shear as well.
+Recognizing the appropriate length-scale is extremely important to use adequately the rock strength measured in the laboratory and simple mechanical formulations such as linear elasticity.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5A-4.pdf}}
+\caption{Rock failure properties are a function of process-zone size and length scale.}
+\label{fig:Failure-LengthScales}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="overview-of-types-of-rock-failure">
+<h3>Overview of types of rock failure<a class="headerlink" href="#overview-of-types-of-rock-failure" title="Link to this heading">#</a></h3>
+<p>Rock yield (plastic deformation) and failure can happen due to tensile stresses, shear stresses, compressive stresses, and a combination of the three.
+The following sections explore these types of rock damage separately.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/5A-5.pdf}}
+\caption{Overview of rock failure modes: tension, shear, and compression.}
+\label{fig:lec5A-X}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+</section>
+<section id="tensile-failure">
+<h2>Tensile failure<a class="headerlink" href="#tensile-failure" title="Link to this heading">#</a></h2>
+<section id="direct-tension">
+<h3>Direct tension}<a class="headerlink" href="#direct-tension" title="Link to this heading">#</a></h3>
+<p>Application of tensile stresses (with negative sign according to our geomechanics convention) on a metal bar results in tensile strains (negative too).
+In this example the state of stress is relatively simple with tensile stress in the axial direction and zero-stress in any direction perpendicular to the axis of the bar (Figure \ref{fig:TensionSteel}).
+The maximum tensile stress taken by the bar is called tensile strength.
+Metals are usually <code class="docutils literal notranslate"><span class="pre">ductile''</span> <span class="pre">and</span> <span class="pre">deform</span> <span class="pre">after</span> <span class="pre">reaching</span> <span class="pre">a</span> <span class="pre">peak</span> <span class="pre">stress.</span>&#160; <span class="pre">When</span> <span class="pre">unstressed,</span> <span class="pre">the</span> <span class="pre">bar</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">example</span> <span class="pre">figure</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">recover</span> <span class="pre">its</span> <span class="pre">original</span> <span class="pre">length</span> <span class="pre">but</span> <span class="pre">remains</span> <span class="pre">with</span> </code>plastic deformation’’.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/5A-6.pdf}}
+\caption{Tensile strength of a ductile metal bar. }
+\label{fig:TensionSteel}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The one-dimensional tensile strength test for metals (Fig. \ref{fig:TensionSteel}) is not easy to implement in rocks.
+You would have to grab the rock on its sides or glue it on the ends to perform such tests. Even in that case, your rock may break at the those <code class="docutils literal notranslate"><span class="pre">grabbing''</span> <span class="pre">points.</span> <span class="pre">One</span> <span class="pre">alternative</span> <span class="pre">is</span> <span class="pre">to</span> </code>machine’’ the rock to a convenient shape, so that, you can pull it without using glues or grabbing jaws (shown in Figure \ref{fig:DirectTensionRock}).
+However, rocks are not easy to <code class="docutils literal notranslate"><span class="pre">machine''</span> <span class="pre">in</span> <span class="pre">general,</span> <span class="pre">and</span> <span class="pre">thus</span> <span class="pre">this</span> <span class="pre">test</span> <span class="pre">becomes</span> <span class="pre">impractical</span> <span class="pre">in</span> <span class="pre">many</span> <span class="pre">situations.</span> <span class="pre">Rock</span> <span class="pre">failure</span> <span class="pre">in</span> <span class="pre">simple</span> <span class="pre">tension</span> <span class="pre">usually</span> <span class="pre">displays</span> </code>brittle’’ failure, no plastic strains follow after reaching tensile strength. It just breaks quickly.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/5A-7.pdf}}
+\caption{Direct tension test on brittle rock. Correct interpretation depends on rock micro-structure and possible existence of pre-existent flaws.}
+\label{fig:DirectTensionRock}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="the-brazilian-test">
+<h3>The Brazilian test<a class="headerlink" href="#the-brazilian-test" title="Link to this heading">#</a></h3>
+<p>The Brazilian test is a convenient method to measure tensile strength.
+It uses short cylindrical samples and takes advantage of the shape of the rock specimen to create tensile stresses with application of a compressive force along the sample diameter (Figure  \ref{fig:BrazilianTest}).
+A solution of the state of stress within the rock (assuming a linear elastic homogeneous material) yields the tensile strength value <span class="math notranslate nohighlight">\(T_S\)</span> equal to
+\begin{equation}
+T_S = \frac{P_B}{\pi L R}
+\end{equation}
+where <span class="math notranslate nohighlight">\(P_B\)</span> is the peak compressive force, <span class="math notranslate nohighlight">\(L\)</span> is the specimen length, and <span class="math notranslate nohighlight">\(R\)</span> is the specimen radius.
+Notice that you have a combined state of stress with compression in the direction of the compressive load and tension in the direction perpendicular to the load along the diameter.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/4-TensileStrength.pdf}}
+\caption{The Brazilian test: sample geometry and example. }
+\label{fig:BrazilianTest}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 4.1:} Determine the tensile strength of the shale sample shown in Fig. \ref{fig:BrazilianTest}. The sample diameter is 1.00 in and the length is 1.00 in.</p>
+<p>\vspace{0.1in}
+SOLUTION \newline
+The sample dimensions are
+[
+R = \frac{1}{2} \text{ in} = 0.0127 \text{ m}
+]
+and
+[
+L = 1 \text{ in} = 0.0254 \text{ m}
+]
+Hence, the tensile strength is
+\begin{equation*}
+T_S = \frac{2084 \text { N}}{\pi (0.0254 \text{ m}) (0.0127 \text{ m})}
+= 2.06 \times 10^6 \text{ Pa} = 2.06 \text{ MPa} : : \blacksquare
+\end{equation*}
+\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>Typical values of tensile strength for cemented sedimentary rocks range from 0.5 MPa to 10 MPa.
+Uncemented sediments -very common in sedimentary basins- have zero tensile strength.
+Figure \ref{fig:TensStrengthSummary} summarizes typical values of tensile strength for rocks.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/4-TensStrengthSummary.pdf}}
+\caption{Values of tensile strength in a set of cemented rocks measured with direct tension tests (DTS) and Brazilian tension tests (BTS)[Data from \textit{Geotech. Geol. Engineering} (2014), 32].
+The value of the igneous set is an average of granite, latite, meta-pegmatite and peridotite.
+The tensile strength of the metamorphic set is an average of gneiss, marble, quartzite and slate.
+Compare these values to tensile strength of fused silica: 48 MPa, 304 stainless steel: 505 MPa, and titanium: 1860 MPa.}
+\label{fig:TensStrengthSummary}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+</section>
+<section id="shear-failure">
+<h2>Shear failure<a class="headerlink" href="#shear-failure" title="Link to this heading">#</a></h2>
+<section id="frictional-strength">
+<h3>Frictional Strength<a class="headerlink" href="#frictional-strength" title="Link to this heading">#</a></h3>
+<p>The shear strength of rocks depends on the cohesive strength of the rock <span class="math notranslate nohighlight">\(S_0\)</span> (to be explained later) and the internal frictional strength of the rock.
+The frictional strength depends on friction forces, where the force <span class="math notranslate nohighlight">\(F_T\)</span> needed to displace an object resting on a surface depends on the friction coefficient <span class="math notranslate nohighlight">\(\mu\)</span> and applied normal force <span class="math notranslate nohighlight">\(F_N\)</span>, such that <span class="math notranslate nohighlight">\(F_T = \mu F_N\)</span> (Figure \ref{fig:FrictionBlock}).
+Hence, if the normal force <span class="math notranslate nohighlight">\(F_N=0\)</span>, then <span class="math notranslate nohighlight">\(F_T = 0\)</span>.
+The frictional force <span class="math notranslate nohighlight">\(F_T\)</span> increases linearly with the value of the normal force <span class="math notranslate nohighlight">\(F_N\)</span>.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5-Friction.pdf}}
+\caption{Friction forces and the friction coefficient. (a,b) Frictional force required to move a solid box. (c) Extension to granular media.}
+\label{fig:FrictionBlock}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>Similarly, uncemented sediments can resist shear stresses with the application of an effective <code class="docutils literal notranslate"><span class="pre">confining''</span> <span class="pre">compressive</span> <span class="pre">stress</span> <span class="pre">(remember</span> <span class="pre">the</span> <span class="pre">example</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">vacuum-sealed</span> <span class="pre">coffee).</span> <span class="pre">The</span> <span class="pre">maximum</span> <span class="pre">shear</span> <span class="pre">stress</span> <span class="pre">$\tau$</span> <span class="pre">in</span> <span class="pre">uncemented</span> <span class="pre">sands</span> <span class="pre">is</span> <span class="pre">proportional</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">normal</span> <span class="pre">effective</span> <span class="pre">stress</span> <span class="pre">$\sigma_n$</span> <span class="pre">through</span> <span class="pre">an</span> </code>internal’’ friction coefficient <span class="math notranslate nohighlight">\(\mu_i\)</span> (red line in Figure \ref{fig:SandStrength}).
+The sand is at shear failure when the shear line <span class="math notranslate nohighlight">\(\tau = \mu_i \sigma_n\)</span> intercects the state of stress represented by the Mohr circle \href{<a class="reference external" href="https://mechanicalc.com/calculators/mohrs-circle/">https://mechanicalc.com/calculators/mohrs-circle/</a>}{(Check this online Mohr’s circle drawer)}.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.50]{./Figures/split/5A-14.pdf}}
+\caption{Frictional strength of uncemented sediments.}
+\label{fig:SandStrength}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The Mohr circle represents all possible state of stresses depending on the plane at which you measure <span class="math notranslate nohighlight">\(\sigma_n\)</span> and <span class="math notranslate nohighlight">\(\tau\)</span>.
+Notice that from all those possible state of stresses, there is just one state of stress that intersects the line <span class="math notranslate nohighlight">\(\tau = \mu_i \sigma_n\)</span>.
+That plane is the plane at which a shear fracture would form.
+Similarly to Figure \ref{fig:FrictionBlock}, if <span class="math notranslate nohighlight">\(\sigma_n = 0\)</span> then <span class="math notranslate nohighlight">\(\tau = 0\)</span>, so the sand has  no strength whatsoever without an effective compressive stress.
+The friction coefficient <span class="math notranslate nohighlight">\(\mu_i\)</span> is often expressed as a friction angle <span class="math notranslate nohighlight">\(\varphi\)</span>, where <span class="math notranslate nohighlight">\( \tan (\varphi) = \mu_i\)</span>.
+Typical values of <span class="math notranslate nohighlight">\(\mu_i\)</span> vary from 0.4 to 1.0.
+For example, if <span class="math notranslate nohighlight">\(\mu_i=0.5\)</span>, then <span class="math notranslate nohighlight">\(\varphi \sim 30^{\circ}\)</span>.</p>
+</section>
+<section id="unconfined-compression-strength">
+<h3>Unconfined compression strength<a class="headerlink" href="#unconfined-compression-strength" title="Link to this heading">#</a></h3>
+<p>Cemented rocks can bear shear stresses with zero effective lateral stress <span class="math notranslate nohighlight">\(\sigma_r = 0\)</span> (<span class="math notranslate nohighlight">\(\sigma_r\)</span> for radial effective stress as in cylindrical samples).
+Figure \ref{fig:UCS} shows an unconfined cylindrical rock loaded (on the top face) to failure with a compression effective stress <span class="math notranslate nohighlight">\(\sigma_a\)</span>.
+We call <span class="math notranslate nohighlight">\(UCS\)</span> (Unconfined Compression Strength) to the maximum compression stress (applied in axial direction) the rock can hold under unconfined conditions.
+Axisymmetric tests require rocks samples in which the length should be about twice the diameter to minimize shear end-effects (as in short samples) and buckling instabilities (as in long samples).</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/5A-12.pdf}}
+\caption{Unconfined compression strength: schematic diagram, stress-strain plot and corresponding Mohr circle.}
+\label{fig:UCS}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="confined-strength-the-triaxial-test">
+<h3>Confined strength: the triaxial test<a class="headerlink" href="#confined-strength-the-triaxial-test" title="Link to this heading">#</a></h3>
+<p>Let us now apply an effective compressive ``confining’’ stress <span class="math notranslate nohighlight">\(\sigma_r \neq 0\)</span> (Figure \ref{fig:CoulombFailure}).
+The measured peak stress is higher than the peak stress without confining stress.
+The increment in peak stress will be a function of the internal frictional strength of the rock.
+Hence, the maximum shear stress <span class="math notranslate nohighlight">\(\tau\)</span> will be a function of both the rock cohesive strength <span class="math notranslate nohighlight">\(S_0\)</span> and the applied normal effective compressive stress <span class="math notranslate nohighlight">\(\sigma_n\)</span> through the Coulomb failure criterion expressed in the following equation:</p>
+<p>\begin{equation}
+\tau = S_0 + \mu_i \sigma_n	
+\label{eq:CoulombTS}
+\end{equation}</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/5A-13.pdf}}
+\caption{Shear strength: Coulomb failure criterion. The cylindrical rock sample bears a radial confining stress <span class="math notranslate nohighlight">\(\sigma_r\)</span>.}
+\label{fig:CoulombFailure}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>With a linear shear failure criterion, a fracture will ideally form at an angle <span class="math notranslate nohighlight">\(\pi/4 + \varphi/2\)</span> from the plane where the maximum principal stress is applied. Such plane will also be co-linear with the intermediate principal stress.	For a typical value of <span class="math notranslate nohighlight">\(\varphi \sim 30^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\pi/4 + \varphi/2 = 60^{\circ}\)</span>.</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 4.2:}
+In the following uncemented sediment sample and corresponding figure: \newline
+a) Which is the point in the Mohr circle with maximum <span class="math notranslate nohighlight">\(\tau / \sigma_n\)</span>? \newline
+b) What is the angle of the failure plane? \newline
+c) What is the ratio <span class="math notranslate nohighlight">\(\sigma_a / \sigma_r\)</span> at failure?</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.50]{./Figures/split/5A-15.pdf}}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>\vspace{0.1in}
+SOLUTION \newline
+a) The point in the Mohr circle with maximum ratio <span class="math notranslate nohighlight">\(\tau / \sigma_n\)</span> is the one that touches the yield line, for which  <span class="math notranslate nohighlight">\(\tau / \sigma_n = \mu_i\)</span></p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/AngleFailurePlane.pdf}}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>b) Let us use the figure above to solve the problem.
+The top side of the sample is subjected to stress <span class="math notranslate nohighlight">\((\sigma_a,0)\)</span> in the <span class="math notranslate nohighlight">\(\sigma_n\)</span>-<span class="math notranslate nohighlight">\(\tau\)</span> plane.
+The lateral side of the sample is subjected to stress <span class="math notranslate nohighlight">\((\sigma_r,0)\)</span> in the <span class="math notranslate nohighlight">\(\sigma_n\)</span>-<span class="math notranslate nohighlight">\(\tau\)</span> plane.
+The state of stress <span class="math notranslate nohighlight">\((\sigma_n,\tau)\)</span> at failure can be located going <span class="math notranslate nohighlight">\(\pi/2 + \varphi\)</span> counterclockwise from <span class="math notranslate nohighlight">\((\sigma_a,0)\)</span> to <span class="math notranslate nohighlight">\((\sigma_r,0)\)</span>.
+The plane of shear failure corresponds to this point and it is at <span class="math notranslate nohighlight">\((\pi/2 + \varphi)/2\)</span> from the top side towards the lateral side.
+Notice that going from <span class="math notranslate nohighlight">\((\sigma_a,0)\)</span> to <span class="math notranslate nohighlight">\((\sigma_r,0)\)</span> takes 180<span class="math notranslate nohighlight">\(^{\circ} = \pi/2\)</span> in the Mohr circle.
+\newline</p>
+<p>c) Let us use <span class="math notranslate nohighlight">\(C\)</span> (center of the circle) and <span class="math notranslate nohighlight">\(R\)</span> (radius of the circle) to express <span class="math notranslate nohighlight">\(\sigma_a / \sigma_r\)</span>:</p>
+<p>[
+\frac{\sigma_a}{\sigma_r} = \frac{C + R}{C-R} =
+\frac{C+C \sin \varphi}{C-C \sin \varphi} =
+\frac{1+\sin \varphi}{1-\sin \varphi} 		
+: : \blacksquare
+]</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>Sometimes, it is easier to think (and compute) shear failure parameters based on principal stresses rather than on normal and shear stress (Figure \ref{fig:CoulombCriterionPS}).
+Coulomb’s failure criterion (Eq. \ref{eq:CoulombTS}) can be written as</p>
+<p>\begin{equation}
+\sigma_1 = UCS + q : \sigma_3	
+\end{equation}</p>
+<p>where <span class="math notranslate nohighlight">\(\sigma_1\)</span> is the effective maximum principal stress at failure, <span class="math notranslate nohighlight">\(\sigma_3\)</span> is the effective minimum principal stress and <span class="math notranslate nohighlight">\(q\)</span> is the friction parameter function of the friction angle (warning: this is not the same <span class="math notranslate nohighlight">\(q\)</span> from the <span class="math notranslate nohighlight">\(p'-q\)</span> or <span class="math notranslate nohighlight">\(\sigma_m-q\)</span> space).
+It can be shown that,</p>
+<p>\begin{equation}
+q = \frac{1 + \sin \varphi}{1 - \sin \varphi}
+\end{equation}</p>
+<p>For a typical <span class="math notranslate nohighlight">\(\varphi ~ 30^{\circ}\)</span>, <span class="math notranslate nohighlight">\( q = 3\)</span>.	
+The friction coefficient can be calculated from the friction parameter <span class="math notranslate nohighlight">\(q\)</span> with the following equation:</p>
+<p>\begin{equation}
+\mu_i = \frac{q-1}{2 \sqrt{q}}
+\end{equation}</p>
+<p><span class="math notranslate nohighlight">\(UCS\)</span> can also be expressed in terms of cohesive strength as</p>
+<p>\begin{equation}
+UCS = 2 S_0 \left( \frac{1 + \sin \varphi}{1 - \sin \varphi} \right)^{1/2}
+= 2 S_0 \sqrt{q}
+\label{eq:UCS-CohStrength-q}
+\end{equation}</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5A-16.pdf}}
+\caption{Equivalency of the Coulomb criterion in terms of shear and normal stresses and in terms of principal stresses.}
+\label{fig:CoulombCriterionPS}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>Figure \ref{fig:RockShearData} summarizes shear strength properties for various cemented rocks.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.85]{./Figures/split/4-ShearStrengthSummary.pdf}}
+\caption{Average values of cohesive strength and internal friction angle for various types of rocks (original data from [Zoback, 2013]).}
+\label{fig:RockShearData}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="triaxial-tests-of-fluid-saturated-rocks-and-sediments">
+<h3>Triaxial tests of fluid saturated rocks and sediments<a class="headerlink" href="#triaxial-tests-of-fluid-saturated-rocks-and-sediments" title="Link to this heading">#</a></h3>
+<p>The shear strength of rocks depends on effective stresses, not on total stresses.
+In the field and the laboratory, however, we usually measure total stresses <span class="math notranslate nohighlight">\((S_1,S_2,S_3)\)</span> instead of effective stresses <span class="math notranslate nohighlight">\((\sigma_1,\sigma_2,\sigma_3)\)</span>.
+The shear strength of rocks is measured in a triaxial frame (Fig. \ref{fig:TriaxialCell}-a).
+A cylindrical (axisymmetric) triaxial frame can apply independently a confining pressure (that converts into stress) <span class="math notranslate nohighlight">\(P_c\)</span>, a deviatoric stress <span class="math notranslate nohighlight">\(\sigma_D\)</span>, and a pore pressure <span class="math notranslate nohighlight">\(P_p\)</span>.</p>
+<p>The confining stress is applied by means of a deformable sleeve around the rock by changing the confining fluid pressure <span class="math notranslate nohighlight">\(P_c\)</span> with a fluid pump.
+The confining fluid is usually hydraulic oil or water.
+The sleeve makes it possible to apply an effective confining stress and prevents confining fluid to enter into the rock pores and mix with the pore fluid.
+The confining pressure is maintained constant in a typical deviatoric triaxial test <span class="math notranslate nohighlight">\(P_c = cst\)</span>.</p>
+<p>The pore fluid pressure <span class="math notranslate nohighlight">\(P_p\)</span> is applied with another fluid pump.
+A fluid conduit connects the pump with the rock pore space.
+Some triaxial frames have two pore fluid outlets to measure permeability during loading. Notice that <span class="math notranslate nohighlight">\(P_p &lt; P_c\)</span>, otherwise the sleeve would inflate like a balloon inside the pressure vessel.
+The pore pressure is maintained constant in a typical deviatoric triaxial test <span class="math notranslate nohighlight">\(P_p = cst\)</span>.</p>
+<p>The deviatoric stress <span class="math notranslate nohighlight">\(\sigma_D\)</span> is applied through axial loading with a piston that compresses the rock in axial direction. The deviatoric stress is defined as <span class="math notranslate nohighlight">\(\sigma_D =S_1 - S_3\)</span>, where <span class="math notranslate nohighlight">\(S_1\)</span> is the total maximum stress applied with the frame and <span class="math notranslate nohighlight">\(S_3\)</span> is the minimum total stress (equal to the confining pressure <span class="math notranslate nohighlight">\(S_3 = P_c\)</span>) (Figure \ref{fig:TriaxSchematic}).
+Notice that in a cylindrical triaxial frame <span class="math notranslate nohighlight">\(S_2=S_3\)</span> and <span class="math notranslate nohighlight">\(S_1 - S_3=\sigma_1-\sigma_3\)</span>. The deviatoric stress is increased with a constant displacement (strain) rate <span class="math notranslate nohighlight">\(d \varepsilon_a / dt = cst\)</span> in a typical deviatoric triaxial test.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/4-TriaxialSchematic.png}}
+\caption{Schematic diagram of stresses and pressures in the axisymmetric triaxial test. <span class="math notranslate nohighlight">\(S_1\)</span>: total axial stress, <span class="math notranslate nohighlight">\(S_3\)</span>: total radial stress (<span class="math notranslate nohighlight">\(=P_c\)</span>: confining pressure), <span class="math notranslate nohighlight">\(P_p\)</span>: pore pressure.}
+\label{fig:TriaxSchematic}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The data shown in Fig. \ref{fig:TriaxialCell}-b summarizes the results of 14 independent triaxial tests: <span class="math notranslate nohighlight">\(S_3\)</span> is the confining pressure for each experiment, <span class="math notranslate nohighlight">\(S_1\)</span> is the maximum stress measured at failure, and <span class="math notranslate nohighlight">\(P_p\)</span> is the preset pore pressure.
+The data shows that the maximum principal stress <span class="math notranslate nohighlight">\(S_1\)</span> (measured at failure) tends to increase as <span class="math notranslate nohighlight">\(S_3\)</span> increases and tends to decrease as <span class="math notranslate nohighlight">\(P_p\)</span> increases.
+When the data is corrected to effective stresses (Fig. \ref{fig:TriaxialCell}-c), it becomes clear that there is just one relationship between <span class="math notranslate nohighlight">\(\sigma_1 = (S_1 - P_p)\)</span> and <span class="math notranslate nohighlight">\(\sigma_3 = (S_3 - P_p)\)</span>.</p>
+<p>The equation that links these two quantities is Eq. \ref{fig:CoulombCriterionPS}.
+It is usually easier to calculate <span class="math notranslate nohighlight">\(UCS\)</span> and <span class="math notranslate nohighlight">\(q\)</span> from  fitting a straight line to <span class="math notranslate nohighlight">\(\sigma_1\)</span> (failure)- <span class="math notranslate nohighlight">\(\sigma_3 \)</span> data, and then calculate cohesive strength from Eq. \ref{eq:UCS-CohStrength-q}, friction angle as</p>
+<p>\begin{equation}
+\varphi = \arctan \left( \frac{q-1}{2\sqrt{q}} \right)
+\label{eq:FrictionangleParamq}
+\end{equation}</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 4.3:} Fit a line (manually) to the data shown in Fig. Fig. \ref{fig:TriaxialCell}-c for the Darley Dale sandstone and calculate <span class="math notranslate nohighlight">\(UCS\)</span>, <span class="math notranslate nohighlight">\(q\)</span>, <span class="math notranslate nohighlight">\(S_0\)</span>, <span class="math notranslate nohighlight">\(\varphi\)</span> and <span class="math notranslate nohighlight">\(\mu_i\)</span>.</p>
+<p>SOLUTION \newline
+The red line in Fig. \ref{fig:TriaxialCell}-c was manually  drawn ignoring the point with the highest confining stress.
+Hence, this line is accurate only when <span class="math notranslate nohighlight">\(S_3 \leqslant 80\)</span> MPa. \newline</p>
+<p>The red line hits the y-axis at <span class="math notranslate nohighlight">\(S_1 \sim 80\)</span> MPa, hence,</p>
+<p>[ UCS = 80 \text{ MPa} ]</p>
+<p>The parameter <span class="math notranslate nohighlight">\(q\)</span> is the slope of the red line. Taking the entire line length:</p>
+<p>[ q = \frac{\Delta \sigma_1}{\Delta \sigma_3} =
+\frac{520 \text{ MPa}}{110 \text{ MPa}} = 4.73
+]</p>
+<p>Finally, using Eqs. \ref{eq:UCS-CohStrength-q} and \ref{eq:FrictionangleParamq}:</p>
+<p>[ S_0 = \frac{UCS}{2 \sqrt{q}} = \frac{80 \text{MPa}}{2 \sqrt{4.73}} = 18.4 \text{MPa} ]</p>
+<p>[
+\varphi = \arctan \left( \frac{q-1}{2\sqrt{q}} \right)
+= \arctan \left( \frac{4.73-1}{2\sqrt{4.73}} \right) = 40.6^{\circ}
+]</p>
+<p>[
+\mu_i = \tan (\varphi) = \tan (40.6^{\circ}) = 0.86
+: : \blacksquare
+]</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>In the process of triaxial loading, rocks begin by decreasing volume (compression loading) but  may show positive changes of volumetric strain <span class="math notranslate nohighlight">\(\varepsilon_v = \varepsilon_a + 2\varepsilon_r\)</span> approaching failure.
+That is, the rock may start shrinking but it may dilate close to failure giving <span class="math notranslate nohighlight">\(d \varepsilon_v/dt&lt;0\)</span> (dilation is negative).
+At this point the rock is not elastic anymore and develops damage inside.
+Considerable damage often starts at 50% to 70% of the peak stress.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/Triaxial-Darley.pdf}}
+\caption{Triaxial testing. (a) Axisymmetric triaxial frame comprising a pressure vessel, fluid pumps and a reaction frame to apply axial load (not visible in figure). (b) Example results of 14 independent triaxial tests on Darley Dale sandstone as a function of total stresses and pore pressure. (c) Data from -b replotted as effective stresses. Rocks failure is explained through effective stresses, not through total stresses. }
+\label{fig:TriaxialCell}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+</section>
+<section id="compression-failure-pore-collapse">
+<h2>Compression failure: Pore collapse<a class="headerlink" href="#compression-failure-pore-collapse" title="Link to this heading">#</a></h2>
+<p>If compression stresses are high enough, grains can crush filling the pore space.
+Pore collapse may happen in nature due to rock burial and also in petroleum engineering during reservoir depletion. In both cases effective stresses increase in all directions.
+In long and thin reservoirs, depletion does not cause strains in all directions but predominantly in the vertical direction (Figures \ref{fig:1Dstrain} and \ref{fig:ReservoirCompaction}).
+This type of deformation is called ``uniaxial-strain’’ condition.
+When effective stress goes over the yield stress (<span class="math notranslate nohighlight">\(\sigma'_p\)</span> in Fig. \ref{fig:PoreCollapse}), significant plastic irrecoverable deformations occur and may decrease permeability.
+High compression combined with shear can lead to grain crushing at shear and compaction bands resulting in permeability much lower than that of the original rock matrix.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5A-21.pdf}}
+\caption{Pore collapse under uniaxial strain condition with grain crushing. <span class="math notranslate nohighlight">\(\sigma'_p\)</span>  indicates the yield stress at which significant plastic strains happen if surpassed.}
+\label{fig:PoreCollapse}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="yield-failure-locus">
+<h2>Yield/failure locus<a class="headerlink" href="#yield-failure-locus" title="Link to this heading">#</a></h2>
+<p>We can combine all rock failure types in a single <span class="math notranslate nohighlight">\((\sigma_n,\tau)\)</span> plot (Fig. \ref{fig:YieldLocus}).
+The rock would fail in tension if the Mohr circle (or state of stress) goes further to the left of <span class="math notranslate nohighlight">\(T_S\)</span>.
+It would fail in shear if it touches the red line <span class="math notranslate nohighlight">\(\tau = S_0 + \mu_i \sigma_n\)</span>.
+Last, it would develop significant compressive plastic strains if it crosses the yield cap (blue line - as you may guess, there is also an equation for it!).</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/5B-YieldLocus.pdf}}
+\caption{Summary of basic rock failure modes.}
+\label{fig:YieldLocus}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="strength-anisotropy">
+<h2>Strength anisotropy<a class="headerlink" href="#strength-anisotropy" title="Link to this heading">#</a></h2>
+<p>Most rocks have anisotropic strength properties, thus, strength depends on the loading direction.
+The plot in Fig. \ref{fig:StrengthAnisotropy} shows anisotropy of shear strength. Consider a rock with well defined planes of weakness in one particular direction.
+These plane of weakness may be constituted by fractures, weakly bonded layers, or weak rock layers. For example, there are some rocks with mica foliation that have almost no shear strength whatsoever in the foliation planes.
+The plots on the right of Fig. \ref{fig:StrengthAnisotropy} show that the shear strength depends on the loading orientation. The sample is the weakest when the orientation of weak planes coincides with the plane that meets the shear failure line, that is  <span class="math notranslate nohighlight">\(\pi/4 + \varphi/2\)</span>. The sample is the strongest when the orientation of weak planes is perpendicular to the expected shear failure plane.
+The videos in this playlist \url{<a class="reference external" href="https://www.youtube.com/playlist?list=PLv0npDbE5HXvEdptgajRDG3x-lwmtGDbr">https://www.youtube.com/playlist?list=PLv0npDbE5HXvEdptgajRDG3x-lwmtGDbr</a>} show how bedding interfaces affect failures processes under deviatoric stress.
+A similar phenomenon applies to tensile strength. Planes of weakness can greatly reduce tensile strength for stresses applied in direction perpendicular to those planes of weakness.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.75]{./Figures/split/5-StrengthAnisotropy.pdf}}
+\caption{Shear strength anisotropy example in which bedding planes are weaker than the rock layers. \hl{[add real data of shales]}}
+\label{fig:StrengthAnisotropy}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="deformation-beyond-the-elastic-limit">
+<h2>Deformation beyond the elastic limit<a class="headerlink" href="#deformation-beyond-the-elastic-limit" title="Link to this heading">#</a></h2>
+<p>Rocks have a limited range for which they behave elastically, with recoverable strains.
+After a certain limit, termed yield stress, the rock experiences plastic irrecoverable strains (inelasticity) (Fig. \ref{fig:ElastoPlastIntro}).
+Rocks may be still quite strong after reaching the yield stress or even the peak stress if they are able to sustain plastic strains.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5B-9.pdf}}
+\caption{Post-peak behavior: elastic and plastic strains.}
+\label{fig:ElastoPlastIntro}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>Brittleness characterizes strain localization and energy rate release with failure.
+Brittle rocks fail quickly and in well-defined planes. The stress-strain response usually exhibits a well defined peak stress (red curve in Fig. \ref{fig:StrainHardSoft}).
+Ductile rocks fail slowly (according to the strain-rate) and distribute strains during failure.
+The stress-strain response does not exhibits a well defined peak stress and may get even stronger with increasing deformation (blue curve in Fig. \ref{fig:StrainHardSoft}).
+There are several factors that affect brittleness, such as:
+\begin{itemize}
+\item Mean effective stress: higher mean effective stress favors more ductile behavior.
+\item Temperature: higher temperature favors more ductile behavior.
+\item Loading rate: lower loading rate favors more ductile behavior.
+\item Mineralogy: higher organic and clay content favors more ductile behavior in shales, while higher carbonate content favors more brittle failure.
+\item Specimen size: as the rock sample size increases, more and bigger discontinuities (such as fractures) are likely to be present and contribute to more ductile response because of failure of internal fractures rather than the rock matrix.	
+\item Elastic properties: some carbonate rich shales have a good correlation of brittleness with the ratio <span class="math notranslate nohighlight">\(E/\nu\)</span>, where the carbonate mineral fraction contributes to high Young’s modulus <span class="math notranslate nohighlight">\(E\)</span> and low Poisson’s ratio <span class="math notranslate nohighlight">\(\nu\)</span>.<br />
+\end{itemize}</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5B-10.pdf}}
+\caption{Brittleness as a function of confinement}
+\label{fig:StrainHardSoft}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The plot on the left of Fig. \ref{fig:ElastoplasticityModes} shows an example of measurement of deviatoric stress <span class="math notranslate nohighlight">\(\sigma_d = (\sigma_1 - \sigma_3)\)</span> as a function of axial strain for various confining (minimum) stresses. The data clearly shows a transition from brittle to ductile in Carrara marble.
+The post-peak stress-strain behavior can be modeled with plasticity theory.
+The simplest plastic model considers no increase (or decrease) of stress once the yield stress is reached (perfect plastic behavior).
+As seen in the experimental data, however, the rock may still be able to support stresses after reaching the yield stress.
+The rock exhibits <code class="docutils literal notranslate"><span class="pre">strain-hardening''</span> <span class="pre">behavior</span> <span class="pre">when</span> <span class="pre">it</span> <span class="pre">gets</span> <span class="pre">stronger</span> <span class="pre">with</span> <span class="pre">further</span> <span class="pre">straining,</span> <span class="pre">or</span> </code>strain-softening’’ behavior when it gets weaker with further straining.
+The increments (or reductions) of stress with plastic strain <span class="math notranslate nohighlight">\(\uuline{\varepsilon}{}_p\)</span> can be modeled through a plastic tensor <span class="math notranslate nohighlight">\(\uuline{C}{}_p\)</span> such that after the yield stress</p>
+<p>\begin{equation}
+\Delta \uuline{\sigma} = \uuline{C}{}_p \Delta \uuline{\varepsilon}{}_p
+\end{equation}</p>
+<p>Accounting for plastic strains is required in rocks with small elastic regions, and in large scale and long-term processes such as fault reactivation, evolution of sedimentary basins, and salt diapirism.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/5B-11.pdf}}
+\caption{Elasto-plasticity: experimental data and idealized behavior.}
+\label{fig:ElastoplasticityModes}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="rock-damage-and-failure-revisited">
+<h2>Rock damage and failure revisited<a class="headerlink" href="#rock-damage-and-failure-revisited" title="Link to this heading">#</a></h2>
+<p>Now that we know the macroscopic modes of rock failure we can investigate again the actual mechanisms of rock inelasticity and failure.
+First, uncemented rocks cannot hold tensile stresses and failure takes place through internal shearing (grain to grain friction and rotation) and grain crushing at high mean compressive stress.
+Fig. \ref{fig:FailureMechanisms} shows experimental evidence of grain rotation in the shearing region of a sand specimen loaded axially (see warm-colored shear band).
+Second, cemented rocks can hold tensile and shear stresses.
+Most rocks have some level of internal microfracturing or defects that act as fracture tips.
+Fractures propagate in three modes: opening, in-plane shear, and out-of-plane shear.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/5B-12.pdf}}
+\caption{Rock failure at the microscale: mechanisms behind rock failure.}
+\label{fig:FailureMechanisms}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>Shear and tensile stresses amplify at fracture tips. Therefore fracture propagation usually starts at fracture tips.
+The images in Fig. \ref{fig:FracsTuffo} show the propagation of fractures after applying a vertical stress on Tuffo carbonate samples with a pre-existing crack (thick dark line in the middle).</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/5B-13.pdf}}
+\caption{Microfracture propagation in cemented rock. Cracks promote stress concentration and intensification at tips. Failure initiates at crack tips. Propagating fractures may coalesce and make a bigger fracture.}
+\label{fig:FracsTuffo}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The coalescence of multiple microfractures can form a macrofracture that defines a macroscopic failure plane (Figure \ref{fig:MicroFracCoalescence}).</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/5B-14.pdf}}
+\caption{Microfracture coalescence in cemented rock with pre-existing flaws.}
+\label{fig:MicroFracCoalescence}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>The following data presents the results of triaxial tests performed on a dry samples of cohesionless fine sand from the Frio formation in the Gulf of Mexico Basin.</p>
+<ol class="arabic simple">
+<li><p>Plot the maximum principal effective stress <span class="math notranslate nohighlight">\(\sigma_1\)</span> as a function of <span class="math notranslate nohighlight">\(\sigma_3\)</span> for the three experiments. Fit a line that goes to the intercept (0,0) and calculate the shear strength parameter <span class="math notranslate nohighlight">\(q\)</span>.</p></li>
+<li><p>Replot the data as Mohr circles, calculate the shear angle <span class="math notranslate nohighlight">\(\varphi = f(q)\)</span> and plot the shear yield line. Does the shear yield line intersect the Mohr circles?</p></li>
+</ol>
+</li>
+</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Confining pressure<br> <span class="math notranslate nohighlight">\(P_c\)</span> [MPa]</p></th>
+<th class="head"><p>Pore pressure<br> <span class="math notranslate nohighlight">\(P_p\)</span> [MPa]</p></th>
+<th class="head"><p>Peak deviatoric stress<br> <span class="math notranslate nohighlight">\(S_1 - S_3\)</span> [MPa]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3.4</p></td>
+<td><p>0</p></td>
+<td><p>7.1</p></td>
+</tr>
+<tr class="row-odd"><td><p>6.9</p></td>
+<td><p>0</p></td>
+<td><p>20.6</p></td>
+</tr>
+<tr class="row-even"><td><p>10.3</p></td>
+<td><p>0</p></td>
+<td><p>29.7</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>The file \href{<a class="github reference external" href="https://github.com/dnicolasespinoza/GeomechanicsJupyter/tree/master/UndergradHomework/HW5">dnicolasespinoza/GeomechanicsJupyter</a>}{Triaxial-1500psi-raw.dat} (uploaded to Github) contains data from a triaxial test performed on a sandstone in dry conditions (<span class="math notranslate nohighlight">\(P_p\)</span> = 0 psi). <span class="math notranslate nohighlight">\(P_c\)</span> is the confining pressure, <span class="math notranslate nohighlight">\(Sig_D\)</span> is the deviatoric stress (<span class="math notranslate nohighlight">\(S_1-S_3\)</span>), <span class="math notranslate nohighlight">\(E_x\)</span> is the axial strain, and <span class="math notranslate nohighlight">\(E_y\)</span> is the radial strain.</p>
+<ol class="arabic simple">
+<li><p>Plot deviatoric stress and strains as a function of time (two plots). Mechanical experiments are usually performed at constant strain rate or constant stress rate. Which case is this? What is the rate?</p></li>
+<li><p>Plot deviatoric stress as a function of axial strain. Compute loading Young modulus at 25% of the peak stress and the unloading Young moduli for the two unloading cycles. Comment on the difference.</p></li>
+<li><p>Plot radial strain versus axial strain and compute loading Poisson ratio.</p></li>
+<li><p>Plot deviatoric stress versus volumetric strain. Does the sample contract, dilate, or both? Explain.</p></li>
+<li><p>If the shear strength parameter is <span class="math notranslate nohighlight">\(q=5.3\)</span>, what is the <span class="math notranslate nohighlight">\(UCS\)</span> of this rock?</p></li>
+</ol>
+</li>
+<li><p>Twelve triaxial tests on cylindrical plugs of Berea Sandstone are reported below (Bernabe and Brace, 1990 - \textit{The Brittle-Ductile Transition in Rocks, Geophys. Monogr. Serf.} Vp, 56, 91-101). (*) This is the axial stress that a load cell measures inside a pressurized vessel (<span class="math notranslate nohighlight">\(S_1-S_3\)</span>). For example, the value would be zero for hydrostatic loading (<span class="math notranslate nohighlight">\(S_1=S_3 \rightarrow S_1-S_3=0\)</span>).</p>
+<ol class="arabic simple">
+<li><p>Plot all data points in a <span class="math notranslate nohighlight">\(\sigma_1\)</span> versus <span class="math notranslate nohighlight">\(\sigma_3\)</span> plot and draw respective Mohr Circles (in Matlab, Python or Excel).</p></li>
+<li><p>Fit the data to Mohr-Coulomb criterion to compute unconfined compressive strength <span class="math notranslate nohighlight">\(UCS\)</span> and the parameter <span class="math notranslate nohighlight">\(q\)</span> through a linear regression. Then, calculate the cohesive strength <span class="math notranslate nohighlight">\(S_o\)</span> and internal friction coefficient <span class="math notranslate nohighlight">\(\mu_i\)</span>.</p></li>
+<li><p>Based on this information, compute the failure angle of the shear fracture you would expect to see in this sample after failure. Draw a sketch indicating the orientation with respect to the axial and radial stress.</p></li>
+<li><p>Did pore pressure significantly change the effective stress failure criterion?</p></li>
+</ol>
+</li>
+</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Confining pressure<br> <span class="math notranslate nohighlight">\(P_c\)</span> [MPa]</p></th>
+<th class="head"><p>Pore pressure<br> <span class="math notranslate nohighlight">\(P_p\)</span> [MPa]</p></th>
+<th class="head"><p>Peak deviatoric stress<br> <span class="math notranslate nohighlight">\(S_1 - S_3\)</span> [MPa]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>0</p></td>
+<td><p>116</p></td>
+</tr>
+<tr class="row-odd"><td><p>50</p></td>
+<td><p>0</p></td>
+<td><p>227</p></td>
+</tr>
+<tr class="row-even"><td><p>20</p></td>
+<td><p>8</p></td>
+<td><p>119</p></td>
+</tr>
+<tr class="row-odd"><td><p>45</p></td>
+<td><p>8</p></td>
+<td><p>183</p></td>
+</tr>
+<tr class="row-even"><td><p>60</p></td>
+<td><p>8</p></td>
+<td><p>206</p></td>
+</tr>
+<tr class="row-odd"><td><p>75</p></td>
+<td><p>8</p></td>
+<td><p>228</p></td>
+</tr>
+<tr class="row-even"><td><p>50</p></td>
+<td><p>37</p></td>
+<td><p>120</p></td>
+</tr>
+<tr class="row-odd"><td><p>50</p></td>
+<td><p>32</p></td>
+<td><p>141</p></td>
+</tr>
+<tr class="row-even"><td><p>90</p></td>
+<td><p>64</p></td>
+<td><p>161</p></td>
+</tr>
+<tr class="row-odd"><td><p>90</p></td>
+<td><p>55</p></td>
+<td><p>187</p></td>
+</tr>
+<tr class="row-even"><td><p>130</p></td>
+<td><p>96</p></td>
+<td><p>186</p></td>
+</tr>
+<tr class="row-odd"><td><p>130</p></td>
+<td><p>84</p></td>
+<td><p>207</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="further-reading-and-references">
+<h2>Further reading and references<a class="headerlink" href="#further-reading-and-references" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 2)</p></li>
+<li><p>Jaeger, J.C., Cook, N.G. and Zimmerman, R., 2009. Fundamentals of rock mechanics. John Wiley &amp; Sons. (Chapters 4 and 6)</p></li>
+<li><p>Zoback, M.D., 2010. Reservoir geomechanics. Cambridge University Press. (Chapter 4)</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch3_ContGeoMech.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">3. Fundamentals of Solid Continuum Mechanics</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminary-concepts">Preliminary concepts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microstructure-of-geologic-materials">Microstructure of geologic materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#length-scales-v-s-process-zone-size">Length scales v.s. process zone size</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-types-of-rock-failure">Overview of types of rock failure</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensile-failure">Tensile failure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-tension">Direct tension}</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-brazilian-test">The Brazilian test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shear-failure">Shear failure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frictional-strength">Frictional Strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unconfined-compression-strength">Unconfined compression strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confined-strength-the-triaxial-test">Confined strength: the triaxial test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triaxial-tests-of-fluid-saturated-rocks-and-sediments">Triaxial tests of fluid saturated rocks and sediments</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compression-failure-pore-collapse">Compression failure: Pore collapse</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#yield-failure-locus">Yield/failure locus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strength-anisotropy">Strength anisotropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deformation-beyond-the-elastic-limit">Deformation beyond the elastic limit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rock-damage-and-failure-revisited">Rock damage and failure revisited</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By D. Nicolas Espinoza
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
