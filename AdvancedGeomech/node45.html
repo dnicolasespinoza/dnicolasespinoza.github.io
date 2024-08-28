@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2019.2 (Released June 5, 2019) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>6.4 WP9: Hydraulic Fracturing</TITLE>
+<META NAME="description" CONTENT="6.4 WP9: Hydraulic Fracturing">
+<META NAME="keywords" CONTENT="AdvancedGeomech">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2019.2">
+
+<LINK REL="STYLESHEET" HREF="AdvancedGeomech.css">
+
+<LINK REL="previous" HREF="node44.html">
+<LINK REL="next" HREF="node46.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node41.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html512"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node46.html">7. Final Project</A>
+<B> Up:</B> <A
+ HREF="node41.html">6. Mechanics of fluid</A>
+<B> Previous:</B> <A
+ HREF="node44.html">6.3 Hydraulic fracturing in</A>
+ &nbsp; <B>  <A ID="tex2html513"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A ID="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A ID="tex2html514"
+  HREF="node45.html#SECTION00741000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stress shadows and interference</A>
+<LI><A ID="tex2html515"
+  HREF="node45.html#SECTION00742000000000000000"><SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Coupled hydraulic fracturing modeling</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A ID="SECTION00740000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN> WP9: Hydraulic Fracturing</A>
+</H1>
+
+<P>
+
+<H2><A ID="SECTION00741000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">1</SPAN> Stress shadows and interference</A>
+</H2>
+
+<P>
+Read the paper &ldquo;Roussel, N. P., and Sharma, M. M. (2011). Optimizing fracture spacing and sequencing in horizontal-well fracturing. SPE Production and Operations, 26(02), 173-184.&rdquo; <kbd><A ID="tex2html42"
+  HREF="https://doi.org/10.2118/127986-PA">https://doi.org/10.2118/127986-PA</A></kbd>.
+
+<P>
+
+<OL>
+<LI>Calculate the point of principal stress reversal (isotropic point in Fig. 11 of the paper) with a constant pressure and plane-strain solution utilizing your FreeFEM++ linear elasticity code. Use all parameters as in Table 1. <SPAN  CLASS="textit">Note</SPAN>: <!-- MATH
+ $\Delta S_{yy} = \nu (\Delta S_{xx}+\Delta S_{zz})$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.62ex; vertical-align: -0.78ex; " SRC="img138.svg"
+ ALT="$\Delta S_{yy} = \nu (\Delta S_{xx}+\Delta S_{zz})$"></SPAN>.
+</LI>
+<LI>Repeat the previous task for fracture width 6 mm, 8 mm, and 10 mm. Plot stress reversal distance as a function of fracture width. <SPAN  CLASS="textit">Hint</SPAN>: You may need to calculate the required net pressure from the analytical solution.
+</LI>
+</OL>
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:StressShadow"></A><A ID="795"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.1:</STRONG>
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img2.svg"
+ ALT="$S_{Hmax}$"></SPAN> direction around a propped hydraulic fracture (Roussel and Sharma, 2011).</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par4490" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./StressShadow.png"
+ ALT="Image StressShadow"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<H2><A ID="SECTION00742000000000000000">
+<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">4</SPAN>.<SPAN CLASS="arabic">2</SPAN> Coupled hydraulic fracturing modeling</A>
+</H2>
+
+<P>
+A single hydraulic fracture treatment will be performed in a tight sandstone. 
+The hydraulic fracture height is expected to be <SPAN CLASS="MATH"><IMG STYLE="height: 2.52ex; vertical-align: -0.81ex; " SRC="img139.svg"
+ ALT="$h_f$"></SPAN> = 170 ft. 
+The tight sandstone has a plane-strain modulus <!-- MATH
+ $E' = 8.9 \times 10^6$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.33ex; vertical-align: -0.30ex; " SRC="img140.svg"
+ ALT="$E' = 8.9 \times 10^6$"></SPAN> psi. 
+The (two-wing) injection rate will be 50 bbl/min (constant) during 1 hour. 
+
+<P>
+Compute: 
+
+<OL>
+<LI>The expected fracture half-length <SPAN CLASS="MATH"><IMG STYLE="height: 1.91ex; vertical-align: -0.81ex; " SRC="img141.svg"
+ ALT="$x_f$"></SPAN>, fracture width at the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.78ex; " SRC="img142.svg"
+ ALT="$w_{w,0}$"></SPAN>, and net pressure <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img143.svg"
+ ALT="$p_{n}$"></SPAN> as a function of time with the PKN model (no leak-off) assuming the fracturing fluid has a (constant) viscosity 2 cP.
+</LI>
+<LI>The expected fracture half-length <SPAN CLASS="MATH"><IMG STYLE="height: 1.91ex; vertical-align: -0.81ex; " SRC="img141.svg"
+ ALT="$x_f$"></SPAN>, fracture width at the wellbore <SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.78ex; " SRC="img142.svg"
+ ALT="$w_{w,0}$"></SPAN>, and net pressure <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img144.svg"
+ ALT="$p_n$"></SPAN> as a function of time with the PKN model (no leak-off). Now the fracturing fluid has a viscosity 2 cP with no proppant (initial 10 min), and increases in steps of 10 min with 2 cP in each step (due to increasing proppant concentration).
+</LI>
+<LI>What should you do to your solution in order to consider leak-off? Justify and explain briefly the algorithm to calculate <SPAN CLASS="MATH"><IMG STYLE="height: 1.91ex; vertical-align: -0.81ex; " SRC="img141.svg"
+ ALT="$x_f$"></SPAN>, <SPAN CLASS="MATH"><IMG STYLE="height: 1.88ex; vertical-align: -0.78ex; " SRC="img142.svg"
+ ALT="$w_{w,0}$"></SPAN>, and <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img144.svg"
+ ALT="$p_n$"></SPAN>.
+</LI>
+</OL>
+
+<P>
+<SPAN  CLASS="textit">Hint</SPAN>: convert all quantities to the SI system first
+
+<P>
+
+<DIV class="CENTER">
+
+<P><A ID="fig:PKNequations"></A></P><DIV CLASS="centerline" ID="par4521" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="./PKN-Adachi.png"
+ ALT="Image PKN-Adachi"></DIV>
+
+</DIV> 
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node46.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node41.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node44.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html512"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node46.html">7. Final Project</A>
+<B> Up:</B> <A
+ HREF="node41.html">6. Mechanics of fluid</A>
+<B> Previous:</B> <A
+ HREF="node44.html">6.3 Hydraulic fracturing in</A>
+ &nbsp; <B>  <A ID="tex2html513"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
