@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2018.3 (Released July 19, 2018) -->
+<HTML lang="EN">
+<HEAD>
+<TITLE>Stresses on deviated wellbores</TITLE>
+<META NAME="description" CONTENT="Stresses on deviated wellbores">
+<META NAME="keywords" CONTENT="IPG">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2018.3">
+
+<LINK REL="STYLESHEET" HREF="IPG.css">
+
+<LINK REL="next" HREF="node107.html">
+<LINK REL="previous" HREF="node105.html">
+<LINK REL="next" HREF="node107.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node107.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node104.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node105.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html773"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node107.html">Breakout analysis for deviated</A>
+<B> Up:</B> <A
+ HREF="node104.html">Mechanical stability of deviated</A>
+<B> Previous:</B> <A
+ HREF="node105.html">Wellbore orientation</A>
+ &nbsp; <B>  <A ID="tex2html774"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00762000000000000000">
+Stresses on deviated wellbores</A>
+</H2>
+
+<P>
+Let us define a coordinate system for a point along the trajectory of a deviated wellbore. 
+The first element <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img770.svg"
+ ALT="$x_b$"></SPAN> of the cartesian base goes from the center of a cross-section of the wellbore at a given depth to the deepest point around the cross-section (perpendicular to the axis).  
+The second element of the base <SPAN CLASS="MATH"><IMG STYLE="height: 1.66ex; vertical-align: -0.56ex; " SRC="img771.svg"
+ ALT="$y_b$"></SPAN> goes from the center to the side on a horizontal plane. 
+The third element of the base <SPAN CLASS="MATH"><IMG STYLE="height: 1.59ex; vertical-align: -0.48ex; " SRC="img772.svg"
+ ALT="$z_b$"></SPAN> goes along the direction of the wellbore.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:lect-X"></A><A ID="6660"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.20:</STRONG>
+The wellbore coordinate system.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17436" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img773.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/8-WellCoordSystem.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Based on the previous definition, it is possible to construct a transformation matrix <!-- MATH
+ $R_{GW}=f(\delta,\varphi)$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img774.svg"
+ ALT="$R_{GW}=f(\delta,\varphi)$"></SPAN> that links the geographical coordinate system and the wellbore coordinate system.
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{S}{}_W =
+			R_{GW} \uuline{S}{}_G R_{GW}^T
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.94ex; vertical-align: -1.73ex; " SRC="img775.svg"
+ ALT="$\displaystyle \uuline{S}{}_W =
+R_{GW} \uuline{S}{}_G R_{GW}^T$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">19</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Furthermore, the wellbore stresses can be calculated from the principal stress tensor according with:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{S}{}_W =
+			R_{GW} R_{PG}^T \uuline{S}{}_P R_{PG} R_{GW}^T
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE="height: 3.94ex; vertical-align: -1.73ex; " SRC="img776.svg"
+ ALT="$\displaystyle \uuline{S}{}_W =
+R_{GW} R_{PG}^T \uuline{S}{}_P R_{PG} R_{GW}^T$"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">20</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Where <!-- MATH
+ $\uuline{S}{}_P$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img777.svg"
+ ALT="$\uuline{S}{}_P$"></SPAN> and <SPAN CLASS="MATH"><IMG STYLE="height: 2.15ex; vertical-align: -0.47ex; " SRC="img568.svg"
+ ALT="$R_{PG}$"></SPAN> are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system.
+The tensor <!-- MATH
+ $\uuline{S}{}_W$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 3.41ex; vertical-align: -1.73ex; " SRC="img778.svg"
+ ALT="$\uuline{S}{}_W$"></SPAN> is composed by the following stresses:
+
+<P>
+<P></P>
+<DIV CLASS="mathdisplay"><!-- MATH
+ \begin{equation}
+\uuline{S}{}_W =
+	\left[
+		\begin{array}{ccc}
+			S_{11} & S_{12} & S_{13} \\
+			S_{21} & S_{22} & S_{23} \\
+			S_{31} & S_{32} & S_{33} \\
+		\end{array}
+	\right]
+\end{equation}
+ -->
+<TABLE CLASS="equation" >
+<TR>
+<TD  style="text-align:center;"><SPAN CLASS="MATH"><IMG STYLE=""
+ SRC="img779.svg"
+ ALT="\begin{displaymath}\uuline{S}{}_W =
+\left[
+\begin{array}{ccc}
+S_{11} &amp; S_{12} &amp; ...
+...2} &amp; S_{23} \\
+S_{31} &amp; S_{32} &amp; S_{33} \\
+\end{array}\right]\end{displaymath}"></SPAN></TD>
+<TD  CLASS="eqno" style="text-align:right">
+(<SPAN CLASS="arabic">6</SPAN>.<SPAN CLASS="arabic">21</SPAN>)</TD></TR>
+</TABLE></DIV>
+<P></P>
+
+<P>
+Stresses on the plane of the cross-section of the deviated wellbore at the wellbore wall <!-- MATH
+ $(\sigma_{rr}, \sigma_{\theta \theta}, \sigma_{zz}, \sigma_{\theta z})$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img780.svg"
+ ALT="$(\sigma_{rr}, \sigma_{\theta \theta}, \sigma_{zz}, \sigma_{\theta z})$"></SPAN> depend on far-field stresses <!-- MATH
+ $\sigma_{11} = S_{11} - P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img781.svg"
+ ALT="$\sigma_{11} = S_{11} - P_p$"></SPAN>, <!-- MATH
+ $\sigma_{22} = S_{22} - P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img782.svg"
+ ALT="$\sigma_{22} = S_{22} - P_p$"></SPAN>, <!-- MATH
+ $\sigma_{33} = S_{33} - P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img783.svg"
+ ALT="$\sigma_{33} = S_{33} - P_p$"></SPAN>, <!-- MATH
+ $\sigma_{12} = S_{12}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img784.svg"
+ ALT="$\sigma_{12} = S_{12}$"></SPAN>, <!-- MATH
+ $\sigma_{13} = S_{13}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img785.svg"
+ ALT="$\sigma_{13} = S_{13}$"></SPAN>, and <!-- MATH
+ $\sigma_{23} = S_{23}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.14ex; vertical-align: -0.45ex; " SRC="img786.svg"
+ ALT="$\sigma_{23} = S_{23}$"></SPAN>. 
+The Kirsch equations require additional far field shear terms <!-- MATH
+ $\sigma_{12}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img787.svg"
+ ALT="$\sigma_{12}$"></SPAN>, <!-- MATH
+ $\sigma_{13}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img788.svg"
+ ALT="$\sigma_{13}$"></SPAN>, and <!-- MATH
+ $\sigma_{23}$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 1.56ex; vertical-align: -0.45ex; " SRC="img789.svg"
+ ALT="$\sigma_{23}$"></SPAN> in order to account for principal stresses not coinciding with the wellbore orientation.
+The solution of Kirsch equation with far-field shear stresses is provided in Fig. <A HREF="#fig:KirschDevWell">6.21</A>.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:KirschDevWell"></A><A ID="6725"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.21:</STRONG>
+Stresses around the wall of a deviated wellbore.</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17475" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img790.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/8-3.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+Solving for principal stresses <!-- MATH
+ $(\sigma_{tmax}, \sigma_{rr}, \sigma_{tmin})$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.53ex; vertical-align: -0.69ex; " SRC="img791.svg"
+ ALT="$(\sigma_{tmax}, \sigma_{rr}, \sigma_{tmin})$"></SPAN> on the wellbore wall permits checking for rock failure (tensile of shear).
+The principal stresses may not be necessarily aligned with the wellbore axis leading to an angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img792.svg"
+ ALT="$\omega$"></SPAN> (see Fig. <A HREF="#fig:PrincStressesDevWell">6.22</A>).
+Because of such angle, tensile fractures in deviated wellbores can occur at an angle <SPAN CLASS="MATH"><IMG STYLE="height: 1.21ex; vertical-align: -0.11ex; " SRC="img792.svg"
+ ALT="$\omega$"></SPAN> from the axis of the wellbore and appear as a series of short inclined (en-&#233;chelon) fractures instead of a long tensile fracture parallel to the wellbore axis as in Fig. <A HREF="node102.html#fig:BoreholeImagingTfracs">6.16</A>.
+
+<P>
+
+<DIV class="CENTER"><A ID="fig:PrincStressesDevWell"></A><A ID="6735"></A>
+<TABLE>
+<CAPTION class="BOTTOM"><STRONG>Figure 6.22:</STRONG>
+Principal stresses around the wall of a deviated wellbore. (<!-- MATH
+ $\Delta P = P_W - P_p$
+ -->
+<SPAN CLASS="MATH"><IMG STYLE="height: 2.47ex; vertical-align: -0.78ex; " SRC="img26.svg"
+ ALT="$\Delta P = P_W - P_p$"></SPAN>).</CAPTION>
+<TR><TD><DIV CLASS="centerline" ID="par17486" ALIGN="CENTER">
+<IMG STYLE=""
+ SRC="img793.svg"
+ ALT="\includegraphics[scale=0.65]{.././Figures/split/8-4.pdf}"></DIV></TD></TR>
+</TABLE>
+</DIV>
+ 
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node107.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node104.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node105.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html773"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node107.html">Breakout analysis for deviated</A>
+<B> Up:</B> <A
+ HREF="node104.html">Mechanical stability of deviated</A>
+<B> Previous:</B> <A
+ HREF="node105.html">Wellbore orientation</A>
+ &nbsp; <B>  <A ID="tex2html774"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
