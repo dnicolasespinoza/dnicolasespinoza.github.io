@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.462 9.927" version="1.2">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11.462 10.927" version="1.2">
 <defs>
 <g>
 <symbol overflow="visible" id="glyph0-0">
@@ -16,17 +16,17 @@
 </symbol>
 </g>
 <clipPath id="clip1">
-  <path d="M 5 2 L 9 2 L 9 9.925781 L 5 9.925781 Z M 5 2 "/>
+  <path d="M 5 3 L 10 3 L 10 10.925781 L 5 10.925781 Z M 5 3 "/>
 </clipPath>
 </defs>
 <g id="surface1">
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph0-1" x="0.5" y="5.197"/>
+  <use xlink:href="#glyph0-1" x="1" y="5.697"/>
 </g>
-<path style="fill:none;stroke-width:0.436;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 -0.0015625 L 5.078125 -0.0015625 " transform="matrix(1,0,0,-1,0.5,6.725)"/>
+<path style="fill:none;stroke-width:0.436;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 -0.0015625 L 5.078125 -0.0015625 " transform="matrix(1,0,0,-1,1,7.225)"/>
 <g clip-path="url(#clip1)" clip-rule="nonzero">
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph1-1" x="5.58" y="7.877"/>
+  <use xlink:href="#glyph1-1" x="6.08" y="8.377"/>
 </g>
 </g>
 </g>
