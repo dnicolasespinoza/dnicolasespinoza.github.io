@@ -423,20 +423,20 @@ document.write(`
 <h1>3. Fundamentals of Solid Continuum Mechanics<a class="headerlink" href="#fundamentals-of-solid-continuum-mechanics" title="Link to this heading">#</a></h1>
 <section id="stress-tensor">
 <h2>Stress tensor<a class="headerlink" href="#stress-tensor" title="Link to this heading">#</a></h2>
-<p>Consider a 3D space with a given right-handed orthogonal coordinate system <span class="math notranslate nohighlight">\(\underline{e}_1\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_2\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> in directions 1, 2 and 3 (Figure \ref{fig:lec4-3}).
+<p>Consider a 3D space with a given right-handed orthogonal coordinate system <span class="math notranslate nohighlight">\(\underline{e}_1\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_2\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> in directions 1, 2 and 3 (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 45</span></a>).
 In a right-handed coordinate system, the first element of the base <span class="math notranslate nohighlight">\(\underline{e}_1\)</span> is your index finger, the second element of the base <span class="math notranslate nohighlight">\(\underline{e}_2\)</span> is your middle finger, and the third element of the base <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> is your thumb (all in your right hand).</p>
-<p>The number that represents the value of a scalar (such as temperature <span class="math notranslate nohighlight">\(T\)</span> or pore pressure <span class="math notranslate nohighlight">\(P_p\)</span>) at a given point <span class="math notranslate nohighlight">\((x_1,x_2,x_3)\)</span> is independent of the coordinate system orientation and origin (Figure \ref{fig:ScalarVectorTensor}).
+<p>The number that represents the value of a scalar (such as temperature <span class="math notranslate nohighlight">\(T\)</span> or pore pressure <span class="math notranslate nohighlight">\(P_p\)</span>) at a given point <span class="math notranslate nohighlight">\((x_1,x_2,x_3)\)</span> is independent of the coordinate system orientation and origin (<a class="reference internal" href="#fig-scalarvectortensor"><span class="std std-numref">Fig. 44</span></a>).
 However, the numbers that represent the value of a vector (such as velocity <span class="math notranslate nohighlight">\(\underline{v}\)</span> or force <span class="math notranslate nohighlight">\(\underline{F}\)</span>) or a tensor depend on the coordinate system.
 A tensor, like stress, also depends on the coordinate system used to express its numerical values.
 Read the values <span class="math notranslate nohighlight">\(S_{ij}\)</span> as the stress on face perpendicular to base vector <span class="math notranslate nohighlight">\(\underline{e}_i\)</span> in the direction of base vector <span class="math notranslate nohighlight">\(\underline{e}_j\)</span>.
-<span class="math notranslate nohighlight">\(S_{ij}\)</span> is positive if after a displacement <span class="math notranslate nohighlight">\(dx_i\)</span>, <span class="math notranslate nohighlight">\(S_{ij}\)</span> points in opposite direction to <span class="math notranslate nohighlight">\(\underline{e}_j\)</span> (Figure \ref{fig:lec4-3}).</p>
+<span class="math notranslate nohighlight">\(S_{ij}\)</span> is positive if after a displacement <span class="math notranslate nohighlight">\(dx_i\)</span>, <span class="math notranslate nohighlight">\(S_{ij}\)</span> points in opposite direction to <span class="math notranslate nohighlight">\(\underline{e}_j\)</span> (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 45</span></a>).</p>
 <figure class="align-default" id="fig-scalarvectortensor">
 <a class="reference internal image-reference" href="_images/4-ScalarVectorTensor.png"><img alt="figurecontent" src="_images/4-ScalarVectorTensor.png" style="width: 600px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 44 </span><span class="caption-text">Examples of scalar, vector and tensor quantities in a shale reservoir.</span><a class="headerlink" href="#fig-scalarvectortensor" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>All stresses <span class="math notranslate nohighlight">\(S_{ij}\)</span> can be written as a matrix (Figure \ref{fig:lec4-3}).
+<p>All stresses <span class="math notranslate nohighlight">\(S_{ij}\)</span> can be written as a matrix ({numref}fig:lec4-3}).
 The diagonal terms correspond to normal stresses.
 The off-diagonal terms correspond to shear stresses.
 Off-diagonal stresses are symmetric <span class="math notranslate nohighlight">\(S_{ij}=S_{ji}\)</span> (<span class="math notranslate nohighlight">\(i \neq j\)</span>) because of angular momentum equilibrium (the element does not spin around any axis).
@@ -451,7 +451,7 @@ Hence, the stress tensor is symmetric with respect to the diagonal (top-left to 
 Each principal stress (eigenvalue) is associated with a principal direction (eigenvector).
 Principal directions are always perpendicular to each other in a cartesian coordinate system.
 When we write the stress tensor in the coordinate system aligned with directions of the principal stresses, the stress tensor results in diagonal elements populated by the principal stresses  and zeros in the off-diagonal places.
-Usually, the principal stresses are ordered from top to bottom starting with <span class="math notranslate nohighlight">\(S_1\)</span> at the top (Figure \ref{fig:Principi}).</p>
+Usually, the principal stresses are ordered from top to bottom starting with <span class="math notranslate nohighlight">\(S_1\)</span> at the top (<a class="reference internal" href="#fig-principi"><span class="std std-numref">Fig. 46</span></a>}).</p>
 <figure class="align-default" id="fig-principi">
 <a class="reference internal image-reference" href="_images/4-4.pdf"><img alt="figurecontent" src="_images/4-4.pdf" style="width: 600px;" /></a>
 <figcaption>
@@ -480,9 +480,9 @@ Usually, the principal stresses are ordered from top to bottom starting with <sp
 <p>SOLUTION</p>
 <p>First, find an appropiate math solver that can calculate eigenvalues and eigenvectors (Python, Matlab, Wolfram Alpha, etc.)
 We will use Wolfram Alpha online in this solution.
-Go to \url{<a class="reference external" href="https://www.wolframalpha.com/">https://www.wolframalpha.com/</a>} and enter:</p>
-<p>\texttt{eigenvalues} <span class="math notranslate nohighlight">\( \left\{ \left\{ 8580,100,0 \right\}, \left\{ 100,9900,0 \right\}, \left\{0,0,9000 \right\} \right\} \)</span></p>
-<p>The answer to this querry is (click in ``approximate forms’’):</p>
+Go to <a class="reference external" href="https://www.wolframalpha.com/">Wolfram Alpha</a> and enter:</p>
+<p><code class="docutils literal notranslate"><span class="pre">eigenvalues</span></code> <span class="math notranslate nohighlight">\( \left\{ \left\{ 8580,100,0 \right\}, \left\{ 100,9900,0 \right\}, \left\{0,0,9000 \right\} \right\} \)</span></p>
+<p>The answer to this querry is (click in “approximate forms”):</p>
 <p><span class="math notranslate nohighlight">\(
 \left\{  
 \begin{array}{ccc}
@@ -524,7 +524,7 @@ Hence, the angle between the North and the vector <span class="math notranslate 
 <section id="cauchy-s-equations-of-stress-equilibrium">
 <h3>Cauchy’s equations of stress equilibrium<a class="headerlink" href="#cauchy-s-equations-of-stress-equilibrium" title="Link to this heading">#</a></h3>
 <p>Equilibrium of stresses requires summation of forces in all directions to be zero when the object is not moving (no acceleration <span class="math notranslate nohighlight">\(\underline{a}\)</span>, thus <span class="math notranslate nohighlight">\(m \underline{a} = 0\)</span>).
-Consider the schematic in Figure \ref{fig:lec4-5}.
+Consider the schematic in <a class="reference internal" href="#fig-lec4-5"><span class="std std-numref">Fig. 47</span></a>.
 Summation of forces in direction 1, where the term <span class="math notranslate nohighlight">\(\rho V b_1\)</span> is the body force component, proportional to the solid mass density <span class="math notranslate nohighlight">\(\rho\)</span> and volume <span class="math notranslate nohighlight">\(V\)</span>, and the acceleration component <span class="math notranslate nohighlight">\(b_1\)</span>, requires</p>
 <p><span class="math notranslate nohighlight">\(
 \begin{array}{rcl}
@@ -548,7 +548,7 @@ Summation of forces in direction 1, where the term <span class="math notranslate
 <p><span class="caption-number">Fig. 47 </span><span class="caption-text">Equilibrium of forces in direction 1. <span class="math notranslate nohighlight">\(S_{21}\)</span>,  <span class="math notranslate nohighlight">\(S_{31}+\frac{\partial S_{31}}{\partial x_3} dx_3\)</span> and <span class="math notranslate nohighlight">\(S_{11}+\frac{\partial S_{11}}{\partial x_1} dx_1\)</span> are applied on the non-visible faces of the solid element.</span><a class="headerlink" href="#fig-lec4-5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>A generalization of equilibrium in all directions with all stresses (Figure \ref{fig:lec4-3}) yields the Cauchy’s equilibrium equations:</p>
+<p>A generalization of equilibrium in all directions with all stresses (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 45</span></a>) yields the Cauchy’s equilibrium equations:</p>
 <div class="math notranslate nohighlight" id="equation-eq-cauchy">
 <span class="eqno">(16)<a class="headerlink" href="#equation-eq-cauchy" title="Link to this equation">#</a></span>\[\begin{split} 	\displaystyle
 	\left\lbrace
@@ -572,26 +572,26 @@ Summation of forces in direction 1, where the term <span class="math notranslate
 <h3>Application of Cauchy’s equations for total vertical stress calculation<a class="headerlink" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation" title="Link to this heading">#</a></h3>
 <p>Consider a half-space where the surface coincides with the origin of the coordinate system and gravity <span class="math notranslate nohighlight">\(g\)</span> points in direction 3, hence <span class="math notranslate nohighlight">\(b_3 = g\)</span> in Eq. \ref{eq:Cauchy}.
 We assume infinite extension in directions 1 and 2, therefore there are no variations in directions 1 and 2, such that <span class="math notranslate nohighlight">\(\partial()/\partial x_1 = \partial()/\partial x_2 = 0\)</span>.
-Notice there are 6 unknowns and 3 equations in Eq. \ref{eq:Cauchy} (remember <span class="math notranslate nohighlight">\(S_{ij} = S_{ji}\)</span> ).
+Notice there are 6 unknowns and 3 equations in Eq. <a class="reference internal" href="#equation-eq-cauchy">(16)</a> (remember <span class="math notranslate nohighlight">\(S_{ij} = S_{ji}\)</span> ).
 The only equation we can solve is the third one.
 Integration of the third equation yields the (vertical) stress <span class="math notranslate nohighlight">\(S_{33}\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-eq-s33">
 <span class="eqno">(17)<a class="headerlink" href="#equation-eq-s33" title="Link to this equation">#</a></span>\[ 	S_{33}(x_3) = \int_0^{x_3} \rho(x_3) g \: dx_3\]</div>
-<p>equivalent to Eq. \ref{eq:VertStressGral}.</p>
+<p>equivalent to Eq. <a class="reference internal" href="ch2_StressPorePressure.html#equation-eq-vertstressgral">(9)</a>.</p>
 <figure class="align-default" id="fig-lec4-7">
 <a class="reference internal image-reference" href="_images/4-7.pdf"><img alt="figurecontent" src="_images/4-7.pdf" style="width: 600px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 48 </span><span class="caption-text">Stress gradient in a solid half-space and derivation of total vertical stress <span class="math notranslate nohighlight">\(S_{33}\)</span> as a function of depth.</span><a class="headerlink" href="#fig-lec4-7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>You may wonder ``what about <span class="math notranslate nohighlight">\(S_{11}\)</span> and <span class="math notranslate nohighlight">\(S_{22}\)</span>?
+<p>You may wonder “what about <span class="math notranslate nohighlight">\(S_{11}\)</span> and <span class="math notranslate nohighlight">\(S_{22}\)</span>”?
 The horizontal stresses cannot be determined with the current equations.
 The solution to this problem will be developed in section \ref{sec:CalcHzStress}.</p>
 </section>
 <section id="continuum-mechanics-solution-of-an-arbitrary-problem">
 <h3>Continuum mechanics solution of an arbitrary problem<a class="headerlink" href="#continuum-mechanics-solution-of-an-arbitrary-problem" title="Link to this heading">#</a></h3>
-<p>Figure \ref{fig:potato-eq} shows an example of an arbitrary shaped continuous solid subjected to external stresses <span class="math notranslate nohighlight">\(\underline{t}\)</span>, external forces <span class="math notranslate nohighlight">\(\underline{F}\)</span>, body forces <span class="math notranslate nohighlight">\(\underline{b}\)</span>, and displacement constraints (bottom fixture).
-As highlighted before, notice that there are 6 unknowns (9 unknowns if displacements are included) and 3 equations in Cauchy’s equations of equilibrium (Eq. \ref{eq:Cauchy}).
+<p>{numref}fig:potato-eq} shows an example of an arbitrary shaped continuous solid subjected to external stresses <span class="math notranslate nohighlight">\(\underline{t}\)</span>, external forces <span class="math notranslate nohighlight">\(\underline{F}\)</span>, body forces <span class="math notranslate nohighlight">\(\underline{b}\)</span>, and displacement constraints (bottom fixture).
+As highlighted before, notice that there are 6 unknowns (9 unknowns if displacements are included) and 3 equations in Cauchy’s equations of equilibrium (Eq. <a class="reference internal" href="#equation-eq-cauchy">(16)</a>).
 The solution of a general problem with arbitrary boundary conditions requires more equations to have a determined problem (as many equations as unknowns).
 The solution of such problem requires knowledge of the material properties.
 We need equations that relate displacement to stresses. These equations divide in two types:</p>
@@ -611,7 +611,7 @@ We need equations that relate displacement to stresses. These equations divide i
 <section id="kinematic-equations-displacements-and-strains">
 <h2>Kinematic equations: displacements and strains<a class="headerlink" href="#kinematic-equations-displacements-and-strains" title="Link to this heading">#</a></h2>
 <p>Applications of stresses result in solid deformation and displacements.
-Figure \ref{fig:FreeFEMexample} shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
+<a class="reference internal" href="#fig-freefemexample"><span class="std std-numref">Fig. 50</span></a> shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
 In this particular case, the solid is anchored at the bottom and deforms due to the application of a force (from left to right) on the top.
 Hence, displacements at the bottom are zero and displacements on the top are the maximum.</p>
 <figure class="align-default" id="fig-freefemexample">
@@ -622,7 +622,7 @@ Hence, displacements at the bottom are zero and displacements on the top are the
 </figure>
 <p>Yet, absolute displacements are not enough to determine stresses.
 A solid may translate or rotate in space without development of any internal stresses required to equilibrate external actions (imagine a cookie “floating” in zero gravity within the  International Space Station <a class="reference external" href="https://www.youtube.com/watch?v=q5uV4fTV0Zo">video example</a>.</p>
-<p>Let’s look at Figure \ref{fig:kinematics2D} in order to relate displacements to strains:</p>
+<p>Let’s look at <a class="reference internal" href="#fig-kinematics2d"><span class="std std-numref">Fig. 51</span></a> in order to relate displacements to strains:</p>
 <ol class="arabic simple">
 <li><p>A solid is stretched on its face 1 (perpendicular to <span class="math notranslate nohighlight">\(\underline{e}_1\)</span>) in direction 1 only. This type of deformation produces a change of volume of the solid and therefore contributes to volumetric strain. The resulting deformation or strain (change of length divided original length) is</p></li>
 </ol>
@@ -669,7 +669,7 @@ Similarly to the stress tensor, strains can be organized in a tensor where eleme
 <span class="eqno">(22)<a class="headerlink" href="#equation-eq-volstrain" title="Link to this equation">#</a></span>\[	\varepsilon_{vol} = \varepsilon_{11} + \varepsilon_{22} + \varepsilon_{33} \]</div>
 <div class="admonition-example-3-2 admonition">
 <p class="admonition-title">Example 3.2</p>
-<p>Demonstrate the equality in Eq. \ref{eq:volstrain} from simple geometrical concepts. Hint: the initial volume of the solid is <span class="math notranslate nohighlight">\(\Delta x_1 \Delta x_2 \Delta x_3\)</span>.</p>
+<p>Demonstrate the equality in Eq. <a class="reference internal" href="#equation-eq-volstrain">(22)</a> from simple geometrical concepts. Hint: the initial volume of the solid is <span class="math notranslate nohighlight">\(\Delta x_1 \Delta x_2 \Delta x_3\)</span>.</p>
 <p>SOLUTION</p>
 <p>The definition of volumetric strain is the ratio between the change of volume <span class="math notranslate nohighlight">\(\Delta V\)</span> and the initial volume <span class="math notranslate nohighlight">\(V_0\)</span>:
 <span class="math notranslate nohighlight">\(
@@ -703,7 +703,7 @@ How to choose a constitutive equation depends on the material properties, the ma
 </figcaption>
 </figure>
 <p>The simplest constitutive relationship for solids is linear elasticity, in which stresses and strains are linearly related by constant coefficients.
-The examples in Figure \ref{fig:elasticity1D2D3D} correspond to applications of linear elasticity in various dimensions:</p>
+The examples in <a class="reference internal" href="#fig-elasticity1d2d3d"><span class="std std-numref">Fig. 53</span></a> correspond to applications of linear elasticity in various dimensions:</p>
 <ol class="arabic">
 <li><p>(TOP) Hooke’s law: the force <span class="math notranslate nohighlight">\(F\)</span> [N] required to produce an elongation <span class="math notranslate nohighlight">\(\Delta x\)</span> [m] in a spring with mechanical constant <span class="math notranslate nohighlight">\(k\)</span> [N/m] is</p>
 <div class="math notranslate nohighlight">
@@ -729,7 +729,7 @@ The examples in Figure \ref{fig:elasticity1D2D3D} correspond to applications of 
 </figure>
 <section id="linear-isotropic-elasticity">
 <h3>Linear isotropic elasticity<a class="headerlink" href="#linear-isotropic-elasticity" title="Link to this heading">#</a></h3>
-<p>Consider a prismatic solid with length <span class="math notranslate nohighlight">\(L\)</span> to which we apply a stress <span class="math notranslate nohighlight">\(\sigma_{33}\)</span> on top face 3 (Figure \ref{fig:YoungPoisson}).
+<p>Consider a prismatic solid with length <span class="math notranslate nohighlight">\(L\)</span> to which we apply a stress <span class="math notranslate nohighlight">\(\sigma_{33}\)</span> on top face 3 (<a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 54</span></a>).
 The bottom face is not allowed to move in direction 3 but it can slide sideways.
 The four other faces are free to move in all directions.
 Notice that the top face can also deform in directions 1 and 2.
@@ -741,7 +741,7 @@ The Poisson ratio (greek letter nu) is defined as (-1) times the ratio between t
 <div class="math notranslate nohighlight" id="equation-eq-poissondef">
 <span class="eqno">(24)<a class="headerlink" href="#equation-eq-poissondef" title="Link to this equation">#</a></span>\[	\nu = -\frac{\varepsilon_{11}}{\varepsilon_{33}}\]</div>
 <p>These two coefficients are the two coefficients conventionally used as elasticity constants in continuum mechanics.
-We will see later that in the subsurface we almost never find conditions of laterally “unconfined” stress loading like the one shown in Figure \ref{fig:YoungPoisson}.</p>
+We will see later that in the subsurface we almost never find conditions of laterally “unconfined” stress loading like the one shown in <a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 54</span></a>.</p>
 <figure class="align-default" id="fig-youngpoisson">
 <a class="reference internal image-reference" href="_images/4-14.pdf"><img alt="figurecontent" src="_images/4-14.pdf" style="width: 600px;" /></a>
 <figcaption>
@@ -749,7 +749,7 @@ We will see later that in the subsurface we almost never find conditions of late
 </figcaption>
 </figure>
 <p>The real behavior of rocks differs from the linear elastic assumption.
-Figure \ref{fig:YoungLab} shows a schematic representation of a typical unconfined loading test.
+<a class="reference internal" href="#fig-younglab"><span class="std std-numref">Fig. 55</span></a> shows a schematic representation of a typical unconfined loading test.
 The figure plots axial stress <span class="math notranslate nohighlight">\(\sigma_a\)</span> in the vertical axis and axial strain <span class="math notranslate nohighlight">\(\varepsilon_a\)</span> in the horizontal axis.
 Often, rock plugs are not perfectly parallel or may have some microcracks.
 Both features make the initial loading stress-strain behavior look less stiff than the actual rock stiffness.
@@ -763,7 +763,7 @@ The Poisson ratio can be measured in the same range of the measurement of <span 
 </figcaption>
 </figure>
 <p>The Young modulus of sediments and rocks varies widely.
-Figure \ref{fig:YoungSummary} shows typical values of Young’s modulus.</p>
+<a class="reference internal" href="#fig-youngsummary"><span class="std std-numref">Fig. 56</span></a> shows typical values of Young’s modulus.</p>
 <figure class="align-default" id="fig-youngsummary">
 <a class="reference internal image-reference" href="_images/3-YoungModulusSummary.png"><img alt="figurecontent" src="_images/3-YoungModulusSummary.png" style="width: 600px;" /></a>
 <figcaption>
@@ -798,7 +798,7 @@ Figure \ref{fig:YoungSummary} shows typical values of Young’s modulus.</p>
 </section>
 <section id="the-isotropic-solid-in-voigt-notation">
 <h3>The isotropic solid in Voigt notation<a class="headerlink" href="#the-isotropic-solid-in-voigt-notation" title="Link to this heading">#</a></h3>
-<p>A generalization of the Young’s modulus and Poisson’s ratio equations (Eq. \ref{eq:YoungDef} and \ref{eq:PoissonDef}) in all directions leads to the 3 independent equations.</p>
+<p>A generalization of the Young’s modulus and Poisson’s ratio equations (Eq. <a class="reference internal" href="#equation-eq-youngdef">(23)</a> and <a class="reference internal" href="#equation-eq-poissondef">(24)</a>) in all directions leads to the 3 independent equations.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}	\left\lbrace
 	\begin{array}{rcl}
@@ -853,7 +853,7 @@ Hence, fourth-order tensor <span class="math notranslate nohighlight">\(\underse
 			\sigma_{12} \cfrac{}{}
 		\end{array}
 	\right]\end{split}\]</div>
-<p>For example, let us apply a stress <span class="math notranslate nohighlight">\(\underset{=}{\sigma} = [0,0,\sigma_{33},0,0,0]^T\)</span> as in example in Figure \ref{fig:YoungPoisson}.
+<p>For example, let us apply a stress <span class="math notranslate nohighlight">\(\underset{=}{\sigma} = [0,0,\sigma_{33},0,0,0]^T\)</span> as in example in <a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 54</span></a>.
 The result of <span class="math notranslate nohighlight">\(\underset{=}{D} \: \underset{=}{\sigma}\)</span> is</p>
 <p><span class="math notranslate nohighlight">\( \underset{=}{\varepsilon} = \left [ -\cfrac{\nu}{E} \: \sigma_{33},-\cfrac{\nu}{E} \: \sigma_{33},\cfrac{1}{E} \: \sigma_{33},0,0,0 \right]^T 
 \)</span></p>
@@ -926,7 +926,7 @@ Putting equations in all directions together yields the complete set of Lam’e�
 	\right. \text{.}\end{split}\]</div>
 <div class="admonition-example-3-4 admonition">
 <p class="admonition-title">Example 3.4</p>
-<p>Write the Lam’e equations (Eq. \ref{eq:LameFull}) in matrix format using the Voigt notation.</p>
+<p>Write the Lam’e equations (Eq. <a class="reference internal" href="#equation-eq-lamefull">(27)</a>) in matrix format using the Voigt notation.</p>
 <p>SOLUTION</p>
 <p><span class="math notranslate nohighlight">\(
 	\left[
@@ -966,8 +966,8 @@ Putting equations in all directions together yields the complete set of Lam’e�
 <p>Remember that there are only two independent constitutive parameters in linear isotropic elasticity.
 The usual pair choice is <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span>.
 However, there are other options depending on the application and equations used, e.g, <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(G\)</span>.<br />
-A complete list of parameter pairs is available scrolling to the bottom in <a class="reference external" href="https://en.wikipedia.org/wiki/Young's_modulus">this wiki page</a>.
-Figure \ref{fig:elastic-summary} list the most common equivalencies.</p>
+A complete list of parameter pairs is available scrolling to the bottom in <a class="reference external" href="https://en.wikipedia.org/wiki/Young's_modulus">this Wikipedia page</a>.
+<a class="reference internal" href="#fig-elastic-summary"><span class="std std-numref">Fig. 57</span></a> list the most common equivalencies.</p>
 <figure class="align-default" id="fig-elastic-summary">
 <a class="reference internal image-reference" href="_images/4-21.pdf"><img alt="figurecontent" src="_images/4-21.pdf" style="width: 600px;" /></a>
 <figcaption>
@@ -996,7 +996,7 @@ The subtracted value is the same in all directions because pore pressure is the 
 \[	\underset{=}{\varepsilon} = \underset{=}{D} \: (\underset{=}{S} - \alpha P_p \underset{=}{I}) \]</div>
 <p>For most problems, the assumption of <span class="math notranslate nohighlight">\(\alpha \sim 1\)</span> is satisfactory.
 The rock matrix of tight sandstones and shales may have a Biot coeffiecient as low as <span class="math notranslate nohighlight">\(\alpha \sim 0.5\)</span>.
-The theory of poroelasticity is covered in the ``Advanced Geomechanics’’ course with a brief introduction in Section \ref{sec:poroelasticity}.</p>
+The theory of poroelasticity is covered in the <a class="reference external" href="https://dnicolasespinoza.github.io/AdvancedGeomech/">Advanced Geomechanics</a> course with a brief introduction in Section \ref{sec:poroelasticity}.</p>
 </section>
 <section id="calculation-of-horizontal-stress-according-to-linear-elasticity">
 <h3>Calculation of horizontal stress according to linear elasticity<a class="headerlink" href="#calculation-of-horizontal-stress-according-to-linear-elasticity" title="Link to this heading">#</a></h3>
@@ -1016,7 +1016,7 @@ Such is the case of a sedimentary basin with no additional tectonic strains.</p>
 <p><span class="caption-number">Fig. 59 </span><span class="caption-text">Uniaxial strain condition with sedimentation in a tectonically passive environment. As sediment burial progresses the sediment compacts only in vertical direction.</span><a class="headerlink" href="#fig-1dstrainschem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Let us now use Equation \ref{eq:constitutiveDsigma} together with the equilibrium equation.
+<p>Let us now use Equation <a class="reference internal" href="#equation-eq-constitutivedsigma">(28)</a> together with the equilibrium equation.
 Shear strains are zero.
 Hence <span class="math notranslate nohighlight">\(\underset{=}{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T\)</span>.
 Then, the multiplication of <span class="math notranslate nohighlight">\(\underset{=}{\sigma} = \underset{=}{D} \: \underset{=}{\varepsilon}\)</span>, results in</p>
@@ -1035,12 +1035,12 @@ The result is</p>
 <p>or equivalently</p>
 <div class="math notranslate nohighlight" id="equation-eq-coefflateraleffstress">
 <span class="eqno">(29)<a class="headerlink" href="#equation-eq-coefflateraleffstress" title="Link to this equation">#</a></span>\[	 	\sigma_{h} = \frac{\nu}{1-\nu} \sigma_{v} \]</div>
-<p>For typical values of <span class="math notranslate nohighlight">\(\nu \sim 0.25\)</span>, the horizontal stress coefficient is <span class="math notranslate nohighlight">\(\nu/(1-\nu) \sim 1/3 \)</span> (Figure \ref{fig:LateralEffStressCoeff}).
+<p>For typical values of <span class="math notranslate nohighlight">\(\nu \sim 0.25\)</span>, the horizontal stress coefficient is <span class="math notranslate nohighlight">\(\nu/(1-\nu) \sim 1/3 \)</span> (<a class="reference internal" href="#fig-lateraleffstresscoeff"><span class="std std-numref">Fig. 60</span></a>).
 Thus, the effective horizontal stress is approximately one third of the effective vertical stress.
 Contrary to a fluid, the solid does not push sideways with all its weight.
 It pushes sideways with just a fraction of its weight proportionally to its tendency to deform sideways, i.e., the Poisson ratio.
 Notice that <span class="math notranslate nohighlight">\(\nu \rightarrow 0.5\)</span> implies <span class="math notranslate nohighlight">\(\nu/(1-\nu) \rightarrow 1\)</span>.
-An ``effective’’ <span class="math notranslate nohighlight">\(\nu \sim 0.5\)</span> is applicable for fluids, soft rocks under undrained loading, and salt rocks.</p>
+An “effective” <span class="math notranslate nohighlight">\(\nu \sim 0.5\)</span> is applicable for fluids, soft rocks under undrained loading, and salt rocks.</p>
 <figure class="align-default" id="fig-lateraleffstresscoeff">
 <a class="reference internal image-reference" href="_images/lateralstres-coeff.png"><img alt="figurecontent" src="_images/lateralstres-coeff.png" style="width: 600px;" /></a>
 <figcaption>
@@ -1048,7 +1048,7 @@ An ``effective’’ <span class="math notranslate nohighlight">\(\nu \sim 0.5\)
 </figcaption>
 </figure>
 <p>The total horizontal stresses are obtained by adding pore pressure to the effective horizontal stresses: <span class="math notranslate nohighlight">\(S_{11} = \sigma_{11} + P_p\)</span> and <span class="math notranslate nohighlight">\(S_{22} = \sigma_{22} + P_p\)</span>.</p>
-<p>Equation \ref{eq:CoeffLateralEffStress} allows us to approximate a lower bound for the fracture gradient, that is, the pressure required to open a hydraulic fracture.
+<p>Equation <a class="reference internal" href="#equation-eq-coefflateraleffstress">(29)</a> allows us to approximate a lower bound for the fracture gradient, that is, the pressure required to open a hydraulic fracture.
 Such pressure will be equal or greater than the minimum horizontal total stress <span class="math notranslate nohighlight">\(S_h\)</span> (assuming zero tectonic strains):</p>
 <div class="math notranslate nohighlight">
 \[	 	S_h = \sigma_{h} + P_p 
@@ -1063,11 +1063,11 @@ Assuming that the material properties are constant, then,</p>
 	 	    \frac{\Delta S_v}{\Delta z} 
 	 	    + \left( \frac{1-2\nu}{1-\nu} \right) 
 	 	    \frac{\Delta P_p}{\Delta z}\]</div>
-<p>For example, for onshore conditions with typical values <span class="math notranslate nohighlight">\(\Delta S_v / \Delta z \sim 1\)</span> psi/ft, <span class="math notranslate nohighlight">\(\Delta P_p / \Delta z \sim 0.44\)</span> psi/ft, and <span class="math notranslate nohighlight">\(\nu = 0.25\)</span>, the fracture gradient is <span class="math notranslate nohighlight">\(\Delta S_h / \Delta z = 0.63\)</span> psi/ft. Figure XX shows a schematic example of the calculated fracture gradient.</p>
+<p>For example, for onshore conditions with typical values <span class="math notranslate nohighlight">\(\Delta S_v / \Delta z \sim 1\)</span> psi/ft, <span class="math notranslate nohighlight">\(\Delta P_p / \Delta z \sim 0.44\)</span> psi/ft, and <span class="math notranslate nohighlight">\(\nu = 0.25\)</span>, the fracture gradient is <span class="math notranslate nohighlight">\(\Delta S_h / \Delta z = 0.63\)</span> psi/ft. Figure <a class="reference internal" href="#fig-fracgradient"><span class="std std-numref">Fig. 61</span></a> shows a schematic example of the calculated fracture gradient.</p>
 <figure class="align-default" id="fig-fracgradient">
 <a class="reference internal image-reference" href="_images/3-FracGradient.png"><img alt="figurecontent" src="_images/3-FracGradient.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Schematic representation of the prediction of minimum horizontal total stress <span class="math notranslate nohighlight">\(S_h\)</span>, a lower bound for the fracture gradient, using Eq. \ref{eq:FracGradient}.</span><a class="headerlink" href="#fig-fracgradient" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Schematic representation of the prediction of minimum horizontal total stress <span class="math notranslate nohighlight">\(S_h\)</span>, a lower bound for the fracture gradient, using Eq. <a class="reference internal" href="#equation-eq-fracgradient">(30)</a>.</span><a class="headerlink" href="#fig-fracgradient" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Let us now relax the assumption of horizontal strains equal to zero, such that they are not zero <span class="math notranslate nohighlight">\(\varepsilon_{11} \neq \varepsilon_{22} \neq 0\)</span>, but are known quantities.<br />
@@ -1122,7 +1122,7 @@ As a result the maximum effective horizontal stress and minimum horizontal stres
 		\right.\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(E' = \frac{E}{1-\nu^2}\)</span>  is called the plane strain modulus.
 We will see later that the plane strain modulus, rather than the Young’s modulus, appears in many of the equations of interest to subsurface applications.
-These equations have been coded in a <a class="reference external" href="https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=HorizontalStresses_Widget.ipynb">Jupyter notebook</a>.
+These equations have been coded in a <a class="reference external" href="https://colab.research.google.com/drive/1cs_zWFIOLWl5_p0X7V_m8nqDES8NTKkG?usp=sharing">Jupyter notebook</a>.
 The above algorithm further assumes a linear increase of strain with depth.</p>
 <p>The following workflow is valid to calculate horizontal total stress with any constitutive (rock property) model:</p>
 <ol class="arabic simple">
@@ -1136,9 +1136,9 @@ The above algorithm further assumes a linear increase of strain with depth.</p>
 <li><p>Calculate effective vertical stress: <span class="math notranslate nohighlight">\(\sigma_v = S_v - P_p\)</span></p></li>
 <li><p>Calculate effective horizontal stresses <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> and <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span>:</p>
 <ol class="arabic simple">
-<li><p>Assuming linear isotropic elasticity, use Eq. \ref{eq:tectonicstrains} if tectonic strains are not zero or simply Eq. \ref{eq:CoeffLateralEffStress} if tectonic strains are zero.</p></li>
-<li><p>Assuming subsurface stresses are at yield, use Eqs. in the Chapter about ``Stresses on Faults’’.</p></li>
-<li><p>Assuming subsurface stresses are affected by visco-elastic response, add stress relaxation component (Fig. \ref{fig:StressRelax})</p></li>
+<li><p>Assuming linear isotropic elasticity, use Eq. <a class="reference internal" href="#equation-eq-tectonicstrains">(31)</a> if tectonic strains are not zero or simply Eq. <a class="reference internal" href="#equation-eq-coefflateraleffstress">(29)</a> if tectonic strains are zero.</p></li>
+<li><p>Assuming subsurface stresses are at yield, use Eqs. in the Chapter about “Stresses on Faults”.</p></li>
+<li><p>Assuming subsurface stresses are affected by visco-elastic response, add stress relaxation component (Fig. <a class="reference internal" href="#fig-stressrelax"><span class="std std-numref">Fig. 69</span></a>)</p></li>
 </ol>
 </li>
 <li><p>Calculate total horizontal stress by adding pore pressure to effective horizontal stresses:</p></li>
@@ -1162,7 +1162,7 @@ P_p = \lambda_p S_v = 0.7 \times 8227 \text {psi} = 5759 \text{ psi}
 <p><span class="math notranslate nohighlight">\(
 \sigma_v = S_v - P_p = 8227 \text {psi} - 5759 \text{ psi} = 2468 \text{ psi}
 \)</span></p>
-<p>Now, we are in conditions of using Eq. \ref{eq:tectonicstrains}.
+<p>Now, we are in conditions of using Eq. <a class="reference internal" href="#equation-eq-tectonicstrains">(31)</a>.
 Let us first calculate the plane strain modulus:</p>
 <p><span class="math notranslate nohighlight">\(
 E' = \frac{E}{1-\nu^2} = \frac{5 \times 10^6 \text{ psi}}{1-0.22^2} = 5.25 \times 10^6 \text{ psi}
@@ -1207,12 +1207,12 @@ Polygonal faults (Chapter 5 - [update link]) are an example of normal fault grow
 \[	\frac{\partial P_p}{\partial t}= \frac{k}{\mu C_t} \frac{\partial^2 P_p}{\partial x^2}\]</div>
 <p>Where the total compressibility is <span class="math notranslate nohighlight">\(C_t = C_g S_g + C_w S_w + C_o S_o + C_{pp}\)</span>.
 Reservoir simulators usually calculate the fluid compressibility <span class="math notranslate nohighlight">\((C_g S_g + C_w S_w + C_o S_o)\)</span> based in phase behavior, hence, the only required input is <span class="math notranslate nohighlight">\(C_{pp}\)</span>.
-For example, compaction drive is proportional to rock compressibility (see \url{<a class="reference external" href="https://petrowiki.org/Compaction_drive_reservoirs">https://petrowiki.org/Compaction_drive_reservoirs</a>}).</p>
+For example, compaction drive is proportional to rock compressibility (see this <a class="reference external" href="https://petrowiki.org/Compaction_drive_reservoirs">Petrowiki article</a>).</p>
 <p>The pore volume compressibility <span class="math notranslate nohighlight">\(C_{pp}\)</span> tells us what the change of pore volume <span class="math notranslate nohighlight">\(V_p\)</span> is due to a change in pore pressure:</p>
 <div class="math notranslate nohighlight">
 \[	C_{pp} = \left. \frac{1}{V_p} \frac{\mathrm{d}V_p}{\mathrm{d}P_p} \right|_{S_v,\varepsilon_h}\]</div>
-<p>The equation above captures reservoir boundary conditions in which the total vertical stress <span class="math notranslate nohighlight">\(S_v\)</span> remains constant (overburden above the reservoir does not change) and there is no change of lateral strain <span class="math notranslate nohighlight">\(\varepsilon_h\)</span>, a condition also termed as ``uniaxial strain’’ deformation.
-Such condition is appropriate in long and thin reservoirs with a compliant caprock (Figure \ref{fig:ReservoirCompaction}).</p>
+<p>The equation above captures reservoir boundary conditions in which the total vertical stress <span class="math notranslate nohighlight">\(S_v\)</span> remains constant (overburden above the reservoir does not change) and there is no change of lateral strain <span class="math notranslate nohighlight">\(\varepsilon_h\)</span>, a condition also termed as “uniaxial strain” deformation.
+Such condition is appropriate in long and thin reservoirs with a compliant caprock (<a class="reference internal" href="#fig-reservoircompaction"><span class="std std-numref">Fig. 62</span></a>).</p>
 <p>The measurements of <span class="math notranslate nohighlight">\(C_{pp}\)</span> are derived from bulk volume measurements.
 Let us assume that the change of pore volume <span class="math notranslate nohighlight">\(\mathrm{d}V_p\)</span> is equal to the change of bulk volume <span class="math notranslate nohighlight">\(\mathrm{d}V_b\)</span>, which means that all bulk deformation is caused by change of porosity.
 Hence it is possible to rewrite the definition of <span class="math notranslate nohighlight">\(C_{pp}\)</span> as</p>
@@ -1235,7 +1235,7 @@ Finally, we can calculate the uniaxial strain pore compressibility using the typ
 </figcaption>
 </figure>
 <p>Unfortunately, the theory of linear elasticity is quite limited  to capture the visco-elasto-plastic behavior of rocks upon depletion during long times and with large strains.
-Hence, Eq. \ref{eq:PoreCompwithEnu} is just a first order approximation.</p>
+Hence, Eq. <a class="reference internal" href="#equation-eq-porecompwithenu">(32)</a> is just a first order approximation.</p>
 <p>Typical values of pore volume compressibility vary from 2 to 30<span class="math notranslate nohighlight">\(\times 10^{-6} \text{ psi}^{-1}\)</span>, where <span class="math notranslate nohighlight">\(\times 10^{-6} \text{ psi}^{-1} = \mu \text{sip}\)</span>.
 Stiff well cemented rocks have low pore volume compressibility <span class="math notranslate nohighlight">\(\sim 2 \: \mu \text{sip}\)</span> while uncemented loose sediments tend to have high pore volume compressibility <span class="math notranslate nohighlight">\(\sim 30 \: \mu \text{sip}\)</span>.</p>
 <div class="admonition-example-3-6 admonition">
@@ -1260,11 +1260,11 @@ The result is a differential equation with displacement <span class="math notran
 <span class="eqno">(33)<a class="headerlink" href="#equation-eq-navier" title="Link to this equation">#</a></span>\[		(\lambda + G) \nabla (\nabla \cdot \underline{u}) + 
 		G \nabla^2 \underline{u} + \rho \underline{b} = 0\]</div>
 <p>\noindent where <span class="math notranslate nohighlight">\(\lambda = (\nu E)/[(1+\nu)(1-2\nu)]\)</span> is the first Lam’e parameter, <span class="math notranslate nohighlight">\(G\)</span> is the shear modulus, <span class="math notranslate nohighlight">\(\rho\)</span> is the rock bulk mass density, and <span class="math notranslate nohighlight">\(\underline{b}\)</span> is the body force acceleration vector (usually gravity).
-A review of the gradient <span class="math notranslate nohighlight">\(\nabla ()\)</span>, divergence <span class="math notranslate nohighlight">\(\nabla \cdot ()\)</span> and Laplacian <span class="math notranslate nohighlight">\(\nabla^2 ()\)</span> operators is available at \url{<a class="reference external" href="https://en.wikipedia.org/wiki/Vector_calculus_identities">https://en.wikipedia.org/wiki/Vector_calculus_identities</a>}.
+A review of the gradient <span class="math notranslate nohighlight">\(\nabla ()\)</span>, divergence <span class="math notranslate nohighlight">\(\nabla \cdot ()\)</span> and Laplacian <span class="math notranslate nohighlight">\(\nabla^2 ()\)</span> operators is available <a class="reference external" href="https://en.wikipedia.org/wiki/Vector_calculus_identities">here</a>.
 In summary, these are all derivatives that quantify changes of displacement in space.
-The full derivation of this equation can be found here: \url{<a class="reference external" href="https://youtu.be/1PnQ10H2vV0">https://youtu.be/1PnQ10H2vV0</a>}.</p>
+The full derivation of this equation can be found <a class="reference external" href="https://youtu.be/1PnQ10H2vV0">in this YouTube video</a>.</p>
 <p>The solution requires knowledge of the domain geometry, boundary conditions and initial conditions.
-For example, a hydraulic fracture simulator solves numerically these same equations (Figure \ref{fig:GeneralContMechProblem}).
+For example, a hydraulic fracture simulator solves numerically these same equations (<a class="reference internal" href="#fig-generalcontmechproblem"><span class="std std-numref">Fig. 63</span></a>).
 In this class, we will see analytical solutions of this equation for 1) displacements and stresses around wellbores, and 2) displacements and stresses around planar fractures.</p>
 <figure class="align-default" id="fig-generalcontmechproblem">
 <a class="reference internal image-reference" href="_images/4-GeneralContMechProblem.PNG"><img alt="figurecontent" src="_images/4-GeneralContMechProblem.PNG" style="width: 600px;" /></a>
@@ -1280,7 +1280,7 @@ In this class, we will see analytical solutions of this equation for 1) displace
 Sedimentary rocks are usually well explained with transverse isotropic symmetry.
 Vertical transverse isotropy assumes symmetry around a vertical axis such that mechanical properties are the same when measured along any direction in a horizontal plane but different in the vertical direction (the direction perpendicular to bedding).
 The presence of vertical fractures in a preferred orientation can break this symmetry and make the medium orthorhombic.
-Accurate determination of horizontal stresses with elastic models (e.g., Eq. \ref{eq:tectonicstrains}) may need anisotropic models to properly account for rock stiffness anisotropy.</p>
+Accurate determination of horizontal stresses with elastic models (e.g., Eq. <a class="reference internal" href="#equation-eq-tectonicstrains">(31)</a>) may need anisotropic models to properly account for rock stiffness anisotropy.</p>
 <figure class="align-default" id="fig-tviandor">
 <a class="reference internal image-reference" href="_images/4-22.pdf"><img alt="figurecontent" src="_images/4-22.pdf" style="width: 600px;" /></a>
 <figcaption>
@@ -1299,8 +1299,8 @@ Accurate determination of horizontal stresses with elastic models (e.g., Eq. \re
 <h2>Permanent deformation: Elasto-plasticity<a class="headerlink" href="#permanent-deformation-elasto-plasticity" title="Link to this heading">#</a></h2>
 <p>Most rocks will exhibit permanent (plastic) deformation when loaded at large strains <span class="math notranslate nohighlight">\(\varepsilon \gtrsim 0.001\)</span>.
 Plastic deformation includes plastic compression strains and plastic shear strains.
-The theory of elasto-plasticity is covered in the Advanced Geomechanics course \url{<a class="reference external" href="https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj">https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj</a>}.
-Figure \ref{fig:LoadingUnloading} shows an example of permanent deformation during a typical deviatoric loading test to measure Young’s modulus.
+The theory of elasto-plasticity is covered in the <a class="reference external" href="https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj">Advanced Geomechanics course</a>.
+<a class="reference internal" href="#fig-loadingunloading"><span class="std std-numref">Fig. 66</span></a> shows an example of permanent deformation during a typical deviatoric loading test to measure Young’s modulus.
 First-time loading usually involves plastic deformation and creep.
 Therefore the loading Young’s modulus <span class="math notranslate nohighlight">\(E_{load}\)</span> results smaller than the unloading modulus <span class="math notranslate nohighlight">\(E_{unload}\)</span>.
 While <span class="math notranslate nohighlight">\(E_{load}\)</span> calculation lumps elastic, plastic, and creep strains, <span class="math notranslate nohighlight">\(E_{unload}\)</span> involves mostly elastic strains.
@@ -1336,7 +1336,7 @@ The wellbore walls will deform if left uncased and stick to the drilling string.
 </figure>
 <p>One other manifestation of visco-elasticity is time-dependent stress change or stress relaxation.
 Whenever a change of strain is applied and set constant, stresses may relax with time.
-For example, unconsolidated sands may relax horizontal stresses with time after a tectonic strain is applied (Figure \ref{fig:StressRelaxField}).
+For example, unconsolidated sands may relax horizontal stresses with time after a tectonic strain is applied (<a class="reference internal" href="#fig-stressrelaxfield"><span class="std std-numref">Fig. 70</span></a>).
 Therefore, neglecting visco-elasticity may result in an overestimation of horizontal stresses in unconsolidated sands with a purely elastic model.</p>
 <figure class="align-default" id="fig-stressrelax">
 <a class="reference internal image-reference" href="_images/5-StressRelaxTXC.pdf"><img alt="figurecontent" src="_images/5-StressRelaxTXC.pdf" style="width: 600px;" /></a>
@@ -1376,7 +1376,7 @@ The corrections for poroelasticity <span class="math notranslate nohighlight">\(
 <h3>Thermo-elasticity<a class="headerlink" href="#thermo-elasticity" title="Link to this heading">#</a></h3>
 <p>\label{sec:Thermoelasticity}</p>
 <p>Changes of temperature in solids change the equilibrium distance between molecules, and therefore induce strains.
-Imagine a solid heated up, but not allowed to dilate in vertical direction (Figure \ref{fig:ThermalSwellStress}).
+Imagine a solid heated up, but not allowed to dilate in vertical direction (<a class="reference internal" href="#fig-thermalswellstress"><span class="std std-numref">Fig. 71</span></a>).
 The result is an increase of stress in vertical direction rather than a deformation in vertical direction.</p>
 <figure class="align-default" id="fig-thermalswellstress">
 <a class="reference internal image-reference" href="_images/4-ThermalStrainStress.pdf"><img alt="figurecontent" src="_images/4-ThermalStrainStress.pdf" style="width: 300px;" /></a>
@@ -1402,16 +1402,16 @@ The elastic equations extended to consider thermal changes make explicit that st
 		\sigma_{12} &amp; = &amp; 2 \mu \: \varepsilon_{12}\\
 	\end{array}
 	\right.\end{split}\]</div>
-<p>Eq. \ref{eq:LameThermoElasticity} does not include the effects of pore pressure.
+<p>Eq. <a class="reference internal" href="#equation-eq-lamethermoelasticity">(34)</a> does not include the effects of pore pressure.
 The coupled thermo-poro-elastic equations are covered in the Advanced Geomechanics course.</p>
 <p>Thermal(-induced) stresses can cause reductions in fracture gradient when drilling with relatively cold drilling mud.
 Thermal(-induced) stresses can also cause enhanced fractured reactivation when injecting cold fluids in a hot reservoir, such as in deep geothermal energy recovery.</p>
 <div class="admonition-example-3-7 admonition">
 <p class="admonition-title">Example 3.7</p>
-<p>Derive an expression of the thermal swelling stress (in vertical direction) for the example shown in Figure \ref{fig:ThermalSwellStress}.</p>
+<p>Derive an expression of the thermal swelling stress (in vertical direction) for the example shown in <a class="reference internal" href="#fig-thermalswellstress"><span class="std std-numref">Fig. 71</span></a>.</p>
 <p>SOLUTION</p>
 <p>Let us assume the axis 3 in the vertical direction, then <span class="math notranslate nohighlight">\(\sigma_{11}=\sigma_{22}=0\)</span>, <span class="math notranslate nohighlight">\(\varepsilon_{11}=\varepsilon_{22} \neq 0\)</span>, <span class="math notranslate nohighlight">\(\varepsilon_{33}=0\)</span>.
-Then, for <span class="math notranslate nohighlight">\(\Delta T \neq 0\)</span>, a simplification of Eq. \ref{eq:LameThermoElasticity} results in,</p>
+Then, for <span class="math notranslate nohighlight">\(\Delta T \neq 0\)</span>, a simplification of Eq. <a class="reference internal" href="#equation-eq-lamethermoelasticity">(34)</a> results in,</p>
 <p><span class="math notranslate nohighlight">\(
 	\left\lbrace
 	\begin{array}{rcl}

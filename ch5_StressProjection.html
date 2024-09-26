@@ -1,0 +1,1907 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5. Stresses on Faults and Fractures &#8212; Introduction to Energy Geomechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch5_StressProjection';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="4. Rock Yield and Failure" href="ch4_RockFailure.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/IPGlogo.png" class="logo__image only-light" alt="Introduction to Energy Geomechanics - Home"/>
+    <script>document.write(`<img src="_static/IPGlogo.png" class="logo__image only-dark" alt="Introduction to Energy Geomechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction to Energy Geomechanics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch1_Intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch2_StressPorePressure.html">2. Subsurface Stresses and Pore Pressure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch3_ContGeoMech.html">3. Fundamentals of Solid Continuum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch4_RockFailure.html">4. Rock Yield and Failure</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Stresses on Faults and Fractures</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch5_StressProjection.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ch5_StressProjection.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>5. Stresses on Faults and Fractures</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-of-faults-and-fractures">Mapping of faults and fractures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orientation-of-planes-with-respect-to-the-geographical-coordinate-system">Orientation of planes with respect to the geographical coordinate system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stereonets-for-plotting-fault-orientation">Stereonets for plotting fault orientation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faults-in-geological-maps">Faults in geological maps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frictional-strength-of-faults-and-fault-types">Frictional strength of faults and fault types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-strength">Fault strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-faults">Normal faults</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thrust-and-reverse-faults">Thrust and reverse faults</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strike-slip-faults">Strike-slip faults</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-and-faulting-regimes">Stress and faulting regimes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-orientation-of-faults">Ideal orientation of faults</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determination-of-normal-and-shear-stresses-on-the-fault-plane">Determination of normal and shear stresses on the fault plane</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mohr-s-circle-method">Mohr’s circle method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-method">Tensor method</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critically-stressed-fractures-and-permeability">Critically stressed fractures and permeability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determination-of-horizontal-stresses-assuming-limit-equilibrium">Determination of horizontal stresses assuming limit equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determination-of-stress-regime-and-horizontal-stress-direction-from-fault-orientation">Determination of stress regime and horizontal stress direction from fault orientation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-reactivation">Fault reactivation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="stresses-on-faults-and-fractures">
+<h1>5. Stresses on Faults and Fractures<a class="headerlink" href="#stresses-on-faults-and-fractures" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>Changes of stresses in the subsurface lead to deformation of geological structures.
+Deformations can be grouped in (1) gradual and continuous, such as folding that creates an anticline, and (2) abrupt and discontinuous, such as faults.
+The creation of fault discontinuities depends on loading strain rate and rock properties including rock brittleness.
+Faults are the result of brittle rock failure in shear at the large scale (Fig. \ref{fig:FaultGenesis}).</p>
+<figure class="align-default" id="fig-faultgenesis">
+<a class="reference internal image-reference" href="_images/6-FaultGenesis.png"><img alt="figurecontent" src="_images/6-FaultGenesis.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 99 </span><span class="caption-text">Simplified schematic of the genesis of a thrust fault.</span><a class="headerlink" href="#fig-faultgenesis" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Faults usually cut through several sedimentary strata (See outcrop fault examples in Fig. \ref{fig:FaultsOutcrop}).
+Faults are important in energy geomechanics because they limit the magnitude of horizontal stresses, may constitute structural traps for fluid flow, favor reservoir compartmentalization, and other times create high permeability conduits for fluid flow.
+A map of faults and rock units in Texas is available here: \url{<a class="reference external" href="https://txpub.usgs.gov/txgeology/">https://txpub.usgs.gov/txgeology/</a>}.</p>
+<figure class="align-default" id="fig-faultsoutcrop">
+<a class="reference internal image-reference" href="_images/6-2.pdf"><img alt="figurecontent" src="_images/6-2.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 100 </span><span class="caption-text">Examples of faults as seen in outcrops.</span><a class="headerlink" href="#fig-faultsoutcrop" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mapping-of-faults-and-fractures">
+<h2>Mapping of faults and fractures<a class="headerlink" href="#mapping-of-faults-and-fractures" title="Link to this heading">#</a></h2>
+<p>Faults in subsurface formations are usually mapped through seismic reconstruction (see example in Fig. \ref{fig:SeismicCP}) and wellbore imaging.</p>
+<figure class="align-default" id="fig-seismiccp">
+<a class="reference internal image-reference" href="_images/6-seismic-conocophillips.jpg"><img alt="figurecontent" src="_images/6-seismic-conocophillips.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 101 </span><span class="caption-text">Fracture mapping in seismic images (Credit: ConocoPhillips).</span><a class="headerlink" href="#fig-seismiccp" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Fig. \ref{fig:FracWellImaging}-a shows the typical signature of fractures in a wellbore.
+An anomaly of electrical resistivity or ultrasonic P-wave velocity facilitates recognizing the fracture (dark pixels in the image).
+The reconstruction of this image (Fig. \ref{fig:FracWellImaging}-b) helps measure fracture orientation (strike and dip - Fig. \ref{fig:FracWellImaging}-c).</p>
+<figure class="align-default" id="fig-fracwellimaging">
+<a class="reference internal image-reference" href="_images/6-8.pdf"><img alt="figurecontent" src="_images/6-8.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 102 </span><span class="caption-text">Fracture mapping in wellbores. \hl{[make your own]}</span><a class="headerlink" href="#fig-fracwellimaging" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Comprehensive fracture mapping helps create 3D reservoir models that account for fault and fracture geomechanics (\ref{fig:BakerHughesJS}).
+The magnitude of shear and normal stresses on faults and fractures depends on their orientation respect to the in-situ stress tensor.</p>
+<figure class="align-default" id="fig-bakerhughesjs">
+<a class="reference internal image-reference" href="_images/6-BakerHughesJS.jpg"><img alt="figurecontent" src="_images/6-BakerHughesJS.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 103 </span><span class="caption-text">Reservoir model example including faults (Courtesy Baker Hughes).</span><a class="headerlink" href="#fig-bakerhughesjs" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="orientation-of-planes-with-respect-to-the-geographical-coordinate-system">
+<h3>Orientation of planes with respect to the geographical coordinate system<a class="headerlink" href="#orientation-of-planes-with-respect-to-the-geographical-coordinate-system" title="Link to this heading">#</a></h3>
+<p>Imagine any plane (such as the plane shown in Fig. \ref{fig:StrikeExample}) cutting horizontal sedimentary strata.
+The \textit{strike} is the line which results from the intersection of such plane and a horizontal plane.
+The magnitude of the strike is the angle between the strike line and the north.
+The angle of \textit{dip} is the angle between a horizontal plane and the plane under consideration.
+A layer is said to dip in a given direction when it gets deeper at the fastest rate into such direction.
+One can think of the <span class="math notranslate nohighlight">\(dip\)</span> as the direction of a droplet of water moving down on such plane.</p>
+<figure class="align-default" id="fig-strikeexample">
+<a class="reference internal image-reference" href="_images/6-StrikeDip.png"><img alt="figurecontent" src="_images/6-StrikeDip.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 104 </span><span class="caption-text">Definition of strike and dip. \hl{[make vectorial plot]}</span><a class="headerlink" href="#fig-strikeexample" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>There are two conventions for reporting the magnitude of strike.</p>
+<ul class="simple">
+<li><p>Quadrant convention: it reports strike with angles ranging from 0 to 45<span class="math notranslate nohighlight">\(^{\circ}\)</span>. The quadrant convention is useful in the field. For example:</p>
+<ol class="arabic simple">
+<li><p>“N45<span class="math notranslate nohighlight">\(^{\circ}\)</span>E” means 45<span class="math notranslate nohighlight">\(^{\circ}\)</span> clockwise from the North towards the East</p></li>
+<li><p>“S45<span class="math notranslate nohighlight">\(^{\circ}\)</span>W” means 45<span class="math notranslate nohighlight">\(^{\circ}\)</span> clockwise from the South towards the West</p></li>
+<li><p>“N45<span class="math notranslate nohighlight">\(^{\circ}\)</span>E”  is the same as “S45<span class="math notranslate nohighlight">\(^{\circ}\)</span>W” (Figure \ref{fig:StrikeConvention})</p></li>
+</ol>
+</li>
+<li><p>Azimuth convention: it reports strike with angles ranging from 0 to 360<span class="math notranslate nohighlight">\(^{\circ}\)</span> measured from the North  to the strike “vector” in clockwise direction (see Figure \ref{fig:dsn}). The azimuth convention is most useful for data analytics and mathematical implementation. For example:</p>
+<ol class="arabic simple">
+<li><p>“045<span class="math notranslate nohighlight">\(^{\circ}\)</span>” for a a fault strike N45<span class="math notranslate nohighlight">\(^{\circ}\)</span>E and dipping SE.</p></li>
+<li><p>“225<span class="math notranslate nohighlight">\(^{\circ}\)</span>” for a a fault strike N45<span class="math notranslate nohighlight">\(^{\circ}\)</span>E and dipping NW.</p></li>
+</ol>
+</li>
+</ul>
+<figure class="align-default" id="fig-strikeconvention">
+<a class="reference internal image-reference" href="_images/6-StrikeConvention.PNG"><img alt="figurecontent" src="_images/6-StrikeConvention.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 105 </span><span class="caption-text">Quadrant and azimuth terminology for strike. Notice that in the azimuth convention dip direction matters when defining the strike angle.</span><a class="headerlink" href="#fig-strikeconvention" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The dip is the angle between a horizontal plane and the line of maximum slope in the measured plane.
+It is reported with angles between 0 and 90<span class="math notranslate nohighlight">\(^{\circ}\)</span>.
+The maximum dip is 90<span class="math notranslate nohighlight">\(^{\circ}\)</span> (vertical plane).
+If the layer/fault is tipped even further it is said to be overturned.
+The dip is usually accompanied by the direction in which the plane is dipping in quadrant notation.
+For example, the plane in Fig. \ref{fig:StrikeExample} dips about 60<span class="math notranslate nohighlight">\(^{\circ}\)</span>SE, 60 degrees toward the South-East.</p>
+</section>
+<section id="stereonets-for-plotting-fault-orientation">
+<h3>Stereonets for plotting fault orientation<a class="headerlink" href="#stereonets-for-plotting-fault-orientation" title="Link to this heading">#</a></h3>
+<p>Stereonets are very useful for plotting the orientation of many faults in a single 2D plot \ref{fig:StereoNet}.
+The stereonet represents a fault plane by a dot, which is the intersection of a line normal to the fault plane and a lower hemisphere projection.
+Visit this website for an online animation of stereonets: \url{<a class="reference external" href="https://app.visiblegeology.com/stereonetApp.html">https://app.visiblegeology.com/stereonetApp.html</a>}.</p>
+<figure class="align-default" id="fig-stereonet">
+<a class="reference internal image-reference" href="_images/6-StereoNet.png"><img alt="figurecontent" src="_images/6-StereoNet.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 106 </span><span class="caption-text">Example of stereonet for mapping faults caused by a normal faulting stress regime. The crosses indicate faults at a strike around 030<span class="math notranslate nohighlight">\(^{\circ}\)</span> with dips around 60<span class="math notranslate nohighlight">\(^{\circ}\)</span>SE and 60<span class="math notranslate nohighlight">\(^{\circ}\)</span>NW.</span><a class="headerlink" href="#fig-stereonet" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="faults-in-geological-maps">
+<h3>Faults in geological maps<a class="headerlink" href="#faults-in-geological-maps" title="Link to this heading">#</a></h3>
+<p>The geological map of a single formation, say a sandy layer formation, plots the top of such formation with depth in contour lines (Fig. \ref{fig:GeolMapFault}b).
+Faults can also be represented in geological maps.
+Normal faults are represented as thick lines with thickness proportional to the heave of the fault (Fig. \ref{fig:GeolMapFault}c).
+Reverse and thrust faults (negative heave) are plotted as lines with intermittent triangles on the dipping side (Fig. \ref{fig:GeolMapFault}d).
+Fig. \ref{fig:NorthSeaFaultMap} shows an example application of this convention to the North Sea.</p>
+<figure class="align-default" id="fig-geolmapfault">
+<a class="reference internal image-reference" href="_images/6-FaultGeolMap.png"><img alt="figurecontent" src="_images/6-FaultGeolMap.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 107 </span><span class="caption-text">Block representation and equivalent geologic map of sedimentary strata and faults.</span><a class="headerlink" href="#fig-geolmapfault" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig-northseafaultmap">
+<a class="reference internal image-reference" href="_images/Holden_etal.jpeg"><img alt="figurecontent" src="_images/Holden_etal.jpeg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 108 </span><span class="caption-text">Geological map of the North Sea highlighting the strike of normal faults around oil and gas fields, and formations targeted for carbon geological storage. Figure <a class="reference external" href="https://doi.org/10.1144/petgeo2022-036">credit</a></span><a class="headerlink" href="#fig-northseafaultmap" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Strike and dip of sedimentary strata can be reported in geological maps as shown in Fig. \ref{fig:StrikeDipMap}.</p>
+<figure class="align-default" id="fig-strikedipmap">
+<a class="reference internal image-reference" href="_images/6-7.pdf"><img alt="figurecontent" src="_images/6-7.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 109 </span><span class="caption-text">Strike and dip in geological maps.</span><a class="headerlink" href="#fig-strikedipmap" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="frictional-strength-of-faults-and-fault-types">
+<h2>Frictional strength of faults and fault types<a class="headerlink" href="#frictional-strength-of-faults-and-fault-types" title="Link to this heading">#</a></h2>
+<section id="fault-strength">
+<h3>Fault strength<a class="headerlink" href="#fault-strength" title="Link to this heading">#</a></h3>
+<p>At the large scale, the Earth’s crust is constituted by “already broken” rock layers.
+These discontinuities are comprised mostly of faults.
+The cementation or cohesive strength of faults is negligible because the rock is already broken at those interfaces.
+Hence, a large block of rock does not have any cohesive strength or “unconfined compression strength”.
+As a result, its shear strength depends only on frictional strength according to the Coulomb frictional criterion (Fig. \ref{fig:StrengthFaults}).
+You may think of “El Capit’an” rock cliff <a class="reference external" href="https://www.reviewjournal.com/wp-content/uploads/2018/06/10646363_web1_yosemite-fatal-fall_6053325.jpg">(image here)</a> as an example of a rock mass, strong and continuous, but that is an exception, not the rule.
+Furthermore, the size of “El Capit’an” (<span class="math notranslate nohighlight">\(\sim\)</span> 900 m <span class="math notranslate nohighlight">\(\sim\)</span> 3000 ft) is smaller than the size of sedimentary basins (<span class="math notranslate nohighlight">\(\sim\)</span> 100 km and bigger).</p>
+<p>Because of the lack of cohesive strength of the Earth’s crust at the large scale, its shear strength just depends on frictional strength through the friction coefficient <span class="math notranslate nohighlight">\(\mu\)</span> (or equivalent friction parameter <span class="math notranslate nohighlight">\(q\)</span>). The coefficient <span class="math notranslate nohighlight">\(\mu_i\)</span> is the internal frictional angle of rock before rupture, while <span class="math notranslate nohighlight">\(\mu\)</span> is the friction coefficient after initial rupture.
+Hence, the shear strength of large blocks in the Earth’s crust is simply</p>
+<div class="math notranslate nohighlight">
+\[		\tau = \mu \: \sigma_n\]</div>
+<p>which can be rewritten in terms of principal stresses as</p>
+<div class="math notranslate nohighlight">
+\[		\sigma_1 = q \: \sigma_3\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[		q = \left( \sqrt{\mu^2 +1} + \mu \right) ^2 = \frac{1+\sin \: \varphi}{1-\sin \: \varphi}\]</div>
+<p>For typical friction coefficients the coefficient <span class="math notranslate nohighlight">\(q\)</span> varies from 3 to 7. This means that the maximum ratio between maximum principal effective stress and minimum principal effective stress is <span class="math notranslate nohighlight">\(\sigma_1/\sigma_3 \sim \)</span> 3 to 7 (See Table \ref{table:FrictionAnisotropy}).
+This ratio is usually called “(effective) stress anisotropy”.</p>
+<figure class="align-default" id="fig-strengthfaults">
+<a class="reference internal image-reference" href="_images/6-20.pdf"><img alt="figurecontent" src="_images/6-20.pdf" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 110 </span><span class="caption-text">Limits on effective principal stresses.</span><a class="headerlink" href="#fig-strengthfaults" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>\caption{Relationship between friction coefficients, maximum stress anisotropy, and expected failure angle.}</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\mu\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\phi\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\pi/4 + \phi/2\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.6</p></td>
+<td><p>3.1</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sim 30^\circ\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sim 60^\circ\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>1.0</p></td>
+<td><p>5.8</p></td>
+<td><p><span class="math notranslate nohighlight">\(45^\circ\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(67.5^\circ\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>1.2</p></td>
+<td><p>7.6</p></td>
+<td><p><span class="math notranslate nohighlight">\(50^\circ\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(70^\circ\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The maximum allowable stress anisotropy in a geological formation depends on its shear strength.
+Faults form or reactivate when this stress anisotropy, and therefore shear strength, is surpassed.</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\sigma_1 / \sigma_3 &gt; q\)</span> implies fault slip.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_1 / \sigma_3 &lt; q\)</span> implies no fault slip.</p></li>
+</ol>
+<p>These relationships can also be worked out in terms of total stresses  but it is easier and more meaningful to keep them in terms of effective stresses (just do not forget about pore pressure).</p>
+</section>
+<section id="normal-faults">
+<h3>Normal faults<a class="headerlink" href="#normal-faults" title="Link to this heading">#</a></h3>
+<p>A normal fault is caused by in-situ stress conditions in which</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}	\left\lbrace
+		\begin{array}{l}
+			S_1 = S_v \\
+			S_2 = S_{Hmax} \\
+			S_3 = S_{hmin} \\
+		\end{array}
+	\right.\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(S_1 &gt; S_2 &gt; S_3\)</span>.
+These stress conditions are typical of tectonically passive and laterally extensional environments.	
+For example, the Permian Basin in Texas is mostly under normal faulting stress regime.
+The fault plane is a shear rupture plane. Its orientation is (<span class="math notranslate nohighlight">\(\pi/4 + \varphi/2\)</span>) in vertical direction from the horizontal plane (the plane perpendicular to <span class="math notranslate nohighlight">\(S_v\)</span>) to the plane of <span class="math notranslate nohighlight">\(S_{hmin}\)</span>.
+The blocks move along the direction of <span class="math notranslate nohighlight">\(S_v\)</span> and do work against <span class="math notranslate nohighlight">\(S_{hmin}\)</span>.
+At any point in the fault, the block above the fault is called the “hanging-wall” and the block below is the “footwall” (Fig. \ref{fig:NormalFault}).</p>
+<figure class="align-default" id="fig-normalfault">
+<a class="reference internal image-reference" href="_images/6-12.pdf"><img alt="figurecontent" src="_images/6-12.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 111 </span><span class="caption-text">Single normal fault.</span><a class="headerlink" href="#fig-normalfault" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Normal faults usually occur in pairs.
+Notice that the shear failure angle includes two possible solutions (for <span class="math notranslate nohighlight">\(S_1 \neq S_2 \neq S_3\)</span>). These are called conjugate solutions.
+The block that moves down in between two normal conjugate faults is termed “graben”, while the ones that move up relative to the footwall  are called “horst” (Fig. \ref{fig:GrabenHorst}).
+These geological structures occur frequently in hydrocarbon systems with structural fault traps.</p>
+<figure class="align-default" id="fig-grabenhorst">
+<a class="reference internal image-reference" href="_images/6-13.pdf"><img alt="figurecontent" src="_images/6-13.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 112 </span><span class="caption-text">Conjugate normal faults forming graben and horst structures.</span><a class="headerlink" href="#fig-grabenhorst" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="thrust-and-reverse-faults">
+<h3>Thrust and reverse faults<a class="headerlink" href="#thrust-and-reverse-faults" title="Link to this heading">#</a></h3>
+<p>A thrust fault is caused by in-situ stress conditions in which</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}	\left\lbrace
+		\begin{array}{l}
+			S_1 = S_{Hmax} \\
+			S_2 = S_{hmin} \\
+			S_3 = S_v \\
+		\end{array}
+	\right.\end{split}\]</div>
+<p>These stress conditions are typical of locations with high compressive tectonic strains.
+For example, sedimentary basins close to the Andes and Himalayas foothills are under reverse faulting regime.	
+The fault plane is a shear rupture plane.
+Its orientation is <span class="math notranslate nohighlight">\((\pi/4 + \varphi/2)\)</span> in vertical direction from a vertical plane perpendicular to <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> to the plane of <span class="math notranslate nohighlight">\(S_{v}\)</span> (Fig. \ref{fig:ThrustFault}).
+The blocks move along the direction of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> and do work against gravity <span class="math notranslate nohighlight">\(S_v\)</span> (surface uplift).
+As with normal faulting, the block above the fault is called the “hanging-wall” and the block below the “footwall”.</p>
+<figure class="align-default" id="fig-thrustfault">
+<a class="reference internal image-reference" href="_images/6-14.pdf"><img alt="figurecontent" src="_images/6-14.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 113 </span><span class="caption-text">Thrust fault example</span><a class="headerlink" href="#fig-thrustfault" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A fault that may have been caused by paleo-stresses corresponding to a normal stress regime, but now moves according to in-situ stress conditions of a thrust fault stress environment is termed a reverse fault (Fig. \ref{fig:ReverseFault}).</p>
+<figure class="align-default" id="fig-reversefault">
+<a class="reference internal image-reference" href="_images/6-15.pdf"><img alt="figurecontent" src="_images/6-15.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 114 </span><span class="caption-text">Reverse fault example.</span><a class="headerlink" href="#fig-reversefault" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="strike-slip-faults">
+<h3>Strike-slip faults<a class="headerlink" href="#strike-slip-faults" title="Link to this heading">#</a></h3>
+<p>A strike-slip fault is caused by in-situ stress conditions in which</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}	\left\lbrace
+		\begin{array}{l}
+			S_1 = S_{Hmax} \\
+			S_2 = S_v \\
+			S_3 = S_{hmin} \\
+		\end{array}
+	\right.\end{split}\]</div>
+<p>These stress conditions are typical of high compressive tectonic strains mostly in one direction.
+Some sedimentary basins around the Rocky Mountains and near California are under strike slip regime.	
+The fault plane is a shear rupture plane and it is vertical. Its orientation is <span class="math notranslate nohighlight">\((\pi/4 + \varphi/2)\)</span> in horizontal direction from a vertical plane perpendicular to <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> towards a plane perpendicular to <span class="math notranslate nohighlight">\(S_{hmin}\)</span>.
+The schematic in Fig. \ref{fig:StrikeSlipSchematics} shows an oblique fault, not a pure strike-slip fault.
+The fault is called strike-slip, because it slips in horizontal direction, in the direction of the fault strike.
+Notice that oblique faults move with a combination of vertical and horizontal displacements.</p>
+<figure class="align-default" id="fig-strikeslipschematics">
+<a class="reference internal image-reference" href="_images/6-16.pdf"><img alt="figurecontent" src="_images/6-16.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 115 </span><span class="caption-text">Strike-slip fault example.</span><a class="headerlink" href="#fig-strikeslipschematics" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="stress-and-faulting-regimes">
+<h3>Stress and faulting regimes<a class="headerlink" href="#stress-and-faulting-regimes" title="Link to this heading">#</a></h3>
+<p>The type of fault that occurs for each stress combination gives rise to the name of the stress faulting regime (Table \ref{table:Andersonian}).
+Notice that stresses may change in magnitude and direction with time at a given location (see stress map in Fig. \ref{fig:WorldStressMap} - other maps available at \url{<a class="reference external" href="http://www.world-stress-map.org/">http://www.world-stress-map.org/</a>}). Furthermore, the same location may evolve through different stress regimes over geological periods of time.
+The stress regime can also change with depth at the same location.
+Changes of stress regime with depth are critical for defining the geometry of fluid-driven fractures.</p>
+<p>\caption{The Andersonian faulting classification system.}
+\label{table:Andersonian}</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Faulting regime</p></th>
+<th class="head"><p>Maximum principal stress <span class="math notranslate nohighlight">\(S_1\)</span></p></th>
+<th class="head"><p>Intermediate principal stress <span class="math notranslate nohighlight">\(S_2\)</span></p></th>
+<th class="head"><p>Minimum principal stress <span class="math notranslate nohighlight">\(S_3\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Normal (NF)</p></td>
+<td><p><span class="math notranslate nohighlight">\(S_v\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_{Hmax}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_{hmin}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Strike-slip (SS)</p></td>
+<td><p><span class="math notranslate nohighlight">\(S_{Hmax}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_v\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_{hmin}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Reverse (RF)</p></td>
+<td><p><span class="math notranslate nohighlight">\(S_{Hmax}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_{hmin}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_v\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="align-default" id="fig-worldstressmap">
+<a class="reference internal image-reference" href="_images/6-18.pdf"><img alt="figurecontent" src="_images/6-18.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 116 </span><span class="caption-text"><a class="reference external" href="http://www.world-stress-map.org/">World stress map</a>. The figure above shows directions of maximum horizontal stresses based on various types of field measurements. The orientation of maximum horizontal stress varies with location and is strongly influenced by plate movement and imparted tectonic strains.</span><a class="headerlink" href="#fig-worldstressmap" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ideal-orientation-of-faults">
+<h3>Ideal orientation of faults<a class="headerlink" href="#ideal-orientation-of-faults" title="Link to this heading">#</a></h3>
+<p>The ideal orientation of a hydraulic fracture is a plane perpendicular to the minimum principal stress <span class="math notranslate nohighlight">\(S_3\)</span> direction.
+Similarly, we can also tell what would be the orientation of ideal conjugate pairs of shear fractures (faults) for a given state of stress.
+The dip and strike will depend on <span class="math notranslate nohighlight">\(S_1\)</span>, <span class="math notranslate nohighlight">\(S_3\)</span>, and the friction angle <span class="math notranslate nohighlight">\(\varphi\)</span> (Fig. \ref{fig:FracIdealOrientation}).
+Such ideal conjugate pair of shear fractures would be located:</p>
+<ol class="arabic simple">
+<li><p>in planes that are in between the planes perpendicular to <span class="math notranslate nohighlight">\(S_1\)</span> and <span class="math notranslate nohighlight">\(S_3\)</span>,</p></li>
+<li><p>in planes that are co-linear with <span class="math notranslate nohighlight">\(S_2\)</span>,</p></li>
+<li><p>in planes that are at <span class="math notranslate nohighlight">\(\pi/4 + \varphi/2\)</span> from the plane perpendicular to <span class="math notranslate nohighlight">\(S_1\)</span> towards the plane perpendicular to <span class="math notranslate nohighlight">\(S_3\)</span>.</p></li>
+</ol>
+<p>The general solution is shown in Figure \ref{fig:IdealFaultsGeneralCase}.</p>
+<figure class="align-default" id="fig-idealfaultsgeneralcase">
+<a class="reference internal image-reference" href="_images/6-IdealFaultOrientationGC.pdf"><img alt="figurecontent" src="_images/6-IdealFaultOrientationGC.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 117 </span><span class="caption-text">Ideal orientation of a pair of conjugate shear fractures (faults) as a function of the orientation of principal stresses and the friction angle.</span><a class="headerlink" href="#fig-idealfaultsgeneralcase" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Notice that all these angles vary according to the stress regime.
+Faults formed in NF stress regime tend to be steep.
+Faults formed in RF stress regime are not too steep.
+Faults formed in SS stress regime are vertical.</p>
+<figure class="align-default" id="fig-fracidealorientation">
+<a class="reference internal image-reference" href="_images/6-IdealFaultOrientation.png"><img alt="figurecontent" src="_images/6-IdealFaultOrientation.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 118 </span><span class="caption-text">Summary of ideal pairs of shear fractures in (left) normal fault stress regime, (center) strike-slip stress regime, and (right) thrust (reverse) faulting stress regime. From top to bottom the figure shows: block diagrams with stresses, block diagram with shear fractures, stereonets, and 3D Mohr circles.</span><a class="headerlink" href="#fig-fracidealorientation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition-example-5-1 admonition">
+<p class="admonition-title">Example 5.1</p>
+<p>Find the ideal orientation of a hydraulic fracture and faults (shear fractures) at a location subjected to the following state of stress and conditions:</p>
+<ul class="simple">
+<li><p>Stress regime: Normal faulting</p></li>
+<li><p><span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress</p></li>
+<li><p>Azimuth of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> is N60<span class="math notranslate nohighlight">\(^{\circ}\)</span>W</p></li>
+<li><p>Friction angle <span class="math notranslate nohighlight">\(\varphi\)</span> = 30<span class="math notranslate nohighlight">\(^{\circ}\)</span>.</p></li>
+</ul>
+<p>SOLUTION</p>
+<p>First, recognize the planes of <span class="math notranslate nohighlight">\(S_1\)</span> and <span class="math notranslate nohighlight">\(S_3\)</span> and their orientations with respect to the geographical coordinate system.
+The plane of <span class="math notranslate nohighlight">\(S_1\)</span> in this case is a horizontal plane (<span class="math notranslate nohighlight">\(S_v\)</span> plane, a principal stress) and the plane of <span class="math notranslate nohighlight">\(S_3\)</span> is a vertical plane perpendicular to <span class="math notranslate nohighlight">\(S_{hmin}\)</span>.</p>
+<figure class="align-default" id="fig-ex5-1">
+<a class="reference internal image-reference" href="_images/6-IdealFracP1.pdf"><img alt="figurecontent" src="_images/6-IdealFracP1.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 119 </span><span class="caption-text">Example 5.1 solution.</span><a class="headerlink" href="#fig-ex5-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A hydraulic fracture would be perpendicular to <span class="math notranslate nohighlight">\(S_3\)</span>, in this case <span class="math notranslate nohighlight">\(S_{hmin}\)</span>. Hence, the strike is <span class="math notranslate nohighlight">\(\phi_{HF} = 030^{\circ}\)</span> and the dip is <span class="math notranslate nohighlight">\(\delta_{HF} = 90^{\circ}\)</span> because <span class="math notranslate nohighlight">\(S_3\)</span> is horizontal.</p>
+<p>The dip of faults depends on the friction angle.
+In this case, the failure angle is: <span class="math notranslate nohighlight">\(\beta = 45^{\circ} + \varphi / 2 =  45^{\circ} + 30^{\circ} / 2 = 60^{\circ} \)</span>.
+The fault planes are at <span class="math notranslate nohighlight">\(\beta\)</span> going from the plane of <span class="math notranslate nohighlight">\(S_1\)</span> to the plane of <span class="math notranslate nohighlight">\(S_3\)</span>.
+Thus, the strike of the two possible faults is <span class="math notranslate nohighlight">\(\phi_{F1} = \phi_{F2} = 030^{\circ}\)</span> and the dips are <span class="math notranslate nohighlight">\(\delta_{F1} = 60^{\circ}\)</span>SE and <span class="math notranslate nohighlight">\(\delta_{F1} = 60^{\circ}\)</span>NW. <span class="math notranslate nohighlight">\(\: \: \blacksquare\)</span></p>
+</div>
+<div class="admonition-example-5-2 admonition">
+<p class="admonition-title">Example 5.2</p>
+<p>Find the ideal orientation of a hydraulic fracture and faults (shear fractures) at a location subjected to the following state of stress and conditions:</p>
+<ul class="simple">
+<li><p>Stress regime: Strike-slip faulting</p></li>
+<li><p><span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress</p></li>
+<li><p>Azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> is 010<span class="math notranslate nohighlight">\(^{\circ}\)</span></p></li>
+<li><p>Friction angle <span class="math notranslate nohighlight">\(\varphi\)</span> = 40<span class="math notranslate nohighlight">\(^{\circ}\)</span>.</p></li>
+</ul>
+<p>SOLUTION</p>
+<p>First, recognize the planes of <span class="math notranslate nohighlight">\(S_1\)</span> and <span class="math notranslate nohighlight">\(S_3\)</span> and their orientations with respect to the geographical coordinate system.
+The plane of <span class="math notranslate nohighlight">\(S_1\)</span> in this case is a vertical plane (<span class="math notranslate nohighlight">\(S_{Hmax}\)</span> plane) and the plane of <span class="math notranslate nohighlight">\(S_3\)</span> is another vertical plane perpendicular to <span class="math notranslate nohighlight">\(S_{hmin}\)</span>.</p>
+<figure class="align-default" id="fig-ex5-2">
+<a class="reference internal image-reference" href="_images/6-IdealFracP2.pdf"><img alt="figurecontent" src="_images/6-IdealFracP2.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 120 </span><span class="caption-text">Example 5.2 solution.</span><a class="headerlink" href="#fig-ex5-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A hydraulic fracture would be perpendicular to <span class="math notranslate nohighlight">\(S_3\)</span>, in this case <span class="math notranslate nohighlight">\(S_{hmin}\)</span>. Hence, the strike is <span class="math notranslate nohighlight">\(\phi_{HF} = 010^{\circ}\)</span> and the dip is <span class="math notranslate nohighlight">\(\delta_{HF} = 90^{\circ}\)</span> because <span class="math notranslate nohighlight">\(S_3\)</span> is horizontal.</p>
+<p>The dip of faults depends on the friction angle.
+In this case, the failure angle is:
+<span class="math notranslate nohighlight">\( \beta = 45^{\circ} + \varphi / 2 =  45^{\circ} + 40^{\circ} / 2 = 65^{\circ} \)</span>.
+The fault planes are at <span class="math notranslate nohighlight">\(\beta\)</span> going from the plane of <span class="math notranslate nohighlight">\(S_1\)</span> to the plane of <span class="math notranslate nohighlight">\(S_3\)</span>.
+Thus, the strikes of the two possible faults are <span class="math notranslate nohighlight">\(\phi_{F1} = 345^{\circ}\)</span> and <span class="math notranslate nohighlight">\(\phi_{F2} =  035^{\circ}\)</span>, the dip is <span class="math notranslate nohighlight">\(\delta_{F1} = \delta_{F2} = 90^{\circ}\)</span>. <span class="math notranslate nohighlight">\(\: \: \blacksquare\)</span></p>
+</div>
+</section>
+</section>
+<section id="determination-of-normal-and-shear-stresses-on-the-fault-plane">
+<h2>Determination of normal and shear stresses on the fault plane<a class="headerlink" href="#determination-of-normal-and-shear-stresses-on-the-fault-plane" title="Link to this heading">#</a></h2>
+<p>In this section we will review two methods to calculate normal and shear stresses on fractures and faults.
+The first part reviews the Mohr circle method in order to have a conceptual understanding of stress projection on faults and maximum ratio between shear stress and effective normal stress.
+The second part discusses the tensor method, which requires the definition of three coordinate systems and matrix multiplication.
+The tensor method can be easily implemented in a computer script but is laborious to work out manually.</p>
+<section id="mohr-s-circle-method">
+<h3>Mohr’s circle method<a class="headerlink" href="#mohr-s-circle-method" title="Link to this heading">#</a></h3>
+<p>The 3D Mohr circle is a graphical representation of the stress tensor and all its projections (or possibles values of normal effective stress <span class="math notranslate nohighlight">\(\sigma_n\)</span> and shear stress <span class="math notranslate nohighlight">\(\tau\)</span>) on a given plane.
+Consider a horizontal plane in Fig. \ref{fig:3DMohrCircle}, the normal stress is the vertical stress <span class="math notranslate nohighlight">\(S_v\)</span> and there is no shear stress.
+Consider a vertical plane with strike East-West in Fig. \ref{fig:3DMohrCircle}, you get the minimum principal stress <span class="math notranslate nohighlight">\(S_{hmin}\)</span>.
+Consider a vertical plane with strike North-South in Fig. \ref{fig:3DMohrCircle}, you get the maximum principal stress <span class="math notranslate nohighlight">\(S_{Hmax}\)</span>.</p>
+<p>Likewise, non-trivial solutions of stress projection at an arbitrary plane angle include all the points delimited by the three Mohr circles.
+Let’s consider solutions along each circle in Fig. \ref{fig:3DMohrCircle}.</p>
+<ol class="arabic simple">
+<li><p>The blue circle (center C<span class="math notranslate nohighlight">\(_1\)</span>) represents the possible state of stresses that result as a combination of <span class="math notranslate nohighlight">\(\sigma_v\)</span> and <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span>. The shear stress <span class="math notranslate nohighlight">\(\tau\)</span> and normal effective stress <span class="math notranslate nohighlight">\(\sigma_n\)</span> of any plane in between the planes of <span class="math notranslate nohighlight">\(\sigma_v\)</span> and <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> and colinear with <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span> can be found through the angle <span class="math notranslate nohighlight">\(\beta_1\)</span> measured from <span class="math notranslate nohighlight">\(\sigma_v\)</span>.</p></li>
+<li><p>The green circle (center C<span class="math notranslate nohighlight">\(_2\)</span>) represents the possible state of stresses that result as a combination of <span class="math notranslate nohighlight">\(\sigma_{v}\)</span> and <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span>. The shear stress <span class="math notranslate nohighlight">\(\tau\)</span> and normal effective stress <span class="math notranslate nohighlight">\(\sigma_n\)</span> of any plane in between the planes of <span class="math notranslate nohighlight">\(\sigma_{v}\)</span> and <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span> and colinear with <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> can be found through the angle <span class="math notranslate nohighlight">\(\beta_2\)</span> measured from <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span></p></li>
+<li><p>The red circle (center C<span class="math notranslate nohighlight">\(_3\)</span>) represents the possible state of stresses that result as a combination of <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span> and <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span>. The shear stress <span class="math notranslate nohighlight">\(\tau\)</span> and normal effective stress <span class="math notranslate nohighlight">\(\sigma_n\)</span> of any plane in between the planes of <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span> and <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> and colinear with <span class="math notranslate nohighlight">\(\sigma_{v}\)</span> can be found through the angle <span class="math notranslate nohighlight">\(\beta_3\)</span> measured from <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span></p></li>
+</ol>
+<figure class="align-default" id="fig-3dmohrcircle">
+<a class="reference internal image-reference" href="_images/6-3DMohrCircle.pdf"><img alt="figurecontent" src="_images/6-3DMohrCircle.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 121 </span><span class="caption-text">The 3D Mohr circle</span><a class="headerlink" href="#fig-3dmohrcircle" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>For this example (normal faulting, <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> azimuth E-W), an ideal fault would occur with a strike E-W and dip 60<span class="math notranslate nohighlight">\(^{\circ}\)</span> (assuming  <span class="math notranslate nohighlight">\(\varphi = 30^{\circ}\)</span>). This is the orientation of a plane with maximum <span class="math notranslate nohighlight">\(\tau/\sigma_n\)</span>.</p>
+<div class="admonition-example-5-3 admonition">
+<p class="admonition-title">Example 5.3</p>
+<p>Find the shear and normal effective stresses on a fault plane within the following state of stress and conditions:</p>
+<ul class="simple">
+<li><p>Fault: strike azimuth = 000<span class="math notranslate nohighlight">\(^{\circ}\)</span>, dip = 60<span class="math notranslate nohighlight">\(^{\circ}\)</span>.</p></li>
+<li><p>State of stress: <span class="math notranslate nohighlight">\(S_v =\)</span> 23 MPa (principal), <span class="math notranslate nohighlight">\(S_{Hmax} =\)</span> 20 MPa, <span class="math notranslate nohighlight">\(S_{hmin} =\)</span> 13.8 MPa (azimuth: 090<span class="math notranslate nohighlight">\(^{\circ}\)</span>), and <span class="math notranslate nohighlight">\(P_p =\)</span> 10 MPa.</p></li>
+</ul>
+<p>SOLUTION</p>
+<figure class="align-default" id="fig-ex5-3">
+<a class="reference internal image-reference" href="_images/6-3DMohrCircleP1.pdf"><img alt="figurecontent" src="_images/6-3DMohrCircleP1.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 122 </span><span class="caption-text">Problem Ex. 5.3</span><a class="headerlink" href="#fig-ex5-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The effective stresses are: <span class="math notranslate nohighlight">\(\sigma_v =\)</span> 13 MPa, <span class="math notranslate nohighlight">\(\sigma_{Hmax} =\)</span> 10 MPa, <span class="math notranslate nohighlight">\(\sigma_{hmin} =\)</span> 3.8 MPa.
+Based on the Mohr circle of <span class="math notranslate nohighlight">\(\sigma_v\)</span> with <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> and trigonometry:</p>
+<p><span class="math notranslate nohighlight">\(
+	\sigma_n = \left( \frac{13 \text{ MPa} + 3.8 \text{ MPa}}{2} \right) + \left( \frac{13 \text{ MPa} - 3.8 \text{ MPa}}{2} \right) \cos(2 \cdot 60^{\circ}) = 6.1 \text{ MPa}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+	\tau = \left( \frac{13 \text{ MPa} - 3.8 \text{ MPa}}{2} \right) \sin(2 \cdot 60^{\circ}) = 4.0 \text{ MPa} 
+	\: \: \blacksquare
+\)</span></p>
+</div>
+<div class="admonition-example-5-4 admonition">
+<p class="admonition-title">Example 5.4</p>
+<p>Find the shear and normal effective stresses on a fault plane within the following state of stress and conditions:</p>
+<ul class="simple">
+<li><p>Fault: strike azimuth = N60<span class="math notranslate nohighlight">\(^{\circ}\)</span>E, dip: 90<span class="math notranslate nohighlight">\(^{\circ}\)</span>.</p></li>
+<li><p>State of stress: <span class="math notranslate nohighlight">\(S_v =\)</span> 30 MPa (principal), <span class="math notranslate nohighlight">\(S_{Hmax} =\)</span> 45 MPa, <span class="math notranslate nohighlight">\(S_{hmin} =\)</span> 25 MPa (azimuth: N30<span class="math notranslate nohighlight">\(^{\circ}\)</span>E), and <span class="math notranslate nohighlight">\(P_p =\)</span> 15 MPa.</p></li>
+</ul>
+<p>SOLUTION</p>
+<figure class="align-default" id="fig-ex5-4">
+<a class="reference internal image-reference" href="_images/6-3DMohrCircleP2.pdf"><img alt="figurecontent" src="_images/6-3DMohrCircleP2.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 123 </span><span class="caption-text">Problem Ex. 5.4</span><a class="headerlink" href="#fig-ex5-4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The effective stresses are: <span class="math notranslate nohighlight">\(\sigma_v =\)</span> 15 MPa, <span class="math notranslate nohighlight">\(\sigma_{Hmax} =\)</span> 30 MPa, <span class="math notranslate nohighlight">\(\sigma_{hmin} =\)</span> 10 MPa.
+Based on the Mohr circle of <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span> with <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> and trigonometry:</p>
+<p><span class="math notranslate nohighlight">\(
+	\sigma_n = \left( \frac{30 \text{ MPa} + 10 \text{ MPa}}{2} \right) + \left( \frac{30 \text{ MPa} - 10 \text{ MPa}}{2} \right) \cos(2 \cdot 30^{\circ}) = 25 \text{ MPa}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+	\tau = \left( \frac{30 \text{ MPa} - 10 \text{ MPa}}{2} \right) \sin(2 \cdot 30^{\circ}) = 8.7 \text{ MPa} 
+	\: \: \blacksquare
+\)</span></p>
+</div>
+</section>
+<section id="tensor-method">
+<h3>Tensor method<a class="headerlink" href="#tensor-method" title="Link to this heading">#</a></h3>
+<p>This subsection describes the procedure to calculate stresses <span class="math notranslate nohighlight">\((\sigma_n, \tau)\)</span> on an arbitrary plane given its orientation respect to the geographical coordinate system <span class="math notranslate nohighlight">\((strike,dip)\)</span> and the in-situ stress tensor of principal stresses <span class="math notranslate nohighlight">\(\underset{=}{S}{}_P\)</span> (given its principal values and principal directions).</p>
+<p>The <em>first step</em> consists on defining the principal stress coordinate system and the geographical coordinate system (both right-handed coordinate systems).</p>
+<ul class="simple">
+<li><p>The principal stress coordinate system has the three principal directions as bases of the system in the order of most compressive to least compressive: <span class="math notranslate nohighlight">\(\underline{e}_1\)</span> for <span class="math notranslate nohighlight">\(S_1\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_2\)</span> for <span class="math notranslate nohighlight">\(S_2\)</span>, and <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> for <span class="math notranslate nohighlight">\(S_3\)</span> (Fig. \ref{fig:PScsGcs}). The stress tensor is termed <span class="math notranslate nohighlight">\(\underset{=}{S}{}_P\)</span> in this coordinate system.</p></li>
+<li><p>The geographical coordinate system has bases <span class="math notranslate nohighlight">\(\underline{e}_1\)</span> pointing in North direction, <span class="math notranslate nohighlight">\(\underline{e}_2\)</span> pointing in East direction, and <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> pointing down in direction of increasing depth (Fig. \ref{fig:PScsGcs}). We will refer this basis as the ``NED’’ basis. The stress tensor is termed <span class="math notranslate nohighlight">\(\underset{=}{S}{}_G\)</span> in this coordinate system.</p></li>
+</ul>
+<figure class="align-default" id="fig-pscsgcs">
+<a class="reference internal image-reference" href="_images/6-32.pdf"><img alt="figurecontent" src="_images/6-32.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 124 </span><span class="caption-text">The stress tensor in principal directions and geographical coordinate systems.</span><a class="headerlink" href="#fig-pscsgcs" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The \textit{second step} involves constructing a change of basis matrix <span class="math notranslate nohighlight">\(R_{PG}\)</span> from the Principal Stress to the Geographical Coordinate system.
+This matrix depends on the projections of the elements of the new base on the old base according to the cosines of the director angles <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta \)</span>, and <span class="math notranslate nohighlight">\(\gamma\)</span> (Fig. \ref{fig:AnglesMatrixRPG}).
+Table \ref{table:RPGsummary} summarizes the meaning of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta \)</span>, and <span class="math notranslate nohighlight">\(\gamma\)</span> for cases in which vertical stress is a principal stress.</p>
+<figure class="align-default" id="fig-anglesmatrixrpg">
+<a class="reference internal image-reference" href="_images/6-33.pdf"><img alt="figurecontent" src="_images/6-33.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 125 </span><span class="caption-text">Transformation matrix from the principal directions to geographical coordinate system and corresponding angles.</span><a class="headerlink" href="#fig-anglesmatrixrpg" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="math notranslate nohighlight" id="equation-eq-matrixrpg">
+<span class="eqno">(39)<a class="headerlink" href="#equation-eq-matrixrpg" title="Link to this equation">#</a></span>\[\begin{split}	R_{PG}
+	=
+	\left[
+	\begin{array}{ccc}
+		\cos \alpha \cos \beta &amp; \sin \alpha \cos \beta  &amp; -\sin \beta \\
+		\cos \alpha \sin \beta \sin \gamma - \sin \alpha \cos \gamma  &amp; \sin \alpha \sin \beta \sin \gamma + \cos \alpha \cos \gamma  &amp; \cos \beta \sin \gamma \\
+		\cos \alpha \sin \beta \cos \gamma + \sin \alpha \sin \gamma  &amp; \sin \alpha \sin \beta \cos \gamma - \cos \alpha \sin \gamma  &amp; \cos \beta \cos \gamma 
+	\end{array}
+	\right]\end{split}\]</div>
+<p>\caption{Summary of possible values of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, and <span class="math notranslate nohighlight">\(\gamma\)</span> for vertical stress being a principal stress. Notes:
+(1) these angles indicate solely the orientation of principal stresses with respect to the geographical coordinate system, (2) this <span class="math notranslate nohighlight">\(\beta\)</span> has nothing to do with the angle used in the Mohr’s circle method to solve for stresses on a fault.}
+\label{table:RPGsummary}</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Normal faulting</p></th>
+<th class="head"><p>Strike slip</p></th>
+<th class="head"><p>Reverse faulting</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+<td><p>Azimuth of <span class="math notranslate nohighlight">\(S_{hmin}\)</span></p></td>
+<td><p>Azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span></p></td>
+<td><p>Azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(90^\circ\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0^\circ\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0^\circ\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\gamma\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0^\circ\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(90^\circ\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0^\circ\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Check out <a class="reference external" href="https://mybinder.org/v2/gh/johntfoster/rotation_widget/master?filepath=rotation_widget-rise.ipynb">this link</a> for an animation of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta \)</span>, and <span class="math notranslate nohighlight">\(\gamma\)</span> in arbitrary directions.</p>
+<p>With the matrix <span class="math notranslate nohighlight">\(R_{PG}\)</span>, we can calculate the stress tensor <span class="math notranslate nohighlight">\(\underset{=}{S}{}_P\)</span> as a function of <span class="math notranslate nohighlight">\(\underset{=}{S}{}_G\)</span>,</p>
+<p>\begin{equation}
+\underset{=}{S}<em>P = R</em>{PG} \underset{=}{S}{}<em>G R</em>{PG}^T
+\end{equation}</p>
+<p>and therefore:</p>
+<p>\begin{equation}
+\underset{=}{S}<em>G = R</em>{PG}^T \underset{=}{S}{}<em>P R</em>{PG}
+\label{eq:SGcalc}
+\end{equation}</p>
+<p>where the superscript <span class="math notranslate nohighlight">\(T\)</span> stands for ``transpose’’.</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.5:} Calculate <span class="math notranslate nohighlight">\(\underset{=}{S}{}_G\)</span> in a normal faulting stress regime case (<span class="math notranslate nohighlight">\(S_1 = 30\)</span> MPa, <span class="math notranslate nohighlight">\(S_2 = 25\)</span> MPa, <span class="math notranslate nohighlight">\(S_3 = 20\)</span> MPa) with azimuth of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> N-S. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The principal stress tensor is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+30 &amp; 0  &amp; 0 \
+0  &amp; 25 &amp; 0 \
+0  &amp;  0 &amp; 20
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_1 = S_v\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 0^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 90^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 0^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+0  &amp; 0  &amp; -1 \
+0  &amp; 1  &amp; 0 \
+1  &amp; 0  &amp; 0
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Finally, using equation \ref{eq:SGcalc}</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+0  &amp; 0  &amp; -1 \
+0  &amp; 1  &amp; 0 \
+1  &amp; 0  &amp; 0
+\end{array}
+\right]^T
+:
+\left[
+\begin{array}{ccc}
+30 &amp; 0  &amp; 0 \
+0  &amp; 25 &amp; 0 \
+0  &amp;  0 &amp; 20
+\end{array}
+\right]
+:
+\left[
+\begin{array}{ccc}
+0  &amp; 0  &amp; -1 \
+0  &amp; 1  &amp; 0 \
+1  &amp; 0  &amp; 0
+\end{array}
+\right]
+=
+\left[
+\begin{array}{ccc}
+20 &amp; 0  &amp; 0 \
+0  &amp; 25 &amp; 0 \
+0  &amp;  0 &amp; 30
+\end{array}
+\right]
+: : \blacksquare
+\end{equation*}
+\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.6:} Calculate <span class="math notranslate nohighlight">\(\underset{=}{S}{}_G\)</span> in a strike-slip faulting stress regime case (<span class="math notranslate nohighlight">\(S_1 = 30\)</span> MPa, <span class="math notranslate nohighlight">\(S_2 = 25\)</span> MPa, <span class="math notranslate nohighlight">\(S_3 = 20\)</span> MPa) with azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> N-S. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The principal stress tensor is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+30 &amp; 0  &amp; 0 \
+0  &amp; 25 &amp; 0 \
+0  &amp;  0 &amp; 20
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_1 = S_{Hmax}\)</span> and <span class="math notranslate nohighlight">\(S_2 = S_v\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 0^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 0^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 90^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+1  &amp; 0  &amp; 0 \
+0  &amp; 0  &amp; 1 \
+0  &amp; -1 &amp; 0
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Finally, using equation \ref{eq:SGcalc}</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+1  &amp; 0  &amp; 0 \
+0  &amp; 0  &amp; 1 \
+0  &amp; -1 &amp; 0
+\end{array}
+\right]^T
+:
+\left[
+\begin{array}{ccc}
+30 &amp; 0  &amp; 0 \
+0  &amp; 25 &amp; 0 \
+0  &amp;  0 &amp; 20
+\end{array}
+\right]
+:
+\left[
+\begin{array}{ccc}
+1  &amp; 0  &amp; 0 \
+0  &amp; 0  &amp; 1 \
+0  &amp; -1 &amp; 0
+\end{array}
+\right]
+=
+\left[
+\begin{array}{ccc}
+30 &amp; 0  &amp; 0 \
+0  &amp; 20 &amp; 0 \
+0  &amp;  0 &amp; 25
+\end{array}
+\right]
+: : \blacksquare
+\end{equation*}
+\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.7:} Calculate <span class="math notranslate nohighlight">\(\underset{=}{S}{}_G\)</span> in a reverse faulting stress regime case (<span class="math notranslate nohighlight">\(S_1 = 30\)</span> MPa, <span class="math notranslate nohighlight">\(S_2 = 25\)</span> MPa, <span class="math notranslate nohighlight">\(S_3 = 20\)</span> MPa) with azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> E-W. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The principal stress tensor is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+30 &amp; 0  &amp; 0 \
+0  &amp; 25 &amp; 0 \
+0  &amp;  0 &amp; 20
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_1 = S_{Hmax}\)</span> and <span class="math notranslate nohighlight">\(S_2 = S_{hmin}\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 90^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 0^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 0^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+0  &amp; 1  &amp; 0 \
+-1 &amp; 0  &amp; 0 \
+0  &amp; 0  &amp; 1
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Finally, using equation \ref{eq:SGcalc}</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+0  &amp; 1  &amp; 0 \
+-1 &amp; 0  &amp; 0 \
+0  &amp; 0  &amp; 1
+\end{array}
+\right]^T
+:
+\left[
+\begin{array}{ccc}
+30 &amp; 0  &amp; 0 \
+0  &amp; 25 &amp; 0 \
+0  &amp;  0 &amp; 20
+\end{array}
+\right]
+:
+\left[
+\begin{array}{ccc}
+0  &amp; 1  &amp; 0 \
+-1 &amp; 0  &amp; 0 \
+0  &amp; 0  &amp; 1
+\end{array}
+\right]
+=
+\left[
+\begin{array}{ccc}
+25 &amp; 0  &amp; 0 \
+0  &amp; 30 &amp; 0 \
+0  &amp;  0 &amp; 20
+\end{array}
+\right]
+: : \blacksquare
+\end{equation*}</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.8:} Calculate <span class="math notranslate nohighlight">\(\underset{=}{S}{}_G\)</span> in a strike-slip faulting stress regime case (<span class="math notranslate nohighlight">\(S_1 = 60\)</span> MPa, <span class="math notranslate nohighlight">\(S_2 = 40\)</span> MPa, <span class="math notranslate nohighlight">\(S_3 = 35\)</span> MPa) with azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> being 135<span class="math notranslate nohighlight">\(^{\circ}\)</span>. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The principal stress tensor is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+60 &amp; 0  &amp; 0 \
+0  &amp; 40 &amp; 0 \
+0  &amp;  0 &amp; 35
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_1 = S_{Hmax}\)</span> and <span class="math notranslate nohighlight">\(S_2 = S_v\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 135^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 0^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 90^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+-0.707  &amp; 0.707  &amp; 0 \
+0  &amp; 0  &amp; 1 \
+0.707  &amp; 0.707 &amp; 0
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Finally, using equation \ref{eq:SGcalc}</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+-0.707  &amp; 0.707  &amp; 0 \
+0  &amp; 0  &amp; 1 \
+0.707  &amp; 0.707 &amp; 0
+\end{array}
+\right]^T
+:
+\left[
+\begin{array}{ccc}
+60 &amp; 0  &amp; 0 \
+0  &amp; 40 &amp; 0 \
+0  &amp;  0 &amp; 35
+\end{array}
+\right]
+:
+\left[
+\begin{array}{ccc}
+-0.707  &amp; 0.707  &amp; 0 \
+0  &amp; 0  &amp; 1 \
+0.707  &amp; 0.707 &amp; 0
+\end{array}
+\right]
+=
+\left[
+\begin{array}{ccc}
+47.5  &amp; -12.5  &amp; 0 \
+-12.5  &amp;  47.5  &amp; 0 \
+0    &amp;  0     &amp; 40
+\end{array}
+\right]
+: : \blacksquare
+\end{equation*}</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>The \textit{third step} consists in defining the fault plane coordinate system.
+The coordinate system basis is comprised of <span class="math notranslate nohighlight">\(n_d\)</span> (dip), <span class="math notranslate nohighlight">\(n_s\)</span> (strike), and <span class="math notranslate nohighlight">\(n_n\)</span> (normal) vectors: d-s-n right-handed basis.
+The three vectors depend solely in two variables: <span class="math notranslate nohighlight">\(strike\)</span> and <span class="math notranslate nohighlight">\(dip\)</span> of the fault.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/6-39.pdf}}
+\caption{Fault coordinate system as a function of strike and dip.}
+\label{fig:dsn}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The \textit{fourth step} (and last) consists in projecting the stress tensor based on the geographical coordinate system onto the fault base vectors.
+The stress vector acting on the plane of the fault is <span class="math notranslate nohighlight">\(\underline{t}\)</span> (note that <span class="math notranslate nohighlight">\(\underline{t}\)</span> is not necessarily aligned with <span class="math notranslate nohighlight">\(\underline{n}_d\)</span>, <span class="math notranslate nohighlight">\(\underline{n}_s\)</span> or <span class="math notranslate nohighlight">\(\underline{n}_n\)</span>) and is calculated according to:</p>
+<p>\begin{equation}
+\underline{t} = \underset{=}{S}{}_G \underline{n}_n
+\end{equation}</p>
+<p>The total normal stress on the plane of the fault is <span class="math notranslate nohighlight">\(S_n\)</span> (aligned with <span class="math notranslate nohighlight">\(\underline{n}_n\)</span>):</p>
+<p>\begin{equation}
+S_n = \underline{t} \cdot \underline{n}_n
+\end{equation}</p>
+<p>The effective normal stress on the fault plane is <span class="math notranslate nohighlight">\(\sigma_n = S_n - P_p \)</span>.
+The shear stresses on the plane of the fault is aligned with <span class="math notranslate nohighlight">\(\underline{n}_d\)</span> and <span class="math notranslate nohighlight">\(\underline{n}_s\)</span> are:</p>
+<p>\begin{equation}
+\left\lbrace
+\begin{array}{l}
+\tau_d = \underline{t} \cdot \underline{n}_d \
+\tau_s = \underline{t} \cdot \underline{n}_s
+\end{array}
+\right.
+\end{equation}</p>
+<p>The dot product is used in all these vector to vector multiplications. The geometrical meaning is the projection of one vector onto the other.</p>
+<p>The effective normal stress <span class="math notranslate nohighlight">\(\sigma_n\)</span> and absolute shear <span class="math notranslate nohighlight">\(\tau = \sqrt{\tau_d^2 + \tau_s^2}\)</span> can also be calculated with the following equations:</p>
+<p>\begin{equation}
+\sigma_n = \underline{t} \cdot \underline{n}_n - P_p
+\end{equation}
+\begin{equation}
+\tau^2 = ||\underline{t}||^2 - ||\underline{t} \cdot \underline{n}_n||^2
+\end{equation}</p>
+<p>The <span class="math notranslate nohighlight">\(rake\)</span> is the angle of the shear stress <span class="math notranslate nohighlight">\(\underline{\tau}_d + \underline{\tau}_s\)</span> with respect to <span class="math notranslate nohighlight">\(\underline{n}_s\)</span> (horizontal line) and quantifies the direction of expected fault movement in the fault plane.</p>
+<p>\begin{equation}
+rake = \arctan \left( \frac{\tau_d}{\tau_s} \right)
+\end{equation}</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.9:} Calculate <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(S_n\)</span>, <span class="math notranslate nohighlight">\(\tau_d\)</span>, <span class="math notranslate nohighlight">\(\tau_s\)</span>, and <span class="math notranslate nohighlight">\(rake\)</span> for a fault with strike 000<span class="math notranslate nohighlight">\(^{\circ}\)</span> and dip 60<span class="math notranslate nohighlight">\(^{\circ}\)</span>E in a place with normal faulting stress regime (<span class="math notranslate nohighlight">\(S_v = 23\)</span> MPa, <span class="math notranslate nohighlight">\(S_{Hmax} = 15\)</span> MPa, <span class="math notranslate nohighlight">\(S_{hmin} = 13.8\)</span> MPa) with azimuth of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> equal to 90<span class="math notranslate nohighlight">\(^{\circ}\)</span>. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The tensor of principal stresses is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+23 &amp; 0  &amp; 0 \
+0  &amp; 15 &amp; 0 \
+0  &amp;  0 &amp; 13.8
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_1 = S_v\)</span> and the azimuth of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> is 90<span class="math notranslate nohighlight">\(^{\circ}\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 90^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 90^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 0^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+0  &amp; 0  &amp; -1 \
+-1  &amp; 0  &amp; 0 \
+0  &amp; 1 &amp; 0
+\end{array}
+\right]
+\end{equation*}</p>
+<p>and the total stress in the geographical coordinate system results</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+15 &amp; 0  &amp; 0 \
+0  &amp; 13.8 &amp; 0 \
+0  &amp;  0 &amp; 23
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Given the orientation of the fault, the vector normal to the fault is</p>
+<p>\begin{equation*}
+\underline{n}{}_n
+=
+\left[
+\begin{array}{c}
+0 \
+0.867 \
+-0.5
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Finally, the stresses on the fault are</p>
+<p><span class="math notranslate nohighlight">\(\underline{t}= [0,11.95,-11.50]\)</span> MPa.\newline
+<span class="math notranslate nohighlight">\(S_n = 16.1\)</span> MPa \newline
+<span class="math notranslate nohighlight">\(\tau_d = -3.98\)</span> MPa \newline
+<span class="math notranslate nohighlight">\(\tau_s = 0\)</span> MPa \newline
+<span class="math notranslate nohighlight">\(rake\)</span> = 90<span class="math notranslate nohighlight">\(^{\circ} \: \: \blacksquare \)</span>  \newline</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.10:} Calculate <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(S_n\)</span>, <span class="math notranslate nohighlight">\(\tau_d\)</span>, <span class="math notranslate nohighlight">\(\tau_s\)</span>, and <span class="math notranslate nohighlight">\(rake\)</span> for a fault with strike 060<span class="math notranslate nohighlight">\(^{\circ}\)</span> and dip 90<span class="math notranslate nohighlight">\(^{\circ}\)</span> in a place with strike-slip stress regime (<span class="math notranslate nohighlight">\(S_v = 30\)</span> MPa, <span class="math notranslate nohighlight">\(S_{Hmax} = 45\)</span> MPa, <span class="math notranslate nohighlight">\(S_{hmin} = 25\)</span> MPa) with azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> equal to  120<span class="math notranslate nohighlight">\(^{\circ}\)</span>. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The tensor of principal stresses is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+45 &amp; 0  &amp; 0 \
+0  &amp; 30 &amp; 0 \
+0  &amp;  0 &amp; 25
+\end{array}
+\right] \text{ MPa}
+\end{equation*}</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_1 = S_v\)</span> and the azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> is 120<span class="math notranslate nohighlight">\(^{\circ}\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 120^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 0^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 90^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+-0.5  &amp; 0.866  &amp; 0 \
+0  &amp; 0  &amp; 1 \
+0.866  &amp; 0.5 &amp; 0
+\end{array}
+\right]
+\end{equation*}</p>
+<p>and the total stress in the geographical coordinate system results</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+30 &amp; -8.66  &amp; 0 \
+-8.66  &amp; 40 &amp; 0 \
+0  &amp;  0 &amp; 30
+\end{array}
+\right] \text{ MPa}
+\end{equation*}</p>
+<p>Given the orientation of the fault, the vector normal to the fault is</p>
+<p>\begin{equation*}
+\underline{n}{}_n
+=
+\left[
+\begin{array}{c}
+-0.866 \
+0.5 \
+0
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Finally, the stresses on the fault are</p>
+<p><span class="math notranslate nohighlight">\(\underline{t}= [-30.31,27.5,0]\)</span> MPa.\newline
+<span class="math notranslate nohighlight">\(S_n = 40\)</span> MPa \newline
+<span class="math notranslate nohighlight">\(\tau_d = 0\)</span> MPa \newline
+<span class="math notranslate nohighlight">\(\tau_s = 8.66\)</span> MPa \newline
+<span class="math notranslate nohighlight">\(rake\)</span> = 0<span class="math notranslate nohighlight">\(^{\circ} \: \: \blacksquare \)</span>  \newline</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.11:} Calculate <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(S_n\)</span>, <span class="math notranslate nohighlight">\(\tau_d\)</span>, <span class="math notranslate nohighlight">\(\tau_s\)</span>, and <span class="math notranslate nohighlight">\(rake\)</span> for conjugate faults with strike 045<span class="math notranslate nohighlight">\(^{\circ}\)</span>  and 225<span class="math notranslate nohighlight">\(^{\circ}\)</span> both with dip 60<span class="math notranslate nohighlight">\(^{\circ}\)</span> in a place with normal faulting stress regime (<span class="math notranslate nohighlight">\(S_v = 5000\)</span> psi, <span class="math notranslate nohighlight">\(S_{Hmax} = 4000\)</span> psi, <span class="math notranslate nohighlight">\(S_{hmin} = 3000\)</span> psi) with azimuth of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> equal to  90<span class="math notranslate nohighlight">\(^{\circ}\)</span>. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The tensor of principal stresses is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+5000 &amp; 0  &amp; 0 \
+0  &amp; 4000 &amp; 0 \
+0  &amp;  0 &amp; 3000
+\end{array}
+\right] \text{ psi}
+\end{equation*}</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_1 = S_v\)</span> and the azimuth of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> is 90<span class="math notranslate nohighlight">\(^{\circ}\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 90^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 90^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 0^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+0  &amp; 0  &amp; -1 \
+-1  &amp; 0  &amp; 0 \
+0  &amp; 1 &amp; 0
+\end{array}
+\right]
+\end{equation*}</p>
+<p>and the total stress tensor in the geographical coordinate system results</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+4000 &amp; 0  &amp; 0 \
+0  &amp; 3000 &amp; 0 \
+0  &amp;  0 &amp; 5000
+\end{array}
+\right] \text{ psi}
+\end{equation*}</p>
+<p>Let us consider the first fault with strike of 045<span class="math notranslate nohighlight">\(^{\circ}\)</span> and dip of 60<span class="math notranslate nohighlight">\(^{\circ}\)</span>, the vector normal to the faults is</p>
+<p>\begin{equation*}
+\underline{n}{}_{n}
+=
+\left[
+\begin{array}{c}
+-0.612 \
+0.612 \
+-0.5
+\end{array}
+\right]
+\end{equation*}</p>
+<p>The stresses on this fault are</p>
+<p><span class="math notranslate nohighlight">\(\underline{t}= [-2450,1840,-2500]\)</span> psi.\newline
+<span class="math notranslate nohighlight">\(S_n = 3870\)</span> psi \newline
+<span class="math notranslate nohighlight">\(\tau_d = -649\)</span> psi \newline
+<span class="math notranslate nohighlight">\(\tau_s = -433\)</span> psi \newline
+<span class="math notranslate nohighlight">\(rake\)</span> = 56.3<span class="math notranslate nohighlight">\(^{\circ}\)</span>\newline</p>
+<p>Let us consider the fault with strike of 225<span class="math notranslate nohighlight">\(^{\circ}\)</span> and dip of 60<span class="math notranslate nohighlight">\(^{\circ}\)</span>, the vector normal to the faults is</p>
+<p>\begin{equation*}
+\underline{n}{}_{n}
+=
+\left[
+\begin{array}{c}
+0.612 \
+-0.612 \
+-0.5
+\end{array}
+\right]
+\end{equation*}</p>
+<p>The stresses on this fault are</p>
+<p><span class="math notranslate nohighlight">\(\underline{t}= [2450,-1840,-2500]\)</span> psi.\newline
+<span class="math notranslate nohighlight">\(S_n = 3870\)</span> psi \newline
+<span class="math notranslate nohighlight">\(\tau_d = -649\)</span> psi \newline
+<span class="math notranslate nohighlight">\(\tau_s = -433\)</span> psi \newline
+<span class="math notranslate nohighlight">\(rake\)</span> = 56.3<span class="math notranslate nohighlight">\(^{\circ} \: \: \blacksquare \)</span>  \newline</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.12:} Calculate <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(S_n\)</span>, <span class="math notranslate nohighlight">\(\tau_d\)</span>, <span class="math notranslate nohighlight">\(\tau_s\)</span>, <span class="math notranslate nohighlight">\(rake\)</span>, and <span class="math notranslate nohighlight">\(\tau / \sigma_n\)</span> for a fault with strike 120<span class="math notranslate nohighlight">\(^{\circ}\)</span>  and 70<span class="math notranslate nohighlight">\(^{\circ}\)</span> dip in a place with reverse faulting stress regime (<span class="math notranslate nohighlight">\(S_v = 1000\)</span> psi, <span class="math notranslate nohighlight">\(S_{Hmax} = 2400\)</span> psi, <span class="math notranslate nohighlight">\(S_{hmin} = 1200\)</span> psi) with azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> equal to  150<span class="math notranslate nohighlight">\(^{\circ}\)</span> and pore pressure <span class="math notranslate nohighlight">\(P_p = 440\)</span> psi. <span class="math notranslate nohighlight">\(S_v\)</span> is a principal stress.</p>
+<p>SOLUTION \newline</p>
+<p>The tensor of principal stresses is</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_P
+=
+\left[
+\begin{array}{ccc}
+2400 &amp; 0  &amp; 0 \
+0  &amp; 1200 &amp; 0 \
+0  &amp;  0 &amp; 1000
+\end{array}
+\right] \text{ psi}
+\end{equation*}</p>
+<p>and the pore pressure is <span class="math notranslate nohighlight">\(P_p = 440\)</span> psi.</p>
+<p>Using Table \ref{table:RPGsummary} and considering that <span class="math notranslate nohighlight">\(S_3 = S_v\)</span> and the azimuth of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> is 150<span class="math notranslate nohighlight">\(^{\circ}\)</span>, the angles of the principal stress coordinate result <span class="math notranslate nohighlight">\(\alpha = 150^{\circ}\)</span>, <span class="math notranslate nohighlight">\(\beta = 0^{\circ}\)</span>, and <span class="math notranslate nohighlight">\(\gamma = 0^{\circ}\)</span>.
+The change of coordinate system matrix results</p>
+<p>\begin{equation*}
+R_{PG}
+=
+\left[
+\begin{array}{ccc}
+-0.866  &amp; 0.5  &amp; 0 \
+-0.5  &amp; -0.866  &amp; 0 \
+0  &amp; 0 &amp; 1
+\end{array}
+\right]
+\end{equation*}</p>
+<p>and the total stress in the geographical coordinate system results</p>
+<p>\begin{equation*}
+\underset{=}{S}{}_G
+=
+\left[
+\begin{array}{ccc}
+2100 &amp; -520  &amp; 0 \
+-520  &amp; 1500 &amp; 0 \
+0  &amp;  0 &amp; 1000
+\end{array}
+\right] \text{ psi}
+\end{equation*}</p>
+<p>Given the orientation of the fault, the vector normal to the fault is</p>
+<p>\begin{equation*}
+\underline{n}{}_n
+=
+\left[
+\begin{array}{c}
+-0.814 \
+-0.470 \
+-0.342
+\end{array}
+\right]
+\end{equation*}</p>
+<p>Finally, the stresses on the fault are</p>
+<p><span class="math notranslate nohighlight">\(\underline{t}= [-1465,-281,-342]\)</span> psi.\newline
+<span class="math notranslate nohighlight">\(S_n = 1441\)</span> psi, <span class="math notranslate nohighlight">\(\sigma_n = 1001\)</span> psi \newline
+<span class="math notranslate nohighlight">\(\tau_d = 160\)</span> psi, <span class="math notranslate nohighlight">\(\tau_s = 488\)</span> psi, <span class="math notranslate nohighlight">\(\tau = 514\)</span> psi \newline
+<span class="math notranslate nohighlight">\(rake\)</span> = 18.21<span class="math notranslate nohighlight">\(^{\circ}\)</span>  \newline</p>
+<p>The ratio of shear to normal effective stress is
+<span class="math notranslate nohighlight">\(\tau / \sigma_n = 0.51  \: \: \blacksquare\)</span></p>
+<p>\hl{Example: make 3D Mohr-Circle filled with color corresponding to <span class="math notranslate nohighlight">\(\tau / \sigma_n\)</span> value, stereo net, and fractures in 3D. }</p>
+</section>
+</section>
+<section id="applications">
+<h2>Applications<a class="headerlink" href="#applications" title="Link to this heading">#</a></h2>
+<section id="critically-stressed-fractures-and-permeability">
+<h3>Critically stressed fractures and permeability<a class="headerlink" href="#critically-stressed-fractures-and-permeability" title="Link to this heading">#</a></h3>
+<p>The previous section shows how to calculate the normal effective stress <span class="math notranslate nohighlight">\(\sigma_n\)</span> and shear stress <span class="math notranslate nohighlight">\(\tau\)</span> components on an arbitrary oriented plane given the in-situ state of stress.
+A critically-stressed fracture (or fault) has shear stress and normal effective stress components with a ratio <span class="math notranslate nohighlight">\(\tau/\sigma_n\)</span> which approaches the friction coefficient <span class="math notranslate nohighlight">\(\mu \sim\)</span> 0.6-1.0.
+The fracture is said to be ``critically stressed’’ because it is practically failing in shear.
+Such fractures -if they exhibit dilation during sliding- tend to be more hydraulically conductive than fractures with low <span class="math notranslate nohighlight">\(\tau/\sigma_n\)</span> ratio (on the right of the Mohr circle and far left close to <span class="math notranslate nohighlight">\(\sigma_3\)</span> - Fig. \ref{fig:FracResPerm}).
+Natural fractures can help fluid drainage.
+Traditionally, fracture permeability has been thought to be dependent on effective normal stress only <span class="math notranslate nohighlight">\(k_{frac} = f(\sigma_n)\)</span>.
+The concept of critically stressed fractures adds one more level of dependency to fracture permeability  such that it is also a function of shear stress <span class="math notranslate nohighlight">\(k_{frac} = f(\sigma_n,\tau)\)</span>.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.80]{./Figures/split/6-FracPermStresses.PNG}}
+\caption{Fractures with a ratio <span class="math notranslate nohighlight">\(\tau/\sigma_n \sim \mu\)</span> in brittle rocks tend to have higher permeability than other fractures with <span class="math notranslate nohighlight">\(\tau/\sigma_n \rightarrow 0\)</span> and induce permeability anisotropy in fractured rock masses.}
+\label{fig:BlockFracsPerm}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>If critically oriented fractures have higher permeability than non-critically oriented fractures, then, the state of stress determines which fractures are hydraulically conductive and also determines permeability anisotropy in a fractured reservoir.
+Fractures that have an orientation that favors high <span class="math notranslate nohighlight">\(\tau/\sigma_n\)</span> ratio are said to be ``critically oriented’’ \ref{fig:FracResPerm}.
+This dependence is particularly important in unconventional formations where fracture permeability plays a critical role in determining production rates.
+The orientation of such fractures is critical for determining the orientation of a horizontal wellbore that minimizes the least resistance path of fluids from the rock matrix to the wellbore.</p>
+<p>Fractures can also create and reactivate during hydraulic fracturing.
+The dots in Fig. \ref{fig:HydFracMicroseismicity} indicate micro-to-nano earthquakes hypocenters (at depth) triggered by rock failure during hydraulic fracturing.
+Hydraulic fracturing imparts changes of stresses that reactivate some critically oriented fractures in tight reservoirs.
+These reactivated fractures are useful to contribute to increase the permeability of tight reservoirs at the large scale (also known as Stimulated Reservoir Volume SRV).
+Some of these created fractures may close and seal-off fairly quickly upon depletion if not propped.
+Significant ongoing research addresses how to maintain the permeability of these fractures in the long-term.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.40]{./Figures/split/6-Microseismicity.png}}
+\caption{Shear fracture reactivation in multistage hydraulic fracturing evidenced by microseismic activity - Image from \href{<a class="reference external" href="http://dx.doi.org/10.1190/INT-2016-0199.1">http://dx.doi.org/10.1190/INT-2016-0199.1</a>}{[Wilson et al. 2018 - Interpretation]}}
+\label{fig:HydFracMicroseismicity}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/6-FractureReservoirPerm.png}}
+\caption{Example of horizontal wellbore placement in a fractured reservoir. The horizontal wellbore should be ideally perpendicular to critically stressed fractures to take advantage of their high permeability.}
+\label{fig:FracResPerm}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The same reasoning applies to large faults.
+There are faults that may be more easily reactivated due to pore pressure changes because of their orientation with respect to the current state of stress (See subsection \ref{subsec:faultreact}).</p>
+</section>
+<section id="determination-of-horizontal-stresses-assuming-limit-equilibrium">
+<h3>Determination of horizontal stresses assuming limit equilibrium<a class="headerlink" href="#determination-of-horizontal-stresses-assuming-limit-equilibrium" title="Link to this heading">#</a></h3>
+<p>Tectonic plates drive movements of the Earth’s crust  (Fig.  \ref{fig:BrittleCrust}).
+High temperatures and high effective stresses at great depth favor ductile deformation.
+Low temperatures and low effective stresses in the near-surface favor brittle failure.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/6-21.pdf}}
+\caption{Schematic of a section of the Earth’s crust with brittle failure near surface and ductile deformation at depths greater than <span class="math notranslate nohighlight">\(\sim\)</span> 16 km.}
+\label{fig:BrittleCrust}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>As a result of tectonic movement, there is ubiquitous shear failure and faulting of the Earth’s shallow crust.
+The frictional strength of faults limits the maximum magnitude of stresses imparted by tectonic strains (Figure \ref{fig:ShearStrengthLimit}).
+Hence, horizontal stresses are proportional to tectonic strains in the elastic region, but their maximum value is limited by fault strength.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.75]{./Figures/split/InSituStresses-ElastoPlastic.pdf}}
+\caption{Schematic of in-situ stress as a function of tectonic strains <span class="math notranslate nohighlight">\(\varepsilon_{tect}\)</span> and failure strength. The frictional strength of faults controls stress once the elastic region is exceeded.}
+\label{fig:ShearStrengthLimit}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>Because faults are cohesion-less, the frictional strength equation is simply:</p>
+<p>\begin{equation}
+\sigma_1 = q : \sigma_3
+\end{equation}</p>
+<p>(like sand, zero-intercept in the y-axis) where <span class="math notranslate nohighlight">\(\sigma_1\)</span> is the maximum effective principal stress, <span class="math notranslate nohighlight">\(\sigma_3\)</span> is the minimum effective principal stress, and <span class="math notranslate nohighlight">\(q=[1+\sin(\varphi)]/[1-\sin(\varphi)]\)</span> is the anisotropy factor.</p>
+<p>The shear strength of the brittle crust has a direct implication in determining the maximum and minimum values of horizontal stresses for each stress regime once the tectonic strains are surpassed.
+Frictional equilibrium of the brittle crust implies that minimum and maximum attainable values of horizontal stresses are controlled by shear failure.
+Hence, for
+\begin{itemize}
+\item normal stress regime (NF): <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> cannot be smaller than <span class="math notranslate nohighlight">\(\sigma_{v}/q\)</span>, for
+\item strike-slip stress regime (SS): <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span> cannot be greater than <span class="math notranslate nohighlight">\(q \: \sigma_{hmin}\)</span>, and for
+\item reverse stress regime (RF): <span class="math notranslate nohighlight">\(\sigma_{Hmax}\)</span> cannot be greater than <span class="math notranslate nohighlight">\(q \: \sigma_{v}\)</span>.
+\end{itemize}</p>
+<p>As a result, the assumption of limit frictional equilibrium permits estimating minimum and maximum horizontal stresses if effective stresses <span class="math notranslate nohighlight">\(\sigma_{hmin}\)</span> or <span class="math notranslate nohighlight">\(\sigma_{v}\)</span> are known.</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.13:} A given site onshore is known to be subjected to a NF stress regime and hydrostatic pore pressure. Calculate the total horizontal minimum stress <span class="math notranslate nohighlight">\(S_{hmin}\)</span> at a depth of 5,000 ft assuming frictional equilibrium of faults and friction angle <span class="math notranslate nohighlight">\(\varphi = 30^{\circ}\)</span>.</p>
+<p>SOLUTION \newline
+The solution is a lower bound estimation of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> for normal faulting stress regime dictated by frictional equilibrium.
+\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.55]{./Figures/split/6-ShminNF.png}}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
+<span class="math notranslate nohighlight">\(\: \: \blacksquare\)</span> \newline
+\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>\noindent\rule{16.5cm}{0.4pt} \newline
+\emph{PROBLEM 5.14:} A given site onshore is known to be subjected to a RF stress regime. Hard pressure is detected at 2,000 ft with <span class="math notranslate nohighlight">\(\lambda_p=0.82\)</span>. Calculate the total maximum horizontal stress <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> at this depth assuming frictional equilibrium of faults and friction angle <span class="math notranslate nohighlight">\(\varphi = 30^{\circ}\)</span>.</p>
+<p>SOLUTION \newline
+The solution is an upper bound for <span class="math notranslate nohighlight">\(S_{Hmax}\)</span>.
+\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.50]{./Figures/split/6-SHmaxRF.png}}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
+Let us assume a lithostatic stress gradient of 1 psi/ft, hence</p>
+<p>[ S_v = 1 \text{ psi/ft} \times 2000 \text{ ft} = 2000 \text{ psi} ]</p>
+<p><span class="math notranslate nohighlight">\(S_v\)</span> is the minimum principal since the site is subjected to reverse faulting regime.
+Given the overpressure parameter, pore pressure is</p>
+<p>[ P_p = \lambda_p S_v = 0.82 \times 2000 \text{ psi} = 1640 \text{ psi} ]</p>
+<p>and effective vertical stress is</p>
+<p>[ \sigma_v = S_v - P_p = 2000 \text{ psi} - 1640 \text{ psi} = 360 \text{ psi}]</p>
+<p>Finally, the maximum effective horizontal stress depends on the vertical effective stress (reverse faulting regime), so that</p>
+<p>[ \sigma_{Hmax} = q : \sigma_v = \frac{1+\sin 30^{\circ}}{1-\sin 30^{\circ}} 360 \text{ psi} = 1080 \text{ psi}]
+and therefore</p>
+<p>[ S_{Hmax} = \sigma_{Hmax} + P_p = 1080 \text{ psi} + 1640 \text{ psi} = 2720 \text{ psi} : : \blacksquare ]
+\noindent\rule{16.5cm}{0.4pt} \newline</p>
+<p>The bounding limits of minimum and maximum horizontal stress for a given vertical stress and pore pressure can be plotted through Zoback’s (effective) stress polygon (Fig.  \ref{fig:StressPolygon}).
+The colored lines represent the bounds for normal faulting stress regime (NF), strike-slip faulting stress regime (SS), and reverse faulting stress regime (RF).</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.50]{./Figures/split/6-24.pdf}}
+\caption{The limits of horizontal stresses based on frictional equilibrium can be conveniently plotted in a ``stress polygon’’ plot. }
+\label{fig:StressPolygon}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>For example, the state of stress for a place with a stress regime that fluctuates from NF to SS with depth would plot at the intersection of NF and SS lines in the stress polygon (Fig. \ref{fig:StressPolygonNF-SS}).</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/6-25.pdf}}
+\caption{Application example of the stress polygon. This particular place exhibits a hybrid stress regime NF and SS depending on depth and likely rock lithology.}
+\label{fig:StressPolygonNF-SS}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="determination-of-stress-regime-and-horizontal-stress-direction-from-fault-orientation">
+<h3>Determination of stress regime and horizontal stress direction from fault orientation<a class="headerlink" href="#determination-of-stress-regime-and-horizontal-stress-direction-from-fault-orientation" title="Link to this heading">#</a></h3>
+<p>Mapping of faults and fractures in the subsurface helps interpret the state of stress that caused such fractures.
+In some cases the state of stress that caused such faults may be still acting today.
+The example in Fig. \ref{fig:Thamama} shows an example of strike-slip conjugate faults.
+The maximum horizontal stress that caused these shear faults was aligned with the bisectrix of the two fault strikes, about E10<span class="math notranslate nohighlight">\(^{\circ}\)</span>S.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.60]{./Figures/split/6-ThamamaHorizon.png}}
+\caption{Seismic image of the top of an anticline structure (red: shallower, blue: deeper, TOP VIEW). The discontinuities in the seismic image are strike-slip faults. Image from \href{<a class="reference external" href="https://www.onepetro.org/conference-paper/IPTC-10646-MS">https://www.onepetro.org/conference-paper/IPTC-10646-MS</a>}{[IPTC-10646-MS]}.}
+\label{fig:Thamama}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+<section id="fault-reactivation">
+<h3>Fault reactivation<a class="headerlink" href="#fault-reactivation" title="Link to this heading">#</a></h3>
+<p>\label{subsec:faultreact}</p>
+<p>Depletion and injection of fluids in the subsurface cause changes in pore pressure and therefore on effective stresses.
+Fluid injection such as in hydraulic fracturing, water-flooding, and waste-water disposal can reach adjacent faults (if any) and decrease the effective normal stress <span class="math notranslate nohighlight">\(\sigma_n = S_n - P_p\)</span> acting on faults.
+In hydraulic fracturing, the injection of fluids is temporary and limited to the fracture completion size.
+In water-flooding, pressure build-up is limited by the producer wells.
+In waste-water injection, the pressure build-up is controlled by the aquifer size, compressibility and compartmentalization.</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/6-FaultReactivation.pdf}}
+\caption{Fault reactivation. Injection of fluids changes the pore pressure and lowers effective normal stress on faults increasing <span class="math notranslate nohighlight">\(\tau/\sigma_n\)</span>.}
+\label{fig:lec6-X}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<p>The change of stresses produced by increases of pore pressure assuming constant total vertical stress and negligible poroelastic effects is</p>
+<p>\begin{equation}
+\left\lbrace
+\begin{array}{l}
+\Delta \sigma_v = - \Delta P_p \
+\Delta \sigma_{hmin} \leq - \Delta P_p \
+\end{array}
+\right.
+\end{equation}</p>
+<p>The result is a shift of the Mohr circle to the left, closer to the shear failure or ``reactivation’’ line.
+The magnitude of change of pore pressure needed to reactivate a fault is (at least) equal to the horizontal distance between the point of the Mohr-circle  of such fault and the failure line. Hence, a critically oriented fracture needs the lowest <span class="math notranslate nohighlight">\(\Delta P_p\)</span> to reactivate.</p>
+<p>The reactivation of faults may result in induced seismicity.
+The imparted change of fault permeability depends on the fault filling,  known as fault gouge.
+Both, induced seismicity and change in fault permeability depend on the failure properties of the fault gouge.
+Brittle failure results in high energy release through induced seismicity and increases of fault permeability, while ductile failure results in low energy release through seismicity and decreases or minor increases of permeability.
+An undesired consequence of fault reactivation is the loss of hydrocarbon trapping ability at fault structural traps (e.g., \url{<a class="reference external" href="https://www.youtube.com/watch?v=OtJTI4nv1QI">https://www.youtube.com/watch?v=OtJTI4nv1QI</a>}).
+Figure \ref{fig:DecaturMS} shows an example of induced seismicity with magnitude <span class="math notranslate nohighlight">\(M&lt;2\)</span> in the Richter scale due to injection of carbon dioxide in the Mount Simon Sandstone.
+The seismicity originates mostly from reactivation of faults below the reservoir formation in basement formations. The regional stress regime alternates between strike-slip and reverse (See Figure \ref{fig:USGSstressmap}).</p>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=1.00]{./Figures/split/DecaturCO2-MS.pdf}}
+\caption{Fault reactivation observed through microseismicity due to CO<span class="math notranslate nohighlight">\(_2\)</span> injection in a sandstone formation [Bauer et al, 2016 - IJGGC]. Notice the alignment of events that likely reveals fault strike. Significant microseismicity occurs as far as 0.6 miles away from the injector.}
+\label{fig:DecaturMS}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+</section>
+</section>
+<section id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
+<p>\begin{enumerate}</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>\item For the following faults: (i) draw the corresponding points in a stereonet (lower hemisphere projection) map, and (ii) convert strike from quadrant to azimuth convention. Use \url{https://app.visiblegeology.com/stereonetApp.html} only to verify your answers.
+\begin{enumerate}
+	\item N55$^{\circ}$E, 45$^{\circ}$SE
+	\item E20$^{\circ}$S, 60$^{\circ}$NE
+	\item N20$^{\circ}$W, 25$^{\circ}$SW
+	\item S10$^{\circ}$W, 60$^{\circ}$NW
+\end{enumerate}
+
+\item Find out the ideal orientations of (a) a hydraulic fracture and (b) shear fractures,  all created in a site subjected to stresses $S_v &lt; S_{hmin} &lt; S_{Hmax}$ where $S_{Hmax}$ strikes E-W, $\mu =$ 0.8, and $S_v$ is a principal stress.
+
+\item Find out the ideal orientations of (a) a hydraulic fracture and (b) shear fractures, all created in a site subjected to stresses $S_{hmin} &lt; S_{v} &lt; S_{Hmax}$ where $S_{Hmax}$ strikes W20$^{\circ}$N, $\mu=0.5$, and $S_v$ is a principal stress..
+
+\item Find out the state of stress (regime and direction of stresses) that caused the faults mapped in the following stereonets:
+</pre></div>
+</div>
+<p>\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F<br />
+\centerline{\includegraphics[scale=0.65]{./Figures/split/StereonetProblem.pdf}}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>\item In a given reservoir under study, stresses are $S_{hmin}=$ 40 MPa, $S_{Hmax}=60$ MPa, $S_v=45$ MPa, $P_p= 20$ MPa, and $S_{hmin}$ acts E-W. For each of the faults below, calculate (using the 3D Mohr circle method if possible) the normal and shear stress on the plane of the fault and then determine if the fault is prone to slip assuming $\mu = 0.6$.
+\begin{enumerate}
+	\item Fault with strike north-south, dip 65$^{\circ}$ to the east
+	\item Fault with strike east-west, dip 35$^{\circ}$ to the north
+	\item Fault with strike 060$^{\circ}$, dip 90$^{\circ}$
+	\item Fault with strike 030$^{\circ}$, dip 25$^{\circ}$
+\end{enumerate}
+
+
+\item (Optional) Write a Matlab/Python code that can obtain ($S_n$, $\sigma_n$, $\tau_d$, $\tau_s$) on an arbitrary fault with orientation $(strike, dip)$ for a given state of stress $(\underset{=}{S}{}_P, \alpha, \beta, \gamma)$.
+\begin{enumerate}
+	\item Verify with solved problems in this chapter
+	\item Apply to solve all cases in Problem 5
+	\item Apply code to solve stress on 100 fractures randomly oriented with the stresses of Problem 5. Plot all results the respective 3D Mohr circle. A nearby injection wellbore will perform water flooding. What is the additional pore pressure needed to start reactivating faults? 
+\end{enumerate}
+\emph{Hint}: Matlab function `rand&#39; can be used for creating an array of random values; $r = a + (b-a)*rand(N,1)$ creates an array $r$ (Nx1) of values in interval $[a,b]$
+
+\item Let us compare reservoirs with normal and reverse faulting regimes (onshore). For both regimes, plot the limits of $S_1$ and $S_3$ versus depth from 0 to 5 km assuming lithostatic gradient equal to 23 MPa/km, hydrostatic pore pressure equal to 10 MPa/km, and a state of stress limited by frictional strength of faults. Assume sliding friction coefficient is $\mu =$ 0.6. For both regimes, how does changing $\mu$ from 0.6 to 1.0 change the maximum possible differential stress $S_1-S_3$ at a fixed depth of $z=5$ km?
+
+\item A given site offshore (sea floor at 500 ft) is subjected to a Normal Faulting stress regime. Over-pressure exists and at 2,000 ft (TVDSS: True Vertical Depth Sub-Sea) overpressure is $\lambda_p =$ 0.78. Calculate the total minimum horizontal stress $S_{hmin}$ at this depth (2,000 ft TVDSS) assuming frictional equilibrium of faults and friction angle 30$^{\circ}$. Draw the corresponding 2D Mohr circle with a solid line and draw an additional 2D Mohr circle with a dashed line assuming hydrostatic pressure. (Assume typical water and lithostatic gradients)
+
+
+\item The following figure shows major faults in the Eagle Ford region [EIA, 2014 - Updates to the EIA Eagle Ford Play Maps]. 
+\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
+</pre></div>
+</div>
+<p>\centerline{\includegraphics[scale=0.35]{./Figures/split/EIA-EagleFord.png}}
+\end{figure} % F F F F F F F F F F F F F F F F F F F F F F</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>\begin{enumerate}
+	\item Looking at the normal faults in the Frio, Atascosa, and Wilson counties, what would be the expected direction of the minimum horizontal stress $S_{hmin}$ in this area?
+	\item Visit the GIS application of the railroad commission of Texas: \url{https://gis.rrc.texas.gov/GISViewer/}. Zoom into the South-East of the Frio county until you see well trajectories. The horizontal wells are expected to be drilled in the direction of  the least principal stress. Does this direction of $S_{hmin}$ coincide with the direction expected from fault orientation? Justify. 
+\end{enumerate}
+</pre></div>
+</div>
+<p>\end{enumerate}</p>
+</section>
+<section id="further-reading-and-references">
+<h2>Further reading and references<a class="headerlink" href="#further-reading-and-references" title="Link to this heading">#</a></h2>
+<p>\begin{enumerate}
+\item Zoback, M.D., 2010. Reservoir geomechanics. Cambridge University Press. (Chapters 5 and 9)
+\end{enumerate}</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch4_RockFailure.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">4. Rock Yield and Failure</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-of-faults-and-fractures">Mapping of faults and fractures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orientation-of-planes-with-respect-to-the-geographical-coordinate-system">Orientation of planes with respect to the geographical coordinate system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stereonets-for-plotting-fault-orientation">Stereonets for plotting fault orientation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faults-in-geological-maps">Faults in geological maps</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frictional-strength-of-faults-and-fault-types">Frictional strength of faults and fault types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-strength">Fault strength</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-faults">Normal faults</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thrust-and-reverse-faults">Thrust and reverse faults</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strike-slip-faults">Strike-slip faults</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-and-faulting-regimes">Stress and faulting regimes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-orientation-of-faults">Ideal orientation of faults</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determination-of-normal-and-shear-stresses-on-the-fault-plane">Determination of normal and shear stresses on the fault plane</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mohr-s-circle-method">Mohr’s circle method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-method">Tensor method</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critically-stressed-fractures-and-permeability">Critically stressed fractures and permeability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determination-of-horizontal-stresses-assuming-limit-equilibrium">Determination of horizontal stresses assuming limit equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#determination-of-stress-regime-and-horizontal-stress-direction-from-fault-orientation">Determination of stress regime and horizontal stress direction from fault orientation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-reactivation">Fault reactivation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By D. Nicolas Espinoza
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

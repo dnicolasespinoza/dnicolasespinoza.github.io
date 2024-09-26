@@ -839,7 +839,8 @@ Note: You are encouraged to summarize all calculations in a single plot as a fun
 | Water    | 300       | 1030                     | NA                 |
 | Water    | 400       | 1030                     | NA                 |
 | Water    | 500       | 1031                     | NA                 |
-| Sand     | 600       | 1900                     | NA                 |
+| Sand     | 500       | 1900                     | NA                 |
+| Sand     | 600       | 1950                     | NA                 |
 | Sand     | 700       | 2190                     | NA                 |
 | Sand     | 800       | 2200                     | NA                 |
 | Sand     | 900       | 2230                     | NA                 |
