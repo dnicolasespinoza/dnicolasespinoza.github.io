@@ -7,7 +7,7 @@ The chapter also reviews the concept of horizontal stress from a phenomenologica
 The calculation of horizontal stress requires a mechanical model that will be introduced in subsequent chapters.
 
 
-## Lithostatic gradient
+## 2.1 Lithostatic gradient
 
 The lithostatic stress gradient is the variation of total vertical stress $S_v$ with vertical depth (usually referred as *true depth*} in petroleum engineering).
 The following subsections review the fundamental concepts of stress, stress equilibrium, and effective stress. 
@@ -360,7 +360,7 @@ Example of calculation of vertical stress for a general case. This is an offshor
 
 
 %================================================================================
-## Non-hydrostatic pore pressure
+## 2.2 Non-hydrostatic pore pressure
 %\label{Sec:Nonhydro}
 
 Pore pressure is not hydrostatic everywhere.
@@ -598,7 +598,7 @@ Example of decreased fracture pressure (between 5,100 ft and 5,400 ft) due to de
 :::
 	
 %================================================================================
-## Horizontal stresses
+## 2.3 Horizontal stresses
 
 %---------------------------------------------------------
 ### Background
@@ -812,7 +812,7 @@ Ideal orientation of horizontal wellbores in the Barnett shale.
 :::
 
 %---------------------------------------------------------
-## Problems
+## 2.4 Problems
 
 1. Compute the vertical stress gradient resulting from a carbonate rock made of 70\% dolomite and 30\% calcite, porosity 10\% and filled with brine ~1,060 kg/m$^3$. Look up for mineral densities in the web in trusted sources. Provide answer in psi/ft, MPa/km, and ppg.
 
@@ -885,14 +885,14 @@ Stress log from [Devon](https://doi.org/10.15530/URTEC-2018-2881326). Depth data
 Note: You may use a plot digitizer [example here](https://apps.automeris.io/wpd4/) to obtain numerical data from image files.
 
 %---------------------------------------------------------
-## Coding support for solving problems
+## 2.5 Coding support for solving problems
 
 You may use the python code available in the following link at [Google Colab](https://drive.google.com/drive/folders/1rIzjFd5p81JGOSRUkaMiQF018idb1XU3?usp=sharing).
 I suggest you use it as "inspiration" and learning, but write your own. 
 Make sure to acknowledge any copying and pasting.
 
 %---------------------------------------------------------
-## Further reading and references
+## 2.6 Further reading and references
 
 - Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 3)
 - Zoback, M.D., 2010. Reservoir geomechanics. Cambridge University Press. (Chapter 1 and 2). (test)

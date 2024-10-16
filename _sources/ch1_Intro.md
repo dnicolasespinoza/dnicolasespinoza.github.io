@@ -21,7 +21,7 @@ Similar applications are also relevant to other energy fields, such as deep geot
 Summary of applications of geomechanics in the energy industry.
 :::
 
-## Structural Geology
+## 1.1 Structural Geology
 
 Structural Geology is the branch of geology that studies the three-dimensional deformation of geological formations as they deposit, metamorphose, fold, and fracture.
 The Earth's crust has changed considerably over geological time going through periods of burial, uplifting, contraction and extension (see animated Earth evolution [here](https://dinosaurpictures.org/ancient-earth#0)). 
@@ -66,7 +66,7 @@ Tectonic stresses result in folding and faulting of sedimentary layers. The imag
 Give enough time, stress, and temperature and rocks can deform like bread dough. This example is from UK Jurassic Coast taken by the author.
 :::
 
-## Geomechanics in the Energy Industry
+## 1.2 Geomechanics in the Energy Industry
 
 Geomechanics has had an increasing importance in Energy Resources Engineering, particularly in the Oil and Gas Industry.
 Other applications within the Energy umbrella include: deep geothermal energy, deep nuclear waste disposal, and CO$_2$ geological storage.
@@ -165,7 +165,7 @@ Selected types of deep geothermal systems for heat mining.
 
 -->
 
-## Problems
+## 1.3 Problems
 
 1. Completion through horizontal wellbores and multistage hydraulic fracturing has dramatically impacted the production of oil and gas in the US. Answer the following questions:
 	1.  What was the percentage of tight/shale gas production with respect to total gas production in the US for 2010 and 2020 according to EIA [US dry natural gas production by type](https://www.eia.gov/energyexplained/natural-gas/where-our-natural-gas-comes-from.php)? 
@@ -180,7 +180,7 @@ Selected types of deep geothermal systems for heat mining.
 
 Note: you may use this [online plot digitizer ](https://apps.automeris.io/wpd/) to digitize plots.
 
-## Further Reading and References
+## 1.4 Further Reading and References
 
 1. Decarbonizing the economy: [Equinor article](https://equinor.ft.com/articles/there-will-be-no-net-zero-without-carbon-capture-and-hydrogen)
 2. Carbon capture and storage: [DOE NETL article](https://www.netl.doe.gov/coal/carbon-storage/faqs/carbon-storage-faqs)

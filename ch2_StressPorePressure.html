@@ -186,6 +186,7 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Subsurface Stresses and Pore Pressure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch3_ContGeoMech.html">3. Fundamentals of Solid Continuum Mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch4_RockFailure.html">4. Rock Yield and Failure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch5_StressProjection.html">5. Stresses on Faults and Fractures</a></li>
 </ul>
 
     </div>
@@ -381,7 +382,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lithostatic-gradient">Lithostatic gradient</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lithostatic-gradient">2.1 Lithostatic gradient</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-concept-and-equilibrium-1d">Stress concept and equilibrium 1D</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rock-vertical-stress-gradient">Rock vertical stress gradient</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#onshore-total-vertical-stress">Onshore total vertical stress</a></li>
@@ -391,13 +392,13 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-hydrostatic-pore-pressure">Non-hydrostatic pore pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-hydrostatic-pore-pressure">2.2 Non-hydrostatic pore pressure</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanisms-of-overpressure">Mechanisms of overpressure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequilibrium-compaction-and-excess-pore-pressure">Disequilibrium compaction and excess pore pressure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reservoir-depletion">Reservoir depletion</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-stresses">Horizontal stresses</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-stresses">2.3 Horizontal stresses</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geological-indicators">Geological indicators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-situ-measurement">In-situ measurement</a></li>
@@ -410,9 +411,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-orientation-of-open-mode-fractures">Ideal orientation of open-mode fractures</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">Coding support for solving problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">2.4 Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">2.5 Coding support for solving problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">2.6 Further reading and references</a></li>
 </ul>
             </nav>
         </div>
@@ -432,7 +433,7 @@ This chapter presents a summary of the calculation of vertical stress (total and
 The chapter also reviews the concept of horizontal stress from a phenomenological point of view.
 The calculation of horizontal stress requires a mechanical model that will be introduced in subsequent chapters.</p>
 <section id="lithostatic-gradient">
-<h2>Lithostatic gradient<a class="headerlink" href="#lithostatic-gradient" title="Link to this heading">#</a></h2>
+<h2>2.1 Lithostatic gradient<a class="headerlink" href="#lithostatic-gradient" title="Link to this heading">#</a></h2>
 <p>The lithostatic stress gradient is the variation of total vertical stress <span class="math notranslate nohighlight">\(S_v\)</span> with vertical depth (usually referred as <em>true depth</em>} in petroleum engineering).
 The following subsections review the fundamental concepts of stress, stress equilibrium, and effective stress.</p>
 <section id="stress-concept-and-equilibrium-1d">
@@ -689,7 +690,7 @@ You may use the <a class="reference external" href="https://pypi.org/project/las
 </section>
 </section>
 <section id="non-hydrostatic-pore-pressure">
-<h2>Non-hydrostatic pore pressure<a class="headerlink" href="#non-hydrostatic-pore-pressure" title="Link to this heading">#</a></h2>
+<h2>2.2 Non-hydrostatic pore pressure<a class="headerlink" href="#non-hydrostatic-pore-pressure" title="Link to this heading">#</a></h2>
 <p>Pore pressure is not hydrostatic everywhere.
 In fact, many times pore pressure is an unknown!
 In a system of “connected pores” under hydrostatic equilibrium (water does not move), pore pressure increases hydrostatically.
@@ -875,7 +876,7 @@ Reservoir depletion usually brings along lower total horizontal stresses which l
 </section>
 </section>
 <section id="horizontal-stresses">
-<h2>Horizontal stresses<a class="headerlink" href="#horizontal-stresses" title="Link to this heading">#</a></h2>
+<h2>2.3 Horizontal stresses<a class="headerlink" href="#horizontal-stresses" title="Link to this heading">#</a></h2>
 <section id="background">
 <h3>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h3>
 <p>Vertical (effective) stress is not enough to define the state of stress in a solid.
@@ -1090,7 +1091,7 @@ Consequently, hydraulic fractures are expected to be vertical  and the preferent
 </section>
 </section>
 <section id="problems">
-<h2>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
+<h2>2.4 Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Compute the vertical stress gradient resulting from a carbonate rock made of 70% dolomite and 30% calcite, porosity 10% and filled with brine ~1,060 kg/m<span class="math notranslate nohighlight">\(^3\)</span>. Look up for mineral densities in the web in trusted sources. Provide answer in psi/ft, MPa/km, and ppg.</p></li>
 <li><p>Calculate (without the help of a computer) the total vertical stress in an off-shore location at 10,000 ft of total depth (from surface) for which: water depth is 1,000 m (with mass density 1,030 kg/m<span class="math notranslate nohighlight">\(^3\)</span>), bulk mass density of rock at the seabed is 1,800 kg/m<span class="math notranslate nohighlight">\(^3\)</span> increasing linearly until a depth of 500 m below sea-floor to 2,350 kg/m<span class="math notranslate nohighlight">\(^3\)</span> and relatively constant below 500 m below seafloor. Why would rock bulk mass density increase with depth?</p></li>
@@ -1261,13 +1262,13 @@ Consequently, hydraulic fractures are expected to be vertical  and the preferent
 <p>Note: You may use a plot digitizer <a class="reference external" href="https://apps.automeris.io/wpd4/">example here</a> to obtain numerical data from image files.</p>
 </section>
 <section id="coding-support-for-solving-problems">
-<h2>Coding support for solving problems<a class="headerlink" href="#coding-support-for-solving-problems" title="Link to this heading">#</a></h2>
+<h2>2.5 Coding support for solving problems<a class="headerlink" href="#coding-support-for-solving-problems" title="Link to this heading">#</a></h2>
 <p>You may use the python code available in the following link at <a class="reference external" href="https://drive.google.com/drive/folders/1rIzjFd5p81JGOSRUkaMiQF018idb1XU3?usp=sharing">Google Colab</a>.
 I suggest you use it as “inspiration” and learning, but write your own.
 Make sure to acknowledge any copying and pasting.</p>
 </section>
 <section id="further-reading-and-references">
-<h2>Further reading and references<a class="headerlink" href="#further-reading-and-references" title="Link to this heading">#</a></h2>
+<h2>2.6 Further reading and references<a class="headerlink" href="#further-reading-and-references" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 3)</p></li>
 <li><p>Zoback, M.D., 2010. Reservoir geomechanics. Cambridge University Press. (Chapter 1 and 2). (test)</p></li>
@@ -1339,7 +1340,7 @@ Make sure to acknowledge any copying and pasting.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lithostatic-gradient">Lithostatic gradient</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lithostatic-gradient">2.1 Lithostatic gradient</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-concept-and-equilibrium-1d">Stress concept and equilibrium 1D</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rock-vertical-stress-gradient">Rock vertical stress gradient</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#onshore-total-vertical-stress">Onshore total vertical stress</a></li>
@@ -1349,13 +1350,13 @@ Make sure to acknowledge any copying and pasting.</p>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-hydrostatic-pore-pressure">Non-hydrostatic pore pressure</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-hydrostatic-pore-pressure">2.2 Non-hydrostatic pore pressure</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanisms-of-overpressure">Mechanisms of overpressure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disequilibrium-compaction-and-excess-pore-pressure">Disequilibrium compaction and excess pore pressure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reservoir-depletion">Reservoir depletion</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-stresses">Horizontal stresses</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-stresses">2.3 Horizontal stresses</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geological-indicators">Geological indicators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-situ-measurement">In-situ measurement</a></li>
@@ -1368,9 +1369,9 @@ Make sure to acknowledge any copying and pasting.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-orientation-of-open-mode-fractures">Ideal orientation of open-mode fractures</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">Coding support for solving problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">2.4 Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">2.5 Coding support for solving problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">2.6 Further reading and references</a></li>
 </ul>
   </nav></div>
 

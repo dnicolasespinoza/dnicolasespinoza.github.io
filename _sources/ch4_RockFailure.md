@@ -2,7 +2,7 @@
 \label{Ch:Failure}
 
 %================================================================================
-## Preliminary concepts
+## 4.1 Preliminary concepts
 
 %--------------------------------------------------------------------------------
 ### Microstructure of geologic materials
@@ -54,7 +54,7 @@ Overview of rock failure modes: tension, shear, and compression.
 :::
 
 %==================================================================================
-## Tensile failure
+## 4.2 Tensile failure
 
 %--------------------------------------------------------------------------------
 ### Direct tension
@@ -148,7 +148,7 @@ Compare these values to tensile strength of fused silica: 48 MPa, 304 stainless 
 :::
 
 %==================================================================================
-## Shear failure
+## 4.3 Shear failure
 
 %--------------------------------------------------------------------------------
 ### Frictional Strength
@@ -393,7 +393,7 @@ Triaxial testing. (a) Axisymmetric triaxial frame comprising a pressure vessel, 
 :::
 
 %==================================================================================
-## Compression failure: Pore collapse
+## 4.4 Compression failure: Pore collapse
 
 If compression stresses are high enough, grains can crush filling the pore space.
 Pore collapse may happen in nature due to rock burial and also in petroleum engineering during reservoir depletion. In both cases effective stresses increase in all directions.
@@ -409,7 +409,7 @@ Pore collapse under uniaxial strain condition with grain crushing. $\sigma'_p$  
 :::
 
 %================================================================================
-## Yield/failure locus
+## 4.5 Yield/failure locus
 
 We can combine all rock failure types in a single $(\sigma_n,\tau)$ plot ({numref}`fig:YieldLocus`).
 The rock would fail in tension if the Mohr circle (or state of stress) goes further to the left of $T_S$. 
@@ -429,7 +429,7 @@ Summary of basic rock failure modes.
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
 %================================================================================
-## Strength anisotropy
+## 4.6 Strength anisotropy
 
 Most rocks have anisotropic strength properties, thus, strength depends on the loading direction.
 The plot in {numref}`fig:StrengthAnisotropy` shows anisotropy of shear strength. Consider a rock with well defined planes of weakness in one particular direction. 
@@ -445,7 +445,7 @@ Shear strength anisotropy example in which bedding planes are weaker than the ro
 :::
 
 %================================================================================
-## Deformation beyond the elastic limit
+## 4.7 Deformation beyond the elastic limit
 
 Rocks have a limited range for which they behave elastically, with recoverable strains.
 After a certain limit, termed yield stress, the rock experiences plastic irrecoverable strains (inelasticity) ({numref}`fig:ElastoPlastIntro`).
@@ -496,7 +496,7 @@ Elasto-plasticity: experimental data and idealized behavior.
 :::
 
 %================================================================================
-## Rock damage and failure revisited
+## 4.8 Rock damage and failure revisited
 
 Now that we know the macroscopic modes of rock failure we can investigate again the actual mechanisms of rock inelasticity and failure.
 First, uncemented rocks cannot hold tensile stresses and failure takes place through internal shearing (grain to grain friction and rotation) and grain crushing at high mean compressive stress. 
@@ -529,7 +529,7 @@ Microfracture coalescence in cemented rock with pre-existing flaws.
 :::
 
 %================================================================================
-## Problems
+## 4.9 Problems
 
 1. The following data presents the results of triaxial tests performed on a dry samples of cohesionless fine sand from the Frio formation in the Gulf of Mexico Basin.
 	1. Plot the maximum principal effective stress $\sigma_1$ as a function of $\sigma_3$ for the three experiments. Fit a line that goes to the intercept (0,0) and calculate the shear strength parameter $q$.
@@ -572,14 +572,14 @@ Microfracture coalescence in cemented rock with pre-existing flaws.
 
 
 %---------------------------------------------------------
-## Coding support for solving problems
+## 4.10 Coding support for solving problems
 
 You may use the python code available in the following link at [Google Colab](https://drive.google.com/drive/folders/1rIzjFd5p81JGOSRUkaMiQF018idb1XU3?usp=sharing).
 I suggest you use it as "inspiration" and learning, but write your own. 
 Make sure to acknowledge any copying and pasting.
 
 %================================================================================
-## Further reading and references
+## 4.11 Further reading and references
 
 1. Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 2)
 2. Jaeger, J.C., Cook, N.G. and Zimmerman, R., 2009. Fundamentals of rock mechanics. John Wiley \& Sons. (Chapters 4 and 6)

@@ -17,6 +17,7 @@ A video explanation of every chapter and subsection is available [as a YouTube p
 Additional material is available in [my Github repository](https://github.com/dnicolasespinoza/GeomechanicsJupyter) and also in my [YouTube channel](https://www.youtube.com/channel/UCFZu4RgaS8pKsfO75979fvg).
 Python code support is available in [my Google Colab notebooks](https://drive.google.com/drive/folders/1rIzjFd5p81JGOSRUkaMiQF018idb1XU3?usp=sharing). 
 
+The notes for the graduate course ["Advanced Geomechanics"](https://dnicolasespinoza.github.io/AdvancedGeomech/) are available online too. This course covers more advanced topics on thermo-poroelasticity and inelasticity. 
 
 ## Table of Contents:
 

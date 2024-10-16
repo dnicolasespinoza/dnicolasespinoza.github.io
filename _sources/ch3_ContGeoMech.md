@@ -1,7 +1,7 @@
 # 3. Fundamentals of Solid Continuum Mechanics
 
 %================================================================================
-## Stress tensor
+## 3.1 Stress tensor
 
 Consider a 3D space with a given right-handed orthogonal coordinate system $\underline{e}_1$, $\underline{e}_2$, $\underline{e}_3$ in directions 1, 2 and 3 ({numref}`fig:lec4-3`).
 In a right-handed coordinate system, the first element of the base $\underline{e}_1$ is your index finger, the second element of the base $\underline{e}_2$ is your middle finger, and the third element of the base $\underline{e}_3$ is your thumb (all in your right hand).   
@@ -232,7 +232,7 @@ A general equilibrium problem. The solution of a general continuum mechanics pro
 :::
 
 %================================================================================
-## Kinematic equations: displacements and strains
+## 3.2 Kinematic equations: displacements and strains
 
 Applications of stresses result in solid deformation and displacements.
 {numref}`fig:FreeFEMexample` shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
@@ -342,7 +342,7 @@ $
 
 
 %================================================================================
-## Constitutive equation: stress-strain relationships
+## 3.3 Constitutive equation: stress-strain relationships
 
 Constitutive equations tell us how a solid deforms (in time) as a response to stresses, to changes of temperature and to changes of pore pressure among others.
 How to choose a constitutive equation depends on the material properties, the magnitude of strain changes, the magnitude of stresses, and the loading rate among other factors.
@@ -1121,7 +1121,7 @@ General continuum mechanics problem.
 :::
 
 %================================================================================
-## Elastic anisotropy
+## 3.4 Elastic anisotropy
 
 Real rocks are not isotropic due to layering, particle orientation during deposition, and fracturing.
 Sedimentary rocks are usually well explained with transverse isotropic symmetry.
@@ -1144,7 +1144,7 @@ Stiffness parallel and perpendicular to bedding. \hl{[add real data]}.
 :::
 
 %================================================================================
-## Permanent deformation: Elasto-plasticity
+## 3.5 Permanent deformation: Elasto-plasticity
 
 Most rocks will exhibit permanent (plastic) deformation when loaded at large strains $\varepsilon \gtrsim 0.001$.
 Plastic deformation includes plastic compression strains and plastic shear strains.
@@ -1162,7 +1162,7 @@ Loading and unloading stress paths for a shale sample. Two unloading-reloading p
 :::
 
 %================================================================================
-## Time-dependent deformation: Visco-elasticity
+## 3.6 Time-dependent deformation: Visco-elasticity
 
 So far, we have assumed that rock strain-stress response is independent of loading rate, however, this is not true.
 The stiffness of rocks is not the same if loaded in a time frame of thousands of years (geological time), years (reservoir production time), or during a few minutes (drilling and laboratory time).
@@ -1204,7 +1204,7 @@ Impact of stress relaxation in horizontal stresses in the subsurface. (a) Decrea
 :::
 
 %================================================================================
-## Multiphysics problems
+## 3.7 Multiphysics problems
 
 %---------------------------------------------------------
 ### Poro-elasticity
@@ -1311,7 +1311,7 @@ $
 %### {Chemo-elasticity}
 
 %---------------------------------------------------------
-## Problems
+## 3.8 Problems
 
 1. For the following stress tensors: a) calculate the eigenvalues (principal stresses), b) calculate eigenvectors (principal directions), c) answer what the stress regime is, and d) calculate the angle between the North and the direction of $S_{Hmax}$ in clockwise direction:
 	1. North Colorado:
@@ -1388,14 +1388,14 @@ Problem figure.
 	
 
 %---------------------------------------------------------
-## Coding support for solving problems
+## 3.9 Coding support for solving problems
 
 You may use the python code available in the following link at [Google Colab](https://drive.google.com/drive/folders/1rIzjFd5p81JGOSRUkaMiQF018idb1XU3?usp=sharing).
 I suggest you use it as "inspiration" and learning, but write your own. 
 Make sure to acknowledge any copying and pasting.
 
 %---------------------------------------------------------
-## Further reading and references
+## 3.10 Further reading and references
 
 1. Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 1)
 2. Jaeger, J.C., Cook, N.G. and Zimmerman, R., 2009. Fundamentals of rock mechanics. John Wiley \& Sons. (Chapter 5)

@@ -186,6 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ch2_StressPorePressure.html">2. Subsurface Stresses and Pore Pressure</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Fundamentals of Solid Continuum Mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch4_RockFailure.html">4. Rock Yield and Failure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch5_StressProjection.html">5. Stresses on Faults and Fractures</a></li>
 </ul>
 
     </div>
@@ -381,14 +382,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-tensor">Stress tensor</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-tensor">3.1 Stress tensor</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cauchy-s-equations-of-stress-equilibrium">Cauchy’s equations of stress equilibrium</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation">Application of Cauchy’s equations for total vertical stress calculation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuum-mechanics-solution-of-an-arbitrary-problem">Continuum mechanics solution of an arbitrary problem</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-equations-displacements-and-strains">Kinematic equations: displacements and strains</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constitutive-equation-stress-strain-relationships">Constitutive equation: stress-strain relationships</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-equations-displacements-and-strains">3.2 Kinematic equations: displacements and strains</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constitutive-equation-stress-strain-relationships">3.3 Constitutive equation: stress-strain relationships</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-isotropic-elasticity">Linear isotropic elasticity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-isotropic-solid-in-voigt-notation">The isotropic solid in Voigt notation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-stress-and-elasticity">Effective stress and elasticity</a></li>
@@ -397,17 +398,17 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-linear-elasticity-problem">Generalized linear elasticity problem</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-anisotropy">Elastic anisotropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-deformation-elasto-plasticity">Permanent deformation: Elasto-plasticity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dependent-deformation-visco-elasticity">Time-dependent deformation: Visco-elasticity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiphysics-problems">Multiphysics problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-anisotropy">3.4 Elastic anisotropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-deformation-elasto-plasticity">3.5 Permanent deformation: Elasto-plasticity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dependent-deformation-visco-elasticity">3.6 Time-dependent deformation: Visco-elasticity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiphysics-problems">3.7 Multiphysics problems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poro-elasticity">Poro-elasticity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermo-elasticity">Thermo-elasticity</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">Coding support for solving problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.8 Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">3.9 Coding support for solving problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">3.10 Further reading and references</a></li>
 </ul>
             </nav>
         </div>
@@ -422,7 +423,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="fundamentals-of-solid-continuum-mechanics">
 <h1>3. Fundamentals of Solid Continuum Mechanics<a class="headerlink" href="#fundamentals-of-solid-continuum-mechanics" title="Link to this heading">#</a></h1>
 <section id="stress-tensor">
-<h2>Stress tensor<a class="headerlink" href="#stress-tensor" title="Link to this heading">#</a></h2>
+<h2>3.1 Stress tensor<a class="headerlink" href="#stress-tensor" title="Link to this heading">#</a></h2>
 <p>Consider a 3D space with a given right-handed orthogonal coordinate system <span class="math notranslate nohighlight">\(\underline{e}_1\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_2\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> in directions 1, 2 and 3 (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 45</span></a>).
 In a right-handed coordinate system, the first element of the base <span class="math notranslate nohighlight">\(\underline{e}_1\)</span> is your index finger, the second element of the base <span class="math notranslate nohighlight">\(\underline{e}_2\)</span> is your middle finger, and the third element of the base <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> is your thumb (all in your right hand).</p>
 <p>The number that represents the value of a scalar (such as temperature <span class="math notranslate nohighlight">\(T\)</span> or pore pressure <span class="math notranslate nohighlight">\(P_p\)</span>) at a given point <span class="math notranslate nohighlight">\((x_1,x_2,x_3)\)</span> is independent of the coordinate system orientation and origin (<a class="reference internal" href="#fig-scalarvectortensor"><span class="std std-numref">Fig. 44</span></a>).
@@ -609,7 +610,7 @@ We need equations that relate displacement to stresses. These equations divide i
 </section>
 </section>
 <section id="kinematic-equations-displacements-and-strains">
-<h2>Kinematic equations: displacements and strains<a class="headerlink" href="#kinematic-equations-displacements-and-strains" title="Link to this heading">#</a></h2>
+<h2>3.2 Kinematic equations: displacements and strains<a class="headerlink" href="#kinematic-equations-displacements-and-strains" title="Link to this heading">#</a></h2>
 <p>Applications of stresses result in solid deformation and displacements.
 <a class="reference internal" href="#fig-freefemexample"><span class="std std-numref">Fig. 50</span></a> shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
 In this particular case, the solid is anchored at the bottom and deforms due to the application of a force (from left to right) on the top.
@@ -693,7 +694,7 @@ Similarly to the stress tensor, strains can be organized in a tensor where eleme
 </div>
 </section>
 <section id="constitutive-equation-stress-strain-relationships">
-<h2>Constitutive equation: stress-strain relationships<a class="headerlink" href="#constitutive-equation-stress-strain-relationships" title="Link to this heading">#</a></h2>
+<h2>3.3 Constitutive equation: stress-strain relationships<a class="headerlink" href="#constitutive-equation-stress-strain-relationships" title="Link to this heading">#</a></h2>
 <p>Constitutive equations tell us how a solid deforms (in time) as a response to stresses, to changes of temperature and to changes of pore pressure among others.
 How to choose a constitutive equation depends on the material properties, the magnitude of strain changes, the magnitude of stresses, and the loading rate among other factors.</p>
 <figure class="align-default" id="fig-lec4-12">
@@ -1275,7 +1276,7 @@ In this class, we will see analytical solutions of this equation for 1) displace
 </section>
 </section>
 <section id="elastic-anisotropy">
-<h2>Elastic anisotropy<a class="headerlink" href="#elastic-anisotropy" title="Link to this heading">#</a></h2>
+<h2>3.4 Elastic anisotropy<a class="headerlink" href="#elastic-anisotropy" title="Link to this heading">#</a></h2>
 <p>Real rocks are not isotropic due to layering, particle orientation during deposition, and fracturing.
 Sedimentary rocks are usually well explained with transverse isotropic symmetry.
 Vertical transverse isotropy assumes symmetry around a vertical axis such that mechanical properties are the same when measured along any direction in a horizontal plane but different in the vertical direction (the direction perpendicular to bedding).
@@ -1296,7 +1297,7 @@ Accurate determination of horizontal stresses with elastic models (e.g., Eq. <a 
 </figure>
 </section>
 <section id="permanent-deformation-elasto-plasticity">
-<h2>Permanent deformation: Elasto-plasticity<a class="headerlink" href="#permanent-deformation-elasto-plasticity" title="Link to this heading">#</a></h2>
+<h2>3.5 Permanent deformation: Elasto-plasticity<a class="headerlink" href="#permanent-deformation-elasto-plasticity" title="Link to this heading">#</a></h2>
 <p>Most rocks will exhibit permanent (plastic) deformation when loaded at large strains <span class="math notranslate nohighlight">\(\varepsilon \gtrsim 0.001\)</span>.
 Plastic deformation includes plastic compression strains and plastic shear strains.
 The theory of elasto-plasticity is covered in the <a class="reference external" href="https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj">Advanced Geomechanics course</a>.
@@ -1313,7 +1314,7 @@ Notice the the re-loading modulus is similar to the unloading modulus <span clas
 </figure>
 </section>
 <section id="time-dependent-deformation-visco-elasticity">
-<h2>Time-dependent deformation: Visco-elasticity<a class="headerlink" href="#time-dependent-deformation-visco-elasticity" title="Link to this heading">#</a></h2>
+<h2>3.6 Time-dependent deformation: Visco-elasticity<a class="headerlink" href="#time-dependent-deformation-visco-elasticity" title="Link to this heading">#</a></h2>
 <p>So far, we have assumed that rock strain-stress response is independent of loading rate, however, this is not true.
 The stiffness of rocks is not the same if loaded in a time frame of thousands of years (geological time), years (reservoir production time), or during a few minutes (drilling and laboratory time).
 Rocks tend to be softer and more ductile as the loading time frame increases.</p>
@@ -1352,7 +1353,7 @@ Therefore, neglecting visco-elasticity may result in an overestimation of horizo
 </figure>
 </section>
 <section id="multiphysics-problems">
-<h2>Multiphysics problems<a class="headerlink" href="#multiphysics-problems" title="Link to this heading">#</a></h2>
+<h2>3.7 Multiphysics problems<a class="headerlink" href="#multiphysics-problems" title="Link to this heading">#</a></h2>
 <section id="poro-elasticity">
 <h3>Poro-elasticity<a class="headerlink" href="#poro-elasticity" title="Link to this heading">#</a></h3>
 <p>\label{sec:poroelasticity}</p>
@@ -1428,7 +1429,7 @@ Then, for <span class="math notranslate nohighlight">\(\Delta T \neq 0\)</span>,
 </section>
 </section>
 <section id="problems">
-<h2>Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
+<h2>3.8 Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>For the following stress tensors: a) calculate the eigenvalues (principal stresses), b) calculate eigenvectors (principal directions), c) answer what the stress regime is, and d) calculate the angle between the North and the direction of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> in clockwise direction:</p>
 <ol class="arabic simple">
@@ -1517,13 +1518,13 @@ Then, for <span class="math notranslate nohighlight">\(\Delta T \neq 0\)</span>,
 </ol>
 </section>
 <section id="coding-support-for-solving-problems">
-<h2>Coding support for solving problems<a class="headerlink" href="#coding-support-for-solving-problems" title="Link to this heading">#</a></h2>
+<h2>3.9 Coding support for solving problems<a class="headerlink" href="#coding-support-for-solving-problems" title="Link to this heading">#</a></h2>
 <p>You may use the python code available in the following link at <a class="reference external" href="https://drive.google.com/drive/folders/1rIzjFd5p81JGOSRUkaMiQF018idb1XU3?usp=sharing">Google Colab</a>.
 I suggest you use it as “inspiration” and learning, but write your own.
 Make sure to acknowledge any copying and pasting.</p>
 </section>
 <section id="further-reading-and-references">
-<h2>Further reading and references<a class="headerlink" href="#further-reading-and-references" title="Link to this heading">#</a></h2>
+<h2>3.10 Further reading and references<a class="headerlink" href="#further-reading-and-references" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 1)</p></li>
 <li><p>Jaeger, J.C., Cook, N.G. and Zimmerman, R., 2009. Fundamentals of rock mechanics. John Wiley &amp; Sons. (Chapter 5)</p></li>
@@ -1595,14 +1596,14 @@ Make sure to acknowledge any copying and pasting.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-tensor">Stress tensor</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-tensor">3.1 Stress tensor</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cauchy-s-equations-of-stress-equilibrium">Cauchy’s equations of stress equilibrium</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation">Application of Cauchy’s equations for total vertical stress calculation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuum-mechanics-solution-of-an-arbitrary-problem">Continuum mechanics solution of an arbitrary problem</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-equations-displacements-and-strains">Kinematic equations: displacements and strains</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constitutive-equation-stress-strain-relationships">Constitutive equation: stress-strain relationships</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-equations-displacements-and-strains">3.2 Kinematic equations: displacements and strains</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constitutive-equation-stress-strain-relationships">3.3 Constitutive equation: stress-strain relationships</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-isotropic-elasticity">Linear isotropic elasticity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-isotropic-solid-in-voigt-notation">The isotropic solid in Voigt notation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-stress-and-elasticity">Effective stress and elasticity</a></li>
@@ -1611,17 +1612,17 @@ Make sure to acknowledge any copying and pasting.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-linear-elasticity-problem">Generalized linear elasticity problem</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-anisotropy">Elastic anisotropy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-deformation-elasto-plasticity">Permanent deformation: Elasto-plasticity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dependent-deformation-visco-elasticity">Time-dependent deformation: Visco-elasticity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiphysics-problems">Multiphysics problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-anisotropy">3.4 Elastic anisotropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-deformation-elasto-plasticity">3.5 Permanent deformation: Elasto-plasticity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dependent-deformation-visco-elasticity">3.6 Time-dependent deformation: Visco-elasticity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiphysics-problems">3.7 Multiphysics problems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poro-elasticity">Poro-elasticity</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermo-elasticity">Thermo-elasticity</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">Coding support for solving problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">Further reading and references</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.8 Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">3.9 Coding support for solving problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">3.10 Further reading and references</a></li>
 </ul>
   </nav></div>
 
