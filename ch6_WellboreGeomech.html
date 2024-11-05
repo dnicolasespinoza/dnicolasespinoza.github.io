@@ -62,6 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch6_WellboreGeomech';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Hydraulic Fracturing" href="ch7_HydroFrac.html" />
     <link rel="prev" title="5. Stresses on Faults and Fractures" href="ch5_StressProjection.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -187,6 +188,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ch4_RockFailure.html">4. Rock Yield and Failure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch5_StressProjection.html">5. Stresses on Faults and Fractures</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Wellbore Stability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch7_HydroFrac.html">7. Hydraulic Fracturing</a></li>
 </ul>
 
     </div>
@@ -701,7 +703,7 @@ Hence, at a point on the wellbore wall at <span class="math notranslate nohighli
 <div class="math notranslate nohighlight">
 \[	w_{BO} = \pi - 2 \theta_B\]</div>
 <p>The procedure assumes the rock in the breakout (likely already gone) is still resisting hoop stresses and therefore it is not accurate for large breakouts (<span class="math notranslate nohighlight">\(w_{BO} \gtrsim 60^{\circ}\)</span>).</p>
-<p>You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. \ref{eq:BreakoutAngle} to</p>
+<p>You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. <a class="reference internal" href="#equation-eq-breakoutangle">(41)</a> to</p>
 <div class="math notranslate nohighlight">
 \[	P_{WBO} = P_p + \frac{ (\sigma_{Hmax} + \sigma_{hmin}) 
 	- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (\pi - w_{BO}) - UCS}{1+q} \]</div>
@@ -836,7 +838,7 @@ This is called the \textit{mud  window} and has a lower  bound (LB) and an upper
 Large breakouts <span class="math notranslate nohighlight">\(w_{BO} \geqslant 120^{\circ}\)</span>  can lead to extensive shear failure and breakout growth which lead to stuck borehole assemblies and even wellbore collapse.
 Likewise, small drilling-induced tensile fractures with wellbore pressure <span class="math notranslate nohighlight">\(P_W\)</span> lower than the minimum principal stress <span class="math notranslate nohighlight">\(S_3\)</span> can be safe and extend the upper bound for the mud window.
 However, wellbore pressures above <span class="math notranslate nohighlight">\(S_3\)</span> can result into uncontrolled mud-driven fracture propagation.
-Eq. \ref{eq:Pb} may suggest a safe breakdown pressure value above the minimum principal stress <span class="math notranslate nohighlight">\(P_b &gt; S_3\)</span>.
+Eq. <a class="reference internal" href="#equation-eq-pb">(42)</a> may suggest a safe breakdown pressure value above the minimum principal stress <span class="math notranslate nohighlight">\(P_b &gt; S_3\)</span>.
 However, this calculation assumes tensile strength everywhere in the the borehole wall.
 Any rock flaw or fracture (<span class="math notranslate nohighlight">\(T_s = 0\)</span> MPa) may reduce drastically <span class="math notranslate nohighlight">\(P_b\)</span>.</p>
 <p>There are other factors to take into account in the determination of the mud window in addition to mechanical wellbore stability.
@@ -927,7 +929,7 @@ The third element of the base <span class="math notranslate nohighlight">\(z_b\)
 <div class="math notranslate nohighlight">
 \[	\underset{=}{S}{}_W = 
 			R_{GW} R_{PG}^T \underset{=}{S}{}_P R_{PG} R_{GW}^T\]</div>
-<p>Where <span class="math notranslate nohighlight">\(\underset{=}{S}{}_P\)</span> and <span class="math notranslate nohighlight">\(R_{PG}\)</span> are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system (Eq. \ref{eq:matrixRPG}).
+<p>Where <span class="math notranslate nohighlight">\(\underset{=}{S}{}_P\)</span> and <span class="math notranslate nohighlight">\(R_{PG}\)</span> are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system (Eq. <a class="reference internal" href="ch5_StressProjection.html#equation-eq-matrixrpg">(39)</a>).
 The tensor <span class="math notranslate nohighlight">\(\underset{=}{S}{}_W\)</span> is composed by the following stresses:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}	\underset{=}{S}{}_W = 
@@ -1238,6 +1240,15 @@ Make sure to acknowledge any copying and pasting.</p>
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">5. Stresses on Faults and Fractures</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="ch7_HydroFrac.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">7. Hydraulic Fracturing</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

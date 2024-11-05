@@ -91,6 +91,7 @@ The maximum dip is 90$^{\circ}$ (vertical plane).
 If the layer/fault is tipped even further it is said to be overturned.
 The dip is usually accompanied by the direction in which the plane is dipping in quadrant notation.
 For example, the plane in {numref}`fig:StrikeExample` dips about 60$^{\circ}$SE, 60 degrees toward the South-East.
+[This interactive map](https://webapps.usgs.gov/txgeology/) shows the strike and dip of major faults in Texas. 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
 %\centerline{\includegraphics[scale=0.65]{./Figures/split/6-6.pdf}}

@@ -346,7 +346,7 @@ The breakout angle is
 
 The procedure assumes the rock in the breakout (likely already gone) is still resisting hoop stresses and therefore it is not accurate for large breakouts ($w_{BO} \gtrsim 60^{\circ}$).
 
-You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. \ref{eq:BreakoutAngle} to
+You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. {eq}`eq:BreakoutAngle` to
 
 ```{math}
 	P_{WBO} = P_p + \frac{ (\sigma_{Hmax} + \sigma_{hmin}) 
@@ -565,7 +565,7 @@ Small breakouts $w_{BO} \leqslant 60^{\circ}$ may not compromise wellbore stabil
 Large breakouts $w_{BO} \geqslant 120^{\circ}$  can lead to extensive shear failure and breakout growth which lead to stuck borehole assemblies and even wellbore collapse.
 Likewise, small drilling-induced tensile fractures with wellbore pressure $P_W$ lower than the minimum principal stress $S_3$ can be safe and extend the upper bound for the mud window.
 However, wellbore pressures above $S_3$ can result into uncontrolled mud-driven fracture propagation. 
-Eq. \ref{eq:Pb} may suggest a safe breakdown pressure value above the minimum principal stress $P_b > S_3$.
+Eq. {eq}`eq:Pb` may suggest a safe breakdown pressure value above the minimum principal stress $P_b > S_3$.
 However, this calculation assumes tensile strength everywhere in the the borehole wall.
 Any rock flaw or fracture ($T_s = 0$ MPa) may reduce drastically $P_b$.
 
@@ -679,7 +679,7 @@ Furthermore, the wellbore stresses can be calculated from the principal stress t
 			R_{GW} R_{PG}^T \underset{=}{S}{}_P R_{PG} R_{GW}^T
 ```
 
-Where $\underset{=}{S}{}_P$ and $R_{PG}$ are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system (Eq. \ref{eq:matrixRPG}).
+Where $\underset{=}{S}{}_P$ and $R_{PG}$ are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system (Eq. {eq}`eq:matrixRPG`).
 The tensor $\underset{=}{S}{}_W$ is composed by the following stresses:
 
 ```{math}
