@@ -44,7 +44,7 @@ Recent improved mapping of the Mull Dyke swarm in the UK. 100-km long dykes cros
 :::{figure-md} fig:Shiprock
 <img src="../mynewbook/figures/9-Shiprock.jpg" alt="figurecontent" width="900px">
 
-The shiprock dike is a great example of magmatic dikes. The hard igneous rock has resisted weathering and remains now exposed. The dike width can reach a few meters (~1 to 3m) on surface and elevates up to ~15 m from today's ground surface ([Take a eye bird tour with Google Earth](https://earth.google.com/web/@36.6712959,-108.82917771,1686.40425785a,5718.06766131d,35y,-177.34010225h,71.72980769t,359.9999998r/data=CgRCAggBOgMKATBCAggASg0I____________ARAA)).
+The shiprock dike is a great example of magmatic dikes. The hard igneous rock has resisted weathering and remains now exposed. The dike width can reach a few meters (~1 to 3m) on surface and elevates up to ~15 m from today's ground surface ([Take a bird's-eye tour with Google Earth](https://earth.google.com/web/@36.6712959,-108.82917771,1686.40425785a,5718.06766131d,35y,-177.34010225h,71.72980769t,359.9999998r/data=CgRCAggBOgMKATBCAggASg0I____________ARAA)).
 :::
 
 
@@ -63,7 +63,7 @@ Sand injectites schematic (a, [image credit](https://doi.org/10.1016/j.earscirev
 :::{figure-md} fig:Panoche
 <img src="../mynewbook/figures/9-PanocheHills.jpg" alt="figurecontent" width="900px">
 
-The Panoche Hills have been cut through massive sand sills and dikes. The sand has cemented with time and now remains as proof of natural water-sand hydraulic fracturing through paleo seafloor. The dikes and sills cab be upt to 3 m in width and dikes extend over hundreds of meters. ([Take a eye bird tour with Google Earth](https://earth.google.com/web/@36.70845284,-120.72085258,341.38587383a,1031.63392769d,35y,0h,60t,0r/data=CgRCAggBOgMKATBCAggASg0I____________ARAA)).
+The Panoche Hills have been cut through by massive sand sills and dikes. The sand has cemented with time and now remains as proof of natural water-sand hydraulic fracturing through paleo seafloor. The dikes and sills can be up to 3 m in width and dikes extend over hundreds of meters. ([Take a bird's-eye tour with Google Earth](https://earth.google.com/web/@36.70845284,-120.72085258,341.38587383a,1031.63392769d,35y,0h,60t,0r/data=CgRCAggBOgMKATBCAggASg0I____________ARAA)).
 :::
 
 %================================================================================
