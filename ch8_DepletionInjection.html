@@ -1,0 +1,801 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>8. Reservoir depletion and injection &#8212; Introduction to Energy Geomechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch8_DepletionInjection';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="7. Hydraulic Fracturing" href="ch7_HydroFrac.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/IPGlogo.png" class="logo__image only-light" alt="Introduction to Energy Geomechanics - Home"/>
+    <script>document.write(`<img src="_static/IPGlogo.png" class="logo__image only-dark" alt="Introduction to Energy Geomechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction to Energy Geomechanics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch1_Intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch2_StressPorePressure.html">2. Subsurface Stresses and Pore Pressure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch3_ContGeoMech.html">3. Fundamentals of Solid Continuum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch4_RockFailure.html">4. Rock Yield and Failure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch5_StressProjection.html">5. Stresses on Faults and Fractures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch6_WellboreGeomech.html">6. Wellbore Stability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch7_HydroFrac.html">7. Hydraulic Fracturing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Reservoir depletion and injection</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch8_DepletionInjection.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ch8_DepletionInjection.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>8. Reservoir depletion and injection</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-of-stress-in-the-reservoir-rock">8.1 Changes of stress in the reservoir rock</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rock-compressibility-and-permeability">Rock compressibility and permeability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-poroelasticity-solution">Linear poroelasticity solution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-of-stress-and-displacements-outside-the-reservoir">8.2 Changes of stress and displacements outside the reservoir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-injection">8.3 Fluid injection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-stability">8.4 Fault stability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">8.5 Coding support for solving problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-reading">8.5 Suggested Reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="reservoir-depletion-and-injection">
+<h1>8. Reservoir depletion and injection<a class="headerlink" href="#reservoir-depletion-and-injection" title="Link to this heading">#</a></h1>
+<section id="changes-of-stress-in-the-reservoir-rock">
+<h2>8.1 Changes of stress in the reservoir rock<a class="headerlink" href="#changes-of-stress-in-the-reservoir-rock" title="Link to this heading">#</a></h2>
+<p>Reservoir depletion requires changes of pore pressure.
+A decrease of pore pressure <span class="math notranslate nohighlight">\((P_f - P_o)\)</span> results in increased effective stress in the depressurized region.
+Effective stresses increase because the overburden <span class="math notranslate nohighlight">\(S_v\)</span> remains constant above the reservoir but the pore pressure decreases.
+The result is compaction of the reservoir (<a class="reference internal" href="#fig-depletionschematic"><span class="std std-numref">Fig. 223</span></a>).
+Such deformation also affects neighboring formations and faults.
+Changes in ground surface elevation are refered as “subsidence”.
+Differential displacements (for example across a fault) can result in casing damage and shearing.
+Significant compaction in the reservoir layer can result in casing buckling.
+The reduction of pore pressure also causes a reduction of total horizontal stress within the reservoir.</p>
+<figure class="align-default" id="fig-depletionschematic">
+<a class="reference internal image-reference" href="_images/10-1.png"><img alt="figurecontent" src="_images/10-1.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 223 </span><span class="caption-text">Schematic of deformation induced by reservoir depletion.</span><a class="headerlink" href="#fig-depletionschematic" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="rock-compressibility-and-permeability">
+<h3>Rock compressibility and permeability<a class="headerlink" href="#rock-compressibility-and-permeability" title="Link to this heading">#</a></h3>
+<p>Reservoir depletion in horizontal, laterally extensive and thin reservoirs approximates to a one-dimensional-strain stress path, i.e. there is change in strain only in the vertical direction
+(<a class="reference internal" href="#fig-depletionschematic"><span class="std std-numref">Fig. 223</span></a>).
+Such stress path results in increased effective stresses in both vertical and horizontal directions.</p>
+<p>Increased effective stresses result in reduction of porosity and permeability in most cases.
+The permeability of fractured rocks tends to be more sensitive to stress than typical rock matrices.
+The reason is that permeability is proportional to the <span class="math notranslate nohighlight">\(d_{pore}^2\)</span>  in rock matrix, while permeability is proportional to the <span class="math notranslate nohighlight">\(w_{f}^3\)</span>
+in fractures (<a class="reference internal" href="#fig-kcompressibility"><span class="std std-numref">Fig. 224</span></a>).
+The variability of rock permeability with stress is called “fracture compressibility”.
+The decline curves of unconventional formations are highly influenced by fracture compressibility.</p>
+<figure class="align-default" id="fig-kcompressibility">
+<a class="reference internal image-reference" href="_images/10-2.png"><img alt="figurecontent" src="_images/10-2.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 224 </span><span class="caption-text">Impact of increased effective stress on porosity and permeability.</span><a class="headerlink" href="#fig-kcompressibility" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="linear-poroelasticity-solution">
+<h3>Linear poroelasticity solution<a class="headerlink" href="#linear-poroelasticity-solution" title="Link to this heading">#</a></h3>
+<p>Let us use the theory of poroelasticity (Section \ref{sec:poroelasticity}) to solve for the changes of total and effective stresses with depletion.
+According to this theory, effective stress must be corrected for the Biot coefficient <span class="math notranslate nohighlight">\(\alpha\)</span> so that,</p>
+<div class="math notranslate nohighlight">
+\[		\underset{=}{\sigma} = \underset{=}{S} - \alpha P_p \underset{=}{I}\]</div>
+<p>We use this equation of effective stress together with linear isotropic elasticity in order to relate stresses to strain (<span class="math notranslate nohighlight">\( \underset{=}{\sigma} = \underset{=}{C} \: \underset{=}{\varepsilon}\)</span>, and the assumption of one-dimensional strain <span class="math notranslate nohighlight">\(\underset{=}{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T\)</span> (3-vertical direction):</p>
+<div class="math notranslate nohighlight" id="equation-eq-compliancematrix">
+<span class="eqno">(47)<a class="headerlink" href="#equation-eq-compliancematrix" title="Link to this equation">#</a></span>\[\begin{split}	\left[
+		\begin{array} {c}
+			S_{11} - \alpha P_p\\ 
+			S_{22} - \alpha P_p\\ 
+			S_{33} - \alpha P_p\\
+			S_{12} \cfrac{}{} \\
+			S_{13} \cfrac{}{} \\
+			S_{23} \cfrac{}{}
+		\end{array}
+	\right]	
+	= \cfrac{E}{(1+\nu)(1-2\nu)}
+	\left[
+	\begin{array}{cccccc}
+		1-\nu &amp; \nu &amp; \nu &amp; 0 &amp; 0 &amp; 0\\
+		\nu &amp; 1-\nu &amp; \nu &amp; 0 &amp; 0 &amp; 0\\
+		\nu &amp; \nu &amp; 1-\nu &amp; 0 &amp; 0 &amp; 0\\
+		0 &amp; 0 &amp; 0 &amp; \cfrac{(1-2\nu)}{2} &amp; 0 &amp; 0 \\ 				
+		0 &amp; 0 &amp; 0 &amp; 0 &amp; \cfrac{(1-2\nu)}{2} &amp; 0 \\
+		0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \cfrac{(1-2\nu)}{2}
+	\end{array}
+	\right]
+	\:
+	\left[
+		\begin{array} {c}
+			0 \\ 
+			0 \\ 
+			\varepsilon_{33} \\
+			0 \cfrac{}{} \\
+			0  \cfrac{}{}\\
+			0 \cfrac{}{}
+		\end{array}
+	\right]\end{split}\]</div>
+<p>The equation corresponding to the 3rd row results in:</p>
+<div class="math notranslate nohighlight">
+\[	\varepsilon_{33} = \frac{S_{33} - \alpha P_p}{ \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} }\]</div>
+<p>The denominator is the constrained modulus <span class="math notranslate nohighlight">\(M = E(1-\nu)/[(1+\nu)(1-2\nu)]\)</span>.
+Hence, the vertical strain in the reservoir layer is:</p>
+<div class="math notranslate nohighlight">
+\[	\Delta \varepsilon_{33} = -\frac{\alpha}{M}  \Delta P_p\]</div>
+<p>Remember that <span class="math notranslate nohighlight">\(S_{33}\)</span> is the overburden stress and does not change with time or with reservoir pore pressure.
+Notice that depletion (<span class="math notranslate nohighlight">\(\Delta P_p&lt;0\)</span>) results in compaction (<span class="math notranslate nohighlight">\(\Delta \varepsilon_{33}&gt;0\)</span>).
+This deformation is linked to the reservoir compressibility.
+Hence, according to linear poroelasticity the uniaxial bulk compressibility is <span class="math notranslate nohighlight">\(C_{bp} = \alpha / M\)</span> (See Section \ref{sec:ResCompress}).</p>
+<p>Combining Equations from rows 1 and 3 (or 2 and 3), results in</p>
+<div class="math notranslate nohighlight" id="equation-eq-coeffa">
+<span class="eqno">(48)<a class="headerlink" href="#equation-eq-coeffa" title="Link to this equation">#</a></span>\[	\Delta S_{11} = \alpha \frac{1-2\nu}{1-\nu} \:  \Delta P_p\]</div>
+<p>Depletion (<span class="math notranslate nohighlight">\(\Delta P_p&lt;0\)</span>) results in decreases of horizontal stress (<span class="math notranslate nohighlight">\(\Delta S_{11}&lt;0\)</span>).
+The same change of stress occurs in direction 2.
+The coefficient of proportionality in the previous equation is usually referred as <span class="math notranslate nohighlight">\(A = \alpha \frac{1-2\nu}{1-\nu}\)</span> and varies typically from 0.5 to 0.9.
+The prediction of <span class="math notranslate nohighlight">\(S_{11}\)</span> can be validated through hydraulic fracture tests that measure minimum horizontal total stress <span class="math notranslate nohighlight">\(S_{hmin}\)</span> in places with normal faulting and strike slip regime.</p>
+<p>A total stress path plot describes the value of total stresses as a function of pore pressure (<a class="reference internal" href="#fig-totalstresspath"><span class="std std-numref">Fig. 225</span></a>).</p>
+<figure class="align-default" id="fig-totalstresspath">
+<a class="reference internal image-reference" href="_images/10-TotalStressPath.pdf"><img alt="figurecontent" src="_images/10-TotalStressPath.pdf" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 225 </span><span class="caption-text">Total stress path plot. (a) Conceptual plot. (b) Example from the North Sea. The points corresponds to measurements from hydraulic fracture tests.</span><a class="headerlink" href="#fig-totalstresspath" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Depletion results in increased effective stresses.
+The change of (Biot) vertical effective stress <span class="math notranslate nohighlight">\(\sigma_{33} = S_{33} - \alpha P_p\)</span> (with <span class="math notranslate nohighlight">\(S_{33}\)</span> constant) is</p>
+<div class="math notranslate nohighlight">
+\[	\Delta \sigma_{33} = - \alpha \Delta P_p\]</div>
+<p>From Eq. <a class="reference internal" href="#equation-eq-coeffa">(48)</a>, the change of (Biot) horizontal effective stress with pressure is</p>
+<div class="math notranslate nohighlight">
+\[	\Delta \sigma_{11} = - \alpha \frac{\nu}{1-\nu} \Delta P_p\]</div>
+<p>Both, horizontal and vertical effective stresses increase with depletion.
+This results in a shift of the Mohr circle to the right and up, i.e. increased mean effective stress and increased deviatoric stress (<a class="reference internal" href="#fig-mohrcircledepletion"><span class="std std-numref">Fig. 226</span></a>).
+Large compressive and shear stresses can result in rock failure under compression and shear.
+Grain crushing can significantly decrease the rock permeability.
+Combined compression and shear failure lead to shear compaction bands.</p>
+<figure class="align-default" id="fig-mohrcircledepletion">
+<a class="reference internal image-reference" href="_images/8-ResDepletionExample.jpg"><img alt="figurecontent" src="_images/8-ResDepletionExample.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 226 </span><span class="caption-text">Change of effective stress with depletion. Both horizontal and vertical effective stresses increase within the depleted reservoir. Note: here we plot <em>Biot</em> effective stresses.</span><a class="headerlink" href="#fig-mohrcircledepletion" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition-example-8-1 admonition">
+<p class="admonition-title">Example 8.1</p>
+<p>Calculate the following due to depletion of 35 MPa.</p>
+<figure class="align-default" id="fig-ex81">
+<a class="reference internal image-reference" href="_images/10-5.png"><img alt="figurecontent" src="_images/10-5.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 227 </span><span class="caption-text">Example 8.1.</span><a class="headerlink" href="#fig-ex81" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>Displacement <span class="math notranslate nohighlight">\(\Delta H\)</span> at the top of the reservoir.</p></li>
+<li><p>Pore compressibility <span class="math notranslate nohighlight">\(C_{pp}\)</span>.</p></li>
+<li><p>Change of total horizontal stress <span class="math notranslate nohighlight">\(\Delta S_{h}\)</span>.</p></li>
+<li><p>Changes of effective vertical <span class="math notranslate nohighlight">\(\Delta \sigma_{v}\)</span> and horizontal stresses <span class="math notranslate nohighlight">\(\Delta \sigma_{h}\)</span>.</p></li>
+<li><p>Change of permeability <span class="math notranslate nohighlight">\(k/k_o\)</span> with the following law (<span class="math notranslate nohighlight">\(c_f = 0.25\)</span> MPa<span class="math notranslate nohighlight">\(^{-1}\)</span> ):
+<span class="math notranslate nohighlight">\(
+ 	k = k_o \: \exp \left[ -c_f (\sigma_h - \sigma_h^o) \right]
+ \)</span></p></li>
+</ol>
+<p>SOLUTION</p>
+<ol class="arabic">
+<li><p>The constrained modulus is</p>
+<p><span class="math notranslate nohighlight">\(
+ 	M = \frac{E(1-\nu)}{(1+\nu)(1-2\nu)} = 14.8 \text{ GPa}
+ \)</span></p>
+<p>Then, the displacement at the top of the reservoir is <span class="math notranslate nohighlight">\(\Delta H = \Delta \varepsilon_{33}  H\)</span>,	where</p>
+<p><span class="math notranslate nohighlight">\(
+ 	\varepsilon_{33} = -\frac{\alpha}{M}  \Delta P_p = 0.21 \%
+ \)</span></p>
+<p>Hence, <span class="math notranslate nohighlight">\(\Delta H = 0.21\% \:  100 \text{m } = 0.21\)</span> m.</p>
+</li>
+<li><p>The bulk compressibility is</p>
+<p><span class="math notranslate nohighlight">\(
+ 	C_{bp} = \frac{\alpha}{M} = 
+ 	        0.06 \times 10^{-9} \frac{1}{\text{Pa }} =
+ 	        0.42 \times 10^{-6} \frac{1}{\text{psi }} 
+ \)</span></p>
+<p>Thus, the pore compressibility is</p>
+<p><span class="math notranslate nohighlight">\(
+ 	C_{pp} = \frac{C_{bp}}{\phi} = 
+ 	         2.0 \times 10^{-6} \frac{1}{\text{psi }} =
+ 	         2.0 \: \mu \text{sip}
+ \)</span></p>
+</li>
+<li><p>The change of total horizontal stress  is
+<span class="math notranslate nohighlight">\(
+ 	\Delta S_{h} = \alpha \frac{1-2\nu}{1-\nu} \:  \Delta P_p
+ 	             = 0.716 \times (-35 \text{ MPa }) \sim -25 	\text{ MPa }
+ \)</span></p></li>
+<li><p>The changes of effective stresses are
+<span class="math notranslate nohighlight">\(
+ 	\Delta \sigma_{33} = - \alpha \Delta P_p =
+ 					- 0.9 \times (-35 \text{ MPa })
+ 					= + 31.5 \text{ MPa }
+ \)</span></p>
+<p><span class="math notranslate nohighlight">\(
+ 	\Delta \sigma_{11} = - \alpha \frac{\nu}{1-\nu} \Delta P_p
+ 	                  = + 6.45 \text{ MPa }
+ \)</span></p>
+</li>
+<li><p>Last, the ratio between final and initial permeability <span class="math notranslate nohighlight">\(k/k_o\)</span> is
+<span class="math notranslate nohighlight">\(
+ 	\frac{k}{k_o} = \exp \left[ -c_f (\sigma_h - \sigma_h^o) \right]
+ 	= \exp \left[ -0.25 \text{ MPa}^{-1} (+6.45 \text{ MPa}) \right] \sim 0.2  \: \: \blacksquare
+ \)</span></p></li>
+</ol>
+</div>
+</section>
+</section>
+<section id="changes-of-stress-and-displacements-outside-the-reservoir">
+<h2>8.2 Changes of stress and displacements outside the reservoir<a class="headerlink" href="#changes-of-stress-and-displacements-outside-the-reservoir" title="Link to this heading">#</a></h2>
+<p>Changes of pore pressure and temperature in a reservoir alter the state of stress around the reservoir, similar to what happens around a wellbore after it is drilled.
+<a class="reference internal" href="#fig-depletionschematic"><span class="std std-numref">Fig. 223</span></a> shows that depletion is analogous to a reduction of volume in a confined reservoir, such that total horizontal stress increases above and below the reservoir.
+Faults and fractures may reactivate in reverse faulting if effective stress surpass the shear failure limit.</p>
+<p>Furthermore, the decrease of volume experienced by the reservoir (mostly vertical) propagates upwards and may result in ground displacements.
+A simple model with a plane-strain solution of depletion of  rectangular reservoir predicts surface displacements are proportional to:</p>
+<ul class="simple">
+<li><p>reservoir thickness, <span class="math notranslate nohighlight">\(T\)</span></p></li>
+<li><p>reservoir half length, <span class="math notranslate nohighlight">\(a\)</span></p></li>
+<li><p>reservoir proximity to the surface, quantified by reservoir depth <span class="math notranslate nohighlight">\(D\)</span> (<a class="reference internal" href="#fig-grounddispsegall"><span class="std std-numref">Fig. 228</span></a>).</p></li>
+</ul>
+<p>The predicted displacements and horizontal strain are (Segall, 1989):</p>
+<div class="math notranslate nohighlight">
+\[u_x(x=0,y,t) = \frac{2(1+\nu_u)BT \Delta m(t)}{3\pi \rho_o} \left[ \tan^{-1}(\xi_-) - \tan^{-1}(\xi_+)\right]\]</div>
+<div class="math notranslate nohighlight">
+\[u_y(x=0,y,t) = \frac{2(1+\nu_u)BT \Delta m(t)}{6\pi \rho_o} \log \left[ \frac{1+\xi_+^2}{1-\xi_-^2}\right]\]</div>
+<div class="math notranslate nohighlight">
+\[\epsilon_{yy}(x=0,y,t) = \frac{2(1+\nu_u)BT \Delta m(t)}{3\pi \rho_o D} \left[ \frac{\xi_+}{1+\xi_+^2} - \frac{\xi_-}{1+\xi_-^2}\right]\]</div>
+<p>where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\nu_u\)</span>: undrained Poisson ratio</p></li>
+<li><p><span class="math notranslate nohighlight">\(B\)</span>: Skempton parameter</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta m(t)= \frac{(1-2\nu) \alpha \rho_o}{2\mu (1+\nu)} \left[ \sigma_{kk} + \frac{3}{B}p \right]\)</span>: change of fluid mass content per unit of volume</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho_o\)</span>: fluid initial mass density</p></li>
+<li><p><span class="math notranslate nohighlight">\(\xi_- = (y-a)/D\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\xi_+ = (y+a)/D\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x\)</span> is the vertical direction and <span class="math notranslate nohighlight">\(y\)</span> is the horizontal direction</p></li>
+</ul>
+<p><a class="reference internal" href="#fig-grounddispsegall"><span class="std std-numref">Fig. 228</span></a> shows an example of surface displacement predicted by the equations above.
+Depletion and net fluid loss lead to surface subsidence, while injection and net fluid gain lead to heave.
+The vertical displacement is maximum above the reservoir center and extends beyond the reservoir horizontal limits.</p>
+<figure class="align-default" id="fig-grounddispsegall">
+<a class="reference internal image-reference" href="_images/8-GroundDisplacementsSegall.pdf"><img alt="figurecontent" src="_images/8-GroundDisplacementsSegall.pdf" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 228 </span><span class="caption-text">Surface displacements caused by depletion/injection predicted by a cartesian plane-strain model. (Top) Model geometry including <span class="math notranslate nohighlight">\(D\)</span> = 1000 m, <span class="math notranslate nohighlight">\(a\)</span>= 500 m, <span class="math notranslate nohighlight">\(T\)</span> = 100 m. (Middle) Normalized solution for <span class="math notranslate nohighlight">\(\Delta m_t = \)</span> 5 kg/m<span class="math notranslate nohighlight">\(^3\)</span> (depletion). (Top) Surface displacement solution for <span class="math notranslate nohighlight">\(\Delta m_t = \)</span> 5 kg/m<span class="math notranslate nohighlight">\(^3\)</span> (depletion). The surface moves down about 12 cm above the reservoir. The surface moves laterally towards the center line of the reservoir (<span class="math notranslate nohighlight">\(y=0\)</span> m).</span><a class="headerlink" href="#fig-grounddispsegall" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference internal" href="#fig-subsidenceheave"><span class="std std-numref">Fig. 229</span></a> shows examples of subsidence and heave for real examples.
+Notice that ground displacements tend to be concentric around the depletion or injection points.</p>
+<figure class="align-default" id="fig-subsidenceheave">
+<a class="reference internal image-reference" href="_images/8-SubsidenceHeaveCases.jpg"><img alt="figurecontent" src="_images/8-SubsidenceHeaveCases.jpg" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 229 </span><span class="caption-text">Surface displacements caused by oil depletion (left) and CO<span class="math notranslate nohighlight">\(_2\)</span> injection (right).</span><a class="headerlink" href="#fig-subsidenceheave" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="fluid-injection">
+<h2>8.3 Fluid injection<a class="headerlink" href="#fluid-injection" title="Link to this heading">#</a></h2>
+<p>Fluid injection would result in opposite effects of fluid depletion including:</p>
+<ul class="simple">
+<li><p>Pore pressure increases in the reservoir.</p></li>
+<li><p>Total horizontal stress increases in the reservoir.</p></li>
+<li><p>Vertical and effective stresses decrease in the reservoir.</p></li>
+<li><p>Total horizontal stress decreases in the caprock.</p></li>
+<li><p>The reservoir “swells” and the ground surface above the reservoir moves up.</p></li>
+</ul>
+<p>All of these are valid under isothermal fluid injection conditions.
+However, subsurface fluid injection usually is non-isothermal, with fluid temperature lower than the reservoir temperature.
+A large decrease of temperature in the reservoir can change the trends listed above.</p>
+<p>Finally, while depletion lowers the “total energy” of the reservoir-caprock-surrounding rock system, injection increases its energy.
+Reservoir pressurization will have a maximum allowable pressure at which either fault reactivation or hydraulic fracturing might happen releasing fluid-pressure energy.
+These allowable maximum pressures must be carefully investigated to avoid geomechanical issues such as induced seismicity and loss of mechanical seal integrity.</p>
+</section>
+<section id="fault-stability">
+<h2>8.4 Fault stability<a class="headerlink" href="#fault-stability" title="Link to this heading">#</a></h2>
+<p>TBD</p>
+</section>
+<section id="coding-support-for-solving-problems">
+<h2>8.5 Coding support for solving problems<a class="headerlink" href="#coding-support-for-solving-problems" title="Link to this heading">#</a></h2>
+<p>You may use the python code available in the following link at <a class="reference external" href="https://colab.research.google.com/drive/1UJnK7I8UTiCH45jzaZcrEe93AsLCdTTs?usp=sharing">Google Colab: Ch. 8 on Reservoir Depletion and Injection</a>.
+I suggest you use it as “inspiration” and learning, but write your own.
+Make sure to acknowledge any copying and pasting.</p>
+</section>
+<section id="suggested-reading">
+<h2>8.5 Suggested Reading<a class="headerlink" href="#suggested-reading" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 12)</p></li>
+<li><p>Zoback, M.D., 2010. Reservoir geomechanics. Cambridge University Press. (Chapter 12)</p></li>
+<li><p>Segall, P. “Earthquakes triggered by fluid extraction”. Geology 1989. doi: 10.1130/0091-7613(1989)017</p></li>
+<li><p>Sinking City <a class="reference external" href="https://www.longbeach.gov/energyresources/about-us/oil/subsidence/">(web article)</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ch7_HydroFrac.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">7. Hydraulic Fracturing</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-of-stress-in-the-reservoir-rock">8.1 Changes of stress in the reservoir rock</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rock-compressibility-and-permeability">Rock compressibility and permeability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-poroelasticity-solution">Linear poroelasticity solution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-of-stress-and-displacements-outside-the-reservoir">8.2 Changes of stress and displacements outside the reservoir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-injection">8.3 Fluid injection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-stability">8.4 Fault stability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-support-for-solving-problems">8.5 Coding support for solving problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-reading">8.5 Suggested Reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By D. Nicolas Espinoza
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

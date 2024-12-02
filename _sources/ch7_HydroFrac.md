@@ -228,7 +228,7 @@ Example of fracturing in water-flooding with detrimental (left) and beneficial (
 The creation of a hydraulic fracture improves dramatically  the surface area of the wellbore in contact with the formation, and also the corresponding production rates (at the same bottomhole pressure).
 The ratio between the area of a fracture (constant height $h$ and half-length $x_f$) and the area of an openhole wellbore (radius $r$ and height $h$) is $(4 x_f h)/(2\pi r_w h) \sim x_f/r_w$.
 Fractures are usually much longer than the radius of the wellbore and so does the fracture area in contact with the reservoir rock compared to the area of the wellbore.
-The use of a skin factor $s$ permits calculating the flow rates in the presence of the fracture using the wellbore equation ({numref}`fig:DrainageFracture`).
+The use of a skin factor $s$ permits calculating the flow rates in the presence of the fracture using the wellbore Eq. ({eq}`fig:DrainageFracture`).
 
 :::{figure-md} fig:DrainageFracture
 <img src="../mynewbook/figures/9B-2.pdf" alt="figurecontent" width="600px">
@@ -243,10 +243,10 @@ Reservoir drainage: A fractured wellbore dramatically increases flow rates for t
 Several physical processes interact during the propagation of fluid-driven fractures ({numref}`fig:ProcessesFracturing`).
 The main processes include:
 
-1. \emph{Opening of the fracture by deformation of adjacent rock}. The calculation of fracture width can be achieved by solving fracture opening, for example by solving a linear elasticity problem.
-2. \emph{Creation of new fracture surface}. Cemented rocks require tensile stresses at the tip surpass a certain limit in order to create new fracture surface. This problem is most times solved with the theory of linear elastic fracture mechanics.
-3. \emph{Leak-off of fracturing fluid into the formation}. Fracturing of porous media involves fluid flow into the fractured formation. Leak-off can be solved as any fluid flow problem or through simplified equations. Leak-off also affects effective stresses around the fracture face and tip. 
-4. \emph{Fluid flow within the fracture}. Fracture propagation requires constant inflow of fluid into the fracture. Fluid-driven fractures in stiff rocks tend to be narrow (few millimeters) and therefore non-negligible viscous losses occur when fluids flow through fractures. This problem can be solved as a lubrication problem of fluid flow within planar surfaces.
+1. *Opening of the fracture by deformation of adjacent rock*. The calculation of fracture width can be achieved by solving fracture opening, for example by solving a linear elasticity problem.
+2. *Creation of new fracture surface*. Cemented rocks require tensile stresses at the tip surpass a certain limit in order to create new fracture surface. This problem is most times solved with the theory of linear elastic fracture mechanics.
+3. *Leak-off of fracturing fluid into the formation*. Fracturing of porous media involves fluid flow into the fractured formation. Leak-off can be solved as any fluid flow problem or through simplified equations. Leak-off also affects effective stresses around the fracture face and tip. 
+4. *Fluid flow within the fracture*. Fracture propagation requires constant inflow of fluid into the fracture. Fluid-driven fractures in stiff rocks tend to be narrow (few millimeters) and therefore non-negligible viscous losses occur when fluids flow through fractures. This problem can be solved as a lubrication problem of fluid flow within planar surfaces.
 
 The following subsections describe each of these problems in more detail.
 
