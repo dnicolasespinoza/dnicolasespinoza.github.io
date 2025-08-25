@@ -174,11 +174,11 @@ Selected types of deep geothermal systems for heat mining.
 	4. Out of tight oil for 2023, what percentage comes from TX/NM according to EIA [US tight oil production](https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from-in-depth.php)?
 	5. How many times did tight oil production grow from 2023 to 2007 according to EIA [US tight oil production](https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from-in-depth.php)?
 	
-2. What is the concept of ``decarbonizing the fossil fuel energy industry''. What are the different types of CO$_2$ geological storage according to the target storage formation?
+2. What is the concept of "decarbonizing the fossil fuel energy industry". What are the different types of CO$_2$ geological storage according to the target storage formation?
 
 3. What is the heat flow rate of the Earth's molten core (provide answer in TeraWatts)? What is an enhanced geothermal system?
 
-Note: you may use this [online plot digitizer ](https://apps.automeris.io/wpd/) to digitize plots.
+Note: you may use this [online plot digitizer ](https://apps.automeris.io/wpd4/) to digitize plots.
 
 ## 1.4 Further Reading and References
 

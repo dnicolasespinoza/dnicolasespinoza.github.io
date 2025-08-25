@@ -680,7 +680,7 @@ Three types of hydraulic fracture tests are:
 3. Step-rate test: Used for continuous fluid injection. The formation parting pressure (when a hydraulic fracture forms) is related but higher than $S_3$.
 
 :::{figure-md} fig_lec3-3
-<img src="../mynewbook/figures/leakofftest.png" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/leakofftest_new.png" alt="figurecontent" width="800px">
 
 Schematic example extended leak-off test to determine the minimum principal stress $S_3$. The  fracture propagation pressure (FPP) is higher than $S_3$ (needed to open a fracture) and close to the value of fracture closure pressure (FCP).
 :::

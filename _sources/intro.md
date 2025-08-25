@@ -1,5 +1,12 @@
 # Introduction to Energy Geomechanics
 
+:::{figure-md} fig:Intro
+<img src="../mynewbook/figures/202410_PanocheHills_DSCF0079.JPG" alt="figurecontent" width="400px">
+
+Photo at Panoche Hills, a giant sand injectite system into ancient seafloor mudrocks. Photo credit: Prof. Peter Flemings.
+:::
+
+
 ## Preface
 
 This set of notes, which sometimes I dare to call a "book", is targeted to last-year undergraduate students majoring in Petroleum Engineering, Energy Engineering, Geosystems Engineering, Engineering Geology, Civil Engineering, Geophysics, Geology or similar majors that require understanding of geo-mechanics at large depths for energy production, storage, and waste disposal. 
@@ -18,6 +25,8 @@ Additional material is available in [my Github repository](https://github.com/dn
 Python code support is available in [my Google Colab notebooks](https://drive.google.com/drive/folders/1rIzjFd5p81JGOSRUkaMiQF018idb1XU3?usp=sharing). 
 
 The notes for the graduate course ["Advanced Geomechanics"](https://dnicolasespinoza.github.io/AdvancedGeomech/) are available online too. This course covers more advanced topics on thermo-poroelasticity and inelasticity. 
+
+*<u>Note</u>*: This markdown book may not display correctly in Chrome. Try Safari in Mac or Firefox on Windows/Linux.
 
 ## Table of Contents:
 

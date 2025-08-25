@@ -785,7 +785,7 @@ Uniaxial strain condition with sedimentation in a tectonically passive environme
 Let us now use Equation {eq}`eq:constitutiveDsigma` together with the equilibrium equation. 
 Shear strains are zero. 
 Hence $\underset{=}{\varepsilon} = [0,0,\varepsilon_{33},0,0,0]^T$.
-Then, the multiplication of $\underset{=}{\sigma} = \underset{=}{D} \: \underset{=}{\varepsilon}$, results in 
+Then, the multiplication of $\underset{=}{\sigma} = \underset{=}{C} \: \underset{=}{\varepsilon}$, results in 
 
 ```{math}
 	\left\lbrace 
@@ -949,6 +949,7 @@ $ S_{hmin} = \sigma_{hmin} + P_p. $
 
 Calculate the total horizontal stresses in a section of the Barnett Shale located at 7,950 ft (TVD) using the theory of linear elasticity.
 Assume a constant vertical stress gradient $\mathrm{d}S_v/\mathrm{d}z = 23.8$ MPa/km, overpressure parameter $\lambda_p = 0.7$, shale Young's modulus $E = 5 \times 10^6$ psi, Poisson's ratio $\nu = 0.22$, and tectonic strains $\varepsilon_{hmin} = 0$ and $\varepsilon_{Hmax} = 0.0002$.
+Finally, write down the corresponding effective stress tensor and total stress tensor as 3$\times$3 matrices.
 
 SOLUTION
 
@@ -967,6 +968,8 @@ $
 \sigma_v = S_v - P_p = 8227 \text {psi} - 5759 \text{ psi} = 2468 \text{ psi}
 $
 
+
+
 Now, we are in conditions of using Eq. {eq}`eq:tectonicstrains`.
 Let us first calculate the plane strain modulus:
 
@@ -981,12 +984,21 @@ $
 		\begin{array}{l}	 	
 	 	\sigma_{Hmax} =  \frac{\nu}{1-\nu} \sigma_{v} + 
 	 		E' \varepsilon_{Hmax} +
-	 		\nu E'\varepsilon_{hmin} =
-	 		\frac{0.22}{1-0.22} 2468 \text{ psi} + 
-	 		5.25 \times 10^6 \text{ psi} \times 0.0002 = 1745 \text{ psi}\\
+	 		\nu E'\varepsilon_{hmin} \\
 	 	\sigma_{hmin} =  \frac{\nu}{1-\nu} \sigma_{v} +
 	 		\nu E' \varepsilon_{Hmax} +
-	 		E' \varepsilon_{hmin} =
+	 		E' \varepsilon_{hmin}  \\
+		\end{array}
+		\right.
+$ 
+
+$
+		\left\lbrace 
+		\begin{array}{l}	 	
+	 	\sigma_{Hmax} =  
+	 		\frac{0.22}{1-0.22} 2468 \text{ psi} + 
+	 		5.25 \times 10^6 \text{ psi} \times 0.0002 = 1745 \text{ psi}\\
+	 	\sigma_{hmin} =  
 	 		\frac{0.22}{1-0.22} 2468 \text{ psi} +
 	 		0.22 \times 5.25 \times 10^6 \text{ psi} \times 0.0002 = 927 \text{ psi}  \\
 		\end{array}
@@ -1001,7 +1013,55 @@ $
 	 	S_{Hmax} = \sigma_{Hmax} + P_p =  1745 \text{ psi} + 5759 \text{ psi} = 7504 \text{ psi}\\
 	 	S_{hmin} = \sigma_{hmin} + P_p =  927 \text{ psi} + 5759 \text{ psi} = 6686 \text{ psi} 
 		\end{array}
-		\right. \: \: \blacksquare
+		\right. 
+$
+
+The effective stress tensor is (assuming coordinates 1: aligned with least principal stress, 2: in the direction of maximum horizontal stress, and 3: vertical):
+
+$
+	\underset{=}{\sigma} = 
+	\left[
+	\begin{array}{ccc}
+		\sigma_{11} & \sigma_{12}  &  \sigma_{13} \\
+		\sigma_{21} & \sigma_{22}  &  \sigma_{23} \\
+		\sigma_{31} & \sigma_{32}  &  \sigma_{33}
+	\end{array}	\right] =
+	\left[
+	\begin{array}{ccc}
+		\sigma_{hmin} & 0  &  0 \\
+		0 & \sigma_{Hmax}  &  0 \\
+		0 & 0  &  \sigma_{v}
+	\end{array}	\right] =
+	\left[	
+	\begin{array}{ccc}
+		927 &  0  &  0    \\
+		0 & 1745  &  0    \\
+		0 &    0  &  2468
+	\end{array}	\right]	\text{psi}
+$
+
+Likewise, the total stress tensor is
+
+$
+	\underset{=}{S} = 
+	\left[
+	\begin{array}{ccc}
+		S_{11} & S_{12}  &  S_{13} \\
+		S_{21} & S_{22}  &  S_{23} \\
+		S_{31} & S_{32}  &  S_{33}
+	\end{array}	\right] =
+	\left[
+	\begin{array}{ccc}
+		S_{hmin} & 0  &  0 \\
+		0 & S_{Hmax}  &  0 \\
+		0 & 0  &  S_{v}
+	\end{array}	\right] =
+	\left[	
+	\begin{array}{ccc}
+		6686 &  0  &  0    \\
+		0 & 7504  &  0    \\
+		0 &    0  &  8227
+	\end{array}	\right]	\text{psi} \: \: \blacksquare
 $
 ```
 % + + + + + + + + + + + + + + + + + + + + + + + +
@@ -1105,7 +1165,7 @@ The result is a differential equation with displacement $\underline{u}$ as the u
 		G \nabla^2 \underline{u} + \rho \underline{b} = 0
 ```
 
-\noindent where $\lambda = (\nu E)/[(1+\nu)(1-2\nu)]$ is the first Lam\'e parameter, $G$ is the shear modulus, $\rho$ is the rock bulk mass density, and $\underline{b}$ is the body force acceleration vector (usually gravity). 
+where $\lambda = (\nu E)/[(1+\nu)(1-2\nu)]$ is the first Lam\'e parameter, $G$ is the shear modulus, $\rho$ is the rock bulk mass density, and $\underline{b}$ is the body force acceleration vector (usually gravity). 
 A review of the gradient $\nabla ()$, divergence $\nabla \cdot ()$ and Laplacian $\nabla^2 ()$ operators is available [here](https://en.wikipedia.org/wiki/Vector_calculus_identities). 
 In summary, these are all derivatives that quantify changes of displacement in space. 
 The full derivation of this equation can be found [in this YouTube video](https://youtu.be/1PnQ10H2vV0).
@@ -1119,6 +1179,20 @@ In this class, we will see analytical solutions of this equation for 1) displace
 
 General continuum mechanics problem.
 :::
+
+A similar an related differential equation is the "heat diffusion equation" also valid for pore pressure diffusivity, widely used in reservoir engineering and hydrology, where 
+
+```{math}
+:label: eq_HeatEq
+		\frac{\partial P}{\partial t}= \frac{k}{\mu C_t} \nabla^2 P
+```
+which at steady state conditions (no change with time) reduces to
+
+```{math}
+:label: eq_LaplaceEq
+		\nabla^2 P = 0
+```
+where the fluid pressure (scalar field) $P$ is the unknown variable to be solved. 
 
 %================================================================================
 ## 3.4 Elastic anisotropy
@@ -1140,7 +1214,13 @@ Most sedimentary rocks are stiffer in the horizontal direction than in the verti
 :::{figure-md} fig:SedRockAnisotropy
 <img src="../mynewbook/figures/anisotropyYoung.png" alt="figurecontent" width="600px">
 
-Stiffness parallel and perpendicular to bedding. \hl{[add real data]}.
+Stiffness parallel and perpendicular to bedding.}.
+:::
+
+:::{figure-md} fig:CrawfordAnisotropy
+<img src="../mynewbook/figures/3_CrawfordAnisotropy.png" alt="figurecontent" width="600px">
+
+Summary of experimental measurements of shale anisotropy. (a) Ratio of horizontal and vertical Young's modulus and (b) coefficient of horizontal effective stress according to a vertical transverse isotropic model. Anisotropy increases with increasing clay and organic matter content in shales. Source: [Crawford et al. 2020](https://doi.org/10.15530/urtec-2020-2206).
 :::
 
 %================================================================================

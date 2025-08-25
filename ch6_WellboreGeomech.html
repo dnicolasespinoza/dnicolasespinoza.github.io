@@ -438,7 +438,7 @@ document.write(`
 <p>Wellbore stability is critical for drilling.
 A stable open-hole requires the surrounding sediment and rock to bear the stresses that amplify around the wellbore cavity.
 The surrounding rock must hold stresses until casing is set or for undetermined time if left uncased.</p>
-<p>Wellbore stability depends on two set of variables (<a class="reference internal" href="#fig-wellintro"><span class="std std-numref">Fig. 141</span></a>): one set which is out of our control and another set of variables that we can control.</p>
+<p>Wellbore stability depends on two set of variables (<a class="reference internal" href="#fig-wellintro"><span class="std std-numref">Fig. 143</span></a>): one set which is out of our control and another set of variables that we can control.</p>
 <ol class="arabic simple">
 <li><p>In-situ variables out of our control include far-field stresses <span class="math notranslate nohighlight">\(\underset{=}{S}{}_G\)</span>, pore presssure <span class="math notranslate nohighlight">\(P_p\)</span>, and rock properties.</p></li>
 <li><p>Controllable variables include mud pressure <span class="math notranslate nohighlight">\(P_W\)</span> (<span class="math notranslate nohighlight">\(W\)</span> for wellbore), mud composition, mud fluid chemistry, and wellbore orientation (direction azimuth and deviation).</p></li>
@@ -446,14 +446,14 @@ The surrounding rock must hold stresses until casing is set or for undetermined 
 <figure class="align-default" id="fig-wellintro">
 <a class="reference internal image-reference" href="_images/8-WellIntro.PNG"><img alt="figurecontent" src="_images/8-WellIntro.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 141 </span><span class="caption-text">Wellbore stability analysis includes inherent variables, such as in-situ stresses and rock properties, and controllable variables, such as wellbore orientation and mud pressure during drilling.</span><a class="headerlink" href="#fig-wellintro" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 143 </span><span class="caption-text">Wellbore stability analysis includes inherent variables, such as in-situ stresses and rock properties, and controllable variables, such as wellbore orientation and mud pressure during drilling.</span><a class="headerlink" href="#fig-wellintro" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The pressure in the wellbore <span class="math notranslate nohighlight">\(P_W\)</span> is one of the main variables to maintain wellbore stability.
 Mud (mass) density and vertical depth <span class="math notranslate nohighlight">\(z\)</span> (TVD) determine the mud hydrostatic pressure (in the absence of additional pressure controls at the  surface - such as in managed pressure drilling):</p>
 <div class="math notranslate nohighlight">
 \[	P_W = \rho_{mud} \: g \: z\]</div>
-<p>The pressure gradient within the wellbore is proportional to mud density <span class="math notranslate nohighlight">\(dP_W/dz = \rho_{mud} g\)</span> ( <a class="reference internal" href="#fig-ecd"><span class="std std-numref">Fig. 142</span></a>).
+<p>The pressure gradient within the wellbore is proportional to mud density <span class="math notranslate nohighlight">\(dP_W/dz = \rho_{mud} g\)</span> ( <a class="reference internal" href="#fig-ecd"><span class="std std-numref">Fig. 144</span></a>).
 This quantity is usually measured and reported in p.p.g. (pounds-force per gallon).
 For example the pressure gradient for fresh water is 9,800 N/m<span class="math notranslate nohighlight">\(^3\)</span> (= 9.8 MPa/km = 0.44 psi/ft), about 8.3 ppg.
 The lithostatic gradient of 1 psi/ft is equivalent to 1 (psi/ft) <span class="math notranslate nohighlight">\(\times\)</span> (8.3 ppg/0.44 (psi/ft)) =  18.9 ppg.
@@ -461,23 +461,23 @@ The “equivalent circulation density” is also reported in ppg and take into a
 <figure class="align-default" id="fig-ecd">
 <a class="reference internal image-reference" href="_images/7-ECD.pdf"><img alt="figurecontent" src="_images/7-ECD.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 142 </span><span class="caption-text">Wellbore mud pressure and equivalent density. Mud pressure <span class="math notranslate nohighlight">\(P_W\)</span> is usually reported in terms of gradient (depth-independent) rather than in absolute values.</span><a class="headerlink" href="#fig-ecd" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 144 </span><span class="caption-text">Wellbore mud pressure and equivalent density. Mud pressure <span class="math notranslate nohighlight">\(P_W\)</span> is usually reported in terms of gradient (depth-independent) rather than in absolute values.</span><a class="headerlink" href="#fig-ecd" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Over-balanced drilling implies <span class="math notranslate nohighlight">\(P_W &gt; P_p\)</span>.
-Over-balanced drilling favors the formation of a “mud-cake” or “filter-cake” on the wall of the wellbore which permits adding stress support on the wellbore wall approximately equal to <span class="math notranslate nohighlight">\(P_W - P_p\)</span> (<a class="reference internal" href="#fig-mudcake"><span class="std std-numref">Fig. 143</span></a>).
+Over-balanced drilling favors the formation of a “mud-cake” or “filter-cake” on the wall of the wellbore which permits adding stress support on the wellbore wall approximately equal to <span class="math notranslate nohighlight">\(P_W - P_p\)</span> (<a class="reference internal" href="#fig-mudcake"><span class="std std-numref">Fig. 145</span></a>).
 The resulting effect is similar to an impermeable and elastic membrane applying a stress on the wellbore wall (similar to the membranes used in triaxial tests).<br />
 Under-balanced drilling <span class="math notranslate nohighlight">\(P_W &lt; P_p\)</span> may be preferred in some specific instances.</p>
 <figure class="align-default" id="fig-mudcake">
 <a class="reference internal image-reference" href="_images/7-mudcake.png"><img alt="figurecontent" src="_images/7-mudcake.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 143 </span><span class="caption-text">Leak-off of mud filtrate favors clogging of mud particulates which help apply a normal stress on the wellbore wall. This layer of particulates is called mud-cake.</span><a class="headerlink" href="#fig-mudcake" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 145 </span><span class="caption-text">Leak-off of mud filtrate favors clogging of mud particulates which help apply a normal stress on the wellbore wall. This layer of particulates is called mud-cake.</span><a class="headerlink" href="#fig-mudcake" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="fig-mudcakecolin">
 <a class="reference internal image-reference" href="_images/7-Filtercake_Colin.png"><img alt="figurecontent" src="_images/7-Filtercake_Colin.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 144 </span><span class="caption-text">Examples of mud buildup (warm colors) and filtrate/leak-off (cool colors) in two different rock samples as imaged trough time-lapse X-ray tomography. The buildup of mud with time makes the mudcake or filtercake. <a class="reference external" href="https://doi.org/10.30632/PJV63N5-2022a4">Image credit</a>.</span><a class="headerlink" href="#fig-mudcakecolin" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 146 </span><span class="caption-text">Examples of mud buildup (warm colors) and filtrate/leak-off (cool colors) in two different rock samples as imaged trough time-lapse X-ray tomography. The buildup of mud with time makes the mudcake or filtercake. <a class="reference external" href="https://doi.org/10.30632/PJV63N5-2022a4">Image credit</a>.</span><a class="headerlink" href="#fig-mudcakecolin" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -486,13 +486,13 @@ Under-balanced drilling <span class="math notranslate nohighlight">\(P_W &lt; P_
 <section id="cylindrical-coordinate-system">
 <h3>Cylindrical coordinate system<a class="headerlink" href="#cylindrical-coordinate-system" title="Link to this heading">#</a></h3>
 <p>The cylindrical symmetry of a wellbore prompts the utilization of a cylindrical coordinate system rather than a rectangular cartesian coordinate system.
-The volume element of stresses in cylindrical coordinates is shown in <a class="reference internal" href="#fig-revcylcoord"><span class="std std-numref">Fig. 145</span></a>.
+The volume element of stresses in cylindrical coordinates is shown in <a class="reference internal" href="#fig-revcylcoord"><span class="std std-numref">Fig. 147</span></a>.
 The distance <span class="math notranslate nohighlight">\(r\)</span> is measured from the center axis of the wellbore.
 The angle <span class="math notranslate nohighlight">\(\theta\)</span> is measured with respect to a predefined plane.</p>
 <figure class="align-default" id="fig-revcylcoord">
 <a class="reference internal image-reference" href="_images/7-REVCylCoord.png"><img alt="figurecontent" src="_images/7-REVCylCoord.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 145 </span><span class="caption-text">Infinitesimal volume element in cylindrical coordinates and associated normal and shear stresses.</span><a class="headerlink" href="#fig-revcylcoord" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 147 </span><span class="caption-text">Infinitesimal volume element in cylindrical coordinates and associated normal and shear stresses.</span><a class="headerlink" href="#fig-revcylcoord" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The normal stresses are radial stress <span class="math notranslate nohighlight">\(\sigma_{rr}\)</span>, tangential or hoop stress <span class="math notranslate nohighlight">\(\sigma_{\theta \theta}\)</span>, and axial stress <span class="math notranslate nohighlight">\(\sigma_{zz}\)</span>.
@@ -503,7 +503,7 @@ The shear stresses are <span class="math notranslate nohighlight">\(\sigma_{r \t
 <p>The Kirsch solution allows us to calculate normal and shear stresses around a circular cavity in a homogeneous linear elastic solid .
 The complete Kirsch solution assumes independent action of multiple factors, namely far-field isotropic stress, deviatoric stress, wellbore pressure and pore pressure.</p>
 <ol class="arabic simple">
-<li><p><em>Isotropic far-field stress</em>: The solution for a compressive isotropic far field stress <span class="math notranslate nohighlight">\(\sigma_{\infty}\)</span> is shown in <a class="reference internal" href="#fig-kirschfarfield"><span class="std std-numref">Fig. 146</span></a>.
+<li><p><em>Isotropic far-field stress</em>: The solution for a compressive isotropic far field stress <span class="math notranslate nohighlight">\(\sigma_{\infty}\)</span> is shown in <a class="reference internal" href="#fig-kirschfarfield"><span class="std std-numref">Fig. 148</span></a>.
 The presence of the wellbore amplifies compressive stresses 2 times <span class="math notranslate nohighlight">\(\sigma_{\theta \theta}/\sigma_{\infty}=2\)</span> all around the wellbore wall in circumferential direction.
 The presence of the wellbore cavity also creates infinitely large stress anisotropy at the wellbore wall <span class="math notranslate nohighlight">\(\sigma_{\theta \theta}/\sigma_{rr}= \infty\)</span> all around the wellbore wall, since <span class="math notranslate nohighlight">\(\sigma_{rr}=0\)</span> in this case.
 Stresses decrease inversely proportional to <span class="math notranslate nohighlight">\(r^2\)</span> and are neglible at <span class="math notranslate nohighlight">\(\sim\)</span>4 radii from the wellbore wall.</p></li>
@@ -511,11 +511,11 @@ Stresses decrease inversely proportional to <span class="math notranslate nohigh
 <figure class="align-default" id="fig-kirschfarfield">
 <a class="reference internal image-reference" href="_images/7-KirschFarField.png"><img alt="figurecontent" src="_images/7-KirschFarField.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 146 </span><span class="caption-text">Kirsch solution for far field isotropic stress <span class="math notranslate nohighlight">\(\sigma_{\infty}\)</span>.</span><a class="headerlink" href="#fig-kirschfarfield" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 148 </span><span class="caption-text">Kirsch solution for far field isotropic stress <span class="math notranslate nohighlight">\(\sigma_{\infty}\)</span>.</span><a class="headerlink" href="#fig-kirschfarfield" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="2">
-<li><p><em>Inner wellbore pressure</em>: The solution for fluid wall pressure in the wellbore <span class="math notranslate nohighlight">\(P_W\)</span> is shown in <a class="reference internal" href="#fig-kirschpw"><span class="std std-numref">Fig. 147</span></a>.
+<li><p><em>Inner wellbore pressure</em>: The solution for fluid wall pressure in the wellbore <span class="math notranslate nohighlight">\(P_W\)</span> is shown in <a class="reference internal" href="#fig-kirschpw"><span class="std std-numref">Fig. 149</span></a>.
 We assume a non-porous solid now.
 This assumption will be relaxed later on.
 Wellbore pressure adds compression on the wellbore wall <span class="math notranslate nohighlight">\(\sigma_{rr} = +P_W \)</span>, and induces cavity expansion and tensile hoop stresses <span class="math notranslate nohighlight">\(\sigma_{\theta\theta} = - P_W\)</span> all around the wellbore.</p></li>
@@ -523,11 +523,11 @@ Wellbore pressure adds compression on the wellbore wall <span class="math notran
 <figure class="align-default" id="fig-kirschpw">
 <a class="reference internal image-reference" href="_images/7-KirschPw.png"><img alt="figurecontent" src="_images/7-KirschPw.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 147 </span><span class="caption-text">Kirsch solution for wellbore pressure <span class="math notranslate nohighlight">\(P_W\)</span>.</span><a class="headerlink" href="#fig-kirschpw" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 149 </span><span class="caption-text">Kirsch solution for wellbore pressure <span class="math notranslate nohighlight">\(P_W\)</span>.</span><a class="headerlink" href="#fig-kirschpw" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
-<li><p><em>Deviatoric stress</em>: The solution for a deviatoric stress <span class="math notranslate nohighlight">\(\Delta \sigma\)</span> aligned with <span class="math notranslate nohighlight">\(\theta = 0\)</span> is shown in <a class="reference internal" href="#fig-kirschdev"><span class="std std-numref">Fig. 148</span></a>.
+<li><p><em>Deviatoric stress</em>: The solution for a deviatoric stress <span class="math notranslate nohighlight">\(\Delta \sigma\)</span> aligned with <span class="math notranslate nohighlight">\(\theta = 0\)</span> is shown in <a class="reference internal" href="#fig-kirschdev"><span class="std std-numref">Fig. 150</span></a>.
 The deviatoric stress results in compression on the wellbore wall <span class="math notranslate nohighlight">\(\sigma_{\theta \theta} = 3 \Delta \sigma\)</span> at <span class="math notranslate nohighlight">\(\theta = \pi/2\)</span> and <span class="math notranslate nohighlight">\(3\pi/2\)</span>, and in tension <span class="math notranslate nohighlight">\(\sigma_{\theta \theta} = - \Delta \sigma\)</span> at <span class="math notranslate nohighlight">\(\theta = 0\)</span> and <span class="math notranslate nohighlight">\(\pi\)</span>.
 Hence, the presence of the wellbore amplifies compressive stresses 3 times <span class="math notranslate nohighlight">\(\sigma_{\theta \theta}/\sigma_{\infty}=3\)</span> at <span class="math notranslate nohighlight">\(\theta = \pi/2\)</span> and <span class="math notranslate nohighlight">\(3\pi/2\)</span>.
 The variation of stresses around the wellbore depend on harmonic functions <span class="math notranslate nohighlight">\(\sin (\theta)\)</span> and <span class="math notranslate nohighlight">\(\cos (\theta)\)</span>.</p></li>
@@ -535,11 +535,11 @@ The variation of stresses around the wellbore depend on harmonic functions <span
 <figure class="align-default" id="fig-kirschdev">
 <a class="reference internal image-reference" href="_images/7-KirschDev.png"><img alt="figurecontent" src="_images/7-KirschDev.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 148 </span><span class="caption-text">Kirsch solution for far-field deviatoric stress <span class="math notranslate nohighlight">\(\Delta \sigma\)</span>.</span><a class="headerlink" href="#fig-kirschdev" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 150 </span><span class="caption-text">Kirsch solution for far-field deviatoric stress <span class="math notranslate nohighlight">\(\Delta \sigma\)</span>.</span><a class="headerlink" href="#fig-kirschdev" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
-<li><p><em>Pore pressure</em>:  The last step consists in assuming a perfect mud-cake, so that, the effective stress wall support (as shown in <a class="reference internal" href="#fig-kirschpw"><span class="std std-numref">Fig. 147</span></a>) is <span class="math notranslate nohighlight">\((P_W - P_p)\)</span> instead of <span class="math notranslate nohighlight">\(P_W\)</span>.</p></li>
+<li><p><em>Pore pressure</em>:  The last step consists in assuming a perfect mud-cake, so that, the effective stress wall support (as shown in <a class="reference internal" href="#fig-kirschpw"><span class="std std-numref">Fig. 149</span></a>) is <span class="math notranslate nohighlight">\((P_W - P_p)\)</span> instead of <span class="math notranslate nohighlight">\(P_W\)</span>.</p></li>
 </ol>
 </section>
 <section id="complete-kirsch-solution">
@@ -567,12 +567,12 @@ The Kirsch solution for a wellbore with radius <span class="math notranslate noh
 The angle <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between the direction of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> and the point at which stress is considered.
 The distance <span class="math notranslate nohighlight">\(r\)</span> is measured from the center of the wellbore.<br />
 For example, at the wellbore wall <span class="math notranslate nohighlight">\(r=a\)</span>.</p>
-<p>An example of the solution of Kirsch equations for <span class="math notranslate nohighlight">\(S_{Hmax}=22\)</span> MPa, <span class="math notranslate nohighlight">\(S_{hmin}=13\)</span> MPa, and <span class="math notranslate nohighlight">\(P_W=P_p=10\)</span> MPa is available in  <a class="reference internal" href="#fig-kirschexample"><span class="std std-numref">Fig. 149</span></a>.
+<p>An example of the solution of Kirsch equations for <span class="math notranslate nohighlight">\(S_{Hmax}=22\)</span> MPa, <span class="math notranslate nohighlight">\(S_{hmin}=13\)</span> MPa, and <span class="math notranslate nohighlight">\(P_W=P_p=10\)</span> MPa is available in  <a class="reference internal" href="#fig-kirschexample"><span class="std std-numref">Fig. 151</span></a>.
 The plots show radial <span class="math notranslate nohighlight">\(\sigma_{rr}\)</span> and tangential <span class="math notranslate nohighlight">\(\sigma_{\theta \theta}\)</span> effective stresses, as well as the calculated principal stresses  <span class="math notranslate nohighlight">\(\sigma_3\)</span> and <span class="math notranslate nohighlight">\(\sigma_{1}\)</span>.</p>
 <figure class="align-default" id="fig-kirschexample">
 <a class="reference internal image-reference" href="_images/7-3.pdf"><img alt="figurecontent" src="_images/7-3.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 149 </span><span class="caption-text">Example of solution of Kirsch equations. The effective radial stress at the wellbore wall is <span class="math notranslate nohighlight">\(P_W-P_p = 0\)</span>. Top: solution for radial <span class="math notranslate nohighlight">\(\sigma_{rr}\)</span> and hoop <span class="math notranslate nohighlight">\(\sigma_{\theta\theta}\)</span> stresses. Bottom: solution for principal stresses (eigenvalues from <span class="math notranslate nohighlight">\(\sigma_{\theta\theta}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{rr}\)</span>, and <span class="math notranslate nohighlight">\(\sigma_{r\theta}\)</span> ). Notice that <span class="math notranslate nohighlight">\(\sigma_1\)</span> is the highest at top and bottom and <span class="math notranslate nohighlight">\(\sigma_3\)</span> is the lowest at the sides. The influence of the cavity extend to a few wellbore radii.</span><a class="headerlink" href="#fig-kirschexample" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 151 </span><span class="caption-text">Example of solution of Kirsch equations. The effective radial stress at the wellbore wall is <span class="math notranslate nohighlight">\(P_W-P_p = 0\)</span>. Top: solution for radial <span class="math notranslate nohighlight">\(\sigma_{rr}\)</span> and hoop <span class="math notranslate nohighlight">\(\sigma_{\theta\theta}\)</span> stresses. Bottom: solution for principal stresses (eigenvalues from <span class="math notranslate nohighlight">\(\sigma_{\theta\theta}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{rr}\)</span>, and <span class="math notranslate nohighlight">\(\sigma_{r\theta}\)</span> ). Notice that <span class="math notranslate nohighlight">\(\sigma_1\)</span> is the highest at top and bottom and <span class="math notranslate nohighlight">\(\sigma_3\)</span> is the lowest at the sides. The influence of the cavity extend to a few wellbore radii.</span><a class="headerlink" href="#fig-kirschexample" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Let us obtain <span class="math notranslate nohighlight">\(\sigma_{rr}\)</span> and <span class="math notranslate nohighlight">\(\sigma_{\theta \theta}\)</span> at the wellbore wall <span class="math notranslate nohighlight">\(r=a\)</span>.
@@ -617,7 +617,7 @@ Maximum anisotropy is found at <span class="math notranslate nohighlight">\(\the
 <figure class="align-default" id="fig-stresses-breakouts">
 <a class="reference internal image-reference" href="_images/7-5.pdf"><img alt="figurecontent" src="_images/7-5.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 150 </span><span class="caption-text">Wellbore pressure for initiation of wellbore breakouts. Shear fractures will develop if <span class="math notranslate nohighlight">\(P_W &lt; P_{Wshear}\)</span>.</span><a class="headerlink" href="#fig-stresses-breakouts" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 152 </span><span class="caption-text">Wellbore pressure for initiation of wellbore breakouts. Shear fractures will develop if <span class="math notranslate nohighlight">\(P_W &lt; P_{Wshear}\)</span>.</span><a class="headerlink" href="#fig-stresses-breakouts" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Hence, replacing <span class="math notranslate nohighlight">\(\sigma_1\)</span> and <span class="math notranslate nohighlight">\(\sigma_3\)</span> into a shear failure equation (Eq. \ref{}) permits finding the mud pressure <span class="math notranslate nohighlight">\(P_{Wshear}\)</span> that would produce a tiny shear failure (or breakout) at <span class="math notranslate nohighlight">\(\theta= \pi/2\)</span> and <span class="math notranslate nohighlight">\(3\pi/2\)</span>:</p>
@@ -629,12 +629,12 @@ Maximum anisotropy is found at <span class="math notranslate nohighlight">\(\the
 <div class="math notranslate nohighlight">
 \[		P_{Wshear} = P_p + \frac{3\sigma_{Hmax} -\sigma_{hmin} 
 			- UCS}{1+q}  \]</div>
-<p>Mud pressure <span class="math notranslate nohighlight">\(P_W &lt; P_{Wshear}\)</span> would extend rock failure and  breakouts further in the neighborhood of <span class="math notranslate nohighlight">\(\theta= \pi/2\)</span> and <span class="math notranslate nohighlight">\(3\pi/2\)</span> (See <a class="reference internal" href="#fig-breakoutphoto"><span class="std std-numref">Fig. 151</span></a>).<br />
+<p>Mud pressure <span class="math notranslate nohighlight">\(P_W &lt; P_{Wshear}\)</span> would extend rock failure and  breakouts further in the neighborhood of <span class="math notranslate nohighlight">\(\theta= \pi/2\)</span> and <span class="math notranslate nohighlight">\(3\pi/2\)</span> (See <a class="reference internal" href="#fig-breakoutphoto"><span class="std std-numref">Fig. 153</span></a>).<br />
 Thus, <span class="math notranslate nohighlight">\(P_{Wshear}\)</span> is the lowest mud pressure before initiation of breakouts.</p>
 <figure class="align-default" id="fig-breakoutphoto">
 <a class="reference internal image-reference" href="_images/7-7.pdf"><img alt="figurecontent" src="_images/7-7.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 151 </span><span class="caption-text">Example of wellbore breakout [Zoback 2013 - Fig. 6.15]. Observe the inclination of shear fractures as the propagate into the rock. The material that falls into the wellbore is taken out as drilling cuttings.</span><a class="headerlink" href="#fig-breakoutphoto" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 153 </span><span class="caption-text">Example of wellbore breakout [Zoback 2013 - Fig. 6.15]. Observe the inclination of shear fractures as the propagate into the rock. The material that falls into the wellbore is taken out as drilling cuttings.</span><a class="headerlink" href="#fig-breakoutphoto" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition-example-6-1 admonition">
@@ -665,12 +665,12 @@ and</p>
 <section id="breakout-angle-determination">
 <h3>Breakout angle determination<a class="headerlink" href="#breakout-angle-determination" title="Link to this heading">#</a></h3>
 <p>For a given set of problem variables (far field stress, pore pressure, and mud pressure), we can calculate the required strength of the rock to have a stable wellbore.
-Let us consider the example of <a class="reference internal" href="#fig-requireducs"><span class="std std-numref">Fig. 152</span></a> that shows the required <span class="math notranslate nohighlight">\(UCS\)</span> to resist shear failure assuming the friction angle is <span class="math notranslate nohighlight">\(\varphi = 30^{\circ}\)</span>.
-For example, if the rock had a <span class="math notranslate nohighlight">\(UCS \sim 25\)</span> MPa, one may expect a <span class="math notranslate nohighlight">\(\sim 90^{\circ}\)</span> wide breakout in <a class="reference internal" href="#fig-requireducs"><span class="std std-numref">Fig. 152</span></a>.</p>
+Let us consider the example of <a class="reference internal" href="#fig-requireducs"><span class="std std-numref">Fig. 154</span></a> that shows the required <span class="math notranslate nohighlight">\(UCS\)</span> to resist shear failure assuming the friction angle is <span class="math notranslate nohighlight">\(\varphi = 30^{\circ}\)</span>.
+For example, if the rock had a <span class="math notranslate nohighlight">\(UCS \sim 25\)</span> MPa, one may expect a <span class="math notranslate nohighlight">\(\sim 90^{\circ}\)</span> wide breakout in <a class="reference internal" href="#fig-requireducs"><span class="std std-numref">Fig. 154</span></a>.</p>
 <figure class="align-default" id="fig-requireducs">
 <a class="reference internal image-reference" href="_images/7-6.pdf"><img alt="figurecontent" src="_images/7-6.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 152 </span><span class="caption-text">Example of required <span class="math notranslate nohighlight">\(UCS\)</span> with Mohr-Coulomb analysis to verify likelihood of wellbore breakouts.</span><a class="headerlink" href="#fig-requireducs" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 154 </span><span class="caption-text">Example of required <span class="math notranslate nohighlight">\(UCS\)</span> with Mohr-Coulomb analysis to verify likelihood of wellbore breakouts.</span><a class="headerlink" href="#fig-requireducs" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Alternatively, you could solve the previous problem analytically.
@@ -689,22 +689,22 @@ Hence, at a point on the wellbore wall at <span class="math notranslate nohighli
 <figure class="align-default" id="fig-breakoutangle">
 <a class="reference internal image-reference" href="_images/7-10.pdf"><img alt="figurecontent" src="_images/7-10.pdf" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 153 </span><span class="caption-text">Determination of breakout angle with Mohr-Coulomb failure criterion.</span><a class="headerlink" href="#fig-breakoutangle" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 155 </span><span class="caption-text">Determination of breakout angle with Mohr-Coulomb failure criterion.</span><a class="headerlink" href="#fig-breakoutangle" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Say hoop stress reaches the maximum principal stress anisotropy allowed by the Mohr-Coulomb shear failure criterion (<span class="math notranslate nohighlight">\(\sigma_1 = UCS + q \: \sigma_3\)</span>) where the breakout begins (rock about to fail - <a class="reference internal" href="#fig-breakoutangle"><span class="std std-numref">Fig. 153</span></a>), then</p>
+<p>Say hoop stress reaches the maximum principal stress anisotropy allowed by the Mohr-Coulomb shear failure criterion (<span class="math notranslate nohighlight">\(\sigma_1 = UCS + q \: \sigma_3\)</span>) where the breakout begins (rock about to fail - <a class="reference internal" href="#fig-breakoutangle"><span class="std std-numref">Fig. 155</span></a>), then</p>
 <div class="math notranslate nohighlight">
 \[	\left[ -(P_W - P_p) + (\sigma_{Hmax} + \sigma_{hmin}) 
 	- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (2 \theta_B) \right]
 	= UCS + q (P_W - P_p)  \]</div>
 <p>which after some algebraic manipulations results in:</p>
 <div class="math notranslate nohighlight" id="equation-eq-breakoutangle">
-<span class="eqno">(41)<a class="headerlink" href="#equation-eq-breakoutangle" title="Link to this equation">#</a></span>\[	2 \theta_B = \arccos \left[ \frac{ \sigma_{Hmax} + \sigma_{hmin} - UCS - (1+q)(P_W - P_p)}{2(\sigma_{Hmax} - \sigma_{hmin})} \right]\]</div>
+<span class="eqno">(43)<a class="headerlink" href="#equation-eq-breakoutangle" title="Link to this equation">#</a></span>\[	2 \theta_B = \arccos \left[ \frac{ \sigma_{Hmax} + \sigma_{hmin} - UCS - (1+q)(P_W - P_p)}{2(\sigma_{Hmax} - \sigma_{hmin})} \right]\]</div>
 <p>The breakout angle is</p>
 <div class="math notranslate nohighlight">
 \[	w_{BO} = \pi - 2 \theta_B\]</div>
 <p>The procedure assumes the rock in the breakout (likely already gone) is still resisting hoop stresses and therefore it is not accurate for large breakouts (<span class="math notranslate nohighlight">\(w_{BO} \gtrsim 60^{\circ}\)</span>).</p>
-<p>You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. <a class="reference internal" href="#equation-eq-breakoutangle">(41)</a> to</p>
+<p>You could also calculate the wellbore pressure for a predetermined breakout angle by rearranging Eq. <a class="reference internal" href="#equation-eq-breakoutangle">(43)</a> to</p>
 <div class="math notranslate nohighlight">
 \[	P_{WBO} = P_p + \frac{ (\sigma_{Hmax} + \sigma_{hmin}) 
 	- 2(\sigma_{Hmax} - \sigma_{hmin}) \cos (\pi - w_{BO}) - UCS}{1+q} \]</div>
@@ -727,7 +727,7 @@ For a 10 ppg mud, the resulting mud pressure is</p>
 </section>
 <section id="breakout-measurement">
 <h3>Breakout measurement<a class="headerlink" href="#breakout-measurement" title="Link to this heading">#</a></h3>
-<p>Breakouts and tensile induced fractures (Section \ref{sec:TensileFracs}) can be identified and measured with borehole imaging tools (<a class="reference internal" href="#fig-boreholeimaging"><span class="std std-numref">Fig. 154</span></a>).
+<p>Breakouts and tensile induced fractures (Section \ref{sec:TensileFracs}) can be identified and measured with borehole imaging tools (<a class="reference internal" href="#fig-boreholeimaging"><span class="std std-numref">Fig. 156</span></a>).
 Breakouts appear as wide bands of longer travel time or higher electrical resistivity in borehole images.
 Tensile fractures appear as narrow stripes of longer travel time or higher electrical resistivity.
 Borehole images also permit identifying the direction of the stresses that caused such breakouts or tensile induced fractures.
@@ -735,7 +735,7 @@ For example, the azimuth of breakouts coincides with the direction of <span clas
 <figure class="align-default" id="fig-boreholeimaging">
 <a class="reference internal image-reference" href="_images/7-8.pdf"><img alt="figurecontent" src="_images/7-8.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 154 </span><span class="caption-text">Examples of wellbore breakouts and tensile fractures in borehole images. Learn more about wellbore imaging tools <a class="reference external" href="http://petrowiki.org/Borehole_imaging">here</a>.</span><a class="headerlink" href="#fig-boreholeimaging" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 156 </span><span class="caption-text">Examples of wellbore breakouts and tensile fractures in borehole images. Learn more about wellbore imaging tools <a class="reference external" href="http://petrowiki.org/Borehole_imaging">here</a>.</span><a class="headerlink" href="#fig-boreholeimaging" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Breakouts can also be detected from caliper measurements.
@@ -760,7 +760,7 @@ In addition, if we know the rock properties <span class="math notranslate nohigh
 <p>Wellbore tensile (or open mode) fractures occur when the minimum principal stress <span class="math notranslate nohighlight">\(\sigma_3\)</span> on the wellbore wall goes below the limit for tensile stress: the tensile strength <span class="math notranslate nohighlight">\(T_s\)</span>.
 Unconsolidated sands have no tensile strength.
 Hence, an open-mode fracture occurs early after effective stress goes to zero.
-The minimum hoop stress is located on the wall of the wellbore <span class="math notranslate nohighlight">\((r=a)\)</span> and at <span class="math notranslate nohighlight">\(\theta= 0\)</span> and <span class="math notranslate nohighlight">\(\pi\)</span> (<a class="reference internal" href="#fig-tensfracsschematic"><span class="std std-numref">Fig. 155</span></a>):</p>
+The minimum hoop stress is located on the wall of the wellbore <span class="math notranslate nohighlight">\((r=a)\)</span> and at <span class="math notranslate nohighlight">\(\theta= 0\)</span> and <span class="math notranslate nohighlight">\(\pi\)</span> (<a class="reference internal" href="#fig-tensfracsschematic"><span class="std std-numref">Fig. 157</span></a>):</p>
 <div class="math notranslate nohighlight">
 \[		\sigma_{\theta \theta}  =   
 			-(P_W - P_p) -\sigma_{Hmax} + 3 \sigma_{hmin} 
@@ -769,12 +769,12 @@ The minimum hoop stress is located on the wall of the wellbore <span class="math
 <figure class="align-default" id="fig-tensfracsschematic">
 <a class="reference internal image-reference" href="_images/7-13.pdf"><img alt="figurecontent" src="_images/7-13.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 155 </span><span class="caption-text">Occurrence of tensile fractures around a vertical wellbore. Tensile fractures will occur when <span class="math notranslate nohighlight">\(P_W &gt; P_b\)</span>.</span><a class="headerlink" href="#fig-tensfracsschematic" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 157 </span><span class="caption-text">Occurrence of tensile fractures around a vertical wellbore. Tensile fractures will occur when <span class="math notranslate nohighlight">\(P_W &gt; P_b\)</span>.</span><a class="headerlink" href="#fig-tensfracsschematic" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Matching the lowest value of hoop stress <span class="math notranslate nohighlight">\(\sigma_{\theta \theta}\)</span>  with tensile strength <span class="math notranslate nohighlight">\(T_s\)</span> permits finding the mud pressure <span class="math notranslate nohighlight">\(P_W = P_{b}\)</span> that would produce a tensile (or open mode) fracture:</p>
 <div class="math notranslate nohighlight" id="equation-eq-pb">
-<span class="eqno">(42)<a class="headerlink" href="#equation-eq-pb" title="Link to this equation">#</a></span>\[		-T_s  =   
+<span class="eqno">(44)<a class="headerlink" href="#equation-eq-pb" title="Link to this equation">#</a></span>\[		-T_s  =   
 			-(P_b - P_p)  -\sigma_{Hmax} + 3 \sigma_{hmin} 
 			+ \sigma^{\Delta T} \]</div>
 <p>and therefore</p>
@@ -787,12 +787,12 @@ When <span class="math notranslate nohighlight">\(P_b &lt; S_3\)</span> and <spa
 Wellbores are usually drilled and logged with drilling mud cooler than the formation <span class="math notranslate nohighlight">\(T_{mud} &lt; T_{rock}\)</span>.
 Cooling leads to solid shrinkage and stress relaxation (a reduction of compression stresses).
 Hence, ignoring thermal stresses is conservative for preventing breakouts but it is not for tensile fractures and should be taken into account when calculating <span class="math notranslate nohighlight">\(P_b\)</span>.</p>
-<p><a class="reference internal" href="#fig-tensfracssurface"><span class="std std-numref">Fig. 156</span></a> shows an example of calculation of the local minimum principal stress <span class="math notranslate nohighlight">\(S_3\)</span> around a wellbore.
+<p><a class="reference internal" href="#fig-tensfracssurface"><span class="std std-numref">Fig. 158</span></a> shows an example of calculation of the local minimum principal stress <span class="math notranslate nohighlight">\(S_3\)</span> around a wellbore.
 The locations with the lowest stress align with the direction of the far-field maximum stress in the plane perpendicular to wellbore axis.</p>
 <figure class="align-default" id="fig-tensfracssurface">
 <a class="reference internal image-reference" href="_images/7-14.pdf"><img alt="figurecontent" src="_images/7-14.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 156 </span><span class="caption-text">Example of calculation of tensile strength required for wellbore stability. The figure shows that a tensile strength of <span class="math notranslate nohighlight">\(\sim 3\)</span> MPa is required to avert tensile fractures in this example.</span><a class="headerlink" href="#fig-tensfracssurface" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 158 </span><span class="caption-text">Example of calculation of tensile strength required for wellbore stability. The figure shows that a tensile strength of <span class="math notranslate nohighlight">\(\sim 3\)</span> MPa is required to avert tensile fractures in this example.</span><a class="headerlink" href="#fig-tensfracssurface" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition-example-6-3 admonition">
@@ -814,12 +814,12 @@ The breakdown pressure <span class="math notranslate nohighlight">\(P_b\)</span>
 </div>
 <section id="identification-of-tensile-fractures-in-wellbores">
 <h3>Identification of tensile fractures in wellbores}<a class="headerlink" href="#identification-of-tensile-fractures-in-wellbores" title="Link to this heading">#</a></h3>
-<p>Similarly to breakouts, drilling-induced tensile fractures  can be identified and measured with borehole imaging tools (<a class="reference internal" href="#fig-boreholeimagingtfracs"><span class="std std-numref">Fig. 157</span></a>).
+<p>Similarly to breakouts, drilling-induced tensile fractures  can be identified and measured with borehole imaging tools (<a class="reference internal" href="#fig-boreholeimagingtfracs"><span class="std std-numref">Fig. 159</span></a>).
 The azimuth of tensile fractures coincides with the direction of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> in vertical wells.</p>
 <figure class="align-default" id="fig-boreholeimagingtfracs">
 <a class="reference internal image-reference" href="_images/7-15.pdf"><img alt="figurecontent" src="_images/7-15.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 157 </span><span class="caption-text">Examples of drilling-induced tensile fractures along wellbores as seen with borehole imaging tools. Similarly to breakouts, tensile fractures can also help determine the orientation of the far field stresses.</span><a class="headerlink" href="#fig-boreholeimagingtfracs" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 159 </span><span class="caption-text">Examples of drilling-induced tensile fractures along wellbores as seen with borehole imaging tools. Similarly to breakouts, tensile fractures can also help determine the orientation of the far field stresses.</span><a class="headerlink" href="#fig-boreholeimagingtfracs" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -828,18 +828,18 @@ The azimuth of tensile fractures coincides with the direction of <span class="ma
 <h2>6.5 The mud window<a class="headerlink" href="#the-mud-window" title="Link to this heading">#</a></h2>
 <p>As seen in previous sections, low mud pressure (small mud wall support <span class="math notranslate nohighlight">\(\sigma_3\)</span> for hoop stress <span class="math notranslate nohighlight">\(\sigma_1\)</span>) encourages shear failure while too much pressure encourages tensile fractures (well pressure adds tensile hoop stresses).
 Hence there is a range of mud pressure for which the wellbore will remain stable during drilling.
-This is called the \textit{mud  window} and has a lower  bound (LB) and an upper bound (UB) which depend on wellbore mechanical stability as well as in other various technical requirements (<a class="reference internal" href="#fig-mudwindow"><span class="std std-numref">Fig. 158</span></a>).</p>
+This is called the \textit{mud  window} and has a lower  bound (LB) and an upper bound (UB) which depend on wellbore mechanical stability as well as in other various technical requirements (<a class="reference internal" href="#fig-mudwindow"><span class="std std-numref">Fig. 160</span></a>).</p>
 <figure class="align-default" id="fig-mudwindow">
 <a class="reference internal image-reference" href="_images/7-18.pdf"><img alt="figurecontent" src="_images/7-18.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 158 </span><span class="caption-text">Mud window based on mechanical wellbore stability, in-situ stresses, and pore pressure. HF: hydraulic fracture, LB: lower bound, and UB: upper bound.</span><a class="headerlink" href="#fig-mudwindow" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 160 </span><span class="caption-text">Mud window based on mechanical wellbore stability, in-situ stresses, and pore pressure. HF: hydraulic fracture, LB: lower bound, and UB: upper bound.</span><a class="headerlink" href="#fig-mudwindow" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Small breakouts <span class="math notranslate nohighlight">\(w_{BO} \leqslant 60^{\circ}\)</span> may not compromise wellbore stability and permit setting a lower (more flexible) bound for the mud window.
 Large breakouts <span class="math notranslate nohighlight">\(w_{BO} \geqslant 120^{\circ}\)</span>  can lead to extensive shear failure and breakout growth which lead to stuck borehole assemblies and even wellbore collapse.
 Likewise, small drilling-induced tensile fractures with wellbore pressure <span class="math notranslate nohighlight">\(P_W\)</span> lower than the minimum principal stress <span class="math notranslate nohighlight">\(S_3\)</span> can be safe and extend the upper bound for the mud window.
 However, wellbore pressures above <span class="math notranslate nohighlight">\(S_3\)</span> can result into uncontrolled mud-driven fracture propagation.
-Eq. <a class="reference internal" href="#equation-eq-pb">(42)</a> may suggest a safe breakdown pressure value above the minimum principal stress <span class="math notranslate nohighlight">\(P_b &gt; S_3\)</span>.
+Eq. <a class="reference internal" href="#equation-eq-pb">(44)</a> may suggest a safe breakdown pressure value above the minimum principal stress <span class="math notranslate nohighlight">\(P_b &gt; S_3\)</span>.
 However, this calculation assumes tensile strength everywhere in the the borehole wall.
 Any rock flaw or fracture (<span class="math notranslate nohighlight">\(T_s = 0\)</span> MPa) may reduce drastically <span class="math notranslate nohighlight">\(P_b\)</span>.</p>
 <p>There are other factors to take into account in the determination of the mud window in addition to mechanical wellbore stability.
@@ -848,16 +848,16 @@ The fluid flow rate will depend on the permeability of the formation.
 Tight formations may be drilled underbalanced with negligible  production of formation fluid.
 High mud pressure with respect to the pore pressure will promote mud losses (by leak-off) and damage reservoir permeability.
 Second, a mud pressure above the far field minimum principal stress <span class="math notranslate nohighlight">\(S_3\)</span> may cause uncontrolled hydraulic fracture propagation and lost circulation events during drilling.</p>
-<p>Maximizing the mud window (by taking advantage of geomechanical understanding among other variables) is extremely important to minimize the number of casing setting points and minimize drilling times (<a class="reference internal" href="#fig-wellborecasingdepths"><span class="std std-numref">Fig. 159</span></a>).
+<p>Maximizing the mud window (by taking advantage of geomechanical understanding among other variables) is extremely important to minimize the number of casing setting points and minimize drilling times (<a class="reference internal" href="#fig-wellborecasingdepths"><span class="std std-numref">Fig. 161</span></a>).
 The mud pressure gradient in a wellbore <span class="math notranslate nohighlight">\(\Delta P_W/ \Delta z\)</span> is a constant and depends directly on the mud density.
 Therefore, drilling designs are based on the mud pressure with respect to a datum (usually the rotary Kelly bushing - RKB) expressed on terms of ``equivalent density’’ to take into account viscous losses.
-In any open-hole section the value of pressure <span class="math notranslate nohighlight">\(P_W\)</span> in a plot  equivalent density v.s. depth is a straight vertical line (<a class="reference internal" href="#fig-ecd"><span class="std std-numref">Fig. 142</span></a>).
+In any open-hole section the value of pressure <span class="math notranslate nohighlight">\(P_W\)</span> in a plot  equivalent density v.s. depth is a straight vertical line (<a class="reference internal" href="#fig-ecd"><span class="std std-numref">Fig. 144</span></a>).
 The casing setting depth results from a selection of mud densities that cover the range between of the mud window as a function of depth.
 Wider mud windows reduce the number of casing setting points.</p>
 <figure class="align-default" id="fig-wellborecasingdepths">
 <a class="reference internal image-reference" href="_images/7-CasingSettingDepth.png"><img alt="figurecontent" src="_images/7-CasingSettingDepth.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 159 </span><span class="caption-text">Drilling mud density and wellbore design. The drilling mud window depends on the lower and upper bounds (LB and UB) determined from geomechanical analysis. Careful geomechanical analysis favors ``wider windows’’ and reduces the number of casing setting depths.</span><a class="headerlink" href="#fig-wellborecasingdepths" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 161 </span><span class="caption-text">Drilling mud density and wellbore design. The drilling mud window depends on the lower and upper bounds (LB and UB) determined from geomechanical analysis. Careful geomechanical analysis favors ``wider windows’’ and reduces the number of casing setting depths.</span><a class="headerlink" href="#fig-wellborecasingdepths" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Managed pressure drilling consist in modifying the mud pressure at surface (positive or negative increase) or a certain control depth, such that there is one more control on wellbore pressure.
@@ -871,25 +871,25 @@ Hence, these two controls can help adjust the pressure along the wellbore to fit
 <p>The following subsections present a guide for calculating stresses at the wall of deviated wellbores and identifying stress magnitudes and locations for shear failure (breakouts) and tensile fractures.</p>
 <section id="wellbore-orientation">
 <h3>Wellbore orientation<a class="headerlink" href="#wellbore-orientation" title="Link to this heading">#</a></h3>
-<p>At any point along the trajectory of a deviated wellbore, the tangent orientation permits defining wellbore azimuth <span class="math notranslate nohighlight">\(\delta\)</span> and deviation <span class="math notranslate nohighlight">\(\varphi\)</span> (<a class="reference internal" href="#fig-wellorientation"><span class="std std-numref">Fig. 160</span></a>).
+<p>At any point along the trajectory of a deviated wellbore, the tangent orientation permits defining wellbore azimuth <span class="math notranslate nohighlight">\(\delta\)</span> and deviation <span class="math notranslate nohighlight">\(\varphi\)</span> (<a class="reference internal" href="#fig-wellorientation"><span class="std std-numref">Fig. 162</span></a>).
 Azimuth <span class="math notranslate nohighlight">\(\delta\)</span> is the angle between the projection of the trajectory on a horizontal plane and the North.
 Deviation <span class="math notranslate nohighlight">\(\varphi\)</span> is the angle between a vertical line and the trajectory line at the point of consideration.
 These two variables can be plotted in a half-hemisphere projection plot (stereonet).
 Notice that a point in this plot represents just one point along a wellbore trajectory.
-<a class="reference internal" href="#fig-wellorientation"><span class="std std-numref">Fig. 160</span></a> shows an example of the full trajectory of a wellbore.</p>
+<a class="reference internal" href="#fig-wellorientation"><span class="std std-numref">Fig. 162</span></a> shows an example of the full trajectory of a wellbore.</p>
 <figure class="align-default" id="fig-wellorientation">
 <a class="reference internal image-reference" href="_images/7-DevSurvey.pdf"><img alt="figurecontent" src="_images/7-DevSurvey.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 160 </span><span class="caption-text">(a) Convention for plotting the orientation of a deviated wellbore on a lower hemisphere projection. (b) The example shows the deviation survey for a real wellbore (deviation range amplified to highlight small deviations). Notice that it starts slightly deviated on surface and then turns into vertical direction at depth.</span><a class="headerlink" href="#fig-wellorientation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 162 </span><span class="caption-text">(a) Convention for plotting the orientation of a deviated wellbore on a lower hemisphere projection. (b) The example shows the deviation survey for a real wellbore (deviation range amplified to highlight small deviations). Notice that it starts slightly deviated on surface and then turns into vertical direction at depth.</span><a class="headerlink" href="#fig-wellorientation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>A given state of stress will result in different mud windows and locations of rock failure depending on the wellbore orientation.
 Breakouts and tensile fractures will depend on the stresses on the plane perpendicular to the wellbore.
-<a class="reference internal" href="#fig-devwellfailure"><span class="std std-numref">Fig. 161</span></a> shows an example for normal faulting with generic stress magnitude values.</p>
+<a class="reference internal" href="#fig-devwellfailure"><span class="std std-numref">Fig. 163</span></a> shows an example for normal faulting with generic stress magnitude values.</p>
 <figure class="align-default" id="fig-devwellfailure">
 <a class="reference internal image-reference" href="_images/7-DevWellFailure.png"><img alt="figurecontent" src="_images/7-DevWellFailure.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 161 </span><span class="caption-text">Example of expected location of wellbore breakouts and tensile fractures in a vertical and horizontal wellbores according to the state of stress (normal faulting with <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> in N-S direction here).</span><a class="headerlink" href="#fig-devwellfailure" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 163 </span><span class="caption-text">Example of expected location of wellbore breakouts and tensile fractures in a vertical and horizontal wellbores according to the state of stress (normal faulting with <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> in N-S direction here).</span><a class="headerlink" href="#fig-devwellfailure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition-example-6-4 admonition">
@@ -905,7 +905,7 @@ Breakouts and tensile fractures will depend on the stresses on the plane perpend
 <figure class="align-default" id="fig-ex64">
 <a class="reference internal image-reference" href="_images/8-ExampleDevWells.pdf"><img alt="figurecontent" src="_images/8-ExampleDevWells.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 162 </span><span class="caption-text">Solution example 6.4.</span><a class="headerlink" href="#fig-ex64" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 164 </span><span class="caption-text">Solution example 6.4.</span><a class="headerlink" href="#fig-ex64" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -919,18 +919,18 @@ The third element of the base <span class="math notranslate nohighlight">\(z_b\)
 <figure class="align-default" id="fig-wellcs">
 <a class="reference internal image-reference" href="_images/8-WellCoordSystem.pdf"><img alt="figurecontent" src="_images/8-WellCoordSystem.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 163 </span><span class="caption-text">The wellbore coordinate system.</span><a class="headerlink" href="#fig-wellcs" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 165 </span><span class="caption-text">The wellbore coordinate system.</span><a class="headerlink" href="#fig-wellcs" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Based on the previous definition, it is possible to construct a transformation matrix <span class="math notranslate nohighlight">\(R_{GW}=f(\delta,\varphi)\)</span> that links the geographical coordinate system and the wellbore coordinate system.</p>
 <div class="math notranslate nohighlight" id="equation-eq-rgw">
-<span class="eqno">(43)<a class="headerlink" href="#equation-eq-rgw" title="Link to this equation">#</a></span>\[	\underset{=}{S}{}_W = 
+<span class="eqno">(45)<a class="headerlink" href="#equation-eq-rgw" title="Link to this equation">#</a></span>\[	\underset{=}{S}{}_W = 
 			R_{GW} \underset{=}{S}{}_G R_{GW}^T\]</div>
 <p>Furthermore, the wellbore stresses can be calculated from the principal stress tensor according with:</p>
 <div class="math notranslate nohighlight">
 \[	\underset{=}{S}{}_W = 
 			R_{GW} R_{PG}^T \underset{=}{S}{}_P R_{PG} R_{GW}^T\]</div>
-<p>Where <span class="math notranslate nohighlight">\(\underset{=}{S}{}_P\)</span> and <span class="math notranslate nohighlight">\(R_{PG}\)</span> are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system (Eq. <a class="reference internal" href="ch5_StressProjection.html#equation-eq-matrixrpg">(39)</a>).
+<p>Where <span class="math notranslate nohighlight">\(\underset{=}{S}{}_P\)</span> and <span class="math notranslate nohighlight">\(R_{PG}\)</span> are the principal stress tensor and the corresponding change of coordinate matrix to the geographical coordinate system (Eq. <a class="reference internal" href="ch5_StressProjection.html#equation-eq-matrixrpg">(41)</a>).
 The tensor <span class="math notranslate nohighlight">\(\underset{=}{S}{}_W\)</span> is composed by the following stresses:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}	\underset{=}{S}{}_W = 
@@ -943,38 +943,38 @@ The tensor <span class="math notranslate nohighlight">\(\underset{=}{S}{}_W\)</s
 	\right]\end{split}\]</div>
 <p>Stresses on the plane of the cross-section of the deviated wellbore at the wellbore wall <span class="math notranslate nohighlight">\((\sigma_{rr}, \sigma_{\theta \theta}, \sigma_{zz}, \sigma_{\theta z})\)</span> depend on far-field stresses <span class="math notranslate nohighlight">\(\sigma_{11} = S_{11} - P_p\)</span>, <span class="math notranslate nohighlight">\(\sigma_{22} = S_{22} - P_p\)</span>, <span class="math notranslate nohighlight">\(\sigma_{33} = S_{33} - P_p\)</span>, <span class="math notranslate nohighlight">\(\sigma_{12} = S_{12}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{13} = S_{13}\)</span>, and <span class="math notranslate nohighlight">\(\sigma_{23} = S_{23}\)</span>.
 The Kirsch equations require additional far field shear terms <span class="math notranslate nohighlight">\(\sigma_{12}\)</span>, <span class="math notranslate nohighlight">\(\sigma_{13}\)</span>, and <span class="math notranslate nohighlight">\(\sigma_{23}\)</span> in order to account for principal stresses not coinciding with the wellbore orientation.
-The solution of Kirsch equation for isotropic rock with far-field shear stresses is provided in <a class="reference internal" href="#fig-kirschdevwell"><span class="std std-numref">Fig. 164</span></a>.</p>
+The solution of Kirsch equation for isotropic rock with far-field shear stresses is provided in <a class="reference internal" href="#fig-kirschdevwell"><span class="std std-numref">Fig. 166</span></a>.</p>
 <figure class="align-default" id="fig-kirschdevwell">
 <a class="reference internal image-reference" href="_images/8-3.pdf"><img alt="figurecontent" src="_images/8-3.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 164 </span><span class="caption-text">Stresses around the wall of a deviated wellbore. Notice that principal stresses (directions <span class="math notranslate nohighlight">\((x_1,x_2,x_3)\)</span>) may not be aligned with the wellbore trajectory.</span><a class="headerlink" href="#fig-kirschdevwell" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 166 </span><span class="caption-text">Stresses around the wall of a deviated wellbore. Notice that principal stresses (directions <span class="math notranslate nohighlight">\((x_1,x_2,x_3)\)</span>) may not be aligned with the wellbore trajectory.</span><a class="headerlink" href="#fig-kirschdevwell" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Solving for the local principal stresses <span class="math notranslate nohighlight">\((\sigma_{tmax}, \sigma_{rr}, \sigma_{tmin})\)</span> on the wellbore wall permits checking for rock failure (tensile or shear).
-The local principal stresses may not be necessarily aligned with the wellbore axis leading to an angle <span class="math notranslate nohighlight">\(\omega\)</span> (see <a class="reference internal" href="#fig-princstressesdevwell"><span class="std std-numref">Fig. 165</span></a>).
-Because of such angle, tensile fractures in deviated wellbores can occur at an angle <span class="math notranslate nohighlight">\(\omega\)</span> from the axis of the wellbore and appear as a series of short inclined (en-‘echelon) fractures instead of a long tensile fracture parallel to the wellbore axis as in <a class="reference internal" href="#fig-boreholeimagingtfracs"><span class="std std-numref">Fig. 157</span></a>.</p>
+The local principal stresses may not be necessarily aligned with the wellbore axis leading to an angle <span class="math notranslate nohighlight">\(\omega\)</span> (see <a class="reference internal" href="#fig-princstressesdevwell"><span class="std std-numref">Fig. 167</span></a>).
+Because of such angle, tensile fractures in deviated wellbores can occur at an angle <span class="math notranslate nohighlight">\(\omega\)</span> from the axis of the wellbore and appear as a series of short inclined (en-‘echelon) fractures instead of a long tensile fracture parallel to the wellbore axis as in <a class="reference internal" href="#fig-boreholeimagingtfracs"><span class="std std-numref">Fig. 159</span></a>.</p>
 <figure class="align-default" id="fig-princstressesdevwell">
 <a class="reference internal image-reference" href="_images/8-DevWellPS.png"><img alt="figurecontent" src="_images/8-DevWellPS.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 165 </span><span class="caption-text">Principal stresses around the wall of a deviated wellbore. The hoop stress <span class="math notranslate nohighlight">\(\sigma_{\theta\theta}\)</span> could be the least, the intermediate or the maximum principal stress depending on location (angle <span class="math notranslate nohighlight">\(\theta\)</span>).</span><a class="headerlink" href="#fig-princstressesdevwell" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 167 </span><span class="caption-text">Principal stresses around the wall of a deviated wellbore. The hoop stress <span class="math notranslate nohighlight">\(\sigma_{\theta\theta}\)</span> could be the least, the intermediate or the maximum principal stress depending on location (angle <span class="math notranslate nohighlight">\(\theta\)</span>).</span><a class="headerlink" href="#fig-princstressesdevwell" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="breakout-analysis-for-deviated-wellbores">
 <h3>Breakout analysis for deviated wellbores<a class="headerlink" href="#breakout-analysis-for-deviated-wellbores" title="Link to this heading">#</a></h3>
-<p>Consider a place subjected to strike-slip stress regime with <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> oriented at an azimuth of 070<span class="math notranslate nohighlight">\(^{\circ}\)</span> with known values of principal stresses (Fig <a class="reference internal" href="#fig-breakoutdevwellbore"><span class="std std-numref">Fig. 166</span></a>).
+<p>Consider a place subjected to strike-slip stress regime with <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> oriented at an azimuth of 070<span class="math notranslate nohighlight">\(^{\circ}\)</span> with known values of principal stresses (Fig <a class="reference internal" href="#fig-breakoutdevwellbore"><span class="std std-numref">Fig. 168</span></a>).
 The maximum stress anisotropy lies in a plane that contains <span class="math notranslate nohighlight">\(S_1 = S_{Hmax}\)</span> and <span class="math notranslate nohighlight">\(S_3 = S_{hmin}\)</span>, a plane perpendicular to the axis of a vertical wellbore.
 Hence, maximum stress amplification at the wellbore wall will happen for a vertical wellbore.
 The minimum stress anisotropy lies in a plane that contains <span class="math notranslate nohighlight">\(S_2 = S_{v}\)</span> and <span class="math notranslate nohighlight">\(S_3 = S_{hmin}\)</span>, perpendicular to a horizontal  wellbore drilled in direction of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span>.
-Given a mud pressure and a fixed friction angle, we can calculate for a given wellbore orientation the stresses on the wellbore wall from equations in <a class="reference internal" href="#fig-princstressesdevwell"><span class="std std-numref">Fig. 165</span></a>, and the required <span class="math notranslate nohighlight">\(UCS\)</span> (using a shear failure criterion <span class="math notranslate nohighlight">\(\sigma_1 = UCS + q \: \sigma_3\)</span>) to avert shear failure.
-The plots in <a class="reference internal" href="#fig-breakoutdevwellbore"><span class="std std-numref">Fig. 166</span></a> are examples of this calculation.
+Given a mud pressure and a fixed friction angle, we can calculate for a given wellbore orientation the stresses on the wellbore wall from equations in <a class="reference internal" href="#fig-princstressesdevwell"><span class="std std-numref">Fig. 167</span></a>, and the required <span class="math notranslate nohighlight">\(UCS\)</span> (using a shear failure criterion <span class="math notranslate nohighlight">\(\sigma_1 = UCS + q \: \sigma_3\)</span>) to avert shear failure.
+The plots in <a class="reference internal" href="#fig-breakoutdevwellbore"><span class="std std-numref">Fig. 168</span></a> are examples of this calculation.
 The maximum value of required <span class="math notranslate nohighlight">\(UCS\)</span> corresponds to the wellbore direction with maximum stress anisotropy (vertical wellbore - red region), and the minimum value of required <span class="math notranslate nohighlight">\(UCS\)</span> corresponds to the wellbore direction with minimum stress anisotropy (horizontal wellbore with <span class="math notranslate nohighlight">\(\delta = 070^{\circ}\)</span> - blue region).
 Following the breakout concepts discussed before, we would expect breakouts at 160<span class="math notranslate nohighlight">\(^{\circ}\)</span> and 340<span class="math notranslate nohighlight">\(^{\circ}\)</span> of azimuth on the sides of a vertical wellbore.
 A horizontal wellbore drilled in the direction of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> would tend to develop breakouts on the top and bottom of the wellbore.</p>
 <figure class="align-default" id="fig-breakoutdevwellbore">
 <a class="reference internal image-reference" href="_images/8-BreakoutsDevWells.pdf"><img alt="figurecontent" src="_images/8-BreakoutsDevWells.pdf" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 166 </span><span class="caption-text">Stereonet plots to verify the rock strength required to avoid breakouts and the wellbore breakout angle for a given rock strength and wellbore pressure.</span><a class="headerlink" href="#fig-breakoutdevwellbore" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 168 </span><span class="caption-text">Stereonet plots to verify the rock strength required to avoid breakouts and the wellbore breakout angle for a given rock strength and wellbore pressure.</span><a class="headerlink" href="#fig-breakoutdevwellbore" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition-example-6-5 admonition">
@@ -985,7 +985,7 @@ Plot results in a stereonet projection.</p>
 <figure class="align-default" id="fig-ex65">
 <a class="reference internal image-reference" href="_images/8-BreakoutsDevWells-EXNF.pdf"><img alt="figurecontent" src="_images/8-BreakoutsDevWells-EXNF.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 167 </span><span class="caption-text">Solution Ex. 6.5.</span><a class="headerlink" href="#fig-ex65" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 169 </span><span class="caption-text">Solution Ex. 6.5.</span><a class="headerlink" href="#fig-ex65" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -997,7 +997,7 @@ Plot results in a stereonet projection.</p>
 <figure class="align-default" id="fig-ex66">
 <a class="reference internal image-reference" href="_images/8-BreakoutsDevWells-EXRF.pdf"><img alt="figurecontent" src="_images/8-BreakoutsDevWells-EXRF.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 168 </span><span class="caption-text">Solution Ex. 6.6.</span><a class="headerlink" href="#fig-ex66" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 170 </span><span class="caption-text">Solution Ex. 6.6.</span><a class="headerlink" href="#fig-ex66" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1024,16 +1024,16 @@ Plot results in a stereonet projection.</p>
 <section id="tensile-fractures-analysis-for-deviated-wellbores">
 <h3>Tensile fractures analysis for deviated wellbores<a class="headerlink" href="#tensile-fractures-analysis-for-deviated-wellbores" title="Link to this heading">#</a></h3>
 <p>The procedure to find tensile failure is equivalent to the one used for shear failure, but using a tensile strength failure criterion.
-For example, consider a place subjected to normal faulting stress regime with <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> oriented at an azimuth of 070<span class="math notranslate nohighlight">\(^{\circ}\)</span> and known values of principal stresses (<a class="reference internal" href="#fig-tfracsdevwellbore"><span class="std std-numref">Fig. 169</span></a>).
+For example, consider a place subjected to normal faulting stress regime with <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> oriented at an azimuth of 070<span class="math notranslate nohighlight">\(^{\circ}\)</span> and known values of principal stresses (<a class="reference internal" href="#fig-tfracsdevwellbore"><span class="std std-numref">Fig. 171</span></a>).
 The maximum stress anisotropy lies in a plane that contains <span class="math notranslate nohighlight">\(S_1 = S_{v}\)</span> and <span class="math notranslate nohighlight">\(S_3 = S_{hmin}\)</span>, perpendicular to a horizontal wellbore drilled in the direction of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span>.
 For a given rock tensile strength, we can calculate the maximum mud pressure that the wellbore can bear without failing in tension.
-<a class="reference internal" href="#fig-tfracsdevwellbore"><span class="std std-numref">Fig. 169</span></a> shows an example of this calculation.
+<a class="reference internal" href="#fig-tfracsdevwellbore"><span class="std std-numref">Fig. 171</span></a> shows an example of this calculation.
 The maximum possible <span class="math notranslate nohighlight">\(P_W\)</span> corresponds to the wellbore direction with minimum stress anisotropy (blue region), and the minimum possible <span class="math notranslate nohighlight">\(P_W\)</span> corresponds to the wellbore direction with maximum stress anisotropy (red region).
 For example, tensile fractures would tend to occur in the top and bottom of a horizontal wellbore drilled in the direction of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span>.</p>
 <figure class="align-default" id="fig-tfracsdevwellbore">
 <a class="reference internal image-reference" href="_images/8-TensfracsDevWells.pdf"><img alt="figurecontent" src="_images/8-TensfracsDevWells.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 169 </span><span class="caption-text">Calculation of required <span class="math notranslate nohighlight">\(T_S\)</span> as a function of wellbore orientation in order to prevent open-mode fractures with <span class="math notranslate nohighlight">\(P_W = 35\)</span> MPa. Stresses and pore pressure: <span class="math notranslate nohighlight">\(S_v =\)</span> 70 MPa, <span class="math notranslate nohighlight">\(S_{Hmax} =\)</span> 55 MPa, <span class="math notranslate nohighlight">\(S_{hmin} =\)</span> 45 MPa, and <span class="math notranslate nohighlight">\(P_p =\)</span> 32 MPa, Notice that the stress regimes dictates the orientation of the least and most convenient drilling direction.</span><a class="headerlink" href="#fig-tfracsdevwellbore" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 171 </span><span class="caption-text">Calculation of required <span class="math notranslate nohighlight">\(T_S\)</span> as a function of wellbore orientation in order to prevent open-mode fractures with <span class="math notranslate nohighlight">\(P_W = 35\)</span> MPa. Stresses and pore pressure: <span class="math notranslate nohighlight">\(S_v =\)</span> 70 MPa, <span class="math notranslate nohighlight">\(S_{Hmax} =\)</span> 55 MPa, <span class="math notranslate nohighlight">\(S_{hmin} =\)</span> 45 MPa, and <span class="math notranslate nohighlight">\(P_p =\)</span> 32 MPa, Notice that the stress regimes dictates the orientation of the least and most convenient drilling direction.</span><a class="headerlink" href="#fig-tfracsdevwellbore" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition-example-6-7 admonition">
@@ -1067,11 +1067,11 @@ The process is time dependent and variations of temperature <span class="math no
 \[	\frac{\partial T}{\partial t} = D_T \nabla^2 T\]</div>
 <p>where heat diffusivity  is <span class="math notranslate nohighlight">\(D_T = k_T/(\rho c_p)\)</span> proportional to the heat conductivity <span class="math notranslate nohighlight">\(k_T\)</span>, and inversely proportional to the rock mass density <span class="math notranslate nohighlight">\(\rho\)</span> and the heat capacity <span class="math notranslate nohighlight">\(c_p\)</span>.
 The operator <span class="math notranslate nohighlight">\(\nabla^2=(\partial^2 / \partial x^2 + \partial^2 / \partial y^2 + \partial^2 / \partial z^2 )\)</span> indicates variations in space.
-The heat diffusivity equation and the equations of thermo-elasticity (Section \ref{sec:Thermoelasticity}) permit solving the changes of strains and stresses around the wellbore due to time-dependent changes of temperature. % (Example in <a class="reference internal" href="#fig-thermaleffectswell"><span class="std std-numref">Fig. 170</span></a>).</p>
+The heat diffusivity equation and the equations of thermo-elasticity (Section \ref{sec:Thermoelasticity}) permit solving the changes of strains and stresses around the wellbore due to time-dependent changes of temperature. % (Example in <a class="reference internal" href="#fig-thermaleffectswell"><span class="std std-numref">Fig. 172</span></a>).</p>
 <figure class="align-default" id="fig-thermaleffectswell">
 <a class="reference internal image-reference" href="_images/7-WellboreCooling.png"><img alt="figurecontent" src="_images/7-WellboreCooling.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 170 </span><span class="caption-text">Cooling <span class="math notranslate nohighlight">\(T&lt;T_0\)</span> leads to stress relaxation and possibly tensile stresses on the wellbore wall.</span><a class="headerlink" href="#fig-thermaleffectswell" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 172 </span><span class="caption-text">Cooling <span class="math notranslate nohighlight">\(T&lt;T_0\)</span> leads to stress relaxation and possibly tensile stresses on the wellbore wall.</span><a class="headerlink" href="#fig-thermaleffectswell" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>At steady-state conditions, the change in hoop stress <span class="math notranslate nohighlight">\(\Delta \sigma_{\theta \theta}\)</span> around any point on the wellbore wall due to a change in temperature <span class="math notranslate nohighlight">\(\Delta T\)</span> is:</p>
@@ -1083,7 +1083,7 @@ Cooling leads to hoop stress relaxation and possibly tensile effective stress, w
 <section id="chemo-electrical-effects">
 <h3>Chemo-electrical effects<a class="headerlink" href="#chemo-electrical-effects" title="Link to this heading">#</a></h3>
 <p>Chemo-electrical effects are most relevant to small sub-micron particles, such as clays, the building-blocks of mudrocks and shales.
-The forces that act on clay particles include (<a class="reference internal" href="#fig-clayplatelet"><span class="std std-numref">Fig. 171</span></a>):</p>
+The forces that act on clay particles include (<a class="reference internal" href="#fig-clayplatelet"><span class="std std-numref">Fig. 173</span></a>):</p>
 <ul class="simple">
 <li><p>Mechanical forces: solid skeletal stress and pore pressure,</p></li>
 <li><p>Electrical forces: van der Waals attraction, Born repulsion, short range repulsive and attractive forces induced by hydration/solvation of clay surfaces.</p></li>
@@ -1091,22 +1091,22 @@ The forces that act on clay particles include (<a class="reference internal" hre
 <figure class="align-default" id="fig-clayplatelet">
 <a class="reference internal image-reference" href="_images/8-InterparticleDistance.pdf"><img alt="figurecontent" src="_images/8-InterparticleDistance.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 171 </span><span class="caption-text">Schematic of clay platelet pair, forces between them, and equilibrium interparticle distance <span class="math notranslate nohighlight">\(d\)</span>.</span><a class="headerlink" href="#fig-clayplatelet" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 173 </span><span class="caption-text">Schematic of clay platelet pair, forces between them, and equilibrium interparticle distance <span class="math notranslate nohighlight">\(d\)</span>.</span><a class="headerlink" href="#fig-clayplatelet" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Shale chemical instability involves changes of the electrical forces between clay platelets due to changes of ionic concentration of the resident brine within the rock pore space.
 The equilibrium distance between particles is inversely proportional to salinity.
-Hence, decreasing salinity promotes chemo-electrical swelling of shale (see example in <a class="reference internal" href="#fig-clayswelling"><span class="std std-numref">Fig. 172</span></a>).
+Hence, decreasing salinity promotes chemo-electrical swelling of shale (see example in <a class="reference internal" href="#fig-clayswelling"><span class="std std-numref">Fig. 174</span></a>).
 During drilling, the change in ionic concentration in resident brine is caused by leak-off of low-salinity water from drilling mud into the formation saturated with high salinity brine.
 Smectite clays are most sensitive to swelling upon water freshening and hydration.</p>
 <figure class="align-default" id="fig-clayswelling">
 <a class="reference internal image-reference" href="_images/7-23.pdf"><img alt="figurecontent" src="_images/7-23.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 172 </span><span class="caption-text">Example of shale hydration and swelling due to exposure to low salinity water.</span><a class="headerlink" href="#fig-clayswelling" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 174 </span><span class="caption-text">Example of shale hydration and swelling due to exposure to low salinity water.</span><a class="headerlink" href="#fig-clayswelling" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Shale swelling leads to an increase of hoop stress and sometimes rock weakening around the wellbore wall.
-Such changes promote shear failure and breakouts/washouts (<a class="reference internal" href="#fig-wellboreinstabilityshale"><span class="std std-numref">Fig. 173</span></a>).
+Such changes promote shear failure and breakouts/washouts (<a class="reference internal" href="#fig-wellboreinstabilityshale"><span class="std std-numref">Fig. 175</span></a>).
 Prevention of shale chemical instability requires modeling of solute diffusive-advective transport between the drilling mud and the formation water in the rock.
 Higher mud pressures result in higher leak-off, and therefore, in more rapid ionic exchange within the shale.
 The process is time-dependent.
@@ -1114,7 +1114,7 @@ Thus, the expected break out angle results from a combination of mechanical fact
 <figure class="align-default" id="fig-wellboreinstabilityshale">
 <a class="reference internal image-reference" href="_images/7-24.pdf"><img alt="figurecontent" src="_images/7-24.pdf" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 173 </span><span class="caption-text">Shale sensitivity: variation of near wellbore stresses and time-dependent breakout angle <span class="math notranslate nohighlight">\(w_{BO}\)</span> prediction example.</span><a class="headerlink" href="#fig-wellboreinstabilityshale" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 175 </span><span class="caption-text">Shale sensitivity: variation of near wellbore stresses and time-dependent breakout angle <span class="math notranslate nohighlight">\(w_{BO}\)</span> prediction example.</span><a class="headerlink" href="#fig-wellboreinstabilityshale" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The solutions to wellbore instability problems due to shale chemo-electrical swelling are: increasing the salinity of water-based drilling muds, using oil-based muds instead of water-based muds, cooling the wellbore to counteract increases of hoop stress, and using
@@ -1123,14 +1123,14 @@ underbalanced-drilling to minimize leak-off of water from drilling mud.</p>
 <section id="leak-off-effects">
 <h3>Leak-off effects<a class="headerlink" href="#leak-off-effects" title="Link to this heading">#</a></h3>
 <p>So far we have assumed that the radial effective stress at the wellbore wall is <span class="math notranslate nohighlight">\(\sigma_{rr} = P_W - P_p\)</span>.
-Such assumption implies a perfect and sharp “mudcake” that creates a sharp gradient between the mud pressure and the pore pressure, such that, viscous forces apply an effective stress   <span class="math notranslate nohighlight">\(\sigma_{rr} = P_W - P_p\)</span> on the wellbore wall (<a class="reference internal" href="#fig-mudcake"><span class="std std-numref">Fig. 143</span></a>).
+Such assumption implies a perfect and sharp “mudcake” that creates a sharp gradient between the mud pressure and the pore pressure, such that, viscous forces apply an effective stress   <span class="math notranslate nohighlight">\(\sigma_{rr} = P_W - P_p\)</span> on the wellbore wall (<a class="reference internal" href="#fig-mudcake"><span class="std std-numref">Fig. 145</span></a>).
 However, mud water leak off and mud filtration can occur over time decreasing the sharpness of such gradient and reducing the effective stresses in the near wellbore region.
 A reduction of effective stress lowers the strength of rock and favors rock failure around the wellbore.</p>
 <p>Hence, a wellbore could be stable right after drilling, but unstable after some time due to mud filtration and loss of radial stress support.</p>
 <figure class="align-default" id="fig-leakoffinstability">
 <a class="reference internal image-reference" href="_images/7-LossMudcake.png"><img alt="figurecontent" src="_images/7-LossMudcake.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 174 </span><span class="caption-text">Loss of mudcake after excessive particle filtration. The loss of mudcake leads to a decrease in effective stress radial support and therefore rock shear strength.</span><a class="headerlink" href="#fig-leakoffinstability" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 176 </span><span class="caption-text">Loss of mudcake after excessive particle filtration. The loss of mudcake leads to a decrease in effective stress radial support and therefore rock shear strength.</span><a class="headerlink" href="#fig-leakoffinstability" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1139,14 +1139,14 @@ A reduction of effective stress lowers the strength of rock and favors rock fail
 <h2>6.8 Rock strength anisotropy effects on wellbore stability<a class="headerlink" href="#rock-strength-anisotropy-effects-on-wellbore-stability" title="Link to this heading">#</a></h2>
 <p>Sedimentary rocks are anisotropic.
 Rock lamination contributes to stiffness and strength anisotropy.
-Consider a deviated wellbore as in <a class="reference internal" href="#fig-wellstrengthanisotropy"><span class="std std-numref">Fig. 175</span></a>.
+Consider a deviated wellbore as in <a class="reference internal" href="#fig-wellstrengthanisotropy"><span class="std std-numref">Fig. 177</span></a>.
 Far field stress anisotropy will result in high stress anisotropy regions (red zone perpendicular to the direction of maximum stress) and potential breakouts if the strength of intact rock is overcome.
 Yet, there will be other areas around the wellbore without such high stress anisotropy but high enough and aligned optimally to induce shear failure in regions weakened by the presence of rock lamination (blue zone).
 Such areas may also be prone to develop a second family of breakouts.</p>
 <figure class="align-default" id="fig-wellstrengthanisotropy">
 <a class="reference internal image-reference" href="_images/7-RockAnisotropy-Breakouts-v2.png"><img alt="figurecontent" src="_images/7-RockAnisotropy-Breakouts-v2.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 175 </span><span class="caption-text">Implications of rock strength anisotropy on wellbore breakouts. <a class="reference external" href="https://doi.org/10.1029/2018JB017090">Image credit in (c)</a>.</span><a class="headerlink" href="#fig-wellstrengthanisotropy" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 177 </span><span class="caption-text">Implications of rock strength anisotropy on wellbore breakouts. <a class="reference external" href="https://doi.org/10.1029/2018JB017090">Image credit in (c)</a>.</span><a class="headerlink" href="#fig-wellstrengthanisotropy" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
