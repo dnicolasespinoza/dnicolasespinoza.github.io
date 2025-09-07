@@ -23,7 +23,7 @@ Igneous dykes can cut through oil and gas basins, and regions target of carbon d
 Some of these dykes are hundreds-of-kilometers long and act as seals for natural accumulations of oil and gas in the North Sea.
 
 :::{figure-md} fig:dikes
-<img src="../mynewbook/figures/9A-7.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9A-7.svg" alt="figurecontent" width="600px">
 
 Formation of dikes and examples. Dikes are large and natural fluid-driven fractures.
 :::
@@ -90,7 +90,7 @@ Execution of the leak-off test involves the following events:
 - Shut-in of the pumps causes the pressure to decrease quickly at the instantaneous shut-in pressure (ISIP). Further pressure decrease originates from fluid in the fracture leaking off to the rock until the fractures closes at the fracture closure pressure (FCP).
  
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/9A-11.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/9A-11.svg}}
 %\caption{Schematic pressure-time signature of a leak-off test done for measuring the fracture gradient (pressure) during drilling.}
 %\label{fig:lect-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F
@@ -101,13 +101,13 @@ An "extended" leak-off test requires to reach the UFP (or FPP) pressure.
 Sometimes the leak-off tests may be stopped before UFP to avoid large fractures in the well.
 
 :::{figure-md} fig:ExampleLeakoff
-<img src="../mynewbook/figures/9A-12.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9A-12.svg" alt="figurecontent" width="600px">
 
 Example of real leak-off test data from an off-shore well. The pressure data show surface pressure readings.
 :::
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/9A-15.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/9A-15.svg}}
 %\caption{Example of an extended leak-off test with a repeated cycle after fracture breakdown pressure or UFP. The pressure may not reach the original maximum pressure beacuse a fracture already exist in the borehole.}
 %\label{fig:lect-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F 
@@ -118,7 +118,7 @@ Example of real leak-off test data from an off-shore well. The pressure data sho
 The shut-in pressure is the maximum pressure before the pressure signature exhibits a gradual decay as a function of time due to shutting the pumps.
 
 :::{figure-md} fig:minifracISIP
-<img src="../mynewbook/figures/9-MiniFrac_ISIP.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-MiniFrac_ISIP.svg" alt="figurecontent" width="600px">
 
 Example of determination of the instantaneous shut-in pressure from a fracture test.
 :::
@@ -132,7 +132,7 @@ The pressure decrease rate slows down once the fracture closes (leak-off just fr
 Fracture closure is interpreted to be approximately equal to the minimum principal total stress $S_3$.
 
 :::{figure-md} fig:minifracFCP
-<img src="../mynewbook/figures/9-MiniFrac_FCP.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-MiniFrac_FCP.svg" alt="figurecontent" width="600px">
 
 Example of determination of the fracture closure pressure. Departure from the linear trend in a $P$ vs. $\sqrt{t_{si}}$ plot indicates fracture closure.
 :::
@@ -147,13 +147,13 @@ The injection rates are also relatively small ranging from $\sim$0.1 to 3 bbl/mi
 The DFIT test may be performed through perforations in already cased boreholes.
 
 :::{figure-md} fig:DFIT
-<img src="../mynewbook/figures/9A-16.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9A-16.svg" alt="figurecontent" width="600px">
 
 The DFIT test is performed with small injection volumes before actual hydraulic fracture completion.
 :::
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/9A-17.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/9A-17.svg}}
 %\caption{}
 %\label{fig:lect-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F 
@@ -164,7 +164,7 @@ More advanced methods use a "G-function" to determine FCP.
 The G-function is a dimensionless time function designed to linearize the pressure signal during normal fluid leak-off from a bi-wing fracture.
 
 :::{figure-md} fig:Gfunction
-<img src="../mynewbook/figures/9A-18.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9A-18.svg" alt="figurecontent" width="600px">
 
 DFIT tests often utilize a "G-function" to determine the closure pressure. This method is based on the analysis of leak-off similar to the square-root-of-time method.
 :::
@@ -205,7 +205,7 @@ The objective is to avoid fracturing of the injector.
 There are ongoing efforts to regulate injection of large volumes that may not fracture the injector but could reactivate neighboring faults.
 
 :::{figure-md} fig:StepRateTest-Example
-<img src="../mynewbook/figures/9-SRTexample.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-SRTexample.svg" alt="figurecontent" width="600px">
 
 Example of actual injection-rate test for steam injection in an off-shore reservoir in California [data from SPE 169513].
 :::
@@ -214,7 +214,7 @@ Unintentional fracturing of the injector can be detrimental to sweep efficiency 
 On the other hand, fractures can be beneficial for sweep efficiency if oriented perpendicular to the direction of sweep ({numref}`fig:FracturesEOR`).
 
 :::{figure-md} fig:FracturesEOR
-<img src="../mynewbook/figures/9-FracturesEOR.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-FracturesEOR.svg" alt="figurecontent" width="600px">
 
 Example of fracturing in water-flooding with detrimental (left) and beneficial (right) implications for sweep efficiency. Circle plus arrow : injector, circle: producer, HF: hydraulic fracture.
 :::
@@ -231,7 +231,7 @@ Fractures are usually much longer than the radius of the wellbore and so does th
 The use of a skin factor $s$ permits calculating the flow rates in the presence of the fracture using the wellbore Eq. ({eq}`fig:DrainageFracture`).
 
 :::{figure-md} fig:DrainageFracture
-<img src="../mynewbook/figures/9B-2.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-2.svg" alt="figurecontent" width="600px">
 
 Reservoir drainage: A fractured wellbore dramatically increases flow rates for the same bottomhole pressure. The rate is proportional to $x_f/r_w$.
 :::
@@ -251,7 +251,7 @@ The main processes include:
 The following subsections describe each of these problems in more detail.
 
 :::{figure-md} fig:ProcessesFracturing
-<img src="../mynewbook/figures/9B-3.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-3.svg" alt="figurecontent" width="600px">
 
 The four coupled processes in fluid-driven fracture propagation in porous media.
 :::
@@ -281,7 +281,7 @@ A fluid-driven fracture will open if and only if $p_{net}>0$, i.e., $p > S_3$.
 Also, the net pressure concept facilitates the development of analytical solutions, by combining two actions into one.
 
 :::{figure-md} fig:NetPressure
-<img src="../mynewbook/figures/9B-4.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-4.svg" alt="figurecontent" width="600px">
 
 Example of the net pressure concept.
 :::
@@ -303,7 +303,7 @@ Hence, for a fracture with half-length $c$ ({numref}`fig:GriffithSol`), the boun
 ```
 
 :::{figure-md} fig:GriffithSol
-<img src="../mynewbook/figures/9B-5.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-5.svg" alt="figurecontent" width="600px">
 
 Griffith's crack problem: Geometry and assumptions of pressurized line crack in 2D elastic, isotropic, homogeneous solid.
 :::
@@ -342,7 +342,7 @@ For example at $x=1.15c$, $\sigma_{yy}(1.15c,0) \sim - p_o$.
 #### Mechanics: stress intensity factor and fracture toughness
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.55]{./Figures/split/9B-6.pdf}}
+%\centerline{\includegraphics[scale=0.55]{./Figures/split/9B-6.svg}}
 %\caption{Stress Intensity Factor at Fracture Tip.}
 %\label{fig:lect-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F
@@ -390,7 +390,7 @@ The parameter $Y_I$ [-] is geometrical factor and depends on $s/r$ and it is  $Y
 Typical rock fracture toughness values vary between $K_{IC} \sim 0.05 $ to 1.5 MPa m$^{1/2}$.  
 
 :::{figure-md} fig:SCB
-<img src="../mynewbook/figures/9-SCB.pdf" alt="figurecontent" width="300px">
+<img src="../mynewbook/figures/9-SCB.svg" alt="figurecontent" width="300px">
 
 Geometry and variables for the semicircular bending test. The notch simulates a pre-existing fracture and intensifies stresses at the tip.
 :::
@@ -507,7 +507,7 @@ The following subsections describe the PKN and KGD models.
 Section \ref{sec:StressLogs} discusses the determination of fracture height.
 
 :::{figure-md} fig:2DFracModels
-<img src="../mynewbook/figures/9B-8.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-8.svg" alt="figurecontent" width="600px">
 
 Pseudo-2D geometric models used to model propagation of planar bi-wing fractures.
 :::
@@ -521,7 +521,7 @@ In addition the model assumes linear isotropic elasticity, negligible fracture t
 The solution consists in combining the equations seen in all the processes mentioned in Section \ref{sec:CoupledFracProblem}.
 
 :::{figure-md} fig:PKN
-<img src="../mynewbook/figures/9B-7.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-7.svg" alt="figurecontent" width="600px">
 
 Geometry of the PKN model (adapted from Adachi et al. [2007]). The gray plane represents the plane-strain assumption. PKN model is good for long fractures $x_f > h_f$.
 :::
@@ -622,7 +622,7 @@ In addition the model assumes linear isotropic elasticity, negligible fracture t
 The solution consists in combining the equations seen in all the processes mentioned in Section \ref{sec:CoupledFracProblem}.
 
 :::{figure-md} fig:KGD
-<img src="../mynewbook/figures/9B-23.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-23.svg" alt="figurecontent" width="600px">
 
 Geometry of the KGD model (adapted from Adachi et al. [2007]). The plane-strain assumption is a horizontal plane (i.e., fracture width is independent of the vertical coordinate). KGD model is good for short fractures $x_f < h_f$.
 :::
@@ -677,7 +677,7 @@ Fractures will preferentially grow towards regions of low stress and may stop at
 The fracture height $h_f$ is approximately the distance between the fracture barriers.
 
 :::{figure-md} fig:FracBarriers
-<img src="../mynewbook/figures/9B-12.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-12.svg" alt="figurecontent" width="600px">
 
 Example of fracture containment as a result of mechanical stratigraphy: (top) without stress contrast and (bottom) with stress contrast and determination of fracture heigth $h_f$. Inset figures from Oilfield review - Brady et. al 1992.
 :::
@@ -711,7 +711,7 @@ The workflow is the following (See {numref}`fig:StressLogWF`):
 5. Utilize Eqs. \ref{eq:tectonicstrains} to calculate $S_{Hmax}$ and $S_{hmin}$ using a known tectonic strains $\varepsilon_{Hmax}$ and $\varepsilon_{hmin}$, and the static plane- strain modulus as a function of depth $E'_{sta}$. The result is what is known as a "stress log".
 
 :::{figure-md} fig:StressLogWF
-<img src="../mynewbook/figures/9-StressLogWF.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-StressLogWF.svg" alt="figurecontent" width="600px">
 
 Simplified workflow to calculate a stress log from wellbore logging data, field tests, and laboratory tests. The stress log permits identifying variation of horizontal stresses with depth and potential hydraulic fracture barriers.
 :::
@@ -724,13 +724,13 @@ Other measurements such as fracture tests and breakout widths along the wellbore
 Notice that the fracture avoids high stress regions, grows towards regions of low stress, and preferentially grows in regions of local stress minima.
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/9B-13.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/9B-13.svg}}
 %\caption{Stress log example from Adachi et al. [2007].}
 %\label{fig:lect-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F
 
 :::{figure-md} fig:StressLogExample
-<img src="../mynewbook/figures/9-StressLogExample.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-StressLogExample.svg" alt="figurecontent" width="600px">
 
 Stress log example and fracture width from Adachi et al. [2007]. The fracture is not a simple 3D surface. Fracture width and length vary with depth. The fracture grows preferentially in at depths were minimum principal stress presents local minima.
 :::
@@ -753,7 +753,7 @@ Either for normal faulting or strike-slip regimes (and assuming $S_v$ is a princ
 - stimulation will result in multiple fractures perpendicular to a horizontal wellbore drilled in the direction of $S_{hmin}$. 
 
 :::{figure-md} fig:HzWells
-<img src="../mynewbook/figures/9B-15.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-15.svg" alt="figurecontent" width="600px">
 
 Ideal hydraulic fracture geometry in horizontal wellbores depending on the direction of the wellbore with respect to the direction of least principal stress $S_3$.
 :::
@@ -809,7 +809,7 @@ This is Sneddon's solution for stresses around an elliptical crack in plane-stra
 A net-pressure $p_{net}$ higher than the difference between the differential stress $S_2-S_3$ ($S_2$ in direction $y$ and $S_3$ in direction $x$) can make the principal stresses change directions so that $S_3$ may change to direction $y$ in the vicinity of the fracture.
 
 :::{figure-md} fig:Sneddon
-<img src="../mynewbook/figures/9B-16.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-16.svg" alt="figurecontent" width="600px">
 
 Fracture interference \hl{[Make your own]}.
 :::
@@ -831,7 +831,7 @@ Hence, stress rotation occurs when fractures are placed too close.
 In this particular example $l_f < h_f$ results in non-planar fractures that do not extend to the desired fracture direction and length as expected.  
 
 :::{figure-md} fig:FracInterference
-<img src="../mynewbook/figures/9-FracInterference.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-FracInterference.svg" alt="figurecontent" width="600px">
 
 Fracture interference example for consecutive fracturing. Example for Barnett Shale, Depth = 7,000 ft, $S_{Hmax}$ = 6,400 psi, $S_{hmin}$ = 6300 psi, Pay zone 300ft ($=h_f$), fracture width = 4 mm ($p_{net} > 150 psi$) [after Roussel and Sharma, 2011 - SPE 146104]. (a) Negligible fracture interference with $l_f =$ 400 ft. (b) Significant fracture interference with $l_f =$ 250 ft.
 :::
@@ -843,7 +843,7 @@ This is called a ``fracture hit''.
 Optimizing wellbore spacing, stage separation and sequencing is critically important to maximize the NPV of multistage fracturing completion work.
 
 :::{figure-md} fig:ZipperFrac
-<img src="../mynewbook/figures/9B-20.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-20.svg" alt="figurecontent" width="600px">
 
 Zipper fracturing example [after Roussel and Sharma, 2011 - SPE 146104]
 :::
@@ -878,7 +878,7 @@ Modern monitoring tools permit observing that the rock fails in shear around hyd
 Hence, hydraulic fracturing seems to create (or re-activate) other fractures in addition to the main hydraulic fracture ({numref}`fig:FracBranching`).
 
 :::{figure-md} fig:FracBranching
-<img src="../mynewbook/figures/9B-21.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-21.svg" alt="figurecontent" width="600px">
 
 Fracture branching idealization.
 :::
@@ -944,13 +944,13 @@ Example of hydraulic fractures observed in cores retrieved from hydraulically fr
 ## 7.5 Practical aspects of hydraulic fracturing
 
 :::{figure-md} fig:9b9
-<img src="../mynewbook/figures/9B-9.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-9.svg" alt="figurecontent" width="600px">
 
 Schematic of field implementation.
 :::
 
 :::{figure-md} fig:Proppant
-<img src="../mynewbook/figures/9B-10.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9B-10.svg" alt="figurecontent" width="600px">
 
 Example of pumping and proppant schedule.
 :::
@@ -974,7 +974,7 @@ To keep in mind:
 	4. What is the density of the drilling mud?		
 
 :::{figure-md} fig:Problem71
-<img src="../mynewbook/figures/9-LOT-problem.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/9-LOT-problem.svg" alt="figurecontent" width="600px">
 
 Leak-Off Test problem.
 :::

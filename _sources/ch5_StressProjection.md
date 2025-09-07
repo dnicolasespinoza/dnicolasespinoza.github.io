@@ -19,7 +19,7 @@ Faults are important in energy geomechanics because they limit the magnitude of 
 A map of faults and rock units in Texas is available [here](https://txpub.usgs.gov/txgeology/).
 
 :::{figure-md} fig:FaultsOutcrop
-<img src="../mynewbook/figures/6-2.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-2.svg" alt="figurecontent" width="600px">
 
 Examples of faults as seen in outcrops.
 :::
@@ -40,7 +40,7 @@ An anomaly of electrical resistivity or ultrasonic P-wave velocity facilitates r
 The reconstruction of this image ({numref}`fig:FracWellImaging`-b) helps measure fracture orientation (strike and dip - {numref}`fig:FracWellImaging`-c).
 
 :::{figure-md} fig:FracWellImaging
-<img src="../mynewbook/figures/6-8.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-8.svg" alt="figurecontent" width="600px">
 
 Fracture mapping in wellbores. \hl{[make your own]}
 :::
@@ -94,7 +94,7 @@ For example, the plane in {numref}`fig:StrikeExample` dips about 60$^{\circ}$SE,
 [This interactive map](https://webapps.usgs.gov/txgeology/) shows the strike and dip of major faults in Texas. 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-6.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-6.svg}}
 %\caption{Dip convention.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -136,7 +136,7 @@ Geological map of the North Sea highlighting the strike of normal faults around 
 Strike and dip of sedimentary strata can be reported in geological maps as shown in {numref}`fig:StrikeDipMap`.  
 
 :::{figure-md} fig:StrikeDipMap
-<img src="../mynewbook/figures/6-7.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-7.svg" alt="figurecontent" width="600px">
 
 Strike and dip in geological maps.
 :::
@@ -178,7 +178,7 @@ For typical friction coefficients the coefficient $q$ varies from 3 to 7. This m
 This ratio is usually called "(effective) stress anisotropy". 
 
 :::{figure-md} fig:StrengthFaults
-<img src="../mynewbook/figures/6-20.pdf" alt="figurecontent" width="400px">
+<img src="../mynewbook/figures/6-20.svg" alt="figurecontent" width="400px">
 
 Limits on effective principal stresses.
 :::
@@ -224,7 +224,7 @@ The blocks move along the direction of $S_v$ and do work against $S_{hmin}$.
 At any point in the fault, the block above the fault is called the "hanging-wall" and the block below is the "footwall" ({numref}`fig:NormalFault`). 
 
 :::{figure-md} fig:NormalFault
-<img src="../mynewbook/figures/6-12.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-12.svg" alt="figurecontent" width="600px">
 
 Single normal fault.
 :::
@@ -235,7 +235,7 @@ The block that moves down in between two normal conjugate faults is termed "grab
 These geological structures occur frequently in hydrocarbon systems with structural fault traps.
 
 :::{figure-md} fig:GrabenHorst
-<img src="../mynewbook/figures/6-13.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-13.svg" alt="figurecontent" width="600px">
 
 Conjugate normal faults forming graben and horst structures.
 :::
@@ -263,7 +263,7 @@ The blocks move along the direction of $S_{Hmax}$ and do work against gravity $S
 As with normal faulting, the block above the fault is called the "hanging-wall" and the block below the "footwall".
 
 :::{figure-md} fig:ThrustFault
-<img src="../mynewbook/figures/6-14.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-14.svg" alt="figurecontent" width="600px">
 
 Thrust fault example
 :::
@@ -271,7 +271,7 @@ Thrust fault example
 A fault that may have been caused by paleo-stresses corresponding to a normal stress regime, but now moves according to in-situ stress conditions of a thrust fault stress environment is termed a reverse fault ({numref}`fig:ReverseFault`).
 
 :::{figure-md} fig:ReverseFault
-<img src="../mynewbook/figures/6-15.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-15.svg" alt="figurecontent" width="600px">
 
 Reverse fault example.
 :::
@@ -299,7 +299,7 @@ The fault is called strike-slip, because it slips in horizontal direction, in th
 Notice that oblique faults move with a combination of vertical and horizontal displacements.
 
 :::{figure-md} fig:StrikeSlipSchematics
-<img src="../mynewbook/figures/6-16.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-16.svg" alt="figurecontent" width="600px">
 
 Strike-slip fault example.
 :::
@@ -323,13 +323,13 @@ Changes of stress regime with depth are critical for defining the geometry of fl
 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-17.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-17.svg}}
 %\caption{.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
 :::{figure-md} fig:WorldStressMap
-<img src="../mynewbook/figures/6-18.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-18.svg" alt="figurecontent" width="600px">
 
 [World stress map](http://www.world-stress-map.org/). The figure above shows directions of maximum horizontal stresses based on various types of field measurements. The orientation of maximum horizontal stress varies with location and is strongly influenced by plate movement and imparted tectonic strains.
 :::
@@ -349,7 +349,7 @@ Such ideal conjugate pair of shear fractures would be located:
 The general solution is shown in {numref}`fig:IdealFaultsGeneralCase`.
 
 :::{figure-md} fig:IdealFaultsGeneralCase
-<img src="../mynewbook/figures/6-IdealFaultOrientationGC.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-IdealFaultOrientationGC.svg" alt="figurecontent" width="600px">
 
 Ideal orientation of a pair of conjugate shear fractures (faults) as a function of the orientation of principal stresses and the friction angle.
 :::
@@ -381,7 +381,7 @@ First, recognize the planes of $S_1$ and $S_3$ and their orientations with respe
 The plane of $S_1$ in this case is a horizontal plane ($S_v$ plane, a principal stress) and the plane of $S_3$ is a vertical plane perpendicular to $S_{hmin}$.
 
 :::{figure-md} fig:Ex5-1
-<img src="../mynewbook/figures/6-IdealFracP1.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-IdealFracP1.svg" alt="figurecontent" width="600px">
 
 Example 5.1 solution.
 :::
@@ -411,7 +411,7 @@ First, recognize the planes of $S_1$ and $S_3$ and their orientations with respe
 The plane of $S_1$ in this case is a vertical plane ($S_{Hmax}$ plane) and the plane of $S_3$ is another vertical plane perpendicular to $S_{hmin}$.
 
 :::{figure-md} fig:Ex5-2
-<img src="../mynewbook/figures/6-IdealFracP2.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-IdealFracP2.svg" alt="figurecontent" width="600px">
 
 Example 5.2 solution.
 :::
@@ -437,7 +437,7 @@ The second part discusses the tensor method, which requires the definition of th
 The tensor method can be easily implemented in a computer script but is laborious to work out manually.	
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-29.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-29.svg}}
 %\caption{Methods for stress resolution or projection on a plane}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -458,7 +458,7 @@ Let's consider solutions along each circle in {numref}`fig:3DMohrCircle`.
 3. The red circle (center C$_3$) represents the possible state of stresses that result as a combination of $\sigma_{Hmax}$ and $\sigma_{hmin}$. The shear stress $\tau$ and normal effective stress $\sigma_n$ of any plane in between the planes of $\sigma_{Hmax}$ and $\sigma_{hmin}$ and colinear with $\sigma_{v}$ can be found through the angle $\beta_3$ measured from $\sigma_{Hmax}$	
 
 :::{figure-md} fig:3DMohrCircle
-<img src="../mynewbook/figures/6-3DMohrCircle.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-3DMohrCircle.svg" alt="figurecontent" width="600px">
 
 The 3D Mohr circle
 :::
@@ -476,7 +476,7 @@ SOLUTION
 
 
 :::{figure-md} fig:Ex5-3
-<img src="../mynewbook/figures/6-3DMohrCircleP1.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-3DMohrCircleP1.svg" alt="figurecontent" width="600px">
 
 Problem Ex. 5.3
 :::
@@ -505,7 +505,7 @@ Find the shear and normal effective stresses on a fault plane within the followi
 SOLUTION 
 
 :::{figure-md} fig:Ex5-4
-<img src="../mynewbook/figures/6-3DMohrCircleP2.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-3DMohrCircleP2.svg" alt="figurecontent" width="600px">
 
 Problem Ex. 5.4
 :::
@@ -535,7 +535,7 @@ The *first step* consists on defining the principal stress coordinate system and
 - The geographical coordinate system has bases $\underline{e}_1$ pointing in North direction, $\underline{e}_2$ pointing in East direction, and $\underline{e}_3$ pointing down in direction of increasing depth ({numref}`fig:PScsGcs`). We will refer this basis as the "NED" basis. The stress tensor is termed $\underset{=}{S}{}_G$ in this coordinate system.
 
 :::{figure-md} fig:PScsGcs
-<img src="../mynewbook/figures/6-32.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-32.svg" alt="figurecontent" width="600px">
 
 The stress tensor in principal directions and geographical coordinate systems.
 :::
@@ -545,13 +545,13 @@ This matrix depends on the projections of the elements of the new base on the ol
 Table \ref{table:RPGsummary} summarizes the meaning of $\alpha$, $\beta $, and $\gamma$ for cases in which vertical stress is a principal stress.
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-38.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-38.svg}}
 %\caption{}
 %\label{fig:RPGsummary}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
 
 :::{figure-md} fig:AnglesMatrixRPG
-<img src="../mynewbook/figures/6-33.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-33.svg" alt="figurecontent" width="600px">
 
 Transformation matrix from the principal directions to geographical coordinate system and corresponding angles.
 :::
@@ -606,7 +606,7 @@ Calculate $\underset{=}{S}{}_G$ in a normal faulting stress regime case ($S_1 = 
 SOLUTION 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-34.pdf}}
+%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-34.svg}}
 %\caption{Example for normal faulting stress regime and azimuth of $S_{hmin}$ N-S.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -689,7 +689,7 @@ Calculate $\underset{=}{S}{}_G$ in a strike-slip faulting stress regime case ($S
 SOLUTION
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-35.pdf}}
+%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-35.svg}}
 %\caption{Example for normal faulting stress regime and azimuth of $S_{hmin}$ N-S.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -771,7 +771,7 @@ Calculate $\underset{=}{S}{}_G$ in a reverse faulting stress regime case ($S_1 =
 SOLUTION 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-36.pdf}}
+%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-36.svg}}
 %\caption{Example for normal faulting stress regime and azimuth of $S_{hmin}$ N-S.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -854,7 +854,7 @@ Calculate $\underset{=}{S}{}_G$ in a strike-slip faulting stress regime case ($S
 SOLUTION
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-37.pdf}}
+%\centerline{\includegraphics[scale=0.55]{./Figures/split/6-37.svg}}
 %\caption{Example for normal faulting stress regime and azimuth of $S_{hmin}$ N-S.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -935,7 +935,7 @@ The coordinate system basis is comprised of $n_d$ (dip), $n_s$ (strike), and $n_
 The three vectors depend solely in two variables: $strike$ and $dip$ of the fault.  
 
 :::{figure-md} fig:dsn
-<img src="../mynewbook/figures/6-39.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-39.svg" alt="figurecontent" width="600px">
 
 Fault coordinate system as a function of strike and dip.
 :::
@@ -968,7 +968,7 @@ The shear stresses on the plane of the fault is aligned with $\underline{n}_d$ a
 The dot product is used in all these vector to vector multiplications. The geometrical meaning is the projection of one vector onto the other.
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-40.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-40.svg}}
 %\caption{Normal and shear stress on the fault plane.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -998,7 +998,7 @@ Calculate $t$, $S_n$, $\tau_d$, $\tau_s$, and $rake$ for a fault with strike 000
 SOLUTION 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-42.pdf}}
+%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-42.svg}}
 %%\caption{Example 1 - Variables in blue box are $\underline{t}$, $\sigma_n$, and $\tau$}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 %$\: \: \blacksquare$
@@ -1079,7 +1079,7 @@ Calculate $t$, $S_n$, $\tau_d$, $\tau_s$, and $rake$ for a fault with strike 060
 SOLUTION
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-43.pdf}}
+%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-43.svg}}
 %%\caption{Example 1 - Variables in blue box are $\underline{t}$, $\sigma_n$, and $\tau$}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 %$\: \: \blacksquare$ \newline
@@ -1160,8 +1160,8 @@ Calculate $t$, $S_n$, $\tau_d$, $\tau_s$, and $rake$ for conjugate faults with s
 SOLUTION 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-44.pdf}}
-%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-45.pdf}}
+%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-44.svg}}
+%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-45.svg}}
 %%\caption{Example 1 - Variables in blue box are $\underline{t}$, $\sigma_n$, and $\tau$}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 %$\: \: \blacksquare$ \newline
@@ -1263,7 +1263,7 @@ Calculate $t$, $S_n$, $\tau_d$, $\tau_s$, $rake$, and $\tau / \sigma_n$ for a fa
 SOLUTION
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-46.pdf}}
+%\centerline{\includegraphics[scale=0.60]{./Figures/split/6-46.svg}}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 %$\: \: \blacksquare$ \newline
 %\noindent\rule{16.5cm}{0.4pt} \newline
@@ -1379,7 +1379,7 @@ Shear fracture reactivation in multistage hydraulic fracturing evidenced by micr
 :::
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-67.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-67.svg}}
 %\caption{Effective normal and shear stress on fractures normalized by $S_v$ (\hl{There is a mistake in the figure: the x-axis should read $(S_n-P_p)/S_v$}). Critically stressed fractures (left) and non-critically stressed fractures(right).}
 %\label{fig:FracPermMohr}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -1396,13 +1396,13 @@ There are faults that may be more easily reactivated due to pore pressure change
 %nice examples below, but would be too much plagiarism
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-66.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-66.svg}}
 %\caption{Three examples of critically and non-critically oriented fractures plotted within the Mohr circle and with stereonets}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-68.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-68.svg}}
 %\caption{Examples of critically and non-critically oriented fractures mapped from wellbore imaging (tadpoles to the right of total stresses). $P_p/S_V$ indicate the magnitude of $P_p$ (for a particular $S_V$) to reactivate a fracture for a given orientation. Notice the red area is around the 60$^{\circ}$ dip with strike parallel to $S_{Hmax}$.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -1416,7 +1416,7 @@ High temperatures and high effective stresses at great depth favor ductile defor
 Low temperatures and low effective stresses in the near-surface favor brittle failure. 
 
 :::{figure-md} fig:BrittleCrust
-<img src="../mynewbook/figures/6-21.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-21.svg" alt="figurecontent" width="600px">
 
 Schematic of a section of the Earth's crust with brittle failure near surface and ductile deformation at depths greater than $\sim$ 16 km.
 :::
@@ -1426,7 +1426,7 @@ The frictional strength of faults limits the maximum magnitude of stresses impar
 Hence, horizontal stresses are proportional to tectonic strains in the elastic region, but their maximum value is limited by fault strength.
 
 :::{figure-md} fig:ShearStrengthLimit
-<img src="../mynewbook/figures/InSituStresses-ElastoPlastic.pdf" alt="figurecontent" width="400px">
+<img src="../mynewbook/figures/InSituStresses-ElastoPlastic.svg" alt="figurecontent" width="400px">
 
 Schematic of in-situ stress as a function of tectonic strains $\varepsilon_{tect}$ and failure strength. The frictional strength of faults controls stress once the elastic region is exceeded.
 :::
@@ -1468,7 +1468,7 @@ $\: \: \blacksquare$ \newline
 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-22.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-22.svg}}
 %\caption{Example 1: Lower bound on $S_{hmin}$ for normal faulting stress regime dictated by frictional equilibrium.}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
@@ -1514,7 +1514,7 @@ The bounding limits of minimum and maximum horizontal stress for a given vertica
 The colored lines represent the bounds for normal faulting stress regime (NF), strike-slip faulting stress regime (SS), and reverse faulting stress regime (RF).
 
 :::{figure-md} fig:StressPolygon
-<img src="../mynewbook/figures/6-24.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-24.svg" alt="figurecontent" width="600px">
 
 The limits of horizontal stresses based on frictional equilibrium can be conveniently plotted in a "stress polygon" plot.
 :::
@@ -1523,13 +1523,13 @@ For example, the state of stress for a place with a stress regime that fluctuate
 
 
 :::{figure-md} fig:StressPolygonNF-SS
-<img src="../mynewbook/figures/6-25.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-25.svg" alt="figurecontent" width="600px">
 
 Application example of the stress polygon. This particular place exhibits a hybrid stress regime NF and SS depending on depth and likely rock lithology.
 :::
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-26.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/6-26.svg}}
 %\caption{Application example of the stress polygon. This particular place exhibits a hybrid stress regime SS and R depending on depth and likely rock type.}
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -1559,7 +1559,7 @@ In water-flooding, pressure build-up is limited by the producer wells.
 In waste-water injection, the pressure build-up is controlled by the aquifer size, compressibility and compartmentalization.
 
 :::{figure-md} fig:lec6-X
-<img src="../mynewbook/figures/6-FaultReactivation.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/6-FaultReactivation.svg" alt="figurecontent" width="600px">
 
 Fault reactivation. Injection of fluids changes the pore pressure and lowers effective normal stress on faults increasing $\tau/\sigma_n$.
 :::
@@ -1587,7 +1587,7 @@ An undesired consequence of fault reactivation is the loss of hydrocarbon trappi
 The seismicity originates mostly from reactivation of faults below the reservoir formation in basement formations. The regional stress regime alternates between strike-slip and reverse (See {numref}`fig:USGSstressmap`).
 
 :::{figure-md} fig:DecaturMS
-<img src="../mynewbook/figures/DecaturCO2-MS.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/DecaturCO2-MS.svg" alt="figurecontent" width="600px">
 
 Fault reactivation observed through microseismicity due to CO$_2$ injection in a sandstone formation Bauer et al, 2016 - IJGGC. Notice the alignment of events that likely reveals fault strike. Significant microseismicity occurs as far as 0.6 miles away from the injector.
 :::
@@ -1610,7 +1610,7 @@ Fault reactivation observed through microseismicity due to CO$_2$ injection in a
 4. Find out the state of stress (regime and direction of stresses) that caused the faults mapped in the following stereonets:
 	
 :::{figure-md} fig:P5.4
-<img src="../mynewbook/figures/StereonetProblem.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/StereonetProblem.svg" alt="figurecontent" width="600px">
 
 Problem 4.
 :::

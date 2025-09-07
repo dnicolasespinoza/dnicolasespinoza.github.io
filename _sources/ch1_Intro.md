@@ -16,7 +16,7 @@ The following sections review quickly the disciplines involved in Energy Geomech
 Similar applications are also relevant to other energy fields, such as deep geothermal energy.
 
 :::{figure-md} fig_intro-appgeomech
-<img src="../mynewbook/figures/1-IntroGeomechNew.pdf" alt="figurecontent" width="900px">
+<img src="../mynewbook/figures/1-IntroGeomechNew.svg" alt="figurecontent" width="900px">
 
 Summary of applications of geomechanics in the energy industry.
 :::
@@ -42,7 +42,7 @@ For example, a region near convergent tectonic plates is expected to have higher
 The determination of local stresses are critically important to Energy Geomechanics because they affect wellbore stability, fault reactivation, and propagation of hydraulic fractures.
  
 :::{figure-md} fig_intro-stressmap
-<img src="../mynewbook/figures/1-2.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/1-2.svg" alt="figurecontent" width="600px">
 
 Plate tectonics influence directly the distribution of stresses in the Earth's lithosphere (Image credit: Zoback [2010]).
 :::
@@ -55,7 +55,7 @@ Hydrocarbon accumulations take advantage of folds and low permeability faults.
 The deformational behavior of rocks is crucial in defining the variation of rock permeability with changes of stresses.  
 
 :::{figure-md} fig_intro-FaultFoldSeismic
-<img src="../mynewbook/figures/1-3.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/1-3.svg" alt="figurecontent" width="600px">
 
 Tectonic stresses result in folding and faulting of sedimentary layers. The image shows an example from a seismic survey cross-section.
 :::
@@ -87,7 +87,7 @@ Today's wellbores are kilometers-long and may deviate horizontally  several kilo
 Optimal wellbore design and drilling requires knowing various properties of the rocks including the strength of rocks being drilled.
 
 :::{figure-md} fig_intro-wellbores
-<img src="../mynewbook/figures/1-4.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/1-4.svg" alt="figurecontent" width="600px">
 
 From the beginning of drilling to today's ultra-deepwater drilling.
 :::
@@ -101,7 +101,7 @@ Hydraulic fracturing has been used in the petroleum industry since $\sim$1950.
 Improved completion methods take advantage of horizontal wellbores, proppants, acid solutions, and a variety of chemicals to enhance reservoir drainage.
  
 :::{figure-md} lec1-6
-<img src="../mynewbook/figures/1-6.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/1-6.svg" alt="figurecontent" width="600px">
 
 Pictorial representation of multistage hydraulic fracturing in a horizontal well.
 :::
@@ -114,7 +114,7 @@ High increases of stress on the rock skeleton lead to reservoir compaction, redu
 Increases of the magnitude of stresses and stress anisotropy may also cause rock failure near the wellbore and produce fine solid particles that may plug and damage pumps and surface facilities.
 
 :::{figure-md} lec1-5
-<img src="../mynewbook/figures/1-5.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/1-5.svg" alt="figurecontent" width="600px">
 
 Reservoir depletion and pore pressure change.
 :::
@@ -158,7 +158,7 @@ Selected types of deep geothermal systems for heat mining.
 %Large magnitude events usually come from fault reactivation in the brittle crystalline basement rocks.
 
 %\begin{figure}[h] % F F F F F F F F F F F F F F F F F F F F F F F 
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/1-7.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/1-7.svg}}
 %\caption{Induced seismicity}
 %\label{fig:lec1-6}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F F F F
@@ -174,9 +174,9 @@ Selected types of deep geothermal systems for heat mining.
 	4. Out of tight oil for 2023, what percentage comes from TX/NM according to EIA [US tight oil production](https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from-in-depth.php)?
 	5. How many times did tight oil production grow from 2023 to 2007 according to EIA [US tight oil production](https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from-in-depth.php)?
 	
-2. What is the concept of "decarbonizing the fossil fuel energy industry". What are the different types of CO$_2$ geological storage according to the target storage formation?
+2. What is the concept of "decarbonizing the fossil fuel energy industry"?. What are the different types of CO$_2$ geological storage according to the target storage formation?
 
-3. What is the heat flow rate of the Earth's molten core (provide answer in TeraWatts)? What is an enhanced geothermal system?
+3. What is the heat flow rate of the Earth's molten core (provide answer in TeraWatts)? What is an enhanced geothermal system? (Alternative question: Read [Geothermal Basics](https://www.energy.gov/eere/geothermal/geothermal-basics), watch the video Geothermal Energy 101 and answer "What is the U.S. confirmed potential of geothermal electricity-generating capacity by 2050?")
 
 Note: you may use this [online plot digitizer ](https://apps.automeris.io/wpd4/) to digitize plots.
 

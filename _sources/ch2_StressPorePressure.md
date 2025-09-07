@@ -33,7 +33,7 @@ Stress depends on the direction in which is measured, while pressure is the same
 The directionality of stress is a result of the solid capacity to resist shear stresses.	
 	
 :::{figure-md} fig_vertstress-bar
-<img src="../mynewbook/figures/2-2.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-2.svg" alt="figurecontent" width="600px">
 
 1D stress equilibrium.
 :::
@@ -53,7 +53,7 @@ Hence,
 ```
 
 :::{figure-md} fig_vertstress-poroussolid
-<img src="../mynewbook/figures/2-REVoverburden.pdf" alt="figurecontent" width="300px">
+<img src="../mynewbook/figures/2-REVoverburden.svg" alt="figurecontent" width="300px">
 
 Vertical total stress gradient.
 :::
@@ -146,7 +146,7 @@ The total vertical stress gradient as a function of depth $z$ is calculated with
 Both (hydrostatic) $P_p$ and $S_v$ increase linearly with depth $z$ with constant mass densities ({numref}`fig_ch2-onshorestress`).
 
 :::{figure-md} fig_ch2-onshorestress
-<img src="../mynewbook/figures/2-OnshorePpSv.pdf" alt="figurecontent" width="400px">
+<img src="../mynewbook/figures/2-OnshorePpSv.svg" alt="figurecontent" width="400px">
 
 Onshore pressure and vertical stress gradient. $P_p$: pore pressure, $S_v$: vertical total stress, $\sigma_v$: effective vertical stress.
 :::
@@ -165,7 +165,7 @@ We will see later that effective stress is a very important quantity and dictate
 You will see this example in class how I stand on a "brick" of ground coffee thanks to Terzaghi's effective stress and how effective stress strengthens the coffee pack due to friction forces.
 
 :::{figure-md} fig_coffee-effstress
-<img src="../mynewbook/figures/2-20.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-20.svg" alt="figurecontent" width="600px">
 
 Example of Terzaghi's effective stress with ground coffee.
 :::
@@ -174,7 +174,7 @@ Similar to the membrane effect conceptualized in {numref}`fig_coffee-effstress`,
 This is a result of the sharp pressure gradient between the mud pressure in the well $P_w$ and the pore pressure $P_p$ in the formation ({numref}`fig_mudcake`).
 
 :::{figure-md} fig_mudcake
-<img src="../mynewbook/figures/2-mudcake.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-mudcake.svg" alt="figurecontent" width="600px">
 
 Schematic of mudcake effect to provide effective stress on the wall of a wellbore.
 :::
@@ -231,7 +231,7 @@ Stresses start to develop at the seafloor beyond depth $z > z_w$ ({numref}`fig_O
 ```
 
 :::{figure-md} fig_OffshorePpSv
-<img src="../mynewbook/figures/2-OffshorePpSv.pdf" alt="figurecontent" width="400px">
+<img src="../mynewbook/figures/2-OffshorePpSv.svg" alt="figurecontent" width="400px">
 
 Offshore pressure and total stress gradient.
 :::
@@ -248,7 +248,7 @@ This makes sense because otherwise an octopus would not be able to dig in sand a
 We will see later that stress is a "tensor" (with magnitude  that depends on the orientation of the plane in which it is measured) and that pore pressure affects effective stresses in the normal directions. 
 
 :::{figure-md} fig_lec2-19
-<img src="../mynewbook/figures/2-19.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-19.svg" alt="figurecontent" width="600px">
 
 Crab hanging on the seafloor.
 :::
@@ -305,7 +305,7 @@ This difference can be significant in offshore cases.
 In deviated wellbores, you should also take into account wellbore deviation and compute TVD from MD and well trajectory. 
 
 :::{figure-md} fig_ch2-Svgeneralcase
-<img src="../mynewbook/figures/2-MD_TVD.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-MD_TVD.svg" alt="figurecontent" width="600px">
 
 Variables involved in the calculation of vertical stress in the general case.
 :::
@@ -350,7 +350,7 @@ See Figure \ref{fig:ch2-SvNSexample}.
 You may use the [lasio library](https://pypi.org/project/lasio/) to open LAS files with python or write your own code to read the text files .LAS and .DEV. 
 
 :::{figure-md} fig_ch2-SvNSexample
-<img src="../mynewbook/figures/2-VertStress_TVDSS.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-VertStress_TVDSS.svg" alt="figurecontent" width="600px">
 
 Example of calculation of vertical stress for a general case. This is an offshore example in the North Sea with seafloor at 104 m of depth. The calculation assumes an average bulk mass density of 2 g/cc between the seafloor and ~1000 m TVDSS (True Vertical Depth SubSea).
 :::
@@ -374,7 +374,7 @@ Pore pressure below $z \sim 11,000$ ft is quite different from hydrostatic!
 
 
 :::{figure-md} fig_lec2-9
-<img src="../mynewbook/figures/2-9.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-9.svg" alt="figurecontent" width="600px">
 
 Overpressure example in the Monte Cristo field (Image credit: [Zoback 2013]).
 :::
@@ -411,7 +411,7 @@ where $h$ is measured from the hydrocarbon-brine contact line upwards.
 A connected pore structure is needed throughout the buoyant phase.
 
 :::{figure-md} fig_lec2-10
-<img src="../mynewbook/figures/2-Buoyancy.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-Buoyancy.svg" alt="figurecontent" width="600px">
 
 Mechanisms of overpressure: Hydrocarbon column.
 :::
@@ -421,7 +421,7 @@ Third, clay diagenesis can expell water molecules. For example, when montmorillo
 Fourth, hydrocarbon generation also induces overpressure. With hydrocarbon generation, the original organic compounds transform in another phase which occupies more volume at the same pressure conditions. Overpressure in organic-rich shales is a good indicator of hydrocarbon presence.	
 
 :::{figure-md} fig_lec2-11
-<img src="../mynewbook/figures/2-11.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-11.svg" alt="figurecontent" width="600px">
 
 Other mechanisms of overpressure.
 :::
@@ -438,7 +438,7 @@ Pore pressure increases when a rock/sediment is compressed (such that the pore v
 3. (RIGHT) The sediment takes all the load $W$ so now the vertical effective stress on the top is $\sigma_v = W/A$. The fluid does not support the weight $W$ anymore $\Delta P = 0$. The time it takes to arrive to this scenario depends on the tube and valve hydraulic conductivity and the overpressure generated by the weight $W$.
 
 :::{figure-md} fig_lec2-12
-<img src="../mynewbook/figures/2-12.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-12.svg" alt="figurecontent" width="600px">
 
 Schematic of the consolidation problem.
 :::
@@ -449,7 +449,7 @@ Water cannot escape from the sides either.
 Water can only escape from the top.
 
 :::{figure-md} fig_lec2-13
-<img src="../mynewbook/figures/2-13.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-13.svg" alt="figurecontent" width="600px">
 
 Disequilibrium compaction: initial conditions.
 :::
@@ -470,7 +470,7 @@ The one-dimensional equation to this problem is
 ```
 
 :::{figure-md} fig_lec2-14
-<img src="../mynewbook/figures/2-14.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-14.svg" alt="figurecontent" width="600px">
 
 Disequilibrium compaction: load application.
 :::
@@ -500,7 +500,7 @@ SOLUTION
 %-------------------------------------------------
 
 :::{figure-md} fig_lec2-15
-<img src="../mynewbook/figures/2-15.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-15.svg" alt="figurecontent" width="600px">
 
 Disequilibrium compaction: Characteristic time.
 :::
@@ -524,7 +524,7 @@ Under hydrostatic pore pressure conditions, vertical effective stress will alway
 However, in the presence of overpressure, effective stress may increase less steeply or even decrease with depth. Hence, mudrocks with porosity higher than the porosity expected at that depth (in hydrostatic conditions) indicate overpressured sediment intervals ({numref}`fig_overpressure`).
 
 :::{figure-md} fig_lec2-16
-<img src="../mynewbook/figures/2-16.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-16.svg" alt="figurecontent" width="600px">
 
 Example of overpressure in the Gulf of Mexico.
 :::
@@ -592,7 +592,7 @@ In compartmentalized reservoirs with poor water recharge drive, pore pressure ma
 Reservoir depletion usually brings along lower total horizontal stresses which lower the fracture gradient and make drilling problematic because of decreased difficulty to create open-mode fractures.
 
 :::{figure-md} fig_lec2-17
-<img src="../mynewbook/figures/2-17.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-17.svg" alt="figurecontent" width="600px">
 
 Example of decreased fracture pressure (between 5,100 ft and 5,400 ft) due to depletion of sandy intervals.
 :::
@@ -613,7 +613,7 @@ If vertical stress is a principal stress, then the two other principal stresses 
 The maximum principal stress in the horizontal case is $S_{Hmax}$ and the minimum horizontal stress is $S_{hmin}$, such that $S_{Hmax} \geq S_{hmin}$ ({numref}`fig_HzStresses`).
 
 :::{figure-md} fig_HzStresses
-<img src="../mynewbook/figures/3-20.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/3-20.svg" alt="figurecontent" width="600px">
 
 The stress tensor when vertical stress is a principal stress.
 :::
@@ -633,7 +633,7 @@ Shear stresses develop at transform boundaries.
 Other factors include topography, crustal thickening/thinning, mass density anomalies, buoyancy forces, and lithospheric flexure (similar effect of a loaded slab).
 
 :::{figure-md} fig_lec3-16
-<img src="../mynewbook/figures/3-16.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/3-16.svg" alt="figurecontent" width="600px">
 
 Example of a transform plate boundary.
 :::
@@ -642,7 +642,7 @@ The direction of maximum horizontal stress varies with location around the Earth
 Tectonic plate movements are the main contributors the affect the direction of maximum horizontal stress (See {numref}`fig_HzStressGlobalMap`). 
 
 :::{figure-md} fig_HzStressGlobalMap
-<img src="../mynewbook/figures/3-18.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/3-18.svg" alt="figurecontent" width="600px">
 
 Horizontal stress map. The direction of maximum horizontal stress is affected by tectonic plate movement. The maximum principal stress is horizontal in compressional and strike-slip stress faulting regimes. The minimum principal stress is horizontal in extensional domains.
 :::
@@ -663,7 +663,7 @@ Magmatic and sedimentary dikes are natural hydraulic fractures. They form when a
 Dikes, like any other hydraulic fracture, open up preferentially against the least principal stress $S_3$.
 
 :::{figure-md} fig_lec3-2
-<img src="../mynewbook/figures/3-2.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/3-2.svg" alt="figurecontent" width="600px">
 
 Example of magmatic dike/dyke: large-scale hydraulic fractures.
 :::
@@ -727,7 +727,7 @@ Hydraulic fractures in this environment would be vertical (perpendicular to $S_{
 Most hydrocarbon-producing basins in the USA are in normal faulting stress regimes.		
 
 :::{figure-md} fig_lec3-22
-<img src="../mynewbook/figures/2-StressProfiles.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-StressProfiles.svg" alt="figurecontent" width="600px">
 
 Stress profiles schematic examples. Created with [binder](https://mybinder.org/v2/gh/dnicolasespinoza/GeomechanicsJupyter/master?filepath=HorizontalStresses_Widget.ipynb) based on linear elasticity, constant Young's modulus and tectonic strains increasing linearly with depth.
 :::
@@ -740,7 +740,7 @@ Hydraulic fractures in this environment are vertical and perpendicular to $S_{hm
 Some giant oil fields in the middle East are in strike-slip stress regime.
 
 :::{figure-md} fig_lec3-23
-<img src="../mynewbook/figures/3-23.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/3-23.svg" alt="figurecontent" width="600px">
 
 Strike slip faulting schematic examples.
 :::
@@ -753,7 +753,7 @@ Hydraulic fractures in this environment are horizontal! (perpendicular to $S_v$ 
 Some unconventional fields in Argentina and Australia are in reverse faulting stress-regime at specific depths.
 
 %\begin{figure}[h] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/3-24.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/3-24.svg}}
 %\caption{Reverse faulting schematic examples}
 %\label{fig:lec3-24}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -776,7 +776,7 @@ Thus, hydraulic fractures would be perpendicular to the least principal stress a
 As a result, the shape of a balloon inflated under several layers of sediment would be a flat ellipsoid with smallest axis in the direction of $S_3$.
 
 :::{figure-md} fig_balloon
-<img src="../mynewbook/figures/2-HFideal.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-HFideal.svg" alt="figurecontent" width="600px">
 
 Ideal orientation of open-mode fractures.
 :::
@@ -806,7 +806,7 @@ As a result, the (least) minimum horizontal stress is oriented 30$^{\circ}$ from
 Consequently, hydraulic fractures are expected to be vertical  and the preferential orientation of horizontal wellbores for multistage hydraulic fracturing is either 30$^{\circ}$ from the North counter-clockwise in direction NW or 120$^{\circ}$ from the North clockwise in direction SE.
 
 :::{figure-md} fig_ExBarnett
-<img src="../mynewbook/figures/2-HF_hzwell_Barnett.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-HF_hzwell_Barnett.svg" alt="figurecontent" width="600px">
 
 Ideal orientation of horizontal wellbores in the Barnett shale.
 :::
@@ -895,4 +895,5 @@ Make sure to acknowledge any copying and pasting.
 ## 2.6 Further reading and references
 
 - Fjaer, E., Holt, R.M., Raaen, A.M., Risnes, R. and Horsrud, P., 2008. Petroleum related rock mechanics (Vol. 53). Elsevier. (Chapter 3)
+- Flemings, P. B. (2021). A concise guide to geopressure: Origin, prediction, and applications. Cambridge University Press.
 - Zoback, M.D., 2010. Reservoir geomechanics. Cambridge University Press. (Chapter 1 and 2). (test)

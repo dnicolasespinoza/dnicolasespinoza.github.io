@@ -21,7 +21,7 @@ Matrix-supported carbonates form a continuous mineral matrix ({numref}`fig:RockM
 Failure usually involves cracking of the solid matrix.
 
 :::{figure-md} fig:RockMicrostructure
-<img src="../mynewbook/figures/5A-3.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-3.svg" alt="figurecontent" width="600px">
 
 Influence of rock microstructure on failure mechanisms.
 :::
@@ -37,7 +37,7 @@ For example, hydraulic fracturing tends to reactivate neighboring fractures in s
 Recognizing the appropriate length-scale is extremely important to use adequately the rock strength measured in the laboratory and simple mechanical formulations such as linear elasticity.		
 
 :::{figure-md} fig:Failure-LengthScales
-<img src="../mynewbook/figures/5A-4.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-4.svg" alt="figurecontent" width="600px">
 
 Rock failure properties are a function of process-zone size and length scale.
 :::
@@ -48,7 +48,7 @@ Rock yield (plastic deformation) and failure can happen due to tensile stresses,
 The following sections explore these types of rock damage separately.
 
 :::{figure-md} fig:lec5A-X
-<img src="../mynewbook/figures/5A-5.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-5.svg" alt="figurecontent" width="600px">
 
 Overview of rock failure modes: tension, shear, and compression.
 :::
@@ -66,7 +66,7 @@ Metals are usually "ductile" and deform after reaching a peak stress.
 When unstressed, the bar in the example figure does not recover its original length but remains with "plastic deformation".
 
 :::{figure-md} fig:TensionSteel
-<img src="../mynewbook/figures/5A-6.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-6.svg" alt="figurecontent" width="600px">
 
 Tensile strength of a ductile metal bar.
 :::
@@ -78,7 +78,7 @@ However, rocks are not easy to "machine" in general, and thus this test becomes 
 Rock failure in simple tension usually displays "brittle" failure, no plastic strains follow after reaching tensile strength. It just breaks quickly.	
 
 :::{figure-md} fig:DirectTensionRock
-<img src="../mynewbook/figures/5A-7.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-7.svg" alt="figurecontent" width="600px">
 
 Direct tension test on brittle rock. Correct interpretation depends on rock micro-structure and possible existence of pre-existent flaws.
 :::
@@ -99,7 +99,7 @@ where $P_B$ is the peak compressive force, $L$ is the specimen length, and $R$ i
 Notice that you have a combined state of stress with compression in the direction of the compressive load and tension in the direction perpendicular to the load along the diameter. 
 
 :::{figure-md} fig:BrazilianTest
-<img src="../mynewbook/figures/4-TensileStrength.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-TensileStrength.svg" alt="figurecontent" width="600px">
 
 The Brazilian test: sample geometry and example.
 :::
@@ -139,7 +139,7 @@ Uncemented sediments -very common in sedimentary basins- have zero tensile stren
 {numref}`fig:TensStrengthSummary` summarizes typical values of tensile strength for rocks.
 
 :::{figure-md} fig:TensStrengthSummary
-<img src="../mynewbook/figures/4-TensStrengthSummary.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-TensStrengthSummary.svg" alt="figurecontent" width="600px">
 
 Values of tensile strength in a set of cemented rocks measured with direct tension tests (DTS) and Brazilian tension tests (BTS)[Data from *Geotech. Geol. Engineering* (2014), 32].
 The value of the igneous set is an average of granite, latite, meta-pegmatite and peridotite.
@@ -159,7 +159,7 @@ Hence, if the normal force $F_N=0$, then $F_T = 0$.
 The frictional force $F_T$ increases linearly with the value of the normal force $F_N$.	
 
 :::{figure-md} fig:FrictionBlock
-<img src="../mynewbook/figures/5-Friction.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5-Friction.svg" alt="figurecontent" width="600px">
 
 Friction forces and the friction coefficient. (a,b) Frictional force required to move a solid box. (c) Extension to granular media.
 :::
@@ -169,7 +169,7 @@ The maximum shear stress $\tau$ in uncemented sands is proportional to the norma
 The sand is at shear failure when the shear line $\tau = \mu_i \sigma_n$ intercects the state of stress represented by the Mohr circle (Check this online [Mohr's circle drawer](https://mechanicalc.com/calculators/mohrs-circle/)). 
 
 :::{figure-md} fig:SandStrength
-<img src="../mynewbook/figures/5A-14.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-14.svg" alt="figurecontent" width="600px">
 
 Frictional strength of uncemented sediments.
 :::
@@ -191,7 +191,7 @@ We call $UCS$ (Unconfined Compression Strength) to the maximum compression stres
 Axisymmetric tests require rocks samples in which the length should be about twice the diameter to minimize shear end-effects (as in short samples) and buckling instabilities (as in long samples).
 
 :::{figure-md} fig:UCS
-<img src="../mynewbook/figures/5A-12.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-12.svg" alt="figurecontent" width="600px">
 
 Unconfined compression strength: schematic diagram, stress-strain plot and corresponding Mohr circle.
 :::
@@ -210,7 +210,7 @@ Hence, the maximum shear stress $\tau$ will be a function of both the rock cohes
 ```
 
 :::{figure-md} fig:CoulombFailure
-<img src="../mynewbook/figures/5A-13.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-13.svg" alt="figurecontent" width="600px">
 
 Shear strength: Coulomb failure criterion. The cylindrical rock sample bears a radial confining stress $\sigma_r$.
 :::
@@ -227,7 +227,7 @@ c) What is the ratio $\sigma_a / \sigma_r$ at failure?
 %Example
 
 :::{figure-md} 
-<img src="../mynewbook/figures/5A-15.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-15.svg" alt="figurecontent" width="600px">
 
 Problem figure.
 :::
@@ -237,7 +237,7 @@ SOLUTION
 a) The point in the Mohr circle with maximum ratio $\tau / \sigma_n$ is the one that touches the yield line, for which  $\tau / \sigma_n = \mu_i$
 
 :::{figure-md} 
-<img src="../mynewbook/figures/AngleFailurePlane.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/AngleFailurePlane.svg" alt="figurecontent" width="600px">
 
 Problem answer.
 :::
@@ -291,7 +291,7 @@ $UCS$ can also be expressed in terms of cohesive strength as
 ```
 
 :::{figure-md} fig:CoulombCriterionPS
-<img src="../mynewbook/figures/5A-16.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-16.svg" alt="figurecontent" width="600px">
 
 Equivalency of the Coulomb criterion in terms of shear and normal stresses and in terms of principal stresses.
 :::
@@ -299,7 +299,7 @@ Equivalency of the Coulomb criterion in terms of shear and normal stresses and i
 {numref}`fig:RockShearData` summarizes shear strength properties for various cemented rocks.
 
 :::{figure-md} fig:RockShearData
-<img src="../mynewbook/figures/4-ShearStrengthSummary.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-ShearStrengthSummary.svg" alt="figurecontent" width="600px">
 
 Average values of cohesive strength and internal friction angle for various types of rocks (original data from [Zoback, 2013])
 :::
@@ -387,7 +387,7 @@ At this point the rock is not elastic anymore and develops damage inside.
 Considerable damage often starts at 50\% to 70\% of the peak stress.
 
 :::{figure-md} fig:TriaxialCell
-<img src="../mynewbook/figures/Triaxial-Darley.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/Triaxial-Darley.svg" alt="figurecontent" width="600px">
 
 Triaxial testing. (a) Axisymmetric triaxial frame comprising a pressure vessel, fluid pumps and a reaction frame to apply axial load (not visible in figure). (b) Example results of 14 independent triaxial tests on Darley Dale sandstone as a function of total stresses and pore pressure. (c) Data from -b replotted as effective stresses. Rocks failure is explained through effective stresses, not through total stresses.
 :::
@@ -403,7 +403,7 @@ When effective stress goes over the yield stress ($\sigma'_p$ in {numref}`fig:Po
 High compression combined with shear can lead to grain crushing at shear and compaction bands resulting in permeability much lower than that of the original rock matrix.	
 
 :::{figure-md} fig:PoreCollapse
-<img src="../mynewbook/figures/5A-21.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5A-21.svg" alt="figurecontent" width="600px">
 
 Pore collapse under uniaxial strain condition with grain crushing. $\sigma'_p$  indicates the yield stress at which significant plastic strains happen if surpassed.
 :::
@@ -417,13 +417,13 @@ It would fail in shear if it touches the red line $\tau = S_0 + \mu_i \sigma_n$.
 Last, it would develop significant compressive plastic strains if it crosses the yield cap (blue line - as you may guess, there is also an equation for it!).	
 
 :::{figure-md} fig:YieldLocus
-<img src="../mynewbook/figures/5B-YieldLocus.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-YieldLocus.svg" alt="figurecontent" width="600px">
 
 Summary of basic rock failure modes.
 :::
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/5B-3.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/5B-3.svg}}
 %\caption{Tensile, shear, and compression yield limits}
 %\label{fig:lec5A-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -439,7 +439,7 @@ The videos in [this playlist](https://www.youtube.com/playlist?list=PLv0npDbE5HX
 A similar phenomenon applies to tensile strength. Planes of weakness can greatly reduce tensile strength for stresses applied in direction perpendicular to those planes of weakness.
 
 :::{figure-md} fig:StrengthAnisotropy
-<img src="../mynewbook/figures/5-StrengthAnisotropy.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5-StrengthAnisotropy.svg" alt="figurecontent" width="600px">
 
 Shear strength anisotropy example in which bedding planes are weaker than the rock layers. \hl{[add real data of shales]}
 :::
@@ -452,7 +452,7 @@ After a certain limit, termed yield stress, the rock experiences plastic irrecov
 Rocks may be still quite strong after reaching the yield stress or even the peak stress if they are able to sustain plastic strains.
 
 :::{figure-md} fig:ElastoPlastIntro
-<img src="../mynewbook/figures/5B-9.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-9.svg" alt="figurecontent" width="600px">
 
 Post-peak behavior: elastic and plastic strains.
 :::
@@ -471,7 +471,7 @@ There are several factors that affect brittleness, such as:
 6. Elastic properties: some carbonate rich shales have a good correlation of brittleness with the ratio $E/\nu$, where the carbonate mineral fraction contributes to high Young's modulus $E$ and low Poisson's ratio $\nu$.    
 
 :::{figure-md} fig:StrainHardSoft
-<img src="../mynewbook/figures/5B-10.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-10.svg" alt="figurecontent" width="600px">
 
 Brittleness as a function of confinement.
 :::
@@ -490,7 +490,7 @@ The increments (or reductions) of stress with plastic strain $\underset{=}{\vare
 Accounting for plastic strains is required in rocks with small elastic regions, and in large scale and long-term processes such as fault reactivation, evolution of sedimentary basins, and salt diapirism.
 
 :::{figure-md} fig:ElastoplasticityModes
-<img src="../mynewbook/figures/5B-11.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-11.svg" alt="figurecontent" width="600px">
 
 Elasto-plasticity: experimental data and idealized behavior.
 :::
@@ -506,7 +506,7 @@ Most rocks have some level of internal microfracturing or defects that act as fr
 Fractures propagate in three modes: opening, in-plane shear, and out-of-plane shear. 	 
 
 :::{figure-md} fig:FailureMechanisms
-<img src="../mynewbook/figures/5B-12.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-12.svg" alt="figurecontent" width="600px">
 
 Rock failure at the microscale: mechanisms behind rock failure.
 :::
@@ -515,7 +515,7 @@ Shear and tensile stresses amplify at fracture tips. Therefore fracture propagat
 The images in Fig. {numref}`fig:FracsTuffo` show the propagation of fractures after applying a vertical stress on Tuffo carbonate samples with a pre-existing crack (thick dark line in the middle).
 
 :::{figure-md} fig:FracsTuffo
-<img src="../mynewbook/figures/5B-13.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-13.svg" alt="figurecontent" width="600px">
 
 Microfracture propagation in cemented rock. Cracks promote stress concentration and intensification at tips. Failure initiates at crack tips. Propagating fractures may coalesce and make a bigger fracture.
 :::
@@ -523,7 +523,7 @@ Microfracture propagation in cemented rock. Cracks promote stress concentration 
 The coalescence of multiple microfractures can form a macrofracture that defines a macroscopic failure plane ({numref}`fig:MicroFracCoalescence`).
 
 :::{figure-md} fig:MicroFracCoalescence
-<img src="../mynewbook/figures/5B-14.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-14.svg" alt="figurecontent" width="600px">
 
 Microfracture coalescence in cemented rock with pre-existing flaws.
 :::

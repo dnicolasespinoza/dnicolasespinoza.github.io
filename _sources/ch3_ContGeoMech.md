@@ -25,7 +25,7 @@ Off-diagonal stresses are symmetric $S_{ij}=S_{ji}$ ($i \neq j$) because of angu
 Hence, the stress tensor is symmetric with respect to the diagonal (top-left to bottom-right).	 
 
 :::{figure-md} fig:lec4-3
-<img src="../mynewbook/figures/4-3.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-3.svg" alt="figurecontent" width="600px">
 
 Graphical and mathematical representation of the  stress tensor. Read $S_{ij}$ as the stress on face perpendicular to $\underline{e}_i$ in the direction $\underline{e}_j$. $S_{ij}$ is positive if after a positive displacement  $dx_i$, $S_{ij}$ points in direction opposite to the directions of the base element $\underline{e}_j$. All stresses in this figure have been drawn to be positive.
 :::
@@ -37,7 +37,7 @@ When we write the stress tensor in the coordinate system aligned with directions
 Usually, the principal stresses are ordered from top to bottom starting with $S_1$ at the top ({numref}`fig:Principi`}).
 
 :::{figure-md} fig:Principi
-<img src="../mynewbook/figures/4-4.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-4.svg" alt="figurecontent" width="600px">
 
 Principal stresses and directions. Every tensor with non-zero off-diagonal terms can be simplified to a principal stress tensor with zero off-diagonal terms at the orientation that coincides with the directions of principal stresses.
 :::
@@ -150,7 +150,7 @@ which eventually reduces to the following equation when canceling terms and divi
 ```
 
 :::{figure-md} fig:lec4-5
-<img src="../mynewbook/figures/4-5.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-5.svg" alt="figurecontent" width="600px">
 
 Equilibrium of forces in direction 1. $S_{21}$,  $S_{31}+\frac{\partial S_{31}}{\partial x_3} dx_3$ and $S_{11}+\frac{\partial S_{11}}{\partial x_1} dx_1$ are applied on the non-visible faces of the solid element.
 :::
@@ -179,7 +179,7 @@ A generalization of equilibrium in all directions with all stresses ({numref}`fi
 ```
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-6.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-6.svg}}
 %\caption{Cauchy's equations of equilibrium}
 %\label{fig:lec4-6}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
@@ -202,7 +202,7 @@ Integration of the third equation yields the (vertical) stress $S_{33}$,
 equivalent to Eq. {eq}`eq_VertStressGral`.
 
 :::{figure-md} fig:lec4-7
-<img src="../mynewbook/figures/4-7.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-7.svg" alt="figurecontent" width="600px">
 
 Stress gradient in a solid half-space and derivation of total vertical stress $S_{33}$ as a function of depth.
 :::
@@ -226,7 +226,7 @@ We need equations that relate displacement to stresses. These equations divide i
 The following section describes the simplest form of kinematic and constitutive equations. 
 
 :::{figure-md} fig:potato-eq
-<img src="../mynewbook/figures/4-8.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-8.svg" alt="figurecontent" width="600px">
 
 A general equilibrium problem. The solution of a general continuum mechanics problem requires knowledge of material properties and solid deformation.
 :::
@@ -268,7 +268,7 @@ Let's look at {numref}`fig:kinematics2D` in order to relate displacements to str
 The average in the equation ensures capturing shear distortion rather than rotation. 		
 
 :::{figure-md} fig:kinematics2D
-<img src="../mynewbook/figures/4-10.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-10.svg" alt="figurecontent" width="600px">
 
 Strain equations for small deformations.
 :::
@@ -335,7 +335,7 @@ $
 % + + + + + + + + + + + + + + + + + + + + + + + +
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-11.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-11.svg}}
 %\caption{The strain tensor}
 %\label{fig:lec4-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -348,7 +348,7 @@ Constitutive equations tell us how a solid deforms (in time) as a response to st
 How to choose a constitutive equation depends on the material properties, the magnitude of strain changes, the magnitude of stresses, and the loading rate among other factors.
 
 :::{figure-md} fig:lec4-12
-<img src="../mynewbook/figures/4-12.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-12.svg" alt="figurecontent" width="600px">
 
 Example of deformations imparted by an applied stress.
 :::
@@ -374,7 +374,7 @@ The examples in {numref}`fig:elasticity1D2D3D` correspond to applications of lin
 	```		
 
 :::{figure-md} fig:elasticity1D2D3D
-<img src="../mynewbook/figures/4-13.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-13.svg" alt="figurecontent" width="600px">
 
 From Hooke's law to generalized 3D linear elasticity.
 :::
@@ -405,7 +405,7 @@ These two coefficients are the two coefficients conventionally used as elasticit
 We will see later that in the subsurface we almost never find conditions of laterally "unconfined" stress loading like the one shown in {numref}`fig:YoungPoisson`.	
 
 :::{figure-md} fig:YoungPoisson
-<img src="../mynewbook/figures/4-14.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-14.svg" alt="figurecontent" width="600px">
 
 Unconfined stress loading (compression) of a linear elastic isotropic solid. Because the solid is isotropic, the same equations are valid for compression in any other direction, and also in tension.
 :::
@@ -468,7 +468,7 @@ Notice that rocks can be quite stiff and even for an effective stress as large a
 
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-16.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-16.svg}}
 %\caption{Example of strain calculation with soft and stiff geomaterials.}
 %\label{fig:lec4-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -553,7 +553,7 @@ $
 which are the same strains we found above in the definition of $E$ and $\nu$.
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-17.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-17.svg}}
 %\caption{Compliance matrix}
 %\label{fig:lec4-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -597,7 +597,7 @@ The inverse of the compliance matrix is the stiffness matrix $\underset{=}{C} = 
 ```
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-18.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-18.svg}}
 %\caption{Stiffness matrix}
 %\label{fig:lec4-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -650,7 +650,7 @@ Putting equations in all directions together yields the complete set of Lam\'e's
 ```
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-19.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-19.svg}}
 %\caption{Lam\'e equations}
 %\label{fig:lec4-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -700,7 +700,7 @@ $
 % + + + + + + + + + + + + + + + + + + + + + + + +
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/%4-20.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/%4-20.svg}}
 %\caption{Example with Voigt notation}
 %\label{fig:lec4-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -712,7 +712,7 @@ A complete list of parameter pairs is available scrolling to the bottom in [this
 {numref}`fig:elastic-summary` list the most common equivalencies. 
 
 :::{figure-md} fig:elastic-summary
-<img src="../mynewbook/figures/4-21.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-21.svg" alt="figurecontent" width="600px">
 
 Table with equivalencies of the most used elastic moduli in linear isotropic elasticity.
 :::
@@ -734,7 +734,7 @@ Pore pressure has an effect on normal stresses only (fluid pressure would not be
 The subtracted value is the same in all directions because pore pressure is the same in all directions at a given point location.	
 
 :::{figure-md} fig:lec4-26
-<img src="../mynewbook/figures/4-26.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-26.svg" alt="figurecontent" width="600px">
 
 The effective stress tensor.
 :::
@@ -751,7 +751,7 @@ The rock matrix of tight sandstones and shales may have a Biot coeffiecient as l
 The theory of poroelasticity is covered in the [Advanced Geomechanics](https://dnicolasespinoza.github.io/AdvancedGeomech/) course with a brief introduction in Section \ref{sec:poroelasticity}.
 
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-27.pdf}}
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-27.svg}}
 %\caption{Effective stress and deformation}
 %\label{fig:lec4-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
@@ -1204,7 +1204,7 @@ The presence of vertical fractures in a preferred orientation can break this sym
 Accurate determination of horizontal stresses with elastic models (e.g., Eq. {eq}`eq:tectonicstrains`) may need anisotropic models to properly account for rock stiffness anisotropy.
 
 :::{figure-md} fig:TVIandOR
-<img src="../mynewbook/figures/4-22.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/4-22.svg" alt="figurecontent" width="600px">
 
 Stiffness matrix coefficients in anisotropic media.
 :::
@@ -1236,7 +1236,7 @@ While $E_{load}$ calculation lumps elastic, plastic, and creep strains, $E_{unlo
 Notice the the re-loading modulus is similar to the unloading modulus $E_{unload} \sim E_{unload}$ because a re-loading path is not a first-time loading.
 
 :::{figure-md} fig:LoadingUnloading
-<img src="../mynewbook/figures/LoadingUnloading.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/LoadingUnloading.svg" alt="figurecontent" width="600px">
 
 Loading and unloading stress paths for a shale sample. Two unloading-reloading paths were performed before rock failure. Notice that $E_{load} < E_{unload}$ because of plastic and creep strains.
 :::
@@ -1249,7 +1249,7 @@ The stiffness of rocks is not the same if loaded in a time frame of thousands of
 Rocks tend to be softer and more ductile as the loading time frame increases.
 
 :::{figure-md} fig:StrainrateStiffness
-<img src="../mynewbook/figures/5B-18.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5B-18.svg" alt="figurecontent" width="600px">
 
 Strain-rate dependent stiffness. \hl{[Put your own data]}
 :::
@@ -1261,7 +1261,7 @@ Stresses intensify around the wellbore after the hole is bored.
 The wellbore walls will deform if left uncased and stick to the drilling string.
 
 :::{figure-md} fig:Creep
-<img src="../mynewbook/figures/5-CreepTXC.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5-CreepTXC.svg" alt="figurecontent" width="600px">
 
 Time-dependent deformation: Creep.
 :::
@@ -1272,7 +1272,7 @@ For example, unconsolidated sands may relax horizontal stresses with time after 
 Therefore, neglecting visco-elasticity may result in an overestimation of horizontal stresses in unconsolidated sands with a purely elastic model.
 
 :::{figure-md} fig:StressRelax
-<img src="../mynewbook/figures/5-StressRelaxTXC.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/5-StressRelaxTXC.svg" alt="figurecontent" width="600px">
 
 Time-dependent deformation: stress relaxation.
 :::
@@ -1322,7 +1322,7 @@ Imagine a solid heated up, but not allowed to dilate in vertical direction ({num
 The result is an increase of stress in vertical direction rather than a deformation in vertical direction.
 
 :::{figure-md} fig:ThermalSwellStress
-<img src="../mynewbook/figures/4-ThermalStrainStress.pdf" alt="figurecontent" width="300px">
+<img src="../mynewbook/figures/4-ThermalStrainStress.svg" alt="figurecontent" width="300px">
 
 Thermo-elasticity example of dilation thermal stress.
 :::

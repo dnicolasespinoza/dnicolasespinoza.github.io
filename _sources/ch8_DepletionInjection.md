@@ -129,7 +129,7 @@ The prediction of $S_{11}$ can be validated through hydraulic fracture tests tha
 A total stress path plot describes the value of total stresses as a function of pore pressure ({numref}`fig:TotalStressPath`). 
 
 :::{figure-md} fig:TotalStressPath
-<img src="../mynewbook/figures/10-TotalStressPath.pdf" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/10-TotalStressPath.svg" alt="figurecontent" width="600px">
 
 Total stress path plot. (a) Conceptual plot. (b) Example from the North Sea. The points corresponds to measurements from hydraulic fracture tests.
 :::
@@ -287,7 +287,7 @@ Depletion and net fluid loss lead to surface subsidence, while injection and net
 The vertical displacement is maximum above the reservoir center and extends beyond the reservoir horizontal limits.
 
 :::{figure-md} fig:GroundDispSegall
-<img src="../mynewbook/figures/8-GroundDisplacementsSegall.pdf" alt="figurecontent" width="900px">
+<img src="../mynewbook/figures/8-GroundDisplacementsSegall.svg" alt="figurecontent" width="900px">
 
 Surface displacements caused by depletion/injection predicted by a cartesian plane-strain model. (Top) Model geometry including $D$ = 1000 m, $a$= 500 m, $T$ = 100 m. (Middle) Normalized solution for $\Delta m_t = $ 5 kg/m$^3$ (depletion). (Top) Surface displacement solution for $\Delta m_t = $ 5 kg/m$^3$ (depletion). The surface moves down about 12 cm above the reservoir. The surface moves laterally towards the center line of the reservoir ($y=0$ m).
 :::

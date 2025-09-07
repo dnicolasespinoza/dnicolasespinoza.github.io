@@ -26,7 +26,11 @@ Python code support is available in [my Google Colab notebooks](https://drive.go
 
 The notes for the graduate course ["Advanced Geomechanics"](https://dnicolasespinoza.github.io/AdvancedGeomech/) are available online too. This course covers more advanced topics on thermo-poroelasticity and inelasticity. 
 
-*<u>Note</u>*: This markdown book may not display correctly in Chrome. Try Safari in Mac or Firefox on Windows/Linux.
+*<u>Notes</u>*: 
+
+2025-09-7
+- I'm working on replacing pdf for svg images to be displayed in Windows web browsers.
+- I'm working on fixing cross references to equations
 
 ## Table of Contents:
 
