@@ -13,7 +13,7 @@ The lithostatic stress gradient is the variation of total vertical stress $S_v$ 
 The following subsections review the fundamental concepts of stress, stress equilibrium, and effective stress. 
 
 
-### Stress concept and equilibrium 1D
+### 2.1.1 Stress concept and equilibrium 1D
 
 Consider the solid bar in {numref}`fig_vertstress-bar`.
 Two forces $\underline{F}_1$ and $\underline{F}_2$ pull the bar in opposite directions.
@@ -39,7 +39,7 @@ The directionality of stress is a result of the solid capacity to resist shear s
 :::
 
 %---------------------------------------------------------
-### Rock vertical stress gradient
+### 2.1.2 Rock vertical stress gradient
 
 In a 3D porous solid with volume $\Delta x \Delta y \Delta z$ ({numref}`fig_vertstress-poroussolid`), equilibrium  requires the summation of (vectorial) forces in all directions to be zero $\sum \underline{F} = 0$.
 Equilibrium of forces in the vertical direction (gravity $\underline{g}$ direction) requires $\sum F_z = 0$ (forces in vertical direction). 
@@ -374,9 +374,9 @@ Pore pressure below $z \sim 11,000$ ft is quite different from hydrostatic!
 
 
 :::{figure-md} fig_lec2-9
-<img src="../mynewbook/figures/2-9.svg" alt="figurecontent" width="600px">
+<img src="../mynewbook/figures/2-Overpressure.png" alt="figurecontent" width="600px">
 
-Overpressure example in the Monte Cristo field (Image credit: [Zoback 2013]).
+Overpressure example in the Ann Mag Field (Texas Gulf Coast) and several offshore fields in Louisiana (Image credits: [Leftwich & Engelder, 1994](https://doi.org/10.1306/M61588C8) and [Rose et al. 2020](https://doi.org/10.1190/INT-2019-0019.1) ).
 :::
 
 A convenient parameter to relate pore pressure and total vertical stress is the dimensionless overpressure parameter $\lambda_p$:
@@ -395,7 +395,7 @@ We will see later that rocks have effective stress-dependent strength.
 Hence, overpressure leads to weak rocks, especially if they are not well cemented, difficult to drill.
 
 %---------------------------------------------------------
-### Mechanisms of overpressure
+### 2.2.1 Mechanisms of overpressure
 
 There are several mechanisms that may contribute to overpressure $P_p > P_p^{\text{hydrostatic}}$.
 First, hydrocarbon accumulations create overpressure due to buoyancy.
@@ -427,7 +427,7 @@ Other mechanisms of overpressure.
 :::
 
 %---------------------------------------------------------
-### Disequilibrium compaction and excess pore pressure
+### 2.2.2 Disequilibrium compaction and excess pore pressure
 
 Changes of vertical and horizontal stresses can induce pore pressure changes.
 Pore pressure increases when a rock/sediment is compressed (such that the pore volume decreases) under conditions in which the fluid cannot escape quickly enough.
@@ -583,7 +583,7 @@ $
 %The sand-body encased example is often a consequence of disequilibrium compaction (see Figure \ref{fig:lec2-12}).
 
 %---------------------------------------------------------
-### Reservoir depletion
+### 2.2.3 Reservoir depletion
 %\label{Sec:ResDep}
 
 Opposite to overpressure, "underpressure" occurs when pore pressure is lower than hydrostatic.
@@ -601,7 +601,7 @@ Example of decreased fracture pressure (between 5,100 ft and 5,400 ft) due to de
 ## 2.3 Horizontal stresses
 
 %---------------------------------------------------------
-### Background
+### 2.3.1 Background
 
 Vertical (effective) stress is not enough to define the state of stress in a solid.
 Stresses in horizontal direction are very often different to the stress in vertical direction.
@@ -648,7 +648,7 @@ Horizontal stress map. The direction of maximum horizontal stress is affected by
 :::
 
 %---------------------------------------------------------
-### Geological indicators
+### 2.3.2 Geological indicators
 
 Geological formations can be indicators of "paleo-stress" direction, that is, the stress that caused such feature at a particular time.
 The paleo-stress, however, may be different from the current state of stress in magnitude and direction.
@@ -669,7 +669,7 @@ Example of magmatic dike/dyke: large-scale hydraulic fractures.
 :::
 
 %---------------------------------------------------------
-### In-situ measurement
+### 2.3.3 In-situ measurement
 
 The only way to know the current magnitude (and direction) of the minimum horizontal stress $S_{hmin}$ (if $S_v > S_{hmin} = S_3$  ) is to measure it.
 Subsurface measurements of $S_3$ are based in hydraulic fracturing methods (to be seen in detail later in the course, Chapter 7).
@@ -686,7 +686,7 @@ Schematic example extended leak-off test to determine the minimum principal stre
 :::
 
 %---------------------------------------------------------
-### Stress Regimes
+### 2.3.4 Stress Regimes
 
 The variations of horizontal stress in the lithosphere give rise to three types of stress regimes, depending on the relative magnitude of horizontal stress with respect to vertical stress (See Table below).
 Stress is a tensor.
@@ -739,12 +739,6 @@ These stress regimes cause strike-slip faults when $S_{Hmax}$ surpasses $ S_{hmi
 Hydraulic fractures in this environment are vertical and perpendicular to $S_{hmin}$ direction.
 Some giant oil fields in the middle East are in strike-slip stress regime.
 
-:::{figure-md} fig_lec3-23
-<img src="../mynewbook/figures/3-23.svg" alt="figurecontent" width="600px">
-
-Strike slip faulting schematic examples.
-:::
-
 #### Reverse faulting stress regime
 
 Reverse faulting occurs in "strong" tectonically compressive   environments, such that $S_{Hmax} > S_{hmin} > S_v$, where $S_1 = S_{Hmax}$, $S_2 = S_{hmin}$, $S_3 = S_v$.
@@ -760,7 +754,7 @@ Some unconventional fields in Argentina and Australia are in reverse faulting st
 
 
 %---------------------------------------------------------
-### Ideal orientation of open-mode fractures
+### 2.3.5 Ideal orientation of open-mode fractures
 
 Why is the shape of an inflated balloon spherical ({numref}`fig_balloon`)?
 Even if you were to inflate the ballon under water, it would be still spherical.
@@ -859,7 +853,7 @@ Note: You are encouraged to summarize all calculations in a single plot as a fun
 
 4. Go to [my Github repository](https://github.com/dnicolasespinoza/GeomechanicsJupyter) and download the  files ``HCLonghorn.las`` and ``HCdeviationsurvey.dev``. The files include the well logging data and the well trajectory of a well for the Longhorn Field near Plaquemines Parish, Louisiana. The oilfield is an onshore oilfield. The first one is a well logging  file (.las). You will  find here measured depth (DEPTH [ft] - Track 1) and bulk mass density (ZDNC [g/cc] - Track 27). The second file has the deviation survey of the well. Column 3 is measured depth (MD), column 4 is TVDSS, column 5 is the E-W offset from the surface location, and column 6 is the N-S offset from the surface location. The water depth at this well location is 38 ft. You may assume an average bulk mass density of 2 g/cc between the surface and the beginning of the bulk density data. 
 
-	1. Plot at least one of the following to visualize wellbore deviation: (1) 3D plot of the well (EWoffset, NSoffset, TVD), (2) 2D plot (EWoffset, NSoffset) "bird's-eye view", (3) lower hemisphere projection (See Chapter 6: https://dnicolasespinoza.github.io/ch6_WellboreGeomech.html#mechanical-stability-of-deviated-wellbores Links to an external site.)(plot inclination angles and azimuth angles in a polar coordinate system) using the deviation survey, . 
+	1. Plot at least one of the following three options to visualize wellbore deviation using the deviation survey file: (1) 3D plot of the well (EWoffset, NSoffset, TVD), (2) 2D plot (EWoffset, NSoffset) "bird's-eye view", (3) lower hemisphere projection (See Chapter 6: https://dnicolasespinoza.github.io/ch6_WellboreGeomech.html#mechanical-stability-of-deviated-wellbores Links to an external site.). 
 	2. Plot TVDSS [ft] as a function of MD [ft]. For this simple trajectory you may use a linear fit to relate TVDSS and MD.
 	3. Plot bulk density (x-axis) verse TVDSS (ft) (y-axis). 
 	4. Compute and plot the total vertical stress (psi) (x-axis) versus TVDSS (ft) (y-axis). Compute and plot also the expected hydrostatic pore pressure.

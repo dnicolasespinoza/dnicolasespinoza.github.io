@@ -122,7 +122,7 @@ Hence, the angle between the North and the vector $\nu_1$ is $90^{\circ} - 4.3 ^
 % + + + + + + + + + + + + + + + + + + + + + + + +
 
 %-----------------------------------------------------
-### Cauchy's equations of stress equilibrium
+### 3.1.1 Cauchy's equations of stress equilibrium
 
 Equilibrium of stresses requires summation of forces in all directions to be zero when the object is not moving (no acceleration $\underline{a}$, thus $m \underline{a} = 0$).
 Consider the schematic in {numref}`fig:lec4-5`.
@@ -185,7 +185,7 @@ A generalization of equilibrium in all directions with all stresses ({numref}`fi
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
 %-----------------------------------------------------
-### Application of Cauchy's equations for total vertical stress calculation
+### 3.1.2 Application of Cauchy's equations for total vertical stress calculation
 
 Consider a half-space where the surface coincides with the origin of the coordinate system and gravity $g$ points in direction 3, hence $b_3 = g$ in Eq. \ref{eq:Cauchy}.
 We assume infinite extension in directions 1 and 2, therefore there are no variations in directions 1 and 2, such that $\partial()/\partial x_1 = \partial()/\partial x_2 = 0$.
@@ -212,7 +212,7 @@ The horizontal stresses cannot be determined with the current equations.
 The solution to this problem will be developed in section \ref{sec:CalcHzStress}.
 
 %-----------------------------------------------------
-### Continuum mechanics solution of an arbitrary problem
+### 3.1.3 Continuum mechanics solution of an arbitrary problem
 
 {numref}fig:potato-eq} shows an example of an arbitrary shaped continuous solid subjected to external stresses $\underline{t}$, external forces $\underline{F}$, body forces $\underline{b}$, and displacement constraints (bottom fixture). 
 As highlighted before, notice that there are 6 unknowns (9 unknowns if displacements are included) and 3 equations in Cauchy's equations of equilibrium (Eq. {eq}`eq:Cauchy`).
@@ -334,13 +334,6 @@ $
 ```
 % + + + + + + + + + + + + + + + + + + + + + + + +
 
-%\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
-%\centerline{\includegraphics[scale=0.65]{./Figures/split/4-11.svg}}
-%\caption{The strain tensor}
-%\label{fig:lec4-X}
-%\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
-
-
 %================================================================================
 ## 3.3 Constitutive equation: stress-strain relationships
 
@@ -380,7 +373,7 @@ From Hooke's law to generalized 3D linear elasticity.
 :::
 
 %--------------------------------------------------------------
-### Linear isotropic elasticity
+### 3.3.1 Linear isotropic elasticity
 
 Consider a prismatic solid with length $L$ to which we apply a stress $\sigma_{33}$ on top face 3 ({numref}`fig:YoungPoisson`). 
 The bottom face is not allowed to move in direction 3 but it can slide sideways. 
@@ -428,7 +421,7 @@ Schematic of stress-strain curve during rock uniaxial loading in the laboratory.
 :::{figure-md} fig:YoungPoissonLab
 <img src="../mynewbook/figures/YoungPoissonLab.png" alt="figurecontent" width="600px">
 
-Actual laboratory measured stress-strain response during rock axial (deviatoric) loading. Data analysis permits recovering the Young's modulus and the Poisson's ratio. The data clearly shows the transition of volumetric strain from positive to negative changes, which clearly shows rock damage before the peak failure stress.  
+Actual laboratory measured stress-strain response during rock axial (deviatoric $\Delta \sigma_a$) loading. Data analysis permits recovering the Young's modulus and the Poisson's ratio. The data clearly shows the transition of volumetric strain from positive to negative changes, which clearly shows rock damage before the peak failure stress. Elastic property measurement $E$ and $\nu$ should be done with minimum or no damage.   
 :::
 
 
@@ -481,7 +474,7 @@ Notice that rocks can be quite stiff and even for an effective stress as large a
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
 
 %---------------------------------------------------------
-### The isotropic solid in Voigt notation
+### 3.3.2 The isotropic solid in Voigt notation
 
 A generalization of the Young's modulus and Poisson's ratio equations (Eq. {eq}`eq:YoungDef` and {eq}`eq:PoissonDef`) in all directions leads to the 3 independent equations.
 
@@ -725,7 +718,7 @@ Table with equivalencies of the most used elastic moduli in linear isotropic ela
 :::
 
 %---------------------------------------------------------
-### Effective stress and elasticity
+### 3.3.3 Effective stress and elasticity
 
 Porous solids deform and fail due to the application of effective stresses rather than total stress. 
 Hence, Hooke's law requires to use the effective stress tensor rather than the total stress tensor. 
@@ -764,7 +757,7 @@ The theory of poroelasticity is covered in the [Advanced Geomechanics](https://d
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F
 
 %---------------------------------------------------------
-### Calculation of horizontal stress according to linear elasticity
+### 3.3.4 Calculation of horizontal stress according to linear elasticity
 \label{sec:CalcHzStress} 
 
 Let us revisit the problem of stress calculation in a half-space, such as the Earth's shallow subsurface. 
@@ -1079,7 +1072,7 @@ Locations with small horizontal stress anisotropy (mostly normal faulting sites)
 Polygonal faults (Chapter 5 - [update link]) are an example of normal fault growth with strike in all directions because $S_{Hmax} \sim S_{hmin}$.
 
 %---------------------------------------------------------
-### Calculation of reservoir compressibility with linear elasticity
+### 3.3.5 Calculation of reservoir compressibility with linear elasticity
 \label{sec:ResCompress}
 
 The rock pore volume compressibility $C_{pp}$ is a critical parameter in the fluid flow mass conservation equation and therefore on the diffusivity equation (1D example):
@@ -1161,7 +1154,7 @@ $
 % + + + + + + + + + + + + + + + + + + + + + + + +
 
 %---------------------------------------------------------
-### Generalized linear elasticity problem
+### 3.3.6 Generalized linear elasticity problem
 
 The general solution of a linear elasticity problem requires combining the equilibrium, kinematic, and constitutive equations.
 The result is a differential equation with displacement $\underline{u}$ as the unknown:
@@ -1236,7 +1229,7 @@ Summary of experimental measurements of shale anisotropy. (a) Ratio of horizonta
 Most rocks will exhibit permanent (plastic) deformation when loaded at large strains $\varepsilon \gtrsim 0.001$.
 Plastic deformation includes plastic compression strains and plastic shear strains.
 The theory of elasto-plasticity is covered in the [Advanced Geomechanics course](https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj).
-{numref}`fig:LoadingUnloading` shows an example of permanent deformation during a typical deviatoric loading test to measure Young's modulus.
+{numref}`fig:LoadingUnloading` shows an example of permanent deformation during a typical deviatoric loading test (increasing axial stress and keeping effective radial stress constant) to measure Young's modulus.
 First-time loading usually involves plastic deformation and creep.
 Therefore the loading Young's modulus $E_{load}$ results smaller than the unloading modulus $E_{unload}$.
 While $E_{load}$ calculation lumps elastic, plastic, and creep strains, $E_{unload}$ involves mostly elastic strains.
@@ -1258,7 +1251,7 @@ Rocks tend to be softer and more ductile as the loading time frame increases.
 :::{figure-md} fig:StrainrateStiffness
 <img src="../mynewbook/figures/5B-18.svg" alt="figurecontent" width="600px">
 
-Strain-rate dependent stiffness. \hl{[Put your own data]}
+Strain-rate dependent stiffness. 
 :::
 
 Another manifestation of visco-elasticity is time-dependent deformation, usually known as "creep".
@@ -1270,7 +1263,7 @@ The wellbore walls will deform if left uncased and stick to the drilling string.
 :::{figure-md} fig:Creep
 <img src="../mynewbook/figures/5-CreepTXC.svg" alt="figurecontent" width="600px">
 
-Time-dependent deformation: Creep.
+Time-dependent deformation: Creep. Deviatoric stress is used here as the stress difference bewteen maximum and least principal stresses: $\sigma_1 - \sigma_3$. 
 :::
 
 One other manifestation of visco-elasticity is time-dependent stress change or stress relaxation.
@@ -1281,20 +1274,20 @@ Therefore, neglecting visco-elasticity may result in an overestimation of horizo
 :::{figure-md} fig:StressRelax
 <img src="../mynewbook/figures/5-StressRelaxTXC.svg" alt="figurecontent" width="600px">
 
-Time-dependent deformation: stress relaxation.
+Time-dependent deformation: stress relaxation. Deviatoric stress is used here as the stress difference bewteen maximum and least principal stresses: $\sigma_1 - \sigma_3$. 
 :::
 
 :::{figure-md} fig:StressRelaxField
 <img src="../mynewbook/figures/4-StressRelaxField.PNG" alt="figurecontent" width="600px">
 
-Impact of stress relaxation in horizontal stresses in the subsurface. (a) Decrease of $S_{Hmax}$ due to deviatoric stress relaxation caused by a paleo-tectonic strain $\varepsilon_{Hmax}$. (b)Increase of $S_{hmin}$ due to deviatoric stress relaxation caused by overburden stress.
+Impact of stress relaxation in horizontal stresses in the subsurface. (a) Decrease of $S_{Hmax}$ due to deviatoric stress ($S_{Hmax} - S_v$ in this case) relaxation caused by a paleo-tectonic strain $\varepsilon_{Hmax}$. (b)Increase of $S_{hmin}$ due to deviatoric stress ($S_v - S_{hmin}$ in this case) relaxation caused by overburden stress.
 :::
 
 %================================================================================
 ## 3.7 Multiphysics problems
 
 %---------------------------------------------------------
-### Poro-elasticity
+### 3.7.1 Poro-elasticity
 \label{sec:poroelasticity}
 
 When rocks deform, most of the deformation transfers into changes of porosity. 
@@ -1321,8 +1314,8 @@ The corrections for poroelasticity $\alpha \neq 1$ become significant in tight r
 
 
 %---------------------------------------------------------
-### Thermo-elasticity
-\label{sec:Thermoelasticity}
+### 3.7.2 Thermo-elasticity
+%\label{sec:Thermoelasticity}
 
 Changes of temperature in solids change the equilibrium distance between molecules, and therefore induce strains.
 Imagine a solid heated up, but not allowed to dilate in vertical direction ({numref}`fig:ThermalSwellStress`). 

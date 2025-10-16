@@ -76,7 +76,7 @@ The applications of energy geomechanics can be broadly grouped into:
 - Wellbore completion, and
 - Reservoir geomechanics.  
 
-### Drilling and Wellbore Stability
+### 1.2.1 Drilling and Wellbore Stability
 
 Subsurface access requires wellbores.
 However, a cavity in the subsurface intensifies stresses around it and requires support to be open.
@@ -92,7 +92,7 @@ Optimal wellbore design and drilling requires knowing various properties of the 
 From the beginning of drilling to today's ultra-deepwater drilling.
 :::
 
-### Wellbore Completion
+### 1.2.2 Wellbore Completion
 
 A single wellbore offers little contact area with the reservoir.
 Hydraulic fractures seek to increase such contact area, particularly in low-permeability reservoirs. Hence, even a small flow velocity can result in a large flow rate [bbl/min] if the contact area is large. 
@@ -106,7 +106,7 @@ Improved completion methods take advantage of horizontal wellbores, proppants, a
 Pictorial representation of multistage hydraulic fracturing in a horizontal well.
 :::
 
-### Reservoir Geomechanics
+### 1.2.3 Reservoir Geomechanics
 
 Hydrocarbon recovery changes reservoir pore pressure.
 Reduction of pore pressure (needed for pumping and production) leads to  stress transfer from the pore fluid to the rock solid skeleton.
@@ -119,7 +119,7 @@ Increases of the magnitude of stresses and stress anisotropy may also cause rock
 Reservoir depletion and pore pressure change.
 :::
 
-### Carbon and Hydrogen Geological Storage
+### 1.2.4 Carbon and Hydrogen Geological Storage
 
 Burning fossil fuels produces carbon dioxide (CO$_2$) among other subproducts at power plants. CO$_2$ can be separated from flue gas and captured. After capturing, CO$_2$  can be injected into deep geological formations in order to mitigate CO$_2$ emissions into the atmosphere. The entire process is known as Carbon Capture and Storage (CCS).
 
@@ -133,7 +133,7 @@ Selected types of carbon geological storage.
 
 An alternative solution for high energy and low weight fuels or electric batteries is hydrogen. However, moving from a fossil-fuel dominated market for vehicles and on-demand energy supply to hydrogen would require large hydrogen storage places. One option is hydrogen geological storage in salt caverns and clastic reservoirs (such as saline aquifers and depleted hydrocarbon reservoirs). Hydrogen geological storage implies similar technical challenges as carbon geological storage with the added problem of cyclic changes due to seasonal demand.   
 
-### Geothermal Energy
+### 1.2.5 Geothermal Energy
 
 Deep geothermal systems are potential sources of energy with zero carbon emission during production.
 Some of the limitations of the current geothermal industry include: drilling costs, drilling challenges in high temperature environments, low surface area of geothermal reservoirs, and prediction of stress changes with heat mining.

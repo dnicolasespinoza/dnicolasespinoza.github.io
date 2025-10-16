@@ -5,7 +5,7 @@
 ## 4.1 Preliminary concepts
 
 %--------------------------------------------------------------------------------
-### Microstructure of geologic materials
+### 4.1.1 Microstructure of geologic materials
 
 The microstructure of rocks varies widely, from lumped crystals in igneous rocks to fossil carbonate skeletons in diatomite-rich chalk.
 We will discuss mostly sedimentary rocks (shown in {numref}`fig:RockMicrostructure`). However, igneous rocks can also host hydrocarbons (really? how?) and constitute the basement of sedimentary basins. 
@@ -27,7 +27,7 @@ Influence of rock microstructure on failure mechanisms.
 :::
 
 %--------------------------------------------------------------------------------
-### Length scales v.s. process zone size
+### 4.1.2 Length scales v.s. process zone size
 
 Petroleum and subsurface engineering involves rock failure at many length scales, from the millimeter-scale to the kilometer-scale ({numref}`fig:Failure-LengthScales`).
 The failure properties of rock (and many other properties too) depend on the length scale of analysis.	 
@@ -41,8 +41,18 @@ Recognizing the appropriate length-scale is extremely important to use adequatel
 
 Rock failure properties are a function of process-zone size and length scale.
 :::
+
 %--------------------------------------------------------------------------------
-### Overview of types of rock failure
+### 4.1.3 Relevance of time scales or loading period
+
+Similar to the "process zone" size, the loading period time or loading rate has a first-order effect on the strength of geomaterials.
+The strength of a rock loaded and failed in the laboratory over less than $\sim$1 hour is not the same as the strength of the same rock loaded over the period of $\sim$10 years, as in reservoir depletion.
+Even more, the same rock loaded over 100,000 years will exhibit a completely different stress-strain relationship and strength (more ductile and weaker) compared to a rock loaded over human time.
+This differences are crucial to understand structural geologic processes (the initial conditions) and to correctly apply laboratory data to decades-long engineering processes (such as reservoir depletion). 
+Although sometimes impractical, some tests have been done over long times to correctly capture the inelastic reponse of rocks. For example some creep tests have done over [26 years](https://doi.org/10.2472/jsms.73.867)!      	
+
+%--------------------------------------------------------------------------------
+### 4.1.4 Overview of types of rock failure
 
 Rock yield (plastic deformation) and failure can happen due to tensile stresses, shear stresses, compressive stresses, and a combination of the three.
 The following sections explore these types of rock damage separately.
@@ -57,7 +67,7 @@ Overview of rock failure modes: tension, shear, and compression.
 ## 4.2 Tensile failure
 
 %--------------------------------------------------------------------------------
-### Direct tension
+### 4.2.1 Direct tension
 
 Application of tensile stresses (with negative sign according to our geomechanics convention) on a metal bar results in tensile strains (negative too).
 In this example the state of stress is relatively simple with tensile stress in the axial direction and zero-stress in any direction perpendicular to the axis of the bar ({numref}`fig:TensionSteel`).
@@ -84,7 +94,7 @@ Direct tension test on brittle rock. Correct interpretation depends on rock micr
 :::
 
 %--------------------------------------------------------------------------------
-### The Brazilian test
+### 4.2.2 The Brazilian test
 
 The Brazilian test is a convenient method to measure tensile strength. 
 It uses short cylindrical samples and takes advantage of the shape of the rock specimen to create tensile stresses with application of a compressive force along the sample diameter ({numref}`fig:BrazilianTest`).
@@ -151,7 +161,7 @@ Compare these values to tensile strength of fused silica: 48 MPa, 304 stainless 
 ## 4.3 Shear failure
 
 %--------------------------------------------------------------------------------
-### Frictional Strength
+### 4.3.1 Frictional strength
 
 The shear strength of rocks depends on the cohesive strength of the rock $S_0$ (to be explained later) and the internal frictional strength of the rock.
 The frictional strength depends on friction forces, where the force $F_T$ needed to displace an object resting on a surface depends on the friction coefficient $\mu$ and applied normal force $F_N$, such that $F_T = \mu F_N$ ({numref}`fig:FrictionBlock`).
@@ -174,7 +184,37 @@ The sand is at shear failure when the shear line $\tau = \mu_i \sigma_n$ interce
 Frictional strength of uncemented sediments.
 :::
 
-The Mohr circle represents all possible state of stresses depending on the plane at which you measure $\sigma_n$ and $\tau$. 
+The Mohr circle represents all possible state of stresses depending on the plane at which you measure $\sigma_n$ and $\tau$ ({numref}`fig:MohrCircle`). 
+For example, given two principal stresses $\sigma_1$ and $\sigma_3$, with $\sigma_1 > \sigma_3$, the value of $\sigma_n$ and $\tau$ for a plane at an angle $\beta$ from the plane of $\sigma_1$ is.
+
+```{math}
+:label: eq:MohrCircle
+\left\{
+\begin{align*}
+\sigma_n & = C + R \cos (2 \beta) \\
+\tau & = R \sin (2 \beta)
+\end{align*}
+\right.
+```
+
+where the center and radius of the Mohr circle are  
+
+```{math}
+:label: eq:MohrCircleCR
+\left\{
+\begin{align*}
+ 	C = & \frac{\sigma_1 + \sigma_3}{2} \\
+	R = & \frac{\sigma_1 - \sigma_3}{2}
+\end{align*}
+\right.
+```
+
+:::{figure-md} fig:MohrCircle
+<img src="../mynewbook/figures/2-MohrCircle.png" alt="figurecontent" width="600px">
+
+Mohr circle and physical interpretation.
+:::
+
 Notice that from all those possible state of stresses, there is just one state of stress that intersects the line $\tau = \mu_i \sigma_n$. 
 That plane is the plane at which a shear fracture would form.
 Similarly to {numref}`fig:FrictionBlock`, if $\sigma_n = 0$ then $\tau = 0$, so the sand has  no strength whatsoever without an effective compressive stress.
@@ -183,7 +223,7 @@ Typical values of $\mu_i$ vary from 0.4 to 1.0.
 For example, if $\mu_i=0.5$, then $\varphi \sim 30^{\circ}$.
 
 %--------------------------------------------------------------------------------
-### Unconfined compression strength
+### 4.3.2 Unconfined compression strength
 
 Cemented rocks can bear shear stresses with zero effective lateral stress $\sigma_r = 0$ ($\sigma_r$ for radial effective stress as in cylindrical samples).
 {numref}`fig:UCS` shows an unconfined cylindrical rock loaded (on the top face) to failure with a compression effective stress $\sigma_a$.
@@ -197,7 +237,7 @@ Unconfined compression strength: schematic diagram, stress-strain plot and corre
 :::
 
 %--------------------------------------------------------------------------------
-### Confined strength: the triaxial test
+### 4.3.3 Confined strength: the triaxial test
 
 Let us now apply an effective compressive "confining" stress $\sigma_r \neq 0$ ({numref}`fig:CoulombFailure`).
 The measured peak stress is higher than the peak stress without confining stress.
@@ -305,7 +345,7 @@ Average values of cohesive strength and internal friction angle for various type
 :::
 
 %--------------------------------------------------------------------------------
-### Triaxial tests of fluid saturated rocks and sediments
+### 4.3.4 Triaxial tests of fluid saturated rocks and sediments
 
 The shear strength of rocks depends on effective stresses, not on total stresses.
 In the field and the laboratory, however, we usually measure total stresses $(S_1,S_2,S_3)$ instead of effective stresses $(\sigma_1,\sigma_2,\sigma_3)$.

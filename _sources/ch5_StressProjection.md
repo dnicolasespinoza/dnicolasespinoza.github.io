@@ -55,7 +55,7 @@ Reservoir model example including faults (Courtesy Baker Hughes).
 :::
 
 %----------------------------------------------------------------------
-### Orientation of planes with respect to the geographical coordinate system
+### 5.2.1 Orientation of planes with respect to the geographical coordinate system
 
 Imagine any plane (such as the plane shown in {numref}`fig:StrikeExample`) cutting horizontal sedimentary strata. 
 The \textit{strike} is the line which results from the intersection of such plane and a horizontal plane. 
@@ -100,7 +100,7 @@ For example, the plane in {numref}`fig:StrikeExample` dips about 60$^{\circ}$SE,
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
 %----------------------------------------------------------------------
-### Stereonets for plotting fault orientation
+### 5.2.2 Stereonets for plotting fault orientation
 
 Stereonets are very useful for plotting the orientation of many faults in a single 2D plot {numref}`fig:StereoNet`.
 The stereonet represents a fault plane by a dot, which is the intersection of a line normal to the fault plane and a lower hemisphere projection.
@@ -113,7 +113,7 @@ Example of stereonet for mapping faults caused by a normal faulting stress regim
 :::
 
 %----------------------------------------------------------------------
-### Faults in geological maps
+### 5.2.3 Faults in geological maps
 
 The geological map of a single formation, say a sandy layer formation, plots the top of such formation with depth in contour lines ({numref}`fig:GeolMapFault`-b).
 Faults can also be represented in geological maps.
@@ -145,7 +145,7 @@ Strike and dip in geological maps.
 ## 5.3 Frictional strength of faults and fault types
 
 %-----------------------------------------------------------------------
-### Fault strength
+### 5.3.1 Fault strength
 
 At the large scale, the Earth's crust is constituted by "already broken" rock layers. 
 These discontinuities are comprised mostly of faults. 
@@ -202,7 +202,7 @@ Faults form or reactivate when this stress anisotropy, and therefore shear stren
 These relationships can also be worked out in terms of total stresses  but it is easier and more meaningful to keep them in terms of effective stresses (just do not forget about pore pressure).
 
 %-----------------------------------------------------------------------
-### Normal faults
+### 5.3.2 Normal faults
 
 A normal fault is caused by in-situ stress conditions in which 		
 
@@ -241,7 +241,7 @@ Conjugate normal faults forming graben and horst structures.
 :::
 
 %-----------------------------------------------------------------------
-### Thrust and reverse faults
+### 5.3.3 Thrust and reverse faults
 
 A thrust fault is caused by in-situ stress conditions in which 		
 
@@ -277,7 +277,7 @@ Reverse fault example.
 :::
 
 %-----------------------------------------------------------------------
-### Strike-slip faults
+### 5.3.4 Strike-slip faults
 
 A strike-slip fault is caused by in-situ stress conditions in which 	
 
@@ -305,7 +305,7 @@ Strike-slip fault example.
 :::
 
 %-----------------------------------------------------------------------
-### Stress and faulting regimes
+### 5.3.5 Stress and faulting regimes
 
 The type of fault that occurs for each stress combination gives rise to the name of the stress faulting regime (Table \ref{table:Andersonian}). 
 Notice that stresses may change in magnitude and direction with time at a given location (see stress map in {numref}`fig:WorldStressMap` - other maps available at \url{http://www.world-stress-map.org/}). Furthermore, the same location may evolve through different stress regimes over geological periods of time.
@@ -335,7 +335,7 @@ Changes of stress regime with depth are critical for defining the geometry of fl
 :::
 
 %-----------------------------------------------------------------------
-### Ideal orientation of faults
+### 5.3.6 Ideal orientation of faults
 
 The ideal orientation of a hydraulic fracture is a plane perpendicular to the minimum principal stress $S_3$ direction.
 Similarly, we can also tell what would be the orientation of ideal conjugate pairs of shear fractures (faults) for a given state of stress. 
@@ -443,7 +443,7 @@ The tensor method can be easily implemented in a computer script but is laboriou
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
 %------------------------------------------------------------------
-### Mohr's circle method
+### 5.4.1 Mohr's circle method
 
 The 3D Mohr circle is a graphical representation of the stress tensor and all its projections (or possibles values of normal effective stress $\sigma_n$ and shear stress $\tau$) on a given plane. 
 Consider a horizontal plane in {numref}`fig:3DMohrCircle`, the normal stress is the vertical stress $S_v$ and there is no shear stress. 
@@ -454,7 +454,7 @@ Likewise, non-trivial solutions of stress projection at an arbitrary plane angle
 Let's consider solutions along each circle in {numref}`fig:3DMohrCircle`. 
 
 1. The blue circle (center C$_1$) represents the possible state of stresses that result as a combination of $\sigma_v$ and $\sigma_{hmin}$. The shear stress $\tau$ and normal effective stress $\sigma_n$ of any plane in between the planes of $\sigma_v$ and $\sigma_{hmin}$ and colinear with $\sigma_{Hmax}$ can be found through the angle $\beta_1$ measured from $\sigma_v$.
-2. The green circle (center C$_2$) represents the possible state of stresses that result as a combination of $\sigma_{v}$ and $\sigma_{Hmax}$. The shear stress $\tau$ and normal effective stress $\sigma_n$ of any plane in between the planes of $\sigma_{v}$ and $\sigma_{Hmax}$ and colinear with $\sigma_{hmin}$ can be found through the angle $\beta_2$ measured from $\sigma_{Hmax}$
+2. The green circle (center C$_2$) represents the possible state of stresses that result as a combination of $\sigma_{v}$ and $\sigma_{Hmax}$. The shear stress $\tau$ and normal effective stress $\sigma_n$ of any plane in between the planes of $\sigma_{v}$ and $\sigma_{Hmax}$ and colinear with $\sigma_{hmin}$ can be found through the angle $\beta_2$ measured from $\sigma_v$
 3. The red circle (center C$_3$) represents the possible state of stresses that result as a combination of $\sigma_{Hmax}$ and $\sigma_{hmin}$. The shear stress $\tau$ and normal effective stress $\sigma_n$ of any plane in between the planes of $\sigma_{Hmax}$ and $\sigma_{hmin}$ and colinear with $\sigma_{v}$ can be found through the angle $\beta_3$ measured from $\sigma_{Hmax}$	
 
 :::{figure-md} fig:3DMohrCircle
@@ -526,7 +526,7 @@ $
 
 
 %------------------------------------------------------------------
-### Tensor method
+### 5.4.2 Tensor method
 
 This subsection describes the procedure to calculate stresses $(\sigma_n, \tau)$ on an arbitrary plane given its orientation respect to the geographical coordinate system $(strike,dip)$ and the in-situ stress tensor of principal stresses $\underset{=}{S}{}_P$ (given its principal values and principal directions). 
 
@@ -1344,7 +1344,7 @@ $\tau / \sigma_n = 0.51  \: \: \blacksquare$
 ## 5.5 Applications
 
 %------------------------------------------------------------------
-### Critically stressed fractures and permeability
+### 5.5.1 Critically stressed fractures and permeability
 
 The previous section shows how to calculate the normal effective stress $\sigma_n$ and shear stress $\tau$ components on an arbitrary oriented plane given the in-situ state of stress. 
 A critically-stressed fracture (or fault) has shear stress and normal effective stress components with a ratio $\tau/\sigma_n$ which approaches the friction coefficient $\mu \sim$ 0.6-1.0. 
@@ -1393,8 +1393,6 @@ Example of horizontal wellbore placement in a fractured reservoir. The horizonta
 The same reasoning applies to large faults.
 There are faults that may be more easily reactivated due to pore pressure changes because of their orientation with respect to the current state of stress (See subsection \ref{subsec:faultreact}).
 
-%nice examples below, but would be too much plagiarism
-
 %\begin{figure}[H] % F F F F F F F F F F F F F F F F F F F   
 %\centerline{\includegraphics[scale=0.65]{./Figures/split/6-66.svg}}
 %\caption{Three examples of critically and non-critically oriented fractures plotted within the Mohr circle and with stereonets}
@@ -1407,9 +1405,17 @@ There are faults that may be more easily reactivated due to pore pressure change
 %\label{fig:lec6-X}
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
+:::{figure-md} fig:MohrCirclesStereoNet
+<img src="../mynewbook/figures/5-MohrCircleStereoNet.png" alt="figurecontent" width="900px">
+
+Examples of fracture plane orientation and corresponding ratio $\tau / \sigma_n$ and pole location in a stereo-net plot. The orientation of critically stressed fractures varies with faulting regime and principal horizontal stress orientation. This figure was created with the "Tensor method" based on python code initially written by Daniel Barrera (UT Austin BS student, class of 2020).
+:::
+
+
+
   
 %------------------------------------------------------------------
-### Determination of horizontal stresses assuming limit equilibrium
+### 5.5.2 Determination of horizontal stresses assuming limit equilibrium
 
 Tectonic plates drive movements of the Earth's crust  ({numref}`fig:BrittleCrust`). 
 High temperatures and high effective stresses at great depth favor ductile deformation. 
@@ -1535,7 +1541,7 @@ Application example of the stress polygon. This particular place exhibits a hybr
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F F 
 
 %------------------------------------------------------------------
-### Determination of stress regime and horizontal stress direction from fault orientation
+### 5.5.3 Determination of stress regime and horizontal stress direction from fault orientation
 
 Mapping of faults and fractures in the subsurface helps interpret the state of stress that caused such fractures.
 In some cases the state of stress that caused such faults may be still acting today.
@@ -1549,8 +1555,8 @@ Seismic image of the top of an anticline structure (red: shallower, blue: deeper
 :::
 
 %------------------------------------------------------------------
-### Fault reactivation
-\label{subsec:faultreact}
+### 5.5.4 Fault reactivation
+%\label{subsec:faultreact}
 
 Depletion and injection of fluids in the subsurface cause changes in pore pressure and therefore on effective stresses.
 Fluid injection such as in hydraulic fracturing, water-flooding, and waste-water disposal can reach adjacent faults (if any) and decrease the effective normal stress $\sigma_n = S_n - P_p$ acting on faults. 

@@ -386,27 +386,27 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-tensor">3.1 Stress tensor</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cauchy-s-equations-of-stress-equilibrium">Cauchy’s equations of stress equilibrium</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation">Application of Cauchy’s equations for total vertical stress calculation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuum-mechanics-solution-of-an-arbitrary-problem">Continuum mechanics solution of an arbitrary problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cauchy-s-equations-of-stress-equilibrium">3.1.1 Cauchy’s equations of stress equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation">3.1.2 Application of Cauchy’s equations for total vertical stress calculation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuum-mechanics-solution-of-an-arbitrary-problem">3.1.3 Continuum mechanics solution of an arbitrary problem</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-equations-displacements-and-strains">3.2 Kinematic equations: displacements and strains</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constitutive-equation-stress-strain-relationships">3.3 Constitutive equation: stress-strain relationships</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-isotropic-elasticity">Linear isotropic elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-isotropic-solid-in-voigt-notation">The isotropic solid in Voigt notation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-stress-and-elasticity">Effective stress and elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-horizontal-stress-according-to-linear-elasticity">Calculation of horizontal stress according to linear elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-reservoir-compressibility-with-linear-elasticity">Calculation of reservoir compressibility with linear elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-linear-elasticity-problem">Generalized linear elasticity problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-isotropic-elasticity">3.3.1 Linear isotropic elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-isotropic-solid-in-voigt-notation">3.3.2 The isotropic solid in Voigt notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-stress-and-elasticity">3.3.3 Effective stress and elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-horizontal-stress-according-to-linear-elasticity">3.3.4 Calculation of horizontal stress according to linear elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-reservoir-compressibility-with-linear-elasticity">3.3.5 Calculation of reservoir compressibility with linear elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-linear-elasticity-problem">3.3.6 Generalized linear elasticity problem</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-anisotropy">3.4 Elastic anisotropy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-deformation-elasto-plasticity">3.5 Permanent deformation: Elasto-plasticity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dependent-deformation-visco-elasticity">3.6 Time-dependent deformation: Visco-elasticity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiphysics-problems">3.7 Multiphysics problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poro-elasticity">Poro-elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermo-elasticity">Thermo-elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poro-elasticity">3.7.1 Poro-elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermo-elasticity">3.7.2 Thermo-elasticity</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.8 Problems</a></li>
@@ -427,17 +427,17 @@ document.write(`
 <h1>3. Fundamentals of Solid Continuum Mechanics<a class="headerlink" href="#fundamentals-of-solid-continuum-mechanics" title="Link to this heading">#</a></h1>
 <section id="stress-tensor">
 <h2>3.1 Stress tensor<a class="headerlink" href="#stress-tensor" title="Link to this heading">#</a></h2>
-<p>Consider a 3D space with a given right-handed orthogonal coordinate system <span class="math notranslate nohighlight">\(\underline{e}_1\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_2\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> in directions 1, 2 and 3 (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 46</span></a>).
+<p>Consider a 3D space with a given right-handed orthogonal coordinate system <span class="math notranslate nohighlight">\(\underline{e}_1\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_2\)</span>, <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> in directions 1, 2 and 3 (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 45</span></a>).
 In a right-handed coordinate system, the first element of the base <span class="math notranslate nohighlight">\(\underline{e}_1\)</span> is your index finger, the second element of the base <span class="math notranslate nohighlight">\(\underline{e}_2\)</span> is your middle finger, and the third element of the base <span class="math notranslate nohighlight">\(\underline{e}_3\)</span> is your thumb (all in your right hand).</p>
-<p>The number that represents the value of a scalar (such as temperature <span class="math notranslate nohighlight">\(T\)</span> or pore pressure <span class="math notranslate nohighlight">\(P_p\)</span>) at a given point <span class="math notranslate nohighlight">\((x_1,x_2,x_3)\)</span> is independent of the coordinate system orientation and origin (<a class="reference internal" href="#fig-scalarvectortensor"><span class="std std-numref">Fig. 45</span></a>).
+<p>The number that represents the value of a scalar (such as temperature <span class="math notranslate nohighlight">\(T\)</span> or pore pressure <span class="math notranslate nohighlight">\(P_p\)</span>) at a given point <span class="math notranslate nohighlight">\((x_1,x_2,x_3)\)</span> is independent of the coordinate system orientation and origin (<a class="reference internal" href="#fig-scalarvectortensor"><span class="std std-numref">Fig. 44</span></a>).
 However, the numbers that represent the value of a vector (such as velocity <span class="math notranslate nohighlight">\(\underline{v}\)</span> or force <span class="math notranslate nohighlight">\(\underline{F}\)</span>) or a tensor depend on the coordinate system.
 A tensor, like stress, also depends on the coordinate system used to express its numerical values.
 Read the values <span class="math notranslate nohighlight">\(S_{ij}\)</span> as the stress on face perpendicular to base vector <span class="math notranslate nohighlight">\(\underline{e}_i\)</span> in the direction of base vector <span class="math notranslate nohighlight">\(\underline{e}_j\)</span>.
-<span class="math notranslate nohighlight">\(S_{ij}\)</span> is positive if after a displacement <span class="math notranslate nohighlight">\(dx_i\)</span>, <span class="math notranslate nohighlight">\(S_{ij}\)</span> points in opposite direction to <span class="math notranslate nohighlight">\(\underline{e}_j\)</span> (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 46</span></a>).</p>
+<span class="math notranslate nohighlight">\(S_{ij}\)</span> is positive if after a displacement <span class="math notranslate nohighlight">\(dx_i\)</span>, <span class="math notranslate nohighlight">\(S_{ij}\)</span> points in opposite direction to <span class="math notranslate nohighlight">\(\underline{e}_j\)</span> (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 45</span></a>).</p>
 <figure class="align-default" id="fig-scalarvectortensor">
 <a class="reference internal image-reference" href="_images/4-ScalarVectorTensor.png"><img alt="figurecontent" src="_images/4-ScalarVectorTensor.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 45 </span><span class="caption-text">Examples of scalar, vector and tensor quantities in a shale reservoir.</span><a class="headerlink" href="#fig-scalarvectortensor" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 44 </span><span class="caption-text">Examples of scalar, vector and tensor quantities in a shale reservoir.</span><a class="headerlink" href="#fig-scalarvectortensor" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>All stresses <span class="math notranslate nohighlight">\(S_{ij}\)</span> can be written as a matrix ({numref}fig:lec4-3}).
@@ -448,18 +448,18 @@ Hence, the stress tensor is symmetric with respect to the diagonal (top-left to 
 <figure class="align-default" id="fig-lec4-3">
 <a class="reference internal image-reference" href="_images/4-3.svg"><img alt="figurecontent" src="_images/4-3.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 46 </span><span class="caption-text">Graphical and mathematical representation of the  stress tensor. Read <span class="math notranslate nohighlight">\(S_{ij}\)</span> as the stress on face perpendicular to <span class="math notranslate nohighlight">\(\underline{e}_i\)</span> in the direction <span class="math notranslate nohighlight">\(\underline{e}_j\)</span>. <span class="math notranslate nohighlight">\(S_{ij}\)</span> is positive if after a positive displacement  <span class="math notranslate nohighlight">\(dx_i\)</span>, <span class="math notranslate nohighlight">\(S_{ij}\)</span> points in direction opposite to the directions of the base element <span class="math notranslate nohighlight">\(\underline{e}_j\)</span>. All stresses in this figure have been drawn to be positive.</span><a class="headerlink" href="#fig-lec4-3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 45 </span><span class="caption-text">Graphical and mathematical representation of the  stress tensor. Read <span class="math notranslate nohighlight">\(S_{ij}\)</span> as the stress on face perpendicular to <span class="math notranslate nohighlight">\(\underline{e}_i\)</span> in the direction <span class="math notranslate nohighlight">\(\underline{e}_j\)</span>. <span class="math notranslate nohighlight">\(S_{ij}\)</span> is positive if after a positive displacement  <span class="math notranslate nohighlight">\(dx_i\)</span>, <span class="math notranslate nohighlight">\(S_{ij}\)</span> points in direction opposite to the directions of the base element <span class="math notranslate nohighlight">\(\underline{e}_j\)</span>. All stresses in this figure have been drawn to be positive.</span><a class="headerlink" href="#fig-lec4-3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Since the stress tensor is symmetric and is composed by all real numbers, there exist 3 real-valued eigenvalues that we  call principal stresses and denote <span class="math notranslate nohighlight">\(S_1 \geq S_2 \geq S_3\)</span>.
 Each principal stress (eigenvalue) is associated with a principal direction (eigenvector).
 Principal directions are always perpendicular to each other in a cartesian coordinate system.
 When we write the stress tensor in the coordinate system aligned with directions of the principal stresses, the stress tensor results in diagonal elements populated by the principal stresses  and zeros in the off-diagonal places.
-Usually, the principal stresses are ordered from top to bottom starting with <span class="math notranslate nohighlight">\(S_1\)</span> at the top (<a class="reference internal" href="#fig-principi"><span class="std std-numref">Fig. 47</span></a>}).</p>
+Usually, the principal stresses are ordered from top to bottom starting with <span class="math notranslate nohighlight">\(S_1\)</span> at the top (<a class="reference internal" href="#fig-principi"><span class="std std-numref">Fig. 46</span></a>}).</p>
 <figure class="align-default" id="fig-principi">
 <a class="reference internal image-reference" href="_images/4-4.svg"><img alt="figurecontent" src="_images/4-4.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 47 </span><span class="caption-text">Principal stresses and directions. Every tensor with non-zero off-diagonal terms can be simplified to a principal stress tensor with zero off-diagonal terms at the orientation that coincides with the directions of principal stresses.</span><a class="headerlink" href="#fig-principi" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 46 </span><span class="caption-text">Principal stresses and directions. Every tensor with non-zero off-diagonal terms can be simplified to a principal stress tensor with zero off-diagonal terms at the orientation that coincides with the directions of principal stresses.</span><a class="headerlink" href="#fig-principi" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition-example-3-1 admonition">
@@ -526,9 +526,9 @@ The angle between the East axis and the vector is <span class="math notranslate 
 Hence, the angle between the North and the vector <span class="math notranslate nohighlight">\(\nu_1\)</span> is <span class="math notranslate nohighlight">\(90^{\circ} - 4.3 ^{\circ} = 85.7^{\circ}\)</span>. <span class="math notranslate nohighlight">\(\: \: \blacksquare\)</span></p>
 </div>
 <section id="cauchy-s-equations-of-stress-equilibrium">
-<h3>Cauchy’s equations of stress equilibrium<a class="headerlink" href="#cauchy-s-equations-of-stress-equilibrium" title="Link to this heading">#</a></h3>
+<h3>3.1.1 Cauchy’s equations of stress equilibrium<a class="headerlink" href="#cauchy-s-equations-of-stress-equilibrium" title="Link to this heading">#</a></h3>
 <p>Equilibrium of stresses requires summation of forces in all directions to be zero when the object is not moving (no acceleration <span class="math notranslate nohighlight">\(\underline{a}\)</span>, thus <span class="math notranslate nohighlight">\(m \underline{a} = 0\)</span>).
-Consider the schematic in <a class="reference internal" href="#fig-lec4-5"><span class="std std-numref">Fig. 48</span></a>.
+Consider the schematic in <a class="reference internal" href="#fig-lec4-5"><span class="std std-numref">Fig. 47</span></a>.
 Summation of forces in direction 1, where the term <span class="math notranslate nohighlight">\(\rho V b_1\)</span> is the body force component, proportional to the solid mass density <span class="math notranslate nohighlight">\(\rho\)</span> and volume <span class="math notranslate nohighlight">\(V\)</span>, and the acceleration component <span class="math notranslate nohighlight">\(b_1\)</span>, requires</p>
 <p><span class="math notranslate nohighlight">\(
 \begin{array}{rcl}
@@ -549,10 +549,10 @@ Summation of forces in direction 1, where the term <span class="math notranslate
 <figure class="align-default" id="fig-lec4-5">
 <a class="reference internal image-reference" href="_images/4-5.svg"><img alt="figurecontent" src="_images/4-5.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 48 </span><span class="caption-text">Equilibrium of forces in direction 1. <span class="math notranslate nohighlight">\(S_{21}\)</span>,  <span class="math notranslate nohighlight">\(S_{31}+\frac{\partial S_{31}}{\partial x_3} dx_3\)</span> and <span class="math notranslate nohighlight">\(S_{11}+\frac{\partial S_{11}}{\partial x_1} dx_1\)</span> are applied on the non-visible faces of the solid element.</span><a class="headerlink" href="#fig-lec4-5" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 47 </span><span class="caption-text">Equilibrium of forces in direction 1. <span class="math notranslate nohighlight">\(S_{21}\)</span>,  <span class="math notranslate nohighlight">\(S_{31}+\frac{\partial S_{31}}{\partial x_3} dx_3\)</span> and <span class="math notranslate nohighlight">\(S_{11}+\frac{\partial S_{11}}{\partial x_1} dx_1\)</span> are applied on the non-visible faces of the solid element.</span><a class="headerlink" href="#fig-lec4-5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>A generalization of equilibrium in all directions with all stresses (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 46</span></a>) yields the Cauchy’s equilibrium equations:</p>
+<p>A generalization of equilibrium in all directions with all stresses (<a class="reference internal" href="#fig-lec4-3"><span class="std std-numref">Fig. 45</span></a>) yields the Cauchy’s equilibrium equations:</p>
 <div class="math notranslate nohighlight" id="equation-eq-cauchy">
 <span class="eqno">(16)<a class="headerlink" href="#equation-eq-cauchy" title="Link to this equation">#</a></span>\[\begin{split} 	\displaystyle
 	\left\lbrace
@@ -573,7 +573,7 @@ Summation of forces in direction 1, where the term <span class="math notranslate
 \right.\end{split}\]</div>
 </section>
 <section id="application-of-cauchy-s-equations-for-total-vertical-stress-calculation">
-<h3>Application of Cauchy’s equations for total vertical stress calculation<a class="headerlink" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation" title="Link to this heading">#</a></h3>
+<h3>3.1.2 Application of Cauchy’s equations for total vertical stress calculation<a class="headerlink" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation" title="Link to this heading">#</a></h3>
 <p>Consider a half-space where the surface coincides with the origin of the coordinate system and gravity <span class="math notranslate nohighlight">\(g\)</span> points in direction 3, hence <span class="math notranslate nohighlight">\(b_3 = g\)</span> in Eq. \ref{eq:Cauchy}.
 We assume infinite extension in directions 1 and 2, therefore there are no variations in directions 1 and 2, such that <span class="math notranslate nohighlight">\(\partial()/\partial x_1 = \partial()/\partial x_2 = 0\)</span>.
 Notice there are 6 unknowns and 3 equations in Eq. <a class="reference internal" href="#equation-eq-cauchy">(16)</a> (remember <span class="math notranslate nohighlight">\(S_{ij} = S_{ji}\)</span> ).
@@ -585,7 +585,7 @@ Integration of the third equation yields the (vertical) stress <span class="math
 <figure class="align-default" id="fig-lec4-7">
 <a class="reference internal image-reference" href="_images/4-7.svg"><img alt="figurecontent" src="_images/4-7.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 49 </span><span class="caption-text">Stress gradient in a solid half-space and derivation of total vertical stress <span class="math notranslate nohighlight">\(S_{33}\)</span> as a function of depth.</span><a class="headerlink" href="#fig-lec4-7" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 48 </span><span class="caption-text">Stress gradient in a solid half-space and derivation of total vertical stress <span class="math notranslate nohighlight">\(S_{33}\)</span> as a function of depth.</span><a class="headerlink" href="#fig-lec4-7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>You may wonder “what about <span class="math notranslate nohighlight">\(S_{11}\)</span> and <span class="math notranslate nohighlight">\(S_{22}\)</span>”?
@@ -593,7 +593,7 @@ The horizontal stresses cannot be determined with the current equations.
 The solution to this problem will be developed in section \ref{sec:CalcHzStress}.</p>
 </section>
 <section id="continuum-mechanics-solution-of-an-arbitrary-problem">
-<h3>Continuum mechanics solution of an arbitrary problem<a class="headerlink" href="#continuum-mechanics-solution-of-an-arbitrary-problem" title="Link to this heading">#</a></h3>
+<h3>3.1.3 Continuum mechanics solution of an arbitrary problem<a class="headerlink" href="#continuum-mechanics-solution-of-an-arbitrary-problem" title="Link to this heading">#</a></h3>
 <p>{numref}fig:potato-eq} shows an example of an arbitrary shaped continuous solid subjected to external stresses <span class="math notranslate nohighlight">\(\underline{t}\)</span>, external forces <span class="math notranslate nohighlight">\(\underline{F}\)</span>, body forces <span class="math notranslate nohighlight">\(\underline{b}\)</span>, and displacement constraints (bottom fixture).
 As highlighted before, notice that there are 6 unknowns (9 unknowns if displacements are included) and 3 equations in Cauchy’s equations of equilibrium (Eq. <a class="reference internal" href="#equation-eq-cauchy">(16)</a>).
 The solution of a general problem with arbitrary boundary conditions requires more equations to have a determined problem (as many equations as unknowns).
@@ -607,7 +607,7 @@ We need equations that relate displacement to stresses. These equations divide i
 <figure class="align-default" id="fig-potato-eq">
 <a class="reference internal image-reference" href="_images/4-8.svg"><img alt="figurecontent" src="_images/4-8.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 50 </span><span class="caption-text">A general equilibrium problem. The solution of a general continuum mechanics problem requires knowledge of material properties and solid deformation.</span><a class="headerlink" href="#fig-potato-eq" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 49 </span><span class="caption-text">A general equilibrium problem. The solution of a general continuum mechanics problem requires knowledge of material properties and solid deformation.</span><a class="headerlink" href="#fig-potato-eq" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -615,18 +615,18 @@ We need equations that relate displacement to stresses. These equations divide i
 <section id="kinematic-equations-displacements-and-strains">
 <h2>3.2 Kinematic equations: displacements and strains<a class="headerlink" href="#kinematic-equations-displacements-and-strains" title="Link to this heading">#</a></h2>
 <p>Applications of stresses result in solid deformation and displacements.
-<a class="reference internal" href="#fig-freefemexample"><span class="std std-numref">Fig. 51</span></a> shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
+<a class="reference internal" href="#fig-freefemexample"><span class="std std-numref">Fig. 50</span></a> shows an example of a solid body and the corresponding displacement vector field (traces the displacements from the original to the deformed state).
 In this particular case, the solid is anchored at the bottom and deforms due to the application of a force (from left to right) on the top.
 Hence, displacements at the bottom are zero and displacements on the top are the maximum.</p>
 <figure class="align-default" id="fig-freefemexample">
 <a class="reference internal image-reference" href="_images/4-DispStrains.PNG"><img alt="figurecontent" src="_images/4-DispStrains.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 51 </span><span class="caption-text">Example of displacement vector field for a solid anchored at the bottom and with a force (left to right) applied on the top. All other solid surfaces (but the bottom) can move freely. Strains are a function of the displacement field.</span><a class="headerlink" href="#fig-freefemexample" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 50 </span><span class="caption-text">Example of displacement vector field for a solid anchored at the bottom and with a force (left to right) applied on the top. All other solid surfaces (but the bottom) can move freely. Strains are a function of the displacement field.</span><a class="headerlink" href="#fig-freefemexample" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Yet, absolute displacements are not enough to determine stresses.
 A solid may translate or rotate in space without development of any internal stresses required to equilibrate external actions (imagine a cookie “floating” in zero gravity within the  International Space Station <a class="reference external" href="https://www.youtube.com/watch?v=q5uV4fTV0Zo">video example</a>.</p>
-<p>Let’s look at <a class="reference internal" href="#fig-kinematics2d"><span class="std std-numref">Fig. 52</span></a> in order to relate displacements to strains:</p>
+<p>Let’s look at <a class="reference internal" href="#fig-kinematics2d"><span class="std std-numref">Fig. 51</span></a> in order to relate displacements to strains:</p>
 <ol class="arabic simple">
 <li><p>A solid is stretched on its face 1 (perpendicular to <span class="math notranslate nohighlight">\(\underline{e}_1\)</span>) in direction 1 only. This type of deformation produces a change of volume of the solid and therefore contributes to volumetric strain. The resulting deformation or strain (change of length divided original length) is</p></li>
 </ol>
@@ -646,7 +646,7 @@ A solid may translate or rotate in space without development of any internal str
 <figure class="align-default" id="fig-kinematics2d">
 <a class="reference internal image-reference" href="_images/4-10.svg"><img alt="figurecontent" src="_images/4-10.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 52 </span><span class="caption-text">Strain equations for small deformations.</span><a class="headerlink" href="#fig-kinematics2d" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 51 </span><span class="caption-text">Strain equations for small deformations.</span><a class="headerlink" href="#fig-kinematics2d" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Strains do not quantify the absolute value of displacements, but its variation in space (derivative with respect to <span class="math notranslate nohighlight">\(x_i\)</span>).
@@ -703,11 +703,11 @@ How to choose a constitutive equation depends on the material properties, the ma
 <figure class="align-default" id="fig-lec4-12">
 <a class="reference internal image-reference" href="_images/4-12.svg"><img alt="figurecontent" src="_images/4-12.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 53 </span><span class="caption-text">Example of deformations imparted by an applied stress.</span><a class="headerlink" href="#fig-lec4-12" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 52 </span><span class="caption-text">Example of deformations imparted by an applied stress.</span><a class="headerlink" href="#fig-lec4-12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The simplest constitutive relationship for solids is linear elasticity, in which stresses and strains are linearly related by constant coefficients.
-The examples in <a class="reference internal" href="#fig-elasticity1d2d3d"><span class="std std-numref">Fig. 54</span></a> correspond to applications of linear elasticity in various dimensions:</p>
+The examples in <a class="reference internal" href="#fig-elasticity1d2d3d"><span class="std std-numref">Fig. 53</span></a> correspond to applications of linear elasticity in various dimensions:</p>
 <ol class="arabic">
 <li><p>(TOP) Hooke’s law: the force <span class="math notranslate nohighlight">\(F\)</span> [N] required to produce an elongation <span class="math notranslate nohighlight">\(\Delta x\)</span> [m] in a spring with mechanical constant <span class="math notranslate nohighlight">\(k\)</span> [N/m] is</p>
 <div class="math notranslate nohighlight">
@@ -728,12 +728,12 @@ The examples in <a class="reference internal" href="#fig-elasticity1d2d3d"><span
 <figure class="align-default" id="fig-elasticity1d2d3d">
 <a class="reference internal image-reference" href="_images/4-13.svg"><img alt="figurecontent" src="_images/4-13.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 54 </span><span class="caption-text">From Hooke’s law to generalized 3D linear elasticity.</span><a class="headerlink" href="#fig-elasticity1d2d3d" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 53 </span><span class="caption-text">From Hooke’s law to generalized 3D linear elasticity.</span><a class="headerlink" href="#fig-elasticity1d2d3d" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="linear-isotropic-elasticity">
-<h3>Linear isotropic elasticity<a class="headerlink" href="#linear-isotropic-elasticity" title="Link to this heading">#</a></h3>
-<p>Consider a prismatic solid with length <span class="math notranslate nohighlight">\(L\)</span> to which we apply a stress <span class="math notranslate nohighlight">\(\sigma_{33}\)</span> on top face 3 (<a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 55</span></a>).
+<h3>3.3.1 Linear isotropic elasticity<a class="headerlink" href="#linear-isotropic-elasticity" title="Link to this heading">#</a></h3>
+<p>Consider a prismatic solid with length <span class="math notranslate nohighlight">\(L\)</span> to which we apply a stress <span class="math notranslate nohighlight">\(\sigma_{33}\)</span> on top face 3 (<a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 54</span></a>).
 The bottom face is not allowed to move in direction 3 but it can slide sideways.
 The four other faces are free to move in all directions.
 Notice that the top face can also deform in directions 1 and 2.
@@ -745,15 +745,15 @@ The Poisson ratio (greek letter nu) is defined as (-1) times the ratio between t
 <div class="math notranslate nohighlight" id="equation-eq-poissondef">
 <span class="eqno">(24)<a class="headerlink" href="#equation-eq-poissondef" title="Link to this equation">#</a></span>\[	\nu = -\frac{\varepsilon_{11}}{\varepsilon_{33}}\]</div>
 <p>These two coefficients are the two coefficients conventionally used as elasticity constants in continuum mechanics.
-We will see later that in the subsurface we almost never find conditions of laterally “unconfined” stress loading like the one shown in <a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 55</span></a>.</p>
+We will see later that in the subsurface we almost never find conditions of laterally “unconfined” stress loading like the one shown in <a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 54</span></a>.</p>
 <figure class="align-default" id="fig-youngpoisson">
 <a class="reference internal image-reference" href="_images/4-14.svg"><img alt="figurecontent" src="_images/4-14.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 55 </span><span class="caption-text">Unconfined stress loading (compression) of a linear elastic isotropic solid. Because the solid is isotropic, the same equations are valid for compression in any other direction, and also in tension.</span><a class="headerlink" href="#fig-youngpoisson" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 54 </span><span class="caption-text">Unconfined stress loading (compression) of a linear elastic isotropic solid. Because the solid is isotropic, the same equations are valid for compression in any other direction, and also in tension.</span><a class="headerlink" href="#fig-youngpoisson" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The real behavior of rocks differs from the linear elastic assumption.
-<a class="reference internal" href="#fig-younglab"><span class="std std-numref">Fig. 56</span></a> shows a schematic representation of a typical unconfined loading test.
+<a class="reference internal" href="#fig-younglab"><span class="std std-numref">Fig. 55</span></a> shows a schematic representation of a typical unconfined loading test.
 The figure plots axial stress <span class="math notranslate nohighlight">\(\sigma_a\)</span> in the vertical axis and axial strain <span class="math notranslate nohighlight">\(\varepsilon_a\)</span> in the horizontal axis.
 Often, rock plugs are not perfectly parallel or may have some microcracks.
 Both features make the initial loading stress-strain behavior look less stiff than the actual rock stiffness.
@@ -763,21 +763,21 @@ The Poisson ratio can be measured in the same range of the measurement of <span 
 <figure class="align-default" id="fig-younglab">
 <a class="reference internal image-reference" href="_images/YoungLab.png"><img alt="figurecontent" src="_images/YoungLab.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 56 </span><span class="caption-text">Schematic of stress-strain curve during rock uniaxial loading in the laboratory.</span><a class="headerlink" href="#fig-younglab" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 55 </span><span class="caption-text">Schematic of stress-strain curve during rock uniaxial loading in the laboratory.</span><a class="headerlink" href="#fig-younglab" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="fig-youngpoissonlab">
 <a class="reference internal image-reference" href="_images/YoungPoissonLab.png"><img alt="figurecontent" src="_images/YoungPoissonLab.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 57 </span><span class="caption-text">Actual laboratory measured stress-strain response during rock axial (deviatoric) loading. Data analysis permits recovering the Young’s modulus and the Poisson’s ratio. The data clearly shows the transition of volumetric strain from positive to negative changes, which clearly shows rock damage before the peak failure stress.</span><a class="headerlink" href="#fig-youngpoissonlab" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 56 </span><span class="caption-text">Actual laboratory measured stress-strain response during rock axial (deviatoric <span class="math notranslate nohighlight">\(\Delta \sigma_a\)</span>) loading. Data analysis permits recovering the Young’s modulus and the Poisson’s ratio. The data clearly shows the transition of volumetric strain from positive to negative changes, which clearly shows rock damage before the peak failure stress. Elastic property measurement <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span> should be done with minimum or no damage.</span><a class="headerlink" href="#fig-youngpoissonlab" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The Young modulus of sediments and rocks varies widely.
-<a class="reference internal" href="#fig-youngsummary"><span class="std std-numref">Fig. 58</span></a> shows typical values of Young’s modulus.</p>
+<a class="reference internal" href="#fig-youngsummary"><span class="std std-numref">Fig. 57</span></a> shows typical values of Young’s modulus.</p>
 <figure class="align-default" id="fig-youngsummary">
 <a class="reference internal image-reference" href="_images/3-YoungModulusSummary.png"><img alt="figurecontent" src="_images/3-YoungModulusSummary.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 58 </span><span class="caption-text">Typical Young moduli for sediments and rocks. The values correspond to “quasi-static” loading from stress-strain response. SS: sandstone; SiS: Siltstone; Sh: Shale; Gr: Granite.</span><a class="headerlink" href="#fig-youngsummary" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 57 </span><span class="caption-text">Typical Young moduli for sediments and rocks. The values correspond to “quasi-static” loading from stress-strain response. SS: sandstone; SiS: Siltstone; Sh: Shale; Gr: Granite.</span><a class="headerlink" href="#fig-youngsummary" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition-example-3-3 admonition">
@@ -807,7 +807,7 @@ The Poisson ratio can be measured in the same range of the measurement of <span 
 </div>
 </section>
 <section id="the-isotropic-solid-in-voigt-notation">
-<h3>The isotropic solid in Voigt notation<a class="headerlink" href="#the-isotropic-solid-in-voigt-notation" title="Link to this heading">#</a></h3>
+<h3>3.3.2 The isotropic solid in Voigt notation<a class="headerlink" href="#the-isotropic-solid-in-voigt-notation" title="Link to this heading">#</a></h3>
 <p>A generalization of the Young’s modulus and Poisson’s ratio equations (Eq. <a class="reference internal" href="#equation-eq-youngdef">(23)</a> and <a class="reference internal" href="#equation-eq-poissondef">(24)</a>) in all directions leads to the 3 independent equations.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}	\left\lbrace
@@ -863,7 +863,7 @@ Hence, fourth-order tensor <span class="math notranslate nohighlight">\(\underse
 			\sigma_{12} \cfrac{}{}
 		\end{array}
 	\right]\end{split}\]</div>
-<p>For example, let us apply a stress <span class="math notranslate nohighlight">\(\underset{=}{\sigma} = [0,0,\sigma_{33},0,0,0]^T\)</span> as in example in <a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 55</span></a>.
+<p>For example, let us apply a stress <span class="math notranslate nohighlight">\(\underset{=}{\sigma} = [0,0,\sigma_{33},0,0,0]^T\)</span> as in example in <a class="reference internal" href="#fig-youngpoisson"><span class="std std-numref">Fig. 54</span></a>.
 The result of <span class="math notranslate nohighlight">\(\underset{=}{D} \: \underset{=}{\sigma}\)</span> is</p>
 <p><span class="math notranslate nohighlight">\( \underset{=}{\varepsilon} = \left [ -\cfrac{\nu}{E} \: \sigma_{33},-\cfrac{\nu}{E} \: \sigma_{33},\cfrac{1}{E} \: \sigma_{33},0,0,0 \right]^T 
 \)</span></p>
@@ -977,16 +977,16 @@ Putting equations in all directions together yields the complete set of Lam’e�
 The usual pair choice is <span class="math notranslate nohighlight">\(E\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span>.
 However, there are other options depending on the application and equations used, e.g, <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(G\)</span>.<br />
 A complete list of parameter pairs is available scrolling to the bottom in <a class="reference external" href="https://en.wikipedia.org/wiki/Young's_modulus">this Wikipedia page</a>.
-<a class="reference internal" href="#fig-elastic-summary"><span class="std std-numref">Fig. 59</span></a> list the most common equivalencies.</p>
+<a class="reference internal" href="#fig-elastic-summary"><span class="std std-numref">Fig. 58</span></a> list the most common equivalencies.</p>
 <figure class="align-default" id="fig-elastic-summary">
 <a class="reference internal image-reference" href="_images/4-21.svg"><img alt="figurecontent" src="_images/4-21.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 59 </span><span class="caption-text">Table with equivalencies of the most used elastic moduli in linear isotropic elasticity.</span><a class="headerlink" href="#fig-elastic-summary" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 58 </span><span class="caption-text">Table with equivalencies of the most used elastic moduli in linear isotropic elasticity.</span><a class="headerlink" href="#fig-elastic-summary" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="effective-stress-and-elasticity">
-<h3>Effective stress and elasticity<a class="headerlink" href="#effective-stress-and-elasticity" title="Link to this heading">#</a></h3>
+<h3>3.3.3 Effective stress and elasticity<a class="headerlink" href="#effective-stress-and-elasticity" title="Link to this heading">#</a></h3>
 <p>Porous solids deform and fail due to the application of effective stresses rather than total stress.
 Hence, Hooke’s law requires to use the effective stress tensor rather than the total stress tensor.
 The equation <span class="math notranslate nohighlight">\(\underset{=}{\varepsilon} = \underset{=}{D} \: \underset{=}{S}\)</span> is incorrect.
@@ -998,7 +998,7 @@ The subtracted value is the same in all directions because pore pressure is the 
 <figure class="align-default" id="fig-lec4-26">
 <a class="reference internal image-reference" href="_images/4-26.svg"><img alt="figurecontent" src="_images/4-26.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 60 </span><span class="caption-text">The effective stress tensor.</span><a class="headerlink" href="#fig-lec4-26" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 59 </span><span class="caption-text">The effective stress tensor.</span><a class="headerlink" href="#fig-lec4-26" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Rigorously, the effective stress tensor needs a correction of pore pressure by the Biot coefficient <span class="math notranslate nohighlight">\(\alpha\)</span> that accounts for solid grain deformation with changes in pore pressure.</p>
@@ -1009,7 +1009,7 @@ The rock matrix of tight sandstones and shales may have a Biot coeffiecient as l
 The theory of poroelasticity is covered in the <a class="reference external" href="https://dnicolasespinoza.github.io/AdvancedGeomech/">Advanced Geomechanics</a> course with a brief introduction in Section \ref{sec:poroelasticity}.</p>
 </section>
 <section id="calculation-of-horizontal-stress-according-to-linear-elasticity">
-<h3>Calculation of horizontal stress according to linear elasticity<a class="headerlink" href="#calculation-of-horizontal-stress-according-to-linear-elasticity" title="Link to this heading">#</a></h3>
+<h3>3.3.4 Calculation of horizontal stress according to linear elasticity<a class="headerlink" href="#calculation-of-horizontal-stress-according-to-linear-elasticity" title="Link to this heading">#</a></h3>
 <p>\label{sec:CalcHzStress}</p>
 <p>Let us revisit the problem of stress calculation in a half-space, such as the Earth’s shallow subsurface.
 We already know that the vertical total stress (<span class="math notranslate nohighlight">\(S_v = S_{33}\)</span>) is a function of depth and rock bulk mass density.</p>
@@ -1023,7 +1023,7 @@ Such is the case of a sedimentary basin with no additional tectonic strains.</p>
 <figure class="align-default" id="fig-1dstrainschem">
 <a class="reference internal image-reference" href="_images/UniaxialStrainSchematics.png"><img alt="figurecontent" src="_images/UniaxialStrainSchematics.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Uniaxial strain condition with sedimentation in a tectonically passive environment. As sediment burial progresses the sediment compacts only in vertical direction.</span><a class="headerlink" href="#fig-1dstrainschem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 60 </span><span class="caption-text">Uniaxial strain condition with sedimentation in a tectonically passive environment. As sediment burial progresses the sediment compacts only in vertical direction.</span><a class="headerlink" href="#fig-1dstrainschem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Let us now use Equation <a class="reference internal" href="#equation-eq-constitutivedsigma">(28)</a> together with the equilibrium equation.
@@ -1045,7 +1045,7 @@ The result is</p>
 <p>or equivalently</p>
 <div class="math notranslate nohighlight" id="equation-eq-coefflateraleffstress">
 <span class="eqno">(29)<a class="headerlink" href="#equation-eq-coefflateraleffstress" title="Link to this equation">#</a></span>\[	 	\sigma_{h} = \frac{\nu}{1-\nu} \sigma_{v} \]</div>
-<p>For typical values of <span class="math notranslate nohighlight">\(\nu \sim 0.25\)</span>, the horizontal stress coefficient is <span class="math notranslate nohighlight">\(\nu/(1-\nu) \sim 1/3 \)</span> (<a class="reference internal" href="#fig-lateraleffstresscoeff"><span class="std std-numref">Fig. 62</span></a>).
+<p>For typical values of <span class="math notranslate nohighlight">\(\nu \sim 0.25\)</span>, the horizontal stress coefficient is <span class="math notranslate nohighlight">\(\nu/(1-\nu) \sim 1/3 \)</span> (<a class="reference internal" href="#fig-lateraleffstresscoeff"><span class="std std-numref">Fig. 61</span></a>).
 Thus, the effective horizontal stress is approximately one third of the effective vertical stress.
 Contrary to a fluid, the solid does not push sideways with all its weight.
 It pushes sideways with just a fraction of its weight proportionally to its tendency to deform sideways, i.e., the Poisson ratio.
@@ -1054,7 +1054,7 @@ An “effective” <span class="math notranslate nohighlight">\(\nu \sim 0.5\)</
 <figure class="align-default" id="fig-lateraleffstresscoeff">
 <a class="reference internal image-reference" href="_images/lateralstres-coeff.png"><img alt="figurecontent" src="_images/lateralstres-coeff.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Lateral stress coefficient as a function of Poisson’s ratio. Solids do not push sideways with all its weight when compacted vertically.</span><a class="headerlink" href="#fig-lateraleffstresscoeff" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 61 </span><span class="caption-text">Lateral stress coefficient as a function of Poisson’s ratio. Solids do not push sideways with all its weight when compacted vertically.</span><a class="headerlink" href="#fig-lateraleffstresscoeff" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The total horizontal stresses are obtained by adding pore pressure to the effective horizontal stresses: <span class="math notranslate nohighlight">\(S_{11} = \sigma_{11} + P_p\)</span> and <span class="math notranslate nohighlight">\(S_{22} = \sigma_{22} + P_p\)</span>.</p>
@@ -1073,11 +1073,11 @@ Assuming that the material properties are constant, then,</p>
 	 	    \frac{\Delta S_v}{\Delta z} 
 	 	    + \left( \frac{1-2\nu}{1-\nu} \right) 
 	 	    \frac{\Delta P_p}{\Delta z}\]</div>
-<p>For example, for onshore conditions with typical values <span class="math notranslate nohighlight">\(\Delta S_v / \Delta z \sim 1\)</span> psi/ft, <span class="math notranslate nohighlight">\(\Delta P_p / \Delta z \sim 0.44\)</span> psi/ft, and <span class="math notranslate nohighlight">\(\nu = 0.25\)</span>, the fracture gradient is <span class="math notranslate nohighlight">\(\Delta S_h / \Delta z = 0.63\)</span> psi/ft. Figure <a class="reference internal" href="#fig-fracgradient"><span class="std std-numref">Fig. 63</span></a> shows a schematic example of the calculated fracture gradient.</p>
+<p>For example, for onshore conditions with typical values <span class="math notranslate nohighlight">\(\Delta S_v / \Delta z \sim 1\)</span> psi/ft, <span class="math notranslate nohighlight">\(\Delta P_p / \Delta z \sim 0.44\)</span> psi/ft, and <span class="math notranslate nohighlight">\(\nu = 0.25\)</span>, the fracture gradient is <span class="math notranslate nohighlight">\(\Delta S_h / \Delta z = 0.63\)</span> psi/ft. Figure <a class="reference internal" href="#fig-fracgradient"><span class="std std-numref">Fig. 62</span></a> shows a schematic example of the calculated fracture gradient.</p>
 <figure class="align-default" id="fig-fracgradient">
 <a class="reference internal image-reference" href="_images/3-FracGradient.png"><img alt="figurecontent" src="_images/3-FracGradient.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 63 </span><span class="caption-text">Schematic representation of the prediction of minimum horizontal total stress <span class="math notranslate nohighlight">\(S_h\)</span>, a lower bound for the fracture gradient, using Eq. <a class="reference internal" href="#equation-eq-fracgradient">(30)</a>.</span><a class="headerlink" href="#fig-fracgradient" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 62 </span><span class="caption-text">Schematic representation of the prediction of minimum horizontal total stress <span class="math notranslate nohighlight">\(S_h\)</span>, a lower bound for the fracture gradient, using Eq. <a class="reference internal" href="#equation-eq-fracgradient">(30)</a>.</span><a class="headerlink" href="#fig-fracgradient" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Let us now relax the assumption of horizontal strains equal to zero, such that they are not zero <span class="math notranslate nohighlight">\(\varepsilon_{11} \neq \varepsilon_{22} \neq 0\)</span>, but are known quantities.<br />
@@ -1148,7 +1148,7 @@ The above algorithm further assumes a linear increase of strain with depth.</p>
 <ol class="arabic simple">
 <li><p>Assuming linear isotropic elasticity, use Eq. <a class="reference internal" href="#equation-eq-tectonicstrains">(31)</a> if tectonic strains are not zero or simply Eq. <a class="reference internal" href="#equation-eq-coefflateraleffstress">(29)</a> if tectonic strains are zero.</p></li>
 <li><p>Assuming subsurface stresses are at yield, use Eqs. in the Chapter about “Stresses on Faults”.</p></li>
-<li><p>Assuming subsurface stresses are affected by visco-elastic response, add stress relaxation component (Fig. <a class="reference internal" href="#fig-stressrelax"><span class="std std-numref">Fig. 72</span></a>)</p></li>
+<li><p>Assuming subsurface stresses are affected by visco-elastic response, add stress relaxation component (Fig. <a class="reference internal" href="#fig-stressrelax"><span class="std std-numref">Fig. 71</span></a>)</p></li>
 </ol>
 </li>
 <li><p>Calculate total horizontal stress by adding pore pressure to effective horizontal stresses:</p></li>
@@ -1263,7 +1263,7 @@ Locations with small horizontal stress anisotropy (mostly normal faulting sites)
 Polygonal faults (Chapter 5 - [update link]) are an example of normal fault growth with strike in all directions because <span class="math notranslate nohighlight">\(S_{Hmax} \sim S_{hmin}\)</span>.</p>
 </section>
 <section id="calculation-of-reservoir-compressibility-with-linear-elasticity">
-<h3>Calculation of reservoir compressibility with linear elasticity<a class="headerlink" href="#calculation-of-reservoir-compressibility-with-linear-elasticity" title="Link to this heading">#</a></h3>
+<h3>3.3.5 Calculation of reservoir compressibility with linear elasticity<a class="headerlink" href="#calculation-of-reservoir-compressibility-with-linear-elasticity" title="Link to this heading">#</a></h3>
 <p>\label{sec:ResCompress}</p>
 <p>The rock pore volume compressibility <span class="math notranslate nohighlight">\(C_{pp}\)</span> is a critical parameter in the fluid flow mass conservation equation and therefore on the diffusivity equation (1D example):</p>
 <div class="math notranslate nohighlight">
@@ -1275,7 +1275,7 @@ For example, compaction drive is proportional to rock compressibility (see this 
 <div class="math notranslate nohighlight">
 \[	C_{pp} = \left. \frac{1}{V_p} \frac{\mathrm{d}V_p}{\mathrm{d}P_p} \right|_{S_v,\varepsilon_h}\]</div>
 <p>The equation above captures reservoir boundary conditions in which the total vertical stress <span class="math notranslate nohighlight">\(S_v\)</span> remains constant (overburden above the reservoir does not change) and there is no change of lateral strain <span class="math notranslate nohighlight">\(\varepsilon_h\)</span>, a condition also termed as “uniaxial strain” deformation.
-Such condition is appropriate in long and thin reservoirs with a compliant caprock (<a class="reference internal" href="#fig-reservoircompaction"><span class="std std-numref">Fig. 64</span></a>).</p>
+Such condition is appropriate in long and thin reservoirs with a compliant caprock (<a class="reference internal" href="#fig-reservoircompaction"><span class="std std-numref">Fig. 63</span></a>).</p>
 <p>The measurements of <span class="math notranslate nohighlight">\(C_{pp}\)</span> are derived from bulk volume measurements.
 Let us assume that the change of pore volume <span class="math notranslate nohighlight">\(\mathrm{d}V_p\)</span> is equal to the change of bulk volume <span class="math notranslate nohighlight">\(\mathrm{d}V_b\)</span>, which means that all bulk deformation is caused by change of porosity.
 Hence it is possible to rewrite the definition of <span class="math notranslate nohighlight">\(C_{pp}\)</span> as</p>
@@ -1294,7 +1294,7 @@ Finally, we can calculate the uniaxial strain pore compressibility using the typ
 <figure class="align-default" id="fig-reservoircompaction">
 <a class="reference internal image-reference" href="_images/reservoir-compressibility.png"><img alt="figurecontent" src="_images/reservoir-compressibility.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 64 </span><span class="caption-text">Pressure depletion causes reservoir compaction. The reservoir compressibility is inversely proportional to the constrained modulus <span class="math notranslate nohighlight">\(M\)</span>.</span><a class="headerlink" href="#fig-reservoircompaction" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 63 </span><span class="caption-text">Pressure depletion causes reservoir compaction. The reservoir compressibility is inversely proportional to the constrained modulus <span class="math notranslate nohighlight">\(M\)</span>.</span><a class="headerlink" href="#fig-reservoircompaction" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Unfortunately, the theory of linear elasticity is quite limited  to capture the visco-elasto-plastic behavior of rocks upon depletion during long times and with large strains.
@@ -1316,7 +1316,7 @@ Stiff well cemented rocks have low pore volume compressibility <span class="math
 </div>
 </section>
 <section id="generalized-linear-elasticity-problem">
-<h3>Generalized linear elasticity problem<a class="headerlink" href="#generalized-linear-elasticity-problem" title="Link to this heading">#</a></h3>
+<h3>3.3.6 Generalized linear elasticity problem<a class="headerlink" href="#generalized-linear-elasticity-problem" title="Link to this heading">#</a></h3>
 <p>The general solution of a linear elasticity problem requires combining the equilibrium, kinematic, and constitutive equations.
 The result is a differential equation with displacement <span class="math notranslate nohighlight">\(\underline{u}\)</span> as the unknown:</p>
 <div class="math notranslate nohighlight" id="equation-eq-navier">
@@ -1327,12 +1327,12 @@ A review of the gradient <span class="math notranslate nohighlight">\(\nabla ()\
 In summary, these are all derivatives that quantify changes of displacement in space.
 The full derivation of this equation can be found <a class="reference external" href="https://youtu.be/1PnQ10H2vV0">in this YouTube video</a>.</p>
 <p>The solution requires knowledge of the domain geometry, boundary conditions and initial conditions.
-For example, a hydraulic fracture simulator solves numerically these same equations (<a class="reference internal" href="#fig-generalcontmechproblem"><span class="std std-numref">Fig. 65</span></a>).
+For example, a hydraulic fracture simulator solves numerically these same equations (<a class="reference internal" href="#fig-generalcontmechproblem"><span class="std std-numref">Fig. 64</span></a>).
 In this class, we will see analytical solutions of this equation for 1) displacements and stresses around wellbores, and 2) displacements and stresses around planar fractures.</p>
 <figure class="align-default" id="fig-generalcontmechproblem">
 <a class="reference internal image-reference" href="_images/4-GeneralContMechProblem.PNG"><img alt="figurecontent" src="_images/4-GeneralContMechProblem.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 65 </span><span class="caption-text">General continuum mechanics problem.</span><a class="headerlink" href="#fig-generalcontmechproblem" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 64 </span><span class="caption-text">General continuum mechanics problem.</span><a class="headerlink" href="#fig-generalcontmechproblem" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>A similar an related differential equation is the “heat diffusion equation” also valid for pore pressure diffusivity, widely used in reservoir engineering and hydrology, where</p>
@@ -1354,20 +1354,20 @@ Accurate determination of horizontal stresses with elastic models (e.g., Eq. <a 
 <figure class="align-default" id="fig-tviandor">
 <a class="reference internal image-reference" href="_images/4-22.svg"><img alt="figurecontent" src="_images/4-22.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 66 </span><span class="caption-text">Stiffness matrix coefficients in anisotropic media.</span><a class="headerlink" href="#fig-tviandor" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 65 </span><span class="caption-text">Stiffness matrix coefficients in anisotropic media.</span><a class="headerlink" href="#fig-tviandor" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Most sedimentary rocks are stiffer in the horizontal direction than in the vertical direction <span class="math notranslate nohighlight">\(E_h &gt; E_v\)</span>.</p>
 <figure class="align-default" id="fig-sedrockanisotropy">
 <a class="reference internal image-reference" href="_images/anisotropyYoung.png"><img alt="figurecontent" src="_images/anisotropyYoung.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 67 </span><span class="caption-text">Stiffness parallel and perpendicular to bedding.}.</span><a class="headerlink" href="#fig-sedrockanisotropy" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 66 </span><span class="caption-text">Stiffness parallel and perpendicular to bedding.}.</span><a class="headerlink" href="#fig-sedrockanisotropy" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="fig-crawfordanisotropy">
 <a class="reference internal image-reference" href="_images/3_CrawfordAnisotropy.png"><img alt="figurecontent" src="_images/3_CrawfordAnisotropy.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 68 </span><span class="caption-text">Summary of experimental measurements of shale anisotropy. (a) Ratio of horizontal and vertical Young’s modulus and (b) coefficient of horizontal effective stress according to a vertical transverse isotropic model. Anisotropy increases with increasing clay and organic matter content in shales. Source: <a class="reference external" href="https://doi.org/10.15530/urtec-2020-2206">Crawford et al. 2020</a>.</span><a class="headerlink" href="#fig-crawfordanisotropy" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 67 </span><span class="caption-text">Summary of experimental measurements of shale anisotropy. (a) Ratio of horizontal and vertical Young’s modulus and (b) coefficient of horizontal effective stress according to a vertical transverse isotropic model. Anisotropy increases with increasing clay and organic matter content in shales. Source: <a class="reference external" href="https://doi.org/10.15530/urtec-2020-2206">Crawford et al. 2020</a>.</span><a class="headerlink" href="#fig-crawfordanisotropy" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1376,7 +1376,7 @@ Accurate determination of horizontal stresses with elastic models (e.g., Eq. <a 
 <p>Most rocks will exhibit permanent (plastic) deformation when loaded at large strains <span class="math notranslate nohighlight">\(\varepsilon \gtrsim 0.001\)</span>.
 Plastic deformation includes plastic compression strains and plastic shear strains.
 The theory of elasto-plasticity is covered in the <a class="reference external" href="https://www.youtube.com/playlist?list=PLv0npDbE5HXssC2CwCAssJs0fTkKquQFj">Advanced Geomechanics course</a>.
-<a class="reference internal" href="#fig-loadingunloading"><span class="std std-numref">Fig. 69</span></a> shows an example of permanent deformation during a typical deviatoric loading test to measure Young’s modulus.
+<a class="reference internal" href="#fig-loadingunloading"><span class="std std-numref">Fig. 68</span></a> shows an example of permanent deformation during a typical deviatoric loading test (increasing axial stress and keeping effective radial stress constant) to measure Young’s modulus.
 First-time loading usually involves plastic deformation and creep.
 Therefore the loading Young’s modulus <span class="math notranslate nohighlight">\(E_{load}\)</span> results smaller than the unloading modulus <span class="math notranslate nohighlight">\(E_{unload}\)</span>.
 While <span class="math notranslate nohighlight">\(E_{load}\)</span> calculation lumps elastic, plastic, and creep strains, <span class="math notranslate nohighlight">\(E_{unload}\)</span> involves mostly elastic strains.
@@ -1384,7 +1384,7 @@ Notice the the re-loading modulus is similar to the unloading modulus <span clas
 <figure class="align-default" id="fig-loadingunloading">
 <a class="reference internal image-reference" href="_images/LoadingUnloading.svg"><img alt="figurecontent" src="_images/LoadingUnloading.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 69 </span><span class="caption-text">Loading and unloading stress paths for a shale sample. Two unloading-reloading paths were performed before rock failure. Notice that <span class="math notranslate nohighlight">\(E_{load} &lt; E_{unload}\)</span> because of plastic and creep strains.</span><a class="headerlink" href="#fig-loadingunloading" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 68 </span><span class="caption-text">Loading and unloading stress paths for a shale sample. Two unloading-reloading paths were performed before rock failure. Notice that <span class="math notranslate nohighlight">\(E_{load} &lt; E_{unload}\)</span> because of plastic and creep strains.</span><a class="headerlink" href="#fig-loadingunloading" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1396,7 +1396,7 @@ Rocks tend to be softer and more ductile as the loading time frame increases.</p
 <figure class="align-default" id="fig-strainratestiffness">
 <a class="reference internal image-reference" href="_images/5B-18.svg"><img alt="figurecontent" src="_images/5B-18.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 70 </span><span class="caption-text">Strain-rate dependent stiffness. \hl{[Put your own data]}</span><a class="headerlink" href="#fig-strainratestiffness" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 69 </span><span class="caption-text">Strain-rate dependent stiffness.</span><a class="headerlink" href="#fig-strainratestiffness" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Another manifestation of visco-elasticity is time-dependent deformation, usually known as “creep”.
@@ -1407,30 +1407,30 @@ The wellbore walls will deform if left uncased and stick to the drilling string.
 <figure class="align-default" id="fig-creep">
 <a class="reference internal image-reference" href="_images/5-CreepTXC.svg"><img alt="figurecontent" src="_images/5-CreepTXC.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 71 </span><span class="caption-text">Time-dependent deformation: Creep.</span><a class="headerlink" href="#fig-creep" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 70 </span><span class="caption-text">Time-dependent deformation: Creep. Deviatoric stress is used here as the stress difference bewteen maximum and least principal stresses: <span class="math notranslate nohighlight">\(\sigma_1 - \sigma_3\)</span>.</span><a class="headerlink" href="#fig-creep" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>One other manifestation of visco-elasticity is time-dependent stress change or stress relaxation.
 Whenever a change of strain is applied and set constant, stresses may relax with time.
-For example, unconsolidated sands may relax horizontal stresses with time after a tectonic strain is applied (<a class="reference internal" href="#fig-stressrelaxfield"><span class="std std-numref">Fig. 73</span></a>).
+For example, unconsolidated sands may relax horizontal stresses with time after a tectonic strain is applied (<a class="reference internal" href="#fig-stressrelaxfield"><span class="std std-numref">Fig. 72</span></a>).
 Therefore, neglecting visco-elasticity may result in an overestimation of horizontal stresses in unconsolidated sands with a purely elastic model.</p>
 <figure class="align-default" id="fig-stressrelax">
 <a class="reference internal image-reference" href="_images/5-StressRelaxTXC.svg"><img alt="figurecontent" src="_images/5-StressRelaxTXC.svg" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 72 </span><span class="caption-text">Time-dependent deformation: stress relaxation.</span><a class="headerlink" href="#fig-stressrelax" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 71 </span><span class="caption-text">Time-dependent deformation: stress relaxation. Deviatoric stress is used here as the stress difference bewteen maximum and least principal stresses: <span class="math notranslate nohighlight">\(\sigma_1 - \sigma_3\)</span>.</span><a class="headerlink" href="#fig-stressrelax" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="fig-stressrelaxfield">
 <a class="reference internal image-reference" href="_images/4-StressRelaxField.PNG"><img alt="figurecontent" src="_images/4-StressRelaxField.PNG" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 73 </span><span class="caption-text">Impact of stress relaxation in horizontal stresses in the subsurface. (a) Decrease of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> due to deviatoric stress relaxation caused by a paleo-tectonic strain <span class="math notranslate nohighlight">\(\varepsilon_{Hmax}\)</span>. (b)Increase of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> due to deviatoric stress relaxation caused by overburden stress.</span><a class="headerlink" href="#fig-stressrelaxfield" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 72 </span><span class="caption-text">Impact of stress relaxation in horizontal stresses in the subsurface. (a) Decrease of <span class="math notranslate nohighlight">\(S_{Hmax}\)</span> due to deviatoric stress (<span class="math notranslate nohighlight">\(S_{Hmax} - S_v\)</span> in this case) relaxation caused by a paleo-tectonic strain <span class="math notranslate nohighlight">\(\varepsilon_{Hmax}\)</span>. (b)Increase of <span class="math notranslate nohighlight">\(S_{hmin}\)</span> due to deviatoric stress (<span class="math notranslate nohighlight">\(S_v - S_{hmin}\)</span> in this case) relaxation caused by overburden stress.</span><a class="headerlink" href="#fig-stressrelaxfield" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="multiphysics-problems">
 <h2>3.7 Multiphysics problems<a class="headerlink" href="#multiphysics-problems" title="Link to this heading">#</a></h2>
 <section id="poro-elasticity">
-<h3>Poro-elasticity<a class="headerlink" href="#poro-elasticity" title="Link to this heading">#</a></h3>
+<h3>3.7.1 Poro-elasticity<a class="headerlink" href="#poro-elasticity" title="Link to this heading">#</a></h3>
 <p>\label{sec:poroelasticity}</p>
 <p>When rocks deform, most of the deformation transfers into changes of porosity.
 As a matter of fact, the solid phase can also deform and change volume.
@@ -1449,15 +1449,14 @@ In anisotropic media, the poroelasticity correction factor becomes a tensor <spa
 The corrections for poroelasticity <span class="math notranslate nohighlight">\(\alpha \neq 1\)</span> become significant in tight rocks with high stiffness, and low and unconnected porosity.</p>
 </section>
 <section id="thermo-elasticity">
-<h3>Thermo-elasticity<a class="headerlink" href="#thermo-elasticity" title="Link to this heading">#</a></h3>
-<p>\label{sec:Thermoelasticity}</p>
+<h3>3.7.2 Thermo-elasticity<a class="headerlink" href="#thermo-elasticity" title="Link to this heading">#</a></h3>
 <p>Changes of temperature in solids change the equilibrium distance between molecules, and therefore induce strains.
-Imagine a solid heated up, but not allowed to dilate in vertical direction (<a class="reference internal" href="#fig-thermalswellstress"><span class="std std-numref">Fig. 74</span></a>).
+Imagine a solid heated up, but not allowed to dilate in vertical direction (<a class="reference internal" href="#fig-thermalswellstress"><span class="std std-numref">Fig. 73</span></a>).
 The result is an increase of stress in vertical direction rather than a deformation in vertical direction.</p>
 <figure class="align-default" id="fig-thermalswellstress">
 <a class="reference internal image-reference" href="_images/4-ThermalStrainStress.svg"><img alt="figurecontent" src="_images/4-ThermalStrainStress.svg" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 74 </span><span class="caption-text">Thermo-elasticity example of dilation thermal stress.</span><a class="headerlink" href="#fig-thermalswellstress" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 73 </span><span class="caption-text">Thermo-elasticity example of dilation thermal stress.</span><a class="headerlink" href="#fig-thermalswellstress" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The coefficient of thermal dilation <span class="math notranslate nohighlight">\(\alpha_L\)</span>  quantifies strains as a function of changes of temperature <span class="math notranslate nohighlight">\(T\)</span> at constant pressure <span class="math notranslate nohighlight">\(p\)</span>, and it is defined as</p>
@@ -1484,7 +1483,7 @@ The coupled thermo-poro-elastic equations are covered in the Advanced Geomechani
 Thermal(-induced) stresses can also cause enhanced fractured reactivation when injecting cold fluids in a hot reservoir, such as in deep geothermal energy recovery.</p>
 <div class="admonition-example-3-7 admonition">
 <p class="admonition-title">Example 3.7</p>
-<p>Derive an expression of the thermal swelling stress (in vertical direction) for the example shown in <a class="reference internal" href="#fig-thermalswellstress"><span class="std std-numref">Fig. 74</span></a>.</p>
+<p>Derive an expression of the thermal swelling stress (in vertical direction) for the example shown in <a class="reference internal" href="#fig-thermalswellstress"><span class="std std-numref">Fig. 73</span></a>.</p>
 <p>SOLUTION</p>
 <p>Let us assume the axis 3 in the vertical direction, then <span class="math notranslate nohighlight">\(\sigma_{11}=\sigma_{22}=0\)</span>, <span class="math notranslate nohighlight">\(\varepsilon_{11}=\varepsilon_{22} \neq 0\)</span>, <span class="math notranslate nohighlight">\(\varepsilon_{33}=0\)</span>.
 Then, for <span class="math notranslate nohighlight">\(\Delta T \neq 0\)</span>, a simplification of Eq. <a class="reference internal" href="#equation-eq-lamethermoelasticity">(36)</a> results in,</p>
@@ -1551,7 +1550,7 @@ Then, for <span class="math notranslate nohighlight">\(\Delta T \neq 0\)</span>,
 <figure class="align-default" id="fig">
 <a class="reference internal image-reference" href="_images/CH3-Problem1.png"><img alt="figurecontent" src="_images/CH3-Problem1.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 75 </span><span class="caption-text">Problem figure.</span><a class="headerlink" href="#fig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 74 </span><span class="caption-text">Problem figure.</span><a class="headerlink" href="#fig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
@@ -1672,27 +1671,27 @@ Make sure to acknowledge any copying and pasting.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stress-tensor">3.1 Stress tensor</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cauchy-s-equations-of-stress-equilibrium">Cauchy’s equations of stress equilibrium</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation">Application of Cauchy’s equations for total vertical stress calculation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuum-mechanics-solution-of-an-arbitrary-problem">Continuum mechanics solution of an arbitrary problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cauchy-s-equations-of-stress-equilibrium">3.1.1 Cauchy’s equations of stress equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-of-cauchy-s-equations-for-total-vertical-stress-calculation">3.1.2 Application of Cauchy’s equations for total vertical stress calculation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuum-mechanics-solution-of-an-arbitrary-problem">3.1.3 Continuum mechanics solution of an arbitrary problem</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kinematic-equations-displacements-and-strains">3.2 Kinematic equations: displacements and strains</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constitutive-equation-stress-strain-relationships">3.3 Constitutive equation: stress-strain relationships</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-isotropic-elasticity">Linear isotropic elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-isotropic-solid-in-voigt-notation">The isotropic solid in Voigt notation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-stress-and-elasticity">Effective stress and elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-horizontal-stress-according-to-linear-elasticity">Calculation of horizontal stress according to linear elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-reservoir-compressibility-with-linear-elasticity">Calculation of reservoir compressibility with linear elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-linear-elasticity-problem">Generalized linear elasticity problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-isotropic-elasticity">3.3.1 Linear isotropic elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-isotropic-solid-in-voigt-notation">3.3.2 The isotropic solid in Voigt notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-stress-and-elasticity">3.3.3 Effective stress and elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-horizontal-stress-according-to-linear-elasticity">3.3.4 Calculation of horizontal stress according to linear elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-reservoir-compressibility-with-linear-elasticity">3.3.5 Calculation of reservoir compressibility with linear elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-linear-elasticity-problem">3.3.6 Generalized linear elasticity problem</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-anisotropy">3.4 Elastic anisotropy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-deformation-elasto-plasticity">3.5 Permanent deformation: Elasto-plasticity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-dependent-deformation-visco-elasticity">3.6 Time-dependent deformation: Visco-elasticity</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiphysics-problems">3.7 Multiphysics problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poro-elasticity">Poro-elasticity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermo-elasticity">Thermo-elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#poro-elasticity">3.7.1 Poro-elasticity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermo-elasticity">3.7.2 Thermo-elasticity</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">3.8 Problems</a></li>
