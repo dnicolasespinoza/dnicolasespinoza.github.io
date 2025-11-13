@@ -58,7 +58,7 @@ Examples of mud buildup (warm colors) and filtrate/leak-off (cool colors) in two
 ## 6.2 Kirsch solution for stresses around a cylindrical cavity
 
 %-------------------------------------------------------------
-###  Cylindrical coordinate system
+###  6.2.1 Cylindrical coordinate system
 
 The cylindrical symmetry of a wellbore prompts the utilization of a cylindrical coordinate system rather than a rectangular cartesian coordinate system.
 The volume element of stresses in cylindrical coordinates is shown in {numref}`fig:REVCylCoord`.
@@ -75,7 +75,7 @@ The normal stresses are radial stress $\sigma_{rr}$, tangential or hoop stress $
 The shear stresses are $\sigma_{r \theta}$, $\sigma_{r z}$, and $\sigma_{\theta z}$.
 
 %-------------------------------------------------------------
-###  Kirsch solution components
+###  6.2.2 Kirsch solution components
 
 The Kirsch solution allows us to calculate normal and shear stresses around a circular cavity in a homogeneous linear elastic solid .
 The complete Kirsch solution assumes independent action of multiple factors, namely far-field isotropic stress, deviatoric stress, wellbore pressure and pore pressure.
@@ -115,7 +115,7 @@ Kirsch solution for far-field deviatoric stress $\Delta \sigma$.
 
 
 %-------------------------------------------------------------
-###  Complete Kirsch solution
+### 6.2.3 Complete Kirsch solution
 
 Consider a vertical wellbore subjected to horizontal stresses $S_{Hmax}$ and $S_{hmin}$, both principal stresses, vertical stress $S_v$, pore pressure $P_p$, and wellbore pressure $P_W$.
 The corresponding effective in-situ stresses are $\sigma_{Hmax}$, $\sigma_{hmin}$, and $\sigma_v$.
@@ -289,7 +289,7 @@ $
 % + + + + + + + + + + + + + + + + + + + + + + + +
 
 %-------------------------------------------------------------
-###  Breakout angle determination
+###  6.3.1 Breakout angle determination
 
 For a given set of problem variables (far field stress, pore pressure, and mud pressure), we can calculate the required strength of the rock to have a stable wellbore.
 Let us consider the example of {numref}`fig:RequiredUCS` that shows the required $UCS$ to resist shear failure assuming the friction angle is $\varphi = 30^{\circ}$.
@@ -392,7 +392,7 @@ $
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F 
 
 %-------------------------------------------------------------
-###  Breakout measurement
+###  6.3.2 Breakout measurement
 
 Breakouts and tensile induced fractures (Section \ref{sec:TensileFracs}) can be identified and measured with borehole imaging tools ({numref}`fig:BoreholeImaging`). 
 Breakouts appear as wide bands of longer travel time or higher electrical resistivity in borehole images. 
@@ -417,7 +417,7 @@ Thus, the caliper log is extremely useful to measure breakouts and extended brea
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F 
 
 %-------------------------------------------------------------
-###  Maximum horizontal stress determination from breakout angle}
+###  6.3.3 Maximum horizontal stress determination from breakout angle}
 
 Breakouts are a consequence of stress anisotropy in the plane perpendicular to the wellbore. 
 Hence, knowing the size and orientation of breakouts permits measuring and calculating the direction and magnitude of stresses that caused such breakouts. 
@@ -525,7 +525,7 @@ $
 %\end{figure} % F F F F F F F F F F F F F F F F F F F F F 
 
 %-------------------------------------------------------------
-###  Identification of tensile fractures in wellbores}
+###  6.4.1 Identification of tensile fractures in wellbores
 
 Similarly to breakouts, drilling-induced tensile fractures  can be identified and measured with borehole imaging tools ({numref}`fig:BoreholeImagingTfracs`). 
 The azimuth of tensile fractures coincides with the direction of $S_{Hmax}$ in vertical wells.
@@ -603,7 +603,7 @@ Last, drastic changes in the mud window may happen whenever there is anomalous p
 The following subsections present a guide for calculating stresses at the wall of deviated wellbores and identifying stress magnitudes and locations for shear failure (breakouts) and tensile fractures.
 
 %-------------------------------------------------------------
-###  Wellbore orientation
+###  6.6.1 Wellbore orientation
 
 At any point along the trajectory of a deviated wellbore, the tangent orientation permits defining wellbore azimuth $\delta$ and deviation $\varphi$ ({numref}`fig:WellOrientation`).
 Azimuth $\delta$ is the angle between the projection of the trajectory on a horizontal plane and the North.
@@ -651,7 +651,7 @@ Solution example 6.4.
 % + + + + + + + + + + + + + + + + + + + + + + + +
 
 %-------------------------------------------------------------
-###  Calculation of stresses on deviated wellbores
+###  6.6.2 Calculation of stresses on deviated wellbores
 
 Let us define a coordinate system for a point along the trajectory of a deviated wellbore. 
 The first element $x_b$ of the cartesian base goes from the center of a cross-section of the wellbore at a given depth to the deepest point around the cross-section (perpendicular to the axis).  
@@ -714,7 +714,7 @@ Principal stresses around the wall of a deviated wellbore. The hoop stress $\sig
 :::
 
 %-------------------------------------------------------------
-###  Breakout analysis for deviated wellbores
+###  6.6.3 Breakout analysis for deviated wellbores
 
 Consider a place subjected to strike-slip stress regime with $S_{Hmax}$ oriented at an azimuth of 070$^{\circ}$ with known values of principal stresses (Fig {numref}`fig:BreakoutDevWellbore`).
 The maximum stress anisotropy lies in a plane that contains $S_1 = S_{Hmax}$ and $S_3 = S_{hmin}$, a plane perpendicular to the axis of a vertical wellbore.
@@ -786,7 +786,7 @@ A general workflow or algorithm to calculate mechanical failure for all possible
 
 
 %-------------------------------------------------------------
-###  Tensile fractures analysis for deviated wellbores
+###  6.6.4 Tensile fractures analysis for deviated wellbores
 
 The procedure to find tensile failure is equivalent to the one used for shear failure, but using a tensile strength failure criterion.
 For example, consider a place subjected to normal faulting stress regime with $S_{Hmax}$ oriented at an azimuth of 070$^{\circ}$ and known values of principal stresses ({numref}`fig:TfracsDevWellbore`).
@@ -869,7 +869,7 @@ Wellbore stability is affected by various factors other than far-field stresses 
 Some of the most important factors include: changes of temperature, changes of salinity in the resident brine within the pore space in the rock, and changes of pore pressure near the wellbore wall.
 
 %-------------------------------------------------------------
-###  Thermal effects
+###  6.7.1 Thermal effects
 
 Drilling mud is usually cooler than the geological formations in the subsurface.
 Because of such difference, drilling mud usually lowers the temperature of the rock near the wellbore.
@@ -900,7 +900,7 @@ where $\alpha_L$ is the linear thermal expansion coefficient.
 Cooling leads to hoop stress relaxation and possibly tensile effective stress, while heating leads to increased compression in the tangential direction.
 
 %-------------------------------------------------------------
-###  Chemo-electrical effects
+###  6.7.2 Chemo-electrical effects
 
 Chemo-electrical effects are most relevant to small sub-micron particles, such as clays, the building-blocks of mudrocks and shales.
 The forces that act on clay particles include ({numref}`fig:ClayPlatelet`):
@@ -942,7 +942,7 @@ The solutions to wellbore instability problems due to shale chemo-electrical swe
 underbalanced-drilling to minimize leak-off of water from drilling mud.
 
 %-------------------------------------------------------------
-###  Leak-off effects
+###  6.7.3 Leak-off effects
 
 So far we have assumed that the radial effective stress at the wellbore wall is $\sigma_{rr} = P_W - P_p$.
 Such assumption implies a perfect and sharp "mudcake" that creates a sharp gradient between the mud pressure and the pore pressure, such that, viscous forces apply an effective stress   $\sigma_{rr} = P_W - P_p$ on the wellbore wall ({numref}`fig:mudcake`).

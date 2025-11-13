@@ -1562,7 +1562,7 @@ Depletion and injection of fluids in the subsurface cause changes in pore pressu
 Fluid injection such as in hydraulic fracturing, water-flooding, and waste-water disposal can reach adjacent faults (if any) and decrease the effective normal stress $\sigma_n = S_n - P_p$ acting on faults. 
 In hydraulic fracturing, the injection of fluids is temporary and limited to the fracture completion size.
 In water-flooding, pressure build-up is limited by the producer wells.
-In waste-water injection, the pressure build-up is controlled by the aquifer size, compressibility and compartmentalization.
+In waste-water injection (including salt-water disposal SWD), the pressure build-up is controlled by the aquifer size, compressibility and compartmentalization.
 
 :::{figure-md} fig:lec6-X
 <img src="../mynewbook/figures/6-FaultReactivation.svg" alt="figurecontent" width="600px">
@@ -1589,8 +1589,22 @@ The imparted change of fault permeability depends on the fault filling,  known a
 Both, induced seismicity and change in fault permeability depend on the failure properties of the fault gouge.
 Brittle failure results in high energy release through induced seismicity and increases of fault permeability, while ductile failure results in low energy release through seismicity and decreases or minor increases of permeability.
 An undesired consequence of fault reactivation is the loss of hydrocarbon trapping ability at fault structural traps ([Video example from Frade Field](https://www.youtube.com/watch?v=OtJTI4nv1QI)).
+
+Induced seismicity triggered by subsurface fluid injection has become a major concern and sometimes a show-stopper in the energy industry.
+Salt-water disposal from oil and gas activity has caused "unseen" earthquakes in modern history in Oklahoma and Texas.
+{numref}`fig:Pecos` shows images relating salt-water disposal volumes, ground elevation change (discussed Chapter 8), and induced seismicity in the Delaware Basin near the city of Pecos.
+The field evidence indicated that seismicity and ground elevation change are caused by reactivation of faults due to subsurface fluid withdrawal (oil and gas) and injection (produced and back-flow water).    
+Other energy applications are not excempt of geomecahnical consequences.
+The Pohang earthquake is a well known example of fault reactivation risk induced by enhanced geothermal activities.
 {numref}`fig:DecaturMS` shows an example of induced seismicity with magnitude $M<2$ in the Richter scale due to injection of carbon dioxide in the Mount Simon Sandstone.
 The seismicity originates mostly from reactivation of faults below the reservoir formation in basement formations. The regional stress regime alternates between strike-slip and reverse (See {numref}`fig:USGSstressmap`).
+
+:::{figure-md} fig:Pecos
+<img src="../mynewbook/figures/5-SWD.png" alt="figurecontent" width="800px">
+
+Fault reactivation and induced seismicity linked to saltwater disposal in the Delaware Basin, Texas (Image credit: [1](https://doi.org/10.1016/j.geoen.2023.212299) and [2](https://doi.org/10.1029/2020GL090151)). 
+:::
+
 
 :::{figure-md} fig:DecaturMS
 <img src="../mynewbook/figures/DecaturCO2-MS.svg" alt="figurecontent" width="600px">
@@ -1643,7 +1657,7 @@ Problem 4.
 9. The following figure shows major faults in the Eagle Ford region [EIA, 2014 - Updates to the EIA Eagle Ford Play Maps]. 
 
 	1. Looking at the normal faults in the Frio, Atascosa, and Wilson counties, what would be the expected direction of the minimum horizontal stress $S_{hmin}$ in this area?
-	2. Visit the GIS application of the railroad commission of Texas: \url{https://gis.rrc.texas.gov/GISViewer/}. Zoom into the South-East of the Frio county until you see well trajectories. The horizontal wells are expected to be drilled in the direction of  the least principal stress. Does this direction of $S_{hmin}$ coincide with the direction expected from fault orientation? Justify. 
+	2. Visit the [GIS application of the railroad commission of Texas](https://gis.rrc.texas.gov/GISViewer/). Zoom into the South-East of the Frio county until you see well trajectories. The horizontal wells are expected to be drilled in the direction of  the least principal stress. Does this direction of $S_{hmin}$ coincide with the direction expected from fault orientation? Justify. 
 
 :::{figure-md} fig:P5.9
 <img src="../mynewbook/figures/EIA-EagleFord.png" alt="figurecontent" width="600px">

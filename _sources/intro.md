@@ -28,6 +28,12 @@ The notes for the graduate course ["Advanced Geomechanics"](https://dnicolasespi
 
 *<u>Notes</u>*: 
 
+2025-10-16
+- Chapter 2: Added new figure for overpressure.
+- Chapter 3: Added new triaxial test interpretation and clarification of deviatoric stress.
+- Chapter 4: Added importance of time-scale and new figure and equations to explain the Mohr Circle.
+- Chapter 5: Fixed some typos and svg font isssues, and added Barrera's 3D Mohr circle + stereonet examples.
+
 2025-09-7
 - I'm working on fixing cross references to equations
 

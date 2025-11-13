@@ -73,7 +73,7 @@ Understanding of hydraulic fractures is important for several applications in pe
 The following field tests involve hydraulic fracturing and are suitable for specific applications.
 
 %------------------------------------------------------------------
-###  Leak-off test
+###  7.2.1 Leak-off test
 
 The leak-off test is conducted to measure the fracture gradient required for setting maximum mud pressure for drilling.
 The test is conducted with drilling mud after cementing the casing of the previous section in an open-hole.
@@ -138,13 +138,13 @@ Example of determination of the fracture closure pressure. Departure from the li
 :::
 
 %------------------------------------------------------------------
-###  Diagnostic fracture initiation test (DFIT)
+###  7.2.2 Diagnostic fracture initiation test (DFIT)
 
 The objectives of the DFIT test are to determine permeability, determine pore pressure, and determine minimum principal stress $S_3$.
 The DFIT test is usually done in tight low-permeability reservoirs for completion purposes before a large hydraulic fracture treatment.
 The test involves small wellbore intervals using relatively small fracturing fluid injection volumes $ \leqslant 10$ bbl. 
 The injection rates are also relatively small ranging from $\sim$0.1 to 3 bbl/min.
-The DFIT test may be performed through perforations in already cased boreholes.
+The DFIT test may be performed through perforations in already cased boreholes ({numref}`fig:DFIT`).
 
 :::{figure-md} fig:DFIT
 <img src="../mynewbook/figures/9A-16.svg" alt="figurecontent" width="600px">
@@ -160,7 +160,7 @@ The DFIT test is performed with small injection volumes before actual hydraulic 
 
 The mechanics of the DFIT test is similar to the one of the leak-off test.
 The determination of FCP is similar to that of the leak-off test.
-More advanced methods use a "G-function" to determine FCP.
+More advanced methods use a "G-function" to determine FCP ({numref}`fig:Gfunction`).
 The G-function is a dimensionless time function designed to linearize the pressure signal during normal fluid leak-off from a bi-wing fracture.
 
 :::{figure-md} fig:Gfunction
@@ -169,8 +169,17 @@ The G-function is a dimensionless time function designed to linearize the pressu
 DFIT tests often utilize a "G-function" to determine the closure pressure. This method is based on the analysis of leak-off similar to the square-root-of-time method.
 :::
 
+Thorough knowledge of variation of least principal stress with depth is essential to predict the geometry of hydraulic fractures, particularly to control vertical growth (discussed in next Section).
+Mechanical earth models can help determine variations of horizontal stress with depth, but in-situ measurements through DFITs in exploratory vertical wells are required to calibrate model predictions ({numref}`fig:DFITWolfcamp`). 
+
+:::{figure-md} fig:DFITWolfcamp
+<img src="../mynewbook/figures/9-DFITWolfcamp.png" alt="figurecontent" width="900px">
+
+DFIT tests for measurement and calibration of mechanical earth models with the objective of predicting hydraulic fracturing geometry and stratigraphic fracture barriers ([Image Credit](https://doi.org/10.15530/urtec-2022-3722883)).
+:::
+
 %------------------------------------------------------------------
-###  Step-rate test
+###  7.2.3 Step-rate test
 
 The step rate test helps determine the maximum injection pressure in a wellbore designed for constant and long-term injection.
 Examples of injected fluids include water (liquid or vapor), CO$_2$, N$_2$, polymer mixtures, foam, natural gas, and produced water, among others.
@@ -188,7 +197,7 @@ The Procedure of the step-rate test is the following (See {numref}`fig:StepRateT
 :::{figure-md} fig:StepRateTest-Schematic
 <img src="../mynewbook/figures/9-SRT.png" alt="figurecontent" width="600px">
 
-Schematic procedure of an ideal step-rate test. FPR: fracture propagation rate. FPP: fracture propagation pressure. Modified from [SPE 169513]
+Schematic procedure of an ideal step-rate test. FPR: fracture propagation rate. FPP: formation parting pressure. Notice that the acronym is the same as the Fracture Propagation Pressure in previous subsections, but they refer to different physical processes. Modified from [SPE 169513].
 :::
 
 Each injection step is performed until the pressure signal approaches an asymptotic response (top and middle figures). This maximum pressure $P$ at each step is then plotted as a function of injection rate $q$. 
@@ -223,7 +232,7 @@ Example of fracturing in water-flooding with detrimental (left) and beneficial (
 ## 7.3 Hydraulic fracture design: Single fracture completion
 
 %------------------------------------------------------------------
-###  Improvement of reservoir access and wellbore-reservoir surface area
+###  7.3.1 Improvement of reservoir access and wellbore-reservoir surface area
 
 The creation of a hydraulic fracture improves dramatically  the surface area of the wellbore in contact with the formation, and also the corresponding production rates (at the same bottomhole pressure).
 The ratio between the area of a fracture (constant height $h$ and half-length $x_f$) and the area of an openhole wellbore (radius $r$ and height $h$) is $(4 x_f h)/(2\pi r_w h) \sim x_f/r_w$.
@@ -237,7 +246,7 @@ Reservoir drainage: A fractured wellbore dramatically increases flow rates for t
 :::
 
 %------------------------------------------------------------------
-###  The coupled fluid-driven fracture propagation problem
+###  7.3.2 The coupled fluid-driven fracture propagation problem
 \label{sec:CoupledFracProblem}
 
 Several physical processes interact during the propagation of fluid-driven fractures ({numref}`fig:ProcessesFracturing`).
@@ -496,7 +505,7 @@ Hence, pressure gradient along the fracture depends on the fracture shape.
 
 
 %------------------------------------------------------------------
-###  Fracture design: Single planar models
+###  7.3.3 Fracture design: Single planar models
 
 The design of a single (bi-wing) fracture consists in determining:
 1. Optimum fracture size and orientation: $x_f$, $w$, and $h_f$, and
@@ -662,7 +671,7 @@ Field measurements show that $p_{net}$ does vary with changes of injection rate.
 
 
 %------------------------------------------------------------------
-###  Stress logs and implications on hydraulic fracture height
+###  7.3.4 Stress logs and implications on hydraulic fracture height
 \label{sec:StressLogs}
 
 The first principle of hydraulic fracturing is that fluid-driven opening-mode fractures tend to open in isotropic media as planes perpendicular to the minimum principal stress $S_3$.
@@ -745,7 +754,7 @@ Other hydrocarbon-bearing tight formations can be also stimulated through multis
 An introductory animation video from Marathon is available [here](https://www.youtube.com/watch?v=VY34PQUiwOQ).
 
 %------------------------------------------------------------------
-###  Increased surface area with multiple fractures
+###  7.4.1 Increased surface area with multiple fractures
 
 Horizontal wellbores help create multiple fractures from a single wellbore whenever $S_3 = S_{hmin}$.
 Either for normal faulting or strike-slip regimes (and assuming $S_v$ is a principal stress - see {numref}`fig:HzWells`):
@@ -790,7 +799,7 @@ The hydraulic fracturing geometry is less straight-forward in these places than 
 
 
 %------------------------------------------------------------------
-###  Fracture interference and fracture hit
+###  7.4.2 Fracture interference and fracture hit
 
 Multistage hydraulic fracturing involves multiples fracture spaced at a characteristic distance between fractures $l_f$.
 This distance can be attempted by placing one fracture per stage. Hence, the distance between fractures is designed to be the distance between stages.
@@ -869,7 +878,7 @@ Schematic of multicluster fracturing.
 :::
 
 %------------------------------------------------------------------
-###  Fracture reactivation, microseismicity, and optical fiber monitoring
+###  7.4.3 Fracture reactivation, microseismicity, and optical fiber monitoring
 
 So far, we have assumed hydraulic fractures are single fractures with no branching or bifurcation.
 This is a conceptual and idealized shape of fluid-driven fractures.
@@ -909,19 +918,19 @@ Hence, a simplified model could calculate the EUR in an unconventional oil forma
 :::{figure-md} fig:MicroseismicityHFTS2
 <img src="../mynewbook/figures/7-HFTS2_microseismic.png" alt="figurecontent" width="600px">
 
-Example of microseismic clouds for well completed at the Hydraulic Fracturing Testing Site 2, in the Delaware Basin (normal faulting). Microseismic clouds clearly show the stimulated reservoir volume (cross section observed here) for each stage and well. The clouds show fractures which propagate with an azimuth of about N80$^{\circ}$E, hence, $S_hmin$ local orientation is about N10$^{\circ}$W. The fractures grow preferentially towards the East, because there were already depleted wells to the East of the newly completed wells. Image credit: \url{https://doi.org/10.15530/urtec-2021-5396} and \url{https://netl.doe.gov/node/6840}.
+Example of microseismic clouds for well completed at the Hydraulic Fracturing Testing Site 2, in the Delaware Basin (normal faulting). Microseismic clouds clearly show the stimulated reservoir volume (cross section observed here) for each stage and well. The clouds show fractures which propagate with an azimuth of about N80$^{\circ}$E, hence, $S_hmin$ local orientation is about N10$^{\circ}$W. The fractures grow preferentially towards the East, because there were already depleted wells to the East of the newly completed wells. Image credit: [urtec-2021-5396](https://doi.org/10.15530/urtec-2021-5396) and [DOE_NETL](https://netl.doe.gov/node/6840).
 :::
 
 :::{figure-md} fig:HFTS2OpticFiber
 <img src="../mynewbook/figures/7-HFTS2_opticalfiber.png" alt="figurecontent" width="600px">
 
-Example of optical fiber monitoring for hydraulic fracturing. In this example, Stage 19 in well B4H is fractured, and fiber installed along well B3H detects its arrival by fiber stretching and contraction. The plot shows strain changes from MD 14,000 to 15,400 ft (vertical axis although it is horizontal length) with time (horizontal axis). The hydraulic fracture stretches the rock and fiber at the observation well as the tip approaches (red color). The fiber contracts when the fracture tip has passed or the stimulation finishes.  Image credit: \url{https://doi.org/10.15530/urtec-2021-5396} and \url{https://netl.doe.gov/node/6840}.
+Example of optical fiber monitoring for hydraulic fracturing. In this example, Stage 19 in well B4H is fractured, and fiber installed along well B3H detects its arrival by fiber stretching and contraction. The plot shows strain changes from MD 14,000 to 15,400 ft (vertical axis although it is horizontal length) with time (horizontal axis). The hydraulic fracture stretches the rock and fiber at the observation well as the tip approaches (red color). The fiber contracts when the fracture tip has passed or the stimulation finishes.  Image credit: [urtec-2021-5396](https://doi.org/10.15530/urtec-2021-5396) and [DOE_NETL](https://netl.doe.gov/node/6840).
 :::
 
 :::{figure-md} fig:HFTS2BouyantFrac
 <img src="../mynewbook/figures/7-HFTS2_Bouyantfrac.png" alt="figurecontent" width="600px">
 
-Comparison of optical fiber and microseismic monitoring in a vertical cross section during stimulation of well B4H at HFTS2. The microseismic cloud (right) indicates stress perturbations up to 7,200 ft TVDSS, yet microseismic activity cannot conclusively tell whether this is a hydraulic fracture or "dry" shear reactivation only. The optical fiber shows significant strains along a vertical monitoring well B5PH up to 6,400 ft TVDSS. The monitoring suggest "buoyant" hydraulic fracture growth up to 2,000 ft above the stimulation depth, growing aseismically from 7,200 to 6,400 ft TVDSS. Image credit: \url{https://doi.org/10.15530/urtec-2021-5396} and \url{https://netl.doe.gov/node/6840}.
+Comparison of optical fiber and microseismic monitoring in a vertical cross section during stimulation of well B4H at HFTS2. The microseismic cloud (right) indicates stress perturbations up to 7,200 ft TVDSS, yet microseismic activity cannot conclusively tell whether this is a hydraulic fracture or "dry" shear reactivation only. The optical fiber shows significant strains along a vertical monitoring well B5PH up to 6,400 ft TVDSS. The monitoring suggest "buoyant" hydraulic fracture growth up to 2,000 ft above the stimulation depth, growing aseismically from 7,200 to 6,400 ft TVDSS. Image credit: [urtec-2021-5396](https://doi.org/10.15530/urtec-2021-5396) and [DOE_NETL](https://netl.doe.gov/node/6840).
 :::
 
 
@@ -932,7 +941,7 @@ Simulation example of a buoyant hydraulic fracture, where well landing and stimu
 :::
 
 %------------------------------------------------------------------
-###  Multiple strands in hydraulic fracture propagation
+###  7.4.4 Multiple strands in hydraulic fracture propagation
 
 :::{figure-md} fig:FracSwarm
 <img src="../mynewbook/figures/7-FractureSwarm.png" alt="figurecontent" width="600px">
@@ -1014,7 +1023,7 @@ Step-rate test example.
 	2. Compute dynamic Poisson's ratio and dynamic Young's modulus from compressive and shear slowness (be careful with unit conversion).
 	3. Compute static Young's modulus using a coefficient $E_{static} = 0.65 E_{dynamic}$.
 	4. Compute static plane strain modulus $E'_{static} = E_{static} / (1-\nu^2)$ (Use dynamic Poisson's ratio ).
-	5. Compute total maximum and minimum horizontal stress assuming theory of elasticity and $\varepsilon_{Hmax} = 0.0015$ and $\varepsilon_{hmin}=0$.
+	5. Compute total maximum and minimum horizontal stress assuming theory of elasticity and $\varepsilon_{Hmax} = 0.0015$ (E-W direction) and $\varepsilon_{hmin}=0$. 
 	6. The pay-zone is between 2,100 ft and 2,450 ft. A hydraulic fracture is planned to be executed with a vertical well and perforations at a depth between 2,130 ft and 2,160 ft. What will be the height of this fracture? Will it reach out to the entire pay zone? 
 
 % PROBLEM 2	
@@ -1060,5 +1069,4 @@ Make sure to acknowledge any copying and pasting.
 
 1. Valko and Economides, Hydraulic Fracture Mechanics, Wiley.
 2. Adachi, et al., (2007), “Computer Simulation of hydraulic fractures”, IJRMMS.
-3. Brady et al., (1992), [“Cracking Rock: Progress in Fracture Treatment”](https://connect.slb.com/~/media/Files/resources/oilfield_review/ors92/1092/p04_17.pdf), Oilfield Review. 
-
+3. Brady et al., (1992), [“Cracking Rock: Progress in Fracture Treatment”](https://www.osti.gov/etdeweb/biblio/6673429), Oilfield Review. 

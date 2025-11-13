@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. Introduction &#8212; Introduction to Energy Geomechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch1_Intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Subsurface Stresses and Pore Pressure" href="ch2_StressPorePressure.html" />
+    <link rel="prev" title="Introduction to Energy Geomechanics" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/IPGlogo.png" class="logo__image only-light" alt="Introduction to Energy Geomechanics - Home"/>
+    <script>document.write(`<img src="_static/IPGlogo.png" class="logo__image only-dark" alt="Introduction to Energy Geomechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction to Energy Geomechanics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch2_StressPorePressure.html">2. Subsurface Stresses and Pore Pressure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch3_ContGeoMech.html">3. Fundamentals of Solid Continuum Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch4_RockFailure.html">4. Rock Yield and Failure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch5_StressProjection.html">5. Stresses on Faults and Fractures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch6_WellboreGeomech.html">6. Wellbore Stability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch7_HydroFrac.html">7. Hydraulic Fracturing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch8_DepletionInjection.html">8. Reservoir depletion and injection</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch1_Intro.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ch1_Intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>1. Introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-geology">1.1 Structural Geology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geomechanics-in-the-energy-industry">1.2 Geomechanics in the Energy Industry</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drilling-and-wellbore-stability">Drilling and Wellbore Stability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wellbore-completion">Wellbore Completion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reservoir-geomechanics">Reservoir Geomechanics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-and-hydrogen-geological-storage">Carbon and Hydrogen Geological Storage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geothermal-energy">Geothermal Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">1.3 Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">1.4 Further Reading and References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
+<p>The engineering applications of Energy Geomechanics take place in the Earth’s shallow lithosphere (depth <span class="math notranslate nohighlight">\(&lt;10\)</span> km).
+Surface weathering processes and the movement of tectonic plates have changed the shallow lithosphere over millions of years.
+Hence, the current state of the subsurface is the result of the evolution of the Earth’s lithosphere over geological time.
+Geomechanics is involved in all stages of hydrocarbon recovery including:</p>
+<ul class="simple">
+<li><p>Exploration (e.g., structural geology and geophysical methods for oil and gas prospection)</p></li>
+<li><p>Drilling and Completion (e.g., wellbore stability and hydraulic fracturing)</p></li>
+<li><p>Production (e.g., sand production, reservoir compaction, surface subsidence, EOR)</p></li>
+<li><p>Waste disposal (e.g., fault stability, surface heave, fracturing)
+Recent engineering actions, such as reservoir depletion for hydrocarbon or water extraction, can also alter the state of stress.</p></li>
+</ul>
+<p>The following sections review quickly the disciplines involved in Energy Geomechanics and the most important applications.</p>
+<p><a class="reference internal" href="#fig-intro-appgeomech"><span class="std std-numref">Fig. 2</span></a> shows a summary of applications of geomechanics in the petroleum industry.
+Similar applications are also relevant to other energy fields, such as deep geothermal energy.</p>
+<figure class="align-default" id="fig-intro-appgeomech">
+<a class="reference internal image-reference" href="_images/1-IntroGeomechNew.svg"><img alt="figurecontent" src="_images/1-IntroGeomechNew.svg" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Summary of applications of geomechanics in the energy industry.</span><a class="headerlink" href="#fig-intro-appgeomech" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="structural-geology">
+<h2>1.1 Structural Geology<a class="headerlink" href="#structural-geology" title="Link to this heading">#</a></h2>
+<p>Structural Geology is the branch of geology that studies the three-dimensional deformation of geological formations as they deposit, metamorphose, fold, and fracture.
+The Earth’s crust has changed considerably over geological time going through periods of burial, uplifting, contraction and extension (see animated Earth evolution <a class="reference external" href="https://dinosaurpictures.org/ancient-earth#0">here</a>).</p>
+<p>Detailed description and models of the subsurface require in-depth structural geology characterization.
+Past knowledge of a given formation is essential to predict how it will evolve in the future under imposed engineering changes.</p>
+<p>The Earth is composed of minerals (mostly plagioclase, feldspar, quartz, pyroxene, mica and clay minerals) that solidify on the surface and form a brittle crust underlain by magma.
+Magma currents underneath the lithosphere are not balanced and force the lithosphere to collide into each other and crack.</p>
+<p>Faulting and folding are the result of these tectonic displacements that originate from the movement of tectonic plates.
+For example, convergent plate boundaries cause lateral compression and structures that result in tall mountain ranges (e.g., Himalayas).
+Divergent plate boundaries cause lateral extension (e.g., Mid-Atlantic ridge that forms Island).
+Tectonic plates moving parallel with respect to each other in opposite direction form transform boundaries and create a shear damage region around the plane of discontinuity (e.g., San Andreas Fault in North America).</p>
+<p>Tectonic plate movement changes the stresses in the lithosphere (<a class="reference internal" href="#fig-intro-stressmap"><span class="std std-numref">Fig. 3</span></a>).
+For example, a region near convergent tectonic plates is expected to have higher lateral compressive stresses than a region near a divergent plate boundary.
+The determination of local stresses are critically important to Energy Geomechanics because they affect wellbore stability, fault reactivation, and propagation of hydraulic fractures.</p>
+<figure class="align-default" id="fig-intro-stressmap">
+<a class="reference internal image-reference" href="_images/1-2.svg"><img alt="figurecontent" src="_images/1-2.svg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Plate tectonics influence directly the distribution of stresses in the Earth’s lithosphere (Image credit: Zoback [2010]).</span><a class="headerlink" href="#fig-intro-stressmap" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Gravity results in sedimentary layers that are mostly horizontal and parallel to each other at the time of deposition.
+Tectonic movements result in changes of lateral stresses (tectonic stresses) that deform sedimentary layers (<a class="reference internal" href="#fig-intro-faultfoldseismic"><span class="std std-numref">Fig. 4</span></a> and <a class="reference internal" href="#fig-intro-jurassiccoastrollover"><span class="std std-numref">Fig. 5</span></a>).
+Ductile rock deformation leads to folding, e.g., anticline, with a a gradual change in deformation without an apparent discontinuity.
+Brittle deformation leads to fractures and faulting, i.e., a clear discontinuity in sedimentary layers.
+Hydrocarbon accumulations take advantage of folds and low permeability faults.
+The deformational behavior of rocks is crucial in defining the variation of rock permeability with changes of stresses.</p>
+<figure class="align-default" id="fig-intro-faultfoldseismic">
+<a class="reference internal image-reference" href="_images/1-3.svg"><img alt="figurecontent" src="_images/1-3.svg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Tectonic stresses result in folding and faulting of sedimentary layers. The image shows an example from a seismic survey cross-section.</span><a class="headerlink" href="#fig-intro-faultfoldseismic" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig-intro-jurassiccoastrollover">
+<a class="reference internal image-reference" href="_images/JurassicCoastRollover.PNG"><img alt="figurecontent" src="_images/JurassicCoastRollover.PNG" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Give enough time, stress, and temperature and rocks can deform like bread dough. This example is from UK Jurassic Coast taken by the author.</span><a class="headerlink" href="#fig-intro-jurassiccoastrollover" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="geomechanics-in-the-energy-industry">
+<h2>1.2 Geomechanics in the Energy Industry<a class="headerlink" href="#geomechanics-in-the-energy-industry" title="Link to this heading">#</a></h2>
+<p>Geomechanics has had an increasing importance in Energy Resources Engineering, particularly in the Oil and Gas Industry.
+Other applications within the Energy umbrella include: deep geothermal energy, deep nuclear waste disposal, and CO<span class="math notranslate nohighlight">\(_2\)</span> geological storage.
+The applications of energy geomechanics can be broadly grouped into:</p>
+<ul class="simple">
+<li><p>Drilling and wellbore stability,</p></li>
+<li><p>Wellbore completion, and</p></li>
+<li><p>Reservoir geomechanics.</p></li>
+</ul>
+<section id="drilling-and-wellbore-stability">
+<h3>Drilling and Wellbore Stability<a class="headerlink" href="#drilling-and-wellbore-stability" title="Link to this heading">#</a></h3>
+<p>Subsurface access requires wellbores.
+However, a cavity in the subsurface intensifies stresses around it and requires support to be open.
+Imagine making a hole in beach sand.
+You might be able to make a hole near the water level, but not in dry sand, nor in sand below the water level.
+Early wellbores were exclusively vertical and a few hundred meters deep (100 m is equivalent to 325 ft) (<a class="reference internal" href="#fig-intro-wellbores"><span class="std std-numref">Fig. 6</span></a>).
+Today’s wellbores are kilometers-long and may deviate horizontally  several kilometers more (1 km is about 0.62 miles).
+Optimal wellbore design and drilling requires knowing various properties of the rocks including the strength of rocks being drilled.</p>
+<figure class="align-default" id="fig-intro-wellbores">
+<a class="reference internal image-reference" href="_images/1-4.svg"><img alt="figurecontent" src="_images/1-4.svg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">From the beginning of drilling to today’s ultra-deepwater drilling.</span><a class="headerlink" href="#fig-intro-wellbores" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="wellbore-completion">
+<h3>Wellbore Completion<a class="headerlink" href="#wellbore-completion" title="Link to this heading">#</a></h3>
+<p>A single wellbore offers little contact area with the reservoir.
+Hydraulic fractures seek to increase such contact area, particularly in low-permeability reservoirs. Hence, even a small flow velocity can result in a large flow rate [bbl/min] if the contact area is large.
+Hydraulic fracture propagation depends on local stresses, bounding layers, and reservoir rock heterogeneity.
+Hydraulic fracturing has been used in the petroleum industry since <span class="math notranslate nohighlight">\(\sim\)</span>1950.
+Improved completion methods take advantage of horizontal wellbores, proppants, acid solutions, and a variety of chemicals to enhance reservoir drainage.</p>
+<figure class="align-default" id="lec1-6">
+<a class="reference internal image-reference" href="_images/1-6.svg"><img alt="figurecontent" src="_images/1-6.svg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Pictorial representation of multistage hydraulic fracturing in a horizontal well.</span><a class="headerlink" href="#lec1-6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="reservoir-geomechanics">
+<h3>Reservoir Geomechanics<a class="headerlink" href="#reservoir-geomechanics" title="Link to this heading">#</a></h3>
+<p>Hydrocarbon recovery changes reservoir pore pressure.
+Reduction of pore pressure (needed for pumping and production) leads to  stress transfer from the pore fluid to the rock solid skeleton.
+High increases of stress on the rock skeleton lead to reservoir compaction, reduction of reservoir permeability, and disturb the mechanical equilibrium of overlaying strata and faults.
+Increases of the magnitude of stresses and stress anisotropy may also cause rock failure near the wellbore and produce fine solid particles that may plug and damage pumps and surface facilities.</p>
+<figure class="align-default" id="lec1-5">
+<a class="reference internal image-reference" href="_images/1-5.svg"><img alt="figurecontent" src="_images/1-5.svg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Reservoir depletion and pore pressure change.</span><a class="headerlink" href="#lec1-5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="carbon-and-hydrogen-geological-storage">
+<h3>Carbon and Hydrogen Geological Storage<a class="headerlink" href="#carbon-and-hydrogen-geological-storage" title="Link to this heading">#</a></h3>
+<p>Burning fossil fuels produces carbon dioxide (CO<span class="math notranslate nohighlight">\(_2\)</span>) among other subproducts at power plants. CO<span class="math notranslate nohighlight">\(_2\)</span> can be separated from flue gas and captured. After capturing, CO<span class="math notranslate nohighlight">\(_2\)</span>  can be injected into deep geological formations in order to mitigate CO<span class="math notranslate nohighlight">\(_2\)</span> emissions into the atmosphere. The entire process is known as Carbon Capture and Storage (CCS).</p>
+<p>Carbon dioxide injection into reservoirs has been done for decades in the oil and gas industry for Enhanced Oil Recovery (EOR). However, a prerequisite for carbon geological storage is permanent storage. The assurance of permanent storage depends on petrophysical and geomechanical processes. Geomechanics is essential for CO<span class="math notranslate nohighlight">\(_2\)</span> geological storage to ensure: integrity of injection wells and stability of adjacent faults. CO<span class="math notranslate nohighlight">\(_2\)</span> injection at rates and volumes higher than threshold limits can trigger injector fracturing or fault reactivation.</p>
+<figure class="align-default" id="ccsintro">
+<a class="reference internal image-reference" href="_images/1-CCS.jpg"><img alt="figurecontent" src="_images/1-CCS.jpg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Selected types of carbon geological storage.</span><a class="headerlink" href="#ccsintro" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>An alternative solution for high energy and low weight fuels or electric batteries is hydrogen. However, moving from a fossil-fuel dominated market for vehicles and on-demand energy supply to hydrogen would require large hydrogen storage places. One option is hydrogen geological storage in salt caverns and clastic reservoirs (such as saline aquifers and depleted hydrocarbon reservoirs). Hydrogen geological storage implies similar technical challenges as carbon geological storage with the added problem of cyclic changes due to seasonal demand.</p>
+</section>
+<section id="geothermal-energy">
+<h3>Geothermal Energy<a class="headerlink" href="#geothermal-energy" title="Link to this heading">#</a></h3>
+<p>Deep geothermal systems are potential sources of energy with zero carbon emission during production.
+Some of the limitations of the current geothermal industry include: drilling costs, drilling challenges in high temperature environments, low surface area of geothermal reservoirs, and prediction of stress changes with heat mining.
+New geomechanics breakthroughs are helping the geothermal energy industry by</p>
+<ul class="simple">
+<li><p>enabling faster and reliable drilling in high-temperature formations (T <span class="math notranslate nohighlight">\(&gt;200^{\circ}\)</span>C),</p></li>
+<li><p>achieving high  surface area in geothermal reservoirs by drilling horizontal wells and creating fracture networks, and</p></li>
+<li><p>building reliable models of the subsurface to capture thermo-poro-elastic processes.</p></li>
+</ul>
+<figure class="align-default" id="geothermalintro">
+<a class="reference internal image-reference" href="_images/1-Geothermal.png"><img alt="figurecontent" src="_images/1-Geothermal.png" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Selected types of deep geothermal systems for heat mining.</span><a class="headerlink" href="#geothermalintro" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<!--- 
+
+%Injection of large volumes of fluid in the subsurface may cause induced seismicity.
+%Hydraulic fracturing causes changes of stresses in the subsurface that may generate seismicity on surface.
+%The magnitude of these events is often small (M $<$ 0 termed micro-seismicity), does not cause damage on surface, and it is even useful to diagnose hydraulic fracture propagation.
+%A few causes in Canada have shown induced seimicity directly induced by hydraulic fracturing.
+%The recent increase of induced seismicity (M $>$ 3) is due to waste-water injection and reactuvation of subsurface faults.
+%Large magnitude events usually come from fault reactivation in the brittle crystalline basement rocks.
+
+%\begin{figure}[h] % F F F F F F F F F F F F F F F F F F F F F F F 
+%\centerline{\includegraphics[scale=0.65]{./Figures/split/1-7.svg}}
+%\caption{Induced seismicity}
+%\label{fig:lec1-6}
+%\end{figure} % F F F F F F F F F F F F F F F F F F F F F F F F F
+
+-->
+</section>
+</section>
+<section id="problems">
+<h2>1.3 Problems<a class="headerlink" href="#problems" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Completion through horizontal wellbores and multistage hydraulic fracturing has dramatically impacted the production of oil and gas in the US. Answer the following questions:</p>
+<ol class="arabic simple">
+<li><p>What was the percentage of tight/shale gas production with respect to total gas production in the US for 2010 and 2020 according to EIA <a class="reference external" href="https://www.eia.gov/energyexplained/natural-gas/where-our-natural-gas-comes-from.php">US dry natural gas production by type</a>?</p></li>
+<li><p>Out of shale gas for 2022, what percentage comes from TX/NM and what percentage comes from Marcellus Shale according to EIA <a class="reference external" href="https://www.eia.gov/energyexplained/natural-gas/where-our-natural-gas-comes-from.php">Monthly dry shale gas production</a>?</p></li>
+<li><p>What was the percentage of tight/shale oil production with respect to total oil production in the US for 2004 and 2019 according to EIA <a class="reference external" href="https://www.eia.gov/todayinenergy/detail.php?id=38372#">Monthly US crude oil production (2004-2018)</a>?</p></li>
+<li><p>Out of tight oil for 2023, what percentage comes from TX/NM according to EIA <a class="reference external" href="https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from-in-depth.php">US tight oil production</a>?</p></li>
+<li><p>How many times did tight oil production grow from 2023 to 2007 according to EIA <a class="reference external" href="https://www.eia.gov/energyexplained/oil-and-petroleum-products/where-our-oil-comes-from-in-depth.php">US tight oil production</a>?</p></li>
+</ol>
+</li>
+<li><p>What is the concept of “decarbonizing the fossil fuel energy industry”?. What are the different types of CO<span class="math notranslate nohighlight">\(_2\)</span> geological storage according to the target storage formation?</p></li>
+<li><p>What is the heat flow rate of the Earth’s molten core (provide answer in TeraWatts)? What is an enhanced geothermal system? (Alternative question: Read <a class="reference external" href="https://www.energy.gov/eere/geothermal/geothermal-basics">Geothermal Basics</a>, watch the video Geothermal Energy 101 and answer “What is the U.S. confirmed potential of geothermal electricity-generating capacity by 2050?”)</p></li>
+</ol>
+<p>Note: you may use this <a class="reference external" href="https://apps.automeris.io/wpd4/">online plot digitizer </a> to digitize plots.</p>
+</section>
+<section id="further-reading-and-references">
+<h2>1.4 Further Reading and References<a class="headerlink" href="#further-reading-and-references" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Decarbonizing the economy: <a class="reference external" href="https://equinor.ft.com/articles/there-will-be-no-net-zero-without-carbon-capture-and-hydrogen">Equinor article</a></p></li>
+<li><p>Carbon capture and storage: <a class="reference external" href="https://www.netl.doe.gov/coal/carbon-storage/faqs/carbon-storage-faqs">DOE NETL article</a></p></li>
+<li><p>Future of geothermal energy: <a class="reference external" href="https://www.vox.com/energy-and-environment/2020/10/21/21515461/renewable-energy-geothermal-egs-ags-supercritical">Vox article</a></p></li>
+<li><p>Geologic hydrogen: <a class="reference external" href="https://www.usgs.gov/news/featured-story/potential-geologic-hydrogen-next-generation-energy">USGS article</a></p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction to Energy Geomechanics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ch2_StressPorePressure.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2. Subsurface Stresses and Pore Pressure</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-geology">1.1 Structural Geology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geomechanics-in-the-energy-industry">1.2 Geomechanics in the Energy Industry</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drilling-and-wellbore-stability">Drilling and Wellbore Stability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wellbore-completion">Wellbore Completion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reservoir-geomechanics">Reservoir Geomechanics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-and-hydrogen-geological-storage">Carbon and Hydrogen Geological Storage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geothermal-energy">Geothermal Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">1.3 Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading-and-references">1.4 Further Reading and References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By D. Nicolas Espinoza
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
